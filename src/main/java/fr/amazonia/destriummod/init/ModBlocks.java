@@ -51,7 +51,7 @@ public class ModBlocks {
 	
 	
 	public static final RegistryObject<Block> AMAZONITE_BLOCK = createBlock("amazonite_block", () -> new Block(AbstractBlock.Properties.of(Material.METAL).harvestTool(ToolType.PICKAXE).harvestLevel(5).strength(25f, 1000f).requiresCorrectToolForDrops()));
-	//public static final RegistryObject<Block> FAKE_AMAZONITE_BLOCK = createBlock("fake_amazonite_block", () -> new Block(AbstractBlock.Properties.of(Material.METAL).harvestTool(ToolType.PICKAXE).harvestLevel(5).strength(25f, 1000f).requiresCorrectToolForDrops()));
+	public static final RegistryObject<Block> FAKE_AMAZONITE_BLOCK = createBlock("fake_amazonite_block", () -> new Block(AbstractBlock.Properties.of(Material.METAL).harvestTool(ToolType.PICKAXE).harvestLevel(5).strength(25f, 1000f).requiresCorrectToolForDrops()));
 	public static final RegistryObject<Block> DESTRIUM_BLOCK = createBlock("destrium_block", () -> new Block(AbstractBlock.Properties.of(Material.METAL).harvestTool(ToolType.PICKAXE).harvestLevel(4).strength(15f, 125f).requiresCorrectToolForDrops()));
 	public static final RegistryObject<Block> ARGONIDE_BLOCK = createBlock("argonide_block", () -> new Block(AbstractBlock.Properties.of(Material.METAL).harvestTool(ToolType.PICKAXE).harvestLevel(4).strength(10f, 25f).requiresCorrectToolForDrops()));
 	
