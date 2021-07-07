@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " a ",
+        " a ",
+        " b "
+    ],
+    "key": {
+        "a": {
+            "item": "destriummod:destrium_ingot"
+        },
+        "b": {
+            "item": "minecraft:stick"
+        }
+    },
+    "result": {
+        "item": "destriummod:destrium_sword",
+        "count": 1
+    }
+}

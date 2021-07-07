@@ -1,0 +1,28 @@
+{
+  "variants": {
+    "age=0": {
+      "model": "destriummod:block/destrium_plants_stage0"
+    },
+    "age=1": {
+      "model": "destriummod:block/destrium_plants_stage0"
+    },
+    "age=2": {
+      "model": "destriummod:block/destrium_plants_stage1"
+    },
+    "age=3": {
+      "model": "destriummod:block/destrium_plants_stage1"
+    },
+    "age=4": {
+      "model": "destriummod:block/destrium_plants_stage2"
+    },
+    "age=5": {
+      "model": "destriummod:block/destrium_plants_stage2"
+    },
+    "age=6": {
+      "model": "destriummod:block/destrium_plants_stage2"
+    },
+    "age=7": {
+      "model": "destriummod:block/destrium_plants_stage3"
+    }
+  }
+}

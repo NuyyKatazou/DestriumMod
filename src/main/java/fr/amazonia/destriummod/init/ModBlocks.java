@@ -1,0 +1,78 @@
+package fr.amazonia.destriummod.init;
+
+import java.util.function.Supplier;
+
+import fr.amazonia.destriummod.DestriumMod;
+import fr.amazonia.destriummod.block.Plants.AmazonitePlants;
+import fr.amazonia.destriummod.block.Plants.DestriumPlants;
+import fr.amazonia.destriummod.block.Plants.XpPlants;
+import net.minecraft.block.AbstractBlock;
+import net.minecraft.block.Block;
+import net.minecraft.block.SoundType;
+import net.minecraft.block.material.Material;
+import net.minecraft.item.BlockItem;
+import net.minecraft.item.Item;
+import net.minecraftforge.common.ToolType;
+import net.minecraftforge.fml.RegistryObject;
+import net.minecraftforge.registries.DeferredRegister;
+import net.minecraftforge.registries.ForgeRegistries;
+
+public class ModBlocks {
+
+	public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, DestriumMod.MODID);
+	
+	
+	
+	public static final RegistryObject<Block> CLOUD = createBlock("cloud", () -> new Block(AbstractBlock.Properties.of(Material.CLAY).harvestTool(ToolType.HOE).harvestLevel(2).strength(2.5f, 25f).requiresCorrectToolForDrops()));
+	public static final RegistryObject<Block> BLUE_CLOUD = createBlock("blue_cloud", () -> new Block(AbstractBlock.Properties.of(Material.CLAY).harvestTool(ToolType.HOE).harvestLevel(2).strength(3f, 25f).requiresCorrectToolForDrops()));
+	public static final RegistryObject<Block> BLACK_CLOUD = createBlock("black_cloud", () -> new Block(AbstractBlock.Properties.of(Material.CLAY).harvestTool(ToolType.HOE).harvestLevel(2).strength(3f, 25f).requiresCorrectToolForDrops()));
+	public static final RegistryObject<Block> BROWN_CLOUD = createBlock("brown_cloud", () -> new Block(AbstractBlock.Properties.of(Material.CLAY).harvestTool(ToolType.HOE).harvestLevel(2).strength(3f, 25f).requiresCorrectToolForDrops()));
+	public static final RegistryObject<Block> CYAN_CLOUD = createBlock("cyan_cloud", () -> new Block(AbstractBlock.Properties.of(Material.CLAY).harvestTool(ToolType.HOE).harvestLevel(2).strength(3f, 25f).requiresCorrectToolForDrops()));
+	public static final RegistryObject<Block> DARK_BLUE_CLOUD = createBlock("dark_blue_cloud", () -> new Block(AbstractBlock.Properties.of(Material.CLAY).harvestTool(ToolType.HOE).harvestLevel(2).strength(3f, 25f).requiresCorrectToolForDrops()));
+	public static final RegistryObject<Block> DARK_GRAY_CLOUD = createBlock("dark_gray_cloud", () -> new Block(AbstractBlock.Properties.of(Material.CLAY).harvestTool(ToolType.HOE).harvestLevel(2).strength(3f, 25f).requiresCorrectToolForDrops()));
+	public static final RegistryObject<Block> DARK_GREEN_CLOUD = createBlock("dark_green_cloud", () -> new Block(AbstractBlock.Properties.of(Material.CLAY).harvestTool(ToolType.HOE).harvestLevel(2).strength(3f, 25f).requiresCorrectToolForDrops()));
+	public static final RegistryObject<Block> DARK_PURPLE_CLOUD = createBlock("dark_purple_cloud", () -> new Block(AbstractBlock.Properties.of(Material.CLAY).harvestTool(ToolType.HOE).harvestLevel(2).strength(3f, 25f).requiresCorrectToolForDrops()));
+	public static final RegistryObject<Block> DARK_RED_CLOUD = createBlock("dark_red_cloud", () -> new Block(AbstractBlock.Properties.of(Material.CLAY).harvestTool(ToolType.HOE).harvestLevel(2).strength(3f, 25f).requiresCorrectToolForDrops()));
+	public static final RegistryObject<Block> GRAY_CLOUD = createBlock("gray_cloud", () -> new Block(AbstractBlock.Properties.of(Material.CLAY).harvestTool(ToolType.HOE).harvestLevel(2).strength(3f, 25f).requiresCorrectToolForDrops()));
+	public static final RegistryObject<Block> GREEN_CLOUD = createBlock("green_cloud", () -> new Block(AbstractBlock.Properties.of(Material.CLAY).harvestTool(ToolType.HOE).harvestLevel(2).strength(3f, 25f).requiresCorrectToolForDrops()));
+	public static final RegistryObject<Block> LIGHT_BLUE_CLOUD = createBlock("light_blue_cloud", () -> new Block(AbstractBlock.Properties.of(Material.CLAY).harvestTool(ToolType.HOE).harvestLevel(2).strength(3f, 25f).requiresCorrectToolForDrops()));
+	public static final RegistryObject<Block> LIGHT_GRAY_CLOUD = createBlock("light_gray_cloud", () -> new Block(AbstractBlock.Properties.of(Material.CLAY).harvestTool(ToolType.HOE).harvestLevel(2).strength(3f, 25f).requiresCorrectToolForDrops()));
+	public static final RegistryObject<Block> LIGHT_RED_CLOUD = createBlock("light_red_cloud", () -> new Block(AbstractBlock.Properties.of(Material.CLAY).harvestTool(ToolType.HOE).harvestLevel(2).strength(3f, 25f).requiresCorrectToolForDrops()));
+	public static final RegistryObject<Block> LIME_CLOUD = createBlock("lime_cloud", () -> new Block(AbstractBlock.Properties.of(Material.CLAY).harvestTool(ToolType.HOE).harvestLevel(2).strength(3f, 25f).requiresCorrectToolForDrops()));
+	public static final RegistryObject<Block> MAGENTA_CLOUD = createBlock("magenta_cloud", () -> new Block(AbstractBlock.Properties.of(Material.CLAY).harvestTool(ToolType.HOE).harvestLevel(2).strength(3f, 25f).requiresCorrectToolForDrops()));
+	public static final RegistryObject<Block> ORANGE_CLOUD = createBlock("orange_cloud", () -> new Block(AbstractBlock.Properties.of(Material.CLAY).harvestTool(ToolType.HOE).harvestLevel(2).strength(3f, 25f).requiresCorrectToolForDrops()));
+	public static final RegistryObject<Block> PINK_CLOUD = createBlock("pink_cloud", () -> new Block(AbstractBlock.Properties.of(Material.CLAY).harvestTool(ToolType.HOE).harvestLevel(2).strength(3f, 25f).requiresCorrectToolForDrops()));
+	public static final RegistryObject<Block> PURPLE_CLOUD = createBlock("purple_cloud", () -> new Block(AbstractBlock.Properties.of(Material.CLAY).harvestTool(ToolType.HOE).harvestLevel(2).strength(3f, 25f).requiresCorrectToolForDrops()));
+	public static final RegistryObject<Block> RED_CLOUD = createBlock("red_cloud", () -> new Block(AbstractBlock.Properties.of(Material.CLAY).harvestTool(ToolType.HOE).harvestLevel(2).strength(3f, 25f).requiresCorrectToolForDrops()));
+	public static final RegistryObject<Block> ULTRA_DARK_BLUE_CLOUD = createBlock("ultra_dark_blue_cloud", () -> new Block(AbstractBlock.Properties.of(Material.CLAY).harvestTool(ToolType.HOE).harvestLevel(2).strength(3f, 25f).requiresCorrectToolForDrops()));
+	public static final RegistryObject<Block> YELLOW_CLOUD = createBlock("yellow_cloud", () -> new Block(AbstractBlock.Properties.of(Material.CLAY).harvestTool(ToolType.HOE).harvestLevel(2).strength(3f, 25f).requiresCorrectToolForDrops()));
+	public static final RegistryObject<Block> CRACKED_CLOUD = createBlock("cracked_cloud", () -> new Block(AbstractBlock.Properties.of(Material.CLAY).harvestTool(ToolType.HOE).harvestLevel(2).strength(2.5f, 25f).requiresCorrectToolForDrops()));
+	public static final RegistryObject<Block> CLOUD2 = createBlock("cloud2", () -> new Block(AbstractBlock.Properties.of(Material.CLAY).harvestTool(ToolType.HOE).harvestLevel(2).strength(2.5f, 25f).requiresCorrectToolForDrops()));
+	
+	
+	public static final RegistryObject<Block> AMAZONITE_BLOCK = createBlock("amazonite_block", () -> new Block(AbstractBlock.Properties.of(Material.METAL).harvestTool(ToolType.PICKAXE).harvestLevel(5).strength(25f, 1000f).requiresCorrectToolForDrops()));
+	//public static final RegistryObject<Block> FAKE_AMAZONITE_BLOCK = createBlock("fake_amazonite_block", () -> new Block(AbstractBlock.Properties.of(Material.METAL).harvestTool(ToolType.PICKAXE).harvestLevel(5).strength(25f, 1000f).requiresCorrectToolForDrops()));
+	public static final RegistryObject<Block> DESTRIUM_BLOCK = createBlock("destrium_block", () -> new Block(AbstractBlock.Properties.of(Material.METAL).harvestTool(ToolType.PICKAXE).harvestLevel(4).strength(15f, 125f).requiresCorrectToolForDrops()));
+	public static final RegistryObject<Block> ARGONIDE_BLOCK = createBlock("argonide_block", () -> new Block(AbstractBlock.Properties.of(Material.METAL).harvestTool(ToolType.PICKAXE).harvestLevel(4).strength(10f, 25f).requiresCorrectToolForDrops()));
+	
+	public static final RegistryObject<Block> AMAZONITE_ORE = createBlock("amazonite_ore", () -> new Block(AbstractBlock.Properties.of(Material.STONE).harvestTool(ToolType.PICKAXE).harvestLevel(5).strength(10f, 100f).requiresCorrectToolForDrops()));
+	public static final RegistryObject<Block> DESTRIUM_ORE = createBlock("destrium_ore", () -> new Block(AbstractBlock.Properties.of(Material.STONE).harvestTool(ToolType.PICKAXE).harvestLevel(4).strength(6f, 50f).requiresCorrectToolForDrops()));
+	public static final RegistryObject<Block> ARGONIDE_ORE = createBlock("argonide_ore", () -> new Block(AbstractBlock.Properties.of(Material.STONE).harvestTool(ToolType.PICKAXE).harvestLevel(4).strength(4f, 10f).requiresCorrectToolForDrops()));
+	public static final RegistryObject<Block> CRACKED_ARGONIDE_ORE = createBlock("cracked_argonide_ore", () -> new Block(AbstractBlock.Properties.of(Material.CLAY).harvestTool(ToolType.HOE).harvestLevel(3).strength(4f, 25f).requiresCorrectToolForDrops()));
+	
+	
+	public static final RegistryObject<Block> AMAZONITE_PLANTS = createBlock("amazonite_plants", () -> new AmazonitePlants(AbstractBlock.Properties.of(Material.PLANT).instabreak().randomTicks().noCollission().sound(SoundType.CROP)));
+	public static final RegistryObject<Block> DESTRIUM_PLANTS = createBlock("destrium_plants", () -> new DestriumPlants(AbstractBlock.Properties.of(Material.PLANT).instabreak().randomTicks().noCollission().sound(SoundType.CROP)));
+	public static final RegistryObject<Block> XP_PLANTS = createBlock("xp_plants", () -> new XpPlants(AbstractBlock.Properties.of(Material.PLANT).instabreak().randomTicks().noCollission().sound(SoundType.CROP)));
+	
+			
+	
+	public static RegistryObject<Block> createBlock(String name, Supplier<? extends Block> supplier) {
+		
+		RegistryObject<Block> block = BLOCKS.register(name, supplier);
+		ModItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties().tab(DestriumMod.BlockTab)));
+		return block;
+	}
+	
+}
+

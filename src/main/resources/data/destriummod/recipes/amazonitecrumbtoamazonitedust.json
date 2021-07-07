@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "aaa",
+        "aaa",
+        "aaa"
+    ],
+    "key": {
+        "a": {
+            "item": "destriummod:amazonite_crumb"
+        }
+    },
+    "result": {
+        "item": "destriummod:amazonite_dust",
+        "count": 2
+    }
+}
