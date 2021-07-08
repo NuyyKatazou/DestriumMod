@@ -107,18 +107,9 @@
   
   
   "item.destriummod.amazonite_leggings.desc": "Résistance Au Feu Infini",
-  "item.destriummod.amazonite_leggings.desc2": "Deux Coeurs Supplémentaire",
-  "item.destriummod.amazonite_boots.desc": "Vitesse Infini",
-  "item.destriummod.amazonite_boots.desc2": "Quatre Coeurs D'Absorption Toutes Les Trentes Minutes",
-  "item.destriummod.amazonite_chestplate.desc": "Force Infini",
-  "item.destriummod.amazonite_chestplate.desc2": "Résistance Deux Infini",
-  "item.destriummod.amazonite_helmet.desc": "Vision Nocture Infini",
-  "item.destriummod.amazonite_helmet.desc2": "Invisibilité Infini",
-  
-  "item.destriummod.destrium_helmet.desc": "Vision Nocture Infini",
-  "item.destriummod.destrium_chestplate.desc": "Résistance Infini",
-  "item.destriummod.destrium_leggings.desc": "Résistance Au Feu Infini",
-  "item.destriummod.destrium_boots.desc": "Vitesse Infini",
+  "item.destriummod.amazonite_boots.desc": "Vitesse Deux Infini",
+  "item.destriummod.amazonite_chestplate.desc": "Résistance Infini",
+  "item.destriummod.amazonite_helmet.desc": "Invisibilité Infini",
 
 
   "item.destriummod.amazonite_ingot.desc": ">> Amazonite",
