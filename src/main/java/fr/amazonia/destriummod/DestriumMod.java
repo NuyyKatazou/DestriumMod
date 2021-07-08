@@ -3,7 +3,6 @@ package fr.amazonia.destriummod;
 
 import fr.amazonia.destriummod.init.ModBlocks;
 import fr.amazonia.destriummod.init.ModItems;
-import net.minecraft.block.Blocks;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.RenderTypeLookup;
 import net.minecraft.item.ItemGroup;
@@ -41,7 +40,7 @@ public class DestriumMod {
     	@Override
     	@OnlyIn(Dist.CLIENT)
         public ItemStack makeIcon() {
-           return new ItemStack(Blocks.BRICKS);//AMAZONITE_PICKAXE
+           return new ItemStack(ModItems.AMAZONITE_PICKAXE.get());
     	}
     };
     public static final ItemGroup foodTab = new ItemGroup(MODID + ".foodtab") {
