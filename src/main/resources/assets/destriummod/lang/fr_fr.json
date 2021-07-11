@@ -117,6 +117,12 @@
   "item.destriummod.amazonite_boots.desc": "Vitesse Deux Infini",
   "item.destriummod.amazonite_chestplate.desc": "Résistance Infini",
   "item.destriummod.amazonite_helmet.desc": "Invisibilité Infini",
+  
+  
+  "item.destriummod.spawners_pickaxe.desc": " ",
+  "item.destriummod.spawners_pickaxe.desc2": "3 Utilisation,",
+  "item.destriummod.spawners_pickaxe.desc3": "Doit avoir la Perms Achatable dans /boutique pour être utilisé",
+  "item.destriummod.spawners_pickaxe.desc4": " ",
 
 
   "item.destriummod.amazonite_ingot.desc": ">> Amazonite",
