@@ -10,7 +10,7 @@
             "item": "destriummod:destrium_ingot"
         },
         "b": {
-            "item": "minecraft:stick"
+            "item": "destriummod:destrium_stick"
         }
     },
     "result": {
