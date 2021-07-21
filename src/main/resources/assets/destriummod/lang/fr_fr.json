@@ -140,6 +140,11 @@
   "item.destriummod.argonide_ingot.desc2": "Destrium",
   "item.destriummod.argonide_ingot.desc3": ">> Argonide",
   "item.destriummod.argonide_nuggets.desc": "Utilisé pour craft le Lingot D' Argonide",
+  
+  
+  "item.destriummod.amazonite_stick.desc": "Utilisé pour craft les Outils En Amazonite",
+  "item.destriummod.destrium_stick.desc": "Utilisé pour craft les Outils En Destrium",
+  "item.destriummod.argonide_stick.desc": "Utilisé pour craft les Outils En Argonide",
 
 
   "item.destriummod.destrium_apple.desc": "Heal De Dix Coeurs",

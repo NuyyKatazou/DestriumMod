@@ -145,6 +145,10 @@
   "item.destriummod.argonide_ingot.desc3": ">> Argonide",
   "item.destriummod.argonide_nuggets.desc": "Used to craft the Argonide Ingot",
   
+  "item.destriummod.amazonite_stick.desc": "Used to craft the Amazonite Tools",
+  "item.destriummod.destrium_stick.desc": "Used to craft the Destrium Tools",
+  "item.destriummod.argonide_stick.desc": "Used to craft the Argonide Tools",
+  
   
   "item.destriummod.destrium_apple.desc": "Ten Heart Healing",
   "item.destriummod.destrium_apple.desc2": "Strength Three For Twenty Seconds",
