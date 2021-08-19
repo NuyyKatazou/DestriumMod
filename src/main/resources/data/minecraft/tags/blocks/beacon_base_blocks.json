@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:netherite_block",
+    "minecraft:emerald_block",
+    "minecraft:diamond_block",
+    "minecraft:gold_block",
+    "minecraft:iron_block",
+    "destriummod:amazonite_block",
+    "destriummod:destrium_block",
+    "destriummod:argonide_block"
+  ]
+}
