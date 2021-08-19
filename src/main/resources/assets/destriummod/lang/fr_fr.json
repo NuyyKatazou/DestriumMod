@@ -67,10 +67,11 @@
   
   
   "block.destriummod.amazonite_block": "Bloc D'amazonite",
-  "block.destriummod.fake_amazonite_block": "Fake Bloc D'amazonite",
+  "block.destriummod.fake_amazonite_block": "Bloc D'amazonite",
   "block.destriummod.destrium_block": "Bloc De Destrium",
   "block.destriummod.argonide_block": "Bloc D'Argonide",
   
+  "block.destriummod.random_ore": "Minerais Aléatoire",
   "block.destriummod.amazonite_ore": "Minerais D'Amazonite",
   "block.destriummod.destrium_ore": "Minerais De Destrium",
   "block.destriummod.argonide_ore": "Minerais D'Argonide",
