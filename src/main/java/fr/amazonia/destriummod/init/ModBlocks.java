@@ -22,7 +22,6 @@ public class ModBlocks {
 	public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, DestriumMod.MODID);
 	
 	
-	
 	public static final RegistryObject<Block> CLOUD = createBlock("cloud", () -> new Block(AbstractBlock.Properties.of(Material.CLAY).harvestTool(ToolType.HOE).harvestLevel(2).strength(2.5f, 25f).requiresCorrectToolForDrops()));
 	public static final RegistryObject<Block> BLUE_CLOUD = createBlock("blue_cloud", () -> new Block(AbstractBlock.Properties.of(Material.CLAY).harvestTool(ToolType.HOE).harvestLevel(2).strength(3f, 25f).requiresCorrectToolForDrops()));
 	public static final RegistryObject<Block> BLACK_CLOUD = createBlock("black_cloud", () -> new Block(AbstractBlock.Properties.of(Material.CLAY).harvestTool(ToolType.HOE).harvestLevel(2).strength(3f, 25f).requiresCorrectToolForDrops()));
@@ -69,7 +68,16 @@ public class ModBlocks {
 	public static final RegistryObject<Block> DESTRIUM_PLANTS = createBlock("destrium_plants", () -> new DestriumPlants(AbstractBlock.Properties.of(Material.PLANT).instabreak().randomTicks().noCollission().sound(SoundType.CROP)));
 	public static final RegistryObject<Block> XP_PLANTS = createBlock("xp_plants", () -> new XpPlants(AbstractBlock.Properties.of(Material.PLANT).instabreak().randomTicks().noCollission().sound(SoundType.CROP)));
 	
-			
+	
+	
+	public static final RegistryObject<Block> COBBLESTONE_COMPRESSED1 = createBlock("cobblestone_compressed1", () -> new Block(AbstractBlock.Properties.of(Material.STONE).harvestTool(ToolType.PICKAXE).harvestLevel(2).strength(3.0F, 6.5F).requiresCorrectToolForDrops()));
+	public static final RegistryObject<Block> COBBLESTONE_COMPRESSED2 = createBlock("cobblestone_compressed2", () -> new Block(AbstractBlock.Properties.of(Material.STONE).harvestTool(ToolType.PICKAXE).harvestLevel(3).strength(5.0F, 7.0F).requiresCorrectToolForDrops()));
+	public static final RegistryObject<Block> COBBLESTONE_COMPRESSED3 = createBlock("cobblestone_compressed3", () -> new Block(AbstractBlock.Properties.of(Material.STONE).harvestTool(ToolType.PICKAXE).harvestLevel(3).strength(8.0F, 9.0F).requiresCorrectToolForDrops()));
+	public static final RegistryObject<Block> COBBLESTONE_COMPRESSED4 = createBlock("cobblestone_compressed4", () -> new Block(AbstractBlock.Properties.of(Material.STONE).harvestTool(ToolType.PICKAXE).harvestLevel(4).strength(12.0F, 10.0F).requiresCorrectToolForDrops()));
+	public static final RegistryObject<Block> COBBLESTONE_COMPRESSED5 = createBlock("cobblestone_compressed5", () -> new Block(AbstractBlock.Properties.of(Material.STONE).harvestTool(ToolType.PICKAXE).harvestLevel(4).strength(20.0F, 14.0F).requiresCorrectToolForDrops()));
+	public static final RegistryObject<Block> COBBLESTONE_COMPRESSED6 = createBlock("cobblestone_compressed6", () -> new Block(AbstractBlock.Properties.of(Material.STONE).harvestTool(ToolType.PICKAXE).harvestLevel(5).strength(30.0F, 18.0F).requiresCorrectToolForDrops()));
+	public static final RegistryObject<Block> COBBLESTONE_COMPRESSED7 = createBlock("cobblestone_compressed7", () -> new Block(AbstractBlock.Properties.of(Material.STONE).harvestTool(ToolType.PICKAXE).harvestLevel(6).strength(50.0F, 25.0F).requiresCorrectToolForDrops()));
+	public static final RegistryObject<Block> COBBLESTONE_COMPRESSED8 = createBlock("cobblestone_compressed8", () -> new Block(AbstractBlock.Properties.of(Material.STONE).harvestTool(ToolType.PICKAXE).harvestLevel(7).strength(250.0F, 500.0F).requiresCorrectToolForDrops()));
 	
 	public static RegistryObject<Block> createBlock(String name, Supplier<? extends Block> supplier) {
 		

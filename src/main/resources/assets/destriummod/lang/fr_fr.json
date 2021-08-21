@@ -78,6 +78,16 @@
   "block.destriummod.cracked_argonide_ore": "Minerais Craquelé D'Argonide",
   
   
+  "block.destriummod.cobblestone_compressed1": "Pierre Taillé Compressé",
+  "block.destriummod.cobblestone_compressed2": "Pierre Taillé Compressé Deux Fois",
+  "block.destriummod.cobblestone_compressed3": "Pierre Taillé Compressé Trois Fois",
+  "block.destriummod.cobblestone_compressed4": "Pierre Taillé Compressé Quatre Fois",
+  "block.destriummod.cobblestone_compressed5": "Pierre Taillé Compressé Cinq Fois",
+  "block.destriummod.cobblestone_compressed6": "Pierre Taillé Compressé Six Fois",
+  "block.destriummod.cobblestone_compressed7": "Pierre Taillé Compressé Sept Fois",
+  "block.destriummod.cobblestone_compressed8": "Pierre Taillé Compressé Huit Fois",
+  
+  
   "block.destriummod.cloud": "Nuage",
   "block.destriummod.black_cloud": "Nuage Noire",
   "block.destriummod.blue_cloud": "Nuage Bleu",

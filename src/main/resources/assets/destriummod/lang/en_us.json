@@ -78,6 +78,16 @@
   "block.destriummod.cracked_argonide_ore": "Cracked Argonide Ore",
   
   
+  "block.destriummod.cobblestone_compressed1": "Stone Compressed",
+  "block.destriummod.cobblestone_compressed2": "Stone Compressed Two Times",
+  "block.destriummod.cobblestone_compressed3": "Stone Compressed Three Times",
+  "block.destriummod.cobblestone_compressed4": "Stone Compressed Four Times",
+  "block.destriummod.cobblestone_compressed5": "Stone Compressed Five Times",
+  "block.destriummod.cobblestone_compressed6": "Stone Compressed Six Times",
+  "block.destriummod.cobblestone_compressed7": "Stone Compressed Seven Times",
+  "block.destriummod.cobblestone_compressed8": "Stone Compressed Eight Times",
+  
+  
   "block.destriummod.cloud": "Cloud",
   "block.destriummod.black_cloud": "Black Cloud",
   "block.destriummod.blue_cloud": "Blue Cloud",
