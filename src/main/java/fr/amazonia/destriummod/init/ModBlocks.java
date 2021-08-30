@@ -79,6 +79,13 @@ public class ModBlocks {
 	public static final RegistryObject<Block> COBBLESTONE_COMPRESSED7 = createBlock("cobblestone_compressed7", () -> new Block(AbstractBlock.Properties.of(Material.STONE).harvestTool(ToolType.PICKAXE).harvestLevel(6).strength(50.0F, 25.0F).requiresCorrectToolForDrops()));
 	public static final RegistryObject<Block> COBBLESTONE_COMPRESSED8 = createBlock("cobblestone_compressed8", () -> new Block(AbstractBlock.Properties.of(Material.STONE).harvestTool(ToolType.PICKAXE).harvestLevel(7).strength(250.0F, 500.0F).requiresCorrectToolForDrops()));
 	
+	public static final RegistryObject<Block> DIRT_COMPRESSED1 = createBlock("dirt_compressed1", () -> new Block(AbstractBlock.Properties.of(Material.DIRT).harvestTool(ToolType.SHOVEL).harvestLevel(2).strength(3.0F, 6.5F).requiresCorrectToolForDrops()));
+	public static final RegistryObject<Block> DIRT_COMPRESSED2 = createBlock("dirt_compressed2", () -> new Block(AbstractBlock.Properties.of(Material.DIRT).harvestTool(ToolType.SHOVEL).harvestLevel(3).strength(5.0F, 7.0F).requiresCorrectToolForDrops()));
+	public static final RegistryObject<Block> DIRT_COMPRESSED3 = createBlock("dirt_compressed3", () -> new Block(AbstractBlock.Properties.of(Material.DIRT).harvestTool(ToolType.SHOVEL).harvestLevel(3).strength(8.0F, 9.0F).requiresCorrectToolForDrops()));
+	public static final RegistryObject<Block> DIRT_COMPRESSED4 = createBlock("dirt_compressed4", () -> new Block(AbstractBlock.Properties.of(Material.DIRT).harvestTool(ToolType.SHOVEL).harvestLevel(4).strength(12.0F, 10.0F).requiresCorrectToolForDrops()));
+	public static final RegistryObject<Block> DIRT_COMPRESSED5 = createBlock("dirt_compressed5", () -> new Block(AbstractBlock.Properties.of(Material.DIRT).harvestTool(ToolType.SHOVEL).harvestLevel(4).strength(20.0F, 14.0F).requiresCorrectToolForDrops()));
+	
+	
 	public static RegistryObject<Block> createBlock(String name, Supplier<? extends Block> supplier) {
 		
 		RegistryObject<Block> block = BLOCKS.register(name, supplier);
