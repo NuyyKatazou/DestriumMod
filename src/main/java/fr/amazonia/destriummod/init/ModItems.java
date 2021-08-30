@@ -22,8 +22,10 @@ import fr.amazonia.destriummod.item.ingot.AmazoniteIngot;
 import fr.amazonia.destriummod.item.ingot.AmazoniteNuggets;
 import fr.amazonia.destriummod.item.ingot.ArgonideIngot;
 import fr.amazonia.destriummod.item.ingot.ArgonideNuggets;
+import fr.amazonia.destriummod.item.ingot.CompressedGolden;
 import fr.amazonia.destriummod.item.ingot.DestriumIngot;
 import fr.amazonia.destriummod.item.ingot.DestriumNuggets;
+import fr.amazonia.destriummod.item.ingot.GoldenCore;
 import fr.amazonia.destriummod.item.stick.AmazoniteStick;
 import fr.amazonia.destriummod.item.stick.ArgonideStick;
 import fr.amazonia.destriummod.item.stick.DestriumStick;
@@ -130,8 +132,8 @@ public class ModItems {
 
 	
 	
-	public static final RegistryObject<Item> GOLDEN_CORE = ITEMS.register("golden_core", () -> new Item(new Item.Properties().tab(DestriumMod.ItemTab).rarity(Rarity.create("gold", TextFormatting.GOLD))));
-	public static final RegistryObject<Item> COMPRESSED_GOLDEN = ITEMS.register("compressed_golden", () -> new Item(new Item.Properties().tab(DestriumMod.ItemTab).rarity(Rarity.create("gold", TextFormatting.GOLD))));
+	public static final RegistryObject<Item> GOLDEN_CORE = ITEMS.register("golden_core", () -> new GoldenCore(new Item.Properties().tab(DestriumMod.ItemTab).rarity(Rarity.create("gold", TextFormatting.GOLD))));
+	public static final RegistryObject<Item> COMPRESSED_GOLDEN = ITEMS.register("compressed_golden", () -> new CompressedGolden(new Item.Properties().tab(DestriumMod.ItemTab).rarity(Rarity.create("gold", TextFormatting.GOLD))));
 	
 	
 	
