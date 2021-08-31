@@ -64,6 +64,14 @@
   "item.destriummod.golden_core": "Noyau En Or",
   "item.destriummod.compressed_golden": "Or Compressé",
   
+  "item.destriummod.iron_plate": "Plaque De Fer",
+  "item.destriummod.gold_plate": "Plaque d'Or",
+  "item.destriummod.diamond_plate": "Plaque De Diamants",
+  "item.destriummod.netherite_plate": "Plaque De Netherite",
+  "item.destriummod.argonide_plate": "Plaque d'Argonide",
+  "item.destriummod.destrium_plate": "Plaque De Destrium",
+  "item.destriummod.amazonite_plate": "Plaque d'Amazonite",
+  
   
   
   "block.destriummod.amazonite_block": "Bloc D'amazonite",

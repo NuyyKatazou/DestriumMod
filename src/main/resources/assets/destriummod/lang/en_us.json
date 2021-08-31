@@ -64,6 +64,14 @@
   "item.destriummod.golden_core": "Golden Core",
   "item.destriummod.compressed_golden": "Compressed Golden",
   
+  "item.destriummod.iron_plate": "Iron Plate",
+  "item.destriummod.gold_plate": "Gold Plate",
+  "item.destriummod.diamond_plate": "Diamond Plate",
+  "item.destriummod.netherite_plate": "Netherite Plate",
+  "item.destriummod.argonide_plate": "Argonide Plate",
+  "item.destriummod.destrium_plate": "Destrium Plate",
+  "item.destriummod.amazonite_plate": "Amazonite Plate",
+  
   
   
   "block.destriummod.amazonite_block": "Amazonite Block",
