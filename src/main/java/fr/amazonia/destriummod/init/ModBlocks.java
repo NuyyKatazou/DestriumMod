@@ -86,6 +86,9 @@ public class ModBlocks {
 	public static final RegistryObject<Block> DIRT_COMPRESSED5 = createBlock("dirt_compressed5", () -> new Block(AbstractBlock.Properties.of(Material.DIRT).harvestTool(ToolType.SHOVEL).harvestLevel(4).strength(20.0F, 14.0F).requiresCorrectToolForDrops()));
 	
 	
+	
+	public static final RegistryObject<Block> BELOW_BLOCK = createBlock("below_block", () -> new Block(AbstractBlock.Properties.of(Material.GLASS).harvestTool(ToolType.PICKAXE).harvestLevel(5).strength(4.0F, 10.0F).requiresCorrectToolForDrops()));
+	
 	public static RegistryObject<Block> createBlock(String name, Supplier<? extends Block> supplier) {
 		
 		RegistryObject<Block> block = BLOCKS.register(name, supplier);
