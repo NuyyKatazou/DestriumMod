@@ -87,6 +87,10 @@ public class ModBlocks {
 	
 	
 	
+	public static final RegistryObject<Block> AMAZONITE_RELIQUE_BLOCK = createBlock("amazonite_relique_block", () -> new Block(AbstractBlock.Properties.of(Material.METAL).harvestTool(ToolType.PICKAXE).harvestLevel(5).strength(25.0F, 100.0F).requiresCorrectToolForDrops()));
+	
+	
+	
 	public static final RegistryObject<Block> BELOW_BLOCK = createBlock("below_block", () -> new Block(AbstractBlock.Properties.of(Material.GLASS).harvestTool(ToolType.PICKAXE).harvestLevel(5).strength(4.0F, 10.0F).requiresCorrectToolForDrops()));
 	
 	public static RegistryObject<Block> createBlock(String name, Supplier<? extends Block> supplier) {
