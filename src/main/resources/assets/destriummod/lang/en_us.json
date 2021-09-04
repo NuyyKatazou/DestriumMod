@@ -95,11 +95,11 @@
   "block.destriummod.cobblestone_compressed7": "Compressed CobbleStone Seven Times",
   "block.destriummod.cobblestone_compressed8": "Compressed CobbleStone Eight Times",
   
-  "block.destriummod.dirt_compressed1": "Dirt Compressed",
-  "block.destriummod.dirt_compressed2": "Dirt Compressed Two Times",
-  "block.destriummod.dirt_compressed3": "Dirt Compressed Three Times",
-  "block.destriummod.dirt_compressed4": "Dirt Compressed Four Times",
-  "block.destriummod.dirt_compressed5": "Dirt Compressed Five Times",
+  "block.destriummod.dirt_compressed1": "Compressed Dirt",
+  "block.destriummod.dirt_compressed2": "Compressed Dirt Two Times",
+  "block.destriummod.dirt_compressed3": "Compressed Dirt Three Times",
+  "block.destriummod.dirt_compressed4": "Compressed Dirt Four Times",
+  "block.destriummod.dirt_compressed5": "Compressed Dirt Five Times",
   
   
   "block.destriummod.cloud": "Cloud",
