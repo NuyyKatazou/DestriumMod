@@ -17,7 +17,7 @@
                       {
                         "enchantment": "minecraft:silk_touch",
                         "levels": {
-                          "min": 1
+                          "min": 1000
                         }
                       }
                     ]
@@ -63,7 +63,7 @@
                       {
                         "enchantment": "minecraft:silk_touch",
                         "levels": {
-                          "min": 1
+                          "min": 1000
                         }
                       }
                     ]
@@ -109,7 +109,7 @@
                       {
                         "enchantment": "minecraft:silk_touch",
                         "levels": {
-                          "min": 1
+                          "min": 1000
                         }
                       }
                     ]
@@ -155,7 +155,7 @@
                       {
                         "enchantment": "minecraft:silk_touch",
                         "levels": {
-                          "min": 1
+                          "min": 1000
                         }
                       }
                     ]
@@ -201,7 +201,7 @@
                       {
                         "enchantment": "minecraft:silk_touch",
                         "levels": {
-                          "min": 1
+                          "min": 1000
                         }
                       }
                     ]
@@ -247,7 +247,7 @@
                       {
                         "enchantment": "minecraft:silk_touch",
                         "levels": {
-                          "min": 1
+                          "min": 1000
                         }
                       }
                     ]
@@ -293,7 +293,7 @@
                       {
                         "enchantment": "minecraft:silk_touch",
                         "levels": {
-                          "min": 1
+                          "min": 1000
                         }
                       }
                     ]
@@ -339,7 +339,7 @@
                       {
                         "enchantment": "minecraft:silk_touch",
                         "levels": {
-                          "min": 1
+                          "min": 1000
                         }
                       }
                     ]
@@ -385,7 +385,7 @@
                       {
                         "enchantment": "minecraft:silk_touch",
                         "levels": {
-                          "min": 1
+                          "min": 1000
                         }
                       }
                     ]
@@ -431,7 +431,7 @@
                       {
                         "enchantment": "minecraft:silk_touch",
                         "levels": {
-                          "min": 1
+                          "min": 1000
                         }
                       }
                     ]
@@ -477,7 +477,7 @@
                       {
                         "enchantment": "minecraft:silk_touch",
                         "levels": {
-                          "min": 1
+                          "min": 1000
                         }
                       }
                     ]
@@ -523,7 +523,7 @@
                       {
                         "enchantment": "minecraft:silk_touch",
                         "levels": {
-                          "min": 1
+                          "min": 1000
                         }
                       }
                     ]
@@ -569,7 +569,7 @@
                       {
                         "enchantment": "minecraft:silk_touch",
                         "levels": {
-                          "min": 1
+                          "min": 1000
                         }
                       }
                     ]
@@ -615,7 +615,7 @@
                       {
                         "enchantment": "minecraft:silk_touch",
                         "levels": {
-                          "min": 1
+                          "min": 1000
                         }
                       }
                     ]
