@@ -21,7 +21,7 @@ public class DestriumPlants extends CropsBlock {
 	      super(properties);
 	   }
 
-	   protected IItemProvider getSeedsItem() {
+	   protected IItemProvider getBaseSeedId() {
 	      return ModItems.DESTRIUM_SEEDS.get();
 	   }
 

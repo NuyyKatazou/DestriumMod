@@ -21,7 +21,7 @@ public class XpPlants extends CropsBlock {
         super(properties);
      }
 
-     protected IItemProvider getSeedsItem() {
+     protected IItemProvider getBaseSeedId() {
         return ModItems.XP_SEEDS.get();
      }
 

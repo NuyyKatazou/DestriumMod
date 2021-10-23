@@ -1,6 +1,5 @@
 package fr.amazonia.destriummod.block.Plants;
 
-
 import java.util.Random;
 
 import fr.amazonia.destriummod.init.ModItems;
@@ -22,23 +21,13 @@ public class AmazonitePlants extends CropsBlock {
 	      super(properties);
 	   }
 	  
-
 	   protected IItemProvider getBaseSeedId() {
 	      return ModItems.AMAZONITE_SEEDS.get();
 	   }
 	   
-	   
 	   public VoxelShape getShape(BlockState p_220053_1_, IBlockReader p_220053_2_, BlockPos p_220053_3_, ISelectionContext p_220053_4_) {
 	         return SHAPE_BY_AGE[p_220053_1_.getValue(this.getAgeProperty())];
 	      }
-	   
-	   public int getOpacity(BlockState state, IBlockReader worldIn, BlockPos pos) {
-		      return 1;
-		   }
-	   
-	   public boolean isFullCube() {
-		   return false;
-	   }
 	   
 	   public boolean canUseBonemeal(World worldIn, Random rand, BlockPos pos, BlockState state) {
 		      return false;
