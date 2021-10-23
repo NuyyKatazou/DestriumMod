@@ -7,11 +7,11 @@
     ],
     "key": {
         "a": {
-            "item": "destriummod:cobblestone_compressed5"
+            "item": "destriummod:cobblestone_compressed6"
         }
     },
     "result": {
-        "item": "destriummod:cobblestone_compressed6",
+        "item": "destriummod:cobblestone_compressed5",
         "count": 9
     }
 }
