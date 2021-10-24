@@ -27,7 +27,7 @@ public class AmazoniteArmorLeggings extends ArmorItem {
 	}
 	@Override
     public void onArmorTick(ItemStack itemstack, World world, PlayerEntity player) {
-		if(player.getItemBySlot(EquipmentSlotType.FEET).getItem() == ModItems.AMAZONITE_LEGGINGS.get()) {
+		if(player.getItemBySlot(EquipmentSlotType.LEGS).getItem() == ModItems.AMAZONITE_LEGGINGS.get()) {
 			player.addEffect(new EffectInstance(Effects.FIRE_RESISTANCE, 300, 1, false, false, true));
 		}
 	}

@@ -27,7 +27,7 @@ public class AmazoniteArmorChestPlate extends ArmorItem {
 	}
 	@Override
     public void onArmorTick(ItemStack itemstack, World world, PlayerEntity player) {
-		if(player.getItemBySlot(EquipmentSlotType.FEET).getItem() == ModItems.AMAZONITE_CHESTPLATE.get()) {
+		if(player.getItemBySlot(EquipmentSlotType.CHEST).getItem() == ModItems.AMAZONITE_CHESTPLATE.get()) {
 			player.addEffect(new EffectInstance(Effects.DAMAGE_RESISTANCE, 300, 0, false, false, true));
 		}
 	}
