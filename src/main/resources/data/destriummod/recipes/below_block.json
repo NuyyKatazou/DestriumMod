@@ -9,15 +9,15 @@
         "a": {
             "item": "destriummod:cloud"
         },
-		"a": {
+		"b": {
             "item": "destriummod:argonide_stick"
         },
-        "b": {
+        "c": {
             "item": "destriummod:destrium_nuggets"
         }
     },
     "result": {
         "item": "destriummod:below_block",
-        "count": 8
+        "count": 1
     }
 }
