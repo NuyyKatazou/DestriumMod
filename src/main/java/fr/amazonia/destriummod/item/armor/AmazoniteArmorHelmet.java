@@ -28,7 +28,7 @@ public class AmazoniteArmorHelmet extends ArmorItem {
 	@Override
     public void onArmorTick(ItemStack itemstack, World world, PlayerEntity player) {
 		if(player.getItemBySlot(EquipmentSlotType.HEAD).getItem() == ModItems.AMAZONITE_HELMET.get()) {
-			player.addEffect(new EffectInstance(Effects.INVISIBILITY, 300, 1, false, false, true));
+			player.addEffect(new EffectInstance(Effects.INVISIBILITY, 300, 0, false, false, true));
 		}
 	}
 	@OnlyIn(Dist.CLIENT)
