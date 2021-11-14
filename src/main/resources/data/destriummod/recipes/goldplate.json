@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "bbb",
+        "bab",
+        "bbb"
+    ],
+    "key": {
+        "a": {
+            "item": "minecraft:gold_ingot"
+        },
+        "b": {
+            "item": "minecraft:gold_block"
+        }
+    },
+    "result": {
+        "item": "destriummod:gold_plate",
+        "count": 1
+    }
+}
