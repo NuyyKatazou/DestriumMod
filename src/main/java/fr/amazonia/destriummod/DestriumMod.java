@@ -1,6 +1,7 @@
 package fr.amazonia.destriummod;
 
 
+
 import fr.amazonia.destriummod.init.ModBlocks;
 import fr.amazonia.destriummod.init.ModItems;
 import net.minecraft.client.renderer.RenderType;
@@ -19,6 +20,7 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 
 @Mod(DestriumMod.MODID)
 public class DestriumMod {
+	
 	
 	public static final String MODID = "destriummod";
 	
@@ -49,17 +51,24 @@ public class DestriumMod {
         public ItemStack makeIcon() {
     		return new ItemStack(ModItems.AMAZONITE_APPLE.get());
     	}
+    	
     };
 	
 	public DestriumMod() {
 		
+		
+		
 		FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
 		FMLJavaModLoadingContext.get().getModEventBus().addListener(this::clientSetup);
 		FMLJavaModLoadingContext.get().getModEventBus().addListener(this::serverSetup);
+		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 		
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
 		ModItems.ITEMS.register(bus);
 		ModBlocks.BLOCKS.register(bus);
+		
+		
+	
 	}
 	
 	private void setup(FMLCommonSetupEvent e) {
@@ -73,6 +82,8 @@ public class DestriumMod {
 		RenderTypeLookup.setRenderLayer(ModBlocks.XP_PLANTS.get(), RenderType.translucent());
 		
 		RenderTypeLookup.setRenderLayer(ModBlocks.BELOW_BLOCK.get(), RenderType.translucent());
+		
+		
 	}
 	
 	private void serverSetup(FMLDedicatedServerSetupEvent e) {
