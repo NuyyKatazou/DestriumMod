@@ -64,6 +64,7 @@
   "item.destriummod.golden_core": "Golden Core",
   "item.destriummod.compressed_golden": "Compressed Golden",
   
+  
   "item.destriummod.iron_plate": "Iron Plate",
   "item.destriummod.gold_plate": "Gold Plate",
   "item.destriummod.diamond_plate": "Diamond Plate",
@@ -71,6 +72,7 @@
   "item.destriummod.argonide_plate": "Argonide Plate",
   "item.destriummod.destrium_plate": "Destrium Plate",
   "item.destriummod.amazonite_plate": "Amazonite Plate",
+  
   
   
   
@@ -139,9 +141,10 @@
   
   "block.destriummod.below_block": "Below Block",
   
-  
-  
-  
+
+
+
+
   "itemGroup.destriummod.blocktab": "Blocks Tabs",
   "itemGroup.destriummod.itemtab": "Items Tabs",
   "itemGroup.destriummod.tooltab": "Tools Ands Armors Tabs",
@@ -179,9 +182,11 @@
   "item.destriummod.argonide_ingot.desc3": ">> Argonide",
   "item.destriummod.argonide_nuggets.desc": "Used to craft the Argonide Ingot",
   
+  
   "item.destriummod.amazonite_stick.desc": "Used to craft the Amazonite Tools",
   "item.destriummod.destrium_stick.desc": "Used to craft the Destrium Tools",
   "item.destriummod.argonide_stick.desc": "Used to craft the Argonide Tools",
+  
   
   "item.destriummod.golden_core.desc": "Used to craft the Enchanted Golden Apple",
   "item.destriummod.compressed_golden.desc": "Used to craft the Golden Core",

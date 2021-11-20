@@ -21,7 +21,6 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 @Mod(DestriumMod.MODID)
 public class DestriumMod {
 	
-	
 	public static final String MODID = "destriummod";
 	
 	public static final ItemGroup ItemTab = new ItemGroup(MODID + ".itemtab") {
@@ -51,12 +50,9 @@ public class DestriumMod {
         public ItemStack makeIcon() {
     		return new ItemStack(ModItems.AMAZONITE_APPLE.get());
     	}
-    	
     };
 	
 	public DestriumMod() {
-		
-		
 		
 		FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
 		FMLJavaModLoadingContext.get().getModEventBus().addListener(this::clientSetup);
@@ -67,8 +63,6 @@ public class DestriumMod {
 		ModItems.ITEMS.register(bus);
 		ModBlocks.BLOCKS.register(bus);
 		
-		
-	
 	}
 	
 	private void setup(FMLCommonSetupEvent e) {
@@ -82,7 +76,6 @@ public class DestriumMod {
 		RenderTypeLookup.setRenderLayer(ModBlocks.XP_PLANTS.get(), RenderType.translucent());
 		
 		RenderTypeLookup.setRenderLayer(ModBlocks.BELOW_BLOCK.get(), RenderType.translucent());
-		
 		
 	}
 	

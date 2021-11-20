@@ -55,18 +55,14 @@ public class ModItems {
 	public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, DestriumMod.MODID);
 	
 	
-	
 	@SuppressWarnings("deprecation")
 	public static final Food AMAZONITEAPPLE = (new Food.Builder()).nutrition(20).saturationMod(2.6F).effect(new EffectInstance(Effects.HEAL, 1, 10), 1.0F).effect(new EffectInstance(Effects.DAMAGE_BOOST, 800, 3), 1.0F).effect(new EffectInstance(Effects.DAMAGE_RESISTANCE, 24000, 3), 1.0F).effect(new EffectInstance(Effects.HEALTH_BOOST, 12000, 4), 1.0F).effect(new EffectInstance(Effects.REGENERATION, 3000, 4), 1.0F).effect(new EffectInstance(Effects.ABSORPTION, 12000, 9), 1.0F).alwaysEat().build();
 	@SuppressWarnings("deprecation")
 	public static final Food DESTRIUMAPPLE = (new Food.Builder()).nutrition(10).saturationMod(1.3F).effect(new EffectInstance(Effects.HEAL, 1, 5), 1.0F).effect(new EffectInstance(Effects.DAMAGE_BOOST, 400, 2), 1.0F).effect(new EffectInstance(Effects.DAMAGE_RESISTANCE, 12000, 1), 1.0F).effect(new EffectInstance(Effects.HEALTH_BOOST, 6000, 1), 1.0F).effect(new EffectInstance(Effects.REGENERATION, 900, 2), 1.0F).effect(new EffectInstance(Effects.ABSORPTION, 6000, 4), 1.0F).alwaysEat().build();
 	
-	
-	
 	public static final RegistryObject<Item> DESTRIUM_APPLE = ITEMS.register("destrium_apple", () -> new DestriumApple(new Item.Properties().tab(DestriumMod.foodTab).rarity(Rarity.create("destrium", TextFormatting.DARK_GREEN)).food(ModItems.DESTRIUMAPPLE).fireResistant()));
 	public static final RegistryObject<Item> AMAZONITE_APPLE = ITEMS.register("amazonite_apple", () -> new AmazoniteApple(new Item.Properties().tab(DestriumMod.foodTab).rarity(Rarity.create("amazonite", TextFormatting.DARK_BLUE)).food(ModItems.AMAZONITEAPPLE).fireResistant()));
 
-	
 	
 	public static final RegistryObject<Item> AMAZONITE_CRUMB = ITEMS.register("amazonite_crumb", () -> new AmazoniteCrumb(new Item.Properties().tab(DestriumMod.ItemTab).rarity(Rarity.create("amazonite", TextFormatting.DARK_BLUE)).fireResistant()));
 	public static final RegistryObject<Item> AMAZONITE_DUST = ITEMS.register("amazonite_dust", () -> new AmazoniteDust(new Item.Properties().tab(DestriumMod.ItemTab).rarity(Rarity.create("amazonite", TextFormatting.DARK_BLUE)).fireResistant()));
@@ -79,11 +75,9 @@ public class ModItems {
 	public static final RegistryObject<Item> ARGONIDE_INGOT = ITEMS.register("argonide_ingot", () -> new ArgonideIngot(new Item.Properties().tab(DestriumMod.ItemTab).rarity(Rarity.create("argonide", TextFormatting.GOLD)).fireResistant()));
 	
 	
-	
 	public static final RegistryObject<Item> AMAZONITE_STICK = ITEMS.register("amazonite_stick", () -> new AmazoniteStick(new Item.Properties().tab(DestriumMod.ItemTab).rarity(Rarity.create("amazonite", TextFormatting.DARK_BLUE)).fireResistant()));
 	public static final RegistryObject<Item> DESTRIUM_STICK = ITEMS.register("destrium_stick", () -> new DestriumStick(new Item.Properties().tab(DestriumMod.ItemTab).rarity(Rarity.create("destrium", TextFormatting.DARK_GREEN)).fireResistant()));
 	public static final RegistryObject<Item> ARGONIDE_STICK = ITEMS.register("argonide_stick", () -> new ArgonideStick(new Item.Properties().tab(DestriumMod.ItemTab).rarity(Rarity.create("argonide", TextFormatting.GOLD)).fireResistant()));
-	
 	
 	
 	public static final RegistryObject<Item> AMAZONITE_SWORD = ITEMS.register("amazonite_sword", () -> new SwordItem(DestriumModItemTiers.AMAZONITE, 2, -0.8f, new Item.Properties().tab(DestriumMod.toolTab).rarity(Rarity.create("amazonite", TextFormatting.DARK_BLUE)).fireResistant()));
@@ -104,9 +98,7 @@ public class ModItems {
 	public static final RegistryObject<Item> ARGONIDE_SHOVEL = ITEMS.register("argonide_shovel", () -> new ShovelItem(DestriumModItemTiers.ARGONIDE, 1, -3f, new Item.Properties().tab(DestriumMod.toolTab).rarity(Rarity.create("argonide", TextFormatting.GOLD)).fireResistant()));
 	public static final RegistryObject<Item> ARGONIDE_HOES = ITEMS.register("argonide_hoes", () -> new HoeItem(DestriumModItemTiers.ARGONIDE, -5, 0f, new Item.Properties().tab(DestriumMod.toolTab).rarity(Rarity.create("argonide", TextFormatting.GOLD)).fireResistant()));
 	
-	
 	public static final RegistryObject<Item> SPAWNERS_PICKAXE = ITEMS.register("spawners_pickaxe", () -> new SpawnersPickaxe(DestriumModItemTiers.SPAWNERS, -1, -2.8f, new Item.Properties().tab(DestriumMod.toolTab).rarity(Rarity.create("spawners", TextFormatting.DARK_RED)).fireResistant()));
-	
 	
 	
 	public static final RegistryObject<Item> AMAZONITE_HELMET = ITEMS.register("amazonite_helmet", () -> new AmazoniteArmorHelmet(ModArmorMaterial.AMAZONITE, EquipmentSlotType.HEAD, new Item.Properties().tab(DestriumMod.toolTab).rarity(Rarity.create("amazonite", TextFormatting.DARK_BLUE)).fireResistant()));
@@ -125,12 +117,10 @@ public class ModItems {
 	public static final RegistryObject<Item> ARGONIDE_BOOTS = ITEMS.register("argonide_boots", () -> new ArgonideArmorBoots(ModArmorMaterial.ARGONIDE, EquipmentSlotType.FEET, new Item.Properties().tab(DestriumMod.toolTab).rarity(Rarity.create("argonide", TextFormatting.GOLD)).fireResistant()));
 	
 	
-	
 	public static final RegistryObject<Item> DESTRIUM_SEEDS = ITEMS.register("destrium_seeds", () -> new BlockNamedItem(ModBlocks.DESTRIUM_PLANTS.get(), (new Item.Properties().rarity(Rarity.create("destrium", TextFormatting.DARK_GREEN)).fireResistant())));
 	public static final RegistryObject<Item> AMAZONITE_SEEDS = ITEMS.register("amazonite_seeds", () -> new BlockNamedItem(ModBlocks.AMAZONITE_PLANTS.get(), (new Item.Properties().rarity(Rarity.create("amazonite", TextFormatting.DARK_BLUE)).fireResistant())));
 	public static final RegistryObject<Item> XP_SEEDS = ITEMS.register("xp_seeds", () -> new BlockNamedItem(ModBlocks.XP_PLANTS.get(), (new Item.Properties().rarity(Rarity.create("xp", TextFormatting.DARK_PURPLE)).fireResistant())));
 
-	
 	
 	public static final RegistryObject<Item> GOLDEN_CORE = ITEMS.register("golden_core", () -> new GoldenCore(new Item.Properties().tab(DestriumMod.ItemTab).rarity(Rarity.create("gold", TextFormatting.GOLD))));
 	public static final RegistryObject<Item> COMPRESSED_GOLDEN = ITEMS.register("compressed_golden", () -> new CompressedGolden(new Item.Properties().tab(DestriumMod.ItemTab).rarity(Rarity.create("gold", TextFormatting.GOLD))));
@@ -143,8 +133,6 @@ public class ModItems {
 	public static final RegistryObject<Item> ARGONIDE_PLATE = ITEMS.register("argonide_plate", () -> new Item(new Item.Properties().tab(DestriumMod.ItemTab).rarity(Rarity.create("argonide", TextFormatting.GOLD))));	
 	public static final RegistryObject<Item> DESTRIUM_PLATE = ITEMS.register("destrium_plate", () -> new Item(new Item.Properties().tab(DestriumMod.ItemTab).rarity(Rarity.create("destrium", TextFormatting.DARK_GREEN))));	
 	public static final RegistryObject<Item> AMAZONITE_PLATE = ITEMS.register("amazonite_plate", () -> new Item(new Item.Properties().tab(DestriumMod.ItemTab).rarity(Rarity.create("amazonite", TextFormatting.DARK_BLUE))));	
-	
-	
 	
 }
 
