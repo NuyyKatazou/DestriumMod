@@ -1,9 +1,10 @@
 package fr.amazonia.destriummod;
 
-
-
 import fr.amazonia.destriummod.init.ModBlocks;
+import fr.amazonia.destriummod.init.ModFluids;
 import fr.amazonia.destriummod.init.ModItems;
+import net.minecraft.client.MainWindow;
+import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.RenderTypeLookup;
 import net.minecraft.item.ItemGroup;
@@ -11,6 +12,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.eventbus.api.IEventBus;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
@@ -20,7 +22,6 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 
 @Mod(DestriumMod.MODID)
 public class DestriumMod {
-	
 	public static final String MODID = "destriummod";
 	
 	public static final ItemGroup ItemTab = new ItemGroup(MODID + ".itemtab") {
@@ -51,6 +52,7 @@ public class DestriumMod {
     		return new ItemStack(ModItems.AMAZONITE_APPLE.get());
     	}
     };
+ 
 	
 	public DestriumMod() {
 		
@@ -59,16 +61,18 @@ public class DestriumMod {
 		FMLJavaModLoadingContext.get().getModEventBus().addListener(this::serverSetup);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 		
-		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
-		ModItems.ITEMS.register(bus);
-		ModBlocks.BLOCKS.register(bus);
+		IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
+		ModItems.ITEMS.register(eventBus);
+		ModBlocks.BLOCKS.register(eventBus);
+		ModFluids.FLUIDS.register(eventBus);
 		
 	}
 	
 	private void setup(FMLCommonSetupEvent e) {
 		
 	}
-
+	
+	
 	private void clientSetup(FMLClientSetupEvent e) {
 		
 		RenderTypeLookup.setRenderLayer(ModBlocks.AMAZONITE_PLANTS.get(), RenderType.translucent());
@@ -77,10 +81,19 @@ public class DestriumMod {
 		
 		RenderTypeLookup.setRenderLayer(ModBlocks.BELOW_BLOCK.get(), RenderType.translucent());
 		
+
 	}
-	
+	@SubscribeEvent
+	public void ClientRequest(final FMLClientSetupEvent e){
+		e.getMinecraftSupplier().get().execute(this::updateTitle);
+	}
 	private void serverSetup(FMLDedicatedServerSetupEvent e) {
 		
 	}
-
+	private void updateTitle(){
+		final MainWindow window = Minecraft.getInstance().getWindow();
+		window.setTitle("Minecraft Modded - 1.16.5");
+		
+		
+	}
 }
