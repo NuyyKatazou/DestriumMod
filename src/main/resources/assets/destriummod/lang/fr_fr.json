@@ -74,6 +74,9 @@
   "item.destriummod.amazonite_plate": "Plaque d'Amazonite",
   
   
+  "item.destriummod.poison_water_bucket": "Seaux d'Eau Empoisonné",
+  
+  
   
   
   "block.destriummod.amazonite_block": "Bloc d'Amazonite",
@@ -140,6 +143,11 @@
   
   
   "block.destriummod.below_block": "Bloc De l'En Dessous",
+  
+  
+  
+  
+  "fluid.destriummod.poison_water": "Eau Empoisonné",
   
   
   

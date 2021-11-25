@@ -18,11 +18,14 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLDedicatedServerSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 
 @Mod(DestriumMod.MODID)
 public class DestriumMod {
 	public static final String MODID = "destriummod";
+	public static final Logger LOGGER = LogManager.getLogger(MODID);
 	
 	public static final ItemGroup ItemTab = new ItemGroup(MODID + ".itemtab") {
         @Override
@@ -65,7 +68,7 @@ public class DestriumMod {
 		ModItems.ITEMS.register(eventBus);
 		ModBlocks.BLOCKS.register(eventBus);
 		ModFluids.FLUIDS.register(eventBus);
-		
+	
 	}
 	
 	private void setup(FMLCommonSetupEvent e) {
@@ -81,7 +84,9 @@ public class DestriumMod {
 		
 		RenderTypeLookup.setRenderLayer(ModBlocks.BELOW_BLOCK.get(), RenderType.translucent());
 		
-
+		RenderTypeLookup.setRenderLayer(ModFluids.POISON_WATER_FLUID.get(), RenderType.translucent());
+		RenderTypeLookup.setRenderLayer(ModFluids.POISON_WATER_BLOCK.get(), RenderType.translucent());
+		RenderTypeLookup.setRenderLayer(ModFluids.POISON_WATER_FLOWING.get(), RenderType.translucent());
 	}
 	@SubscribeEvent
 	public void ClientRequest(final FMLClientSetupEvent e){
@@ -96,4 +101,5 @@ public class DestriumMod {
 		
 		
 	}
+
 }

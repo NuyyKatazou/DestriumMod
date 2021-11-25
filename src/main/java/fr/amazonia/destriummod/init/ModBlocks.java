@@ -94,6 +94,5 @@ public class ModBlocks {
 		RegistryObject<Block> block = BLOCKS.register(name, supplier);
 		ModItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties().tab(DestriumMod.BlockTab)));
 		return block;
-		
 	}
 }

@@ -41,7 +41,6 @@ minecraft {
     runs {
         client {
             workingDirectory project.file('run')
-
             // Recommended logging data for a userdev environment
             // The markers can be changed as needed. 
             // "SCAN": For mods scan.
