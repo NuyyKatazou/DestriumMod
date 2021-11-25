@@ -137,6 +137,7 @@ public class ModItems {
 	
 	
 	public static final RegistryObject<Item> POISON_WATER_BUCKET = ITEMS.register("poison_water_bucket", () -> new BucketItem(() -> ModFluids.POISON_WATER_FLUID.get(), new Item.Properties().stacksTo(1).tab(DestriumMod.ItemTab)));	
+	public static final RegistryObject<Item> POISON_STAR = ITEMS.register("poison_star", () -> new Item(new Item.Properties().tab(DestriumMod.ItemTab).rarity(Rarity.create("Poison", TextFormatting.RED))));	
 	
 }
 
