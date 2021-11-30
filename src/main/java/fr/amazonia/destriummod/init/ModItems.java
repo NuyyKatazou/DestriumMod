@@ -1,6 +1,7 @@
 package fr.amazonia.destriummod.init;
 
 import fr.amazonia.destriummod.DestriumMod;
+import fr.amazonia.destriummod.item.InfinityWaterBucketItem;
 import fr.amazonia.destriummod.item.armor.AmazoniteArmorBoots;
 import fr.amazonia.destriummod.item.armor.AmazoniteArmorChestPlate;
 import fr.amazonia.destriummod.item.armor.AmazoniteArmorHelmet;
@@ -32,6 +33,7 @@ import fr.amazonia.destriummod.item.stick.DestriumStick;
 import fr.amazonia.destriummod.item.tools.SpawnersPickaxe;
 import fr.amazonia.destriummod.utils.DestriumModItemTiers;
 import fr.amazonia.destriummod.utils.ModArmorMaterial;
+import net.minecraft.fluid.Fluids;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.AxeItem;
 import net.minecraft.item.BlockNamedItem;
@@ -138,6 +140,8 @@ public class ModItems {
 	
 	public static final RegistryObject<Item> POISON_WATER_BUCKET = ITEMS.register("poison_water_bucket", () -> new BucketItem(() -> ModFluids.POISON_WATER_FLUID.get(), new Item.Properties().stacksTo(1).tab(DestriumMod.ItemTab)));	
 	public static final RegistryObject<Item> POISON_STAR = ITEMS.register("poison_star", () -> new Item(new Item.Properties().tab(DestriumMod.ItemTab).rarity(Rarity.create("Poison", TextFormatting.RED))));	
+	
+	public static final RegistryObject<Item> INFINITY_WATER_BUCKET = ITEMS.register("infinity_water_bucket", () -> new InfinityWaterBucketItem(() -> Fluids.WATER, new Item.Properties().stacksTo(1).tab(DestriumMod.ItemTab)));	
 	
 }
 
