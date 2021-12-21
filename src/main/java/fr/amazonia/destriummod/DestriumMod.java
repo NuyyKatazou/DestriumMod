@@ -82,11 +82,17 @@ public class DestriumMod {
 		RenderTypeLookup.setRenderLayer(ModBlocks.DESTRIUM_PLANTS.get(), RenderType.translucent());
 		RenderTypeLookup.setRenderLayer(ModBlocks.XP_PLANTS.get(), RenderType.translucent());
 		
+		
 		RenderTypeLookup.setRenderLayer(ModBlocks.BELOW_BLOCK.get(), RenderType.translucent());
+		
 		
 		RenderTypeLookup.setRenderLayer(ModFluids.POISON_WATER_FLUID.get(), RenderType.translucent());
 		RenderTypeLookup.setRenderLayer(ModFluids.POISON_WATER_BLOCK.get(), RenderType.translucent());
 		RenderTypeLookup.setRenderLayer(ModFluids.POISON_WATER_FLOWING.get(), RenderType.translucent());
+		
+		RenderTypeLookup.setRenderLayer(ModFluids.RESISTANCE_LAVA_FLUID.get(), RenderType.translucent());
+		RenderTypeLookup.setRenderLayer(ModFluids.RESISTANCE_LAVA_BLOCK.get(), RenderType.translucent());
+		RenderTypeLookup.setRenderLayer(ModFluids.RESISTANCE_LAVA_FLOWING.get(), RenderType.translucent());
 	}
 	@SubscribeEvent
 	public void ClientRequest(final FMLClientSetupEvent e){

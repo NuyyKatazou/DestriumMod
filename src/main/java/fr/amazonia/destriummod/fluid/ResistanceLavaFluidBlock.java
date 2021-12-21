@@ -13,21 +13,20 @@ import net.minecraft.fluid.FluidState;
 import net.minecraft.potion.EffectInstance;
 import net.minecraft.potion.Effects;
 import net.minecraft.tags.FluidTags;
-import net.minecraft.util.DamageSource;
 import net.minecraft.util.Direction;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import net.minecraftforge.event.entity.living.LivingFallEvent;
 
-public class PoisonWaterFluidBlock extends FlowingFluidBlock {
+public class ResistanceLavaFluidBlock extends FlowingFluidBlock {
 
-	public PoisonWaterFluidBlock(Supplier<? extends FlowingFluid> supplier, Properties p_i48368_1_) {
+	public ResistanceLavaFluidBlock(Supplier<? extends FlowingFluid> supplier, Properties p_i48368_1_) {
 		super(supplier, p_i48368_1_);
 	}
 
 	public void entityInside(BlockState p_196262_1_, World p_196262_2_, BlockPos p_196262_3_, Entity p_196262_4_) {
-	      p_196262_4_.hurt(DamageSource.WITHER, 1F);
 	      ((LivingEntity) p_196262_4_).addEffect(new EffectInstance(Effects.MOVEMENT_SLOWDOWN, 1, 2, false, false, false));
+	      ((LivingEntity) p_196262_4_).addEffect(new EffectInstance(Effects.REGENERATION, 1, 2, false, false, false));
 	      livingFallEvent(null);
 	     }
 	
