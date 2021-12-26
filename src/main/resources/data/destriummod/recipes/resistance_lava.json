@@ -1,0 +1,26 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " d ",
+        "bab",
+        " c "
+    ],
+    "key": {
+        "a": {
+            "item": "minecraft:lava_bucket"
+        },
+		"c": {
+            "item": "minecraft:golden_apple"
+        },
+		"d": {
+            "item": "destriummod:resistance_star"
+        },
+        "b": {
+            "item": "destriummod:argonide_ingot"
+        }
+    },
+    "result": {
+        "item": "destriummod:resistance_lava_bucket",
+        "count": 1
+    }
+}
