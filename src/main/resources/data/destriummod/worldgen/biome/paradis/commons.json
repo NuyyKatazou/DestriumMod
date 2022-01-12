@@ -1,0 +1,63 @@
+{
+  "surface_builder": "destriummod:paradis/commons",
+  "depth": 0.1,
+  "scale": 0.4,
+  "temperature": 0.95,
+  "downfall": 0.1,
+  "precipitation": "none",
+  "category": "none",
+  "player_spawn_friendly": true,
+  "effects": {
+    "sky_color": 16777215,
+    "fog_color": 16777215,
+    "water_color": 16777215,
+    "water_fog_color": 16777215,
+    "grass_color": 16777215,
+    "foliage_color": 16777215,
+    "ambient_sound": "minecraft:ambient.nether_wastes.loop",
+    "mood_sound": {
+      "sound": "minecraft:ambient.cave",
+      "tick_delay": 800,
+      "block_search_extent": 8,
+      "offset": 2
+    }
+  },
+  "starts": [
+    ""
+  ],
+  "spawners": {
+    "water_ambient": [],
+    "ambient": [],
+    "misc": [],
+    "water_creature": [],
+    "creature": []
+  },
+  "spawn_costs": {},
+  "carvers": {
+    "air": [
+      "minecraft:cave",
+      "minecraft:canyon"
+    ]
+  },
+  "features": [
+    [],
+    [
+      "minecraft:lake_water",
+      "destriummod:forest_rock2d",
+      "destriummod:patch_fire0_dorm",
+      "destriummod:marker_tree_dorm3",
+      "destriummod:marker_tree_dorm2",
+      "destriummod:marker_tree_dorm"
+    ],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [
+      "minecraft:freeze_top_layer"
+    ]
+  ]
+}

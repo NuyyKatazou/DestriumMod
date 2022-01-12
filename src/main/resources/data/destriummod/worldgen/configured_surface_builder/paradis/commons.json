@@ -1,0 +1,14 @@
+{
+  "config": {
+    "top_material": {
+      "Name": "destriummod:cloud"
+    },
+    "under_material": {
+      "Name": "destriummod:cracked_cloud"
+    },
+    "underwater_material": {
+      "Name": "destriummod:cloud"
+    }
+  },
+  "type": "minecraft:default"
+}

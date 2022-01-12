@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:decorated",
+  "config": {
+    "decorator": {
+      "type": "minecraft:count_multilayer",
+      "config": {
+        "count": 1
+      }
+    },
+    "feature": {
+      "type": "minecraft:huge_fungus",
+      "config": {
+        "hat_state": {
+          "Name": "minecraft:air"
+        },
+        "decor_state": {
+          "Name": "destriummod:cloud2"
+        },
+        "stem_state": {
+          "Name": "destriummod:cloud",
+          "Properties": {
+            "axis": "y"
+          }
+        },
+        "valid_base_block": {
+          "Name": "destriummod:cracked_cloud"
+        },
+        "planted": false
+      }
+    }
+  }
+}

@@ -3,9 +3,9 @@ package fr.amazonia.destriummod.init;
 import java.util.function.Supplier;
 
 import fr.amazonia.destriummod.DestriumMod;
-import fr.amazonia.destriummod.block.Plants.AmazonitePlants;
-import fr.amazonia.destriummod.block.Plants.DestriumPlants;
-import fr.amazonia.destriummod.block.Plants.XpPlants;
+import fr.amazonia.destriummod.block.plants.AmazonitePlants;
+import fr.amazonia.destriummod.block.plants.DestriumPlants;
+import fr.amazonia.destriummod.block.plants.XpPlants;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.SoundType;

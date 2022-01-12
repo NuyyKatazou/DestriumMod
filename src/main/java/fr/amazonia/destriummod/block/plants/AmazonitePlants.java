@@ -1,4 +1,4 @@
-package fr.amazonia.destriummod.block.Plants;
+package fr.amazonia.destriummod.block.plants;
 
 import java.util.Random;
 

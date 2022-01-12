@@ -1,0 +1,16 @@
+{
+  "name": "destriummod:paradis",
+  "ultrawarm": false,
+  "natural": true,
+  "piglin_safe": true,
+  "respawn_anchor_works": true,
+  "bed_works": true,
+  "has_raids": false,
+  "has_skylight": true,
+  "has_ceiling": false,
+  "coordinate_scale": 0.01,
+  "ambient_light": 1,
+  "fixed_time": 800,
+  "logical_height": 256,
+  "infiniburn": "minecraft:infiniburn_end"
+}
