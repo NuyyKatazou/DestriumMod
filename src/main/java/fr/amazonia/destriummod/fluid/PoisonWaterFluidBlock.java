@@ -7,12 +7,9 @@ import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.FlowingFluidBlock;
 import net.minecraft.entity.Entity;
-import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.fluid.FlowingFluid;
 import net.minecraft.fluid.FluidState;
-import net.minecraft.potion.EffectInstance;
-import net.minecraft.potion.Effects;
 import net.minecraft.tags.FluidTags;
 import net.minecraft.util.DamageSource;
 import net.minecraft.util.Direction;
@@ -28,7 +25,6 @@ public class PoisonWaterFluidBlock extends FlowingFluidBlock {
 	public void entityInside(BlockState p_196262_1_, World p_196262_2_, BlockPos p_196262_3_, Entity p_196262_4_, PlayerEntity p_77659_2_) {
 	    if (p_77659_2_ != null)  
 		p_196262_4_.hurt(DamageSource.WITHER, 1F);
-	      ((LivingEntity) p_196262_4_).addEffect(new EffectInstance(Effects.MOVEMENT_SLOWDOWN, 1, 2, false, false, false));
 	     }
 	
 
