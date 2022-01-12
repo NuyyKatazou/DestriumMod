@@ -9,6 +9,7 @@ import net.minecraft.block.Blocks;
 import net.minecraft.block.FlowingFluidBlock;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.fluid.FlowingFluid;
 import net.minecraft.fluid.FluidState;
 import net.minecraft.potion.EffectInstance;
@@ -17,7 +18,6 @@ import net.minecraft.tags.FluidTags;
 import net.minecraft.util.Direction;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
-import net.minecraftforge.event.entity.living.LivingFallEvent;
 
 public class ResistanceLavaFluidBlock extends FlowingFluidBlock {
 
@@ -25,14 +25,11 @@ public class ResistanceLavaFluidBlock extends FlowingFluidBlock {
 		super(supplier, p_i48368_1_);
 	}
 
-	public void entityInside(BlockState p_196262_1_, World p_196262_2_, BlockPos p_196262_3_, Entity p_196262_4_) {
+	public void entityInside(BlockState p_196262_1_, World p_196262_2_, BlockPos p_196262_3_, Entity p_196262_4_, PlayerEntity p_77659_2_) {
+		if (p_77659_2_ != null)
 	      ((LivingEntity) p_196262_4_).addEffect(new EffectInstance(Effects.REGENERATION, 100, 200, false, false, false));
-	      livingFallEvent(null);
 	     }
 	
-	public static void livingFallEvent(LivingFallEvent event) {
-
-    }
 
 	@Override
     public void neighborChanged(BlockState state, World world, BlockPos pos, Block block, BlockPos fromPos, boolean notify) {
