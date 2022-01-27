@@ -5,7 +5,6 @@ import java.util.function.Supplier;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.tags.FluidTags;
-import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.Entity;
@@ -26,8 +25,7 @@ public class ResistanceLavaFluidBlock extends LiquidBlock {
 
 	public void entityInside(BlockState p_196262_1_, Level p_196262_2_, BlockPos p_196262_3_, Entity p_196262_4_, Player p_77659_2_) {
 		if (p_77659_2_ != null)  
-		  p_196262_4_.hurt(DamageSource.WITHER, 1F);
-	      ((LivingEntity) p_196262_4_).addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 1, 2, false, false, false));
+	      ((LivingEntity) p_196262_4_).addEffect(new MobEffectInstance(MobEffects.REGENERATION, 100, 200, false, false, false));
 	     }
 	
 
