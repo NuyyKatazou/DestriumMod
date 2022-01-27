@@ -1,0 +1,229 @@
+{
+  "noise_caves_enabled": true,
+  "deepslate_enabled": false,
+  "ore_veins_enabled": false,
+  "noodle_caves_enabled": true,
+  "aquifers_enabled": false,
+  "bedrock_roof_position": 511,
+  "bedrock_floor_position": 1,
+  "sea_level": 115,
+  "disable_mob_generation": false,
+  "structures": {
+    "structures": {
+      "minecraft:ruined_portal": {
+        "spacing": 5,
+        "separation": 4,
+        "salt": 30084232
+      },
+      "minecraft:bastion_remnant": {
+        "spacing": 13,
+        "separation": 10,
+        "salt": 30084232
+      }
+    }
+  },
+  "noise": {
+    "amplified": true,
+    "bottom_slide": {
+      "target": -0.234375,
+      "size": 0,
+      "offset": 0
+    },
+    "size_horizontal": 4,
+    "size_vertical": 1,
+    "min_y": 0,
+    "height": 512,
+    "sampling": {
+      "xz_scale": 2,
+      "y_scale": 5,
+      "xz_factor": 280,
+      "y_factor": 80
+    },
+    "top_slide": {
+      "target": -0.078125,
+      "size": 3,
+      "offset": 0
+    },
+    "terrain_shaper": {
+      "offset": 0,
+      "factor": 0,
+      "jaggedness": 0.5
+    }
+  },
+  "default_block": {
+    "Name": "destriummod:cloud"
+  },
+  "default_fluid": {
+    "Properties": {
+      "level": "0"
+    },
+    "Name": "minecraft:air"
+  },
+  "legacy_random_source": false,
+  "surface_rule": {
+    "type": "minecraft:sequence",
+    "sequence": [
+    	{
+        "if_true": {
+          "random_name": "minecraft:bedrock_floor",
+          "true_at_and_below": {
+            "above_bottom": 0
+          },
+          "false_at_and_above": {
+            "above_bottom": 125
+          },
+          "type": "minecraft:vertical_gradient"
+        },
+        "then_run": {
+          "result_state": {
+            "Name": "destriummod:cloud"
+          },
+          "type": "minecraft:block"
+        },
+        "type": "minecraft:condition"
+      },
+      {
+        "if_true": {
+          "invert": {
+            "random_name": "minecraft:bedrock_roof",
+            "true_at_and_below": {
+              "below_top": 15
+            },
+            "false_at_and_above": {
+              "below_top": 0
+            },
+            "type": "minecraft:vertical_gradient"
+          },
+          "type": "minecraft:not"
+        },
+        "then_run": {
+          "result_state": {
+            "Name": "destriummod:cloud"
+          },
+          "type": "minecraft:block"
+        },
+        "type": "minecraft:condition"
+      },
+      {
+        "type": "minecraft:condition",
+        "if_true": {
+          "type": "minecraft:biome",
+          "biome_is": [
+            "destriummod:paradis/barrens"
+          ]
+        },
+        "then_run": {
+          "type": "minecraft:sequence",
+          "sequence": [
+            {
+              "type": "minecraft:condition",
+              "if_true": {
+                "type": "minecraft:stone_depth",
+                "offset": 0,
+                "surface_type": "floor",
+                "add_surface_depth": false,
+                "add_surface_secondary_depth": false
+              },
+              "then_run": {
+                "type": "minecraft:block",
+                "result_state": {
+                  "Name": "destriummod:cloud"
+                }
+              }
+            },
+            {
+              "type": "minecraft:condition",
+              "if_true": {
+                "type": "minecraft:stone_depth",
+                "offset": 1,
+                "surface_type": "floor",
+                "add_surface_depth": false,
+                "add_surface_secondary_depth": false
+              },
+              "then_run": {
+                "type": "minecraft:block",
+                "result_state": {
+                  "Name": "destriummod:cloud"
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "type": "minecraft:condition",
+        "if_true": {
+          "type": "minecraft:biome",
+          "biome_is": [
+            "destriummod:paradis/commons"
+          ]
+        },
+        "then_run": {
+          "type": "minecraft:sequence",
+          "sequence": [
+            {
+              "type": "minecraft:condition",
+              "if_true": {
+                "type": "minecraft:stone_depth",
+                "offset": 0,
+                "surface_type": "floor",
+                "add_surface_depth": false,
+                "add_surface_secondary_depth": false
+              },
+              "then_run": {
+                "type": "minecraft:block",
+                "result_state": {
+                  "Name": "destriummod:cloud"
+                }
+              }
+            },
+            {
+              "type": "minecraft:condition",
+              "if_true": {
+                "type": "minecraft:stone_depth",
+                "offset": 1,
+                "surface_type": "floor",
+                "add_surface_depth": false,
+                "add_surface_secondary_depth": false
+              },
+              "then_run": {
+                "type": "minecraft:block",
+                "result_state": {
+                  "Name": "destriummod:cloud"
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "type": "minecraft:condition",
+        "if_true": {
+          "type": "minecraft:biome",
+          "biome_is": [
+            "destriummod:paradis/solitary"
+          ]
+        },
+        "then_run": {
+          "type": "minecraft:condition",
+          "if_true": {
+            "type": "minecraft:stone_depth",
+            "offset": 0,
+            "surface_type": "floor",
+            "add_surface_depth": false,
+            "add_surface_secondary_depth": false
+          },
+          "then_run": {
+            "type": "minecraft:block",
+            "result_state": {
+              "Name": "destriummod:cloud"
+            }
+          }
+        }
+      }
+    ]
+  }
+}
+
+
+

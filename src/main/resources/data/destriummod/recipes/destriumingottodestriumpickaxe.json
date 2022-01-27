@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "aaa",
+        " b ",
+        " b "
+    ],
+    "key": {
+        "a": {
+            "item": "destriummod:destrium_ingot"
+        },
+        "b": {
+            "item": "destriummod:destrium_stick"
+        }
+    },
+    "result": {
+        "item": "destriummod:destrium_pickaxe",
+        "count": 1
+    }
+}

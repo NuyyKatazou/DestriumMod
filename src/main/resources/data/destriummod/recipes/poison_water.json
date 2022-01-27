@@ -1,0 +1,26 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " d ",
+        "bab",
+        " c "
+    ],
+    "key": {
+        "a": {
+            "item": "minecraft:water_bucket"
+        },
+		"c": {
+            "item": "minecraft:poisonous_potato"
+        },
+		"d": {
+            "item": "destriummod:poison_star"
+        },
+        "b": {
+            "item": "destriummod:destrium_ingot"
+        }
+    },
+    "result": {
+        "item": "destriummod:poison_water_bucket",
+        "count": 1
+    }
+}

@@ -1,0 +1,15 @@
+{
+  "name": "sanctum_d_boss",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "location": "destriummod:sanctum_d_boss",
+        "processors": "destriummod:ruin",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}

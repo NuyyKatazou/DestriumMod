@@ -1,0 +1,42 @@
+{
+  "name": "sanctum_d_path",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 3,
+      "element": {
+        "location": "destriummod:sanctum_d_path3",
+        "processors": "destriummod:ruin",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 2,
+      "element": {
+        "location": "destriummod:sanctum_d_path2",
+        "processors": "destriummod:ruin",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "destriummod:sanctum_d_path1",
+        "processors": "destriummod:ruin",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 4,
+      "element": {
+        "location": "destriummod:sanctum_d_path",
+        "processors": "destriummod:ruin",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}

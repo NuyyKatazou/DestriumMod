@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "bbb",
+        "bab",
+        "bbb"
+    ],
+    "key": {
+        "a": {
+            "item": "minecraft:yellow_dye"
+        },
+        "b": {
+            "item": "destriummod:cloud"
+        }
+    },
+    "result": {
+        "item": "destriummod:yellow_cloud",
+        "count": 8
+    }
+}

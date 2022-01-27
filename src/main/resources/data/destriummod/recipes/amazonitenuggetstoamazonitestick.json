@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "a",
+        "b",
+        "a"
+    ],
+    "key": {
+        "a": {
+            "item": "destriummod:amazonite_nuggets"
+        },
+		"b": {
+            "item": "destriummod:destrium_stick"
+        }
+    },
+    "result": {
+        "item": "destriummod:amazonite_stick",
+        "count": 4
+    }
+}
