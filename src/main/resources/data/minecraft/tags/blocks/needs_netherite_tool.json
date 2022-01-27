@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "destriummod:destrium_block",
+	"destriummod:argonide_block",
+	"destriummod:destrium_ore",
+	"destriummod:argonide_ore",
+	"destriummod:cobblestone_compressed4",
+	"destriummod:cobblestone_compressed5",
+	"destriummod:dirt_compressed4",
+	"destriummod:dirt_compressed5"
+  ]
+}

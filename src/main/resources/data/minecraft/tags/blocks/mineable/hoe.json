@@ -1,0 +1,31 @@
+{
+	"replace": false,
+	"values": [
+		"destriummod:cloud",
+		"destriummod:blue_cloud",
+		"destriummod:black_cloud",
+		"destriummod:brown_cloud",
+		"destriummod:cyan_cloud",
+		"destriummod:dark_blue_cloud",
+		"destriummod:dark_gray_cloud",
+		"destriummod:dark_green_cloud",
+		"destriummod:dark_purple_cloud",
+		"destriummod:dark_red_cloud",
+		"destriummod:gray_cloud",
+		"destriummod:green_cloud",
+		"destriummod:light_blue_cloud",
+		"destriummod:light_gray_cloud",
+		"destriummod:light_red_cloud",
+		"destriummod:lime_cloud",
+		"destriummod:magenta_cloud",
+		"destriummod:orange_cloud",
+		"destriummod:pink_cloud",
+		"destriummod:purple_cloud",
+		"destriummod:red_cloud",
+		"destriummod:ultra_dark_blue_cloud",
+		"destriummod:yellow_cloud",
+		"destriummod:cracked_cloud",
+		"destriummod:cloud2",
+		"destriummod:cracked_argonide_ore"
+	]
+}

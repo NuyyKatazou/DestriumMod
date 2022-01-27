@@ -1,0 +1,23 @@
+{
+	"replace": false,
+	"values": [
+		"destriummod:amazonite_block",
+		"destriummod:fake_amazonite_block",
+		"destriummod:destrium_block",
+		"destriummod:argonide_block",
+		"destriummod:random_ore",
+		"destriummod:amazonite_ore",
+		"destriummod:destrium_ore",
+		"destriummod:argonide_ore",
+		"destriummod:cobblestone_compressed1",
+		"destriummod:cobblestone_compressed2",
+		"destriummod:cobblestone_compressed3",
+		"destriummod:cobblestone_compressed4",
+		"destriummod:cobblestone_compressed5",
+		"destriummod:cobblestone_compressed6",
+		"destriummod:cobblestone_compressed7",
+		"destriummod:cobblestone_compressed8",
+		"destriummod:amazonite_relique_block",
+		"destriummod:below_block"
+	]
+}

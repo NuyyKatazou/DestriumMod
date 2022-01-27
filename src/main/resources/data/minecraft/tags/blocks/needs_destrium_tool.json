@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "destriummod:amazonite_block",
+	"destriummod:fake_amazonite_block",
+	"destriummod:random_ore",
+	"destriummod:amazonite_ore",
+	"destriummod:cobblestone_compressed6",
+	"destriummod:amazonite_relique_block",
+	"destriummod:below_block"
+  ]
+}
