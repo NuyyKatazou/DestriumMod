@@ -61,8 +61,8 @@ public class ModBlocks {
 	public static final RegistryObject<Block> CRACKED_ARGONIDE_ORE = createBlock("cracked_argonide_ore", () -> new Block(AbstractBlock.Properties.of(Material.CLAY).harvestTool(ToolType.HOE).harvestLevel(3).strength(4f, 25f).requiresCorrectToolForDrops()));
 	
 	
-	public static final RegistryObject<Block> COBBLESTONE_COMPRESSED1 = createBlock("cobblestone_compressed1", () -> new Block(AbstractBlock.Properties.of(Material.STONE).harvestTool(ToolType.PICKAXE).harvestLevel(2).strength(3.0F, 6.5F).requiresCorrectToolForDrops()));
-	public static final RegistryObject<Block> COBBLESTONE_COMPRESSED2 = createBlock("cobblestone_compressed2", () -> new Block(AbstractBlock.Properties.of(Material.STONE).harvestTool(ToolType.PICKAXE).harvestLevel(3).strength(5.0F, 7.0F).requiresCorrectToolForDrops()));
+	public static final RegistryObject<Block> COBBLESTONE_COMPRESSED1 = createBlock("cobblestone_compressed1", () -> new Block(AbstractBlock.Properties.of(Material.STONE).harvestTool(ToolType.PICKAXE).harvestLevel(1).strength(3.0F, 6.5F).requiresCorrectToolForDrops()));
+	public static final RegistryObject<Block> COBBLESTONE_COMPRESSED2 = createBlock("cobblestone_compressed2", () -> new Block(AbstractBlock.Properties.of(Material.STONE).harvestTool(ToolType.PICKAXE).harvestLevel(2).strength(5.0F, 7.0F).requiresCorrectToolForDrops()));
 	public static final RegistryObject<Block> COBBLESTONE_COMPRESSED3 = createBlock("cobblestone_compressed3", () -> new Block(AbstractBlock.Properties.of(Material.STONE).harvestTool(ToolType.PICKAXE).harvestLevel(3).strength(8.0F, 9.0F).requiresCorrectToolForDrops()));
 	public static final RegistryObject<Block> COBBLESTONE_COMPRESSED4 = createBlock("cobblestone_compressed4", () -> new Block(AbstractBlock.Properties.of(Material.STONE).harvestTool(ToolType.PICKAXE).harvestLevel(4).strength(12.0F, 10.0F).requiresCorrectToolForDrops()));
 	public static final RegistryObject<Block> COBBLESTONE_COMPRESSED5 = createBlock("cobblestone_compressed5", () -> new Block(AbstractBlock.Properties.of(Material.STONE).harvestTool(ToolType.PICKAXE).harvestLevel(4).strength(20.0F, 14.0F).requiresCorrectToolForDrops()));
