@@ -26,7 +26,9 @@ import fr.amazonia.destriummod.item.ingot.ArgonideNuggets;
 import fr.amazonia.destriummod.item.ingot.CompressedGolden;
 import fr.amazonia.destriummod.item.ingot.DestriumIngot;
 import fr.amazonia.destriummod.item.ingot.DestriumNuggets;
+import fr.amazonia.destriummod.item.ingot.DiamondNuggets;
 import fr.amazonia.destriummod.item.ingot.GoldenCore;
+import fr.amazonia.destriummod.item.ingot.NetheriteNuggets;
 import fr.amazonia.destriummod.item.stick.AmazoniteStick;
 import fr.amazonia.destriummod.item.stick.ArgonideStick;
 import fr.amazonia.destriummod.item.stick.DestriumStick;
@@ -76,6 +78,9 @@ public class ModItems {
 	public static final RegistryObject<Item> DESTRIUM_INGOT = ITEMS.register("destrium_ingot", () -> new DestriumIngot(new Item.Properties().tab(DestriumMod.ItemTab).rarity(Rarity.create("destrium", TextFormatting.DARK_GREEN)).fireResistant()));
 	public static final RegistryObject<Item> ARGONIDE_NUGGETS = ITEMS.register("argonide_nuggets", () -> new ArgonideNuggets(new Item.Properties().tab(DestriumMod.ItemTab).rarity(Rarity.create("argonide", TextFormatting.GOLD)).fireResistant()));
 	public static final RegistryObject<Item> ARGONIDE_INGOT = ITEMS.register("argonide_ingot", () -> new ArgonideIngot(new Item.Properties().tab(DestriumMod.ItemTab).rarity(Rarity.create("argonide", TextFormatting.GOLD)).fireResistant()));
+	
+	public static final RegistryObject<Item> DIAMOND_NUGGETS = ITEMS.register("diamond_nuggets", () -> new DiamondNuggets(new Item.Properties().tab(DestriumMod.ItemTab).rarity(Rarity.create("diamond", TextFormatting.BLUE))));
+	public static final RegistryObject<Item> NETHERITE_NUGGETS = ITEMS.register("netherite_nuggets", () -> new NetheriteNuggets(new Item.Properties().tab(DestriumMod.ItemTab).rarity(Rarity.create("netherite", TextFormatting.DARK_GRAY))));
 	
 	
 	public static final RegistryObject<Item> AMAZONITE_STICK = ITEMS.register("amazonite_stick", () -> new AmazoniteStick(new Item.Properties().tab(DestriumMod.ItemTab).rarity(Rarity.create("amazonite", TextFormatting.DARK_BLUE)).fireResistant()));

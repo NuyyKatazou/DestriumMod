@@ -9,6 +9,9 @@
   "item.destriummod.argonide_ingot": "Lingot d'Argonide",
   "item.destriummod.argonide_nuggets": "Pépite d'Argonide",
   
+  "item.destriummod.diamond_nuggets": "Pépite de Diamants",
+  "item.destriummod.netherite_nuggets": "Pépite de Netherite",
+  
   
   "item.destriummod.amazonite_stick": "Stick En Amazonite",
   "item.destriummod.destrium_stick": "Stick En Destrium",
@@ -195,6 +198,9 @@
   "item.destriummod.argonide_ingot.desc2": "Destrium",
   "item.destriummod.argonide_ingot.desc3": ">> Argonide",
   "item.destriummod.argonide_nuggets.desc": "Utilisé pour craft le Lingot d'Argonide",
+  
+  "item.destriummod.diamond_nuggets.desc": "Utilisé pour craft un Diamants",
+  "item.destriummod.netherite_nuggets.desc": "Utilisé pour craft le Fragment de Netherite",
   
   
   "item.destriummod.amazonite_stick.desc": "Utilisé pour craft les Outils En Amazonite",
