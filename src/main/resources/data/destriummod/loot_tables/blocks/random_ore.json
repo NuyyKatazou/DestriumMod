@@ -124,6 +124,52 @@
                 {
                   "function": "minecraft:set_count",
                   "count": {
+                    "min": -15.0,
+                    "max": 4.0,
+                    "type": "minecraft:uniform"
+                  }
+                },
+                {
+                  "function": "minecraft:explosion_decay"
+                }
+              ],
+              "name": "destriummod:diamond_nuggets"
+            }
+          ]
+        }
+      ]
+    },
+	{
+	"rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "conditions": [
+                {
+                  "condition": "minecraft:match_tool",
+                  "predicate": {
+                    "enchantments": [
+                      {
+                        "enchantment": "minecraft:silk_touch",
+                        "levels": {
+                          "min": 1000
+                        }
+                      }
+                    ]
+                  }
+                }
+              ],
+              "name": "destriummod:random_ore"
+            },
+            {
+              "type": "minecraft:item",
+              "functions": [
+                {
+                  "function": "minecraft:set_count",
+                  "count": {
                     "min": -25.0,
                     "max": 6.0,
                     "type": "minecraft:uniform"
@@ -180,6 +226,52 @@
                 }
               ],
               "name": "minecraft:emerald"
+            }
+          ]
+        }
+      ]
+    },
+	{
+	"rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "conditions": [
+                {
+                  "condition": "minecraft:match_tool",
+                  "predicate": {
+                    "enchantments": [
+                      {
+                        "enchantment": "minecraft:silk_touch",
+                        "levels": {
+                          "min": 1000
+                        }
+                      }
+                    ]
+                  }
+                }
+              ],
+              "name": "destriummod:random_ore"
+            },
+            {
+              "type": "minecraft:item",
+              "functions": [
+                {
+                  "function": "minecraft:set_count",
+                  "count": {
+                    "min": -25.0,
+                    "max": 4.0,
+                    "type": "minecraft:uniform"
+                  }
+                },
+                {
+                  "function": "minecraft:explosion_decay"
+                }
+              ],
+              "name": "minecraft:netherite_scrap"
             }
           ]
         }
