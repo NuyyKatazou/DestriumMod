@@ -271,7 +271,7 @@
                   "function": "minecraft:explosion_decay"
                 }
               ],
-              "name": "minecraft:netherite_scrap"
+              "name": "destriummod:netherite_nuggets"
             }
           ]
         }
