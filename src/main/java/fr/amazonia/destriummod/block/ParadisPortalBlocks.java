@@ -9,19 +9,19 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.LogicalSide;
 import net.minecraftforge.fml.LogicalSidedProvider;
 
-public class Paradis_Tp extends Block{
+public class ParadisPortalBlocks extends Block{
 
 
-	public Paradis_Tp(Properties p_i48440_1_) {
+	public ParadisPortalBlocks(Properties p_i48440_1_) {
 		super(p_i48440_1_);
 	}
 	@SubscribeEvent
 	public static void PlayerRightClick(PlayerInteractEvent.RightClickBlock event) {
 		BlockState iblockstate = event.getWorld().getBlockState(event.getPos());
         Block block = iblockstate.getBlock();
-        if (block == ModBlocks.PARADIS_TP.get())
+        if (block == ModBlocks.PARADIS_PORTAL_BLOCK.get())
         {
-        	Paradis_Tp.onBlockActivated();
+        	ParadisPortalBlocks.onBlockActivated();
         }
 	}
 	public static void onBlockActivated() {

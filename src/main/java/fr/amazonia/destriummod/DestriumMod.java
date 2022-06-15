@@ -1,6 +1,6 @@
 package fr.amazonia.destriummod;
 
-import fr.amazonia.destriummod.block.Paradis_Tp;
+import fr.amazonia.destriummod.block.ParadisPortalBlocks;
 import fr.amazonia.destriummod.init.ModBlocks;
 import fr.amazonia.destriummod.init.ModFluids;
 import fr.amazonia.destriummod.init.ModItems;
@@ -67,7 +67,7 @@ public class DestriumMod {
 		FMLJavaModLoadingContext.get().getModEventBus().addListener(this::serverSetup);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 		
-		MinecraftForge.EVENT_BUS.addListener(EventPriority.HIGH, Paradis_Tp::PlayerRightClick);
+		MinecraftForge.EVENT_BUS.addListener(EventPriority.HIGH, ParadisPortalBlocks::PlayerRightClick);
 		
 		IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
 		ModItems.ITEMS.register(eventBus);
