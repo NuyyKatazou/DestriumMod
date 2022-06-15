@@ -4,7 +4,6 @@ import java.util.function.Supplier;
 
 import fr.amazonia.destriummod.DestriumMod;
 import fr.amazonia.destriummod.block.ParadisPortalBlocks;
-import fr.amazonia.destriummod.block.Paradis_Tp;
 import fr.amazonia.destriummod.block.plants.AmazonitePlants;
 import fr.amazonia.destriummod.block.plants.DestriumPlants;
 import fr.amazonia.destriummod.block.plants.XpPlants;
