@@ -3,6 +3,7 @@ package fr.amazonia.destriummod.init;
 import java.util.function.Supplier;
 
 import fr.amazonia.destriummod.DestriumMod;
+import fr.amazonia.destriummod.block.OverworldPortalBlocks;
 import fr.amazonia.destriummod.block.ParadisPortalBlocks;
 import fr.amazonia.destriummod.block.plants.AmazonitePlants;
 import fr.amazonia.destriummod.block.plants.DestriumPlants;
@@ -84,6 +85,7 @@ public class ModBlocks {
 	public static final RegistryObject<Block> BELOW_BLOCK = createBlock("below_block", () -> new Block(AbstractBlock.Properties.of(Material.GLASS).harvestTool(ToolType.PICKAXE).harvestLevel(5).strength(4.0F, 10.0F).requiresCorrectToolForDrops()));
 	
 	public static final RegistryObject<Block> PARADIS_PORTAL_BLOCK = createBlock("paradis_portal_block", () -> new ParadisPortalBlocks(AbstractBlock.Properties.of(Material.GLASS).harvestTool(ToolType.PICKAXE).harvestLevel(5).strength(4.0F, 10.0F).requiresCorrectToolForDrops()));
+	public static final RegistryObject<Block> OVERWORLD_PORTAL_BLOCK = createBlock("overworld_portal_block", () -> new OverworldPortalBlocks(AbstractBlock.Properties.of(Material.GLASS).harvestTool(ToolType.PICKAXE).harvestLevel(5).strength(4.0F, 10.0F).requiresCorrectToolForDrops()));
 	
 	
 	public static final RegistryObject<Block> AMAZONITE_PLANTS = createBlock("amazonite_plants", () -> new AmazonitePlants(AbstractBlock.Properties.of(Material.PLANT).instabreak().randomTicks().noCollission().sound(SoundType.CROP)));

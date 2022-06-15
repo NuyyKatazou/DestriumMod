@@ -1,9 +1,11 @@
 package fr.amazonia.destriummod;
 
+import fr.amazonia.destriummod.block.OverworldPortalBlocks;
 import fr.amazonia.destriummod.block.ParadisPortalBlocks;
 import fr.amazonia.destriummod.init.ModBlocks;
 import fr.amazonia.destriummod.init.ModFluids;
 import fr.amazonia.destriummod.init.ModItems;
+import fr.amazonia.destriummod.utils.HandlerEvent;
 import net.minecraft.client.MainWindow;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.RenderType;
@@ -68,6 +70,8 @@ public class DestriumMod {
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 		
 		MinecraftForge.EVENT_BUS.addListener(EventPriority.HIGH, ParadisPortalBlocks::PlayerRightClick);
+		MinecraftForge.EVENT_BUS.addListener(EventPriority.HIGH, OverworldPortalBlocks::PlayerRightClick);
+		
 		
 		IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
 		ModItems.ITEMS.register(eventBus);
@@ -77,7 +81,7 @@ public class DestriumMod {
 	}
 	
 	private void setup(FMLCommonSetupEvent e) {
-		
+		MinecraftForge.EVENT_BUS.register(new HandlerEvent());
 	}
 	
 	
