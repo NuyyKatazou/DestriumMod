@@ -28,7 +28,6 @@ public class ParadisPortalBlocks extends Block{
 			MinecraftServer source = LogicalSidedProvider.INSTANCE.get(LogicalSide.SERVER);
 			source.getCommands().performCommand(source.createCommandSourceStack(), "gamerule sendCommandFeedback false");
 	  		source.getCommands().performCommand(source.createCommandSourceStack(), "execute in destriummod:paradis run teleport @p 1 100 1");
-	  		
 	}
 
 	}
