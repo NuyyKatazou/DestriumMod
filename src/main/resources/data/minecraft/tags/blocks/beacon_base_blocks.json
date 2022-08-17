@@ -5,6 +5,9 @@
     "minecraft:emerald_block",
     "minecraft:diamond_block",
     "minecraft:gold_block",
-    "minecraft:iron_block"
+    "minecraft:iron_block",
+	"destriummod:argonide_block",
+	"destriummod:destrium_block",
+	"destriummod:amazonite_block"
   ]
 }
