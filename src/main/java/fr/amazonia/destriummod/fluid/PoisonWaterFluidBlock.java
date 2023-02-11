@@ -26,7 +26,6 @@ public class PoisonWaterFluidBlock extends FlowingFluidBlock {
 	    if (p_77659_2_ != null)  
 		p_196262_4_.hurt(DamageSource.WITHER, 1F);
 	     }
-	
 
 	@Override
     public void neighborChanged(BlockState state, World world, BlockPos pos, Block block, BlockPos fromPos, boolean notify) {

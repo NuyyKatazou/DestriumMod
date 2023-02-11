@@ -10,5 +10,4 @@ public class DestriumArmorHelmet extends ArmorItem {
 	public DestriumArmorHelmet(IArmorMaterial materialIn, EquipmentSlotType slot, Properties properties) {
 		super(materialIn, slot, properties);
 	}
-
 }

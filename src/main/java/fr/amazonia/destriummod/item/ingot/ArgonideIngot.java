@@ -24,4 +24,4 @@ public class ArgonideIngot extends Item{
 	      p_77624_3_.add(new TranslationTextComponent(this.getDescriptionId() + ".desc2").withStyle(TextFormatting.DARK_GREEN));
 	      p_77624_3_.add(new TranslationTextComponent(this.getDescriptionId() + ".desc3").withStyle(TextFormatting.GOLD).withStyle(TextFormatting.BOLD));
 	   }
-	   }
+}

@@ -29,7 +29,6 @@ public class ResistanceLavaFluidBlock extends FlowingFluidBlock {
 		if (p_77659_2_ != null)
 	      ((LivingEntity) p_196262_4_).addEffect(new EffectInstance(Effects.REGENERATION, 100, 200, false, false, false));
 	     }
-	
 
 	@Override
     public void neighborChanged(BlockState state, World world, BlockPos pos, Block block, BlockPos fromPos, boolean notify) {

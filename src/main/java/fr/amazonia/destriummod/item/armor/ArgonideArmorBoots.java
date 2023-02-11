@@ -9,6 +9,4 @@ public class ArgonideArmorBoots extends ArmorItem {
 	public ArgonideArmorBoots(IArmorMaterial materialIn, EquipmentSlotType slot, Properties properties) {
 		super(materialIn, slot, properties);
 	}
-
-
 }

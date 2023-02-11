@@ -35,9 +35,6 @@ public class InfinityWaterBucketItem extends BucketItem {
 	      this.fluidSupplier = p_i49025_1_.delegate;
 	   }
 
-	   /**
-	    * @param supplier A fluid supplier such as {@link net.minecraftforge.fml.RegistryObject<Fluid>}
-	    */
 	   public InfinityWaterBucketItem(java.util.function.Supplier<? extends Fluid> supplier, Item.Properties builder) {
 	      super(supplier, builder);
 	      this.content = null;

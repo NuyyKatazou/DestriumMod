@@ -30,7 +30,6 @@ public abstract class ResistanceLavaFluid extends ForgeFlowingFluid {
 
 	protected ResistanceLavaFluid(Properties properties) {
 		super(properties);
-		// TODO Auto-generated constructor stub
 	}
 
 	@Override

@@ -11,6 +11,4 @@ public class DestriumArmorBoots extends ArmorItem {
 	public DestriumArmorBoots(IArmorMaterial materialIn, EquipmentSlotType slot, Properties properties) {
 		super(materialIn, slot, properties);
 	}
-
-
 }

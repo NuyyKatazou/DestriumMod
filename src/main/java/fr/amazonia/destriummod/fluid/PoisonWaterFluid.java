@@ -29,7 +29,6 @@ public abstract class PoisonWaterFluid extends ForgeFlowingFluid {
 
 	protected PoisonWaterFluid(Properties properties) {
 		super(properties);
-		// TODO Auto-generated constructor stub
 	}
 
 	@Override

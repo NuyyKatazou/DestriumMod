@@ -19,8 +19,8 @@ public class SpawnersPickaxe extends PickaxeItem{
 
 	public SpawnersPickaxe(IItemTier p_i48478_1_, int p_i48478_2_, float p_i48478_3_, Properties p_i48478_4_) {
 		super(p_i48478_1_, p_i48478_2_, p_i48478_3_, p_i48478_4_);
-		// TODO Auto-generated constructor stub
 	}
+	
 	@OnlyIn(Dist.CLIENT)
 	   public void appendHoverText(ItemStack p_77624_1_, @Nullable World p_77624_2_, List<ITextComponent> p_77624_3_, ITooltipFlag p_77624_4_) {
 	      p_77624_3_.add(new TranslationTextComponent(this.getDescriptionId() + ".desc").withStyle(TextFormatting.DARK_AQUA));
