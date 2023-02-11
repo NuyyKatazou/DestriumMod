@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "aba",
+        "bcb",
+        "aba"
+    ],
+    "key": {
+        "a": {
+            "item": "destriummod:netherite_nuggets"
+        },
+        "b": {
+            "item": "destriummod:diamond_nuggets"
+        },
+		"c": {
+            "item": "destriummod:destrium_ingot"
+        }
+    },
+    "result": {
+        "item": "destriummod:paradis_portal_block",
+        "count": 1
+    }
+}
