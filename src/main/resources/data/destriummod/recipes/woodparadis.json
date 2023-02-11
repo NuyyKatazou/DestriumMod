@@ -1,15 +1,12 @@
 {
     "type": "minecraft:crafting_shaped",
     "pattern": [
-        "ab ",
-        "ba ",
+        "aa ",
+        "aa ",
         "   "
     ],
     "key": {
         "a": {
-            "item": "destriummod:cracked_cloud"
-        },
-		"b": {
             "item": "destriummod:cloud"
         }
     },
