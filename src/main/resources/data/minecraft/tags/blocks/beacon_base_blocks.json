@@ -8,6 +8,7 @@
     "minecraft:iron_block",
 	"destriummod:argonide_block",
 	"destriummod:destrium_block",
-	"destriummod:amazonite_block"
+	"destriummod:amazonite_block",
+	"destriummod:fake_amazonite_block"
   ]
 }
