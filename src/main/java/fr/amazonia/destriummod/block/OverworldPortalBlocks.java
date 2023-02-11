@@ -1,13 +1,16 @@
 package fr.amazonia.destriummod.block;
 
-import fr.amazonia.destriummod.init.ModBlocks;
+import fr.amazonia.destriummod.utils.OverworldTeleporter;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
+import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.server.MinecraftServer;
-import net.minecraftforge.event.entity.player.PlayerInteractEvent;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.fml.LogicalSide;
-import net.minecraftforge.fml.LogicalSidedProvider;
+import net.minecraft.util.ActionResultType;
+import net.minecraft.util.Hand;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.BlockRayTraceResult;
+import net.minecraft.world.World;
+import net.minecraft.world.server.ServerWorld;
 
 public class OverworldPortalBlocks extends Block{
 	
@@ -16,21 +19,25 @@ public class OverworldPortalBlocks extends Block{
 	public OverworldPortalBlocks(Properties p_i48440_1_) {
 		super(p_i48440_1_);
 	}
-	@SubscribeEvent
-	public static void PlayerRightClick(PlayerInteractEvent.RightClickBlock event) {
-		BlockState iblockstate = event.getWorld().getBlockState(event.getPos());
-        Block block = iblockstate.getBlock();
-        if (block == ModBlocks.OVERWORLD_PORTAL_BLOCK.get())
-        {
-        	OverworldPortalBlocks.onBlockActivated();
+	@SuppressWarnings("deprecation")
+	@Override
+    public ActionResultType use(BlockState state, World worldIn, BlockPos pos, PlayerEntity player, Hand handIn, BlockRayTraceResult hit) {
+        if (!worldIn.isClientSide()) {
+            if (!player.isCrouching()) {
+                MinecraftServer server = worldIn.getServer();
+                if (server != null) {
+                    if (worldIn.dimension() == World.OVERWORLD) {
+                        
+                    } else {
+                        ServerWorld overworldWorld = server.getLevel(World.OVERWORLD);
+                        if (overworldWorld != null) {
+                            player.changeDimension(overworldWorld, new OverworldTeleporter(pos, true));
+                        }
+                    }
+                    return ActionResultType.SUCCESS;
+                }
+            }
         }
-	}
-	public static void onBlockActivated() {
-			MinecraftServer source = LogicalSidedProvider.INSTANCE.get(LogicalSide.SERVER);
-			source.getCommands().performCommand(source.createCommandSourceStack(), "gamerule sendCommandFeedback false");
-	  		source.getCommands().performCommand(source.createCommandSourceStack(), "execute in minecraft:overworld run teleport @p 1 100 1");
-	  		f = 1;
-	}
-	
-
-	}
+        return super.use(state, worldIn, pos, player, handIn, hit);
+    }
+}
