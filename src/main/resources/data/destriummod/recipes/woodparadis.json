@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "ab ",
+        "ba ",
+        "   "
+    ],
+    "key": {
+        "a": {
+            "item": "destriummod:cracked_cloud"
+        },
+		"b": {
+            "item": "destriummod:cloud"
+        }
+    },
+    "result": {
+        "item": "minecraft:oak_planks",
+        "count": 1
+    }
+}
