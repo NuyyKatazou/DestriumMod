@@ -1,7 +1,6 @@
 package fr.amazonia.destriummod;
 
 import fr.amazonia.destriummod.block.OverworldPortalBlocks;
-import fr.amazonia.destriummod.block.ParadisPortalBlocks;
 import fr.amazonia.destriummod.init.ModBlocks;
 import fr.amazonia.destriummod.init.ModFluids;
 import fr.amazonia.destriummod.init.ModItems;
@@ -12,6 +11,10 @@ import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.RenderTypeLookup;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
+import net.minecraft.util.RegistryKey;
+import net.minecraft.util.ResourceLocation;
+import net.minecraft.util.registry.Registry;
+import net.minecraft.world.World;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.common.MinecraftForge;
@@ -60,7 +63,8 @@ public class DestriumMod {
     		return new ItemStack(ModItems.AMAZONITE_APPLE.get());
     	}
     };
- 
+    
+    public static RegistryKey<World> PARADIS_DIMENSION;
 	
 	public DestriumMod() {
 		
@@ -69,7 +73,6 @@ public class DestriumMod {
 		FMLJavaModLoadingContext.get().getModEventBus().addListener(this::serverSetup);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 		
-		MinecraftForge.EVENT_BUS.addListener(EventPriority.HIGH, ParadisPortalBlocks::PlayerRightClick);
 		MinecraftForge.EVENT_BUS.addListener(EventPriority.HIGH, OverworldPortalBlocks::PlayerRightClick);
 		
 		
@@ -82,6 +85,8 @@ public class DestriumMod {
 	
 	private void setup(FMLCommonSetupEvent e) {
 		MinecraftForge.EVENT_BUS.register(new HandlerEvent());
+		
+		PARADIS_DIMENSION = RegistryKey.create(Registry.DIMENSION_REGISTRY, new ResourceLocation(DestriumMod.MODID, "paradis"));
 	}
 	
 	
@@ -111,10 +116,8 @@ public class DestriumMod {
 		
 	}
 	private void updateTitle(){
-		final MainWindow window = Minecraft.getInstance().getWindow();
+		final MainWindow window = Minecraft.getInstance().getWindow(); 
 		window.setTitle("Minecraft Modded - 1.16.5");
-		
-		
+	
 	}
-
 }
