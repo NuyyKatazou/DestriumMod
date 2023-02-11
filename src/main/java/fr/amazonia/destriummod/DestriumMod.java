@@ -1,6 +1,5 @@
 package fr.amazonia.destriummod;
 
-import fr.amazonia.destriummod.block.OverworldPortalBlocks;
 import fr.amazonia.destriummod.init.ModBlocks;
 import fr.amazonia.destriummod.init.ModFluids;
 import fr.amazonia.destriummod.init.ModItems;
@@ -18,7 +17,6 @@ import net.minecraft.world.World;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.common.MinecraftForge;
-import net.minecraftforge.eventbus.api.EventPriority;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -73,8 +71,6 @@ public class DestriumMod {
 		FMLJavaModLoadingContext.get().getModEventBus().addListener(this::serverSetup);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 		
-		MinecraftForge.EVENT_BUS.addListener(EventPriority.HIGH, OverworldPortalBlocks::PlayerRightClick);
-		
 		
 		IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
 		ModItems.ITEMS.register(eventBus);
@@ -116,7 +112,7 @@ public class DestriumMod {
 		
 	}
 	private void updateTitle(){
-		final MainWindow window = Minecraft.getInstance().getWindow(); 
+		final MainWindow window = Minecraft.getInstance().getWindow();
 		window.setTitle("Minecraft Modded - 1.16.5");
 	
 	}
