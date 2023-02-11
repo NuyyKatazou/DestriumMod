@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "   ",
+        " # ",
+        "   "
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:diamond"
+        }
+    },
+    "result": {
+        "item": "destriummod:diamond_nuggets",
+        "count": 9
+    }
+}
