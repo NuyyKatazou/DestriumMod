@@ -1,5 +1,5 @@
 {
-  "surface_builder": "destriummod:paradis/barrens",
+  "surface_builder": "destriummod:paradis/enrichment",
   "depth": 0.1,
   "scale": 0.4,
   "temperature": 0.95,
@@ -14,7 +14,7 @@
     "water_fog_color": 16777215,
     "grass_color": 16777215,
     "foliage_color": 16777215,
-    "ambient_sound": "minecraft:block.roots.step",
+    "ambient_sound": "minecraft:ambient.nether_wastes.loop",
     "mood_sound": {
       "sound": "minecraft:ambient.cave",
       "tick_delay": 800,
@@ -43,7 +43,7 @@
     [],
     [
       "minecraft:lake_water",
-      "destriummod:blobs4d",
+      "destriummod:forest_rock2d",
       "destriummod:marker_tree_dorm3",
       "destriummod:marker_tree_dorm2",
       "destriummod:marker_tree_dorm"

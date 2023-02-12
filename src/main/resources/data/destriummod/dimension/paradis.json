@@ -37,7 +37,7 @@
       },
       "biomes": [
         {
-          "biome": "destriummod:paradis/barrens",
+          "biome": "destriummod:paradis/mineral",
           "parameters": {
             "altitude": 0,
             "temperature": 0.5,
@@ -47,7 +47,7 @@
           }
         },
         {
-          "biome": "destriummod:paradis/solitary",
+          "biome": "destriummod:paradis/voidified",
           "parameters": {
             "altitude": 0,
             "temperature": 1,
@@ -57,7 +57,7 @@
           }
         },
         {
-          "biome": "destriummod:paradis/commons",
+          "biome": "destriummod:paradis/enrichment",
           "parameters": {
             "altitude": 0,
             "temperature": 0.2,

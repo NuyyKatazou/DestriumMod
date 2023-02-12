@@ -1,5 +1,5 @@
 {
-  "surface_builder": "destriummod:paradis/solitary",
+  "surface_builder": "destriummod:paradis/voidified",
   "depth": 0.1,
   "scale": 0.4,
   "temperature": 0.95,
@@ -44,12 +44,7 @@
   },
   "features": [
     [],
-    [
-      "minecraft:lake_water",
-      "destriummod:marker_tree_dorm3",
-      "destriummod:marker_tree_dorm2",
-      "destriummod:marker_tree_dorm"
-    ],
+    [],
     [],
     [],
     [],
