@@ -29,7 +29,7 @@ displayName="DestriumMod" #mandatory
 # A file name (in the root of the mod JAR) containing a logo for display
 logoFile="destrium.png" #optional
 # A text field displayed in the mod UI
-credits="Mods pour le Serveur De Nuyy" #optional
+credits="Mods De Nuyy" #optional
 # A text field displayed in the mod UI
 authors="NuyyKatazou" #optional
 # The description text for the mod (multi line!) (#mandatory)
@@ -53,6 +53,6 @@ DestriumMod est un Mods qui deviendras aussi gros qu'un ModPacks !!!
     modId="minecraft"
     mandatory=true
 # This version range declares a minimum of the current minecraft version up to but not including the next major version
-    versionRange="[1.18.1,1.19)"
+    versionRange="[1.18.2,1.19)"
     ordering="NONE"
     side="BOTH"
