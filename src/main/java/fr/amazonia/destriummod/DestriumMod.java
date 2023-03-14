@@ -103,6 +103,7 @@ public class DestriumMod {
 		RenderTypeLookup.setRenderLayer(ModFluids.RESISTANCE_LAVA_FLUID.get(), RenderType.translucent());
 		RenderTypeLookup.setRenderLayer(ModFluids.RESISTANCE_LAVA_BLOCK.get(), RenderType.translucent());
 		RenderTypeLookup.setRenderLayer(ModFluids.RESISTANCE_LAVA_FLOWING.get(), RenderType.translucent());
+	
 	}
 	@SubscribeEvent
 	public void ClientRequest(final FMLClientSetupEvent e){
