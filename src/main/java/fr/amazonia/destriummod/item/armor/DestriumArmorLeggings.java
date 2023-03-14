@@ -9,5 +9,4 @@ public class DestriumArmorLeggings extends ArmorItem {
 	public DestriumArmorLeggings(ArmorMaterial materialIn, EquipmentSlot slot, Properties properties) {
 		super(materialIn, slot, properties);
 	}
-
 }

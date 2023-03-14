@@ -18,10 +18,11 @@ public class ArgonideIngot extends Item{
 	public ArgonideIngot(Properties properties) {
 		super(properties);
 	}
+	
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack p_42988_, @Nullable Level p_42989_, List<Component> p_42990_, TooltipFlag p_42991_) {
 		p_42990_.add(new TranslatableComponent(this.getDescriptionId() + ".desc").withStyle(ChatFormatting.DARK_BLUE));
 		p_42990_.add(new TranslatableComponent(this.getDescriptionId() + ".desc2").withStyle(ChatFormatting.DARK_GREEN));
 		p_42990_.add(new TranslatableComponent(this.getDescriptionId() + ".desc3").withStyle(ChatFormatting.GOLD).withStyle(ChatFormatting.BOLD));
 	   }
-	   }
+	}

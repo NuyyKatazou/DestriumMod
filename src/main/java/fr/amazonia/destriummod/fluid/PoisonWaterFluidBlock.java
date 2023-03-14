@@ -25,7 +25,6 @@ public class PoisonWaterFluidBlock extends LiquidBlock {
 		if (p_77659_2_ != null)  
 	      p_196262_4_.hurt(DamageSource.WITHER, 1F);
 	     }
-	
 
 	@Override
 	public void neighborChanged(BlockState p_54709_, Level p_54710_, BlockPos p_54711_, Block p_54712_, BlockPos p_54713_, boolean p_54714_) {
@@ -59,6 +58,7 @@ public class PoisonWaterFluidBlock extends LiquidBlock {
 
 	      return true;
 	   }
+	
 	private void fizz(LevelAccessor p_54701_, BlockPos p_54702_) {
 	      p_54701_.levelEvent(1501, p_54702_, 0);
 	   }

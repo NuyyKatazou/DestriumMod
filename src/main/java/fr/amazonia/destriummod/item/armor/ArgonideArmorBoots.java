@@ -6,12 +6,9 @@ import net.minecraft.world.item.ArmorMaterial;
 import net.minecraft.world.item.Item;
 
 
-
 public class ArgonideArmorBoots extends ArmorItem {
 	
 	public ArgonideArmorBoots(ArmorMaterial materialIn, EquipmentSlot slot, Item.Properties properties) {
 		super(materialIn, slot, properties);
 	}
-
-
 }

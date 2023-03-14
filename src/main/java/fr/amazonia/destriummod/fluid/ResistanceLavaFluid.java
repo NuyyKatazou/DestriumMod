@@ -30,7 +30,6 @@ public abstract class ResistanceLavaFluid extends ForgeFlowingFluid {
 
 	protected ResistanceLavaFluid(Properties properties) {
 		super(properties);
-		// TODO Auto-generated constructor stub
 	}
 
 	@Override
@@ -66,14 +65,17 @@ public abstract class ResistanceLavaFluid extends ForgeFlowingFluid {
         }
 
      }
+	
     @Override
     public ParticleOptions getDripParticle() {
         return ParticleTypes.DRIPPING_WATER;
      }
+    
     @Override
     protected boolean isRandomlyTicking() {
         return true;
      }
+    
     @Override
     public int getTickDelay(LevelReader p_205569_1_) {
         return p_205569_1_.dimensionType().ultraWarm() ? 10 : 30;
@@ -83,10 +85,12 @@ public abstract class ResistanceLavaFluid extends ForgeFlowingFluid {
     protected float getExplosionResistance() {
         return 100.0F;
     }
+    
     @Override
     protected void beforeDestroyingBlock(LevelAccessor p_76216_, BlockPos p_76217_, BlockState p_76218_) {
         this.fizz(p_76216_, p_76217_);
      }
+    
     @Override
     public int getSlopeFindDistance(LevelReader p_185698_1_) {
         return p_185698_1_.dimensionType().ultraWarm() ? 4 : 2;
@@ -102,6 +106,7 @@ public abstract class ResistanceLavaFluid extends ForgeFlowingFluid {
     public boolean canBeReplacedWith(FluidState p_76233_, BlockGetter p_76234_, BlockPos p_76235_, Fluid p_76236_, Direction p_76237_) {
         return p_76233_.getHeight(p_76234_, p_76235_) >= 0.44444445F && p_76236_.is(FluidTags.WATER);
      }
+    
     @Override
     public BlockState createLegacyBlock(FluidState state) {
         return ModFluids.RESISTANCE_LAVA_BLOCK.get().defaultBlockState().setValue(LiquidBlock.LEVEL, Integer.valueOf(getLegacyLevel(state)));
@@ -110,6 +115,7 @@ public abstract class ResistanceLavaFluid extends ForgeFlowingFluid {
     private void fizz(LevelAccessor p_76213_, BlockPos p_76214_) {
         p_76213_.levelEvent(1501, p_76214_, 0);
      }
+    
     public int getSpreadDelay(Level p_215667_1_, BlockPos p_215667_2_, FluidState p_215667_3_, FluidState p_215667_4_) {
         int i = this.getTickDelay(p_215667_1_);
         if (!p_215667_3_.isEmpty() && !p_215667_4_.isEmpty() && !p_215667_3_.getValue(FALLING) && !p_215667_4_.getValue(FALLING) && p_215667_4_.getHeight(p_215667_1_, p_215667_2_) > p_215667_3_.getHeight(p_215667_1_, p_215667_2_) && p_215667_1_.getRandom().nextInt(4) != 0) {
@@ -118,9 +124,11 @@ public abstract class ResistanceLavaFluid extends ForgeFlowingFluid {
 
         return i;
      }
+    
     protected boolean canConvertToSource() {
         return false;
      }
+    
     @SuppressWarnings("deprecation")
 	protected void spreadTo(LevelAccessor p_76220_, BlockPos p_76221_, BlockState p_76222_, Direction p_76223_, FluidState p_76224_) {
         if (p_76223_ == Direction.DOWN) {
@@ -144,6 +152,7 @@ public abstract class ResistanceLavaFluid extends ForgeFlowingFluid {
             super(properties);
             registerDefaultState(getStateDefinition().any().setValue(LEVEL, 7));
         }
+        
         @Override
         protected void createFluidStateDefinition(StateDefinition.Builder<Fluid, FluidState> p_76476_) {
             super.createFluidStateDefinition(p_76476_);
@@ -161,12 +170,14 @@ public abstract class ResistanceLavaFluid extends ForgeFlowingFluid {
         }
 
     }
+    
     public static class Source extends ResistanceLavaFluid {
 
         public Source(Properties properties) {
             super(properties);
             registerDefaultState(getStateDefinition().any().setValue(LEVEL, 7));
         }
+        
         @Override
         protected void createFluidStateDefinition(StateDefinition.Builder<Fluid, FluidState> p_76476_) {
             super.createFluidStateDefinition(p_76476_);

@@ -33,9 +33,6 @@ public class InfinityWaterBucketItem extends BucketItem {
 	      this.fluidSupplier = p_i49025_1_.delegate;
 	   }
 
-	   /**
-	    * @param supplier A fluid supplier such as {@link net.minecraftforge.fml.RegistryObject<Fluid>}
-	    */
 	   public InfinityWaterBucketItem(java.util.function.Supplier<? extends Fluid> supplier, Item.Properties builder) {
 	      super(supplier, builder);
 	      this.content = null;
@@ -45,7 +42,6 @@ public class InfinityWaterBucketItem extends BucketItem {
 		      return !p_40701_.getAbilities().instabuild ? new ItemStack(ModItems.INFINITY_WATER_BUCKET.get()) : p_40700_;
 		   }
 
-	
 	   @SuppressWarnings("deprecation")
 	public InteractionResultHolder<ItemStack> use(Level p_40703_, Player p_40704_, InteractionHand p_40705_) {
 		      ItemStack itemstack = p_40704_.getItemInHand(p_40705_);

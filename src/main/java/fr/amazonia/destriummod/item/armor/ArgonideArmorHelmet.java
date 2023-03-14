@@ -10,5 +10,4 @@ public class ArgonideArmorHelmet extends ArmorItem {
 	public ArgonideArmorHelmet(ArmorMaterial materialIn, EquipmentSlot slot, Item.Properties properties) {
 		super(materialIn, slot, properties);
 	}
-
 }

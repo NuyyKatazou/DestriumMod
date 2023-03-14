@@ -28,5 +28,4 @@ public class SpawnersPickaxe extends PickaxeItem{
 		p_42990_.add(new TranslatableComponent(this.getDescriptionId() + ".desc3").withStyle(ChatFormatting.DARK_AQUA));
 		p_42990_.add(new TranslatableComponent(this.getDescriptionId() + ".desc4").withStyle(ChatFormatting.DARK_AQUA));
 	   }
-
 }

@@ -28,7 +28,6 @@ public class ResistanceLavaFluidBlock extends LiquidBlock {
 	      ((LivingEntity) p_196262_4_).addEffect(new MobEffectInstance(MobEffects.REGENERATION, 100, 200, false, false, false));
 	     }
 	
-
 	@Override
 	public void neighborChanged(BlockState p_54709_, Level p_54710_, BlockPos p_54711_, Block p_54712_, BlockPos p_54713_, boolean p_54714_) {
 	      if (this.shouldSpreadLiquid(p_54710_, p_54711_, p_54709_)) {
@@ -36,6 +35,7 @@ public class ResistanceLavaFluidBlock extends LiquidBlock {
 	      }
 
 	   }
+	
 	@SuppressWarnings("deprecation")
 	private boolean shouldSpreadLiquid(Level p_54697_, BlockPos p_54698_, BlockState p_54699_) {
 	      if (this.getFluid().is(FluidTags.LAVA)) {

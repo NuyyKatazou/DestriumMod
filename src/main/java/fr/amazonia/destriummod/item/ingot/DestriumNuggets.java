@@ -19,9 +19,10 @@ public class DestriumNuggets extends Item{
 	public DestriumNuggets(Properties properties) {
 		super(properties);
 	}
+	
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack p_42988_, @Nullable Level p_42989_, List<Component> p_42990_, TooltipFlag p_42991_) {
 		p_42990_.add(new TranslatableComponent(this.getDescriptionId() + ".desc").withStyle(ChatFormatting.GREEN));
 	   }
-	   }
+	}
 

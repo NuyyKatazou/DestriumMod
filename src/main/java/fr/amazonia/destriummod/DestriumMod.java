@@ -20,13 +20,11 @@ import fr.amazonia.destriummod.init.ModBlocks;
 import fr.amazonia.destriummod.init.ModFluids;
 import fr.amazonia.destriummod.init.ModItems;
 
-
 @Mod(DestriumMod.MODID)
 public class DestriumMod {
 	public static final String MODID = "destriummod";
 	public static final Logger LOGGER = LogManager.getLogger(MODID);
 	final Supplier<Minecraft> minecraftSupplier;
-	
 	
 	
   	public static final CreativeModeTab ItemTab = new CreativeModeTab(MODID + ".itemtab") {
@@ -49,7 +47,6 @@ public class DestriumMod {
            return new ItemStack(ModItems.AMAZONITE_PICKAXE.get());
     	}
     };
-	
     public static final CreativeModeTab foodTab = new CreativeModeTab(MODID + ".foodtab") {
     	@Override
     	@OnlyIn(Dist.CLIENT)
@@ -58,7 +55,6 @@ public class DestriumMod {
     	}
     };
  
-	
 	public DestriumMod() {
 		
 		minecraftSupplier = Minecraft::getInstance;
@@ -78,7 +74,6 @@ public class DestriumMod {
 	private void setup(FMLCommonSetupEvent e) {
 		
 	}
-	
 	
 	private void clientSetup(FMLClientSetupEvent e) {
 		
@@ -102,5 +97,4 @@ public class DestriumMod {
 	private void serverSetup(FMLDedicatedServerSetupEvent e) {
 		
 	}
-
 }

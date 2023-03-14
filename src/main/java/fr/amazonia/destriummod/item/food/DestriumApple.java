@@ -19,6 +19,7 @@ public class DestriumApple extends Item{
 	public DestriumApple(Properties properties) {
 		super(properties);
 	}
+	
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack p_42988_, @Nullable Level p_42989_, List<Component> p_42990_, TooltipFlag p_42991_) {
 		p_42990_.add(new TranslatableComponent(this.getDescriptionId() + ".desc").withStyle(ChatFormatting.RED));
@@ -28,4 +29,4 @@ public class DestriumApple extends Item{
 		p_42990_.add(new TranslatableComponent(this.getDescriptionId() + ".desc5").withStyle(ChatFormatting.DARK_PURPLE));
 		p_42990_.add(new TranslatableComponent(this.getDescriptionId() + ".desc6").withStyle(ChatFormatting.YELLOW));
 	   }
-}
+	}

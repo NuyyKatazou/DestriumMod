@@ -26,12 +26,14 @@ public class AmazoniteArmorChestPlate extends ArmorItem {
 	public AmazoniteArmorChestPlate(ArmorMaterial materialIn, EquipmentSlot slot, Item.Properties properties) {
 		super(materialIn, slot, properties);
 	}
+	
 	@Override
     public void onArmorTick(ItemStack itemstack, Level world, Player player) {
 		if(player.getItemBySlot(EquipmentSlot.CHEST).getItem() == ModItems.AMAZONITE_CHESTPLATE.get()) {
 			player.addEffect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 300, 0, false, false, true));
 		}
 	}
+	
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack p_42988_, @Nullable Level p_42989_, List<Component> p_42990_, TooltipFlag p_42991_) {
 		p_42990_.add(new TranslatableComponent(this.getDescriptionId() + ".desc").withStyle(ChatFormatting.DARK_GRAY));

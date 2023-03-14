@@ -26,12 +26,14 @@ public class AmazoniteArmorLeggings extends ArmorItem {
 	public AmazoniteArmorLeggings(ArmorMaterial materialIn, EquipmentSlot slot, Item.Properties properties) {
 		super(materialIn, slot, properties);
 	}
+	
 	@Override
     public void onArmorTick(ItemStack itemstack, Level world, Player player) {
 		if(player.getItemBySlot(EquipmentSlot.LEGS).getItem() == ModItems.AMAZONITE_LEGGINGS.get()) {
 			player.addEffect(new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 300, 1, false, false, true));
 		}
 	}
+	
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack p_42988_, @Nullable Level p_42989_, List<Component> p_42990_, TooltipFlag p_42991_) {
 		p_42990_.add(new TranslatableComponent(this.getDescriptionId() + ".desc").withStyle(ChatFormatting.GOLD));

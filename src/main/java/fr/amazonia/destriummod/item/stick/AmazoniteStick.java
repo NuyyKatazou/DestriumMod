@@ -14,13 +14,15 @@ import net.minecraft.world.level.Level;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 
-public class AmazoniteStick extends Item{
+public class AmazoniteStick extends Item {
 
 	public AmazoniteStick(Properties p_i48487_1_) {
 		super(p_i48487_1_);
 	}
+
 	@OnlyIn(Dist.CLIENT)
-	public void appendHoverText(ItemStack p_42988_, @Nullable Level p_42989_, List<Component> p_42990_, TooltipFlag p_42991_) {
+	public void appendHoverText(ItemStack p_42988_, @Nullable Level p_42989_, List<Component> p_42990_,
+			TooltipFlag p_42991_) {
 		p_42990_.add(new TranslatableComponent(this.getDescriptionId() + ".desc").withStyle(ChatFormatting.BLUE));
-	   }
+	}
 }
