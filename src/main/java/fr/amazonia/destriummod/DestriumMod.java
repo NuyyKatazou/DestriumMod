@@ -27,11 +27,11 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-
 @Mod(DestriumMod.MODID)
 public class DestriumMod {
 	public static final String MODID = "destriummod";
 	public static final Logger LOGGER = LogManager.getLogger(MODID);
+	
 	
 	public static final ItemGroup ItemTab = new ItemGroup(MODID + ".itemtab") {
         @Override
@@ -85,7 +85,6 @@ public class DestriumMod {
 		PARADIS_DIMENSION = RegistryKey.create(Registry.DIMENSION_REGISTRY, new ResourceLocation(DestriumMod.MODID, "paradis"));
 	}
 	
-	
 	private void clientSetup(FMLClientSetupEvent e) {
 		
 		RenderTypeLookup.setRenderLayer(ModBlocks.AMAZONITE_PLANTS.get(), RenderType.translucent());
@@ -115,6 +114,5 @@ public class DestriumMod {
 	private void updateTitle(){
 		final MainWindow window = Minecraft.getInstance().getWindow();
 		window.setTitle("Minecraft Modded - 1.16.5");
-	
 	}
 }

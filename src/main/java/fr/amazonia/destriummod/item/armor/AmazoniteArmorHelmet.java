@@ -25,12 +25,14 @@ public class AmazoniteArmorHelmet extends ArmorItem {
 	public AmazoniteArmorHelmet(IArmorMaterial materialIn, EquipmentSlotType slot, Properties properties) {
 		super(materialIn, slot, properties);
 	}
+	
 	@Override
     public void onArmorTick(ItemStack itemstack, World world, PlayerEntity player) {
 		if(player.getItemBySlot(EquipmentSlotType.HEAD).getItem() == ModItems.AMAZONITE_HELMET.get()) {
 			player.addEffect(new EffectInstance(Effects.INVISIBILITY, 300, 0, false, false, true));
 		}
 	}
+	
 	@OnlyIn(Dist.CLIENT)
 	   public void appendHoverText(ItemStack p_77624_1_, @Nullable World p_77624_2_, List<ITextComponent> p_77624_3_, ITooltipFlag p_77624_4_) {
 	      p_77624_3_.add(new TranslationTextComponent(this.getDescriptionId() + ".desc").withStyle(TextFormatting.BLUE));

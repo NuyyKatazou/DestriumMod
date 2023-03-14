@@ -28,19 +28,20 @@ import net.minecraft.world.World;
 
 public class InfinityWaterBucketItem extends BucketItem {
 	private final Fluid content;
+	
 	@Deprecated
-	   public InfinityWaterBucketItem(Fluid p_i49025_1_, Item.Properties p_i49025_2_) {
-	      super(p_i49025_1_, p_i49025_2_);
-	      this.content = p_i49025_1_;
-	      this.fluidSupplier = p_i49025_1_.delegate;
+	public InfinityWaterBucketItem(Fluid p_i49025_1_, Item.Properties p_i49025_2_) {
+		super(p_i49025_1_, p_i49025_2_);
+		this.content = p_i49025_1_;
+		this.fluidSupplier = p_i49025_1_.delegate;
 	   }
 
-	   public InfinityWaterBucketItem(java.util.function.Supplier<? extends Fluid> supplier, Item.Properties builder) {
-	      super(supplier, builder);
-	      this.content = null;
-	      this.fluidSupplier = supplier;
+	public InfinityWaterBucketItem(java.util.function.Supplier<? extends Fluid> supplier, Item.Properties builder) {
+		super(supplier, builder);
+		this.content = null;
+		this.fluidSupplier = supplier;
 	   }
-	   protected ItemStack getEmptySuccessItem(ItemStack p_203790_1_, PlayerEntity p_203790_2_) {
+	protected ItemStack getEmptySuccessItem(ItemStack p_203790_1_, PlayerEntity p_203790_2_) {
 		      return !p_203790_2_.abilities.instabuild ? new ItemStack(ModItems.INFINITY_WATER_BUCKET.get()) : p_203790_1_;
 		   }
 	

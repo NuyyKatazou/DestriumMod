@@ -69,14 +69,17 @@ public abstract class PoisonWaterFluid extends ForgeFlowingFluid {
                     0.0D);
         }
     }
+    
     @Override
     public IParticleData getDripParticle() {
         return ParticleTypes.DRIPPING_WATER;
     }
+    
     @Override
     protected boolean isRandomlyTicking() {
         return true;
     }
+    
     @Override
     public int getTickDelay(IWorldReader world) {
         return 5;
@@ -86,12 +89,14 @@ public abstract class PoisonWaterFluid extends ForgeFlowingFluid {
     protected float getExplosionResistance() {
         return 100.0F;
     }
+    
     @SuppressWarnings("deprecation")
 	@Override
     protected void beforeDestroyingBlock(IWorld world, BlockPos pos, BlockState state) {
         TileEntity blockEntity = state.getBlock().isEntityBlock() ? world.getBlockEntity(pos) : null;
         Block.dropResources(state, world, pos, blockEntity);
     }
+    
     @Override
     public int getSlopeFindDistance(IWorldReader world) {
         return 4;
@@ -106,10 +111,12 @@ public abstract class PoisonWaterFluid extends ForgeFlowingFluid {
     public boolean canBeReplacedWith(FluidState state, IBlockReader world, BlockPos pos, Fluid fluid, Direction direction) {
         return direction == Direction.DOWN && !fluid.is(FluidTags.WATER);
     }
+    
     @Override
     public BlockState createLegacyBlock(FluidState state) {
         return ModFluids.POISON_WATER_BLOCK.get().defaultBlockState().setValue(FlowingFluidBlock.LEVEL, getLegacyLevel(state));
     }
+    
     public static class Flowing extends PoisonWaterFluid {
         public Flowing(Properties properties) {
             super(properties);

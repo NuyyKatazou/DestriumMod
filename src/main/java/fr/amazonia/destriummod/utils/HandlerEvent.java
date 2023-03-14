@@ -7,6 +7,7 @@ import net.minecraftforge.event.entity.living.LivingFallEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 
 public class HandlerEvent {
+	
 	@SubscribeEvent
     public void onLivingFall(LivingFallEvent event) {
         LivingEntity entity = event.getEntityLiving();

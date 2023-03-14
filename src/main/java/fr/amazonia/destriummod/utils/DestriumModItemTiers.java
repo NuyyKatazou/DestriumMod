@@ -37,7 +37,6 @@ public enum DestriumModItemTiers implements IItemTier{
 		      this.repairIngredient = new LazyValue<>(p_i48458_8_);
 		   }
 
-
 	public int getUses() {
 	      return this.uses;
 	   }

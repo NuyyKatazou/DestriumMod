@@ -36,6 +36,7 @@ public class ResistanceLavaFluidBlock extends FlowingFluidBlock {
             world.getLiquidTicks().scheduleTick(pos, state.getFluidState().getType(), this.getFluid().getTickDelay(world));
         }
     }
+	
 	private boolean receiveNeighborFluids(World world, BlockPos pos, BlockState state) {
         boolean flag = false;
 

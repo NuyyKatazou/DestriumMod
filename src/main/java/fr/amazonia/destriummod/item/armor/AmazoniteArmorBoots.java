@@ -25,12 +25,14 @@ public class AmazoniteArmorBoots extends ArmorItem {
 	public AmazoniteArmorBoots(IArmorMaterial materialIn, EquipmentSlotType slot, Properties properties) {
 		super(materialIn, slot, properties);
 	}
+	
 	@Override
     public void onArmorTick(ItemStack itemstack, World world, PlayerEntity player) {
 		if(player.getItemBySlot(EquipmentSlotType.FEET).getItem() == ModItems.AMAZONITE_BOOTS.get()) {
 			player.addEffect(new EffectInstance(Effects.MOVEMENT_SPEED, 300, 1, false, false, true));
 		}
 	}
+	
 	@OnlyIn(Dist.CLIENT)
 	   public void appendHoverText(ItemStack p_77624_1_, @Nullable World p_77624_2_, List<ITextComponent> p_77624_3_, ITooltipFlag p_77624_4_) {
 	      p_77624_3_.add(new TranslationTextComponent(this.getDescriptionId() + ".desc").withStyle(TextFormatting.GRAY));
