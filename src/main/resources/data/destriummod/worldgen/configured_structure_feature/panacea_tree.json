@@ -1,7 +1,0 @@
-{
-  "config": {
-    "start_pool": "destriummod:panacea_tree",
-    "size": 6
-  },
-  "type": "minecraft:village"
-}

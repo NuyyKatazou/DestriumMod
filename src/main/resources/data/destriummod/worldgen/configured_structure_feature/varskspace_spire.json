@@ -1,7 +1,0 @@
-{
-  "config": {
-    "start_pool": "destriummod:spire",
-    "size": 6
-  },
-  "type": "minecraft:village"
-}

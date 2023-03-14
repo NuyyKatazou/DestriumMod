@@ -97,7 +97,8 @@ public abstract class ResistanceLavaFluid extends ForgeFlowingFluid {
         return p_204528_1_.dimensionType().ultraWarm() ? 1 : 2;
      }
 
-    @Override
+    @SuppressWarnings("deprecation")
+	@Override
     public boolean canBeReplacedWith(FluidState p_76233_, BlockGetter p_76234_, BlockPos p_76235_, Fluid p_76236_, Direction p_76237_) {
         return p_76233_.getHeight(p_76234_, p_76235_) >= 0.44444445F && p_76236_.is(FluidTags.WATER);
      }
@@ -120,7 +121,8 @@ public abstract class ResistanceLavaFluid extends ForgeFlowingFluid {
     protected boolean canConvertToSource() {
         return false;
      }
-    protected void spreadTo(LevelAccessor p_76220_, BlockPos p_76221_, BlockState p_76222_, Direction p_76223_, FluidState p_76224_) {
+    @SuppressWarnings("deprecation")
+	protected void spreadTo(LevelAccessor p_76220_, BlockPos p_76221_, BlockState p_76222_, Direction p_76223_, FluidState p_76224_) {
         if (p_76223_ == Direction.DOWN) {
            FluidState fluidstate = p_76220_.getFluidState(p_76221_);
            if (this.is(FluidTags.LAVA) && fluidstate.is(FluidTags.WATER)) {

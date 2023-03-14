@@ -5,17 +5,17 @@
       "Name": "minecraft:air"
     },
     "decor_state": {
-      "Name": "minecraft:shroomlight"
+      "Name": "destriummod:cloud2"
     },
-    "planted": false,
+    "stem_state": {
+      "Name": "destriummod:cloud2",
+      "Properties": {
+        "axis": "y"
+      }
+    },
     "valid_base_block": {
       "Name": "destriummod:cloud"
     },
-    "stem_state": {
-      "Properties": {
-        "axis": "y"
-      },
-      "Name": "destriummod:cloud2"
-    }
+    "planted": false
   }
 }

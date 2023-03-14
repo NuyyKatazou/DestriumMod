@@ -1,7 +1,0 @@
-{
-  "config": {
-    "start_pool": "destriummod:sanctum_d_boss",
-    "size": 6
-  },
-  "type": "minecraft:village"
-}

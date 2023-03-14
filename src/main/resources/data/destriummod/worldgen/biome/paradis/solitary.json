@@ -1,20 +1,34 @@
 {
-  "spawners": {
-    "water_ambient": [],
-    "ambient": [
-      {
-        "type": "minecraft:bat",
-        "weight": 10,
-        "minCount": 4,
-        "maxCount": 4
-      }
-    ],
-    "misc": [],
-    "water_creature": [],
-    "creature": [
-    ],
-    "monster": []
+  "temperature": 0.95,
+  "downfall": 0.1,
+  "precipitation": "none",
+  "category": "none",
+  "effects": {
+    "sky_color": 16777215,
+    "fog_color": 0,
+    "water_color": 0,
+    "water_fog_color": 0,
+    "grass_color": 16777215,
+    "foliage_color": 16777215,
+    "ambient_sound": "minecraft:block.roots.step",
+    "mood_sound": {
+      "sound": "minecraft:ambient.cave",
+      "tick_delay": 1000,
+      "block_search_extent": 8,
+      "offset": 2
+    },
+    "additions_sound": {
+      "sound": "minecraft:ambient.basalt_deltas.mood",
+      "tick_chance": 0.001
+    },
+    "music": {
+      "sound": "minecraft:music.nether.basalt_deltas",
+      "min_delay": 12000,
+      "max_delay": 24000,
+      "replace_current_music": false
+    }
   },
+  "spawners": {},
   "spawn_costs": {},
   "carvers": {
     "air": [
@@ -22,48 +36,5 @@
       "minecraft:canyon"
     ]
   },
-  "features": [
-    [],
-    [],
-    [],
-    [],
-    [],
-    [],
-    [],
-    [],
-    [],
-    [],
-    [
-      "minecraft:freeze_top_layer"
-    ]
-  ],
-  "temperature": 0.95,
-  "downfall": 0.1,
-  "effects": {
-    "mood_sound": {
-      "sound": "minecraft:block.roots.step",
-      "tick_delay": 6000,
-      "block_search_extent": 8,
-      "offset": 2
-    },
-    "sky_color": 16777215,
-    "fog_color": 0,
-    "water_color": 0,
-    "water_fog_color": 0,
-    "grass_color": 16777215,
-    "foliage_colour": 16777215,
-    "additions_sound": {
-      "sound": "minecraft:block.roots.step",
-      "tick_chance": 0.02
-    },
-    "music": {
-      "sound": "minecraft:music.nether.basalt_deltas",
-      "min_delay": 12000,
-      "max_delay": 24000,
-      "replace_current_music": false
-    },
-    "ambient_sound": "minecraft:block.roots.step"
-  },
-  "precipitation": "none",
-  "category": "none"
+  "features": []
 }

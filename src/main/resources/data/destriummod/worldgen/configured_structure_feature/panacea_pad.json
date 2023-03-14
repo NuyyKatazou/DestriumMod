@@ -1,7 +1,0 @@
-{
-  "config": {
-    "start_pool": "destriummod:pad",
-    "size": 6
-  },
-  "type": "minecraft:bastion_remnant"
-}

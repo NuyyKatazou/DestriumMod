@@ -36,6 +36,7 @@ public class ResistanceLavaFluidBlock extends LiquidBlock {
 	      }
 
 	   }
+	@SuppressWarnings("deprecation")
 	private boolean shouldSpreadLiquid(Level p_54697_, BlockPos p_54698_, BlockState p_54699_) {
 	      if (this.getFluid().is(FluidTags.LAVA)) {
 	         boolean flag = p_54697_.getBlockState(p_54698_.below()).is(Blocks.SOUL_SOIL);

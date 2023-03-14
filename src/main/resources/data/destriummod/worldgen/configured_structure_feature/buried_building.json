@@ -1,7 +1,0 @@
-{
-  "config": {
-    "start_pool": "destriummod:post",
-    "size": 6
-  },
-  "type": "minecraft:village"
-}

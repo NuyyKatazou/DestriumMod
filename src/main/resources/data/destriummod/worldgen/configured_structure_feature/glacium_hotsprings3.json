@@ -1,7 +1,0 @@
-{
-  "config": {
-    "start_pool": "destriummod:glacium_hotsprings3",
-    "size": 6
-  },
-  "type": "minecraft:village"
-}

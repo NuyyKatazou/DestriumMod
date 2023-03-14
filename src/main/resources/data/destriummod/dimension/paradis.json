@@ -3,6 +3,7 @@
   "generator": {
     "type": "minecraft:noise",
     "seed": -1464245863,
+    "settings": "destriummod:paradis",
     "biome_source": {
       "type": "minecraft:multi_noise",
       "biomes": [
@@ -43,7 +44,6 @@
           }
         }
       ]
-    },
-    "settings": "destriummod:paradis"
+    }
   }
 }

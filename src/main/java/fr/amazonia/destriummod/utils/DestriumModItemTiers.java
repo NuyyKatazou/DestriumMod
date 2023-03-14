@@ -1,19 +1,11 @@
 package fr.amazonia.destriummod.utils;
 
-import java.util.List;
 import java.util.function.Supplier;
 
-import fr.amazonia.destriummod.DestriumMod;
 import fr.amazonia.destriummod.init.ModItems;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.tags.BlockTags;
-import net.minecraft.tags.Tag;
 import net.minecraft.util.LazyLoadedValue;
 import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.crafting.Ingredient;
-import net.minecraft.world.level.block.Block;
-import net.minecraftforge.common.ForgeTier;
-import net.minecraftforge.common.TierSortingRegistry;
 
 @SuppressWarnings("deprecation")
 public enum DestriumModItemTiers implements Tier{
@@ -69,16 +61,16 @@ public enum DestriumModItemTiers implements Tier{
 	   public Ingredient getRepairIngredient() {
 	      return this.repairIngredient.get();
 	   }
-	   public static final Tag.Named<Block> NEED_AMAZONITE_TOOL = BlockTags.createOptional(new ResourceLocation(DestriumMod.MODID + "needs_amazonite_tool"));
-	   public static final Tag.Named<Block> NEED_DESTRIUM_TOOL = BlockTags.createOptional(new ResourceLocation(DestriumMod.MODID + "needs_destrium_tool"));
-	   
-	   public static final Tier DESTRIUM_TIER = TierSortingRegistry.registerTier(
-	            new ForgeTier(5, 8074, 16F, 7F, 20, NEED_DESTRIUM_TOOL, () -> Ingredient.of(ModItems.AMAZONITE_APPLE.get())),
-	            new ResourceLocation(DestriumMod.MODID + "destrium_tier"),
-	            List.of(), List.of());
-	   
-	   public static final Tier AMAZONITE_TIER = TierSortingRegistry.registerTier(
-	            new ForgeTier(6, 45051, 18F, 10F, 25, NEED_AMAZONITE_TOOL, () -> Ingredient.of(ModItems.AMAZONITE_APPLE.get())),
-	            new ResourceLocation(DestriumMod.MODID + "amazonite_tier"),
-	            List.of(), List.of());
+//	   public static final Tag.Named<Block> NEED_AMAZONITE_TOOL = BlockTags.createOptional(new ResourceLocation(DestriumMod.MODID + "needs_amazonite_tool"));
+//	   public static final Tag.Named<Block> NEED_DESTRIUM_TOOL = BlockTags.createOptional(new ResourceLocation(DestriumMod.MODID + "needs_destrium_tool"));
+//	   
+//	   public static final Tier DESTRIUM_TIER = TierSortingRegistry.registerTier(
+//	            new ForgeTier(5, 8074, 16F, 7F, 20, NEED_DESTRIUM_TOOL, () -> Ingredient.of(ModItems.AMAZONITE_APPLE.get())),
+//	            new ResourceLocation(DestriumMod.MODID + "destrium_tier"),
+//	            List.of(), List.of());
+//	   
+//	   public static final Tier AMAZONITE_TIER = TierSortingRegistry.registerTier(
+//	            new ForgeTier(6, 45051, 18F, 10F, 25, NEED_AMAZONITE_TOOL, () -> Ingredient.of(ModItems.AMAZONITE_APPLE.get())),
+//	            new ResourceLocation(DestriumMod.MODID + "amazonite_tier"),
+//	            List.of(), List.of());
 	}
