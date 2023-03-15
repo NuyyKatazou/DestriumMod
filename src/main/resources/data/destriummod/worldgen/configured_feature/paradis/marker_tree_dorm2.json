@@ -5,16 +5,16 @@
       "Name": "minecraft:air"
     },
     "decor_state": {
-      "Name": "destriummod:cloud2"
+      "Name": "destriummod:destrium_ore"
     },
     "stem_state": {
-      "Name": "destriummod:cloud2",
+      "Name": "destriummod:cloud",
       "Properties": {
         "axis": "y"
       }
     },
     "valid_base_block": {
-      "Name": "destriummod:cloud"
+      "Name": "destriummod:cloud2"
     },
     "planted": false
   }

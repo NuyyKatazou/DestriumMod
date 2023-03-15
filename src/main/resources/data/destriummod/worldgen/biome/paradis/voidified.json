@@ -5,15 +5,15 @@
   "category": "none",
   "effects": {
     "sky_color": 16777215,
-    "fog_color": 0,
-    "water_color": 0,
-    "water_fog_color": 0,
+    "fog_color": 16777215,
+    "water_color": 16777215,
+    "water_fog_color": 16777215,
     "grass_color": 16777215,
     "foliage_color": 16777215,
     "ambient_sound": "minecraft:block.roots.step",
     "mood_sound": {
-      "sound": "minecraft:ambient.cave",
-      "tick_delay": 1000,
+      "sound": "minecraft:block.roots.step",
+      "tick_delay": 6000,
       "block_search_extent": 8,
       "offset": 2
     },
@@ -33,14 +33,8 @@
   "carvers": {
     "air": [
       "minecraft:cave",
-      "minecraft:canyon",
-      "destriummod:canyon0"
+      "minecraft:canyon"
     ]
   },
-  "features": [
-    [
-      "destriummod:paradis/coral_blob",
-      "destriummod:paradis/bedrockblock"
-    ]
-  ]
+  "features": []
 }

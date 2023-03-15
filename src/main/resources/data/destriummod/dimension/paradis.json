@@ -8,10 +8,10 @@
       "type": "minecraft:multi_noise",
       "biomes": [
         {
-          "biome": "destriummod:paradis/barrens",
+          "biome": "destriummod:paradis/mineral",
           "parameters": {
-            "temperature": 1,
-            "humidity": 0,
+            "temperature": 0.5,
+            "humidity": 1,
             "continentalness": 0,
             "erosion": 0,
             "weirdness": 0,
@@ -20,10 +20,10 @@
           }
         },
         {
-          "biome": "destriummod:paradis/solitary",
+          "biome": "destriummod:paradis/voidified",
           "parameters": {
-            "temperature": 0,
-            "humidity": -1,
+            "temperature": 1,
+            "humidity": 1,
             "continentalness": 0,
             "erosion": 0,
             "weirdness": 0,
@@ -32,10 +32,10 @@
           }
         },
         {
-          "biome": "destriummod:paradis/commons",
+          "biome": "destriummod:paradis/enrichment",
           "parameters": {
-            "temperature": -1,
-            "humidity": 0,
+            "temperature": 0.2,
+            "humidity": 1,
             "continentalness": 0,
             "erosion": 0,
             "weirdness": 0,
