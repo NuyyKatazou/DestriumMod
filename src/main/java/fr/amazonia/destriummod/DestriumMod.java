@@ -18,7 +18,6 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
@@ -103,14 +102,13 @@ public class DestriumMod {
 		RenderTypeLookup.setRenderLayer(ModFluids.RESISTANCE_LAVA_BLOCK.get(), RenderType.translucent());
 		RenderTypeLookup.setRenderLayer(ModFluids.RESISTANCE_LAVA_FLOWING.get(), RenderType.translucent());
 	
-	}
-	@SubscribeEvent
-	public void ClientRequest(final FMLClientSetupEvent e){
 		e.getMinecraftSupplier().get().execute(this::updateTitle);
 	}
+
 	private void serverSetup(FMLDedicatedServerSetupEvent e) {
 		
 	}
+	
 	private void updateTitle(){
 		final MainWindow window = Minecraft.getInstance().getWindow();
 		window.setTitle("Minecraft Modded - 1.16.5");
