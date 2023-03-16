@@ -4,8 +4,6 @@ import fr.amazonia.destriummod.init.ModBlocks;
 import fr.amazonia.destriummod.init.ModFluids;
 import fr.amazonia.destriummod.init.ModItems;
 import fr.amazonia.destriummod.utils.HandlerEvent;
-import net.minecraft.client.MainWindow;
-import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.RenderTypeLookup;
 import net.minecraft.item.ItemGroup;
@@ -102,15 +100,9 @@ public class DestriumMod {
 		RenderTypeLookup.setRenderLayer(ModFluids.RESISTANCE_LAVA_BLOCK.get(), RenderType.translucent());
 		RenderTypeLookup.setRenderLayer(ModFluids.RESISTANCE_LAVA_FLOWING.get(), RenderType.translucent());
 	
-		e.getMinecraftSupplier().get().execute(this::updateTitle);
 	}
 
 	private void serverSetup(FMLDedicatedServerSetupEvent e) {
 		
-	}
-	
-	private void updateTitle(){
-		final MainWindow window = Minecraft.getInstance().getWindow();
-		window.setTitle("Minecraft Modded - 1.16.5");
 	}
 }
