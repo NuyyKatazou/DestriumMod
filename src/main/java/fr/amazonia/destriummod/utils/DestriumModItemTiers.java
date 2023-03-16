@@ -12,13 +12,13 @@ public enum DestriumModItemTiers implements Tier{
 	SPAWNERS(4, 3, 8F, 4F, 55, () -> {
 		return Ingredient.of(ModItems.AMAZONITE_APPLE.get());
 	   }),
-	ARGONIDE(4, 4048, 14F, 5.5F, 18, () -> {
+	ARGONIDE(4, 4048, 13F, 5.5F, 18, () -> {
 		return Ingredient.of(ModItems.AMAZONITE_APPLE.get());
 	   }),
-	DESTRIUM(5, 8074, 16F, 7F, 20, () -> {
+	DESTRIUM(5, 8074, 18F, 7F, 20, () -> {
 		return Ingredient.of(ModItems.AMAZONITE_APPLE.get());
 	   }),
-	AMAZONITE(6, 45051, 18F, 10F, 25, () -> {
+	AMAZONITE(6, 45051, 20F, 10F, 25, () -> {
 		return Ingredient.of(ModItems.AMAZONITE_APPLE.get());
 	   });
 	
