@@ -26,6 +26,7 @@ import fr.amazonia.destriummod.item.ingot.ArgonideNuggets;
 import fr.amazonia.destriummod.item.ingot.CompressedGolden;
 import fr.amazonia.destriummod.item.ingot.DestriumIngot;
 import fr.amazonia.destriummod.item.ingot.DestriumNuggets;
+import fr.amazonia.destriummod.item.ingot.DiamondNuggets;
 import fr.amazonia.destriummod.item.ingot.EmeraldNuggets;
 import fr.amazonia.destriummod.item.ingot.GoldenCore;
 import fr.amazonia.destriummod.item.stick.AmazoniteStick;
@@ -78,6 +79,7 @@ public class ModItems {
 	public static final RegistryObject<Item> ARGONIDE_INGOT = ITEMS.register("argonide_ingot", () -> new ArgonideIngot(new Item.Properties().tab(DestriumMod.ItemTab).rarity(Rarity.create("argonide", ChatFormatting.GOLD)).fireResistant()));
 	
 	public static final RegistryObject<Item> EMERALD_NUGGETS = ITEMS.register("emerald_nuggets", () -> new EmeraldNuggets(new Item.Properties().tab(DestriumMod.ItemTab).rarity(Rarity.create("emerald", ChatFormatting.GREEN))));
+	public static final RegistryObject<Item> DIAMOND_NUGGETS = ITEMS.register("diamond_nuggets", () -> new DiamondNuggets(new Item.Properties().tab(DestriumMod.ItemTab).rarity(Rarity.create("diamond", ChatFormatting.BLUE))));
 	
 	
 	public static final RegistryObject<Item> AMAZONITE_STICK = ITEMS.register("amazonite_stick", () -> new AmazoniteStick(new Item.Properties().tab(DestriumMod.ItemTab).rarity(Rarity.create("amazonite", ChatFormatting.DARK_BLUE)).fireResistant()));
