@@ -153,4 +153,3 @@ public class ModItems {
 	public static final RegistryObject<Item> INFINITY_WATER_BUCKET = ITEMS.register("infinity_water_bucket", () -> new InfinityWaterBucketItem(() -> Fluids.WATER, new Item.Properties().stacksTo(1).tab(DestriumMod.ItemTab).rarity(Rarity.create("Infinity", TextFormatting.RED))));	
 	
 }
-
