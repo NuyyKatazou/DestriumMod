@@ -1,6 +1,6 @@
 package fr.amazonia.destriummod.utils;
 
-
+import fr.amazonia.destriummod.block.OverworldPortalBlocks;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraftforge.event.entity.living.LivingFallEvent;
@@ -10,15 +10,15 @@ public class HandlerEvent {
 	@SubscribeEvent
     public void onLivingFall(LivingFallEvent event) {
         LivingEntity entity = event.getEntityLiving();
-//        if (entity instanceof Player) {
-//            
-//            if(OverworldPortalBlocks.f == 1) 
-//            {
-//
-//            event.setDamageMultiplier(0);
-//            
-//            OverworldPortalBlocks.f = 0;
-//            }
-//        }
+        if (entity instanceof Player) {
+            
+            if(OverworldPortalBlocks.f == 1) 
+            {
+
+            event.setDamageMultiplier(0);
+            
+            OverworldPortalBlocks.f = 0;
+            }
+        }
     }
 }
