@@ -3,10 +3,15 @@ package fr.amazonia.destriummod;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
+import net.minecraft.core.Registry;
+import net.minecraft.resources.ResourceKey;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.level.Level;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
+import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
@@ -19,6 +24,7 @@ import org.apache.logging.log4j.Logger;
 import fr.amazonia.destriummod.init.ModBlocks;
 import fr.amazonia.destriummod.init.ModFluids;
 import fr.amazonia.destriummod.init.ModItems;
+import fr.amazonia.destriummod.utils.HandlerEvent;
 
 @Mod(DestriumMod.MODID)
 public class DestriumMod {
@@ -54,6 +60,8 @@ public class DestriumMod {
     		return new ItemStack(ModItems.AMAZONITE_APPLE.get());
     	}
     };
+    
+    public static ResourceKey<Level> PARADIS_DIMENSION;
  
 	public DestriumMod() {
 		
@@ -72,6 +80,9 @@ public class DestriumMod {
 	}
 	
 	private void setup(FMLCommonSetupEvent e) {
+		MinecraftForge.EVENT_BUS.register(new HandlerEvent());
+		
+		PARADIS_DIMENSION = ResourceKey.create(Registry.DIMENSION_REGISTRY, new ResourceLocation(DestriumMod.MODID, "paradis"));
 		
 	}
 	
