@@ -23,7 +23,6 @@ public class ModBlocks {
 
 	public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, DestriumMod.MODID);
 	
-	
 	public static final RegistryObject<Block> CLOUD = createBlock("cloud", () -> new Block(AbstractBlock.Properties.of(Material.CLAY).harvestTool(ToolType.HOE).harvestLevel(2).strength(2.5f, 25f).requiresCorrectToolForDrops()));
 	public static final RegistryObject<Block> BLUE_CLOUD = createBlock("blue_cloud", () -> new Block(AbstractBlock.Properties.of(Material.CLAY).harvestTool(ToolType.HOE).harvestLevel(2).strength(3f, 25f).requiresCorrectToolForDrops()));
 	public static final RegistryObject<Block> BLACK_CLOUD = createBlock("black_cloud", () -> new Block(AbstractBlock.Properties.of(Material.CLAY).harvestTool(ToolType.HOE).harvestLevel(2).strength(3f, 25f).requiresCorrectToolForDrops()));
