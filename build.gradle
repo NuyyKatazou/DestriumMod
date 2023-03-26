@@ -12,7 +12,7 @@ apply plugin: 'net.minecraftforge.gradle'
 apply plugin: 'eclipse'
 apply plugin: 'maven-publish'
 
-version = '1.4.2' //#18(nombre de maj depuis la version 1.16)
+version = '1.5.0' //#19(nombre de maj depuis la version 1.16)
 group = 'fr.amazonia.destriummod' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = 'DestriumMod'
 
