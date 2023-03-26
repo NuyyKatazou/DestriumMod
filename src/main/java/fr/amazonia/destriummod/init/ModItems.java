@@ -2,6 +2,7 @@ package fr.amazonia.destriummod.init;
 
 import fr.amazonia.destriummod.DestriumMod;
 import fr.amazonia.destriummod.item.InfinityWaterBucketItem;
+import fr.amazonia.destriummod.item.armor.AdventurerArmorBoots;
 import fr.amazonia.destriummod.item.armor.AmazoniteArmorBoots;
 import fr.amazonia.destriummod.item.armor.AmazoniteArmorChestPlate;
 import fr.amazonia.destriummod.item.armor.AmazoniteArmorHelmet;
@@ -131,6 +132,7 @@ public class ModItems {
 	public static final RegistryObject<Item> SPEED_BOOTS = ITEMS.register("speed_boots", () -> new SpeedArmorBoots(ModArmorMaterial.DESTRIUM, EquipmentSlotType.FEET, new Item.Properties().tab(DestriumMod.toolTab).rarity(Rarity.create("destrium", TextFormatting.DARK_GREEN)).fireResistant()));
 	public static final RegistryObject<Item> FEATHER_BOOTS = ITEMS.register("feather_boots", () -> new FeatherArmorBoots(ModArmorMaterial.DESTRIUM, EquipmentSlotType.FEET, new Item.Properties().tab(DestriumMod.toolTab).rarity(Rarity.create("destrium", TextFormatting.DARK_GREEN)).fireResistant()));
 	public static final RegistryObject<Item> JUMP_BOOTS = ITEMS.register("jump_boots", () -> new JumpArmorBoots(ModArmorMaterial.DESTRIUM, EquipmentSlotType.FEET, new Item.Properties().tab(DestriumMod.toolTab).rarity(Rarity.create("destrium", TextFormatting.DARK_GREEN)).fireResistant()));
+	public static final RegistryObject<Item> ADVENTURER_BOOTS = ITEMS.register("adventurer_boots", () -> new AdventurerArmorBoots(ModArmorMaterial.DESTRIUM, EquipmentSlotType.FEET, new Item.Properties().tab(DestriumMod.toolTab).rarity(Rarity.create("destrium", TextFormatting.DARK_GREEN)).fireResistant()));
 	
 	
 	public static final RegistryObject<Item> DESTRIUM_SEEDS = ITEMS.register("destrium_seeds", () -> new BlockNamedItem(ModBlocks.DESTRIUM_PLANTS.get(), (new Item.Properties().rarity(Rarity.create("destrium", TextFormatting.DARK_GREEN)).fireResistant())));
