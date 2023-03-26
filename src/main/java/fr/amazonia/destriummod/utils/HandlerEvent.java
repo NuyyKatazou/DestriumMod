@@ -12,12 +12,8 @@ public class HandlerEvent {
     public void onLivingFall(LivingFallEvent event) {
         LivingEntity entity = event.getEntityLiving();
         if (entity instanceof PlayerEntity) {
-            
-            if(OverworldPortalBlocks.f == 1) 
-            {
-
+            if(OverworldPortalBlocks.f == 1) {
             event.setDamageMultiplier(0);
-            
             OverworldPortalBlocks.f = 0;
             }
         }

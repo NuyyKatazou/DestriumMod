@@ -15,6 +15,7 @@ public class SpeedArmorBoots extends ArmorItem {
 	public SpeedArmorBoots(IArmorMaterial materialIn, EquipmentSlotType slot, Properties properties) {
 		super(materialIn, slot, properties);
 	}
+	
 	@Override
     public void onArmorTick(ItemStack itemstack, World world, PlayerEntity player) {
 		if(player.getItemBySlot(EquipmentSlotType.FEET).getItem() == ModItems.SPEED_BOOTS.get()) {
