@@ -15,6 +15,7 @@ import fr.amazonia.destriummod.item.armor.DestriumArmorChestPlate;
 import fr.amazonia.destriummod.item.armor.DestriumArmorHelmet;
 import fr.amazonia.destriummod.item.armor.DestriumArmorLeggings;
 import fr.amazonia.destriummod.item.armor.FeatherArmorBoots;
+import fr.amazonia.destriummod.item.armor.JumpArmorBoots;
 import fr.amazonia.destriummod.item.armor.SpeedArmorBoots;
 import fr.amazonia.destriummod.item.food.AmazoniteApple;
 import fr.amazonia.destriummod.item.food.DestriumApple;
@@ -129,6 +130,7 @@ public class ModItems {
 	
 	public static final RegistryObject<Item> SPEED_BOOTS = ITEMS.register("speed_boots", () -> new SpeedArmorBoots(ModArmorMaterial.DESTRIUM, EquipmentSlotType.FEET, new Item.Properties().tab(DestriumMod.toolTab).rarity(Rarity.create("destrium", TextFormatting.DARK_GREEN)).fireResistant()));
 	public static final RegistryObject<Item> FEATHER_BOOTS = ITEMS.register("feather_boots", () -> new FeatherArmorBoots(ModArmorMaterial.DESTRIUM, EquipmentSlotType.FEET, new Item.Properties().tab(DestriumMod.toolTab).rarity(Rarity.create("destrium", TextFormatting.DARK_GREEN)).fireResistant()));
+	public static final RegistryObject<Item> JUMP_BOOTS = ITEMS.register("jump_boots", () -> new JumpArmorBoots(ModArmorMaterial.DESTRIUM, EquipmentSlotType.FEET, new Item.Properties().tab(DestriumMod.toolTab).rarity(Rarity.create("destrium", TextFormatting.DARK_GREEN)).fireResistant()));
 	
 	
 	public static final RegistryObject<Item> DESTRIUM_SEEDS = ITEMS.register("destrium_seeds", () -> new BlockNamedItem(ModBlocks.DESTRIUM_PLANTS.get(), (new Item.Properties().rarity(Rarity.create("destrium", TextFormatting.DARK_GREEN)).fireResistant())));
