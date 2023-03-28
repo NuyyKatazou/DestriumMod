@@ -83,19 +83,19 @@ public class DestriumMod {
 	}
 	
 	private void clientSetup(FMLClientSetupEvent e) {
-		
+		//Plants
 		RenderTypeLookup.setRenderLayer(ModBlocks.AMAZONITE_PLANTS.get(), RenderType.translucent());
 		RenderTypeLookup.setRenderLayer(ModBlocks.DESTRIUM_PLANTS.get(), RenderType.translucent());
 		RenderTypeLookup.setRenderLayer(ModBlocks.XP_PLANTS.get(), RenderType.translucent());
 		
-		
+		//Flowers
 		RenderTypeLookup.setRenderLayer(ModBlocks.CLOVER.get(), RenderType.translucent());
 		RenderTypeLookup.setRenderLayer(ModBlocks.CLOVER_TWO.get(), RenderType.translucent());
 		
-		
+		//Blocks
 		RenderTypeLookup.setRenderLayer(ModBlocks.BELOW_BLOCK.get(), RenderType.translucent());
 		
-		
+		//Fluids
 		RenderTypeLookup.setRenderLayer(ModFluids.POISON_WATER_FLUID.get(), RenderType.translucent());
 		RenderTypeLookup.setRenderLayer(ModFluids.POISON_WATER_BLOCK.get(), RenderType.translucent());
 		RenderTypeLookup.setRenderLayer(ModFluids.POISON_WATER_FLOWING.get(), RenderType.translucent());
