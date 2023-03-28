@@ -10,10 +10,12 @@ import fr.amazonia.destriummod.block.plants.DestriumPlants;
 import fr.amazonia.destriummod.block.plants.XpPlants;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
+import net.minecraft.block.FlowerBlock;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
+import net.minecraft.potion.Effects;
 import net.minecraftforge.common.ToolType;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
@@ -91,6 +93,9 @@ public class ModBlocks {
 	public static final RegistryObject<Block> DESTRIUM_PLANTS = createBlock("destrium_plants", () -> new DestriumPlants(AbstractBlock.Properties.of(Material.PLANT).instabreak().randomTicks().noCollission().sound(SoundType.CROP)));
 	public static final RegistryObject<Block> XP_PLANTS = createBlock("xp_plants", () -> new XpPlants(AbstractBlock.Properties.of(Material.PLANT).instabreak().randomTicks().noCollission().sound(SoundType.CROP)));
 	
+	
+	public static final RegistryObject<Block> CLOVER = createBlock("clover", () -> new FlowerBlock(Effects.WEAKNESS, 9, AbstractBlock.Properties.of(Material.PLANT).noCollission().instabreak().sound(SoundType.GRASS)));
+	public static final RegistryObject<Block> CLOVER_TWO = createBlock("clover_two", () -> new FlowerBlock(Effects.WEAKNESS, 9, AbstractBlock.Properties.of(Material.PLANT).noCollission().instabreak().sound(SoundType.GRASS)));
 	
 	public static RegistryObject<Block> createBlock(String name, Supplier<? extends Block> supplier) {
 		
