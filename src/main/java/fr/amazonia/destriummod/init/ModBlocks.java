@@ -10,7 +10,6 @@ import fr.amazonia.destriummod.block.plants.DestriumPlants;
 import fr.amazonia.destriummod.block.plants.XpPlants;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
-import net.minecraft.block.Blocks;
 import net.minecraft.block.FlowerBlock;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
@@ -25,7 +24,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 public class ModBlocks {
 
 	public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, DestriumMod.MODID);
-	
+	//Blocks
 	public static final RegistryObject<Block> CLOUD = createBlock("cloud", () -> new Block(AbstractBlock.Properties.of(Material.CLAY).harvestTool(ToolType.HOE).harvestLevel(2).strength(2.5f, 25f).requiresCorrectToolForDrops()));
 	public static final RegistryObject<Block> BLUE_CLOUD = createBlock("blue_cloud", () -> new Block(AbstractBlock.Properties.of(Material.CLAY).harvestTool(ToolType.HOE).harvestLevel(2).strength(3f, 25f).requiresCorrectToolForDrops()));
 	public static final RegistryObject<Block> BLACK_CLOUD = createBlock("black_cloud", () -> new Block(AbstractBlock.Properties.of(Material.CLAY).harvestTool(ToolType.HOE).harvestLevel(2).strength(3f, 25f).requiresCorrectToolForDrops()));
@@ -89,12 +88,12 @@ public class ModBlocks {
 	public static final RegistryObject<Block> PARADIS_PORTAL_BLOCK = createBlock("paradis_portal_block", () -> new ParadisPortalBlocks(AbstractBlock.Properties.of(Material.CLAY).harvestTool(ToolType.PICKAXE).harvestLevel(4).strength(10.0F, 200.0F).requiresCorrectToolForDrops()));
 	public static final RegistryObject<Block> OVERWORLD_PORTAL_BLOCK = createBlock("overworld_portal_block", () -> new OverworldPortalBlocks(AbstractBlock.Properties.of(Material.CLAY).harvestTool(ToolType.PICKAXE).harvestLevel(4).strength(10.0F, 200.0F).requiresCorrectToolForDrops()));
 	
-	
+	//Plants
 	public static final RegistryObject<Block> AMAZONITE_PLANTS = createBlock("amazonite_plants", () -> new AmazonitePlants(AbstractBlock.Properties.of(Material.PLANT).instabreak().randomTicks().noCollission().sound(SoundType.CROP)));
 	public static final RegistryObject<Block> DESTRIUM_PLANTS = createBlock("destrium_plants", () -> new DestriumPlants(AbstractBlock.Properties.of(Material.PLANT).instabreak().randomTicks().noCollission().sound(SoundType.CROP)));
 	public static final RegistryObject<Block> XP_PLANTS = createBlock("xp_plants", () -> new XpPlants(AbstractBlock.Properties.of(Material.PLANT).instabreak().randomTicks().noCollission().sound(SoundType.CROP)));
 	
-	
+	//Flowers
 	public static final RegistryObject<Block> CLOVER = createBlock("clover", () -> new FlowerBlock(Effects.WEAKNESS, 9, AbstractBlock.Properties.of(Material.PLANT).noCollission().instabreak().sound(SoundType.GRASS)));
 	public static final RegistryObject<Block> CLOVER_TWO = createBlock("clover_two", () -> new FlowerBlock(Effects.WEAKNESS, 9, AbstractBlock.Properties.of(Material.PLANT).noCollission().instabreak().sound(SoundType.GRASS)));
 	
