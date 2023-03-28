@@ -89,6 +89,10 @@ public class DestriumMod {
 		RenderTypeLookup.setRenderLayer(ModBlocks.XP_PLANTS.get(), RenderType.translucent());
 		
 		
+		RenderTypeLookup.setRenderLayer(ModBlocks.CLOVER.get(), RenderType.translucent());
+		RenderTypeLookup.setRenderLayer(ModBlocks.CLOVER_TWO.get(), RenderType.translucent());
+		
+		
 		RenderTypeLookup.setRenderLayer(ModBlocks.BELOW_BLOCK.get(), RenderType.translucent());
 		
 		
