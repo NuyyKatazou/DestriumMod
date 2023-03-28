@@ -95,7 +95,7 @@ public class ModBlocks {
 	public static final RegistryObject<Block> XP_PLANTS = createBlock("xp_plants", () -> new XpPlants(AbstractBlock.Properties.of(Material.PLANT).instabreak().randomTicks().noCollission().sound(SoundType.CROP)));
 	
 	
-	public static final RegistryObject<Block> CLOVER = createBlock("clover", () -> new FlowerBlock(Effects.WEAKNESS, 9, AbstractBlock.Properties.copy(Blocks.DANDELION)));
+	public static final RegistryObject<Block> CLOVER = createBlock("clover", () -> new FlowerBlock(Effects.WEAKNESS, 9, AbstractBlock.Properties.of(Material.PLANT).noCollission().instabreak().sound(SoundType.GRASS)));
 	public static final RegistryObject<Block> CLOVER_TWO = createBlock("clover_two", () -> new FlowerBlock(Effects.WEAKNESS, 9, AbstractBlock.Properties.of(Material.PLANT).noCollission().instabreak().sound(SoundType.GRASS)));
 	
 	public static RegistryObject<Block> createBlock(String name, Supplier<? extends Block> supplier) {
