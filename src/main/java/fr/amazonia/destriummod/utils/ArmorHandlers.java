@@ -25,7 +25,7 @@ public class ArmorHandlers {
 	@SubscribeEvent
 	public void AnvilUse(AnvilUpdateEvent event) {
 		left = event.getLeft().getItem();
-		if(left == ModItems.NECKLACE.get()) {
+		if(left == ModItems.NECKLACE.get() || left == ModItems.LUCKY_NECKLACE.get()) {
 			event.setCanceled(true);
 		}
 	}
