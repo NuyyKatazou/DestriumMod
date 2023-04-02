@@ -9,7 +9,6 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.potion.EffectInstance;
 import net.minecraft.potion.Effects;
 import net.minecraft.world.World;
-import net.minecraftforge.event.AnvilUpdateEvent;
 
 public class LuckyNecklaceArmor extends ArmorItem {
 	
@@ -27,7 +26,4 @@ public class LuckyNecklaceArmor extends ArmorItem {
 	public boolean isEnchantable(ItemStack p_77616_1_) {
 	      return false;
 	   }
-	public boolean AnvilUse(AnvilUpdateEvent event) {
-		return false;
-	}
 }

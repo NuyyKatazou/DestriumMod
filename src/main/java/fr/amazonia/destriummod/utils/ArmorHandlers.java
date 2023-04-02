@@ -11,7 +11,7 @@ import net.minecraftforge.fml.common.Mod;
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.FORGE)
 public class ArmorHandlers {
 	
-	private Item left = ModItems.NECKLACE.get();
+	private Item left;
 	
 	@SubscribeEvent
 	public static void armorDamageHandler(LivingDamageEvent event){
