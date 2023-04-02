@@ -17,6 +17,7 @@ import fr.amazonia.destriummod.item.armor.DestriumArmorHelmet;
 import fr.amazonia.destriummod.item.armor.DestriumArmorLeggings;
 import fr.amazonia.destriummod.item.armor.FeatherArmorBoots;
 import fr.amazonia.destriummod.item.armor.JumpArmorBoots;
+import fr.amazonia.destriummod.item.armor.NecklaceArmor;
 import fr.amazonia.destriummod.item.armor.RenforcedAdventurerArmorBoots;
 import fr.amazonia.destriummod.item.armor.SpeedArmorBoots;
 import fr.amazonia.destriummod.item.food.AmazoniteApple;
@@ -116,6 +117,8 @@ public class ModItems {
 	public static final RegistryObject<Item> JUMP_BOOTS = ITEMS.register("jump_boots", () -> new JumpArmorBoots(ModArmorMaterial.DESTRIUM, EquipmentSlotType.FEET, new Item.Properties().tab(DestriumMod.toolTab).rarity(Rarity.create("destrium", TextFormatting.DARK_GREEN)).fireResistant()));
 	public static final RegistryObject<Item> ADVENTURER_BOOTS = ITEMS.register("adventurer_boots", () -> new AdventurerArmorBoots(ModArmorMaterial.DESTRIUM, EquipmentSlotType.FEET, new Item.Properties().tab(DestriumMod.toolTab).rarity(Rarity.create("destrium", TextFormatting.DARK_GREEN)).fireResistant()));
 	public static final RegistryObject<Item> RENFORCED_ADVENTURER_BOOTS = ITEMS.register("renforced_adventurer_boots", () -> new RenforcedAdventurerArmorBoots(ModArmorMaterial.AMAZONITE, EquipmentSlotType.FEET, new Item.Properties().tab(DestriumMod.toolTab).rarity(Rarity.create("amazonite", TextFormatting.DARK_BLUE)).fireResistant()));
+	
+	public static final RegistryObject<Item> NECKLACE = ITEMS.register("necklace", () -> new NecklaceArmor(ModArmorMaterial.NECKLACE, EquipmentSlotType.CHEST, new Item.Properties().tab(DestriumMod.toolTab).setNoRepair().durability(-1)));
 	
 	
 	//Items

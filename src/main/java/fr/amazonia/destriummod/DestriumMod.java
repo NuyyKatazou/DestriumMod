@@ -3,6 +3,7 @@ package fr.amazonia.destriummod;
 import fr.amazonia.destriummod.init.ModBlocks;
 import fr.amazonia.destriummod.init.ModFluids;
 import fr.amazonia.destriummod.init.ModItems;
+import fr.amazonia.destriummod.utils.ArmorHandlers;
 import fr.amazonia.destriummod.utils.HandlerEvent;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.RenderTypeLookup;
@@ -78,6 +79,7 @@ public class DestriumMod {
 	
 	private void setup(FMLCommonSetupEvent e) {
 		MinecraftForge.EVENT_BUS.register(new HandlerEvent());
+		MinecraftForge.EVENT_BUS.register(new ArmorHandlers());
 		
 		PARADIS_DIMENSION = RegistryKey.create(Registry.DIMENSION_REGISTRY, new ResourceLocation(DestriumMod.MODID, "paradis"));
 	}
