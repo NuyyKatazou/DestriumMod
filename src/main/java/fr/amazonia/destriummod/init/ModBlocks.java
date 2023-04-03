@@ -62,6 +62,7 @@ public class ModBlocks {
 	public static final RegistryObject<Block> DESTRIUM_ORE = createBlock("destrium_ore", () -> new Block(AbstractBlock.Properties.of(Material.STONE).harvestTool(ToolType.PICKAXE).harvestLevel(4).strength(6f, 50f).requiresCorrectToolForDrops()));
 	public static final RegistryObject<Block> ARGONIDE_ORE = createBlock("argonide_ore", () -> new Block(AbstractBlock.Properties.of(Material.STONE).harvestTool(ToolType.PICKAXE).harvestLevel(4).strength(4f, 10f).requiresCorrectToolForDrops()));
 	public static final RegistryObject<Block> CRACKED_ARGONIDE_ORE = createBlock("cracked_argonide_ore", () -> new Block(AbstractBlock.Properties.of(Material.CLAY).harvestTool(ToolType.HOE).harvestLevel(3).strength(4f, 25f).requiresCorrectToolForDrops()));
+	public static final RegistryObject<Block> REPAIR_ORE = createBlock("repair_ore", () -> new Block(AbstractBlock.Properties.of(Material.STONE).harvestTool(ToolType.PICKAXE).harvestLevel(3).strength(4f, 50f).requiresCorrectToolForDrops()));
 	
 	
 	public static final RegistryObject<Block> COBBLESTONE_COMPRESSED1 = createBlock("cobblestone_compressed1", () -> new Block(AbstractBlock.Properties.of(Material.STONE).harvestTool(ToolType.PICKAXE).harvestLevel(1).strength(3.0F, 6.5F).requiresCorrectToolForDrops()));
