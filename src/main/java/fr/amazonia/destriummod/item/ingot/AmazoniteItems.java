@@ -14,9 +14,9 @@ import net.minecraft.world.World;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 
-public class AmazoniteDust extends Item{
+public class AmazoniteItems extends Item{
 
-	public AmazoniteDust(Properties properties) {
+	public AmazoniteItems(Properties properties) {
 		super(properties);
 	}
 	
@@ -25,3 +25,4 @@ public class AmazoniteDust extends Item{
 	      p_77624_3_.add(new TranslationTextComponent(this.getDescriptionId() + ".desc").withStyle(TextFormatting.BLUE));
 	   }
 }
+

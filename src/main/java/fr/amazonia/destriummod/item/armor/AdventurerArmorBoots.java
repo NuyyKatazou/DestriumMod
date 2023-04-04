@@ -1,8 +1,6 @@
 package fr.amazonia.destriummod.item.armor;
 
 import fr.amazonia.destriummod.init.ModItems;
-import fr.amazonia.destriummod.utils.IDamageHandlingArmor;
-import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.ArmorItem;
@@ -10,10 +8,9 @@ import net.minecraft.item.IArmorMaterial;
 import net.minecraft.item.ItemStack;
 import net.minecraft.potion.EffectInstance;
 import net.minecraft.potion.Effects;
-import net.minecraft.util.DamageSource;
 import net.minecraft.world.World;
 
-public class AdventurerArmorBoots extends ArmorItem implements IDamageHandlingArmor{
+public class AdventurerArmorBoots extends ArmorItem{
 	
 	public AdventurerArmorBoots(IArmorMaterial materialIn, EquipmentSlotType slot, Properties properties) {
 		super(materialIn, slot, properties);
@@ -25,12 +22,4 @@ public class AdventurerArmorBoots extends ArmorItem implements IDamageHandlingAr
 			player.addEffect(new EffectInstance(Effects.MOVEMENT_SPEED, 300, 2, false, false, true));
 		}
 	}
-	
-	@Override
-    public float onDamaged(LivingEntity entity, EquipmentSlotType slot, DamageSource source, float amount) {
-        if(source == DamageSource.FALL) {
-            	return 0;
-            }
-		return amount;
-    }
 }

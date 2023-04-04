@@ -3,7 +3,6 @@ package fr.amazonia.destriummod;
 import fr.amazonia.destriummod.init.ModBlocks;
 import fr.amazonia.destriummod.init.ModFluids;
 import fr.amazonia.destriummod.init.ModItems;
-import fr.amazonia.destriummod.utils.ArmorHandlers;
 import fr.amazonia.destriummod.utils.HandlerEvent;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.RenderTypeLookup;
@@ -27,49 +26,21 @@ import org.apache.logging.log4j.Logger;
 
 @Mod(DestriumMod.MODID)
 public class DestriumMod {
+	
 	public static final String MODID = "destriummod";
 	public static final Logger LOGGER = LogManager.getLogger(MODID);
 	
-	
-	public static final ItemGroup ItemTab = new ItemGroup(MODID + ".itemtab") {
-        @Override
-        @OnlyIn(Dist.CLIENT)
-        public ItemStack makeIcon() {
-        	 return new ItemStack(ModItems.AMAZONITE_FRAGMENT.get());
-        }
-    };
-    public static final ItemGroup BlockTab = new ItemGroup(MODID + ".blocktab") {
-    	@Override
-    	@OnlyIn(Dist.CLIENT)
-        public ItemStack makeIcon() {
-    		return new ItemStack(ModBlocks.AMAZONITE_BLOCK.get());
-    	}
-    };
-    public static final ItemGroup toolTab = new ItemGroup(MODID + ".tooltab") {
-    	@Override
-    	@OnlyIn(Dist.CLIENT)
-        public ItemStack makeIcon() {
-           return new ItemStack(ModItems.AMAZONITE_PICKAXE.get());
-    	}
-    };
-    public static final ItemGroup foodTab = new ItemGroup(MODID + ".foodtab") {
-    	@Override
-    	@OnlyIn(Dist.CLIENT)
-        public ItemStack makeIcon() {
-    		return new ItemStack(ModItems.AMAZONITE_APPLE.get());
-    	}
-    };
-    
+    //Dimensions
     public static RegistryKey<World> PARADIS_DIMENSION;
 	
 	public DestriumMod() {
-		
+		//Setup Event
 		FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
 		FMLJavaModLoadingContext.get().getModEventBus().addListener(this::clientSetup);
 		FMLJavaModLoadingContext.get().getModEventBus().addListener(this::serverSetup);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 		
-		
+		//Init Class
 		IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
 		ModItems.ITEMS.register(eventBus);
 		ModBlocks.BLOCKS.register(eventBus);
@@ -77,14 +48,15 @@ public class DestriumMod {
 	
 	}
 	
-	private void setup(FMLCommonSetupEvent e) {
+	private void setup(FMLCommonSetupEvent event) {
+		//Events Class
 		MinecraftForge.EVENT_BUS.register(new HandlerEvent());
-		MinecraftForge.EVENT_BUS.register(new ArmorHandlers());
 		
+		//Dimensions
 		PARADIS_DIMENSION = RegistryKey.create(Registry.DIMENSION_REGISTRY, new ResourceLocation(DestriumMod.MODID, "paradis"));
 	}
 	
-	private void clientSetup(FMLClientSetupEvent e) {
+	private void clientSetup(FMLClientSetupEvent event) {
 		//Plants
 		RenderTypeLookup.setRenderLayer(ModBlocks.AMAZONITE_PLANTS.get(), RenderType.translucent());
 		RenderTypeLookup.setRenderLayer(ModBlocks.DESTRIUM_PLANTS.get(), RenderType.translucent());
@@ -108,7 +80,40 @@ public class DestriumMod {
 	
 	}
 
-	private void serverSetup(FMLDedicatedServerSetupEvent e) {
+	private void serverSetup(FMLDedicatedServerSetupEvent event) {
 		
 	}
+	
+	//CreativeTabs
+	public static final ItemGroup ItemTab = new ItemGroup(MODID + ".itemtab") {
+        @Override
+        @OnlyIn(Dist.CLIENT)
+        public ItemStack makeIcon() {
+        	 return new ItemStack(ModItems.AMAZONITE_FRAGMENT.get());
+        }
+    };
+    
+    public static final ItemGroup BlockTab = new ItemGroup(MODID + ".blocktab") {
+    	@Override
+    	@OnlyIn(Dist.CLIENT)
+        public ItemStack makeIcon() {
+    		return new ItemStack(ModBlocks.AMAZONITE_BLOCK.get());
+    	}
+    };
+    
+    public static final ItemGroup toolTab = new ItemGroup(MODID + ".tooltab") {
+    	@Override
+    	@OnlyIn(Dist.CLIENT)
+        public ItemStack makeIcon() {
+           return new ItemStack(ModItems.AMAZONITE_PICKAXE.get());
+    	}
+    };
+    
+    public static final ItemGroup foodTab = new ItemGroup(MODID + ".foodtab") {
+    	@Override
+    	@OnlyIn(Dist.CLIENT)
+        public ItemStack makeIcon() {
+    		return new ItemStack(ModItems.AMAZONITE_APPLE.get());
+    	}
+    };
 }

@@ -14,10 +14,10 @@ import net.minecraft.world.gen.GenerationStage;
 
 public class ModFlowerGeneration {
 	
-	public static void generatePlainsFlowers(final BiomeLoadingEvent event) {
+	public static void generateFlowers(final BiomeLoadingEvent event) {
         RegistryKey<Biome> key = RegistryKey.create(Registry.BIOME_REGISTRY, event.getName());
         Set<BiomeDictionary.Type> types = BiomeDictionary.getTypes(key);
-
+        //In Plains
         if(types.contains(BiomeDictionary.Type.PLAINS)) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);

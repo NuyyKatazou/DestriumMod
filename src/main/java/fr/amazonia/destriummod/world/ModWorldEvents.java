@@ -1,6 +1,7 @@
 package fr.amazonia.destriummod.world;
 
 import fr.amazonia.destriummod.DestriumMod;
+import fr.amazonia.destriummod.world.gen.ModConfiguredFeatures;
 import fr.amazonia.destriummod.world.gen.ModFlowerGeneration;
 import fr.amazonia.destriummod.world.gen.ModOreGeneration;
 import net.minecraftforge.event.world.BiomeLoadingEvent;
@@ -12,9 +13,10 @@ public class ModWorldEvents {
 	
 	@SubscribeEvent
     public static void biomeLoadingEvent(final BiomeLoadingEvent event) {
-        ModFlowerGeneration.generatePlainsFlowers(event);
+        ModFlowerGeneration.generateFlowers(event);
         
-        ModOreGeneration.generateEndOre(event);
-        ModOreGeneration.registerOres();
+        ModOreGeneration.generateOre(event);
+        
+        ModConfiguredFeatures.registerOres();
     }
 }
