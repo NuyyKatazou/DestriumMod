@@ -116,5 +116,4 @@ public class DestriumMod {
     		return new ItemStack(ModItems.AMAZONITE_APPLE.get());
     	}
     };
-
 }
