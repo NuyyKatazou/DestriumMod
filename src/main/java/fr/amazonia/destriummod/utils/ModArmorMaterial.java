@@ -13,6 +13,9 @@ import net.minecraft.world.item.crafting.Ingredient;
 
 @SuppressWarnings("deprecation")
 public enum ModArmorMaterial implements ArmorMaterial {
+	NECKLACE("necklace", 74, new int[]{3, 6, 5, 1}, 0, SoundEvents.ARMOR_EQUIP_CHAIN, 0F, 0F, () -> {
+		return Ingredient.of(ModItems.AMAZONITE_NUGGETS.get());
+	}),
 	ARGONIDE("argonide", 74, new int[]{4, 7, 9, 4}, 18, SoundEvents.ARMOR_EQUIP_DIAMOND, 3.5F, 0.1F, () -> {
 		   return Ingredient.of(ModItems.ARGONIDE_INGOT.get());
 	   }),
