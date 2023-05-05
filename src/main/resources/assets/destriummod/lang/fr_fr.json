@@ -182,8 +182,8 @@
   
   
   "item.destriummod.spawners_pickaxe.desc": " ",
-  "item.destriummod.spawners_pickaxe.desc2": "3 Utilisation,",
-  "item.destriummod.spawners_pickaxe.desc3": "Doit avoir la Perms Achetable dans /boutique pour être utilisé",
+  "item.destriummod.spawners_pickaxe.desc2": "Ne pas crafter",
+  "item.destriummod.spawners_pickaxe.desc3": "Ne marche pas",
   "item.destriummod.spawners_pickaxe.desc4": " ",
 
 
