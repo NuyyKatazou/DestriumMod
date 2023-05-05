@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "destriummod:feather_boots"
+  },
+  "addition": {
+    "item": "destriummod:speed_boots"
+  },
+  "result": {
+    "item": "destriummod:adventurer_boots"
+  }
+}

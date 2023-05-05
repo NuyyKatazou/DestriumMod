@@ -1,12 +1,15 @@
 package fr.amazonia.destriummod.utils;
 
 import fr.amazonia.destriummod.block.OverworldPortalBlocks;
+import fr.amazonia.destriummod.init.ModItems;
+import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraftforge.event.entity.living.LivingFallEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 
 public class HandlerEvent {
+
 	@SubscribeEvent
     public void onLivingFall(LivingFallEvent event) {
         LivingEntity entity = event.getEntityLiving();
@@ -15,6 +18,18 @@ public class HandlerEvent {
             if(OverworldPortalBlocks.f == 1) {
             event.setDamageMultiplier(0);
             OverworldPortalBlocks.f = 0;
+            }
+            //Cancel FeatherBoots FallDamage
+            if(entity.getItemBySlot(EquipmentSlot.FEET).getItem() == ModItems.FEATHER_BOOTS.get()) {
+                event.setDamageMultiplier(0);
+            }
+            //Cancel AdventurerBoots FallDamage
+            if(entity.getItemBySlot(EquipmentSlot.FEET).getItem() == ModItems.ADVENTURER_BOOTS.get()) {
+                event.setDamageMultiplier(0);
+            }
+            //Cancel RenforcedAdventurerBoots FallDamage
+            if(entity.getItemBySlot(EquipmentSlot.FEET).getItem() == ModItems.RENFORCED_ADVENTURER_BOOTS.get()) {
+                event.setDamageMultiplier(0);
             }
         }
     }
