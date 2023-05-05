@@ -9,9 +9,9 @@
   "item.destriummod.argonide_ingot": "Lingot d'Argonide",
   "item.destriummod.argonide_nuggets": "PÃ©pite d'Argonide",
   
-  "item.destriummod.emerald_nuggets": "Pépite d'Emeraude",
-  "item.destriummod.diamond_nuggets": "Pépite de Diamants",
-  "item.destriummod.netherite_nuggets": "Pépite de Netherite",
+  "item.destriummod.emerald_nuggets": "Pï¿½pite d'Emeraude",
+  "item.destriummod.diamond_nuggets": "Pï¿½pite de Diamants",
+  "item.destriummod.netherite_nuggets": "Pï¿½pite de Netherite",
   
   
   "item.destriummod.amazonite_stick": "Stick En Amazonite",
@@ -31,7 +31,7 @@
   "item.destriummod.destrium_shovel": "Pelle En Destrium",
   "item.destriummod.destrium_hoes": "Houe En Destrium",
   
-  "item.destriummod.argonide_sword": "EpÃ©e En Argonide",
+  "item.destriummod.argonide_sword": "EpÃ©eï¿½En Argonide",
   "item.destriummod.argonide_pickaxe": "Pioche En Argonide",
   "item.destriummod.argonide_axe": "Hache En Argonide",
   "item.destriummod.argonide_shovel": "Pelle En Argonide",
@@ -80,11 +80,11 @@
   
   "item.destriummod.infinity_water_bucket": "Seaux d'Eau Infini",
   
-  "item.destriummod.poison_water_bucket": "Seaux d'Eau Empoisonné",
+  "item.destriummod.poison_water_bucket": "Seaux d'Eau Empoisonnï¿½",
   "item.destriummod.poison_star": "Etoile de Poison",
   
-  "item.destriummod.resistance_lava_bucket": "Seaux de Lave Résistante",
-  "item.destriummod.resistance_star": "Etoile de Résistance",
+  "item.destriummod.resistance_lava_bucket": "Seaux de Lave Rï¿½sistante",
+  "item.destriummod.resistance_star": "Etoile de Rï¿½sistance",
   
   
   
@@ -160,7 +160,7 @@
   
   
   
-  "fluid.destriummod.poison_water": "Eau Empoisonné",
+  "fluid.destriummod.poison_water": "Eau Empoisonnï¿½",
   
   
   
@@ -203,9 +203,9 @@
   "item.destriummod.argonide_ingot.desc3": ">> Argonide",
   "item.destriummod.argonide_nuggets.desc": "UtilisÃ© pour craft le Lingot d'Argonide",
   
-  "item.destriummod.emerald_nuggets.desc": "Utilisé pour craft une Emeraude",
-  "item.destriummod.diamond_nuggets.desc": "Utilisé pour craft un Diamants",
-  "item.destriummod.netherite_nuggets.desc": "Utilisé pour craft le Fragment de Netherite",
+  "item.destriummod.emerald_nuggets.desc": "Utilisï¿½ pour craft une Emeraude",
+  "item.destriummod.diamond_nuggets.desc": "Utilisï¿½ pour craft un Diamants",
+  "item.destriummod.netherite_nuggets.desc": "Utilisï¿½ pour craft le Fragment de Netherite",
   
   
   "item.destriummod.amazonite_stick.desc": "UtilisÃ© pour craft les Outils En Amazonite",
@@ -213,7 +213,7 @@
   "item.destriummod.argonide_stick.desc": "UtilisÃ© pour craft les Outils En Argonide",
   
   
-  "item.destriummod.golden_core.desc": "UtilisÃ© pour craft la Pomme d'Or Enchanté",
+  "item.destriummod.golden_core.desc": "UtilisÃ© pour craft la Pomme d'Or Enchantï¿½",
   "item.destriummod.compressed_golden.desc": "UtilisÃ© pour craft le Noyau En Or",
 
 
