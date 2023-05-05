@@ -106,6 +106,7 @@ public abstract class PoisonWaterFluid extends ForgeFlowingFluid {
     }
     
     public static class Flowing extends PoisonWaterFluid {
+
         public Flowing(Properties properties) {
             super(properties);
             registerDefaultState(getStateDefinition().any().setValue(LEVEL, 7));

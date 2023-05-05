@@ -21,7 +21,7 @@ import net.minecraftforge.registries.RegistryObject;
 public class ModBlocks {
 
 	public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, DestriumMod.MODID);
-	
+	//Blocks (Paradis)
 	public static final RegistryObject<Block> CLOUD = createBlock("cloud", () -> new Block(BlockBehaviour.Properties.of(Material.CLAY).strength(2.5f, 25f).requiresCorrectToolForDrops()));
 	public static final RegistryObject<Block> BLUE_CLOUD = createBlock("blue_cloud", () -> new Block(BlockBehaviour.Properties.of(Material.CLAY).strength(3f, 25f).requiresCorrectToolForDrops()));
 	public static final RegistryObject<Block> BLACK_CLOUD = createBlock("black_cloud", () -> new Block(BlockBehaviour.Properties.of(Material.CLAY).strength(3f, 25f).requiresCorrectToolForDrops()));
@@ -47,8 +47,8 @@ public class ModBlocks {
 	public static final RegistryObject<Block> YELLOW_CLOUD = createBlock("yellow_cloud", () -> new Block(BlockBehaviour.Properties.of(Material.CLAY).strength(3f, 25f).requiresCorrectToolForDrops()));
 	public static final RegistryObject<Block> CRACKED_CLOUD = createBlock("cracked_cloud", () -> new Block(BlockBehaviour.Properties.of(Material.CLAY).strength(2.5f, 25f).requiresCorrectToolForDrops()));
 	public static final RegistryObject<Block> CLOUD2 = createBlock("cloud2", () -> new Block(BlockBehaviour.Properties.of(Material.CLAY).strength(2.5f, 25f).requiresCorrectToolForDrops()));
-	
-	
+
+	//(Ore)
 	public static final RegistryObject<Block> AMAZONITE_BLOCK = createBlock("amazonite_block", () -> new Block(BlockBehaviour.Properties.of(Material.METAL).strength(25f, 1000f).requiresCorrectToolForDrops()));
 	public static final RegistryObject<Block> FAKE_AMAZONITE_BLOCK = createBlock("fake_amazonite_block", () -> new Block(BlockBehaviour.Properties.of(Material.METAL).strength(25f, 1000f).requiresCorrectToolForDrops()));
 	public static final RegistryObject<Block> DESTRIUM_BLOCK = createBlock("destrium_block", () -> new Block(BlockBehaviour.Properties.of(Material.METAL).strength(15f, 125f).requiresCorrectToolForDrops()));
@@ -59,8 +59,8 @@ public class ModBlocks {
 	public static final RegistryObject<Block> DESTRIUM_ORE = createBlock("destrium_ore", () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(6f, 50f).requiresCorrectToolForDrops()));
 	public static final RegistryObject<Block> ARGONIDE_ORE = createBlock("argonide_ore", () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(4f, 10f).requiresCorrectToolForDrops()));
 	public static final RegistryObject<Block> CRACKED_ARGONIDE_ORE = createBlock("cracked_argonide_ore", () -> new Block(BlockBehaviour.Properties.of(Material.CLAY).strength(4f, 25f).requiresCorrectToolForDrops()));
-	
-	
+
+	//(Compressed)
 	public static final RegistryObject<Block> COBBLESTONE_COMPRESSED1 = createBlock("cobblestone_compressed1", () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(3.0F, 6.5F).requiresCorrectToolForDrops()));
 	public static final RegistryObject<Block> COBBLESTONE_COMPRESSED2 = createBlock("cobblestone_compressed2", () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(5.0F, 7.0F).requiresCorrectToolForDrops()));
 	public static final RegistryObject<Block> COBBLESTONE_COMPRESSED3 = createBlock("cobblestone_compressed3", () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(8.0F, 9.0F).requiresCorrectToolForDrops()));
@@ -75,8 +75,8 @@ public class ModBlocks {
 	public static final RegistryObject<Block> DIRT_COMPRESSED3 = createBlock("dirt_compressed3", () -> new Block(BlockBehaviour.Properties.of(Material.DIRT).strength(8.0F, 9.0F).requiresCorrectToolForDrops()));
 	public static final RegistryObject<Block> DIRT_COMPRESSED4 = createBlock("dirt_compressed4", () -> new Block(BlockBehaviour.Properties.of(Material.DIRT).strength(12.0F, 10.0F).requiresCorrectToolForDrops()));
 	public static final RegistryObject<Block> DIRT_COMPRESSED5 = createBlock("dirt_compressed5", () -> new Block(BlockBehaviour.Properties.of(Material.DIRT).strength(20.0F, 14.0F).requiresCorrectToolForDrops()));
-	
-	
+
+	//(Other)
 	public static final RegistryObject<Block> AMAZONITE_RELIQUE_BLOCK = createBlock("amazonite_relique_block", () -> new Block(BlockBehaviour.Properties.of(Material.METAL).strength(25.0F, 100.0F).requiresCorrectToolForDrops()));
 	
 	
@@ -84,13 +84,15 @@ public class ModBlocks {
 	
 	public static final RegistryObject<Block> PARADIS_PORTAL_BLOCK = createBlock("paradis_portal_block", () -> new ParadisPortalBlocks(BlockBehaviour.Properties.of(Material.CLAY).strength(10.0F, 200.0F).requiresCorrectToolForDrops()));
 	public static final RegistryObject<Block> OVERWORLD_PORTAL_BLOCK = createBlock("overworld_portal_block", () -> new OverworldPortalBlocks(BlockBehaviour.Properties.of(Material.CLAY).strength(10.0F, 200.0F).requiresCorrectToolForDrops()));
-	
-	
+
+	//Plants
 	public static final RegistryObject<Block> AMAZONITE_PLANTS = createBlock("amazonite_plants", () -> new AmazonitePlants(BlockBehaviour.Properties.of(Material.PLANT).instabreak().randomTicks().noCollission().sound(SoundType.CROP)));
 	public static final RegistryObject<Block> DESTRIUM_PLANTS = createBlock("destrium_plants", () -> new DestriumPlants(BlockBehaviour.Properties.of(Material.PLANT).instabreak().randomTicks().noCollission().sound(SoundType.CROP)));
 	public static final RegistryObject<Block> XP_PLANTS = createBlock("xp_plants", () -> new XpPlants(BlockBehaviour.Properties.of(Material.PLANT).instabreak().randomTicks().noCollission().sound(SoundType.CROP)));
-	
-	
+
+	//Flowers
+
+
 	public static RegistryObject<Block> createBlock(String name, Supplier<? extends Block> supplier) {
 		
 		RegistryObject<Block> block = BLOCKS.register(name, supplier);

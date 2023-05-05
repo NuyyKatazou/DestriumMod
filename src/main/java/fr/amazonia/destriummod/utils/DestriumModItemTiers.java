@@ -61,6 +61,7 @@ public enum DestriumModItemTiers implements Tier{
 	   public Ingredient getRepairIngredient() {
 	      return this.repairIngredient.get();
 	   }
+
 //	   public static final Tag.Named<Block> NEED_AMAZONITE_TOOL = BlockTags.createOptional(new ResourceLocation(DestriumMod.MODID + "needs_amazonite_tool"));
 //	   public static final Tag.Named<Block> NEED_DESTRIUM_TOOL = BlockTags.createOptional(new ResourceLocation(DestriumMod.MODID + "needs_destrium_tool"));
 //	   

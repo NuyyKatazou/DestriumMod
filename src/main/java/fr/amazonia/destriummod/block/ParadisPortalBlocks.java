@@ -40,5 +40,4 @@ public class ParadisPortalBlocks extends Block {
         }
         return super.use(state, worldIn, pos, player, handIn, hit);
     }
-
 }

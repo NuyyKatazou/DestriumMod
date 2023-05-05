@@ -41,7 +41,6 @@ public enum ModArmorMaterial implements ArmorMaterial {
 	      this.sound = p_40478_;
 	      this.toughness = p_40479_;
 	      this.knockbackResistance = p_40480_;
-	      
 	      this.repairIngredient = new LazyLoadedValue<>(p_40481_);
 	   }
 
