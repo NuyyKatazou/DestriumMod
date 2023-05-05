@@ -8,9 +8,11 @@ import fr.amazonia.destriummod.block.ParadisPortalBlocks;
 import fr.amazonia.destriummod.block.plants.AmazonitePlants;
 import fr.amazonia.destriummod.block.plants.DestriumPlants;
 import fr.amazonia.destriummod.block.plants.XpPlants;
+import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.FlowerBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.Material;
@@ -91,7 +93,8 @@ public class ModBlocks {
 	public static final RegistryObject<Block> XP_PLANTS = createBlock("xp_plants", () -> new XpPlants(BlockBehaviour.Properties.of(Material.PLANT).instabreak().randomTicks().noCollission().sound(SoundType.CROP)));
 
 	//Flowers
-
+	public static final RegistryObject<Block> CLOVER = createBlock("clover", () -> new FlowerBlock(MobEffects.LUCK, 9, BlockBehaviour.Properties.of(Material.PLANT).noCollission().instabreak().sound(SoundType.GRASS)));
+	public static final RegistryObject<Block> CLOVER_TWO = createBlock("clover_two", () -> new FlowerBlock(MobEffects.LUCK, 9, BlockBehaviour.Properties.of(Material.PLANT).noCollission().instabreak().sound(SoundType.GRASS)));
 
 	public static RegistryObject<Block> createBlock(String name, Supplier<? extends Block> supplier) {
 		

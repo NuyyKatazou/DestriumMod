@@ -70,6 +70,8 @@ public class DestriumMod {
 		ItemBlockRenderTypes.setRenderLayer(ModBlocks.XP_PLANTS.get(), RenderType.translucent());
 
 		//Flowers
+		ItemBlockRenderTypes.setRenderLayer(ModBlocks.CLOVER.get(), RenderType.translucent());
+		ItemBlockRenderTypes.setRenderLayer(ModBlocks.CLOVER_TWO.get(), RenderType.translucent());
 
 		//Blocks
 		ItemBlockRenderTypes.setRenderLayer(ModBlocks.BELOW_BLOCK.get(), RenderType.translucent());
