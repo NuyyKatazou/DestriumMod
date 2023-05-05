@@ -6,29 +6,19 @@ import fr.amazonia.destriummod.item.armor.AmazoniteArmorBoots;
 import fr.amazonia.destriummod.item.armor.AmazoniteArmorChestPlate;
 import fr.amazonia.destriummod.item.armor.AmazoniteArmorHelmet;
 import fr.amazonia.destriummod.item.armor.AmazoniteArmorLeggings;
-import fr.amazonia.destriummod.item.armor.ArgonideArmorBoots;
-import fr.amazonia.destriummod.item.armor.ArgonideArmorChestPlate;
-import fr.amazonia.destriummod.item.armor.ArgonideArmorHelmet;
-import fr.amazonia.destriummod.item.armor.ArgonideArmorLeggings;
-import fr.amazonia.destriummod.item.armor.DestriumArmorBoots;
-import fr.amazonia.destriummod.item.armor.DestriumArmorChestPlate;
-import fr.amazonia.destriummod.item.armor.DestriumArmorHelmet;
-import fr.amazonia.destriummod.item.armor.DestriumArmorLeggings;
+import fr.amazonia.destriummod.item.armor.ArgonideArmor;
+import fr.amazonia.destriummod.item.armor.DestriumArmor;
 import fr.amazonia.destriummod.item.food.AmazoniteApple;
 import fr.amazonia.destriummod.item.food.DestriumApple;
-import fr.amazonia.destriummod.item.ingot.AmazoniteCrumb;
-import fr.amazonia.destriummod.item.ingot.AmazoniteDust;
-import fr.amazonia.destriummod.item.ingot.AmazoniteFragment;
+import fr.amazonia.destriummod.item.ingot.AmazoniteItems;
 import fr.amazonia.destriummod.item.ingot.AmazoniteIngot;
-import fr.amazonia.destriummod.item.ingot.AmazoniteNuggets;
 import fr.amazonia.destriummod.item.ingot.ArgonideIngot;
 import fr.amazonia.destriummod.item.ingot.ArgonideNuggets;
-import fr.amazonia.destriummod.item.ingot.CompressedGolden;
 import fr.amazonia.destriummod.item.ingot.DestriumIngot;
 import fr.amazonia.destriummod.item.ingot.DestriumNuggets;
 import fr.amazonia.destriummod.item.ingot.DiamondNuggets;
 import fr.amazonia.destriummod.item.ingot.EmeraldNuggets;
-import fr.amazonia.destriummod.item.ingot.GoldenCore;
+import fr.amazonia.destriummod.item.ingot.GoldenItems;
 import fr.amazonia.destriummod.item.ingot.NetheriteNuggets;
 import fr.amazonia.destriummod.item.stick.AmazoniteStick;
 import fr.amazonia.destriummod.item.stick.ArgonideStick;
@@ -96,22 +86,22 @@ public class ModItems {
 	public static final RegistryObject<Item> AMAZONITE_LEGGINGS = ITEMS.register("amazonite_leggings", () -> new AmazoniteArmorLeggings(ModArmorMaterial.AMAZONITE, EquipmentSlot.LEGS, new Item.Properties().tab(DestriumMod.toolTab).rarity(Rarity.create("amazonite", ChatFormatting.DARK_BLUE)).fireResistant()));
 	public static final RegistryObject<Item> AMAZONITE_BOOTS = ITEMS.register("amazonite_boots", () -> new AmazoniteArmorBoots(ModArmorMaterial.AMAZONITE, EquipmentSlot.FEET, new Item.Properties().tab(DestriumMod.toolTab).rarity(Rarity.create("amazonite", ChatFormatting.DARK_BLUE)).fireResistant()));
 	
-	public static final RegistryObject<Item> DESTRIUM_HELMET = ITEMS.register("destrium_helmet", () -> new DestriumArmorHelmet(ModArmorMaterial.DESTRIUM, EquipmentSlot.HEAD, new Item.Properties().tab(DestriumMod.toolTab).rarity(Rarity.create("destrium", ChatFormatting.DARK_GREEN)).fireResistant()));
-	public static final RegistryObject<Item> DESTRIUM_CHESTPLATE = ITEMS.register("destrium_chestplate", () -> new DestriumArmorChestPlate(ModArmorMaterial.DESTRIUM, EquipmentSlot.CHEST, new Item.Properties().tab(DestriumMod.toolTab).rarity(Rarity.create("destrium", ChatFormatting.DARK_GREEN)).fireResistant()));
-	public static final RegistryObject<Item> DESTRIUM_LEGGINGS = ITEMS.register("destrium_leggings", () -> new DestriumArmorLeggings(ModArmorMaterial.DESTRIUM, EquipmentSlot.LEGS, new Item.Properties().tab(DestriumMod.toolTab).rarity(Rarity.create("destrium", ChatFormatting.DARK_GREEN)).fireResistant()));
-	public static final RegistryObject<Item> DESTRIUM_BOOTS = ITEMS.register("destrium_boots", () -> new DestriumArmorBoots(ModArmorMaterial.DESTRIUM, EquipmentSlot.FEET, new Item.Properties().tab(DestriumMod.toolTab).rarity(Rarity.create("destrium", ChatFormatting.DARK_GREEN)).fireResistant()));
+	public static final RegistryObject<Item> DESTRIUM_HELMET = ITEMS.register("destrium_helmet", () -> new DestriumArmor(ModArmorMaterial.DESTRIUM, EquipmentSlot.HEAD, new Item.Properties().tab(DestriumMod.toolTab).rarity(Rarity.create("destrium", ChatFormatting.DARK_GREEN)).fireResistant()));
+	public static final RegistryObject<Item> DESTRIUM_CHESTPLATE = ITEMS.register("destrium_chestplate", () -> new DestriumArmor(ModArmorMaterial.DESTRIUM, EquipmentSlot.CHEST, new Item.Properties().tab(DestriumMod.toolTab).rarity(Rarity.create("destrium", ChatFormatting.DARK_GREEN)).fireResistant()));
+	public static final RegistryObject<Item> DESTRIUM_LEGGINGS = ITEMS.register("destrium_leggings", () -> new DestriumArmor(ModArmorMaterial.DESTRIUM, EquipmentSlot.LEGS, new Item.Properties().tab(DestriumMod.toolTab).rarity(Rarity.create("destrium", ChatFormatting.DARK_GREEN)).fireResistant()));
+	public static final RegistryObject<Item> DESTRIUM_BOOTS = ITEMS.register("destrium_boots", () -> new DestriumArmor(ModArmorMaterial.DESTRIUM, EquipmentSlot.FEET, new Item.Properties().tab(DestriumMod.toolTab).rarity(Rarity.create("destrium", ChatFormatting.DARK_GREEN)).fireResistant()));
 	
-	public static final RegistryObject<Item> ARGONIDE_HELMET = ITEMS.register("argonide_helmet", () -> new ArgonideArmorHelmet(ModArmorMaterial.ARGONIDE, EquipmentSlot.HEAD, new Item.Properties().tab(DestriumMod.toolTab).rarity(Rarity.create("argonide", ChatFormatting.GOLD)).fireResistant()));
-	public static final RegistryObject<Item> ARGONIDE_CHESTPLATE = ITEMS.register("argonide_chestplate", () -> new ArgonideArmorChestPlate(ModArmorMaterial.ARGONIDE, EquipmentSlot.CHEST, new Item.Properties().tab(DestriumMod.toolTab).rarity(Rarity.create("argonide", ChatFormatting.GOLD)).fireResistant()));
-	public static final RegistryObject<Item> ARGONIDE_LEGGINGS = ITEMS.register("argonide_leggings", () -> new ArgonideArmorLeggings(ModArmorMaterial.ARGONIDE, EquipmentSlot.LEGS, new Item.Properties().tab(DestriumMod.toolTab).rarity(Rarity.create("argonide", ChatFormatting.GOLD)).fireResistant()));
-	public static final RegistryObject<Item> ARGONIDE_BOOTS = ITEMS.register("argonide_boots", () -> new ArgonideArmorBoots(ModArmorMaterial.ARGONIDE, EquipmentSlot.FEET, new Item.Properties().tab(DestriumMod.toolTab).rarity(Rarity.create("argonide", ChatFormatting.GOLD)).fireResistant()));
+	public static final RegistryObject<Item> ARGONIDE_HELMET = ITEMS.register("argonide_helmet", () -> new ArgonideArmor(ModArmorMaterial.ARGONIDE, EquipmentSlot.HEAD, new Item.Properties().tab(DestriumMod.toolTab).rarity(Rarity.create("argonide", ChatFormatting.GOLD)).fireResistant()));
+	public static final RegistryObject<Item> ARGONIDE_CHESTPLATE = ITEMS.register("argonide_chestplate", () -> new ArgonideArmor(ModArmorMaterial.ARGONIDE, EquipmentSlot.CHEST, new Item.Properties().tab(DestriumMod.toolTab).rarity(Rarity.create("argonide", ChatFormatting.GOLD)).fireResistant()));
+	public static final RegistryObject<Item> ARGONIDE_LEGGINGS = ITEMS.register("argonide_leggings", () -> new ArgonideArmor(ModArmorMaterial.ARGONIDE, EquipmentSlot.LEGS, new Item.Properties().tab(DestriumMod.toolTab).rarity(Rarity.create("argonide", ChatFormatting.GOLD)).fireResistant()));
+	public static final RegistryObject<Item> ARGONIDE_BOOTS = ITEMS.register("argonide_boots", () -> new ArgonideArmor(ModArmorMaterial.ARGONIDE, EquipmentSlot.FEET, new Item.Properties().tab(DestriumMod.toolTab).rarity(Rarity.create("argonide", ChatFormatting.GOLD)).fireResistant()));
 
 
 	//Items (Mineral)
-	public static final RegistryObject<Item> AMAZONITE_CRUMB = ITEMS.register("amazonite_crumb", () -> new AmazoniteCrumb(new Item.Properties().tab(DestriumMod.ItemTab).rarity(Rarity.create("amazonite", ChatFormatting.DARK_BLUE)).fireResistant()));
-	public static final RegistryObject<Item> AMAZONITE_DUST = ITEMS.register("amazonite_dust", () -> new AmazoniteDust(new Item.Properties().tab(DestriumMod.ItemTab).rarity(Rarity.create("amazonite", ChatFormatting.DARK_BLUE)).fireResistant()));
-	public static final RegistryObject<Item> AMAZONITE_FRAGMENT = ITEMS.register("amazonite_fragment", () -> new AmazoniteFragment(new Item.Properties().tab(DestriumMod.ItemTab).rarity(Rarity.create("amazonite", ChatFormatting.DARK_BLUE)).fireResistant()));
-	public static final RegistryObject<Item> AMAZONITE_NUGGETS = ITEMS.register("amazonite_nuggets", () -> new AmazoniteNuggets(new Item.Properties().tab(DestriumMod.ItemTab).rarity(Rarity.create("amazonite", ChatFormatting.DARK_BLUE)).fireResistant()));
+	public static final RegistryObject<Item> AMAZONITE_CRUMB = ITEMS.register("amazonite_crumb", () -> new AmazoniteItems(new Item.Properties().tab(DestriumMod.ItemTab).rarity(Rarity.create("amazonite", ChatFormatting.DARK_BLUE)).fireResistant()));
+	public static final RegistryObject<Item> AMAZONITE_DUST = ITEMS.register("amazonite_dust", () -> new AmazoniteItems(new Item.Properties().tab(DestriumMod.ItemTab).rarity(Rarity.create("amazonite", ChatFormatting.DARK_BLUE)).fireResistant()));
+	public static final RegistryObject<Item> AMAZONITE_FRAGMENT = ITEMS.register("amazonite_fragment", () -> new AmazoniteItems(new Item.Properties().tab(DestriumMod.ItemTab).rarity(Rarity.create("amazonite", ChatFormatting.DARK_BLUE)).fireResistant()));
+	public static final RegistryObject<Item> AMAZONITE_NUGGETS = ITEMS.register("amazonite_nuggets", () -> new AmazoniteItems(new Item.Properties().tab(DestriumMod.ItemTab).rarity(Rarity.create("amazonite", ChatFormatting.DARK_BLUE)).fireResistant()));
 	public static final RegistryObject<Item> AMAZONITE_INGOT = ITEMS.register("amazonite_ingot", () -> new AmazoniteIngot(new Item.Properties().tab(DestriumMod.ItemTab).rarity(Rarity.create("amazonite", ChatFormatting.DARK_BLUE)).fireResistant()));
 	public static final RegistryObject<Item> DESTRIUM_NUGGETS = ITEMS.register("destrium_nuggets", () -> new DestriumNuggets(new Item.Properties().tab(DestriumMod.ItemTab).rarity(Rarity.create("destrium", ChatFormatting.DARK_GREEN)).fireResistant()));
 	public static final RegistryObject<Item> DESTRIUM_INGOT = ITEMS.register("destrium_ingot", () -> new DestriumIngot(new Item.Properties().tab(DestriumMod.ItemTab).rarity(Rarity.create("destrium", ChatFormatting.DARK_GREEN)).fireResistant()));
@@ -128,8 +118,8 @@ public class ModItems {
 	public static final RegistryObject<Item> ARGONIDE_STICK = ITEMS.register("argonide_stick", () -> new ArgonideStick(new Item.Properties().tab(DestriumMod.ItemTab).rarity(Rarity.create("argonide", ChatFormatting.GOLD)).fireResistant()));
 
 	
-	public static final RegistryObject<Item> GOLDEN_CORE = ITEMS.register("golden_core", () -> new GoldenCore(new Item.Properties().tab(DestriumMod.ItemTab).rarity(Rarity.create("gold", ChatFormatting.GOLD))));
-	public static final RegistryObject<Item> COMPRESSED_GOLDEN = ITEMS.register("compressed_golden", () -> new CompressedGolden(new Item.Properties().tab(DestriumMod.ItemTab).rarity(Rarity.create("gold", ChatFormatting.GOLD))));
+	public static final RegistryObject<Item> GOLDEN_CORE = ITEMS.register("golden_core", () -> new GoldenItems(new Item.Properties().tab(DestriumMod.ItemTab).rarity(Rarity.create("gold", ChatFormatting.GOLD))));
+	public static final RegistryObject<Item> COMPRESSED_GOLDEN = ITEMS.register("compressed_golden", () -> new GoldenItems(new Item.Properties().tab(DestriumMod.ItemTab).rarity(Rarity.create("gold", ChatFormatting.GOLD))));
 	
 	
 	public static final RegistryObject<Item> IRON_PLATE = ITEMS.register("iron_plate", () -> new Item(new Item.Properties().tab(DestriumMod.ItemTab)));

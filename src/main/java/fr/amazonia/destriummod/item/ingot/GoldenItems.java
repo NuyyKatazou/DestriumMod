@@ -14,9 +14,9 @@ import net.minecraft.world.level.Level;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 
-public class CompressedGolden extends Item{
+public class GoldenItems extends Item{
 
-	public CompressedGolden(Properties p_i48487_1_) {
+	public GoldenItems(Properties p_i48487_1_) {
 		super(p_i48487_1_);
 	}
 	

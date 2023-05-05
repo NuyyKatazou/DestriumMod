@@ -54,7 +54,7 @@ public class DestriumMod {
 	
 	}
 	
-	private void setup(FMLCommonSetupEvent e) {
+	private void setup(FMLCommonSetupEvent event) {
 		//Events Class
 		MinecraftForge.EVENT_BUS.register(new HandlerEvent());
 
@@ -63,7 +63,7 @@ public class DestriumMod {
 		
 	}
 	
-	private void clientSetup(FMLClientSetupEvent e) {
+	private void clientSetup(FMLClientSetupEvent event) {
 		//Plants
 		ItemBlockRenderTypes.setRenderLayer(ModBlocks.AMAZONITE_PLANTS.get(), RenderType.translucent());
 		ItemBlockRenderTypes.setRenderLayer(ModBlocks.DESTRIUM_PLANTS.get(), RenderType.translucent());
@@ -84,7 +84,7 @@ public class DestriumMod {
 		ItemBlockRenderTypes.setRenderLayer(ModFluids.RESISTANCE_LAVA_FLOWING.get(), RenderType.translucent());
 	}
 
-	private void serverSetup(FMLDedicatedServerSetupEvent e) {
+	private void serverSetup(FMLDedicatedServerSetupEvent event) {
 		
 	}
 

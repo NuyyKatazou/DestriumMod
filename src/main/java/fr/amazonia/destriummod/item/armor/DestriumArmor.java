@@ -5,9 +5,9 @@ import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.ArmorMaterial;
 import net.minecraft.world.item.Item;
 
-public class DestriumArmorHelmet extends ArmorItem {
+public class DestriumArmor extends ArmorItem {
 	
-	public DestriumArmorHelmet(ArmorMaterial materialIn, EquipmentSlot slot, Item.Properties properties) {
+	public DestriumArmor(ArmorMaterial materialIn, EquipmentSlot slot, Item.Properties properties) {
 		super(materialIn, slot, properties);
 	}
 }
