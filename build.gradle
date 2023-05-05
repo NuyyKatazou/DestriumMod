@@ -16,7 +16,7 @@ plugins {
 apply plugin: 'net.minecraftforge.gradle'
 
 
-version = '1.4.1' //#3 (nombre de maj depuis la version 1.18)
+version = '1.5.0' //#4 (nombre de maj depuis la version 1.18)
 group = 'fr.amazonia.destriummod' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = 'DestriumMod'
 
