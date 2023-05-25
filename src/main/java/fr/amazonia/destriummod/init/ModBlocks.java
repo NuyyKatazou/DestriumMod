@@ -51,16 +51,18 @@ public class ModBlocks {
 	public static final RegistryObject<Block> CLOUD2 = createBlock("cloud2", () -> new Block(BlockBehaviour.Properties.of(Material.CLAY).strength(2.5f, 25f).requiresCorrectToolForDrops()));
 
 	//(Ore)
-	public static final RegistryObject<Block> AMAZONITE_BLOCK = createBlock("amazonite_block", () -> new Block(BlockBehaviour.Properties.of(Material.METAL).strength(25f, 1000f).requiresCorrectToolForDrops()));
-	public static final RegistryObject<Block> FAKE_AMAZONITE_BLOCK = createBlock("fake_amazonite_block", () -> new Block(BlockBehaviour.Properties.of(Material.METAL).strength(25f, 1000f).requiresCorrectToolForDrops()));
-	public static final RegistryObject<Block> DESTRIUM_BLOCK = createBlock("destrium_block", () -> new Block(BlockBehaviour.Properties.of(Material.METAL).strength(15f, 125f).requiresCorrectToolForDrops()));
-	public static final RegistryObject<Block> ARGONIDE_BLOCK = createBlock("argonide_block", () -> new Block(BlockBehaviour.Properties.of(Material.METAL).strength(10f, 25f).requiresCorrectToolForDrops()));
-	
 	public static final RegistryObject<Block> RANDOM_ORE = createBlock("random_ore", () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(5f, 100f).requiresCorrectToolForDrops()));
 	public static final RegistryObject<Block> AMAZONITE_ORE = createBlock("amazonite_ore", () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(10f, 100f).requiresCorrectToolForDrops()));
 	public static final RegistryObject<Block> DESTRIUM_ORE = createBlock("destrium_ore", () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(6f, 50f).requiresCorrectToolForDrops()));
 	public static final RegistryObject<Block> ARGONIDE_ORE = createBlock("argonide_ore", () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(4f, 10f).requiresCorrectToolForDrops()));
 	public static final RegistryObject<Block> CRACKED_ARGONIDE_ORE = createBlock("cracked_argonide_ore", () -> new Block(BlockBehaviour.Properties.of(Material.CLAY).strength(4f, 25f).requiresCorrectToolForDrops()));
+	public static final RegistryObject<Block> REPAIR_ORE = createBlock("repair_ore", () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(4f, 50f).requiresCorrectToolForDrops()));
+
+
+	public static final RegistryObject<Block> AMAZONITE_BLOCK = createBlock("amazonite_block", () -> new Block(BlockBehaviour.Properties.of(Material.METAL).strength(25f, 1000f).requiresCorrectToolForDrops()));
+	public static final RegistryObject<Block> FAKE_AMAZONITE_BLOCK = createBlock("fake_amazonite_block", () -> new Block(BlockBehaviour.Properties.of(Material.METAL).strength(25f, 1000f).requiresCorrectToolForDrops()));
+	public static final RegistryObject<Block> DESTRIUM_BLOCK = createBlock("destrium_block", () -> new Block(BlockBehaviour.Properties.of(Material.METAL).strength(15f, 125f).requiresCorrectToolForDrops()));
+	public static final RegistryObject<Block> ARGONIDE_BLOCK = createBlock("argonide_block", () -> new Block(BlockBehaviour.Properties.of(Material.METAL).strength(10f, 25f).requiresCorrectToolForDrops()));
 
 	//(Compressed)
 	public static final RegistryObject<Block> COBBLESTONE_COMPRESSED1 = createBlock("cobblestone_compressed1", () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(3.0F, 6.5F).requiresCorrectToolForDrops()));
