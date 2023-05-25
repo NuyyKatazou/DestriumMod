@@ -12,8 +12,6 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 
 public class HandlerEvent {
 	
-	private Item left;
-	
 	@SubscribeEvent
     public void onLivingFall(LivingFallEvent event) {
         LivingEntity entity = event.getEntityLiving();
@@ -40,7 +38,7 @@ public class HandlerEvent {
 	
 	@SubscribeEvent
 	public void AnvilUse(AnvilUpdateEvent event) {
-		left = event.getLeft().getItem();
+		Item left = event.getLeft().getItem();
 		if(left == ModItems.NECKLACE.get() || left == ModItems.LUCKY_NECKLACE.get()) {
 			event.setCanceled(true);
 		}

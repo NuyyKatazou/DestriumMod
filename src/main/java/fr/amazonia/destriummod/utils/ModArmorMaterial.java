@@ -13,7 +13,7 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 
 public enum ModArmorMaterial implements IArmorMaterial {
-	NECKLACE("lucky", 74, new int[]{2, 5, 4, 1}, 0, SoundEvents.ARMOR_EQUIP_CHAIN, 0F, 0F, () -> {
+	NECKLACE("necklace", 74, new int[]{2, 5, 4, 1}, 0, SoundEvents.ARMOR_EQUIP_CHAIN, 0F, 0F, () -> {
 		   return Ingredient.of(ModItems.AMAZONITE_NUGGETS.get());
 	   }),
 	ARGONIDE("argonide", 74, new int[]{4, 7, 9, 4}, 18, SoundEvents.ARMOR_EQUIP_DIAMOND, 3.5F, 0.1F, () -> {
