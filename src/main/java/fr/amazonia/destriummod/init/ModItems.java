@@ -112,6 +112,8 @@ public class ModItems {
 	public static final RegistryObject<Item> DESTRIUM_INGOT = ITEMS.register("destrium_ingot", () -> new DestriumIngot(new Item.Properties().tab(DestriumMod.ItemTab).rarity(Rarity.create("destrium", ChatFormatting.DARK_GREEN)).fireResistant()));
 	public static final RegistryObject<Item> ARGONIDE_NUGGETS = ITEMS.register("argonide_nuggets", () -> new ArgonideNuggets(new Item.Properties().tab(DestriumMod.ItemTab).rarity(Rarity.create("argonide", ChatFormatting.GOLD)).fireResistant()));
 	public static final RegistryObject<Item> ARGONIDE_INGOT = ITEMS.register("argonide_ingot", () -> new ArgonideIngot(new Item.Properties().tab(DestriumMod.ItemTab).rarity(Rarity.create("argonide", ChatFormatting.GOLD)).fireResistant()));
+	public static final RegistryObject<Item> REPAIR_FRAGMENT = ITEMS.register("repair_fragment", () -> new Item(new Item.Properties().tab(DestriumMod.ItemTab).rarity(Rarity.EPIC).fireResistant()));
+	public static final RegistryObject<Item> REPAIR_INGOT = ITEMS.register("repair_ingot", () -> new Item(new Item.Properties().tab(DestriumMod.ItemTab).rarity(Rarity.EPIC).fireResistant()));
 
 	public static final RegistryObject<Item> EMERALD_NUGGETS = ITEMS.register("emerald_nuggets", () -> new EmeraldNuggets(new Item.Properties().tab(DestriumMod.ItemTab).rarity(Rarity.create("emerald", ChatFormatting.GREEN))));
 	public static final RegistryObject<Item> DIAMOND_NUGGETS = ITEMS.register("diamond_nuggets", () -> new DiamondNuggets(new Item.Properties().tab(DestriumMod.ItemTab).rarity(Rarity.create("diamond", ChatFormatting.BLUE))));
