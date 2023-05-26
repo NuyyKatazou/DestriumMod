@@ -41,7 +41,7 @@
                   "function": "minecraft:explosion_decay"
                 }
               ],
-              "name": "destriummod:repair_ore"
+              "name": "destriummod:repair_fragment"
             }
           ]
         }
