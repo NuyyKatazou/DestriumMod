@@ -19,8 +19,8 @@ import fr.amazonia.destriummod.item.stick.AmazoniteStick;
 import fr.amazonia.destriummod.item.stick.ArgonideStick;
 import fr.amazonia.destriummod.item.stick.DestriumStick;
 import fr.amazonia.destriummod.item.tools.SpawnersPickaxe;
-import fr.amazonia.destriummod.utils.DestriumModItemTiers;
 import fr.amazonia.destriummod.utils.ModArmorMaterial;
+import fr.amazonia.destriummod.utils.ModItemTiers;
 import net.minecraft.ChatFormatting;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
@@ -56,25 +56,25 @@ public class ModItems {
 
 
 	//Armors and Tools
-	public static final RegistryObject<Item> AMAZONITE_SWORD = ITEMS.register("amazonite_sword", () -> new SwordItem(DestriumModItemTiers.AMAZONITE, 2, -0.8f, new Item.Properties().tab(DestriumMod.toolTab).rarity(Rarity.create("amazonite", ChatFormatting.DARK_BLUE)).fireResistant()));
-	public static final RegistryObject<Item> AMAZONITE_PICKAXE = ITEMS.register("amazonite_pickaxe", () -> new PickaxeItem(DestriumModItemTiers.AMAZONITE, -1, -2.8f, new Item.Properties().tab(DestriumMod.toolTab).rarity(Rarity.create("amazonite", ChatFormatting.DARK_BLUE)).fireResistant()));
-	public static final RegistryObject<Item> AMAZONITE_AXE = ITEMS.register("amazonite_axe", () -> new AxeItem(DestriumModItemTiers.AMAZONITE, 2, -3.0f, new Item.Properties().tab(DestriumMod.toolTab).rarity(Rarity.create("amazonite", ChatFormatting.DARK_BLUE)).fireResistant()));
-	public static final RegistryObject<Item> AMAZONITE_SHOVEL = ITEMS.register("amazonite_shovel", () -> new ShovelItem(DestriumModItemTiers.AMAZONITE, -2, -3f, new Item.Properties().tab(DestriumMod.toolTab).rarity(Rarity.create("amazonite", ChatFormatting.DARK_BLUE)).fireResistant()));
-	public static final RegistryObject<Item> AMAZONITE_HOES = ITEMS.register("amazonite_hoes", () -> new HoeItem(DestriumModItemTiers.AMAZONITE, -7, -3f, new Item.Properties().tab(DestriumMod.toolTab).rarity(Rarity.create("amazonite", ChatFormatting.DARK_BLUE)).fireResistant()));
+	public static final RegistryObject<Item> AMAZONITE_SWORD = ITEMS.register("amazonite_sword", () -> new SwordItem(ModItemTiers.AMAZONITE, 2, -0.8f, new Item.Properties().tab(DestriumMod.toolTab).rarity(Rarity.create("amazonite", ChatFormatting.DARK_BLUE)).fireResistant()));
+	public static final RegistryObject<Item> AMAZONITE_PICKAXE = ITEMS.register("amazonite_pickaxe", () -> new PickaxeItem(ModItemTiers.AMAZONITE, -1, -2.8f, new Item.Properties().tab(DestriumMod.toolTab).rarity(Rarity.create("amazonite", ChatFormatting.DARK_BLUE)).fireResistant()));
+	public static final RegistryObject<Item> AMAZONITE_AXE = ITEMS.register("amazonite_axe", () -> new AxeItem(ModItemTiers.AMAZONITE, 2, -3.0f, new Item.Properties().tab(DestriumMod.toolTab).rarity(Rarity.create("amazonite", ChatFormatting.DARK_BLUE)).fireResistant()));
+	public static final RegistryObject<Item> AMAZONITE_SHOVEL = ITEMS.register("amazonite_shovel", () -> new ShovelItem(ModItemTiers.AMAZONITE, -2, -3f, new Item.Properties().tab(DestriumMod.toolTab).rarity(Rarity.create("amazonite", ChatFormatting.DARK_BLUE)).fireResistant()));
+	public static final RegistryObject<Item> AMAZONITE_HOES = ITEMS.register("amazonite_hoes", () -> new HoeItem(ModItemTiers.AMAZONITE, -7, -3f, new Item.Properties().tab(DestriumMod.toolTab).rarity(Rarity.create("amazonite", ChatFormatting.DARK_BLUE)).fireResistant()));
 	
-	public static final RegistryObject<Item> DESTRIUM_SWORD = ITEMS.register("destrium_sword", () -> new SwordItem(DestriumModItemTiers.DESTRIUM, 1, -1.4f, new Item.Properties().tab(DestriumMod.toolTab).rarity(Rarity.create("destrium", ChatFormatting.DARK_GREEN)).fireResistant()));
-	public static final RegistryObject<Item> DESTRIUM_PICKAXE = ITEMS.register("destrium_pickaxe", () -> new PickaxeItem(DestriumModItemTiers.DESTRIUM, 0, -2.8f, new Item.Properties().tab(DestriumMod.toolTab).rarity(Rarity.create("destrium", ChatFormatting.DARK_GREEN)).fireResistant()));
-	public static final RegistryObject<Item> DESTRIUM_AXE = ITEMS.register("destrium_axe", () -> new AxeItem(DestriumModItemTiers.DESTRIUM, 3, -3.0f, new Item.Properties().tab(DestriumMod.toolTab).rarity(Rarity.create("destrium", ChatFormatting.DARK_GREEN)).fireResistant()));
-	public static final RegistryObject<Item> DESTRIUM_SHOVEL = ITEMS.register("destrium_shovel", () -> new ShovelItem(DestriumModItemTiers.DESTRIUM, 0, -3f, new Item.Properties().tab(DestriumMod.toolTab).rarity(Rarity.create("destrium", ChatFormatting.DARK_GREEN)).fireResistant()));
-	public static final RegistryObject<Item> DESTRIUM_HOES = ITEMS.register("destrium_hoes", () -> new HoeItem(DestriumModItemTiers.DESTRIUM, -6, -3f, new Item.Properties().tab(DestriumMod.toolTab).rarity(Rarity.create("destrium", ChatFormatting.DARK_GREEN)).fireResistant()));
+	public static final RegistryObject<Item> DESTRIUM_SWORD = ITEMS.register("destrium_sword", () -> new SwordItem(ModItemTiers.DESTRIUM, 1, -1.4f, new Item.Properties().tab(DestriumMod.toolTab).rarity(Rarity.create("destrium", ChatFormatting.DARK_GREEN)).fireResistant()));
+	public static final RegistryObject<Item> DESTRIUM_PICKAXE = ITEMS.register("destrium_pickaxe", () -> new PickaxeItem(ModItemTiers.DESTRIUM, 0, -2.8f, new Item.Properties().tab(DestriumMod.toolTab).rarity(Rarity.create("destrium", ChatFormatting.DARK_GREEN)).fireResistant()));
+	public static final RegistryObject<Item> DESTRIUM_AXE = ITEMS.register("destrium_axe", () -> new AxeItem(ModItemTiers.DESTRIUM, 3, -3.0f, new Item.Properties().tab(DestriumMod.toolTab).rarity(Rarity.create("destrium", ChatFormatting.DARK_GREEN)).fireResistant()));
+	public static final RegistryObject<Item> DESTRIUM_SHOVEL = ITEMS.register("destrium_shovel", () -> new ShovelItem(ModItemTiers.DESTRIUM, 0, -3f, new Item.Properties().tab(DestriumMod.toolTab).rarity(Rarity.create("destrium", ChatFormatting.DARK_GREEN)).fireResistant()));
+	public static final RegistryObject<Item> DESTRIUM_HOES = ITEMS.register("destrium_hoes", () -> new HoeItem(ModItemTiers.DESTRIUM, -6, -3f, new Item.Properties().tab(DestriumMod.toolTab).rarity(Rarity.create("destrium", ChatFormatting.DARK_GREEN)).fireResistant()));
 	
-	public static final RegistryObject<Item> ARGONIDE_SWORD = ITEMS.register("argonide_sword", () -> new SwordItem(DestriumModItemTiers.ARGONIDE, 2, -1.9f, new Item.Properties().tab(DestriumMod.toolTab).rarity(Rarity.create("argonide", ChatFormatting.GOLD)).fireResistant()));
-	public static final RegistryObject<Item> ARGONIDE_PICKAXE = ITEMS.register("argonide_pickaxe", () -> new PickaxeItem(DestriumModItemTiers.ARGONIDE, 0, -2.8f, new Item.Properties().tab(DestriumMod.toolTab).rarity(Rarity.create("argonide", ChatFormatting.GOLD)).fireResistant()));
-	public static final RegistryObject<Item> ARGONIDE_AXE = ITEMS.register("argonide_axe", () -> new AxeItem(DestriumModItemTiers.ARGONIDE, 4, -3.0f, new Item.Properties().tab(DestriumMod.toolTab).rarity(Rarity.create("argonide", ChatFormatting.GOLD)).fireResistant()));
-	public static final RegistryObject<Item> ARGONIDE_SHOVEL = ITEMS.register("argonide_shovel", () -> new ShovelItem(DestriumModItemTiers.ARGONIDE, 1, -3f, new Item.Properties().tab(DestriumMod.toolTab).rarity(Rarity.create("argonide", ChatFormatting.GOLD)).fireResistant()));
-	public static final RegistryObject<Item> ARGONIDE_HOES = ITEMS.register("argonide_hoes", () -> new HoeItem(DestriumModItemTiers.ARGONIDE, -5, 0f, new Item.Properties().tab(DestriumMod.toolTab).rarity(Rarity.create("argonide", ChatFormatting.GOLD)).fireResistant()));
+	public static final RegistryObject<Item> ARGONIDE_SWORD = ITEMS.register("argonide_sword", () -> new SwordItem(ModItemTiers.ARGONIDE, 2, -1.9f, new Item.Properties().tab(DestriumMod.toolTab).rarity(Rarity.create("argonide", ChatFormatting.GOLD)).fireResistant()));
+	public static final RegistryObject<Item> ARGONIDE_PICKAXE = ITEMS.register("argonide_pickaxe", () -> new PickaxeItem(ModItemTiers.ARGONIDE, 0, -2.8f, new Item.Properties().tab(DestriumMod.toolTab).rarity(Rarity.create("argonide", ChatFormatting.GOLD)).fireResistant()));
+	public static final RegistryObject<Item> ARGONIDE_AXE = ITEMS.register("argonide_axe", () -> new AxeItem(ModItemTiers.ARGONIDE, 4, -3.0f, new Item.Properties().tab(DestriumMod.toolTab).rarity(Rarity.create("argonide", ChatFormatting.GOLD)).fireResistant()));
+	public static final RegistryObject<Item> ARGONIDE_SHOVEL = ITEMS.register("argonide_shovel", () -> new ShovelItem(ModItemTiers.ARGONIDE, 1, -3f, new Item.Properties().tab(DestriumMod.toolTab).rarity(Rarity.create("argonide", ChatFormatting.GOLD)).fireResistant()));
+	public static final RegistryObject<Item> ARGONIDE_HOES = ITEMS.register("argonide_hoes", () -> new HoeItem(ModItemTiers.ARGONIDE, -5, 0f, new Item.Properties().tab(DestriumMod.toolTab).rarity(Rarity.create("argonide", ChatFormatting.GOLD)).fireResistant()));
 	
-	public static final RegistryObject<Item> SPAWNERS_PICKAXE = ITEMS.register("spawners_pickaxe", () -> new SpawnersPickaxe(DestriumModItemTiers.SPAWNERS, -1, -2.8f, new Item.Properties().tab(DestriumMod.toolTab).rarity(Rarity.create("spawners", ChatFormatting.DARK_RED)).fireResistant()));
+	public static final RegistryObject<Item> SPAWNERS_PICKAXE = ITEMS.register("spawners_pickaxe", () -> new SpawnersPickaxe(ModItemTiers.SPAWNERS, -1, -2.8f, new Item.Properties().tab(DestriumMod.toolTab).rarity(Rarity.create("spawners", ChatFormatting.DARK_RED)).fireResistant()));
 	
 	
 	public static final RegistryObject<Item> AMAZONITE_HELMET = ITEMS.register("amazonite_helmet", () -> new AmazoniteArmorHelmet(ModArmorMaterial.AMAZONITE, EquipmentSlot.HEAD, new Item.Properties().tab(DestriumMod.toolTab).rarity(Rarity.create("amazonite", ChatFormatting.DARK_BLUE)).fireResistant()));
