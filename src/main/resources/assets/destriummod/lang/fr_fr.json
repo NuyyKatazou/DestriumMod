@@ -8,8 +8,8 @@
   "item.destriummod.destrium_nuggets": "PÃ©pite De Destrium",
   "item.destriummod.argonide_ingot": "Lingot d'Argonide",
   "item.destriummod.argonide_nuggets": "PÃ©pite d'Argonide",
-  "item.destriummod.repair_fragment": "Fragment de Réparation",
-  "item.destriummod.repair_ingot": "Lingot de Réparation",
+  "item.destriummod.repair_fragment": "Fragment de Rï¿½paration",
+  "item.destriummod.repair_ingot": "Lingot de Rï¿½paration",
   
   "item.destriummod.emerald_nuggets": "PÃ©pite d'Emeraude",
   "item.destriummod.diamond_nuggets": "PÃ©pite de Diamants",
@@ -33,7 +33,7 @@
   "item.destriummod.destrium_shovel": "Pelle En Destrium",
   "item.destriummod.destrium_hoes": "Houe En Destrium",
   
-  "item.destriummod.argonide_sword": "EpÃ©e En Argonide",
+  "item.destriummod.argonide_sword": "EpÃ©eï¿½En Argonide",
   "item.destriummod.argonide_pickaxe": "Pioche En Argonide",
   "item.destriummod.argonide_axe": "Hache En Argonide",
   "item.destriummod.argonide_shovel": "Pelle En Argonide",
@@ -61,7 +61,7 @@
   "item.destriummod.feather_boots": "Bottes D'Anti-Chute",
   "item.destriummod.jump_boots": "Bottes de Saut",
   "item.destriummod.adventurer_boots": "Bottes d'Aventurier",
-  "item.destriummod.renforced_adventurer_boots": "Bottes d'Aventurier Renforcé",
+  "item.destriummod.renforced_adventurer_boots": "Bottes d'Aventurier Renforcï¿½",
   
   "item.destriummod.necklace": "Collier",
   "item.destriummod.lucky_necklace": "Collier de Chance",
@@ -91,11 +91,11 @@
   
   "item.destriummod.infinity_water_bucket": "Seaux d'Eau Infini",
   
-  "item.destriummod.poison_water_bucket": "Seaux d'Eau Empoisonné",
+  "item.destriummod.poison_water_bucket": "Seaux d'Eau Empoisonnï¿½",
   "item.destriummod.poison_star": "Etoile de Poison",
   
-  "item.destriummod.resistance_lava_bucket": "Seaux de Lave Résistante",
-  "item.destriummod.resistance_star": "Etoile de Résistance",
+  "item.destriummod.resistance_lava_bucket": "Seaux de Lave Rï¿½sistante",
+  "item.destriummod.resistance_star": "Etoile de Rï¿½sistance",
   
   
   
@@ -110,7 +110,7 @@
   "block.destriummod.destrium_ore": "Minerais De Destrium",
   "block.destriummod.argonide_ore": "Minerais d'Argonide",
   "block.destriummod.cracked_argonide_ore": "Minerais CraquelÃ© d'Argonide",
-  "block.destriummod.repair_ore": "Minerais de Réparation",
+  "block.destriummod.repair_ore": "Minerais de Rï¿½paration",
   
   
   "block.destriummod.cobblestone_compressed1": "Pierre CompressÃ©",
@@ -169,11 +169,15 @@
   
   
   "block.destriummod.below_block": "Bloc De l'En Dessous",
+
+
+  "block.destriummod.clover": "TrÃ¨fle Ã  3 Feuille",
+  "block.destriummod.clover_two": "TrÃ¨fle Ã  4 Feuille",
   
   
   
   
-  "fluid.destriummod.poison_water": "Eau Empoisonné",
+  "fluid.destriummod.poison_water": "Eau Empoisonnï¿½",
   
   
   
@@ -226,7 +230,7 @@
   "item.destriummod.argonide_stick.desc": "UtilisÃ© pour craft les Outils En Argonide",
   
   
-  "item.destriummod.golden_core.desc": "UtilisÃ© pour craft la Pomme d'Or Enchanté",
+  "item.destriummod.golden_core.desc": "UtilisÃ© pour craft la Pomme d'Or Enchantï¿½",
   "item.destriummod.compressed_golden.desc": "UtilisÃ© pour craft le Noyau En Or",
 
 
