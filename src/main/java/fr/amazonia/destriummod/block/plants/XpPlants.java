@@ -20,18 +20,18 @@ public class XpPlants extends CropsBlock {
 
 	public XpPlants(AbstractBlock.Properties properties) {
         super(properties);
-     }
+    }
 
-     protected IItemProvider getBaseSeedId() {
+    protected IItemProvider getBaseSeedId() {
         return ModItems.XP_SEEDS.get();
      }
 
-     public VoxelShape getShape(BlockState p_220053_1_, IBlockReader p_220053_2_, BlockPos p_220053_3_, ISelectionContext p_220053_4_) {
-         return SHAPE_BY_AGE[p_220053_1_.getValue(this.getAgeProperty())];
-      }
-     
-     public boolean canUseBonemeal(World worldIn, Random rand, BlockPos pos, BlockState state) {
-	      return false;
-	   }
+    public VoxelShape getShape(BlockState p_220053_1_, IBlockReader p_220053_2_, BlockPos p_220053_3_, ISelectionContext p_220053_4_) {
+        return SHAPE_BY_AGE[p_220053_1_.getValue(this.getAgeProperty())];
+    }
+
+    public boolean isBonemealSuccess(World p_180670_1_, Random p_180670_2_, BlockPos p_180670_3_, BlockState p_180670_4_) {
+        return false;
+    }
   }
 
