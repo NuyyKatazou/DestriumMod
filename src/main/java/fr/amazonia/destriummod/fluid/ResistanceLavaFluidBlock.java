@@ -18,19 +18,24 @@ import net.minecraft.tags.FluidTags;
 import net.minecraft.util.Direction;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
+import net.minecraftforge.event.entity.living.LivingHurtEvent;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
 
 public class ResistanceLavaFluidBlock extends FlowingFluidBlock {
+
 
 	public ResistanceLavaFluidBlock(Supplier<? extends FlowingFluid> supplier, Properties p_i48368_1_) {
 		super(supplier, p_i48368_1_);
 	}
 
-	public void entityInside(BlockState p_196262_1_, World p_196262_2_, BlockPos p_196262_3_, Entity p_196262_4_, PlayerEntity p_77659_2_) {
-		if (p_77659_2_ != null)
-	      ((LivingEntity) p_196262_4_).addEffect(new EffectInstance(Effects.REGENERATION, 100, 200, false, false, false));
-	     }
+	public void entityInside(BlockState p_196262_1_, World p_196262_2_, BlockPos p_196262_3_, Entity p_196262_4_) {
+		if (p_196262_4_ instanceof PlayerEntity){
+            ((LivingEntity) p_196262_4_).addEffect(new EffectInstance(Effects.FIRE_RESISTANCE, 1, 100, false, false, false));
+            p_196262_4_.clearFire();
+        }
+	}
 
-	@Override
+    @Override
     public void neighborChanged(BlockState state, World world, BlockPos pos, Block block, BlockPos fromPos, boolean notify) {
         if (this.receiveNeighborFluids(world, pos, state)) {
             world.getLiquidTicks().scheduleTick(pos, state.getFluidState().getType(), this.getFluid().getTickDelay(world));

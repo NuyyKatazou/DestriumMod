@@ -22,10 +22,12 @@ public class PoisonWaterFluidBlock extends FlowingFluidBlock {
 		super(supplier, p_i48368_1_);
 	}
 
-	public void entityInside(BlockState p_196262_1_, World p_196262_2_, BlockPos p_196262_3_, Entity p_196262_4_, PlayerEntity p_77659_2_) {
-	    if (p_77659_2_ != null)  
-		p_196262_4_.hurt(DamageSource.WITHER, 1F);
-	     }
+	public void entityInside(BlockState p_196262_1_, World p_196262_2_, BlockPos p_196262_3_, Entity p_196262_4_) {
+	    if (p_196262_4_ instanceof PlayerEntity) {
+            p_196262_4_.hurt(DamageSource.WITHER, 1F);
+        }
+	}
+
 
 	@Override
     public void neighborChanged(BlockState state, World world, BlockPos pos, Block block, BlockPos fromPos, boolean notify) {
