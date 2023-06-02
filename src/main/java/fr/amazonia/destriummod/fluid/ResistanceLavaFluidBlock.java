@@ -24,10 +24,12 @@ public class ResistanceLavaFluidBlock extends LiquidBlock {
 		super(supplier, p_i48368_1_);
 	}
 
-	public void entityInside(BlockState p_196262_1_, Level p_196262_2_, BlockPos p_196262_3_, Entity p_196262_4_, Player p_77659_2_) {
-		if (p_77659_2_ != null)  
-	      ((LivingEntity) p_196262_4_).addEffect(new MobEffectInstance(MobEffects.REGENERATION, 100, 200, false, false, false));
-	     }
+	public void entityInside(BlockState p_196262_1_, Level p_196262_2_, BlockPos p_196262_3_, Entity p_196262_4_) {
+		if (p_196262_4_ instanceof Player){
+			((LivingEntity) p_196262_4_).addEffect(new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 1, 100, false, false, false));
+			p_196262_4_.clearFire();
+		}
+	}
 	
 	@Override
 	public void neighborChanged(BlockState p_54709_, Level p_54710_, BlockPos p_54711_, Block p_54712_, BlockPos p_54713_, boolean p_54714_) {
