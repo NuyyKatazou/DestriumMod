@@ -22,16 +22,16 @@ public class XpPlants extends CropBlock {
         super(properties);
      }
 
-     protected ItemLike getBaseSeedId() {
+    protected ItemLike getBaseSeedId() {
         return ModItems.XP_SEEDS.get();
      }
 
-     public VoxelShape getShape(BlockState p_51330_, BlockGetter p_51331_, BlockPos p_51332_, CollisionContext p_51333_) {
-         return SHAPE_BY_AGE[p_51330_.getValue(this.getAgeProperty())];
-      }
+    public VoxelShape getShape(BlockState p_51330_, BlockGetter p_51331_, BlockPos p_51332_, CollisionContext p_51333_) {
+        return SHAPE_BY_AGE[p_51330_.getValue(this.getAgeProperty())];
+    }
 
-     public boolean canUseBonemeal(Level worldIn, Random rand, BlockPos pos, BlockState state) {
-	      return false;
-	   }
-  }
+    public boolean isBonemealSuccess(Level p_180670_1_, Random p_180670_2_, BlockPos p_180670_3_, BlockState p_180670_4_) {
+        return false;
+    }
+}
 
