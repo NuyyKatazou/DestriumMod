@@ -168,9 +168,13 @@
   
   
   "block.destriummod.below_block": "Bloc De l'En Dessous",
-  
-  
-  
+
+
+  "block.destriummod.clover": "Trèfle à 3 Feuille",
+  "block.destriummod.clover_two": "Trèfle à 4 Feuille",
+
+
+
   
   "fluid.destriummod.poison_water": "Eau Empoisonn�",
   
