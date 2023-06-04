@@ -22,6 +22,6 @@ public class DiamondNuggets extends Item{
 	
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack p_42988_, @Nullable Level p_42989_, List<Component> p_42990_, TooltipFlag p_42991_) {
-		p_42990_.add(new TranslatableComponent(this.getDescriptionId() + ".desc").withStyle(ChatFormatting.BLUE));
+		p_42990_.add(new TranslatableComponent(this.getDescriptionId() + ".desc").withStyle(ChatFormatting.AQUA));
 	   }
 	}
