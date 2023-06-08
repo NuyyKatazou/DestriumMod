@@ -40,12 +40,6 @@ public class DestriumMod {
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::serverSetup);
         FMLJavaModLoadingContext.get().getModEventBus().register(this);
 
-        //Init Class
-        IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
-        //ModItems.ITEMS.register(eventBus);
-        ModBlocks.BLOCKS.register(eventBus);
-        //ModFluids.FLUIDS.register(eventBus);
-
     }
 
     private void setup(FMLCommonSetupEvent event) {
@@ -87,38 +81,7 @@ public class DestriumMod {
 
     }
 
-    //CreativeTabs
 
-    public static final CreativeModeTab ItemTab = new CreativeModeTab(MODID + ".itemtab") {
-        @Override
-        @OnlyIn(Dist.CLIENT)
-        public ItemStack makeIcon() {
-            return new ItemStack(ModBlocks.AMAZONITE_BLOCK.get());
-        }
-    };
-
-    public static final CreativeModeTab BlockTab = new CreativeModeTab(MODID + ".blocktab") {
-        @Override
-        @OnlyIn(Dist.CLIENT)
-        public ItemStack makeIcon() {
-            return new ItemStack(ModBlocks.AMAZONITE_BLOCK.get());
-        }
-    };
-
-    public static final CreativeModeTab toolTab = new CreativeModeTab(MODID + ".tooltab") {
-        @Override
-        public ItemStack makeIcon() {
-            return new ItemStack(ModBlocks.AMAZONITE_BLOCK.get());
-        }
-    };
-
-    public static final CreativeModeTab foodTab = new CreativeModeTab(MODID + ".foodtab") {
-
-        @OnlyIn(Dist.CLIENT)
-        public ItemStack makeIcon() {
-            return new ItemStack(ModBlocks.AMAZONITE_BLOCK.get());
-        }
-    };
 
 
 }
