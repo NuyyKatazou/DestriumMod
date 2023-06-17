@@ -96,8 +96,8 @@ public class ModBlocks {
 	public static final RegistryObject<Block> XP_PLANTS = BLOCKS.register("xp_plants", () -> new XpPlants(BlockBehaviour.Properties.of(Material.PLANT).instabreak().randomTicks().noCollission().sound(SoundType.CROP)));
 
 	//Flowers
-	public static final RegistryObject<Block> CLOVER = BLOCKS.register("clover", () -> new FlowerBlock(MobEffects.LUCK, 9, BlockBehaviour.Properties.of(Material.PLANT).noCollission().instabreak().sound(SoundType.GRASS)));
-	public static final RegistryObject<Block> CLOVER_TWO = BLOCKS.register("clover_two", () -> new FlowerBlock(MobEffects.LUCK, 9, BlockBehaviour.Properties.of(Material.PLANT).noCollission().instabreak().sound(SoundType.GRASS)));
+	//public static final RegistryObject<FlowerBlock> CLOVER = BLOCKS.register("clover", () -> new FlowerBlock(MobEffects.LUCK, 9, BlockBehaviour.Properties.of(Material.PLANT).noCollission().instabreak().sound(SoundType.GRASS)));
+	//public static final RegistryObject<FlowerBlock> CLOVER_TWO = BLOCKS.register("clover_two", () -> new FlowerBlock(MobEffects.LUCK, 9, BlockBehaviour.Properties.of(Material.PLANT).noCollission().instabreak().sound(SoundType.GRASS)));
 
 	private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
 		RegistryObject<T> toReturn = BLOCKS.register(name, block);
