@@ -1,0 +1,6 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "destriummod:item/emerald_nuggets"
+    }
+}
