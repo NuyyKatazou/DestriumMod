@@ -2,6 +2,7 @@ package fr.amazonia.destriummod.block.plants;
 
 import fr.amazonia.destriummod.init.ModItems;
 import net.minecraft.core.BlockPos;
+import net.minecraft.util.RandomSource;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.Level;
@@ -29,7 +30,7 @@ public class XpPlants extends CropBlock {
         return SHAPE_BY_AGE[p_51330_.getValue(this.getAgeProperty())];
     }
 
-    public boolean isBonemealSuccess(Level p_180670_1_, Random p_180670_2_, BlockPos p_180670_3_, BlockState p_180670_4_) {
+    public boolean isBonemealSuccess(Level p_221045_, RandomSource p_221046_, BlockPos p_221047_, BlockState p_221048_) {
         return false;
     }
 }
