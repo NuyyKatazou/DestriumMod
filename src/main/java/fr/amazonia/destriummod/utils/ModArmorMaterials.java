@@ -32,7 +32,7 @@ public enum ModArmorMaterials implements ArmorMaterial {
         p_266656_.put(ArmorItem.Type.LEGGINGS, 7);
         p_266656_.put(ArmorItem.Type.CHESTPLATE, 9);
         p_266656_.put(ArmorItem.Type.HELMET, 4);
-    }), 0, SoundEvents.ARMOR_EQUIP_DIAMOND, 3.5F, 0.1F, () -> {
+    }), 18, SoundEvents.ARMOR_EQUIP_DIAMOND, 3.5F, 0.1F, () -> {
         return Ingredient.of(ModItems.ARGONIDE_INGOT.get());
     }),
 
@@ -41,7 +41,7 @@ public enum ModArmorMaterials implements ArmorMaterial {
         p_266656_.put(ArmorItem.Type.LEGGINGS, 8);
         p_266656_.put(ArmorItem.Type.CHESTPLATE,10);
         p_266656_.put(ArmorItem.Type.HELMET, 5);
-    }), 0, SoundEvents.ARMOR_EQUIP_DIAMOND, 4.0F, 0.1F, () -> {
+    }), 3, SoundEvents.ARMOR_EQUIP_DIAMOND, 4.0F, 0.1F, () -> {
         return Ingredient.of(ModItems.DESTRIUM_INGOT.get());
     }),
 
@@ -50,7 +50,7 @@ public enum ModArmorMaterials implements ArmorMaterial {
         p_266656_.put(ArmorItem.Type.LEGGINGS, 12);
         p_266656_.put(ArmorItem.Type.CHESTPLATE, 14);
         p_266656_.put(ArmorItem.Type.HELMET, 9);
-    }), 0, SoundEvents.ARMOR_EQUIP_NETHERITE, 5.0F, 0.1F, () -> {
+    }), 25, SoundEvents.ARMOR_EQUIP_NETHERITE, 5.0F, 0.1F, () -> {
         return Ingredient.of(ModItems.AMAZONITE_FRAGMENT.get());
     });
 
