@@ -12,6 +12,7 @@ import fr.amazonia.destriummod.item.tools.SpawnersPickaxe;
 import fr.amazonia.destriummod.utils.ModArmorMaterials;
 import fr.amazonia.destriummod.utils.ModRarity;
 import fr.amazonia.destriummod.utils.ModTiers;
+import fr.amazonia.destriummod.utils.ModToolsTiers;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.*;
 import net.minecraft.world.level.material.Fluids;
@@ -30,23 +31,23 @@ public class ModItems {
 
 
 	//Armors and Tools
-	public static final RegistryObject<Item> AMAZONITE_SWORD = ITEMS.register("amazonite_sword", () -> new SwordItem(ModTiers.AMAZONITE, 2, -0.8f, new Item.Properties().rarity(ModRarity.AMAZONITE).fireResistant()));
-	public static final RegistryObject<Item> AMAZONITE_PICKAXE = ITEMS.register("amazonite_pickaxe", () -> new PickaxeItem(ModTiers.AMAZONITE, -1, -2.8f, new Item.Properties().rarity(ModRarity.AMAZONITE).fireResistant()));
-	public static final RegistryObject<Item> AMAZONITE_AXE = ITEMS.register("amazonite_axe", () -> new AxeItem(ModTiers.AMAZONITE, 2, -3.0f, new Item.Properties().rarity(ModRarity.AMAZONITE).fireResistant()));
-	public static final RegistryObject<Item> AMAZONITE_SHOVEL = ITEMS.register("amazonite_shovel", () -> new ShovelItem(ModTiers.AMAZONITE, -2, -3f, new Item.Properties().rarity(ModRarity.AMAZONITE).fireResistant()));
-	public static final RegistryObject<Item> AMAZONITE_HOES = ITEMS.register("amazonite_hoes", () -> new HoeItem(ModTiers.AMAZONITE, -7, -3f, new Item.Properties().rarity(ModRarity.AMAZONITE).fireResistant()));
+	public static final RegistryObject<Item> AMAZONITE_SWORD = ITEMS.register("amazonite_sword", () -> new SwordItem(ModToolsTiers.AMAZONITE, 2, -0.8f, new Item.Properties().rarity(ModRarity.AMAZONITE).fireResistant()));
+	public static final RegistryObject<Item> AMAZONITE_PICKAXE = ITEMS.register("amazonite_pickaxe", () -> new PickaxeItem(ModToolsTiers.AMAZONITE, -1, -2.8f, new Item.Properties().rarity(ModRarity.AMAZONITE).fireResistant()));
+	public static final RegistryObject<Item> AMAZONITE_AXE = ITEMS.register("amazonite_axe", () -> new AxeItem(ModToolsTiers.AMAZONITE, 2, -3.0f, new Item.Properties().rarity(ModRarity.AMAZONITE).fireResistant()));
+	public static final RegistryObject<Item> AMAZONITE_SHOVEL = ITEMS.register("amazonite_shovel", () -> new ShovelItem(ModToolsTiers.AMAZONITE, -2, -3f, new Item.Properties().rarity(ModRarity.AMAZONITE).fireResistant()));
+	public static final RegistryObject<Item> AMAZONITE_HOES = ITEMS.register("amazonite_hoes", () -> new HoeItem(ModToolsTiers.AMAZONITE, -7, -3f, new Item.Properties().rarity(ModRarity.AMAZONITE).fireResistant()));
 
-	public static final RegistryObject<Item> DESTRIUM_SWORD = ITEMS.register("destrium_sword", () -> new SwordItem(ModTiers.DESTRIUM, 1, -1.4f, new Item.Properties().rarity(ModRarity.DESTRIUM).fireResistant()));
-	public static final RegistryObject<Item> DESTRIUM_PICKAXE = ITEMS.register("destrium_pickaxe", () -> new PickaxeItem(ModTiers.DESTRIUM, 0, -2.8f, new Item.Properties().rarity(ModRarity.DESTRIUM).fireResistant()));
-	public static final RegistryObject<Item> DESTRIUM_AXE = ITEMS.register("destrium_axe", () -> new AxeItem(ModTiers.DESTRIUM, 3, -3.0f, new Item.Properties().rarity(ModRarity.DESTRIUM).fireResistant()));
-	public static final RegistryObject<Item> DESTRIUM_SHOVEL = ITEMS.register("destrium_shovel", () -> new ShovelItem(ModTiers.DESTRIUM, 0, -3f, new Item.Properties().rarity(ModRarity.DESTRIUM).fireResistant()));
-	public static final RegistryObject<Item> DESTRIUM_HOES = ITEMS.register("destrium_hoes", () -> new HoeItem(ModTiers.DESTRIUM, -6, -3f, new Item.Properties().rarity(ModRarity.DESTRIUM).fireResistant()));
+	public static final RegistryObject<Item> DESTRIUM_SWORD = ITEMS.register("destrium_sword", () -> new SwordItem(ModToolsTiers.DESTRIUM, 1, -1.4f, new Item.Properties().rarity(ModRarity.DESTRIUM).fireResistant()));
+	public static final RegistryObject<Item> DESTRIUM_PICKAXE = ITEMS.register("destrium_pickaxe", () -> new PickaxeItem(ModToolsTiers.DESTRIUM, 0, -2.8f, new Item.Properties().rarity(ModRarity.DESTRIUM).fireResistant()));
+	public static final RegistryObject<Item> DESTRIUM_AXE = ITEMS.register("destrium_axe", () -> new AxeItem(ModToolsTiers.DESTRIUM, 3, -3.0f, new Item.Properties().rarity(ModRarity.DESTRIUM).fireResistant()));
+	public static final RegistryObject<Item> DESTRIUM_SHOVEL = ITEMS.register("destrium_shovel", () -> new ShovelItem(ModToolsTiers.DESTRIUM, 0, -3f, new Item.Properties().rarity(ModRarity.DESTRIUM).fireResistant()));
+	public static final RegistryObject<Item> DESTRIUM_HOES = ITEMS.register("destrium_hoes", () -> new HoeItem(ModToolsTiers.DESTRIUM, -6, -3f, new Item.Properties().rarity(ModRarity.DESTRIUM).fireResistant()));
 
-	public static final RegistryObject<Item> ARGONIDE_SWORD = ITEMS.register("argonide_sword", () -> new SwordItem(ModTiers.ARGONIDE, 2, -1.9f, new Item.Properties().rarity(ModRarity.ARGONIDE).fireResistant()));
-	public static final RegistryObject<Item> ARGONIDE_PICKAXE = ITEMS.register("argonide_pickaxe", () -> new PickaxeItem(ModTiers.ARGONIDE, 0, -2.8f, new Item.Properties().rarity(ModRarity.ARGONIDE).fireResistant()));
-	public static final RegistryObject<Item> ARGONIDE_AXE = ITEMS.register("argonide_axe", () -> new AxeItem(ModTiers.ARGONIDE, 4, -3.0f, new Item.Properties().rarity(ModRarity.ARGONIDE).fireResistant()));
-	public static final RegistryObject<Item> ARGONIDE_SHOVEL = ITEMS.register("argonide_shovel", () -> new ShovelItem(ModTiers.ARGONIDE, 1, -3f, new Item.Properties().rarity(ModRarity.ARGONIDE).fireResistant()));
-	public static final RegistryObject<Item> ARGONIDE_HOES = ITEMS.register("argonide_hoes", () -> new HoeItem(ModTiers.ARGONIDE, -5, 0f, new Item.Properties().rarity(ModRarity.ARGONIDE).fireResistant()));
+	public static final RegistryObject<Item> ARGONIDE_SWORD = ITEMS.register("argonide_sword", () -> new SwordItem(ModToolsTiers.ARGONIDE, 2, -1.9f, new Item.Properties().rarity(ModRarity.ARGONIDE).fireResistant()));
+	public static final RegistryObject<Item> ARGONIDE_PICKAXE = ITEMS.register("argonide_pickaxe", () -> new PickaxeItem(ModToolsTiers.ARGONIDE, 0, -2.8f, new Item.Properties().rarity(ModRarity.ARGONIDE).fireResistant()));
+	public static final RegistryObject<Item> ARGONIDE_AXE = ITEMS.register("argonide_axe", () -> new AxeItem(ModToolsTiers.ARGONIDE, 4, -3.0f, new Item.Properties().rarity(ModRarity.ARGONIDE).fireResistant()));
+	public static final RegistryObject<Item> ARGONIDE_SHOVEL = ITEMS.register("argonide_shovel", () -> new ShovelItem(ModToolsTiers.ARGONIDE, 1, -3f, new Item.Properties().rarity(ModRarity.ARGONIDE).fireResistant()));
+	public static final RegistryObject<Item> ARGONIDE_HOES = ITEMS.register("argonide_hoes", () -> new HoeItem(ModToolsTiers.ARGONIDE, -5, 0f, new Item.Properties().rarity(ModRarity.ARGONIDE).fireResistant()));
 
 	public static final RegistryObject<Item> SPAWNERS_PICKAXE = ITEMS.register("spawners_pickaxe", () -> new SpawnersPickaxe(ModTiers.SPAWNERS, -1, -2.8f, new Item.Properties().rarity(ModRarity.SPECIAL).fireResistant()));
 

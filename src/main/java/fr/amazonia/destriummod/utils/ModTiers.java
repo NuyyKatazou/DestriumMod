@@ -11,15 +11,6 @@ public enum ModTiers implements Tier {
 
    SPAWNERS(4, 3, 8.0F, 4.0F, 55, () -> {
       return Ingredient.of(ModItems.AMAZONITE_NUGGETS.get());
-   }),
-   ARGONIDE(4, 4048, 13.0F, 5.5F, 18, () -> {
-      return Ingredient.of(ModItems.ARGONIDE_INGOT.get());
-   }),
-   DESTRIUM(5, 8074, 18.0F, 7.0F, 20, () -> {
-      return Ingredient.of(ModItems.DESTRIUM_INGOT.get());
-   }),
-   AMAZONITE(6, 45051, 20.0F, 10.0F, 25, () -> {
-      return Ingredient.of(ModItems.AMAZONITE_FRAGMENT.get());
    });
 
    private final int level;
