@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "   ",
+        " a ",
+        "   "
+    ],
+    "key": {
+        "a": {
+            "item": "destriummod:amazonite_block"
+        }
+    },
+    "result": {
+        "item": "destriummod:amazonite_ingot",
+        "count": 9
+    }
+}

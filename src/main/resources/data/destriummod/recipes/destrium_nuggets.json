@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "   ",
+        " # ",
+        "   "
+    ],
+    "key": {
+        "#": {
+            "item": "destriummod:destrium_ingot"
+        }
+    },
+    "result": {
+        "item": "destriummod:destrium_nuggets",
+        "count": 9
+    }
+}

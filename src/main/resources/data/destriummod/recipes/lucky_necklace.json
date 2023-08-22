@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "destriummod:necklace"
+  },
+  "addition": {
+    "item": "destriummod:clover_two"
+  },
+  "result": {
+    "item": "destriummod:lucky_necklace"
+  }
+}

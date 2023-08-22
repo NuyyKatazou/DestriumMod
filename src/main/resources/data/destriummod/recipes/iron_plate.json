@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "bbb",
+        "bab",
+        "bbb"
+    ],
+    "key": {
+        "a": {
+            "item": "minecraft:iron_ingot"
+        },
+        "b": {
+            "item": "minecraft:iron_block"
+        }
+    },
+    "result": {
+        "item": "destriummod:iron_plate",
+        "count": 1
+    }
+}

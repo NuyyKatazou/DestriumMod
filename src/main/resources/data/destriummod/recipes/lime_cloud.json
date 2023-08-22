@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "bbb",
+        "bab",
+        "bbb"
+    ],
+    "key": {
+        "a": {
+            "item": "minecraft:lime_dye"
+        },
+        "b": {
+            "item": "destriummod:cloud"
+        }
+    },
+    "result": {
+        "item": "destriummod:lime_cloud",
+        "count": 8
+    }
+}

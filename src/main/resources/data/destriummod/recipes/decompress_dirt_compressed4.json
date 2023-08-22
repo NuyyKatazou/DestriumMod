@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "   ",
+        " a ",
+        "   "
+    ],
+    "key": {
+        "a": {
+            "item": "destriummod:dirt_compressed4"
+        }
+    },
+    "result": {
+        "item": "destriummod:dirt_compressed3",
+        "count": 9
+    }
+}
