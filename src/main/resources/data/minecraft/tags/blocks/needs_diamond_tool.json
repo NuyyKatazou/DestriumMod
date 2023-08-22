@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "destriummod:cracked_argonide_ore",
+	"destriummod:cobblestone_compressed3",
+	"destriummod:dirt_compressed2",
+	"destriummod:dirt_compressed3",
+    "destriummod:repair_ore"
+  ]
+}
