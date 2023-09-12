@@ -18,4 +18,8 @@ public class EmeraldNuggets extends Item{
 		super(properties);
 	}
 
+	@OnlyIn(Dist.CLIENT)
+	public void appendHoverText(ItemStack p_270235_, @Nullable Level p_270688_, List<Component> p_270630_, TooltipFlag p_270170_) {
+		p_270630_.add(Component.translatable(this.getDescriptionId() + ".desc").withStyle(ChatFormatting.GREEN));
+	}
 	}
