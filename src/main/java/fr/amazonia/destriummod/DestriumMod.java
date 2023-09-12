@@ -2,6 +2,7 @@ package fr.amazonia.destriummod;
 
 import fr.amazonia.destriummod.init.ModBlocks;
 import fr.amazonia.destriummod.init.ModItems;
+import fr.amazonia.destriummod.utils.HandlerEvent;
 import fr.amazonia.destriummod.utils.ModCreativeTabs;
 import net.minecraft.client.Minecraft;
 import net.minecraft.resources.ResourceKey;
@@ -53,7 +54,7 @@ public class DestriumMod {
 
     private void setup(FMLCommonSetupEvent event) {
         //Events Class
-        //MinecraftForge.EVENT_BUS.register(new HandlerEvent());
+        MinecraftForge.EVENT_BUS.register(new HandlerEvent());
 
         //Dimensions
         //PARADIS_DIMENSION = ResourceKey.create(Registry.DIMENSION_REGISTRY, new ResourceLocation(DestriumMod.MODID, "paradis"));
