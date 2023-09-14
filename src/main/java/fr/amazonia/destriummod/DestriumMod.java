@@ -89,6 +89,7 @@ public class DestriumMod {
     private void addCreative(CreativeModeTabEvent.BuildContents event) {
         if(event.getTab() == ModCreativeTabs.ItemTab) {
             event.accept(ModItems.AMAZONITE_CRUMB);
+            event.accept(ModItems.AMAZONITE_DUST);
             event.accept(ModItems.AMAZONITE_FRAGMENT);
             event.accept(ModItems.AMAZONITE_NUGGETS);
             event.accept(ModItems.AMAZONITE_INGOT);
