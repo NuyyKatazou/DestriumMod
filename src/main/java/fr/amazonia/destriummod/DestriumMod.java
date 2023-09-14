@@ -6,11 +6,7 @@ import fr.amazonia.destriummod.utils.HandlerEvent;
 import fr.amazonia.destriummod.utils.ModCreativeTabs;
 import net.minecraft.client.Minecraft;
 import net.minecraft.resources.ResourceKey;
-import net.minecraft.world.item.CreativeModeTab;
-import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
-import net.minecraftforge.api.distmarker.Dist;
-import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.CreativeModeTabEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -49,7 +45,6 @@ public class DestriumMod {
         IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
         ModItems.ITEMS.register(eventBus);
         ModBlocks.BLOCKS.register(eventBus);
-
     }
 
     private void setup(FMLCommonSetupEvent event) {
