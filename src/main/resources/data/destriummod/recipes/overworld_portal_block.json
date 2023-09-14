@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "aba",
+        "bcb",
+        "aba"
+    ],
+    "key": {
+        "a": {
+            "item": "destriummod:cloud"
+        },
+        "b": {
+            "item": "destriummod:destrium_ore"
+        },
+		"c": {
+            "item": "destriummod:amazonite_ore"
+        }
+    },
+    "result": {
+        "item": "destriummod:overworld_portal_block",
+        "count": 1
+    }
+}

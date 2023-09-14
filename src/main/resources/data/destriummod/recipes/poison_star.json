@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "cbc",
+        "bab",
+        "cbc"
+    ],
+    "key": {
+        "a": {
+            "item": "destriummod:destrium_ingot"
+        },
+		"c": {
+            "item": "destriummod:destrium_nuggets"
+        },
+        "b": {
+            "item": "destriummod:destrium_stick"
+        }
+    },
+    "result": {
+        "item": "destriummod:poison_star",
+        "count": 1
+    }
+}

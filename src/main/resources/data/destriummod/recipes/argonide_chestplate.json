@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "a a",
+        "aaa",
+        "aaa"
+    ],
+    "key": {
+        "a": {
+            "item": "destriummod:argonide_ingot"
+        }
+    },
+    "result": {
+        "item": "destriummod:argonide_chestplate",
+        "count": 1
+    }
+}

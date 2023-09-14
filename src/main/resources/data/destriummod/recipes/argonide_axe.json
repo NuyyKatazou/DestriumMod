@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "aa ",
+        "ab ",
+        " b "
+    ],
+    "key": {
+        "a": {
+            "item": "destriummod:argonide_ingot"
+        },
+        "b": {
+            "item": "destriummod:argonide_stick"
+        }
+    },
+    "result": {
+        "item": "destriummod:argonide_axe",
+        "count": 1
+    }
+}

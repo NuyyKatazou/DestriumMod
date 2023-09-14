@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "aca",
+        "cbc",
+        "aca"
+    ],
+    "key": {
+        "a": {
+            "item": "minecraft:feather"
+        },
+        "c": {
+            "item": "minecraft:anvil"
+        },
+        "b": {
+            "item": "destriummod:jump_boots"
+        }
+    },
+    "result": {
+        "item": "destriummod:feather_boots",
+        "count": 1
+    }
+}

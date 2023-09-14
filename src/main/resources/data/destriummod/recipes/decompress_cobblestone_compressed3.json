@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "   ",
+        " a ",
+        "   "
+    ],
+    "key": {
+        "a": {
+            "item": "destriummod:cobblestone_compressed3"
+        }
+    },
+    "result": {
+        "item": "destriummod:cobblestone_compressed2",
+        "count": 9
+    }
+}
