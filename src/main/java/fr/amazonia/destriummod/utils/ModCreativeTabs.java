@@ -24,6 +24,15 @@ public class ModCreativeTabs {
         pOutput.accept(ModItems.AMAZONITE_FRAGMENT.get());
         pOutput.accept(ModItems.AMAZONITE_NUGGETS.get());
         pOutput.accept(ModItems.AMAZONITE_INGOT.get());
+        pOutput.accept(ModItems.DESTRIUM_NUGGETS.get());
+        pOutput.accept(ModItems.DESTRIUM_INGOT.get());
+        pOutput.accept(ModItems.ARGONIDE_NUGGETS.get());
+        pOutput.accept(ModItems.ARGONIDE_INGOT.get());
+        pOutput.accept(ModItems.REPAIR_FRAGMENT.get());
+        pOutput.accept(ModItems.REPAIR_INGOT.get());
+        pOutput.accept(ModItems.EMERALD_NUGGETS.get());
+        pOutput.accept(ModItems.DIAMOND_NUGGETS.get());
+        pOutput.accept(ModItems.NETHERITE_NUGGETS.get());
 
         }).build());
 
