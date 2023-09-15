@@ -2,6 +2,9 @@ package fr.amazonia.destriummod.init;
 
 import fr.amazonia.destriummod.DestriumMod;
 import fr.amazonia.destriummod.item.ingot.*;
+import fr.amazonia.destriummod.item.stick.AmazoniteStick;
+import fr.amazonia.destriummod.item.stick.ArgonideStick;
+import fr.amazonia.destriummod.item.stick.DestriumStick;
 import fr.amazonia.destriummod.utils.ModRarity;
 import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -82,12 +85,12 @@ public class ModItems {
 	public static final RegistryObject<Item> DIAMOND_NUGGETS = ITEMS.register("diamond_nuggets", () -> new DiamondNuggets(new Item.Properties().rarity(ModRarity.DIAMOND)));
 	public static final RegistryObject<Item> NETHERITE_NUGGETS = ITEMS.register("netherite_nuggets", () -> new NetheriteNuggets(new Item.Properties().rarity(ModRarity.NETHERITE)));
 
-/*
+
 	public static final RegistryObject<Item> AMAZONITE_STICK = ITEMS.register("amazonite_stick", () -> new AmazoniteStick(new Item.Properties().rarity(ModRarity.AMAZONITE).fireResistant()));
 	public static final RegistryObject<Item> DESTRIUM_STICK = ITEMS.register("destrium_stick", () -> new DestriumStick(new Item.Properties().rarity(ModRarity.DESTRIUM).fireResistant()));
 	public static final RegistryObject<Item> ARGONIDE_STICK = ITEMS.register("argonide_stick", () -> new ArgonideStick(new Item.Properties().rarity(ModRarity.ARGONIDE).fireResistant()));
 
-	
+	/*
 	public static final RegistryObject<Item> GOLDEN_CORE = ITEMS.register("golden_core", () -> new GoldenItems(new Item.Properties().rarity(ModRarity.ARGONIDE)));
 	public static final RegistryObject<Item> COMPRESSED_GOLDEN = ITEMS.register("compressed_golden", () -> new GoldenItems(new Item.Properties().rarity(ModRarity.ARGONIDE)));
 	

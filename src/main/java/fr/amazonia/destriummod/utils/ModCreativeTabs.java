@@ -33,6 +33,9 @@ public class ModCreativeTabs {
         pOutput.accept(ModItems.EMERALD_NUGGETS.get());
         pOutput.accept(ModItems.DIAMOND_NUGGETS.get());
         pOutput.accept(ModItems.NETHERITE_NUGGETS.get());
+        pOutput.accept(ModItems.AMAZONITE_STICK.get());
+        pOutput.accept(ModItems.DESTRIUM_STICK.get());
+        pOutput.accept(ModItems.ARGONIDE_STICK.get());
 
         }).build());
 
