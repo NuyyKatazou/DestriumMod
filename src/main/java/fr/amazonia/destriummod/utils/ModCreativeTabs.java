@@ -19,10 +19,13 @@ public class ModCreativeTabs {
 
 
     public static final RegistryObject<CreativeModeTab> ITEM_TAB = CREATIVE_MODE_TABS.register("item_tab", () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.AMAZONITE_FRAGMENT.get())).title(Component.translatable("creativetab.item_tab")).displayItems((pParameters, pOutput) -> {
-                        pOutput.accept(ModItems.AMAZONITE_FRAGMENT.get());
-                        pOutput.accept(ModItems.AMAZONITE_CRUMB.get());
+        pOutput.accept(ModItems.AMAZONITE_CRUMB.get());
+        pOutput.accept(ModItems.AMAZONITE_DUST.get());
+        pOutput.accept(ModItems.AMAZONITE_FRAGMENT.get());
+        pOutput.accept(ModItems.AMAZONITE_NUGGETS.get());
+        pOutput.accept(ModItems.AMAZONITE_INGOT.get());
 
-                    }).build());
+        }).build());
 
     public static void register(IEventBus eventBus) {
         CREATIVE_MODE_TABS.register(eventBus);
