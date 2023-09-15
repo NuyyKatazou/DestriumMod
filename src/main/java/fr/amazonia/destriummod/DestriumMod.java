@@ -1,9 +1,12 @@
 package fr.amazonia.destriummod;
 
 import com.mojang.logging.LogUtils;
+import fr.amazonia.destriummod.init.ModItems;
+import fr.amazonia.destriummod.utils.ModCreativeTabs;
 import net.minecraft.client.Minecraft;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.level.Level;
+import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
@@ -37,8 +40,9 @@ public class DestriumMod {
 
         //Init Class
         IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
-        //ModItems.ITEMS.register(eventBus);
-        //ModBlocks.BLOCKS.register(eventBus);
+        ModItems.register(eventBus);
+        //ModBlocks.register(eventBus);
+        ModCreativeTabs.register(eventBus);
     }
 
     private void setup(FMLCommonSetupEvent event) {
