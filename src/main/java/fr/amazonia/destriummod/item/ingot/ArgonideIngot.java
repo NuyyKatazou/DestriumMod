@@ -13,6 +13,7 @@ import javax.annotation.Nullable;
 import java.util.List;
 
 public class ArgonideIngot extends Item{
+
 	public ArgonideIngot(Properties properties) {
 		super(properties);
 	}
