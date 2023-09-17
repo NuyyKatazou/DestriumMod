@@ -45,6 +45,8 @@ public class ModCreativeTabs {
         pOutput.accept(ModItems.ARGONIDE_PLATE.get());
         pOutput.accept(ModItems.DESTRIUM_PLATE.get());
         pOutput.accept(ModItems.AMAZONITE_PLATE.get());
+        pOutput.accept(ModItems.POISON_STAR.get());
+        pOutput.accept(ModItems.RESISTANCE_STAR.get());
 
         }).build());
 
