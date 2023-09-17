@@ -110,6 +110,18 @@ public class ModCreativeTabs {
 
     }).build());
 
+    public static final RegistryObject<CreativeModeTab> TOOL_TAB = CREATIVE_MODE_TABS.register("tool_tab", () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.AMAZONITE_INGOT.get())).title(Component.translatable("creativetab.tool_tab")).displayItems((pParameters, pOutput) -> {
+        pOutput.accept(ModItems.AMAZONITE_INGOT.get());
+        pOutput.accept(ModItems.AMAZONITE_INGOT.get());
+
+    }).build());
+
+    public static final RegistryObject<CreativeModeTab> FOOD_TAB = CREATIVE_MODE_TABS.register("food_tab", () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.AMAZONITE_APPLE.get())).title(Component.translatable("creativetab.food_tab")).displayItems((pParameters, pOutput) -> {
+        pOutput.accept(ModItems.DESTRIUM_APPLE.get());
+        pOutput.accept(ModItems.AMAZONITE_APPLE.get());
+
+    }).build());
+
     public static void register(IEventBus eventBus) {
         CREATIVE_MODE_TABS.register(eventBus);
     }

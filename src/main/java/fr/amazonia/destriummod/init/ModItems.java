@@ -1,6 +1,8 @@
 package fr.amazonia.destriummod.init;
 
 import fr.amazonia.destriummod.DestriumMod;
+import fr.amazonia.destriummod.item.food.AmazoniteApple;
+import fr.amazonia.destriummod.item.food.DestriumApple;
 import fr.amazonia.destriummod.item.ingot.*;
 import fr.amazonia.destriummod.item.stick.AmazoniteStick;
 import fr.amazonia.destriummod.item.stick.ArgonideStick;
@@ -15,12 +17,12 @@ import net.minecraftforge.registries.RegistryObject;
 public class ModItems {
 
 	public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, DestriumMod.MODID);
-	/*
+
 	//Foods
 	public static final RegistryObject<Item> AMAZONITE_APPLE = ITEMS.register("amazonite_apple", () -> new AmazoniteApple(new Item.Properties().rarity(ModRarity.AMAZONITE).fireResistant().food(ModFoods.AMAZONITE_APPLE)));
 	public static final RegistryObject<Item> DESTRIUM_APPLE = ITEMS.register("destrium_apple", () -> new DestriumApple(new Item.Properties().rarity(ModRarity.DESTRIUM).fireResistant().food(ModFoods.DESTRIUM_APPLE)));
 
-
+	/*
 	//Armors and Tools
 	public static final RegistryObject<Item> AMAZONITE_SWORD = ITEMS.register("amazonite_sword", () -> new SwordItem(ModToolsTiers.AMAZONITE, 2, -0.8f, new Item.Properties().rarity(ModRarity.AMAZONITE).fireResistant()));
 	public static final RegistryObject<Item> AMAZONITE_PICKAXE = ITEMS.register("amazonite_pickaxe", () -> new PickaxeItem(ModToolsTiers.AMAZONITE, -1, -2.8f, new Item.Properties().rarity(ModRarity.AMAZONITE).fireResistant()));
