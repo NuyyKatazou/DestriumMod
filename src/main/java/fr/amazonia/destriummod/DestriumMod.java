@@ -1,6 +1,7 @@
 package fr.amazonia.destriummod;
 
 import com.mojang.logging.LogUtils;
+import fr.amazonia.destriummod.init.ModBlocks;
 import fr.amazonia.destriummod.init.ModItems;
 import fr.amazonia.destriummod.utils.ModCreativeTabs;
 import net.minecraft.client.Minecraft;
@@ -40,7 +41,7 @@ public class DestriumMod {
         //Init Class
         IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
         ModItems.register(eventBus);
-        //ModBlocks.register(eventBus);
+        ModBlocks.register(eventBus);
         ModCreativeTabs.register(eventBus);
     }
 

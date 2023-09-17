@@ -1,6 +1,7 @@
 package fr.amazonia.destriummod.utils;
 
 import fr.amazonia.destriummod.DestriumMod;
+import fr.amazonia.destriummod.init.ModBlocks;
 import fr.amazonia.destriummod.init.ModItems;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
@@ -49,6 +50,65 @@ public class ModCreativeTabs {
         pOutput.accept(ModItems.RESISTANCE_STAR.get());
 
         }).build());
+
+    public static final RegistryObject<CreativeModeTab> BLOCK_TAB = CREATIVE_MODE_TABS.register("block_tab", () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModBlocks.AMAZONITE_BLOCK.get())).title(Component.translatable("creativetab.block_tab")).displayItems((pParameters, pOutput) -> {
+        pOutput.accept(ModBlocks.CLOUD.get());
+        pOutput.accept(ModBlocks.BLUE_CLOUD.get());
+        pOutput.accept(ModBlocks.BLACK_CLOUD.get());
+        pOutput.accept(ModBlocks.BROWN_CLOUD.get());
+        pOutput.accept(ModBlocks.CYAN_CLOUD.get());
+        pOutput.accept(ModBlocks.DARK_BLUE_CLOUD.get());
+        pOutput.accept(ModBlocks.DARK_GRAY_CLOUD.get());
+        pOutput.accept(ModBlocks.DARK_GREEN_CLOUD.get());
+        pOutput.accept(ModBlocks.DARK_PURPLE_CLOUD.get());
+        pOutput.accept(ModBlocks.DARK_RED_CLOUD.get());
+        pOutput.accept(ModBlocks.GRAY_CLOUD.get());
+        pOutput.accept(ModBlocks.GREEN_CLOUD.get());
+        pOutput.accept(ModBlocks.LIGHT_BLUE_CLOUD.get());
+        pOutput.accept(ModBlocks.LIGHT_GRAY_CLOUD.get());
+        pOutput.accept(ModBlocks.LIGHT_RED_CLOUD.get());
+        pOutput.accept(ModBlocks.LIME_CLOUD.get());
+        pOutput.accept(ModBlocks.MAGENTA_CLOUD.get());
+        pOutput.accept(ModBlocks.ORANGE_CLOUD.get());
+        pOutput.accept(ModBlocks.PINK_CLOUD.get());
+        pOutput.accept(ModBlocks.PURPLE_CLOUD.get());
+        pOutput.accept(ModBlocks.RED_CLOUD.get());
+        pOutput.accept(ModBlocks.ULTRA_DARK_BLUE_CLOUD.get());
+        pOutput.accept(ModBlocks.YELLOW_CLOUD.get());
+        pOutput.accept(ModBlocks.CRACKED_CLOUD.get());
+        pOutput.accept(ModBlocks.CLOUD2.get());
+        pOutput.accept(ModBlocks.RANDOM_ORE.get());
+        pOutput.accept(ModBlocks.AMAZONITE_ORE.get());
+        pOutput.accept(ModBlocks.DESTRIUM_ORE.get());
+        pOutput.accept(ModBlocks.ARGONIDE_ORE.get());
+        pOutput.accept(ModBlocks.CRACKED_ARGONIDE_ORE.get());
+        pOutput.accept(ModBlocks.REPAIR_ORE.get());
+        pOutput.accept(ModBlocks.AMAZONITE_BLOCK.get());
+        pOutput.accept(ModBlocks.FAKE_AMAZONITE_BLOCK.get());
+        pOutput.accept(ModBlocks.DESTRIUM_BLOCK.get());
+        pOutput.accept(ModBlocks.ARGONIDE_BLOCK.get());
+        pOutput.accept(ModBlocks.COBBLESTONE_COMPRESSED1.get());
+        pOutput.accept(ModBlocks.COBBLESTONE_COMPRESSED2.get());
+        pOutput.accept(ModBlocks.COBBLESTONE_COMPRESSED3.get());
+        pOutput.accept(ModBlocks.COBBLESTONE_COMPRESSED4.get());
+        pOutput.accept(ModBlocks.COBBLESTONE_COMPRESSED5.get());
+        pOutput.accept(ModBlocks.COBBLESTONE_COMPRESSED6.get());
+        pOutput.accept(ModBlocks.COBBLESTONE_COMPRESSED7.get());
+        pOutput.accept(ModBlocks.COBBLESTONE_COMPRESSED8.get());
+        pOutput.accept(ModBlocks.DIRT_COMPRESSED1.get());
+        pOutput.accept(ModBlocks.DIRT_COMPRESSED2.get());
+        pOutput.accept(ModBlocks.DIRT_COMPRESSED3.get());
+        pOutput.accept(ModBlocks.DIRT_COMPRESSED4.get());
+        pOutput.accept(ModBlocks.DIRT_COMPRESSED5.get());
+        pOutput.accept(ModBlocks.AMAZONITE_RELIQUE_BLOCK.get());
+        pOutput.accept(ModBlocks.BELOW_BLOCK.get());
+        pOutput.accept(ModBlocks.PARADIS_PORTAL_BLOCK.get());
+        pOutput.accept(ModBlocks.OVERWORLD_PORTAL_BLOCK.get());
+        pOutput.accept(ModBlocks.AMAZONITE_PLANTS.get());
+        pOutput.accept(ModBlocks.DESTRIUM_PLANTS.get());
+        pOutput.accept(ModBlocks.XP_PLANTS.get());
+
+    }).build());
 
     public static void register(IEventBus eventBus) {
         CREATIVE_MODE_TABS.register(eventBus);
