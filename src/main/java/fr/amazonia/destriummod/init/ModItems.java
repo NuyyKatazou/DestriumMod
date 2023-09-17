@@ -90,11 +90,11 @@ public class ModItems {
 	public static final RegistryObject<Item> DESTRIUM_STICK = ITEMS.register("destrium_stick", () -> new DestriumStick(new Item.Properties().rarity(ModRarity.DESTRIUM).fireResistant()));
 	public static final RegistryObject<Item> ARGONIDE_STICK = ITEMS.register("argonide_stick", () -> new ArgonideStick(new Item.Properties().rarity(ModRarity.ARGONIDE).fireResistant()));
 
-	/*
+
 	public static final RegistryObject<Item> GOLDEN_CORE = ITEMS.register("golden_core", () -> new GoldenItems(new Item.Properties().rarity(ModRarity.ARGONIDE)));
 	public static final RegistryObject<Item> COMPRESSED_GOLDEN = ITEMS.register("compressed_golden", () -> new GoldenItems(new Item.Properties().rarity(ModRarity.ARGONIDE)));
 	
-	
+
 	public static final RegistryObject<Item> IRON_PLATE = ITEMS.register("iron_plate", () -> new Item(new Item.Properties()));
 	public static final RegistryObject<Item> GOLD_PLATE = ITEMS.register("gold_plate", () -> new Item(new Item.Properties().rarity(ModRarity.ARGONIDE)));
 	public static final RegistryObject<Item> DIAMOND_PLATE = ITEMS.register("diamond_plate", () -> new Item(new Item.Properties().rarity(ModRarity.DIAMOND)));
@@ -102,7 +102,7 @@ public class ModItems {
 	public static final RegistryObject<Item> ARGONIDE_PLATE = ITEMS.register("argonide_plate", () -> new Item(new Item.Properties().rarity(ModRarity.ARGONIDE)));
 	public static final RegistryObject<Item> DESTRIUM_PLATE = ITEMS.register("destrium_plate", () -> new Item(new Item.Properties().rarity(ModRarity.DESTRIUM)));
 	public static final RegistryObject<Item> AMAZONITE_PLATE = ITEMS.register("amazonite_plate", () -> new Item(new Item.Properties().rarity(ModRarity.AMAZONITE)));
-
+	/*
 	//(Fluid)
 	public static final RegistryObject<Item> POISON_STAR = ITEMS.register("poison_star", () -> new Item(new Item.Properties().rarity(ModRarity.RED)));
 	

@@ -36,6 +36,15 @@ public class ModCreativeTabs {
         pOutput.accept(ModItems.AMAZONITE_STICK.get());
         pOutput.accept(ModItems.DESTRIUM_STICK.get());
         pOutput.accept(ModItems.ARGONIDE_STICK.get());
+        pOutput.accept(ModItems.GOLDEN_CORE.get());
+        pOutput.accept(ModItems.COMPRESSED_GOLDEN.get());
+        pOutput.accept(ModItems.IRON_PLATE.get());
+        pOutput.accept(ModItems.GOLD_PLATE.get());
+        pOutput.accept(ModItems.DIAMOND_PLATE.get());
+        pOutput.accept(ModItems.NETHERITE_PLATE.get());
+        pOutput.accept(ModItems.ARGONIDE_PLATE.get());
+        pOutput.accept(ModItems.DESTRIUM_PLATE.get());
+        pOutput.accept(ModItems.AMAZONITE_PLATE.get());
 
         }).build());
 
