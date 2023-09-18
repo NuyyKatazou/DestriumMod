@@ -110,9 +110,26 @@ public class ModCreativeTabs {
 
     }).build());
 
-    public static final RegistryObject<CreativeModeTab> TOOL_TAB = CREATIVE_MODE_TABS.register("tool_tab", () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.AMAZONITE_INGOT.get())).title(Component.translatable("creativetab.tool_tab")).displayItems((pParameters, pOutput) -> {
-        pOutput.accept(ModItems.AMAZONITE_INGOT.get());
-        pOutput.accept(ModItems.AMAZONITE_INGOT.get());
+    public static final RegistryObject<CreativeModeTab> TOOL_TAB = CREATIVE_MODE_TABS.register("tool_tab", () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.AMAZONITE_CHESTPLATE.get())).title(Component.translatable("creativetab.tool_tab")).displayItems((pParameters, pOutput) -> {
+        pOutput.accept(ModItems.AMAZONITE_HELMET.get());
+        pOutput.accept(ModItems.AMAZONITE_CHESTPLATE.get());
+        pOutput.accept(ModItems.AMAZONITE_LEGGINGS.get());
+        pOutput.accept(ModItems.AMAZONITE_BOOTS.get());
+        pOutput.accept(ModItems.DESTRIUM_HELMET.get());
+        pOutput.accept(ModItems.DESTRIUM_CHESTPLATE.get());
+        pOutput.accept(ModItems.DESTRIUM_LEGGINGS.get());
+        pOutput.accept(ModItems.DESTRIUM_BOOTS.get());
+        pOutput.accept(ModItems.ARGONIDE_HELMET.get());
+        pOutput.accept(ModItems.ARGONIDE_CHESTPLATE.get());
+        pOutput.accept(ModItems.ARGONIDE_LEGGINGS.get());
+        pOutput.accept(ModItems.ARGONIDE_BOOTS.get());
+        pOutput.accept(ModItems.SPEED_BOOTS.get());
+        pOutput.accept(ModItems.FEATHER_BOOTS.get());
+        pOutput.accept(ModItems.JUMP_BOOTS.get());
+        pOutput.accept(ModItems.ADVENTURER_BOOTS.get());
+        pOutput.accept(ModItems.RENFORCED_ADVENTURER_BOOTS.get());
+        pOutput.accept(ModItems.NECKLACE.get());
+        pOutput.accept(ModItems.LUCKY_NECKLACE.get());
 
     }).build());
 

@@ -61,7 +61,7 @@ public class ModItems {
 	public static final RegistryObject<Item> ARGONIDE_CHESTPLATE = ITEMS.register("argonide_chestplate", () -> new ArgonideArmor(ModArmorMaterials.ARGONIDE, ArmorItem.Type.CHESTPLATE, new Item.Properties().rarity(ModRarity.ARGONIDE).fireResistant()));
 	public static final RegistryObject<Item> ARGONIDE_LEGGINGS = ITEMS.register("argonide_leggings", () -> new ArgonideArmor(ModArmorMaterials.ARGONIDE, ArmorItem.Type.LEGGINGS, new Item.Properties().rarity(ModRarity.ARGONIDE).fireResistant()));
 	public static final RegistryObject<Item> ARGONIDE_BOOTS = ITEMS.register("argonide_boots", () -> new ArgonideArmor(ModArmorMaterials.ARGONIDE, ArmorItem.Type.BOOTS, new Item.Properties().rarity(ModRarity.ARGONIDE).fireResistant()));
-	/*
+
 	public static final RegistryObject<Item> SPEED_BOOTS = ITEMS.register("speed_boots", () -> new SpeedArmorBoots(ModArmorMaterials.DESTRIUM, ArmorItem.Type.BOOTS, new Item.Properties().rarity(ModRarity.DESTRIUM).fireResistant()));
 	public static final RegistryObject<Item> FEATHER_BOOTS = ITEMS.register("feather_boots", () -> new ArmorItem(ModArmorMaterials.DESTRIUM, ArmorItem.Type.BOOTS, new Item.Properties().rarity(ModRarity.DESTRIUM).fireResistant()));
 	public static final RegistryObject<Item> JUMP_BOOTS = ITEMS.register("jump_boots", () -> new JumpArmorBoots(ModArmorMaterials.DESTRIUM, ArmorItem.Type.BOOTS, new Item.Properties().rarity(ModRarity.DESTRIUM).fireResistant()));
@@ -70,7 +70,7 @@ public class ModItems {
 
 	public static final RegistryObject<Item> NECKLACE = ITEMS.register("necklace", () -> new NecklaceArmor(ModArmorMaterials.NECKLACE, ArmorItem.Type.CHESTPLATE, new Item.Properties().setNoRepair().durability(-1).rarity(ModRarity.BASIC)));
 	public static final RegistryObject<Item> LUCKY_NECKLACE = ITEMS.register("lucky_necklace", () -> new LuckyNecklaceArmor(ModArmorMaterials.NECKLACE, ArmorItem.Type.CHESTPLATE, new Item.Properties().setNoRepair().durability(-1).rarity(ModRarity.DESTRIUM)));
-	*/
+
 
 	//Items (Mineral)
 	public static final RegistryObject<Item> AMAZONITE_CRUMB = ITEMS.register("amazonite_crumb", () -> new AmazoniteItems(new Item.Properties().rarity(ModRarity.AMAZONITE).fireResistant()));
