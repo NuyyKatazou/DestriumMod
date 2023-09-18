@@ -110,7 +110,7 @@ public class ModCreativeTabs {
 
     }).build());
 
-    public static final RegistryObject<CreativeModeTab> TOOL_TAB = CREATIVE_MODE_TABS.register("tool_tab", () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.AMAZONITE_CHESTPLATE.get())).title(Component.translatable("creativetab.tool_tab")).displayItems((pParameters, pOutput) -> {
+    public static final RegistryObject<CreativeModeTab> TOOL_TAB = CREATIVE_MODE_TABS.register("tool_tab", () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.AMAZONITE_PICKAXE.get())).title(Component.translatable("creativetab.tool_tab")).displayItems((pParameters, pOutput) -> {
         pOutput.accept(ModItems.AMAZONITE_SWORD.get());
         pOutput.accept(ModItems.AMAZONITE_PICKAXE.get());
         pOutput.accept(ModItems.AMAZONITE_AXE.get());
