@@ -8,8 +8,11 @@ import fr.amazonia.destriummod.item.ingot.*;
 import fr.amazonia.destriummod.item.stick.AmazoniteStick;
 import fr.amazonia.destriummod.item.stick.ArgonideStick;
 import fr.amazonia.destriummod.item.stick.DestriumStick;
+import fr.amazonia.destriummod.item.tools.SpawnersPickaxe;
 import fr.amazonia.destriummod.utils.ModArmorMaterials;
 import fr.amazonia.destriummod.utils.ModRarity;
+import fr.amazonia.destriummod.utils.ModTiers;
+import fr.amazonia.destriummod.utils.ModToolsTiers;
 import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -24,7 +27,7 @@ public class ModItems {
 	public static final RegistryObject<Item> AMAZONITE_APPLE = ITEMS.register("amazonite_apple", () -> new AmazoniteApple(new Item.Properties().rarity(ModRarity.AMAZONITE).fireResistant().food(ModFoods.AMAZONITE_APPLE)));
 	public static final RegistryObject<Item> DESTRIUM_APPLE = ITEMS.register("destrium_apple", () -> new DestriumApple(new Item.Properties().rarity(ModRarity.DESTRIUM).fireResistant().food(ModFoods.DESTRIUM_APPLE)));
 
-	/*
+
 	//Armors and Tools
 	public static final RegistryObject<Item> AMAZONITE_SWORD = ITEMS.register("amazonite_sword", () -> new SwordItem(ModToolsTiers.AMAZONITE, 2, -0.8f, new Item.Properties().rarity(ModRarity.AMAZONITE).fireResistant()));
 	public static final RegistryObject<Item> AMAZONITE_PICKAXE = ITEMS.register("amazonite_pickaxe", () -> new PickaxeItem(ModToolsTiers.AMAZONITE, -1, -2.8f, new Item.Properties().rarity(ModRarity.AMAZONITE).fireResistant()));
@@ -45,7 +48,7 @@ public class ModItems {
 	public static final RegistryObject<Item> ARGONIDE_HOES = ITEMS.register("argonide_hoes", () -> new HoeItem(ModToolsTiers.ARGONIDE, -5, 0f, new Item.Properties().rarity(ModRarity.ARGONIDE).fireResistant()));
 
 	public static final RegistryObject<Item> SPAWNERS_PICKAXE = ITEMS.register("spawners_pickaxe", () -> new SpawnersPickaxe(ModTiers.SPAWNERS, -1, -2.8f, new Item.Properties().rarity(ModRarity.SPECIAL).fireResistant()));
-	*/
+
 
 	public static final RegistryObject<Item> AMAZONITE_HELMET = ITEMS.register("amazonite_helmet", () -> new AmazoniteArmorHelmet(ModArmorMaterials.AMAZONITE, ArmorItem.Type.HELMET, new Item.Properties().rarity(ModRarity.AMAZONITE).fireResistant()));
 	public static final RegistryObject<Item> AMAZONITE_CHESTPLATE  = ITEMS.register("amazonite_chestplate", () -> new AmazoniteArmorChestPlate(ModArmorMaterials.AMAZONITE, ArmorItem.Type.CHESTPLATE, new Item.Properties().rarity(ModRarity.AMAZONITE).fireResistant()));
