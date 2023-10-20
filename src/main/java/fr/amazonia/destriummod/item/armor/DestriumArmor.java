@@ -1,9 +1,7 @@
 package fr.amazonia.destriummod.item.armor;
 
-import fr.amazonia.destriummod.utils.ModArmorMaterials;
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.ArmorMaterial;
-import net.minecraft.world.item.Item;
 
 public class DestriumArmor extends ArmorItem {
 

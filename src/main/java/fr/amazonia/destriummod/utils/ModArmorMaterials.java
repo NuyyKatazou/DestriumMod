@@ -1,9 +1,5 @@
 package fr.amazonia.destriummod.utils;
 
-import java.util.EnumMap;
-import java.util.function.Supplier;
-
-import fr.amazonia.destriummod.DestriumMod;
 import fr.amazonia.destriummod.init.ModItems;
 import net.minecraft.Util;
 import net.minecraft.sounds.SoundEvent;
@@ -13,8 +9,10 @@ import net.minecraft.util.StringRepresentable;
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.ArmorMaterial;
 import net.minecraft.world.item.ArmorMaterials;
-import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
+
+import java.util.EnumMap;
+import java.util.function.Supplier;
 
 public enum ModArmorMaterials implements StringRepresentable, ArmorMaterial {
 
@@ -33,7 +31,7 @@ public enum ModArmorMaterials implements StringRepresentable, ArmorMaterial {
         p_266654_.put(ArmorItem.Type.CHESTPLATE, 9);
         p_266654_.put(ArmorItem.Type.HELMET, 4);
     }), 18, SoundEvents.ARMOR_EQUIP_DIAMOND, 3.5F, 0.1F, () -> {
-        return Ingredient.of(Items.IRON_INGOT);
+        return Ingredient.of(ModItems.ARGONIDE_INGOT.get());
     }),
 
     DESTRIUM("destrium", 478, Util.make(new EnumMap<>(ArmorItem.Type.class), (p_266649_) -> {
