@@ -42,5 +42,4 @@ public class HandlerEvent {
             event.setCanceled(true);
         }
     }
-
 }

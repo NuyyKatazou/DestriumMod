@@ -22,6 +22,7 @@ import java.util.function.Supplier;
 public class ModBlocks {
 
 	public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, DestriumMod.MODID);
+
 	//Blocks (Paradis)
 	public static final RegistryObject<Block> CLOUD = registerBlock("cloud", () -> new Block(BlockBehaviour.Properties.copy(Blocks.CLAY).sound(SoundType.STONE).strength(2.5f, 25f).requiresCorrectToolForDrops()));
 	public static final RegistryObject<Block> BLUE_CLOUD = registerBlock("blue_cloud", () -> new Block(BlockBehaviour.Properties.copy(Blocks.CLAY).sound(SoundType.STONE).strength(3f, 25f).requiresCorrectToolForDrops()));
@@ -49,6 +50,7 @@ public class ModBlocks {
 	public static final RegistryObject<Block> CRACKED_CLOUD = registerBlock("cracked_cloud", () -> new Block(BlockBehaviour.Properties.copy(Blocks.CLAY).sound(SoundType.STONE).strength(2.5f, 25f).requiresCorrectToolForDrops()));
 	public static final RegistryObject<Block> CLOUD2 = registerBlock("cloud2", () -> new Block(BlockBehaviour.Properties.copy(Blocks.CLAY).sound(SoundType.STONE).strength(2.5f, 25f).requiresCorrectToolForDrops()));
 
+
 	//(Ore)
 	public static final RegistryObject<Block> RANDOM_ORE = registerBlock("random_ore", () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE).strength(5f, 100f).requiresCorrectToolForDrops()));
 	public static final RegistryObject<Block> AMAZONITE_ORE = registerBlock("amazonite_ore", () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE).strength(10f, 100f).requiresCorrectToolForDrops()));
@@ -62,6 +64,7 @@ public class ModBlocks {
 	public static final RegistryObject<Block> FAKE_AMAZONITE_BLOCK = registerBlock("fake_amazonite_block", () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIAMOND_BLOCK).strength(25f, 1000f).requiresCorrectToolForDrops()));
 	public static final RegistryObject<Block> DESTRIUM_BLOCK = registerBlock("destrium_block", () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIAMOND_BLOCK).strength(15f, 125f).requiresCorrectToolForDrops()));
 	public static final RegistryObject<Block> ARGONIDE_BLOCK = registerBlock("argonide_block", () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIAMOND_BLOCK).strength(10f, 25f).requiresCorrectToolForDrops()));
+
 
 	//(Compressed)
 	public static final RegistryObject<Block> COBBLESTONE_COMPRESSED1 = registerBlock("cobblestone_compressed1", () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).strength(3.0F, 6.5F).requiresCorrectToolForDrops()));
@@ -79,6 +82,7 @@ public class ModBlocks {
 	public static final RegistryObject<Block> DIRT_COMPRESSED4 = registerBlock("dirt_compressed4", () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIRT).strength(12.0F, 10.0F).requiresCorrectToolForDrops()));
 	public static final RegistryObject<Block> DIRT_COMPRESSED5 = registerBlock("dirt_compressed5", () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIRT).strength(20.0F, 14.0F).requiresCorrectToolForDrops()));
 
+
 	//(Other)
 	public static final RegistryObject<Block> AMAZONITE_RELIQUE_BLOCK = registerBlock("amazonite_relique_block", () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIAMOND_BLOCK).strength(25.0F, 100.0F).requiresCorrectToolForDrops()));
 	
@@ -89,10 +93,12 @@ public class ModBlocks {
 	public static final RegistryObject<Block> PARADIS_PORTAL_BLOCK = registerBlock("paradis_portal_block", () -> new ParadisPortalBlocks(BlockBehaviour.Properties.copy(Blocks.AMETHYST_BLOCK).strength(10.0F, 200.0F).requiresCorrectToolForDrops()));
 	public static final RegistryObject<Block> OVERWORLD_PORTAL_BLOCK = registerBlock("overworld_portal_block", () -> new OverworldPortalBlocks(BlockBehaviour.Properties.copy(Blocks.AMETHYST_BLOCK).strength(10.0F, 200.0F).requiresCorrectToolForDrops()));
 
+
 	//Plants
 	public static final RegistryObject<Block> AMAZONITE_PLANTS = BLOCKS.register("amazonite_plants", () -> new AmazonitePlants(BlockBehaviour.Properties.copy(Blocks.CARROTS).instabreak().randomTicks().noCollission().sound(SoundType.CROP)));
 	public static final RegistryObject<Block> DESTRIUM_PLANTS = BLOCKS.register("destrium_plants", () -> new DestriumPlants(BlockBehaviour.Properties.copy(Blocks.CARROTS).instabreak().randomTicks().noCollission().sound(SoundType.CROP)));
 	public static final RegistryObject<Block> XP_PLANTS = BLOCKS.register("xp_plants", () -> new XpPlants(BlockBehaviour.Properties.copy(Blocks.CARROTS).instabreak().randomTicks().noCollission().sound(SoundType.CROP)));
+
 
 	//Flowers
 	//public static final RegistryObject<FlowerBlock> CLOVER = BLOCKS.register("clover", () -> new FlowerBlock(MobEffects.LUCK, 9, BlockBehaviour.Properties.of(Material.PLANT).noCollission().instabreak().sound(SoundType.GRASS)));
