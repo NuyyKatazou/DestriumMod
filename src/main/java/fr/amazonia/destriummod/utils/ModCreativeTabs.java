@@ -16,7 +16,7 @@ public class ModCreativeTabs {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, DestriumMod.MODID);
 
 
-    public static final RegistryObject<CreativeModeTab> ITEM_TAB = CREATIVE_MODE_TABS.register("item_tab", () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.AMAZONITE_FRAGMENT.get())).title(Component.translatable("creativetab.item_tab")).displayItems((pParameters, pOutput) -> {
+    public static final RegistryObject<CreativeModeTab> ITEM_TAB = CREATIVE_MODE_TABS.register("item_tab", () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.AMAZONITE_FRAGMENT.get())).title(Component.translatable("creativetab.destriummod.item_tab")).displayItems((pParameters, pOutput) -> {
         pOutput.accept(ModItems.AMAZONITE_CRUMB.get());
         pOutput.accept(ModItems.AMAZONITE_DUST.get());
         pOutput.accept(ModItems.AMAZONITE_FRAGMENT.get());
@@ -48,7 +48,7 @@ public class ModCreativeTabs {
 
         }).build());
 
-    public static final RegistryObject<CreativeModeTab> BLOCK_TAB = CREATIVE_MODE_TABS.register("block_tab", () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModBlocks.AMAZONITE_BLOCK.get())).title(Component.translatable("creativetab.block_tab")).displayItems((pParameters, pOutput) -> {
+    public static final RegistryObject<CreativeModeTab> BLOCK_TAB = CREATIVE_MODE_TABS.register("block_tab", () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModBlocks.AMAZONITE_BLOCK.get())).title(Component.translatable("creativetab.destriummod.block_tab")).displayItems((pParameters, pOutput) -> {
         pOutput.accept(ModBlocks.CLOUD.get());
         pOutput.accept(ModBlocks.BLUE_CLOUD.get());
         pOutput.accept(ModBlocks.BLACK_CLOUD.get());
@@ -107,7 +107,7 @@ public class ModCreativeTabs {
 
     }).build());
 
-    public static final RegistryObject<CreativeModeTab> TOOL_TAB = CREATIVE_MODE_TABS.register("tool_tab", () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.AMAZONITE_PICKAXE.get())).title(Component.translatable("creativetab.tool_tab")).displayItems((pParameters, pOutput) -> {
+    public static final RegistryObject<CreativeModeTab> TOOL_TAB = CREATIVE_MODE_TABS.register("tool_tab", () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.AMAZONITE_PICKAXE.get())).title(Component.translatable("creativetab.destriummod.tool_tab")).displayItems((pParameters, pOutput) -> {
         pOutput.accept(ModItems.AMAZONITE_SWORD.get());
         pOutput.accept(ModItems.AMAZONITE_PICKAXE.get());
         pOutput.accept(ModItems.AMAZONITE_AXE.get());
@@ -146,7 +146,7 @@ public class ModCreativeTabs {
 
     }).build());
 
-    public static final RegistryObject<CreativeModeTab> FOOD_TAB = CREATIVE_MODE_TABS.register("food_tab", () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.AMAZONITE_APPLE.get())).title(Component.translatable("creativetab.food_tab")).displayItems((pParameters, pOutput) -> {
+    public static final RegistryObject<CreativeModeTab> FOOD_TAB = CREATIVE_MODE_TABS.register("food_tab", () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.AMAZONITE_APPLE.get())).title(Component.translatable("creativetab.destriummod.food_tab")).displayItems((pParameters, pOutput) -> {
         pOutput.accept(ModItems.DESTRIUM_APPLE.get());
         pOutput.accept(ModItems.AMAZONITE_APPLE.get());
 
