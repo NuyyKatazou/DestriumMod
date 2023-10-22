@@ -49,7 +49,7 @@ public enum ModArmorMaterials implements StringRepresentable, ArmorMaterial {
         p_266655_.put(ArmorItem.Type.LEGGINGS, 12);
         p_266655_.put(ArmorItem.Type.CHESTPLATE, 14);
         p_266655_.put(ArmorItem.Type.HELMET, 9);
-    }), 25, SoundEvents.ARMOR_EQUIP_NETHERITE, 5.0F, 0.1F, () -> {
+    }), 25, SoundEvents.ARMOR_EQUIP_DIAMOND, 5.0F, 0.1F, () -> {
         return Ingredient.of(ModItems.AMAZONITE_FRAGMENT.get());
     });
 
