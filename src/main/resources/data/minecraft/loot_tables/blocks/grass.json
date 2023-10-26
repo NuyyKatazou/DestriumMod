@@ -2,34 +2,26 @@
   "type": "minecraft:block",
   "pools": [
     {
-      "rolls": 1.0,
-      "bonus_rolls": 0.0,
+      "rolls": 1,
       "entries": [
         {
           "type": "minecraft:alternatives",
           "children": [
             {
               "type": "minecraft:item",
+              "name": "minecraft:grass",
               "conditions": [
                 {
                   "condition": "minecraft:match_tool",
                   "predicate": {
-                    "items": [
-                      "minecraft:shears"
-                    ]
+                    "item": "minecraft:shears"
                   }
                 }
-              ],
-              "name": "minecraft:grass"
+              ]
             },
             {
               "type": "minecraft:item",
-              "conditions": [
-                {
-                  "condition": "minecraft:random_chance",
-                  "chance": 0.125
-                }
-              ],
+              "name": "minecraft:wheat_seeds",
               "functions": [
                 {
                   "function": "minecraft:apply_bonus",
@@ -43,41 +35,83 @@
                   "function": "minecraft:explosion_decay"
                 }
               ],
-              "name": "minecraft:wheat_seeds"
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.125
+                }
+              ]
             }
           ]
         }
       ]
     },
     {
-      "rolls": 1.0,
-      "bonus_rolls": 0.0,
+      "rolls": 1,
       "entries": [
         {
           "type": "minecraft:alternatives",
           "children": [
             {
               "type": "minecraft:item",
+              "name": "minecraft:grass",
               "conditions": [
                 {
                   "condition": "minecraft:match_tool",
                   "predicate": {
-                    "items": [
-                      "minecraft:shears"
-                    ]
+                    "item": "minecraft:shears"
                   }
                 }
-              ],
-              "name": "minecraft:grass"
+              ]
             },
             {
               "type": "minecraft:item",
+              "name": "destriummod:xp_seeds",
+              "functions": [
+                {
+                  "function": "minecraft:apply_bonus",
+                  "enchantment": "minecraft:fortune",
+                  "formula": "minecraft:uniform_bonus_count",
+                  "parameters": {
+                    "bonusMultiplier": 0
+                  }
+                },
+                {
+                  "function": "minecraft:explosion_decay"
+                }
+              ],
               "conditions": [
                 {
                   "condition": "minecraft:random_chance",
                   "chance": 0.005
                 }
-              ],
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:grass",
+              "conditions": [
+                {
+                  "condition": "minecraft:match_tool",
+                  "predicate": {
+                    "item": "minecraft:shears"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "destriummod:destrium_seeds",
               "functions": [
                 {
                   "function": "minecraft:apply_bonus",
@@ -91,89 +125,38 @@
                   "function": "minecraft:explosion_decay"
                 }
               ],
-              "name": "destriummod:xp_seeds"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "rolls": 1.0,
-      "bonus_rolls": 0.0,
-      "entries": [
-        {
-          "type": "minecraft:alternatives",
-          "children": [
-            {
-              "type": "minecraft:item",
-              "conditions": [
-                {
-                  "condition": "minecraft:match_tool",
-                  "predicate": {
-                    "items": [
-                      "minecraft:shears"
-                    ]
-                  }
-                }
-              ],
-              "name": "minecraft:grass"
-            },
-            {
-              "type": "minecraft:item",
               "conditions": [
                 {
                   "condition": "minecraft:random_chance",
                   "chance": 0.0008
                 }
-              ],
-              "functions": [
-                {
-                  "function": "minecraft:apply_bonus",
-                  "enchantment": "minecraft:fortune",
-                  "formula": "minecraft:uniform_bonus_count",
-                  "parameters": {
-                    "bonusMultiplier": 0
-                  }
-                },
-                {
-                  "function": "minecraft:explosion_decay"
-                }
-              ],
-              "name": "destriummod:destrium_seeds"
+              ]
             }
           ]
         }
       ]
     },
     {
-      "rolls": 1.0,
-      "bonus_rolls": 0.0,
+      "rolls": 1,
       "entries": [
         {
           "type": "minecraft:alternatives",
           "children": [
             {
               "type": "minecraft:item",
+              "name": "minecraft:grass",
               "conditions": [
                 {
                   "condition": "minecraft:match_tool",
                   "predicate": {
-                    "items": [
-                      "minecraft:shears"
-                    ]
+                    "item": "minecraft:shears"
                   }
                 }
-              ],
-              "name": "minecraft:grass"
+              ]
             },
             {
               "type": "minecraft:item",
-              "conditions": [
-                {
-                  "condition": "minecraft:random_chance",
-                  "chance": 0.0002
-                }
-              ],
+              "name": "destriummod:amazonite_seeds",
               "functions": [
                 {
                   "function": "minecraft:apply_bonus",
@@ -187,7 +170,12 @@
                   "function": "minecraft:explosion_decay"
                 }
               ],
-              "name": "destriummod:amazonite_seeds"
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.0002
+                }
+              ]
             }
           ]
         }
