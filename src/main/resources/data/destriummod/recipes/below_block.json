@@ -17,7 +17,6 @@
         }
     },
     "result": {
-        "item": "destriummod:below_block",
-        "count": 1
+        "item": "destriummod:below_block"
     }
 }

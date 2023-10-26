@@ -20,7 +20,6 @@
         }
     },
     "result": {
-        "item": "destriummod:resistance_lava_bucket",
-        "count": 1
+        "item": "destriummod:resistance_lava_bucket"
     }
 }

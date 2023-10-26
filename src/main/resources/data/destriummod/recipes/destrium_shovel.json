@@ -1,9 +1,9 @@
 {
     "type": "minecraft:crafting_shaped",
     "pattern": [
-        " a ",
-        " b ",
-        " b "
+        "a",
+        "b",
+        "b"
     ],
     "key": {
         "a": {
@@ -14,7 +14,6 @@
         }
     },
     "result": {
-        "item": "destriummod:destrium_shovel",
-        "count": 1
+        "item": "destriummod:destrium_shovel"
     }
 }
