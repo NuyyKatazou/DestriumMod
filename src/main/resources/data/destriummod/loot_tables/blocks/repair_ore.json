@@ -3,12 +3,14 @@
   "pools": [
     {
       "rolls": 1,
+      "bonus_rolls": 0,
       "entries": [
         {
           "type": "minecraft:alternatives",
           "children": [
             {
               "type": "minecraft:item",
+              "name": "destriummod:repair_ore",
               "conditions": [
                 {
                   "condition": "minecraft:match_tool",
@@ -23,29 +25,28 @@
                     ]
                   }
                 }
-              ],
-              "name": "destriummod:repair_ore"
+              ]
             },
             {
               "type": "minecraft:item",
+              "name": "destriummod:repair_fragment",
               "functions": [
                 {
                   "function": "minecraft:set_count",
                   "count": {
-                    "min": 1.0,
-                    "max": 3.0,
-                    "type": "minecraft:uniform"
+                    "min": 1,
+                    "max": 3
                   }
                 },
                 {
                   "function": "minecraft:explosion_decay"
                 }
-              ],
-              "name": "destriummod:repair_fragment"
+              ]
             }
           ]
         }
       ]
     }
-  ]
+  ],
+  "random_sequence": "destriummod:blocks/repair_ore"
 }
