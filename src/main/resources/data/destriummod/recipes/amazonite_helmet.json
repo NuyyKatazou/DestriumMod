@@ -2,8 +2,7 @@
     "type": "minecraft:crafting_shaped",
     "pattern": [
         "aaa",
-        "a a",
-        "   "
+        "a a"
     ],
     "key": {
         "a": {
@@ -11,7 +10,6 @@
         }
     },
     "result": {
-        "item": "destriummod:amazonite_helmet",
-        "count": 1
+        "item": "destriummod:amazonite_helmet"
     }
 }

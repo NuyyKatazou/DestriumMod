@@ -20,7 +20,6 @@
         }
     },
     "result": {
-        "item": "destriummod:poison_water_bucket",
-        "count": 1
+        "item": "destriummod:poison_water_bucket"
     }
 }

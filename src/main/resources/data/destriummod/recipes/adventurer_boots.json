@@ -1,5 +1,8 @@
 {
-  "type": "minecraft:smithing",
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "destriummod:destrium_ingot"
+  },
   "base": {
     "item": "destriummod:feather_boots"
   },
