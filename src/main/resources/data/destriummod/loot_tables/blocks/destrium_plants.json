@@ -2,55 +2,29 @@
   "type": "minecraft:block",
   "pools": [
     {
-      "rolls": 1.0,
+      "rolls": 1,
       "entries": [
         {
-          "type": "minecraft:alternatives",
-          "children": [
-            {
-              "type": "minecraft:item",
-              "conditions": [
-                {
-                  "condition": "minecraft:block_state_property",
-                  "block": "destriummod:destrium_plants",
-                  "properties": {
-                    "age": "7"
-                  }
-                }
-              ],
-              "name": "destriummod:destrium_seeds"
-            },
-            {
-              "type": "minecraft:item",
-              "name": "destriummod:destrium_seeds"
-            }
-          ]
+          "type": "minecraft:item",
+          "name": "destriummod:destrium_seeds"
         }
       ]
     },
     {
-      "rolls": 1.0,
+      "rolls": 1,
       "entries": [
         {
           "type": "minecraft:item",
+          "name": "destriummod:destrium_nuggets",
           "functions": [
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": -150.0,
-                "max": 1.0,
-                "type": "minecraft:uniform"
-              }
-              },
-              {
-              "function": "minecraft:looting_enchant",
-              "count": {
-                "min": 0.0,
-                "max": 0.0
+                "min": -150,
+                "max": 1
               }
             }
-          ],
-          "name": "destriummod:destrium_nuggets"
+          ]
         }
       ],
       "conditions": [
@@ -64,28 +38,20 @@
       ]
     },
     {
-      "rolls": 1.0,
+      "rolls": 1,
       "entries": [
         {
           "type": "minecraft:item",
+          "name": "destriummod:destrium_ingot",
           "functions": [
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": -750.0,
-                "max": 1.0,
-                "type": "minecraft:uniform"
-              }
-              },
-              {
-              "function": "minecraft:looting_enchant",
-              "count": {
-                "min": 0.0,
-                "max": 0.0
+                "min": -750,
+                "max": 1
               }
             }
-          ],
-          "name": "destriummod:destrium_ingot"
+          ]
         }
       ],
       "conditions": [

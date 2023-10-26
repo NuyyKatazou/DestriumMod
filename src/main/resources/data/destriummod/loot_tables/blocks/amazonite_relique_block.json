@@ -9,6 +9,7 @@
           "children": [
             {
               "type": "minecraft:item",
+              "name": "destriummod:amazonite_relique_block",
               "conditions": [
                 {
                   "condition": "minecraft:match_tool",
@@ -23,25 +24,23 @@
                     ]
                   }
                 }
-              ],
-              "name": "destriummod:amazonite_relique_block"
+              ]
             },
             {
               "type": "minecraft:item",
+              "name": "destriummod:amazonite_nuggets",
               "functions": [
                 {
                   "function": "minecraft:set_count",
                   "count": {
-                    "min": 1.0,
-                    "max": 9.0,
-                    "type": "minecraft:uniform"
+                    "min": 1,
+                    "max": 9
                   }
                 },
                 {
                   "function": "minecraft:explosion_decay"
                 }
-              ],
-              "name": "destriummod:amazonite_nuggets"
+              ]
             }
           ]
         }
