@@ -10,15 +10,15 @@ import net.minecraft.potion.EffectInstance;
 import net.minecraft.potion.Effects;
 import net.minecraft.world.World;
 
-public class RenforcedAdventurerArmorBoots extends ArmorItem{
+public class ReinforcedAdventurerArmorBoots extends ArmorItem{
 	
-	public RenforcedAdventurerArmorBoots(IArmorMaterial materialIn, EquipmentSlotType slot, Properties properties) {
+	public ReinforcedAdventurerArmorBoots(IArmorMaterial materialIn, EquipmentSlotType slot, Properties properties) {
 		super(materialIn, slot, properties);
 	}
 	
 	@Override
     public void onArmorTick(ItemStack itemstack, World world, PlayerEntity player) {
-		if(player.getItemBySlot(EquipmentSlotType.FEET).getItem() == ModItems.RENFORCED_ADVENTURER_BOOTS.get()) {
+		if(player.getItemBySlot(EquipmentSlotType.FEET).getItem() == ModItems.REINFORCED_ADVENTURER_BOOTS.get()) {
 			player.addEffect(new EffectInstance(Effects.MOVEMENT_SPEED, 300, 2, false, false, true));
 		}
 	}

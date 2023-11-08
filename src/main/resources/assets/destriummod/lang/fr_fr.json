@@ -61,7 +61,7 @@
   "item.destriummod.feather_boots": "Bottes D'Anti-Chute",
   "item.destriummod.jump_boots": "Bottes de Saut",
   "item.destriummod.adventurer_boots": "Bottes d'Aventurier",
-  "item.destriummod.renforced_adventurer_boots": "Bottes d'Aventurier Renforcé",
+  "item.destriummod.reinforced_adventurer_boots": "Bottes d'Aventurier Renforcé",
   
   "item.destriummod.necklace": "Collier",
   "item.destriummod.lucky_necklace": "Collier de Chance",
@@ -246,5 +246,6 @@
   "item.destriummod.amazonite_apple.desc3": "Résistance Quatre Pendant Vingts Minutes",
   "item.destriummod.amazonite_apple.desc4": "Boost De Dix Coeurs Pendant Dix Minutes",
   "item.destriummod.amazonite_apple.desc5": "Regeneration Cinq Pendant Deux Minutes Et Trente Secondes",
-  "item.destriummod.amazonite_apple.desc6": "Vingts Coeurs d'Absorption Pendant Dix Minutes"
+  "item.destriummod.amazonite_apple.desc6": "Vingts Coeurs d'Absorption Pendant Dix Minutes",
+  "item.destriummod.renforced_adventurer_boots": "Renforced Adventurer Boots"
 }
