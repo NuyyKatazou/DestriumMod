@@ -2,6 +2,7 @@ package fr.amazonia.destriummod.utils;
 
 import java.util.function.Supplier;
 
+import fr.amazonia.destriummod.DestriumMod;
 import fr.amazonia.destriummod.init.ModItems;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.IArmorMaterial;
@@ -69,7 +70,7 @@ public enum ModArmorMaterial implements IArmorMaterial {
 
 	   @OnlyIn(Dist.CLIENT)
 	   public String getName() {
-	      return this.name;
+	      return DestriumMod.MODID + ":" + this.name;
 	   }
 
 	   public float getToughness() {
