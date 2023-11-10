@@ -5,6 +5,7 @@ import java.util.function.Function;
 import fr.amazonia.destriummod.DestriumMod;
 import fr.amazonia.destriummod.block.ParadisPortalBlocks;
 import fr.amazonia.destriummod.init.ModBlocks;
+import fr.amazonia.destriummod.init.ModItems;
 import net.minecraft.block.material.Material;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.ServerPlayerEntity;
@@ -14,6 +15,9 @@ import net.minecraft.world.server.ServerWorld;
 import net.minecraftforge.common.util.ITeleporter;
 
 public class ParadisTeleporter implements ITeleporter {
+
+    public static int f = 0;
+
     public static BlockPos thisPos = BlockPos.ZERO;
     public static boolean thisIsToParadisDim = true;
 
@@ -43,7 +47,7 @@ public class ParadisTeleporter implements ITeleporter {
         ServerPlayerEntity player = (ServerPlayerEntity) entity;
         if (destWorld.dimension().equals(DestriumMod.PARADIS_DIMENSION)) {
   
-        } 
+        }
         player.teleportTo(destinationPos.getX() + 0.5D, destinationPos.getY() + 1D, destinationPos.getZ() + 0.5D);
         if (thisIsToParadisDim) {
             boolean doSetBlock = true;
@@ -55,6 +59,7 @@ public class ParadisTeleporter implements ITeleporter {
             }
             if (doSetBlock) {
                 destWorld.setBlock(destinationPos, ModBlocks.CLOUD.get().defaultBlockState(), 10);
+                f = 1;
             }
         }
         return entity;

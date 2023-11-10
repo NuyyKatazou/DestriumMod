@@ -13,8 +13,6 @@ import net.minecraft.world.World;
 import net.minecraft.world.server.ServerWorld;
 
 public class OverworldPortalBlocks extends Block{
-	
-	public static int f = 0;
 
 	public OverworldPortalBlocks(Properties p_i48440_1_) {
 		super(p_i48440_1_);

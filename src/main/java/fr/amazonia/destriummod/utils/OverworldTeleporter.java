@@ -14,6 +14,9 @@ import net.minecraft.world.server.ServerWorld;
 import net.minecraftforge.common.util.ITeleporter;
 
 public class OverworldTeleporter implements ITeleporter {
+
+    public static int f = 0;
+
     public static BlockPos thisPos = BlockPos.ZERO;
     public static boolean thisIsToOverworldDim = true;
 
@@ -24,6 +27,7 @@ public class OverworldTeleporter implements ITeleporter {
 
     @Override
     public Entity placeEntity(Entity entity, ServerWorld currentWorld, ServerWorld destWorld, float yaw, Function<Boolean, Entity> repositionEntity) {
+        System.out.print("tptest");
         entity = repositionEntity.apply(false);
         double y = 61;
         if (!thisIsToOverworldDim) {
@@ -55,6 +59,7 @@ public class OverworldTeleporter implements ITeleporter {
             }
             if (doSetBlock) {
                 destWorld.setBlock(destinationPos, Blocks.DIRT.defaultBlockState(), 10);
+                f = 1;
             }
         }
         return entity;
