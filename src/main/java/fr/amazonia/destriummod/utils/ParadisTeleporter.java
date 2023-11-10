@@ -11,7 +11,9 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.ServerPlayerEntity;
 import net.minecraft.fluid.Fluids;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraft.tags.ITag;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.server.ServerWorld;
 import net.minecraftforge.common.util.ITeleporter;
@@ -50,7 +52,9 @@ public class ParadisTeleporter implements ITeleporter {
         if (destWorld.dimension().equals(DestriumMod.PARADIS_DIMENSION)) {
 
         }
-        player.addItem(new ItemStack(ModBlocks.OVERWORLD_PORTAL_BLOCK.get()));
+        if (!player.inventory.contains(new ItemStack(ModBlocks.OVERWORLD_PORTAL_BLOCK.get()))) {
+            player.addItem(new ItemStack(ModBlocks.OVERWORLD_PORTAL_BLOCK.get()));
+        }
         player.teleportTo(destinationPos.getX() + 0.5D, destinationPos.getY() + 1D, destinationPos.getZ() + 0.5D);
         if (thisIsToParadisDim) {
             boolean doSetBlock = true;
