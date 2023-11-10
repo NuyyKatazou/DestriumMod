@@ -27,7 +27,6 @@ public class OverworldTeleporter implements ITeleporter {
 
     @Override
     public Entity placeEntity(Entity entity, ServerWorld currentWorld, ServerWorld destWorld, float yaw, Function<Boolean, Entity> repositionEntity) {
-        System.out.print("tptest");
         entity = repositionEntity.apply(false);
         double y = 61;
         if (!thisIsToOverworldDim) {
