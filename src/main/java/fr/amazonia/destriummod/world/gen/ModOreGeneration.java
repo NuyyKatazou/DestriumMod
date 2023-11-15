@@ -15,9 +15,7 @@ import net.minecraftforge.event.world.BiomeLoadingEvent;
 import net.minecraft.world.gen.GenerationStage;
 
 public class ModOreGeneration {
-	
 
- 
     public static void generateOre(BiomeLoadingEvent event) {
     	//Basic Gen
     	/*
@@ -52,6 +50,4 @@ public class ModOreGeneration {
             }
         }
     }
- 
-
 }

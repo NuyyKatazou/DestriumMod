@@ -14,7 +14,7 @@ import net.minecraft.world.World;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 
-public class ArgonideIngot extends Item{
+public class ArgonideIngot extends Item {
 	
 	public ArgonideIngot(Properties properties) {
 		super(properties);

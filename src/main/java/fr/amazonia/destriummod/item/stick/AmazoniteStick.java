@@ -14,7 +14,7 @@ import net.minecraft.world.World;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 
-public class AmazoniteStick extends Item{
+public class AmazoniteStick extends Item {
 
 	public AmazoniteStick(Properties p_i48487_1_) {
 		super(p_i48487_1_);

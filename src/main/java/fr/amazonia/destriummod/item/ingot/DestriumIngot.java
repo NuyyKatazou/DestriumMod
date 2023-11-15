@@ -14,7 +14,7 @@ import net.minecraft.world.World;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 
-public class DestriumIngot extends Item{
+public class DestriumIngot extends Item {
 
 	public DestriumIngot(Properties properties) {
 		super(properties);
@@ -27,4 +27,3 @@ public class DestriumIngot extends Item{
 	      p_77624_3_.add(new TranslationTextComponent(this.getDescriptionId() + ".desc3").withStyle(TextFormatting.GOLD));
 	   }
 }
-

@@ -33,5 +33,4 @@ public class XpPlants extends CropsBlock {
     public boolean isBonemealSuccess(World p_180670_1_, Random p_180670_2_, BlockPos p_180670_3_, BlockState p_180670_4_) {
         return false;
     }
-  }
-
+}

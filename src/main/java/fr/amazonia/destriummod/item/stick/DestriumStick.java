@@ -14,7 +14,7 @@ import net.minecraft.world.World;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 
-public class DestriumStick extends Item{
+public class DestriumStick extends Item {
 
 	public DestriumStick(Properties p_i48487_1_) {
 		super(p_i48487_1_);

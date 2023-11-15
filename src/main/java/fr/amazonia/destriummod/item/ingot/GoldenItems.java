@@ -14,7 +14,7 @@ import net.minecraft.world.World;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 
-public class GoldenItems extends Item{
+public class GoldenItems extends Item {
 
 	public GoldenItems(Properties p_i48487_1_) {
 		super(p_i48487_1_);

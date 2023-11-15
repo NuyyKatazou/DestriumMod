@@ -28,7 +28,6 @@ public class PoisonWaterFluidBlock extends FlowingFluidBlock {
         }
 	}
 
-
 	@Override
     public void neighborChanged(BlockState state, World world, BlockPos pos, Block block, BlockPos fromPos, boolean notify) {
         if (this.receiveNeighborFluids(world, pos, state)) {

@@ -14,7 +14,7 @@ import net.minecraft.world.World;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 
-public class EmeraldNuggets extends Item{
+public class EmeraldNuggets extends Item {
 	
 	public EmeraldNuggets(Properties properties) {
 		super(properties);

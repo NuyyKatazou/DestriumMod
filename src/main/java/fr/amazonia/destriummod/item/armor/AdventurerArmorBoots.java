@@ -10,7 +10,7 @@ import net.minecraft.potion.EffectInstance;
 import net.minecraft.potion.Effects;
 import net.minecraft.world.World;
 
-public class AdventurerArmorBoots extends ArmorItem{
+public class AdventurerArmorBoots extends ArmorItem {
 	
 	public AdventurerArmorBoots(IArmorMaterial materialIn, EquipmentSlotType slot, Properties properties) {
 		super(materialIn, slot, properties);

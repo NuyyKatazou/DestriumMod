@@ -22,8 +22,8 @@ public class ModConfiguredFeatures {
 	public static final ConfiguredFeature<?, ?> CLOVER_TWO_CONFIG = Feature.FLOWER.configured((new BlockClusterFeatureConfig.Builder(new SimpleBlockStateProvider(ModBlocks.CLOVER_TWO.get().defaultBlockState()), SimpleBlockPlacer.INSTANCE)).tries(1).build()).decorated(Features.Placements.HEIGHTMAP_WORLD_SURFACE).count(1).chance(75).squared();
 
 	public static final ArrayList<ConfiguredFeature<?, ?>> REPAIR_ORE_CONFIG = new ArrayList<ConfiguredFeature<?, ?>>();
-	
-	
+
+
 	public static void registerOres(){
 
     	REPAIR_ORE_CONFIG.add(register("repair_ore", Feature.ORE.configured(new OreFeatureConfig(

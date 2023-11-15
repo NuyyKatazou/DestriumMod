@@ -14,7 +14,7 @@ import net.minecraft.world.World;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 
-public class DestriumApple extends Item{
+public class DestriumApple extends Item {
 
 	public DestriumApple(Properties properties) {
 		super(properties);

@@ -1,6 +1,5 @@
 package fr.amazonia.destriummod.block;
 
-
 import fr.amazonia.destriummod.DestriumMod;
 import fr.amazonia.destriummod.utils.ParadisTeleporter;
 import net.minecraft.block.Block;

@@ -14,7 +14,7 @@ import net.minecraft.world.World;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 
-public class AmazoniteApple extends Item{
+public class AmazoniteApple extends Item {
 
 	public AmazoniteApple(Properties properties) {
 		super(properties);

@@ -42,8 +42,8 @@ public class InfinityWaterBucketItem extends BucketItem {
 		this.fluidSupplier = supplier;
 	   }
 	protected ItemStack getEmptySuccessItem(ItemStack p_203790_1_, PlayerEntity p_203790_2_) {
-		      return !p_203790_2_.abilities.instabuild ? new ItemStack(ModItems.INFINITY_WATER_BUCKET.get()) : p_203790_1_;
-		   }
+		return !p_203790_2_.abilities.instabuild ? new ItemStack(ModItems.INFINITY_WATER_BUCKET.get()) : p_203790_1_;
+		}
 	
 	public ActionResult<ItemStack> use(World p_77659_1_, PlayerEntity p_77659_2_, Hand p_77659_3_) {
 		ItemStack itemstack = p_77659_2_.getItemInHand(p_77659_3_);
@@ -101,11 +101,11 @@ public class InfinityWaterBucketItem extends BucketItem {
 	      }
 	      
 	   }
+
 	private final java.util.function.Supplier<? extends Fluid> fluidSupplier;
 	public Fluid getFluid() { return fluidSupplier.get(); }
 
-	   private boolean canBlockContainFluid(World worldIn, BlockPos posIn, BlockState blockstate)
-	   {
-	      return blockstate.getBlock() instanceof ILiquidContainer && ((ILiquidContainer)blockstate.getBlock()).canPlaceLiquid(worldIn, posIn, blockstate, this.content);
-	   }
+	private boolean canBlockContainFluid(World worldIn, BlockPos posIn, BlockState blockstate) {
+		return blockstate.getBlock() instanceof ILiquidContainer && ((ILiquidContainer)blockstate.getBlock()).canPlaceLiquid(worldIn, posIn, blockstate, this.content);
+	}
 }

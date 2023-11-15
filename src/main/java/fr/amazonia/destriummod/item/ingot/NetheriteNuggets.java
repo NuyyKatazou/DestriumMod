@@ -14,7 +14,7 @@ import net.minecraft.world.World;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 
-public class NetheriteNuggets extends Item{
+public class NetheriteNuggets extends Item {
 
 	public NetheriteNuggets(Properties properties) {
 		

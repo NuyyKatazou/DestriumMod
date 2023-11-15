@@ -14,7 +14,7 @@ import net.minecraft.world.World;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 
-public class AmazoniteIngot extends Item{
+public class AmazoniteIngot extends Item {
 
 	public AmazoniteIngot(Properties properties) {
 		super(properties);
@@ -26,5 +26,4 @@ public class AmazoniteIngot extends Item{
 	      p_77624_3_.add(new TranslationTextComponent(this.getDescriptionId() + ".desc2").withStyle(TextFormatting.DARK_GREEN));
 	      p_77624_3_.add(new TranslationTextComponent(this.getDescriptionId() + ".desc3").withStyle(TextFormatting.GOLD));
 	   }
-	   }
-
+}

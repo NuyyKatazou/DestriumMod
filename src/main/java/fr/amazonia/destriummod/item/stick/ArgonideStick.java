@@ -14,7 +14,7 @@ import net.minecraft.world.World;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 
-public class ArgonideStick extends Item{
+public class ArgonideStick extends Item {
 
 	public ArgonideStick(Properties p_i48487_1_) {
 		super(p_i48487_1_);

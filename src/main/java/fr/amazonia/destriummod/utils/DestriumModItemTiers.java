@@ -7,7 +7,8 @@ import net.minecraft.item.IItemTier;
 import net.minecraft.item.crafting.Ingredient;
 import net.minecraft.util.LazyValue;
 
-public enum DestriumModItemTiers implements IItemTier{
+public enum DestriumModItemTiers implements IItemTier {
+
 	SPAWNERS(4, 3, 8F, 4F, 55, () -> {
 		return Ingredient.of(ModItems.AMAZONITE_FRAGMENT.get());
 	   }),
@@ -61,4 +62,3 @@ public enum DestriumModItemTiers implements IItemTier{
 	      return this.repairIngredient.get();
 	   }
 	}
-
