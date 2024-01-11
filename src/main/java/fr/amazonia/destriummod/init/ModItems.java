@@ -113,7 +113,7 @@ public class ModItems {
 	public static final RegistryObject<Item> DESTRIUM_INGOT = ITEMS.register("destrium_ingot", () -> new DestriumIngot(new Item.Properties().tab(DestriumMod.ItemTab).rarity(ModRarity.DESTRIUM).fireResistant()));
 	public static final RegistryObject<Item> ARGONIDE_NUGGETS = ITEMS.register("argonide_nuggets", () -> new ArgonideNuggets(new Item.Properties().tab(DestriumMod.ItemTab).rarity(ModRarity.ARGONIDE).fireResistant()));
 	public static final RegistryObject<Item> ARGONIDE_INGOT = ITEMS.register("argonide_ingot", () -> new ArgonideIngot(new Item.Properties().tab(DestriumMod.ItemTab).rarity(ModRarity.ARGONIDE).fireResistant()));
-	public static final RegistryObject<Item> REPAIR_FRAGMENT = ITEMS.register("repair_fragment", () -> new RepairItems(new Item.Properties().tab(DestriumMod.ItemTab).rarity(ModRarity.REPAIR).fireResistant()));
+	public static final RegistryObject<Item> REPAIR_FRAGMENT = ITEMS.register("repair_fragment", () -> new Item(new Item.Properties().tab(DestriumMod.ItemTab).rarity(ModRarity.REPAIR).fireResistant()));
 	public static final RegistryObject<Item> REPAIR_GEM = ITEMS.register("repair_gem", () -> new RepairItems(new Item.Properties().tab(DestriumMod.ItemTab).rarity(ModRarity.REPAIR).fireResistant()));
 	
 	public static final RegistryObject<Item> EMERALD_NUGGETS = ITEMS.register("emerald_nuggets", () -> new Item(new Item.Properties().tab(DestriumMod.ItemTab).rarity(ModRarity.EMERALD)));
