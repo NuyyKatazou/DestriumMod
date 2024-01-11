@@ -219,6 +219,8 @@
   "item.destriummod.argonide_ingot.desc2": "Destrium",
   "item.destriummod.argonide_ingot.desc3": ">> Argonide",
   "item.destriummod.argonide_nuggets.desc": "Utilisé pour craft le Lingot d'Argonide",
+  "item.destriummod.repair_ingot.desc": "Utilisé pour réparer les items et autres",
+  "item.destriummod.repair_fragment.desc": "Utilisé pour craft le Lingot De Réparation",
   
   "item.destriummod.emerald_nuggets.desc": "Utilisé pour craft une Emeraude",
   "item.destriummod.diamond_nuggets.desc": "Utilisé pour craft un Diamants",
