@@ -13,7 +13,7 @@ import net.minecraft.util.SoundEvents;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 
-public enum ModArmorMaterial implements IArmorMaterial {
+public enum ModArmorMaterials implements IArmorMaterial {
 	NECKLACE("necklace", 74, new int[]{2, 5, 4, 1}, 0, SoundEvents.ARMOR_EQUIP_CHAIN, 0F, 0F, () -> {
 		   return Ingredient.of(ModItems.AMAZONITE_NUGGETS.get());
 	   }),
@@ -37,7 +37,7 @@ public enum ModArmorMaterial implements IArmorMaterial {
 	   private final float knockbackResistance;
 	   private final LazyValue<Ingredient> repairIngredient;
 
-	   private ModArmorMaterial(String p_i231593_3_, int p_i231593_4_, int[] p_i231593_5_, int p_i231593_6_, SoundEvent p_i231593_7_, float p_i231593_8_, float p_i231593_9_, Supplier<Ingredient> p_i231593_10_) {
+	   private ModArmorMaterials(String p_i231593_3_, int p_i231593_4_, int[] p_i231593_5_, int p_i231593_6_, SoundEvent p_i231593_7_, float p_i231593_8_, float p_i231593_9_, Supplier<Ingredient> p_i231593_10_) {
 	      this.name = p_i231593_3_;
 	      this.durabilityMultiplier = p_i231593_4_;
 	      this.slotProtections = p_i231593_5_;
