@@ -44,9 +44,9 @@ public class ModFluids {
 	public static final ForgeFlowingFluid.Properties RESISTANCE_LAVA_PROPERTIES = new ForgeFlowingFluid.Properties(() -> RESISTANCE_LAVA_FLUID.get(), () -> RESISTANCE_LAVA_FLOWING.get(), FluidAttributes.builder(LAVA_STILL_RL, LAVA_FLOWING_RL).density(500).luminosity(2).viscosity(100).gaseous().sound(SoundEvents.AMBIENT_UNDERWATER_LOOP).overlay(WATER_OVERLAY_RL)).slopeFindDistance(4).levelDecreasePerBlock(1).block(() -> ModFluids.RESISTANCE_LAVA_BLOCK.get()).bucket(() -> ModItems.RESISTANCE_LAVA_BUCKET.get());
 	
 	
-	public static final RegistryObject<FlowingFluidBlock> POISON_WATER_BLOCK = ModBlocks.BLOCKS.register("poison_water", () -> new PoisonWaterFluidBlock(() -> ModFluids.POISON_WATER_FLUID.get(), AbstractBlock.Properties.of(Material.WATER).noCollission().strength(100f).noDrops().speedFactor(0.95F)));
+	public static final RegistryObject<FlowingFluidBlock> POISON_WATER_BLOCK = ModBlocks.BLOCKS.register("poison_water_block", () -> new PoisonWaterFluidBlock(() -> ModFluids.POISON_WATER_FLUID.get(), AbstractBlock.Properties.of(Material.WATER).noCollission().strength(100f).noDrops().speedFactor(0.95F)));
 	
-	public static final RegistryObject<FlowingFluidBlock> RESISTANCE_LAVA_BLOCK = ModBlocks.BLOCKS.register("resistance_lava", () -> new ResistanceLavaFluidBlock(() -> ModFluids.RESISTANCE_LAVA_FLUID.get(), AbstractBlock.Properties.of(Material.LAVA).noCollission().strength(100f).noDrops().speedFactor(0.95F).lightLevel((p_235470_0_) -> {return 14;})));
+	public static final RegistryObject<FlowingFluidBlock> RESISTANCE_LAVA_BLOCK = ModBlocks.BLOCKS.register("resistance_lava_block", () -> new ResistanceLavaFluidBlock(() -> ModFluids.RESISTANCE_LAVA_FLUID.get(), AbstractBlock.Properties.of(Material.LAVA).noCollission().strength(100f).noDrops().speedFactor(0.95F).lightLevel((p_235470_0_) -> {return 14;})));
 			
 	public static void register(IEventBus eventBus) {
 		FLUIDS.register(eventBus);
