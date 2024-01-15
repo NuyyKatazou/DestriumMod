@@ -106,9 +106,9 @@
   "block.destriummod.argonide_block": "Argonide Block",
   
   "block.destriummod.random_ore": "Random Ore",
-  "block.destriummod.amazonite_ore": "Amazonite Ore",
-  "block.destriummod.destrium_ore": "Destrium Ore",
-  "block.destriummod.argonide_ore": "Argonide Ore",
+  "block.destriummod.paradis_amazonite_ore": "Amazonite Ore",
+  "block.destriummod.paradis_destrium_ore": "Destrium Ore",
+  "block.destriummod.paradis_argonide_ore": "Argonide Ore",
   "block.destriummod.cracked_argonide_ore": "Cracked Argonide Ore",
   "block.destriummod.repair_ore": "Repair Ore",
   
