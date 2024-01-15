@@ -10,7 +10,7 @@
   "item.destriummod.argonide_nuggets": "Argonide Nugget",
   "item.destriummod.repair_fragment": "Repair Fragment",
   "item.destriummod.repair_gem": "Repair Gem",
-  
+
   "item.destriummod.emerald_nuggets": "Emerald Nugget",
   "item.destriummod.diamond_nuggets": "Diamond Nugget",
   "item.destriummod.netherite_nuggets": "Netherite Nugget",
@@ -178,16 +178,16 @@
   
   
   "fluid.destriummod.poison_water": "Poisoned Water",
-  
+
 
 
 
 
   "itemGroup.destriummod.blocktab": "Blocks Tabs",
   "itemGroup.destriummod.itemtab": "Items Tabs",
-  "itemGroup.destriummod.tooltab": "Tools Ands Armors Tabs",
+  "itemGroup.destriummod.tooltab": "Tools & Armors Tabs",
   "itemGroup.destriummod.foodtab": "Foods Tabs",
-  
+
   
   
   
