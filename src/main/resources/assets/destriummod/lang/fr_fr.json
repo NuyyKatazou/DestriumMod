@@ -12,7 +12,7 @@
   "item.destriummod.repair_gem": "Gemme de Réparation",
   
   "item.destriummod.emerald_nuggets": "Pépite d'Émeraude",
-  "item.destriummod.diamond_nuggets": "Pépite de Diamants",
+  "item.destriummod.diamond_nuggets": "Pépite de Diamant",
   "item.destriummod.netherite_nuggets": "Pépite de Netherite",
   
   
@@ -82,7 +82,7 @@
   
   "item.destriummod.iron_plate": "Plaque de Fer",
   "item.destriummod.gold_plate": "Plaque d'Or",
-  "item.destriummod.diamond_plate": "Plaque de Diamants",
+  "item.destriummod.diamond_plate": "Plaque de Diamant",
   "item.destriummod.netherite_plate": "Plaque de Netherite",
   "item.destriummod.argonide_plate": "Plaque d'Argonide",
   "item.destriummod.destrium_plate": "Plaque de Destrium",
@@ -105,12 +105,12 @@
   "block.destriummod.destrium_block": "Bloc de Destrium",
   "block.destriummod.argonide_block": "Bloc d'Argonide",
   
-  "block.destriummod.random_ore": "Minerais Aléatoire",
-  "block.destriummod.amazonite_ore": "Minerais d'Amazonite",
-  "block.destriummod.destrium_ore": "Minerais de Destrium",
-  "block.destriummod.argonide_ore": "Minerais d'Argonide",
-  "block.destriummod.cracked_argonide_ore": "Minerais Craquelé d'Argonide",
-  "block.destriummod.repair_ore": "Minerais de Réparation",
+  "block.destriummod.random_ore": "Minerai Aléatoire",
+  "block.destriummod.amazonite_ore": "Minerai d'Amazonite",
+  "block.destriummod.destrium_ore": "Minerai de Destrium",
+  "block.destriummod.argonide_ore": "Minerai d'Argonide",
+  "block.destriummod.cracked_argonide_ore": "Minerai Craquelé d'Argonide",
+  "block.destriummod.repair_ore": "Minerai de Réparation",
   
   
   "block.destriummod.cobblestone_compressed1": "Pierres Compressé",
