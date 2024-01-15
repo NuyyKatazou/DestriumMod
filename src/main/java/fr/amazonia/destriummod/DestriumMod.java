@@ -99,7 +99,7 @@ public class DestriumMod {
     	}
     };
     
-    public static final ItemGroup toolTab = new ItemGroup(MODID + ".tooltab") {
+    public static final ItemGroup ToolTab = new ItemGroup(MODID + ".tooltab") {
     	@Override
     	@OnlyIn(Dist.CLIENT)
         public ItemStack makeIcon() {
@@ -107,7 +107,7 @@ public class DestriumMod {
     	}
     };
     
-    public static final ItemGroup foodTab = new ItemGroup(MODID + ".foodtab") {
+    public static final ItemGroup FoodTab = new ItemGroup(MODID + ".foodtab") {
     	@Override
     	@OnlyIn(Dist.CLIENT)
         public ItemStack makeIcon() {
