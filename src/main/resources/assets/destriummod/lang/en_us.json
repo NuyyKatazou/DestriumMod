@@ -122,11 +122,11 @@
   "block.destriummod.cobblestone_compressed7": "Compressed Cobblestone VII",
   "block.destriummod.cobblestone_compressed8": "Compressed Cobblestone VIII",
   
-  "block.destriummod.dirt_compressed1": "Compressed Dirt",
-  "block.destriummod.dirt_compressed2": "Compressed Dirt Two Times",
-  "block.destriummod.dirt_compressed3": "Compressed Dirt Three Times",
-  "block.destriummod.dirt_compressed4": "Compressed Dirt Four Times",
-  "block.destriummod.dirt_compressed5": "Compressed Dirt Five Times",
+  "block.destriummod.dirt_compressed1": "Compressed Dirt I",
+  "block.destriummod.dirt_compressed2": "Compressed Dirt II",
+  "block.destriummod.dirt_compressed3": "Compressed Dirt III",
+  "block.destriummod.dirt_compressed4": "Compressed Dirt IV",
+  "block.destriummod.dirt_compressed5": "Compressed Dirt V",
   
   
   "block.destriummod.paradis_portal_block": "Paradis Portal Block",
