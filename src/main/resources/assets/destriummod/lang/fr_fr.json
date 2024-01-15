@@ -4,8 +4,8 @@
   "item.destriummod.amazonite_fragment": "Fragment d'Amazonite",
   "item.destriummod.amazonite_dust": "Poudre d'Amazonite",
   "item.destriummod.amazonite_crumb": "Miette d'Amazonite",
-  "item.destriummod.destrium_ingot": "Lingot De Destrium",
-  "item.destriummod.destrium_nuggets": "Pépite De Destrium",
+  "item.destriummod.destrium_ingot": "Lingot de Destrium",
+  "item.destriummod.destrium_nuggets": "Pépite de Destrium",
   "item.destriummod.argonide_ingot": "Lingot d'Argonide",
   "item.destriummod.argonide_nuggets": "Pépite d'Argonide",
   "item.destriummod.repair_fragment": "Fragment de Réparation",
@@ -16,49 +16,49 @@
   "item.destriummod.netherite_nuggets": "Pépite de Netherite",
   
   
-  "item.destriummod.amazonite_stick": "Baton En Amazonite",
-  "item.destriummod.destrium_stick": "Baton En Destrium",
-  "item.destriummod.argonide_stick": "Baton En Argonide",
+  "item.destriummod.amazonite_stick": "Baton en Amazonite",
+  "item.destriummod.destrium_stick": "Baton en Destrium",
+  "item.destriummod.argonide_stick": "Baton en Argonide",
   
   
-  "item.destriummod.amazonite_sword": "Epée En Amazonite",
-  "item.destriummod.amazonite_pickaxe": "Pioche En Amazonite",
-  "item.destriummod.amazonite_axe": "Hache En Amazonite",
-  "item.destriummod.amazonite_shovel": "Pelle En Amazonite",
-  "item.destriummod.amazonite_hoes": "Houe En Amazonite",
+  "item.destriummod.amazonite_sword": "Epée en Amazonite",
+  "item.destriummod.amazonite_pickaxe": "Pioche en Amazonite",
+  "item.destriummod.amazonite_axe": "Hache en Amazonite",
+  "item.destriummod.amazonite_shovel": "Pelle en Amazonite",
+  "item.destriummod.amazonite_hoes": "Houe en Amazonite",
   
-  "item.destriummod.destrium_sword": "Epée En Destrium",
-  "item.destriummod.destrium_pickaxe": "Pioche En Destrium",
-  "item.destriummod.destrium_axe": "Hache En Destrium",
-  "item.destriummod.destrium_shovel": "Pelle En Destrium",
-  "item.destriummod.destrium_hoes": "Houe En Destrium",
+  "item.destriummod.destrium_sword": "Epée en Destrium",
+  "item.destriummod.destrium_pickaxe": "Pioche en Destrium",
+  "item.destriummod.destrium_axe": "Hache en Destrium",
+  "item.destriummod.destrium_shovel": "Pelle en Destrium",
+  "item.destriummod.destrium_hoes": "Houe en Destrium",
   
-  "item.destriummod.argonide_sword": "Epée En Argonide",
-  "item.destriummod.argonide_pickaxe": "Pioche En Argonide",
-  "item.destriummod.argonide_axe": "Hache En Argonide",
-  "item.destriummod.argonide_shovel": "Pelle En Argonide",
-  "item.destriummod.argonide_hoes": "Houe En Argonide",
+  "item.destriummod.argonide_sword": "Epée en Argonide",
+  "item.destriummod.argonide_pickaxe": "Pioche en Argonide",
+  "item.destriummod.argonide_axe": "Hache en Argonide",
+  "item.destriummod.argonide_shovel": "Pelle en Argonide",
+  "item.destriummod.argonide_hoes": "Houe en Argonide",
   
-  "item.destriummod.spawners_pickaxe": "Pioche Pour Spawners",
+  "item.destriummod.spawners_pickaxe": "Pioche pour Spawners",
   
   
-  "item.destriummod.amazonite_helmet": "Casque En Amazonite",
-  "item.destriummod.amazonite_chestplate": "Plastron En Amazonite",
-  "item.destriummod.amazonite_leggings": "Jambière En Amazonite",
-  "item.destriummod.amazonite_boots": "Bottes En Amazonite",
+  "item.destriummod.amazonite_helmet": "Casque en Amazonite",
+  "item.destriummod.amazonite_chestplate": "Plastron en Amazonite",
+  "item.destriummod.amazonite_leggings": "Jambière en Amazonite",
+  "item.destriummod.amazonite_boots": "Bottes en Amazonite",
   
-  "item.destriummod.destrium_helmet": "Casque En Destrium",
-  "item.destriummod.destrium_chestplate": "Plastron En Destrium",
-  "item.destriummod.destrium_leggings": "Jambière En Destrium",
-  "item.destriummod.destrium_boots": "Bottes En Destrium",
+  "item.destriummod.destrium_helmet": "Casque en Destrium",
+  "item.destriummod.destrium_chestplate": "Plastron en Destrium",
+  "item.destriummod.destrium_leggings": "Jambière en Destrium",
+  "item.destriummod.destrium_boots": "Bottes en Destrium",
   
-  "item.destriummod.argonide_helmet": "Casque En Argonide",
-  "item.destriummod.argonide_chestplate": "Plastron En Argonide",
-  "item.destriummod.argonide_leggings": "Jambière En Argonide",
-  "item.destriummod.argonide_boots": "Bottes En Argonide",
+  "item.destriummod.argonide_helmet": "Casque en Argonide",
+  "item.destriummod.argonide_chestplate": "Plastron en Argonide",
+  "item.destriummod.argonide_leggings": "Jambière en Argonide",
+  "item.destriummod.argonide_boots": "Bottes en Argonide",
   
-  "item.destriummod.speed_boots": "Bottes De Vitesse",
-  "item.destriummod.feather_boots": "Bottes D'Anti-Chute",
+  "item.destriummod.speed_boots": "Bottes de Vitesse",
+  "item.destriummod.feather_boots": "Bottes d'Anti-Chute",
   "item.destriummod.jump_boots": "Bottes de Saut",
   "item.destriummod.adventurer_boots": "Bottes d'Aventurier",
   "item.destriummod.reinforced_adventurer_boots": "Bottes d'Aventurier Renforcé",
@@ -67,25 +67,25 @@
   "item.destriummod.lucky_necklace": "Collier de Chance",
   
   
-  "item.destriummod.amazonite_apple": "Pomme En Amazonite",
-  "item.destriummod.destrium_apple": "Pomme En Destrium",
+  "item.destriummod.amazonite_apple": "Pomme en Amazonite",
+  "item.destriummod.destrium_apple": "Pomme en Destrium",
   
   
-  "item.destriummod.amazonite_seeds": "Graine D' Amazonite",
-  "item.destriummod.destrium_seeds": "Graine De Destrium",
-  "item.destriummod.xp_seeds": "Graine D' Xp",  
+  "item.destriummod.amazonite_seeds": "Graine d' Amazonite",
+  "item.destriummod.destrium_seeds": "Graine de Destrium",
+  "item.destriummod.xp_seeds": "Graine d' Xp",
   
   
-  "item.destriummod.golden_core": "Noyau En Or",
+  "item.destriummod.golden_core": "Noyau en Or",
   "item.destriummod.compressed_golden": "Or Compressé",
   
   
-  "item.destriummod.iron_plate": "Plaque De Fer",
+  "item.destriummod.iron_plate": "Plaque de Fer",
   "item.destriummod.gold_plate": "Plaque d'Or",
-  "item.destriummod.diamond_plate": "Plaque De Diamants",
-  "item.destriummod.netherite_plate": "Plaque De Netherite",
+  "item.destriummod.diamond_plate": "Plaque de Diamants",
+  "item.destriummod.netherite_plate": "Plaque de Netherite",
   "item.destriummod.argonide_plate": "Plaque d'Argonide",
-  "item.destriummod.destrium_plate": "Plaque De Destrium",
+  "item.destriummod.destrium_plate": "Plaque de Destrium",
   "item.destriummod.amazonite_plate": "Plaque d'Amazonite",
   
   
@@ -102,12 +102,12 @@
   
   "block.destriummod.amazonite_block": "Bloc d'Amazonite",
   "block.destriummod.fake_amazonite_block": "Bloc d'Amazonite",
-  "block.destriummod.destrium_block": "Bloc De Destrium",
+  "block.destriummod.destrium_block": "Bloc de Destrium",
   "block.destriummod.argonide_block": "Bloc d'Argonide",
   
   "block.destriummod.random_ore": "Minerais Aléatoire",
   "block.destriummod.amazonite_ore": "Minerais d'Amazonite",
-  "block.destriummod.destrium_ore": "Minerais De Destrium",
+  "block.destriummod.destrium_ore": "Minerais de Destrium",
   "block.destriummod.argonide_ore": "Minerais d'Argonide",
   "block.destriummod.cracked_argonide_ore": "Minerais Craquelé d'Argonide",
   "block.destriummod.repair_ore": "Minerais de Réparation",
@@ -161,14 +161,14 @@
   
   
   "block.destriummod.amazonite_plants": "Plantation d'Amazonite",
-  "block.destriummod.destrium_plants": "Plantation De Destrium",
+  "block.destriummod.destrium_plants": "Plantation de Destrium",
   "block.destriummod.xp_plants": "Plantation d'Xp",
   
   
-  "block.destriummod.amazonite_relique_block": "Bloc De Relique En Amazonite",
+  "block.destriummod.amazonite_relique_block": "Bloc de Relique en Amazonite",
   
   
-  "block.destriummod.below_block": "Bloc De l'En Dessous",
+  "block.destriummod.below_block": "Bloc de l'En Dessous",
 
 
   "block.destriummod.clover": "Trèfle à trois Feuille",
