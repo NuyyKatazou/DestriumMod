@@ -145,7 +145,7 @@ public class ModItems {
 	public static final RegistryObject<Item> RESISTANCE_LAVA_BUCKET = ITEMS.register("resistance_lava_bucket", () -> new BucketItem(() -> ModFluids.RESISTANCE_LAVA_FLUID.get(), new Item.Properties().stacksTo(1).tab(DestriumMod.ItemTab).rarity(ModRarity.ARGONIDE)));
 	public static final RegistryObject<Item> RESISTANCE_STAR = ITEMS.register("resistance_star", () -> new Item(new Item.Properties().tab(DestriumMod.ItemTab).rarity(ModRarity.YELLOW)));
 	
-	public static final RegistryObject<Item> INFINITY_WATER_BUCKET = ITEMS.register("infinity_water_bucket", () -> new InfinityWaterBucketItem(() -> Fluids.WATER, new Item.Properties().stacksTo(1).tab(DestriumMod.ItemTab).rarity(ModRarity.SPECIAL)));
+	public static final RegistryObject<Item> INFINITY_WATER_BUCKET = ITEMS.register("infinity_water_bucket", () -> new InfinityWaterBucketItem(() -> Fluids.WATER, new Item.Properties().stacksTo(1).tab(DestriumMod.ItemTab).rarity(ModRarity.DESTRIUM)));
 	
 	//Seeds
 	public static final RegistryObject<Item> DESTRIUM_SEEDS = ITEMS.register("destrium_seeds", () -> new BlockNamedItem(ModBlocks.DESTRIUM_PLANTS.get(), (new Item.Properties().rarity(ModRarity.DESTRIUM).fireResistant())));
