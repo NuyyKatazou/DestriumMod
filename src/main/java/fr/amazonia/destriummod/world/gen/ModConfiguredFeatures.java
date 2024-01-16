@@ -27,7 +27,7 @@ public class ModConfiguredFeatures {
 	public static void registerOres(){
 
     	REPAIR_ORE_CONFIG.add(register("repair_ore", Feature.ORE.configured(new OreFeatureConfig(
-                new BlockMatchRuleTest(Blocks.END_STONE), ModBlocks.REPAIR_ORE.get().defaultBlockState(), 4)).range(128).squared().count(1).chance(35)));
+                new BlockMatchRuleTest(Blocks.END_STONE), ModBlocks.REPAIR_ORE.get().defaultBlockState(), 4)).range(128).squared().count(1).chance(45)));
     }
 	
 	private static <FC extends IFeatureConfig> ConfiguredFeature<FC, ?> register(String name, ConfiguredFeature<FC, ?> configuredFeature) {
