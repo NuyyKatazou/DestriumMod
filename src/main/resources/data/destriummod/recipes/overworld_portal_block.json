@@ -10,10 +10,10 @@
             "item": "destriummod:cloud"
         },
         "b": {
-            "item": "destriummod:destrium_ore"
+            "item": "destriummod:paradis_destrium_ore"
         },
 		"c": {
-            "item": "destriummod:amazonite_ore"
+            "item": "destriummod:paradis_amazonite_ore"
         }
     },
     "result": {
