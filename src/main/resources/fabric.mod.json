@@ -3,7 +3,7 @@
   "id": "destriummod",
   "version": "${version}",
   "name": "DestriumMod",
-  "description": "DestriumMod is a Minecraft Mods based on Exploration, Building, Tools and Machines!",
+  "description": "DestriumMod is a Mods based on Exploration, Building, Tools and Machines!",
   "authors": [
     "NuyyKatazou"
   ],
@@ -12,7 +12,7 @@
     "repo": "https://github.com/NuyyKatazou/1.16-DevUpdate-Fabric"
   },
   "license": "All-Rights-Reserved",
-  "icon": "assets/destriummod/icon.png",
+  "icon": "assets/destriummod/destrium.png",
   "environment": "*",
   "entrypoints": {
     "client": [
