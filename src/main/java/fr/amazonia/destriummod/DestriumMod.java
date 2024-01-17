@@ -10,7 +10,7 @@ public class DestriumMod implements ModInitializer {
 
     @Override
     public void onInitialize() {
-        ModItems.RegisterAll();
+        ModItems.INSTANCE.registerItems();
         ModBlocks.INSTANCE.registerAll();
     }
 }

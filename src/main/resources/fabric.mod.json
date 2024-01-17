@@ -20,6 +20,9 @@
     ],
     "main": [
       "fr.amazonia.destriummod.DestriumMod"
+    ],
+    "server": [
+      "fr.amazonia.destriummod.server.DestriumModServer"
     ]
   },
   "mixins": [
