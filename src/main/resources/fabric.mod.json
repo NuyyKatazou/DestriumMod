@@ -2,25 +2,32 @@
   "schemaVersion": 1,
   "id": "destriummod",
   "version": "${version}",
-
   "name": "DestriumMod",
   "description": "DestriumMod is a Minecraft Mods based on Exploration, Building, Tools and Machines!",
-  "authors": [],
-  "contact": {},
-
+  "authors": [
+    "NuyyKatazou"
+  ],
+  "contact": {
+    "website": "https://discord.com/invite/FMjuQYdBsJ",
+    "repo": "https://github.com/NuyyKatazou/1.16-DevUpdate-Fabric"
+  },
   "license": "All-Rights-Reserved",
   "icon": "assets/destriummod/icon.png",
-
   "environment": "*",
-  "entrypoints": {},
-
-      "mixins": [
-        "destriummod.mixins.json"
-      ],
-
+  "entrypoints": {
+    "client": [
+      "fr.amazonia.destriummod.destriummod.client.DestriumModClient"
+    ],
+    "main": [
+      "fr.amazonia.destriummod.destriummod.DestriumMod"
+    ]
+  },
+  "mixins": [
+    "destriummod.mixins.json"
+  ],
   "depends": {
     "fabricloader": ">=${loader_version}",
-        "fabric": "*",
+    "fabric": "*",
     "minecraft": "${minecraft_version}"
   }
 }
