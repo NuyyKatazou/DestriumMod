@@ -1,4 +1,4 @@
-package fr.amazonia.destriummod.destriummod;
+package fr.amazonia.destriummod;
 
 import net.fabricmc.api.ModInitializer;
 

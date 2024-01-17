@@ -16,10 +16,10 @@
   "environment": "*",
   "entrypoints": {
     "client": [
-      "fr.amazonia.destriummod.destriummod.client.DestriumModClient"
+      "fr.amazonia.destriummod.client.DestriumModClient"
     ],
     "main": [
-      "fr.amazonia.destriummod.destriummod.DestriumMod"
+      "fr.amazonia.destriummod.DestriumMod"
     ]
   },
   "mixins": [
