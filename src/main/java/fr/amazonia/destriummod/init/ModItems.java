@@ -11,9 +11,19 @@ public class ModItems {
 
     public static final ModItems INSTANCE = new ModItems();
 
-    public static final Item DESTRIUM_INGOT = new Item(new FabricItemSettings().group(DestriumMod.ITEM_TAB));
 
+    //Armors and Tools
     public static final Item DESTRIUM_SWORD = new SwordItem(DestriumToolMaterial.INSTANCE, 1, -1.4f, new FabricItemSettings().group(DestriumMod.ITEM_TAB));
+
+
+    //Items (Mineral)
+    public static final Item AMAZONITE_CRUMB = new Item(new FabricItemSettings().group(DestriumMod.ITEM_TAB).fireproof());
+    public static final Item AMAZONITE_DUST = new Item(new FabricItemSettings().group(DestriumMod.ITEM_TAB).fireproof());
+    public static final Item AMAZONITE_FRAGMENT = new Item(new FabricItemSettings().group(DestriumMod.ITEM_TAB).fireproof());
+    public static final Item AMAZONITE_NUGGETS = new Item(new FabricItemSettings().group(DestriumMod.ITEM_TAB).fireproof());
+    public static final Item AMAZONITE_INGOT = new Item(new FabricItemSettings().group(DestriumMod.ITEM_TAB).fireproof());
+    public static final Item DESTRIUM_NUGGETS = new Item(new FabricItemSettings().group(DestriumMod.ITEM_TAB).fireproof());
+    public static final Item DESTRIUM_INGOT = new Item(new FabricItemSettings().group(DestriumMod.ITEM_TAB).fireproof());
 
     public void registerItems() {
         registerItem(DESTRIUM_INGOT, "destrium_ingot");
