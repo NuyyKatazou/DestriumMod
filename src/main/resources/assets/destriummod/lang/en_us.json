@@ -1,5 +1,7 @@
 {
   "item.destriummod.destrium_ingot": "Destrium Ingot",
 
-  "block.destriummod.destrium_block": "Destrium Block"
+  "block.destriummod.destrium_block": "Destrium Block",
+
+  "itemGroup.destriummod.itemtab": "Items Tabs"
 }

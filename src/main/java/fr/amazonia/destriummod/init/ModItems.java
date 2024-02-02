@@ -11,9 +11,9 @@ public class ModItems {
 
     public static final ModItems INSTANCE = new ModItems();
 
-    public static final Item DESTRIUM_INGOT = new Item(new FabricItemSettings().group(ItemGroup.MISC));
+    public static final Item DESTRIUM_INGOT = new Item(new FabricItemSettings().group(DestriumMod.ITEM_TAB));
 
-    public static final Item DESTRIUM_SWORD = new SwordItem(DestriumToolMaterial.INSTANCE, 1, -1.4f, new FabricItemSettings().group(ItemGroup.TOOLS));
+    public static final Item DESTRIUM_SWORD = new SwordItem(DestriumToolMaterial.INSTANCE, 1, -1.4f, new FabricItemSettings().group(DestriumMod.ITEM_TAB));
 
     public void registerItems() {
         registerItem(DESTRIUM_INGOT, "destrium_ingot");

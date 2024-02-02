@@ -27,6 +27,6 @@ public class ModBlocks {
     }
 
     private void createBlockItem(Block block, Identifier name) {
-    Registry.register(Registry.ITEM, name, new BlockItem(block, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
+    Registry.register(Registry.ITEM, name, new BlockItem(block, new Item.Settings().group(DestriumMod.BLOCK_TAB)));
     }
 }
