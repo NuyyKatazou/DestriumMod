@@ -2,6 +2,9 @@ package fr.amazonia.destriummod.init;
 
 import fr.amazonia.destriummod.DestriumMod;
 import fr.amazonia.destriummod.item.ingot.*;
+import fr.amazonia.destriummod.item.stick.AmazoniteStick;
+import fr.amazonia.destriummod.item.stick.ArgonideStick;
+import fr.amazonia.destriummod.item.stick.DestriumStick;
 import fr.amazonia.destriummod.utils.toolmaterials.DestriumToolMaterial;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.item.*;
