@@ -1,9 +1,11 @@
 package fr.amazonia.destriummod.init;
 
 import fr.amazonia.destriummod.DestriumMod;
+import fr.amazonia.destriummod.block.ModOreBlock;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.fabricmc.fabric.api.tool.attribute.v1.FabricToolTags;
 import net.minecraft.block.Block;
+import net.minecraft.block.Blocks;
 import net.minecraft.block.Material;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -42,13 +44,14 @@ public class ModBlocks {
     public static final Block CRACKED_CLOUD = new Block(FabricBlockSettings.of(Material.ORGANIC_PRODUCT).requiresTool().breakByTool(FabricToolTags.HOES, 2).strength(2.5f, 25f));
     public static final Block CLOUD2 = new Block(FabricBlockSettings.of(Material.ORGANIC_PRODUCT).requiresTool().breakByTool(FabricToolTags.PICKAXES, 2).strength(2.5f, 25f));
 
+
     //Ore
-    public static final Block RANDOM_ORE = new Block(FabricBlockSettings.of(Material.STONE).requiresTool().breakByTool(FabricToolTags.PICKAXES, 5).strength(5f, 100f));
+    public static final Block RANDOM_ORE = new ModOreBlock(FabricBlockSettings.of(Material.STONE).requiresTool().breakByTool(FabricToolTags.PICKAXES, 5).strength(5f, 100f));
     public static final Block PARADIS_AMAZONITE_ORE = new Block(FabricBlockSettings.of(Material.STONE).requiresTool().breakByTool(FabricToolTags.PICKAXES, 5).strength(10f, 100f));
     public static final Block PARADIS_DESTRIUM_ORE = new Block(FabricBlockSettings.of(Material.STONE).requiresTool().breakByTool(FabricToolTags.PICKAXES, 4).strength(6f, 50f));
     public static final Block PARADIS_ARGONIDE_ORE = new Block(FabricBlockSettings.of(Material.STONE).requiresTool().breakByTool(FabricToolTags.PICKAXES, 4).strength(4f, 10f));
     public static final Block CRACKED_ARGONIDE_ORE = new Block(FabricBlockSettings.of(Material.ORGANIC_PRODUCT).requiresTool().breakByTool(FabricToolTags.HOES, 3).strength(4f, 25f));
-    public static final Block REPAIR_ORE = new Block(FabricBlockSettings.of(Material.STONE).requiresTool().breakByTool(FabricToolTags.PICKAXES, 3).strength(4f, 50f));
+    public static final Block REPAIR_ORE = new ModOreBlock(FabricBlockSettings.of(Material.STONE).requiresTool().breakByTool(FabricToolTags.PICKAXES, 3).strength(4f, 50f));
 
     public static final Block AMAZONITE_BLOCK = new Block(FabricBlockSettings.of(Material.METAL).requiresTool().breakByTool(FabricToolTags.PICKAXES, 5).strength(25f, 1000f));
     public static final Block FAKE_AMAZONITE_BLOCK = new Block(FabricBlockSettings.of(Material.METAL).requiresTool().breakByTool(FabricToolTags.PICKAXES, 5).strength(25f, 1000f));
@@ -75,7 +78,7 @@ public class ModBlocks {
 
 
     //Other
-    public static final Block AMAZONITE_RELIQUE_BLOCK = new Block(FabricBlockSettings.of(Material.METAL).requiresTool().breakByTool(FabricToolTags.PICKAXES, 5).strength(25f, 100f));
+    public static final Block AMAZONITE_RELIQUE_BLOCK = new ModOreBlock(FabricBlockSettings.of(Material.METAL).requiresTool().breakByTool(FabricToolTags.PICKAXES, 5).strength(25f, 100f));
 
 
     public static final Block BELOW_BLOCK = new Block(FabricBlockSettings.of(Material.GLASS).requiresTool().breakByTool(FabricToolTags.PICKAXES, 5).strength(4f, 10f));
@@ -138,6 +141,21 @@ public class ModBlocks {
         register(DESTRIUM_BLOCK, new Identifier(DestriumMod.MODID, "destrium_block"));
         register(ARGONIDE_BLOCK, new Identifier(DestriumMod.MODID, "argonide_block"));
         register(REPAIR_BLOCK, new Identifier(DestriumMod.MODID, "repair_block"));
+
+        register(COBBLESTONE_COMPRESSED1, new Identifier(DestriumMod.MODID, "cobblestone_compressed1"));
+        register(COBBLESTONE_COMPRESSED2, new Identifier(DestriumMod.MODID, "cobblestone_compressed2"));
+        register(COBBLESTONE_COMPRESSED3, new Identifier(DestriumMod.MODID, "cobblestone_compressed3"));
+        register(COBBLESTONE_COMPRESSED4, new Identifier(DestriumMod.MODID, "cobblestone_compressed4"));
+        register(COBBLESTONE_COMPRESSED5, new Identifier(DestriumMod.MODID, "cobblestone_compressed5"));
+        register(COBBLESTONE_COMPRESSED6, new Identifier(DestriumMod.MODID, "cobblestone_compressed6"));
+        register(COBBLESTONE_COMPRESSED7, new Identifier(DestriumMod.MODID, "cobblestone_compressed7"));
+        register(COBBLESTONE_COMPRESSED8, new Identifier(DestriumMod.MODID, "cobblestone_compressed8"));
+
+        register(DIRT_COMPRESSED1, new Identifier(DestriumMod.MODID, "dirt_compressed1"));
+        register(DIRT_COMPRESSED2, new Identifier(DestriumMod.MODID, "dirt_compressed2"));
+        register(DIRT_COMPRESSED3, new Identifier(DestriumMod.MODID, "dirt_compressed3"));
+        register(DIRT_COMPRESSED4, new Identifier(DestriumMod.MODID, "dirt_compressed4"));
+        register(DIRT_COMPRESSED5, new Identifier(DestriumMod.MODID, "dirt_compressed5"));
     }
 
     private void register(Block block, Identifier name) {
