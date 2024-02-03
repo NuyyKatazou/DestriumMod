@@ -49,7 +49,8 @@ public class ModBlocks {
 	public static final RegistryObject<Block> YELLOW_CLOUD = createBlock("yellow_cloud", () -> new Block(AbstractBlock.Properties.of(Material.CLAY).harvestTool(ToolType.HOE).harvestLevel(2).strength(3f, 25f).requiresCorrectToolForDrops()));
 	public static final RegistryObject<Block> CRACKED_CLOUD = createBlock("cracked_cloud", () -> new Block(AbstractBlock.Properties.of(Material.CLAY).harvestTool(ToolType.HOE).harvestLevel(2).strength(2.5f, 25f).requiresCorrectToolForDrops()));
 	public static final RegistryObject<Block> CLOUD2 = createBlock("cloud2", () -> new Block(AbstractBlock.Properties.of(Material.CLAY).harvestTool(ToolType.PICKAXE).harvestLevel(2).strength(2.5f, 25f).requiresCorrectToolForDrops()));
-	
+
+
 	//Ore
 	public static final RegistryObject<Block> RANDOM_ORE = createBlock("random_ore", () -> new ModOreBlock(AbstractBlock.Properties.of(Material.STONE).harvestTool(ToolType.PICKAXE).harvestLevel(5).strength(5f, 100f).requiresCorrectToolForDrops()));
 	public static final RegistryObject<Block> PARADIS_AMAZONITE_ORE = createBlock("paradis_amazonite_ore", () -> new Block(AbstractBlock.Properties.of(Material.STONE).harvestTool(ToolType.PICKAXE).harvestLevel(5).strength(10f, 100f).requiresCorrectToolForDrops()));
@@ -63,6 +64,7 @@ public class ModBlocks {
 	public static final RegistryObject<Block> DESTRIUM_BLOCK = createBlock("destrium_block", () -> new Block(AbstractBlock.Properties.of(Material.METAL).harvestTool(ToolType.PICKAXE).harvestLevel(4).strength(15f, 125f).requiresCorrectToolForDrops()));
 	public static final RegistryObject<Block> ARGONIDE_BLOCK = createBlock("argonide_block", () -> new Block(AbstractBlock.Properties.of(Material.METAL).harvestTool(ToolType.PICKAXE).harvestLevel(4).strength(10f, 25f).requiresCorrectToolForDrops()));
 	public static final RegistryObject<Block> REPAIR_BLOCK = createBlock("repair_block", () -> new Block(AbstractBlock.Properties.of(Material.METAL).harvestTool(ToolType.PICKAXE).harvestLevel(3).strength(8f, 32f).requiresCorrectToolForDrops()));
+
 
 	//Compressed
 	public static final RegistryObject<Block> COBBLESTONE_COMPRESSED1 = createBlock("cobblestone_compressed1", () -> new Block(AbstractBlock.Properties.of(Material.STONE).harvestTool(ToolType.PICKAXE).harvestLevel(1).strength(3.0F, 6.5F).requiresCorrectToolForDrops()));
@@ -79,7 +81,8 @@ public class ModBlocks {
 	public static final RegistryObject<Block> DIRT_COMPRESSED3 = createBlock("dirt_compressed3", () -> new Block(AbstractBlock.Properties.of(Material.DIRT).harvestTool(ToolType.SHOVEL).harvestLevel(3).strength(8.0F, 9.0F).requiresCorrectToolForDrops()));
 	public static final RegistryObject<Block> DIRT_COMPRESSED4 = createBlock("dirt_compressed4", () -> new Block(AbstractBlock.Properties.of(Material.DIRT).harvestTool(ToolType.SHOVEL).harvestLevel(4).strength(12.0F, 10.0F).requiresCorrectToolForDrops()));
 	public static final RegistryObject<Block> DIRT_COMPRESSED5 = createBlock("dirt_compressed5", () -> new Block(AbstractBlock.Properties.of(Material.DIRT).harvestTool(ToolType.SHOVEL).harvestLevel(4).strength(20.0F, 14.0F).requiresCorrectToolForDrops()));
-	
+
+
 	//Other
 	public static final RegistryObject<Block> AMAZONITE_RELIQUE_BLOCK = createBlock("amazonite_relique_block", () -> new ModOreBlock(AbstractBlock.Properties.of(Material.METAL).harvestTool(ToolType.PICKAXE).harvestLevel(5).strength(25.0F, 100.0F).requiresCorrectToolForDrops()));
 	
@@ -90,12 +93,14 @@ public class ModBlocks {
 	//Portal BLocks
 	public static final RegistryObject<Block> PARADIS_PORTAL_BLOCK = createBlock("paradis_portal_block", () -> new ParadisPortalBlocks(AbstractBlock.Properties.of(Material.METAL).harvestTool(ToolType.PICKAXE).harvestLevel(3).strength(10.0F, 200.0F).requiresCorrectToolForDrops()));
 	public static final RegistryObject<Block> OVERWORLD_PORTAL_BLOCK = createBlock("overworld_portal_block", () -> new OverworldPortalBlocks(AbstractBlock.Properties.of(Material.METAL).harvestTool(ToolType.PICKAXE).harvestLevel(3).strength(10.0F, 200.0F).requiresCorrectToolForDrops()));
-	
+
+
 	//Plants
 	public static final RegistryObject<Block> AMAZONITE_PLANTS = createBlock("amazonite_plants", () -> new AmazonitePlants(AbstractBlock.Properties.of(Material.PLANT).instabreak().randomTicks().noCollission().sound(SoundType.CROP)));
 	public static final RegistryObject<Block> DESTRIUM_PLANTS = createBlock("destrium_plants", () -> new DestriumPlants(AbstractBlock.Properties.of(Material.PLANT).instabreak().randomTicks().noCollission().sound(SoundType.CROP)));
 	public static final RegistryObject<Block> XP_PLANTS = createBlock("xp_plants", () -> new XpPlants(AbstractBlock.Properties.of(Material.PLANT).instabreak().randomTicks().noCollission().sound(SoundType.CROP)));
-	
+
+
 	//Flowers
 	public static final RegistryObject<Block> CLOVER = createBlock("clover", () -> new FlowerBlock(Effects.LUCK, 9, AbstractBlock.Properties.of(Material.PLANT).noCollission().instabreak().sound(SoundType.GRASS)));
 	public static final RegistryObject<Block> CLOVER_TWO = createBlock("clover_two", () -> new FlowerBlock(Effects.LUCK, 9, AbstractBlock.Properties.of(Material.PLANT).noCollission().instabreak().sound(SoundType.GRASS)));
