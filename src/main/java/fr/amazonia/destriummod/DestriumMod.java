@@ -22,7 +22,7 @@ public class DestriumMod implements ModInitializer {
     //CreativeTabs
     public static final ItemGroup ITEM_TAB = FabricItemGroupBuilder.build(
             new Identifier(MODID, ".itemtab"),
-            () -> new ItemStack(ModItems.DESTRIUM_INGOT));
+            () -> new ItemStack(ModItems.AMAZONITE_FRAGMENT));
 
     public static final ItemGroup BLOCK_TAB = FabricItemGroupBuilder.build(
             new Identifier(MODID, ".blocktab"),
