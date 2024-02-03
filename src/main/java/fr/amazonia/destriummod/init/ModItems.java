@@ -26,7 +26,7 @@ public class ModItems {
     //AMAZONITE_SHOVEL
     //AMAZONITE_HOES
 
-    public static final Item DESTRIUM_SWORD = new SwordItem(DestriumToolMaterial.INSTANCE, 1, -1.4f, new FabricItemSettings().group(DestriumMod.ITEM_TAB));
+    public static final Item DESTRIUM_SWORD = new SwordItem(DestriumToolMaterial.INSTANCE, 1, -1.4f, new FabricItemSettings().group(DestriumMod.TOOL_TAB));
     //DESTRIUM_PICKAXE
     //DESTRIUM_AXE
     //DESTRIUM_SHOVEL
