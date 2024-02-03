@@ -26,7 +26,7 @@ public class DestriumMod implements ModInitializer {
 
     public static final ItemGroup BLOCK_TAB = FabricItemGroupBuilder.build(
             new Identifier(MODID, ".blocktab"),
-            () -> new ItemStack(ModBlocks.DESTRIUM_BLOCK));
+            () -> new ItemStack(ModBlocks.AMAZONITE_BLOCK));
 
     public static final ItemGroup TOOL_TAB = FabricItemGroupBuilder.build(
             new Identifier(MODID, ".tooltab"),
