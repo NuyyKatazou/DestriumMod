@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "bbb",
+        "bab",
+        "bbb"
+    ],
+    "key": {
+        "a": {
+            "item": "minecraft:netherite_ingot"
+        },
+        "b": {
+            "item": "minecraft:netherite_block"
+        }
+    },
+    "result": {
+        "item": "destriummod:netherite_plate"
+    }
+}

@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "destriummod:amazonite_block"
+        }
+    ],
+    "result": {
+        "item": "destriummod:amazonite_ingot",
+        "count": 9
+    }
+}

@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "destriummod:repair_gem"
+        }
+    ],
+    "result": {
+        "item": "destriummod:repair_fragment",
+        "count": 9
+    }
+}

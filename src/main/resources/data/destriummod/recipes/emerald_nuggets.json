@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "minecraft:emerald"
+        }
+    ],
+    "result": {
+        "item": "destriummod:emerald_nuggets",
+        "count": 9
+    }
+}

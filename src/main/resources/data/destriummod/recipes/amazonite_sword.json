@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "a",
+        "a",
+        "b"
+    ],
+    "key": {
+        "a": {
+            "item": "destriummod:amazonite_ingot"
+        },
+        "b": {
+            "item": "destriummod:amazonite_stick"
+        }
+    },
+    "result": {
+        "item": "destriummod:amazonite_sword"
+    }
+}

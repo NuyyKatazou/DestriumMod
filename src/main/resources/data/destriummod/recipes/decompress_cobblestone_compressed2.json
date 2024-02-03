@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "destriummod:cobblestone_compressed2"
+        }
+    ],
+    "result": {
+        "item": "destriummod:cobblestone_compressed1",
+        "count": 9
+    }
+}

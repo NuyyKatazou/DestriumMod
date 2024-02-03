@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:smelting",
+    "ingredient": {
+        "item": "destriummod:paradis_amazonite_ore"
+    },
+    "result": {
+        "item": "destriummod:amazonite_crumb",
+        "count": 3
+    },
+    "experience": 100,
+    "cookingtime": 5000
+}

@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "aaa",
+        "a a",
+        " b "
+    ],
+    "key": {
+        "a": {
+            "item": "minecraft:string"
+        },
+        "b": {
+            "item": "destriummod:netherite_plate"
+        }
+    },
+    "result": {
+        "item": "destriummod:necklace"
+    }
+}

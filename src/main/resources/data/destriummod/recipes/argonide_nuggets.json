@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "destriummod:argonide_ingot"
+        }
+    ],
+    "result": {
+        "item": "destriummod:argonide_nuggets",
+        "count": 9
+    }
+}

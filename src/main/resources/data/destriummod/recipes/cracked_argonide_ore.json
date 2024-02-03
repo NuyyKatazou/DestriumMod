@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "bbb",
+        "bab",
+        "bbb"
+    ],
+    "key": {
+        "a": {
+            "item": "destriummod:orange_cloud"
+        },
+        "b": {
+            "item": "destriummod:cracked_cloud"
+        }
+    },
+    "result": {
+        "item": "destriummod:cracked_argonide_ore",
+        "count": 3
+    }
+}

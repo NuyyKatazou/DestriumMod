@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "destriummod:argonide_block"
+        }
+    ],
+    "result": {
+        "item": "destriummod:argonide_ingot",
+        "count": 9
+    }
+}

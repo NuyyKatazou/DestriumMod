@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "bcb",
+        "cac",
+        "bcb"
+    ],
+    "key": {
+        "a": {
+            "item": "minecraft:gold_ingot"
+        },
+        "b": {
+            "item": "minecraft:gold_block"
+        },
+        "c": {
+            "item": "destriummod:compressed_golden"
+        }
+    },
+    "result": {
+        "item": "destriummod:golden_core"
+    }
+}
