@@ -58,26 +58,27 @@ public class ModBlocks {
 
 
     //Compressed
-    //COBBLESTONE_COMPRESSED1
-    //COBBLESTONE_COMPRESSED2
-    //COBBLESTONE_COMPRESSED3
-    //COBBLESTONE_COMPRESSED4
-    //COBBLESTONE_COMPRESSED5
-    //COBBLESTONE_COMPRESSED6
-    //COBBLESTONE_COMPRESSED7
-    //COBBLESTONE_COMPRESSED8
+    public static final Block COBBLESTONE_COMPRESSED1 = new Block(FabricBlockSettings.of(Material.STONE).requiresTool().breakByTool(FabricToolTags.PICKAXES, 1).strength(3f, 6.5f));
+    public static final Block COBBLESTONE_COMPRESSED2 = new Block(FabricBlockSettings.of(Material.STONE).requiresTool().breakByTool(FabricToolTags.PICKAXES, 2).strength(5f, 7f));
+    public static final Block COBBLESTONE_COMPRESSED3 = new Block(FabricBlockSettings.of(Material.STONE).requiresTool().breakByTool(FabricToolTags.PICKAXES, 3).strength(8f, 9f));
+    public static final Block COBBLESTONE_COMPRESSED4 = new Block(FabricBlockSettings.of(Material.STONE).requiresTool().breakByTool(FabricToolTags.PICKAXES, 4).strength(12f, 10f));
+    public static final Block COBBLESTONE_COMPRESSED5 = new Block(FabricBlockSettings.of(Material.STONE).requiresTool().breakByTool(FabricToolTags.PICKAXES, 4).strength(20f, 14f));
+    public static final Block COBBLESTONE_COMPRESSED6 = new Block(FabricBlockSettings.of(Material.STONE).requiresTool().breakByTool(FabricToolTags.PICKAXES, 5).strength(30f, 18f));
+    public static final Block COBBLESTONE_COMPRESSED7 = new Block(FabricBlockSettings.of(Material.STONE).requiresTool().breakByTool(FabricToolTags.PICKAXES, 6).strength(50f, 25f));
+    public static final Block COBBLESTONE_COMPRESSED8 = new Block(FabricBlockSettings.of(Material.STONE).requiresTool().breakByTool(FabricToolTags.PICKAXES, 7).strength(250f, 500f));
 
-    //DIRT_COMPRESSED1
-    //DIRT_COMPRESSED2
-    //DIRT_COMPRESSED3
-    //DIRT_COMPRESSED4
-    //DIRT_COMPRESSED5
+    public static final Block DIRT_COMPRESSED1 = new Block(FabricBlockSettings.of(Material.SOIL).requiresTool().breakByTool(FabricToolTags.SHOVELS, 2).strength(3f, 6.5f));
+    public static final Block DIRT_COMPRESSED2 = new Block(FabricBlockSettings.of(Material.SOIL).requiresTool().breakByTool(FabricToolTags.SHOVELS, 3).strength(5f, 7f));
+    public static final Block DIRT_COMPRESSED3 = new Block(FabricBlockSettings.of(Material.SOIL).requiresTool().breakByTool(FabricToolTags.SHOVELS, 3).strength(8f, 9f));
+    public static final Block DIRT_COMPRESSED4 = new Block(FabricBlockSettings.of(Material.SOIL).requiresTool().breakByTool(FabricToolTags.SHOVELS, 4).strength(12f, 10f));
+    public static final Block DIRT_COMPRESSED5 = new Block(FabricBlockSettings.of(Material.SOIL).requiresTool().breakByTool(FabricToolTags.SHOVELS, 4).strength(20f, 14f));
+
 
     //Other
-    //AMAZONITE_RELIQUE_BLOCK
+    public static final Block AMAZONITE_RELIQUE_BLOCK = new Block(FabricBlockSettings.of(Material.METAL).requiresTool().breakByTool(FabricToolTags.PICKAXES, 5).strength(25f, 100f));
 
 
-    //BELOW_BLOCK
+    public static final Block BELOW_BLOCK = new Block(FabricBlockSettings.of(Material.GLASS).requiresTool().breakByTool(FabricToolTags.PICKAXES, 5).strength(4f, 10f));
 
 
     //Portal Blocks
