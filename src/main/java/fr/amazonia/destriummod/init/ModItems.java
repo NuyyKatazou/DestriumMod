@@ -1,6 +1,7 @@
 package fr.amazonia.destriummod.init;
 
 import fr.amazonia.destriummod.DestriumMod;
+import fr.amazonia.destriummod.item.ingot.*;
 import fr.amazonia.destriummod.utils.toolmaterials.DestriumToolMaterial;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.item.*;
@@ -71,13 +72,13 @@ public class ModItems {
     public static final Item AMAZONITE_DUST = new Item(new FabricItemSettings().group(DestriumMod.ITEM_TAB).fireproof());
     public static final Item AMAZONITE_FRAGMENT = new Item(new FabricItemSettings().group(DestriumMod.ITEM_TAB).fireproof());
     public static final Item AMAZONITE_NUGGETS = new Item(new FabricItemSettings().group(DestriumMod.ITEM_TAB).fireproof());
-    public static final Item AMAZONITE_INGOT = new Item(new FabricItemSettings().group(DestriumMod.ITEM_TAB).fireproof());
+    public static final Item AMAZONITE_INGOT = new AmazoniteIngot(new FabricItemSettings().group(DestriumMod.ITEM_TAB).fireproof());
     public static final Item DESTRIUM_NUGGETS = new Item(new FabricItemSettings().group(DestriumMod.ITEM_TAB).fireproof());
-    public static final Item DESTRIUM_INGOT = new Item(new FabricItemSettings().group(DestriumMod.ITEM_TAB).fireproof());
-    public static final Item ARGONIDE_NUGGETS = new Item(new FabricItemSettings().group(DestriumMod.ITEM_TAB).fireproof());
-    public static final Item ARGONIDE_INGOT = new Item(new FabricItemSettings().group(DestriumMod.ITEM_TAB).fireproof());
+    public static final Item DESTRIUM_INGOT = new DestriumIngot(new FabricItemSettings().group(DestriumMod.ITEM_TAB).fireproof());
+    public static final Item ARGONIDE_NUGGETS = new ArgonideNuggets(new FabricItemSettings().group(DestriumMod.ITEM_TAB).fireproof());
+    public static final Item ARGONIDE_INGOT = new ArgonideIngot(new FabricItemSettings().group(DestriumMod.ITEM_TAB).fireproof());
     public static final Item REPAIR_FRAGMENT = new Item(new FabricItemSettings().group(DestriumMod.ITEM_TAB).fireproof());
-    public static final Item REPAIR_GEM = new Item(new FabricItemSettings().group(DestriumMod.ITEM_TAB).fireproof());
+    public static final Item REPAIR_GEM = new RepairItems(new FabricItemSettings().group(DestriumMod.ITEM_TAB).fireproof());
 
     public static final Item EMERALD_NUGGETS = new Item(new FabricItemSettings().group(DestriumMod.ITEM_TAB));
     public static final Item DIAMOND_NUGGETS = new Item(new FabricItemSettings().group(DestriumMod.ITEM_TAB));
