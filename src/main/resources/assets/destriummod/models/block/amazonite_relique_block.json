@@ -1,0 +1,6 @@
+{
+	"parent": "minecraft:block/cube_all",
+	"textures": {
+	   "all": "destriummod:block/amazonite_relique_block"
+	}
+}

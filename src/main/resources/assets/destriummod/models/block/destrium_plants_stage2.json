@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/crop",
+  "textures": {
+    "crop": "destriummod:block/destrium_plants_stage2"
+  }
+}
