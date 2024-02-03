@@ -85,9 +85,9 @@ public class ModItems {
     public static final Item NETHERITE_NUGGETS = new Item(new FabricItemSettings().group(DestriumMod.ITEM_TAB));
 
 
-    public static final Item AMAZONITE_STICK = new Item(new FabricItemSettings().group(DestriumMod.ITEM_TAB).fireproof());
-    public static final Item DESTRIUM_STICK = new Item(new FabricItemSettings().group(DestriumMod.ITEM_TAB).fireproof());
-    public static final Item ARGONIDE_STICK = new Item(new FabricItemSettings().group(DestriumMod.ITEM_TAB).fireproof());
+    public static final Item AMAZONITE_STICK = new AmazoniteStick(new FabricItemSettings().group(DestriumMod.ITEM_TAB).fireproof());
+    public static final Item DESTRIUM_STICK = new DestriumStick(new FabricItemSettings().group(DestriumMod.ITEM_TAB).fireproof());
+    public static final Item ARGONIDE_STICK = new ArgonideStick(new FabricItemSettings().group(DestriumMod.ITEM_TAB).fireproof());
 
 
     public static final Item GOLDEN_CORE = new Item(new FabricItemSettings().group(DestriumMod.ITEM_TAB));
