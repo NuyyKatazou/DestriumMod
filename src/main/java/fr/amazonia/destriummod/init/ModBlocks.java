@@ -5,11 +5,9 @@ import fr.amazonia.destriummod.block.ModOreBlock;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.fabricmc.fabric.api.tool.attribute.v1.FabricToolTags;
 import net.minecraft.block.Block;
-import net.minecraft.block.Blocks;
 import net.minecraft.block.Material;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
@@ -156,6 +154,8 @@ public class ModBlocks {
         register(DIRT_COMPRESSED3, new Identifier(DestriumMod.MODID, "dirt_compressed3"));
         register(DIRT_COMPRESSED4, new Identifier(DestriumMod.MODID, "dirt_compressed4"));
         register(DIRT_COMPRESSED5, new Identifier(DestriumMod.MODID, "dirt_compressed5"));
+
+        register(BELOW_BLOCK, new Identifier(DestriumMod.MODID, "below block"));
     }
 
     private void register(Block block, Identifier name) {
