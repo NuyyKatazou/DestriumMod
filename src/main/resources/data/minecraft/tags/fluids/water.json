@@ -1,7 +1,7 @@
 {
   "replace": false,
   "values": [
-    "destriummod:poison_water_fluid",
-    "destriummod:poison_water_flowing"
+    //"destriummod:poison_water_fluid",
+    //"destriummod:poison_water_flowing"
   ]
 }

@@ -1,7 +1,7 @@
 {
   "replace": false,
   "values": [
-    "destriummod:resistance_lava_fluid",
-    "destriummod:resistance_lava_flowing"
+    //"destriummod:resistance_lava_fluid",
+    //"destriummod:resistance_lava_flowing"
   ]
 }
