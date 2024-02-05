@@ -155,7 +155,7 @@ public class ModBlocks {
         register(DIRT_COMPRESSED4, new Identifier(DestriumMod.MODID, "dirt_compressed4"));
         register(DIRT_COMPRESSED5, new Identifier(DestriumMod.MODID, "dirt_compressed5"));
 
-        register(BELOW_BLOCK, new Identifier(DestriumMod.MODID, "below block"));
+        register(BELOW_BLOCK, new Identifier(DestriumMod.MODID, "below_block"));
     }
 
     private void register(Block block, Identifier name) {
