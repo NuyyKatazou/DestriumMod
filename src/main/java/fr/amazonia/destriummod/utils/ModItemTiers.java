@@ -7,7 +7,7 @@ import net.minecraft.item.IItemTier;
 import net.minecraft.item.crafting.Ingredient;
 import net.minecraft.util.LazyValue;
 
-public enum DestriumModItemTiers implements IItemTier {
+public enum ModItemTiers implements IItemTier {
 
 	SPAWNERS(4, 3, 8F, 4F, 55, () -> {
 		return Ingredient.of(ModItems.AMAZONITE_FRAGMENT.get());
@@ -29,7 +29,7 @@ public enum DestriumModItemTiers implements IItemTier {
 	   private final int enchantmentValue;
 	   private final LazyValue<Ingredient> repairIngredient;
 
-	   DestriumModItemTiers(int p_i48458_3_, int p_i48458_4_, float p_i48458_5_, float p_i48458_6_, int p_i48458_7_, Supplier<Ingredient> p_i48458_8_) {
+	   ModItemTiers(int p_i48458_3_, int p_i48458_4_, float p_i48458_5_, float p_i48458_6_, int p_i48458_7_, Supplier<Ingredient> p_i48458_8_) {
 		      this.level = p_i48458_3_;
 		      this.uses = p_i48458_4_;
 		      this.speed = p_i48458_5_;
