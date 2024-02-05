@@ -1,4 +1,4 @@
-package fr.amazonia.destriummod.utils.toolmaterials;
+package fr.amazonia.destriummod.utils;
 
 import fr.amazonia.destriummod.init.ModItems;
 import net.minecraft.item.ToolMaterial;
