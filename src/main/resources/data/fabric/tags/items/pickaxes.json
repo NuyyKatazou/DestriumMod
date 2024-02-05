@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "destriummod:amazonite_pickaxe"
+    "destriummod:amazonite_pickaxe",
+    "destriummod:destrium_pickaxe"
   ]
 }
