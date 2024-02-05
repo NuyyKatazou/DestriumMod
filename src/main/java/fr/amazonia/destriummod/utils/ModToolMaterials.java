@@ -7,7 +7,7 @@ import net.minecraft.util.Lazy;
 
 import java.util.function.Supplier;
 
-public enum DestriumModToolMaterials implements ToolMaterial
+public enum ModToolMaterials implements ToolMaterial
 {
     SPAWNERS(4, 3, 8f, 4f, 55, () -> Ingredient.ofItems(ModItems.AMAZONITE_FRAGMENT)),
     ARGONIDE(4, 4048, 13f, 5.5f, 18, () -> Ingredient.ofItems(ModItems.ARGONIDE_INGOT)),
@@ -21,7 +21,7 @@ public enum DestriumModToolMaterials implements ToolMaterial
     private final int enchantability;
     private final Lazy<Ingredient> repairIngredient;
 
-    private DestriumModToolMaterials(int miningLevel, int itemDurability, float miningSpeed, float attackDamage, int enchantability, Supplier<Ingredient> repairIngredient) {
+    private ModToolMaterials(int miningLevel, int itemDurability, float miningSpeed, float attackDamage, int enchantability, Supplier<Ingredient> repairIngredient) {
         this.miningLevel = miningLevel;
         this.itemDurability = itemDurability;
         this.miningSpeed = miningSpeed;

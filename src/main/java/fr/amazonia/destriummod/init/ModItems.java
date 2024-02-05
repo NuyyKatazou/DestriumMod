@@ -8,7 +8,7 @@ import fr.amazonia.destriummod.item.stick.DestriumStick;
 import fr.amazonia.destriummod.item.tools.ModAxeItem;
 import fr.amazonia.destriummod.item.tools.ModHoeItem;
 import fr.amazonia.destriummod.item.tools.ModPickaxeItem;
-import fr.amazonia.destriummod.utils.DestriumModToolMaterials;
+import fr.amazonia.destriummod.utils.ModToolMaterials;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
@@ -26,23 +26,23 @@ public class ModItems {
 
 
     //Armors and Tools
-    public static final Item AMAZONITE_SWORD = register("amazonite_sword", new SwordItem(DestriumModToolMaterials.AMAZONITE, 2, -0.8f, new FabricItemSettings().group(DestriumMod.TOOL_TAB).fireproof()));
-    public static final Item AMAZONITE_PICKAXE = register("amazonite_pickaxe", new ModPickaxeItem(DestriumModToolMaterials.AMAZONITE, -1, -2.8f, new FabricItemSettings().group(DestriumMod.TOOL_TAB).fireproof()));
-    public static final Item AMAZONITE_AXE = register("amazonite_axe", new ModAxeItem(DestriumModToolMaterials.AMAZONITE, 2, -3f, new FabricItemSettings().group(DestriumMod.TOOL_TAB).fireproof()));
-    public static final Item AMAZONITE_SHOVEL = register("amazonite_shovel", new ShovelItem(DestriumModToolMaterials.AMAZONITE, -2, -3f, new FabricItemSettings().group(DestriumMod.TOOL_TAB).fireproof()));
-    public static final Item AMAZONITE_HOE = register("amazonite_hoes", new ModHoeItem(DestriumModToolMaterials.AMAZONITE, -7, -3f, new FabricItemSettings().group(DestriumMod.TOOL_TAB).fireproof()));
+    public static final Item AMAZONITE_SWORD = register("amazonite_sword", new SwordItem(ModToolMaterials.AMAZONITE, 2, -0.8f, new FabricItemSettings().group(DestriumMod.TOOL_TAB).fireproof()));
+    public static final Item AMAZONITE_PICKAXE = register("amazonite_pickaxe", new ModPickaxeItem(ModToolMaterials.AMAZONITE, -1, -2.8f, new FabricItemSettings().group(DestriumMod.TOOL_TAB).fireproof()));
+    public static final Item AMAZONITE_AXE = register("amazonite_axe", new ModAxeItem(ModToolMaterials.AMAZONITE, 2, -3f, new FabricItemSettings().group(DestriumMod.TOOL_TAB).fireproof()));
+    public static final Item AMAZONITE_SHOVEL = register("amazonite_shovel", new ShovelItem(ModToolMaterials.AMAZONITE, -2, -3f, new FabricItemSettings().group(DestriumMod.TOOL_TAB).fireproof()));
+    public static final Item AMAZONITE_HOE = register("amazonite_hoes", new ModHoeItem(ModToolMaterials.AMAZONITE, -7, -3f, new FabricItemSettings().group(DestriumMod.TOOL_TAB).fireproof()));
 
-    public static final Item DESTRIUM_SWORD = register("destrium_sword", new SwordItem(DestriumModToolMaterials.DESTRIUM, 1, -1.4f, new FabricItemSettings().group(DestriumMod.TOOL_TAB).fireproof()));
-    public static final Item DESTRIUM_PICKAXE = register("destrium_pickaxe", new ModPickaxeItem(DestriumModToolMaterials.DESTRIUM, 0, -2.8f, new FabricItemSettings().group(DestriumMod.TOOL_TAB).fireproof()));
-    public static final Item DESTRIUM_AXE = register("destrium_axe", new ModAxeItem(DestriumModToolMaterials.DESTRIUM, 3, -3f, new FabricItemSettings().group(DestriumMod.TOOL_TAB).fireproof()));
-    public static final Item DESTRIUM_SHOVEL = register("destrium_shovel", new ShovelItem(DestriumModToolMaterials.DESTRIUM, 0, -3f, new FabricItemSettings().group(DestriumMod.TOOL_TAB).fireproof()));
-    public static final Item DESTRIUM_HOE = register("destrium_hoes", new ModHoeItem(DestriumModToolMaterials.DESTRIUM, -6, -3f, new FabricItemSettings().group(DestriumMod.TOOL_TAB).fireproof()));
+    public static final Item DESTRIUM_SWORD = register("destrium_sword", new SwordItem(ModToolMaterials.DESTRIUM, 1, -1.4f, new FabricItemSettings().group(DestriumMod.TOOL_TAB).fireproof()));
+    public static final Item DESTRIUM_PICKAXE = register("destrium_pickaxe", new ModPickaxeItem(ModToolMaterials.DESTRIUM, 0, -2.8f, new FabricItemSettings().group(DestriumMod.TOOL_TAB).fireproof()));
+    public static final Item DESTRIUM_AXE = register("destrium_axe", new ModAxeItem(ModToolMaterials.DESTRIUM, 3, -3f, new FabricItemSettings().group(DestriumMod.TOOL_TAB).fireproof()));
+    public static final Item DESTRIUM_SHOVEL = register("destrium_shovel", new ShovelItem(ModToolMaterials.DESTRIUM, 0, -3f, new FabricItemSettings().group(DestriumMod.TOOL_TAB).fireproof()));
+    public static final Item DESTRIUM_HOE = register("destrium_hoes", new ModHoeItem(ModToolMaterials.DESTRIUM, -6, -3f, new FabricItemSettings().group(DestriumMod.TOOL_TAB).fireproof()));
 
-    public static final Item ARGONIDE_SWORD = register("argonide_sword", new SwordItem(DestriumModToolMaterials.ARGONIDE, 2, -1.9f, new FabricItemSettings().group(DestriumMod.TOOL_TAB).fireproof()));
-    public static final Item ARGONIDE_PICKAXE = register("argonide_pickaxe", new ModPickaxeItem(DestriumModToolMaterials.ARGONIDE, 0, -2.8f, new FabricItemSettings().group(DestriumMod.TOOL_TAB).fireproof()));
-    public static final Item ARGONIDE_AXE = register("argonide_axe", new ModAxeItem(DestriumModToolMaterials.ARGONIDE, 4, -3f, new FabricItemSettings().group(DestriumMod.TOOL_TAB).fireproof()));
-    public static final Item ARGONIDE_SHOVEL = register("argonide_shovel", new ShovelItem(DestriumModToolMaterials.ARGONIDE, 1, -3f, new FabricItemSettings().group(DestriumMod.TOOL_TAB).fireproof()));
-    public static final Item ARGONIDE_HOE = register("argonide_hoes", new ModHoeItem(DestriumModToolMaterials.ARGONIDE, -5, -3f, new FabricItemSettings().group(DestriumMod.TOOL_TAB).fireproof()));
+    public static final Item ARGONIDE_SWORD = register("argonide_sword", new SwordItem(ModToolMaterials.ARGONIDE, 2, -1.9f, new FabricItemSettings().group(DestriumMod.TOOL_TAB).fireproof()));
+    public static final Item ARGONIDE_PICKAXE = register("argonide_pickaxe", new ModPickaxeItem(ModToolMaterials.ARGONIDE, 0, -2.8f, new FabricItemSettings().group(DestriumMod.TOOL_TAB).fireproof()));
+    public static final Item ARGONIDE_AXE = register("argonide_axe", new ModAxeItem(ModToolMaterials.ARGONIDE, 4, -3f, new FabricItemSettings().group(DestriumMod.TOOL_TAB).fireproof()));
+    public static final Item ARGONIDE_SHOVEL = register("argonide_shovel", new ShovelItem(ModToolMaterials.ARGONIDE, 1, -3f, new FabricItemSettings().group(DestriumMod.TOOL_TAB).fireproof()));
+    public static final Item ARGONIDE_HOE = register("argonide_hoes", new ModHoeItem(ModToolMaterials.ARGONIDE, -5, -3f, new FabricItemSettings().group(DestriumMod.TOOL_TAB).fireproof()));
 
     //SPAWNERS_PICKAXE
 
