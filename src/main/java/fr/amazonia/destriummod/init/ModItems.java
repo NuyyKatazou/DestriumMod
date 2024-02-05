@@ -26,7 +26,6 @@ public class ModItems {
 
     //Armors and Tools
     public static final Item AMAZONITE_SWORD = new SwordItem(AmazoniteToolMaterial.INSTANCE, 2, -0.8f, new FabricItemSettings().group(DestriumMod.TOOL_TAB));
-
     //AMAZONITE_PICKAXE
     //AMAZONITE_AXE
     //AMAZONITE_SHOVEL
@@ -38,7 +37,7 @@ public class ModItems {
     //DESTRIUM_SHOVEL
     //DESTRIUM_HOES
 
-    //ARGONIDE_SWORD
+    public static final Item ARGONIDE_SWORD = new SwordItem(ArgonideToolMaterial.INSTANCE, 2, -1.9f, new FabricItemSettings().group(DestriumMod.TOOL_TAB));
     //ARGONIDE_PICKAXE
     //ARGONIDE_AXE
     //ARGONIDE_SHOVEL
