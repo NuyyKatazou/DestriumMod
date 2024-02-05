@@ -14,6 +14,7 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 
 public enum ModArmorMaterials implements IArmorMaterial {
+
 	NECKLACE("necklace", 74, new int[]{2, 5, 4, 1}, 0, SoundEvents.ARMOR_EQUIP_CHAIN, 0F, 0F, () -> {
 		   return Ingredient.of(ModItems.AMAZONITE_NUGGETS.get());
 	   }),
