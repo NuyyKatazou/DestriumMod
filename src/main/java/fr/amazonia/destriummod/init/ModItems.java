@@ -70,8 +70,8 @@ public class ModItems {
     public static final Item ADVENTURER_BOOTS = register("adventurer_boots", new ArmorItem(ModArmorMaterials.DESTRIUM, EquipmentSlot.FEET, new FabricItemSettings().group(DestriumMod.TOOL_TAB).fireproof()));
     public static final Item REINFORCED_ADVENTURER_BOOTS = register("reinforced_adventurer_boots", new ArmorItem(ModArmorMaterials.DESTRIUM, EquipmentSlot.FEET, new FabricItemSettings().group(DestriumMod.TOOL_TAB).fireproof()));
 
-    //NECKLACE
-    //LUCKY_NECKLACE
+    public static final Item NECKLACE = register("necklace", new ArmorItem(ModArmorMaterials.NECKLACE, EquipmentSlot.FEET, new FabricItemSettings().group(DestriumMod.TOOL_TAB).maxDamage(-1).fireproof()));
+    public static final Item LUCKY_NECKLACE = register("lucky_necklace", new ArmorItem(ModArmorMaterials.NECKLACE, EquipmentSlot.FEET, new FabricItemSettings().group(DestriumMod.TOOL_TAB).maxDamage(-1).fireproof()));
 
 
     //Items (Mineral)
