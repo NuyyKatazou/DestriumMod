@@ -5,6 +5,7 @@ import fr.amazonia.destriummod.item.ingot.*;
 import fr.amazonia.destriummod.item.stick.AmazoniteStick;
 import fr.amazonia.destriummod.item.stick.ArgonideStick;
 import fr.amazonia.destriummod.item.stick.DestriumStick;
+import fr.amazonia.destriummod.utils.toolmaterials.AmazoniteToolMaterial;
 import fr.amazonia.destriummod.utils.toolmaterials.DestriumToolMaterial;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.item.*;
@@ -24,7 +25,8 @@ public class ModItems {
 
 
     //Armors and Tools
-    //AMAZONITE_SWORD
+    public static final Item AMAZONITE_SWORD = new SwordItem(AmazoniteToolMaterial.INSTANCE, 2, -0.8f, new FabricItemSettings().group(DestriumMod.TOOL_TAB));
+
     //AMAZONITE_PICKAXE
     //AMAZONITE_AXE
     //AMAZONITE_SHOVEL
