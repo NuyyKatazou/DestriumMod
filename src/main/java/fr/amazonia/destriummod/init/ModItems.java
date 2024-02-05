@@ -5,9 +5,7 @@ import fr.amazonia.destriummod.item.ingot.*;
 import fr.amazonia.destriummod.item.stick.AmazoniteStick;
 import fr.amazonia.destriummod.item.stick.ArgonideStick;
 import fr.amazonia.destriummod.item.stick.DestriumStick;
-import fr.amazonia.destriummod.utils.toolmaterials.AmazoniteToolMaterial;
-import fr.amazonia.destriummod.utils.toolmaterials.ArgonideToolMaterial;
-import fr.amazonia.destriummod.utils.toolmaterials.DestriumToolMaterial;
+import fr.amazonia.destriummod.utils.toolmaterials.DestriumModToolMaterials;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.item.*;
 import net.minecraft.util.Identifier;
@@ -26,19 +24,19 @@ public class ModItems {
 
 
     //Armors and Tools
-    public static final Item AMAZONITE_SWORD = new SwordItem(AmazoniteToolMaterial.INSTANCE, 2, -0.8f, new FabricItemSettings().group(DestriumMod.TOOL_TAB));
-    //AMAZONITE_PICKAXE
+    public static final Item AMAZONITE_SWORD = new SwordItem(DestriumModToolMaterials.AMAZONITE, 2, -0.8f, new FabricItemSettings().group(DestriumMod.TOOL_TAB));
+    //public static final Item AMAZONITE_PICKAXE = new MiningToolItem(AmazoniteToolMaterial.INSTANCE, -1, -2.8f, new FabricItemSettings().group(DestriumMod.TOOL_TAB));
     //AMAZONITE_AXE
     //AMAZONITE_SHOVEL
     //AMAZONITE_HOES
 
-    public static final Item DESTRIUM_SWORD = new SwordItem(DestriumToolMaterial.INSTANCE, 1, -1.4f, new FabricItemSettings().group(DestriumMod.TOOL_TAB));
+    public static final Item DESTRIUM_SWORD = new SwordItem(DestriumModToolMaterials.DESTRIUM, 1, -1.4f, new FabricItemSettings().group(DestriumMod.TOOL_TAB));
     //DESTRIUM_PICKAXE
     //DESTRIUM_AXE
     //DESTRIUM_SHOVEL
     //DESTRIUM_HOES
 
-    public static final Item ARGONIDE_SWORD = new SwordItem(ArgonideToolMaterial.INSTANCE, 2, -1.9f, new FabricItemSettings().group(DestriumMod.TOOL_TAB));
+    public static final Item ARGONIDE_SWORD = new SwordItem(DestriumModToolMaterials.ARGONIDE, 2, -1.9f, new FabricItemSettings().group(DestriumMod.TOOL_TAB));
     //ARGONIDE_PICKAXE
     //ARGONIDE_AXE
     //ARGONIDE_SHOVEL
@@ -126,6 +124,7 @@ public class ModItems {
     public void registerItems() {
         //Armors and Tools
         registerItem(AMAZONITE_SWORD, "amazonite_sword");
+        //registerItem(AMAZONITE_PICKAXE, "amazonite_pickaxe");
 
         registerItem(DESTRIUM_SWORD, "destrium_sword");
 
