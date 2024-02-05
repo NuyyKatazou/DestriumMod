@@ -6,6 +6,7 @@ import fr.amazonia.destriummod.item.stick.AmazoniteStick;
 import fr.amazonia.destriummod.item.stick.ArgonideStick;
 import fr.amazonia.destriummod.item.stick.DestriumStick;
 import fr.amazonia.destriummod.utils.toolmaterials.AmazoniteToolMaterial;
+import fr.amazonia.destriummod.utils.toolmaterials.ArgonideToolMaterial;
 import fr.amazonia.destriummod.utils.toolmaterials.DestriumToolMaterial;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.item.*;
@@ -124,7 +125,11 @@ public class ModItems {
 
     public void registerItems() {
         //Armors and Tools
+        registerItem(AMAZONITE_SWORD, "amazonite_sword");
+
         registerItem(DESTRIUM_SWORD, "destrium_sword");
+
+        registerItem(ARGONIDE_SWORD, "argonide_sword");
 
 
         //Items (Mineral)
