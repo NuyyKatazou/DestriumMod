@@ -5,6 +5,7 @@ import fr.amazonia.destriummod.item.ingot.*;
 import fr.amazonia.destriummod.item.stick.AmazoniteStick;
 import fr.amazonia.destriummod.item.stick.ArgonideStick;
 import fr.amazonia.destriummod.item.stick.DestriumStick;
+import fr.amazonia.destriummod.item.tools.ModPickaxeItem;
 import fr.amazonia.destriummod.utils.toolmaterials.DestriumModToolMaterials;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.item.*;
@@ -25,7 +26,7 @@ public class ModItems {
 
     //Armors and Tools
     public static final Item AMAZONITE_SWORD = new SwordItem(DestriumModToolMaterials.AMAZONITE, 2, -0.8f, new FabricItemSettings().group(DestriumMod.TOOL_TAB));
-    //public static final Item AMAZONITE_PICKAXE = new MiningToolItem(AmazoniteToolMaterial.INSTANCE, -1, -2.8f, new FabricItemSettings().group(DestriumMod.TOOL_TAB));
+    public static final Item AMAZONITE_PICKAXE = new ModPickaxeItem(DestriumModToolMaterials.AMAZONITE, -1, -2.8f, new FabricItemSettings().group(DestriumMod.TOOL_TAB));
     //AMAZONITE_AXE
     //AMAZONITE_SHOVEL
     //AMAZONITE_HOES
@@ -124,7 +125,7 @@ public class ModItems {
     public void registerItems() {
         //Armors and Tools
         registerItem(AMAZONITE_SWORD, "amazonite_sword");
-        //registerItem(AMAZONITE_PICKAXE, "amazonite_pickaxe");
+        registerItem(AMAZONITE_PICKAXE, "amazonite_pickaxe");
 
         registerItem(DESTRIUM_SWORD, "destrium_sword");
 
