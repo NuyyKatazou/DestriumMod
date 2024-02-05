@@ -64,11 +64,11 @@ public class ModItems {
     public static final Item ARGONIDE_LEGGINGS = register("argonide_leggings", new ArmorItem(ModArmorMaterials.ARGONIDE, EquipmentSlot.LEGS, new FabricItemSettings().group(DestriumMod.TOOL_TAB).fireproof()));
     public static final Item ARGONIDE_BOOTS = register("argonide_boots", new ArmorItem(ModArmorMaterials.ARGONIDE, EquipmentSlot.FEET, new FabricItemSettings().group(DestriumMod.TOOL_TAB).fireproof()));
 
-    //SPEED_BOOTS
-    //FEATHER_BOOTS
-    //JUMP_BOOTS
-    //ADVENTURER_BOOTS
-    //REINFORCED_ADVENTURER_BOOTS
+    public static final Item SPEED_BOOTS = register("speed_boots", new ArmorItem(ModArmorMaterials.DESTRIUM, EquipmentSlot.FEET, new FabricItemSettings().group(DestriumMod.TOOL_TAB).fireproof()));
+    public static final Item FEATHER_BOOTS = register("feather_boots", new ArmorItem(ModArmorMaterials.DESTRIUM, EquipmentSlot.FEET, new FabricItemSettings().group(DestriumMod.TOOL_TAB).fireproof()));
+    public static final Item JUMP_BOOTS = register("jump_boots", new ArmorItem(ModArmorMaterials.DESTRIUM, EquipmentSlot.FEET, new FabricItemSettings().group(DestriumMod.TOOL_TAB).fireproof()));
+    public static final Item ADVENTURER_BOOTS = register("adventurer_boots", new ArmorItem(ModArmorMaterials.DESTRIUM, EquipmentSlot.FEET, new FabricItemSettings().group(DestriumMod.TOOL_TAB).fireproof()));
+    public static final Item REINFORCED_ADVENTURER_BOOTS = register("reinforced_adventurer_boots", new ArmorItem(ModArmorMaterials.DESTRIUM, EquipmentSlot.FEET, new FabricItemSettings().group(DestriumMod.TOOL_TAB).fireproof()));
 
     //NECKLACE
     //LUCKY_NECKLACE
