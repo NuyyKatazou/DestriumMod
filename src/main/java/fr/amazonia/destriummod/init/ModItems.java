@@ -10,6 +10,8 @@ import fr.amazonia.destriummod.item.tools.ModHoeItem;
 import fr.amazonia.destriummod.item.tools.ModPickaxeItem;
 import fr.amazonia.destriummod.utils.toolmaterials.DestriumModToolMaterials;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
+import net.minecraft.entity.effect.StatusEffectInstance;
+import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.*;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
@@ -18,13 +20,9 @@ public class ModItems {
 
     public static void initialize(){}
 
-
     //Foods
-    //AMAZONITEAPPLE
-    //DESTRIUMAPPLE
-
-    //DESTRIUM_APPLE
-    //AMAZONITE_APPLE
+    public static final Item DESTRIUM_APPLE = register("destrium_apple", new Item(new FabricItemSettings().food(new FoodComponent.Builder().alwaysEdible().hunger(10).saturationModifier(1.3F).statusEffect(new StatusEffectInstance(StatusEffects.INSTANT_HEALTH, 1, 5), 1.0F).statusEffect(new StatusEffectInstance(StatusEffects.STRENGTH, 400, 2), 1.0F).statusEffect(new StatusEffectInstance(StatusEffects.RESISTANCE, 12000, 1), 1.0F).statusEffect(new StatusEffectInstance(StatusEffects.HEALTH_BOOST, 6000, 1), 1.0F).statusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 9000, 2), 1.0F).statusEffect(new StatusEffectInstance(StatusEffects.ABSORPTION, 6000, 4), 1.0F).build()).group(DestriumMod.FOOD_TAB).fireproof()));
+    public static final Item AMAZONITE_APPLE = register("amazonite_apple", new Item(new FabricItemSettings().food(new FoodComponent.Builder().alwaysEdible().hunger(20).saturationModifier(2.6F).statusEffect(new StatusEffectInstance(StatusEffects.INSTANT_HEALTH, 1, 10), 1.0F).statusEffect(new StatusEffectInstance(StatusEffects.STRENGTH, 800, 3), 1.0F).statusEffect(new StatusEffectInstance(StatusEffects.RESISTANCE, 24000, 3), 1.0F).statusEffect(new StatusEffectInstance(StatusEffects.HEALTH_BOOST, 12000, 4), 1.0F).statusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 3000, 4), 1.0F).statusEffect(new StatusEffectInstance(StatusEffects.ABSORPTION, 12000, 9), 1.0F).build()).group(DestriumMod.FOOD_TAB).fireproof()));
 
 
     //Armors and Tools
