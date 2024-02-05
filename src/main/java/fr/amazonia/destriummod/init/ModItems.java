@@ -25,19 +25,19 @@ public class ModItems {
 
 
     //Armors and Tools
-    public static final Item AMAZONITE_SWORD = new SwordItem(DestriumModToolMaterials.AMAZONITE, 2, -0.8f, new FabricItemSettings().group(DestriumMod.TOOL_TAB));
-    public static final Item AMAZONITE_PICKAXE = new ModPickaxeItem(DestriumModToolMaterials.AMAZONITE, -1, -2.8f, new FabricItemSettings().group(DestriumMod.TOOL_TAB));
+    public static final Item AMAZONITE_SWORD = new SwordItem(DestriumModToolMaterials.AMAZONITE, 2, -0.8f, new FabricItemSettings().group(DestriumMod.TOOL_TAB).fireproof());
+    public static final Item AMAZONITE_PICKAXE = new ModPickaxeItem(DestriumModToolMaterials.AMAZONITE, -1, -2.8f, new FabricItemSettings().group(DestriumMod.TOOL_TAB).fireproof());
     //AMAZONITE_AXE
     //AMAZONITE_SHOVEL
     //AMAZONITE_HOES
 
-    public static final Item DESTRIUM_SWORD = new SwordItem(DestriumModToolMaterials.DESTRIUM, 1, -1.4f, new FabricItemSettings().group(DestriumMod.TOOL_TAB));
-    public static final Item DESTRIUM_PICKAXE = new ToolItem(DestriumModToolMaterials.DESTRIUM, new FabricItemSettings().group(DestriumMod.TOOL_TAB).fireproof());
+    public static final Item DESTRIUM_SWORD = new SwordItem(DestriumModToolMaterials.DESTRIUM, 1, -1.4f, new FabricItemSettings().group(DestriumMod.TOOL_TAB).fireproof());
+    public static final Item DESTRIUM_PICKAXE = new ModPickaxeItem(DestriumModToolMaterials.DESTRIUM, 0, -2.8f, new FabricItemSettings().group(DestriumMod.TOOL_TAB).fireproof());
     //DESTRIUM_AXE
     //DESTRIUM_SHOVEL
     //DESTRIUM_HOES
 
-    public static final Item ARGONIDE_SWORD = new SwordItem(DestriumModToolMaterials.ARGONIDE, 2, -1.9f, new FabricItemSettings().group(DestriumMod.TOOL_TAB));
+    public static final Item ARGONIDE_SWORD = new SwordItem(DestriumModToolMaterials.ARGONIDE, 2, -1.9f, new FabricItemSettings().group(DestriumMod.TOOL_TAB).fireproof());
     //ARGONIDE_PICKAXE
     //ARGONIDE_AXE
     //ARGONIDE_SHOVEL
@@ -128,6 +128,7 @@ public class ModItems {
         registerItem(AMAZONITE_PICKAXE, "amazonite_pickaxe");
 
         registerItem(DESTRIUM_SWORD, "destrium_sword");
+        registerItem(DESTRIUM_PICKAXE, "destrium_pickaxe");
 
         registerItem(ARGONIDE_SWORD, "argonide_sword");
 
