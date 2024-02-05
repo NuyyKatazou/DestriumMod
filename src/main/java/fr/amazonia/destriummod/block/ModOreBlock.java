@@ -19,7 +19,6 @@ public class ModOreBlock extends Block {
         super(strength);
     }
 
-    @Override
     public void onStacksDropped(BlockState state, ServerWorld world, BlockPos pos, ItemStack stack) {
         super.onStacksDropped(state, world, pos, stack);
         if (EnchantmentHelper.getLevel(Enchantments.SILK_TOUCH, stack) == 0) {
