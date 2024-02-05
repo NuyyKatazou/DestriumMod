@@ -16,7 +16,7 @@ public class DestriumMod implements ModInitializer {
     public void onInitialize() {
         //Init Class
         ModItems.initialize();
-        ModBlocks.INSTANCE.registerAll();
+        ModBlocks.initialize();
     }
 
     //CreativeTabs
