@@ -15,7 +15,7 @@ public class DestriumMod implements ModInitializer {
     @Override
     public void onInitialize() {
         //Init Class
-        ModItems.INSTANCE.registerItems();
+        ModItems.initialize();
         ModBlocks.INSTANCE.registerAll();
     }
 
