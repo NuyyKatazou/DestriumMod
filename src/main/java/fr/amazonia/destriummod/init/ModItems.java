@@ -38,7 +38,7 @@ public class ModItems {
     //DESTRIUM_HOES
 
     public static final Item ARGONIDE_SWORD = new SwordItem(DestriumModToolMaterials.ARGONIDE, 2, -1.9f, new FabricItemSettings().group(DestriumMod.TOOL_TAB).fireproof());
-    //ARGONIDE_PICKAXE
+    public static final Item ARGONIDE_PICKAXE = new ModPickaxeItem(DestriumModToolMaterials.ARGONIDE, 0, -2.8f, new FabricItemSettings().group(DestriumMod.TOOL_TAB).fireproof());
     //ARGONIDE_AXE
     //ARGONIDE_SHOVEL
     //ARGONIDE_HOES
