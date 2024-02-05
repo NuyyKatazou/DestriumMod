@@ -1,7 +1,5 @@
 package fr.amazonia.destriummod.item.tools;
 
-import fr.amazonia.destriummod.utils.toolmaterials.DestriumModToolMaterials;
-import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.item.PickaxeItem;
 import net.minecraft.item.ToolMaterial;
 

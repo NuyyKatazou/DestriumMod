@@ -8,7 +8,7 @@ import fr.amazonia.destriummod.item.stick.DestriumStick;
 import fr.amazonia.destriummod.item.tools.ModAxeItem;
 import fr.amazonia.destriummod.item.tools.ModHoeItem;
 import fr.amazonia.destriummod.item.tools.ModPickaxeItem;
-import fr.amazonia.destriummod.utils.toolmaterials.DestriumModToolMaterials;
+import fr.amazonia.destriummod.utils.DestriumModToolMaterials;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
