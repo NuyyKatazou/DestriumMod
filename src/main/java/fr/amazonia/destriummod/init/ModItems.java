@@ -8,8 +8,10 @@ import fr.amazonia.destriummod.item.stick.DestriumStick;
 import fr.amazonia.destriummod.item.tools.ModAxeItem;
 import fr.amazonia.destriummod.item.tools.ModHoeItem;
 import fr.amazonia.destriummod.item.tools.ModPickaxeItem;
+import fr.amazonia.destriummod.utils.ModArmorMaterials;
 import fr.amazonia.destriummod.utils.ModToolMaterials;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
+import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.*;
@@ -47,20 +49,20 @@ public class ModItems {
     //SPAWNERS_PICKAXE
 
 
-    //AMAZONITE_HELMET
-    //AMAZONITE_CHESTPLATE
-    //AMAZONITE_LEGGINGS
-    //AMAZONITE_BOOTS
+    public static final Item AMAZONITE_HELMET = register("amazonite_helmet", new ArmorItem(ModArmorMaterials.AMAZONITE, EquipmentSlot.HEAD, new FabricItemSettings().group(DestriumMod.TOOL_TAB).fireproof()));
+    public static final Item AMAZONITE_CHESTPLATE = register("amazonite_chestplate", new ArmorItem(ModArmorMaterials.AMAZONITE, EquipmentSlot.CHEST, new FabricItemSettings().group(DestriumMod.TOOL_TAB).fireproof()));
+    public static final Item AMAZONITE_LEGGINGS = register("amazonite_leggings", new ArmorItem(ModArmorMaterials.AMAZONITE, EquipmentSlot.LEGS, new FabricItemSettings().group(DestriumMod.TOOL_TAB).fireproof()));
+    public static final Item AMAZONITE_BOOTS = register("amazonite_boots", new ArmorItem(ModArmorMaterials.AMAZONITE, EquipmentSlot.FEET, new FabricItemSettings().group(DestriumMod.TOOL_TAB).fireproof()));
 
-    //DESTRIUM_HELMET
-    //DESTRIUM_CHESTPLATE
-    //DESTRIUM_LEGGINGS
-    //DESTRIUM_BOOTS
+    public static final Item DESTRIUM_HELMET = register("destrium_helmet", new ArmorItem(ModArmorMaterials.DESTRIUM, EquipmentSlot.HEAD, new FabricItemSettings().group(DestriumMod.TOOL_TAB).fireproof()));
+    public static final Item DESTRIUM_CHESTPLATE = register("destrium_chestplate", new ArmorItem(ModArmorMaterials.DESTRIUM, EquipmentSlot.CHEST, new FabricItemSettings().group(DestriumMod.TOOL_TAB).fireproof()));
+    public static final Item DESTRIUM_LEGGINGS = register("destrium_leggings", new ArmorItem(ModArmorMaterials.DESTRIUM, EquipmentSlot.LEGS, new FabricItemSettings().group(DestriumMod.TOOL_TAB).fireproof()));
+    public static final Item DESTRIUM_BOOTS = register("destrium_boots", new ArmorItem(ModArmorMaterials.DESTRIUM, EquipmentSlot.FEET, new FabricItemSettings().group(DestriumMod.TOOL_TAB).fireproof()));
 
-    //ARGONIDE_HELMET
-    //ARGONIDE_CHESTPLATE
-    //ARGONIDE_LEGGINGS
-    //ARGONIDE_BOOTS
+    public static final Item ARGONIDE_HELMET = register("argonide_helmet", new ArmorItem(ModArmorMaterials.ARGONIDE, EquipmentSlot.HEAD, new FabricItemSettings().group(DestriumMod.TOOL_TAB).fireproof()));
+    public static final Item ARGONIDE_CHESTPLATE = register("argonide_chestplate", new ArmorItem(ModArmorMaterials.ARGONIDE, EquipmentSlot.CHEST, new FabricItemSettings().group(DestriumMod.TOOL_TAB).fireproof()));
+    public static final Item ARGONIDE_LEGGINGS = register("argonide_leggings", new ArmorItem(ModArmorMaterials.ARGONIDE, EquipmentSlot.LEGS, new FabricItemSettings().group(DestriumMod.TOOL_TAB).fireproof()));
+    public static final Item ARGONIDE_BOOTS = register("argonide_boots", new ArmorItem(ModArmorMaterials.ARGONIDE, EquipmentSlot.FEET, new FabricItemSettings().group(DestriumMod.TOOL_TAB).fireproof()));
 
     //SPEED_BOOTS
     //FEATHER_BOOTS
