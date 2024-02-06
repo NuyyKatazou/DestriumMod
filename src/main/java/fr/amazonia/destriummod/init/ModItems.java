@@ -84,7 +84,7 @@ public class ModItems {
     public static final Item AMAZONITE_INGOT = register("amazonite_ingot", new AmazoniteIngot(new FabricItemSettings().group(DestriumMod.ITEM_TAB).fireproof()));
     public static final Item DESTRIUM_NUGGETS = register("destrium_nuggets", new Item(new FabricItemSettings().group(DestriumMod.ITEM_TAB).fireproof()));
     public static final Item DESTRIUM_INGOT = register("destrium_ingot", new DestriumIngot(new FabricItemSettings().group(DestriumMod.ITEM_TAB).fireproof()));
-    public static final Item ARGONIDE_NUGGETS = register("argonide_nuggets", new ArgonideNuggets(new FabricItemSettings().group(DestriumMod.ITEM_TAB).fireproof()));
+    public static final Item ARGONIDE_NUGGETS = register("argonide_nuggets", new Item(new FabricItemSettings().group(DestriumMod.ITEM_TAB).fireproof()));
     public static final Item ARGONIDE_INGOT = register("argonide_ingot", new ArgonideIngot(new FabricItemSettings().group(DestriumMod.ITEM_TAB).fireproof()));
     public static final Item REPAIR_FRAGMENT = register("repair_fragment", new Item(new FabricItemSettings().group(DestriumMod.ITEM_TAB).fireproof()));
     public static final Item REPAIR_GEM = register("repair_gem", new RepairItems(new FabricItemSettings().group(DestriumMod.ITEM_TAB).fireproof()));
