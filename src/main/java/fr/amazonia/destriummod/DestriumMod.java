@@ -21,18 +21,18 @@ public class DestriumMod implements ModInitializer {
 
     //CreativeTabs
     public static final ItemGroup ITEM_TAB = FabricItemGroupBuilder.build(
-            new Identifier(MODID, ".itemtab"),
+            new Identifier(MODID, "itemtab"),
             () -> new ItemStack(ModItems.AMAZONITE_FRAGMENT));
 
     public static final ItemGroup BLOCK_TAB = FabricItemGroupBuilder.build(
-            new Identifier(MODID, ".blocktab"),
+            new Identifier(MODID, "blocktab"),
             () -> new ItemStack(ModBlocks.AMAZONITE_BLOCK));
 
     public static final ItemGroup TOOL_TAB = FabricItemGroupBuilder.build(
-            new Identifier(MODID, ".tooltab"),
+            new Identifier(MODID, "tooltab"),
             () -> new ItemStack(ModItems.AMAZONITE_PICKAXE));
 
     public static final ItemGroup FOOD_TAB = FabricItemGroupBuilder.build(
-            new Identifier(MODID, ".foodtab"),
+            new Identifier(MODID, "foodtab"),
             () -> new ItemStack(ModItems.AMAZONITE_APPLE));
 }
