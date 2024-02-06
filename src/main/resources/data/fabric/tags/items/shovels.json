@@ -1,8 +1,8 @@
 {
   "replace": false,
   "values": [
-    "destriummod:amazonite_shovels",
-    "destriummod:destrium_shovels",
-    "destriummod:argonide_shovels"
+    "destriummod:amazonite_shovel",
+    "destriummod:destrium_shovel",
+    "destriummod:argonide_shovel"
   ]
 }
