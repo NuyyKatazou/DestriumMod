@@ -30,9 +30,9 @@ public class DestriumMod implements ModInitializer {
 
     public static final ItemGroup TOOL_TAB = FabricItemGroupBuilder.build(
             new Identifier(MODID, ".tooltab"),
-            () -> new ItemStack(ModItems.DESTRIUM_SWORD));
+            () -> new ItemStack(ModItems.AMAZONITE_PICKAXE));
 
     public static final ItemGroup FOOD_TAB = FabricItemGroupBuilder.build(
             new Identifier(MODID, ".foodtab"),
-            () -> new ItemStack(ModItems.DESTRIUM_INGOT));
+            () -> new ItemStack(ModItems.AMAZONITE_APPLE));
 }
