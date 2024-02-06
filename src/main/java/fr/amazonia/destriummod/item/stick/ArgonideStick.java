@@ -20,7 +20,6 @@ public class ArgonideStick extends Item {
         super(fireproof);
     }
 
-    @Override
     @Environment(value= EnvType.CLIENT)
     public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
         tooltip.add(new TranslatableText(this.getTranslationKey() + ".desc").formatted(Formatting.YELLOW));
