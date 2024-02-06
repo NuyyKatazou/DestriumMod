@@ -15,13 +15,10 @@ import java.util.function.Supplier;
 
 public enum ModArmorMaterials implements ArmorMaterial {
 
-    NECKLACE("necklace",74,new int[] {2, 5, 4, 1},0,SoundEvents.ITEM_ARMOR_EQUIP_CHAIN,0f,0f,()->Ingredient.ofItems(ModItems.AMAZONITE_NUGGETS)),
-
-    ARGONIDE("argonide",74,new int[] {4, 7, 9, 4},18,SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND,3.5f,0.1f,()->Ingredient.ofItems(ModItems.ARGONIDE_INGOT)),
-
-    DESTRIUM("destrium",478,new int[] {5, 8, 10, 5},3,SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND,4.0f,0.1f,()->Ingredient.ofItems(ModItems.DESTRIUM_INGOT)),
-
-    AMAZONITE("amazonite",1256,new int[] {9, 12, 14, 9},25,SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE,5.0f,0.1f,()->Ingredient.ofItems(ModItems.AMAZONITE_FRAGMENT));
+    NECKLACE("necklace",74,new int[] {2, 5, 4, 1},0,SoundEvents.ITEM_ARMOR_EQUIP_CHAIN,0f,0f,()-> Ingredient.ofItems(ModItems.AMAZONITE_NUGGETS)),
+    ARGONIDE("argonide",74,new int[] {4, 7, 9, 4},18,SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND,3.5f,0.1f,()-> Ingredient.ofItems(ModItems.ARGONIDE_INGOT)),
+    DESTRIUM("destrium",478,new int[] {5, 8, 10, 5},3,SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND,4.0f,0.1f,()-> Ingredient.ofItems(ModItems.DESTRIUM_INGOT)),
+    AMAZONITE("amazonite",1256,new int[] {9, 12, 14, 9},25,SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE,5.0f,0.1f,()-> Ingredient.ofItems(ModItems.AMAZONITE_FRAGMENT));
 
     private static final int[] BASE_DURABILITY;
     private final String name;
@@ -72,7 +69,7 @@ public enum ModArmorMaterials implements ArmorMaterial {
     @Override
     @Environment(value = EnvType.CLIENT)
     public String getName() {
-        return DestriumMod.MODID + ":" + this.name;
+        return this.name;
     }
 
     @Override
