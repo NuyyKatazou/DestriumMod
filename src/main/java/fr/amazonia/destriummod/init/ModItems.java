@@ -123,9 +123,9 @@ public class ModItems {
 
 
     //Seeds
-    //DESTRIUM_SEEDS
-    //AMAZONITE_SEEDS
-    //XP_SEEDS
+    public static final Item AMAZONITE_SEEDS = register("amazonite_seeds", new AliasedBlockItem(ModBlocks.AMAZONITE_PLANTS, (new FabricItemSettings().group(DestriumMod.ITEM_TAB).fireproof())));
+    public static final Item DESTRIUM_SEEDS = register("destrium_seeds", new AliasedBlockItem(ModBlocks.DESTRIUM_PLANTS, (new FabricItemSettings().group(DestriumMod.ITEM_TAB).fireproof())));
+    public static final Item XP_SEEDS = register("xp_seeds", new AliasedBlockItem(ModBlocks.XP_PLANTS, (new FabricItemSettings().group(DestriumMod.ITEM_TAB).fireproof())));
 
     public static <T extends Item> T register(String name, T item){
         Identifier itemID = new Identifier(DestriumMod.MODID, name);

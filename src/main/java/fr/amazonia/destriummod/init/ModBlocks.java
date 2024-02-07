@@ -2,12 +2,16 @@ package fr.amazonia.destriummod.init;
 
 import fr.amazonia.destriummod.DestriumMod;
 import fr.amazonia.destriummod.block.ModOreBlock;
+import fr.amazonia.destriummod.block.plants.AmazonitePlants;
+import fr.amazonia.destriummod.block.plants.DestriumPlants;
+import fr.amazonia.destriummod.block.plants.XpPlants;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.fabricmc.fabric.api.tool.attribute.v1.FabricToolTags;
 import net.minecraft.block.Block;
 import net.minecraft.block.Material;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
+import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
@@ -88,9 +92,9 @@ public class ModBlocks {
 
 
     //Plants
-    //AMAZONITE_PLANTS
-    //DESTRIUM_PLANTS
-    //XP_PLANTS
+    public static final Block AMAZONITE_PLANTS = register("amazonite_plants", true, new AmazonitePlants(FabricBlockSettings.of(Material.PLANT).breakInstantly().ticksRandomly().noCollision().sounds(BlockSoundGroup.CROP)));
+    public static final Block DESTRIUM_PLANTS = register("destrium_plants", true, new DestriumPlants(FabricBlockSettings.of(Material.PLANT).breakInstantly().ticksRandomly().noCollision().sounds(BlockSoundGroup.CROP)));
+    public static final Block XP_PLANTS = register("xp_plants", true, new XpPlants(FabricBlockSettings.of(Material.PLANT).breakInstantly().ticksRandomly().noCollision().sounds(BlockSoundGroup.CROP)));
 
 
     //Flowers
