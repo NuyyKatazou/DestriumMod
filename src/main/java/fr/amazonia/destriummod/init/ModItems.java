@@ -1,6 +1,7 @@
 package fr.amazonia.destriummod.init;
 
 import fr.amazonia.destriummod.DestriumMod;
+import fr.amazonia.destriummod.item.InfinityWaterBucketItem;
 import fr.amazonia.destriummod.item.food.AmazoniteApple;
 import fr.amazonia.destriummod.item.food.DestriumApple;
 import fr.amazonia.destriummod.item.ingot.*;
@@ -16,6 +17,7 @@ import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
+import net.minecraft.fluid.Fluids;
 import net.minecraft.item.*;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
@@ -119,7 +121,7 @@ public class ModItems {
     //RESISTANCE_LAVA_BUCKET
     public static final Item RESISTANCE_STAR = register("resistance_star", new Item(new FabricItemSettings().group(DestriumMod.ITEM_TAB)));
 
-    //INFINITY_WATER_BUCKET
+    public static final Item INFINITY_WATER_BUCKET = register("infinity_water_bucket", new InfinityWaterBucketItem(Fluids.WATER, new FabricItemSettings().maxCount(1).group(DestriumMod.ITEM_TAB)));
 
 
     //Seeds
