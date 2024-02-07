@@ -9,7 +9,6 @@ import net.minecraft.item.ItemStack;
 
 public class InfinityWaterBucketItem extends BucketItem {
 
-	
 	public InfinityWaterBucketItem(java.util.function.Supplier<? extends Fluid> supplier, Item.Properties builder) {
 		super(supplier, builder);
 		this.fluidSupplier = supplier;
