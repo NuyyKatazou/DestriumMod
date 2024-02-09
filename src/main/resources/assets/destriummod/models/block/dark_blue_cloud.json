@@ -1,6 +1,6 @@
 {
-	"parent": "block/cube_all",
+	"parent": "minecraft:block/cube_all",
 	"textures": {
-	   "all": "destriummod:block/dark_blue_cloud"
+		"all": "destriummod:block/dark_blue_cloud"
 	}
 }
