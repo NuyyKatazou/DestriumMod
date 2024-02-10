@@ -1,9 +1,9 @@
 {
     "type": "minecraft:crafting_shaped",
     "pattern": [
-        "aa ",
-        " b ",
-        " b "
+        "aa",
+        " b",
+        " b"
     ],
     "key": {
         "a": {
@@ -14,7 +14,6 @@
         }
     },
     "result": {
-        "item": "destriummod:amazonite_hoes",
-        "count": 1
+        "item": "destriummod:amazonite_hoes"
     }
 }

@@ -1,9 +1,9 @@
 {
     "type": "minecraft:crafting_shaped",
     "pattern": [
-        "aa ",
-        "ab ",
-        " b "
+        "aa",
+        "ab",
+        " b"
     ],
     "key": {
         "a": {
@@ -14,7 +14,6 @@
         }
     },
     "result": {
-        "item": "destriummod:destrium_axe",
-        "count": 1
+        "item": "destriummod:destrium_axe"
     }
 }

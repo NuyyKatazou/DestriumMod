@@ -20,7 +20,6 @@
         }
     },
     "result": {
-        "item": "destriummod:spawners_pickaxe",
-        "count": 1
+        "item": "destriummod:spawners_pickaxe"
     }
 }

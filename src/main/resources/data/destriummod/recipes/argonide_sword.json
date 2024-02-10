@@ -1,9 +1,9 @@
 {
     "type": "minecraft:crafting_shaped",
     "pattern": [
-        " a ",
-        " a ",
-        " b "
+        "a",
+        "a",
+        "b"
     ],
     "key": {
         "a": {
@@ -14,7 +14,6 @@
         }
     },
     "result": {
-        "item": "destriummod:argonide_sword",
-        "count": 1
+        "item": "destriummod:argonide_sword"
     }
 }
