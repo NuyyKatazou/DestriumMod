@@ -46,7 +46,7 @@ public class OverworldTeleporter implements ITeleporter {
         ServerPlayerEntity player = (ServerPlayerEntity) entity;
         if (destWorld.dimension().equals(World.OVERWORLD)) {
   
-        } 
+        }
         player.teleportTo(destinationPos.getX() + 0.5D, destinationPos.getY() + 1D, destinationPos.getZ() + 0.5D);
         if (thisIsToOverworldDim) {
             boolean doSetBlock = true;
