@@ -30,7 +30,7 @@ public class HandlerEvent {
                 event.setDamageMultiplier(0);
             }
             //Cancel RenforcedAdventurerBoots FallDamage
-            if(entity.getItemBySlot(EquipmentSlot.FEET).getItem() == ModItems.RENFORCED_ADVENTURER_BOOTS.get()) {
+            if(entity.getItemBySlot(EquipmentSlot.FEET).getItem() == ModItems.REINFORCED_ADVENTURER_BOOTS.get()) {
                 event.setDamageMultiplier(0);
             }
         }

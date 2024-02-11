@@ -22,7 +22,6 @@ import fr.amazonia.destriummod.item.tools.SpawnersPickaxe;
 import fr.amazonia.destriummod.utils.ModArmorMaterial;
 import fr.amazonia.destriummod.utils.ModItemTiers;
 import fr.amazonia.destriummod.utils.ModRarity;
-import net.minecraft.ChatFormatting;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.EquipmentSlot;
@@ -34,7 +33,6 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.ItemNameBlockItem;
 import net.minecraft.world.item.PickaxeItem;
-import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.ShovelItem;
 import net.minecraft.world.item.SwordItem;
 import net.minecraft.world.level.material.Fluids;
@@ -97,7 +95,7 @@ public class ModItems {
 	public static final RegistryObject<Item> FEATHER_BOOTS = ITEMS.register("feather_boots", () -> new ArmorItem(ModArmorMaterial.DESTRIUM, EquipmentSlot.FEET, new Item.Properties().tab(DestriumMod.toolTab).rarity(ModRarity.DESTRIUM).fireResistant()));
 	public static final RegistryObject<Item> JUMP_BOOTS = ITEMS.register("jump_boots", () -> new JumpArmorBoots(ModArmorMaterial.DESTRIUM, EquipmentSlot.FEET, new Item.Properties().tab(DestriumMod.toolTab).rarity(ModRarity.DESTRIUM).fireResistant()));
 	public static final RegistryObject<Item> ADVENTURER_BOOTS = ITEMS.register("adventurer_boots", () -> new AdventurerArmorBoots(ModArmorMaterial.DESTRIUM, EquipmentSlot.FEET, new Item.Properties().tab(DestriumMod.toolTab).rarity(ModRarity.DESTRIUM).fireResistant()));
-	public static final RegistryObject<Item> RENFORCED_ADVENTURER_BOOTS = ITEMS.register("renforced_adventurer_boots", () -> new RenforcedAdventurerArmorBoots(ModArmorMaterial.AMAZONITE, EquipmentSlot.FEET, new Item.Properties().tab(DestriumMod.toolTab).rarity(ModRarity.AMAZONITE).fireResistant()));
+	public static final RegistryObject<Item> REINFORCED_ADVENTURER_BOOTS = ITEMS.register("reinforced_adventurer_boots", () -> new ReinforcedAdventurerArmorBoots(ModArmorMaterial.AMAZONITE, EquipmentSlot.FEET, new Item.Properties().tab(DestriumMod.toolTab).rarity(ModRarity.AMAZONITE).fireResistant()));
 
 	public static final RegistryObject<Item> NECKLACE = ITEMS.register("necklace", () -> new NecklaceArmor(ModArmorMaterial.NECKLACE, EquipmentSlot.CHEST, new Item.Properties().tab(DestriumMod.toolTab).setNoRepair().durability(-1).rarity(ModRarity.BASIC)));
 	public static final RegistryObject<Item> LUCKY_NECKLACE = ITEMS.register("lucky_necklace", () -> new LuckyNecklaceArmor(ModArmorMaterial.NECKLACE, EquipmentSlot.CHEST, new Item.Properties().tab(DestriumMod.toolTab).setNoRepair().durability(-1).rarity(ModRarity.DESTRIUM)));
