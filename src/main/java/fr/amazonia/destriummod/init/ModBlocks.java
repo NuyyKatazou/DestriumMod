@@ -3,6 +3,7 @@ package fr.amazonia.destriummod.init;
 import java.util.function.Supplier;
 
 import fr.amazonia.destriummod.DestriumMod;
+import fr.amazonia.destriummod.block.ModOreBlock;
 import fr.amazonia.destriummod.block.OverworldPortalBlocks;
 import fr.amazonia.destriummod.block.ParadisPortalBlocks;
 import fr.amazonia.destriummod.block.plants.AmazonitePlants;
@@ -51,12 +52,12 @@ public class ModBlocks {
 	public static final RegistryObject<Block> CLOUD2 = createBlock("cloud2", () -> new Block(BlockBehaviour.Properties.of(Material.CLAY).strength(2.5f, 25f).requiresCorrectToolForDrops()));
 
 	//(Ore)
-	public static final RegistryObject<Block> RANDOM_ORE = createBlock("random_ore", () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(5f, 100f).requiresCorrectToolForDrops()));
+	public static final RegistryObject<Block> RANDOM_ORE = createBlock("random_ore", () -> new ModOreBlock(BlockBehaviour.Properties.of(Material.STONE).strength(5f, 100f).requiresCorrectToolForDrops()));
 	public static final RegistryObject<Block> AMAZONITE_ORE = createBlock("amazonite_ore", () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(10f, 100f).requiresCorrectToolForDrops()));
 	public static final RegistryObject<Block> DESTRIUM_ORE = createBlock("destrium_ore", () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(6f, 50f).requiresCorrectToolForDrops()));
 	public static final RegistryObject<Block> ARGONIDE_ORE = createBlock("argonide_ore", () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(4f, 10f).requiresCorrectToolForDrops()));
 	public static final RegistryObject<Block> CRACKED_ARGONIDE_ORE = createBlock("cracked_argonide_ore", () -> new Block(BlockBehaviour.Properties.of(Material.CLAY).strength(4f, 25f).requiresCorrectToolForDrops()));
-	public static final RegistryObject<Block> REPAIR_ORE = createBlock("repair_ore", () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(4f, 50f).requiresCorrectToolForDrops()));
+	public static final RegistryObject<Block> REPAIR_ORE = createBlock("repair_ore", () -> new ModOreBlock(BlockBehaviour.Properties.of(Material.STONE).strength(4f, 50f).requiresCorrectToolForDrops()));
 
 
 	public static final RegistryObject<Block> AMAZONITE_BLOCK = createBlock("amazonite_block", () -> new Block(BlockBehaviour.Properties.of(Material.METAL).strength(25f, 1000f).requiresCorrectToolForDrops()));
@@ -81,7 +82,7 @@ public class ModBlocks {
 	public static final RegistryObject<Block> DIRT_COMPRESSED5 = createBlock("dirt_compressed5", () -> new Block(BlockBehaviour.Properties.of(Material.DIRT).strength(20.0F, 14.0F).requiresCorrectToolForDrops()));
 
 	//(Other)
-	public static final RegistryObject<Block> AMAZONITE_RELIQUE_BLOCK = createBlock("amazonite_relique_block", () -> new Block(BlockBehaviour.Properties.of(Material.METAL).strength(25.0F, 100.0F).requiresCorrectToolForDrops()));
+	public static final RegistryObject<Block> AMAZONITE_RELIQUE_BLOCK = createBlock("amazonite_relique_block", () -> new ModOreBlock(BlockBehaviour.Properties.of(Material.METAL).strength(25.0F, 100.0F).requiresCorrectToolForDrops()));
 	
 	
 	public static final RegistryObject<Block> BELOW_BLOCK = createBlock("below_block", () -> new Block(BlockBehaviour.Properties.of(Material.GLASS).strength(4.0F, 10.0F).requiresCorrectToolForDrops()));
