@@ -14,6 +14,9 @@ import net.minecraft.world.level.material.Material;
 import net.minecraftforge.common.util.ITeleporter;
 
 public class OverworldTeleporter implements ITeleporter {
+
+    public static int f = 0;
+
     public static BlockPos thisPos = BlockPos.ZERO;
     public static boolean thisIsToOverworldDim = true;
 
@@ -43,7 +46,7 @@ public class OverworldTeleporter implements ITeleporter {
         ServerPlayer player = (ServerPlayer) entity;
         if (destWorld.dimension().equals(Level.OVERWORLD)) {
   
-        } 
+        }
         player.teleportTo(destinationPos.getX() + 0.5D, destinationPos.getY() + 1D, destinationPos.getZ() + 0.5D);
         if (thisIsToOverworldDim) {
             boolean doSetBlock = true;
@@ -55,6 +58,7 @@ public class OverworldTeleporter implements ITeleporter {
             }
             if (doSetBlock) {
                 destWorld.setBlock(destinationPos, Blocks.DIRT.defaultBlockState(), 10);
+                f = 1;
             }
         }
         return entity;
