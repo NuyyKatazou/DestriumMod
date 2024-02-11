@@ -2,6 +2,7 @@ package fr.amazonia.destriummod.utils;
 
 import java.util.function.Supplier;
 
+import fr.amazonia.destriummod.DestriumMod;
 import fr.amazonia.destriummod.init.ModItems;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
@@ -68,7 +69,7 @@ public enum ModArmorMaterial implements ArmorMaterial {
 	   }
 
 	   public String getName() {
-	      return this.name;
+	      return DestriumMod.MODID + ":" + this.name;
 	   }
 
 	   public float getToughness() {
