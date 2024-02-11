@@ -48,7 +48,9 @@ public class ParadisTeleporter implements ITeleporter {
         if (destWorld.dimension().equals(DestriumMod.PARADIS_DIMENSION)) {
 
         }
-        player.addItem(new ItemStack(ModBlocks.OVERWORLD_PORTAL_BLOCK.get()));
+        if (!player.getInventory().contains(new ItemStack(ModBlocks.OVERWORLD_PORTAL_BLOCK.get()))) {
+            player.addItem(new ItemStack(ModBlocks.OVERWORLD_PORTAL_BLOCK.get()));
+        }
         player.teleportTo(destinationPos.getX() + 0.5D, destinationPos.getY() + 1D, destinationPos.getZ() + 0.5D);
         if (thisIsToParadisDim) {
             boolean doSetBlock = true;
