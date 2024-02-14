@@ -28,5 +28,5 @@ public class DestriumApple extends Item {
 		p_77624_3_.add(new TranslationTextComponent(this.getDescriptionId() + ".desc4").withStyle(TextFormatting.LIGHT_PURPLE));
 		p_77624_3_.add(new TranslationTextComponent(this.getDescriptionId() + ".desc5").withStyle(TextFormatting.DARK_PURPLE));
 		p_77624_3_.add(new TranslationTextComponent(this.getDescriptionId() + ".desc6").withStyle(TextFormatting.YELLOW));
-	   }
+	}
 }

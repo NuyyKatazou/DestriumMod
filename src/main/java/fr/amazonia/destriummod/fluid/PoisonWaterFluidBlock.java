@@ -30,12 +30,12 @@ public class PoisonWaterFluidBlock extends FlowingFluidBlock {
 
 	@Override
     public void neighborChanged(BlockState state, World world, BlockPos pos, Block block, BlockPos fromPos, boolean notify) {
-        if (this.receiveNeighborFluids(world, pos, state)) {
+        if (this.receiveNeighborFluids(world, pos)) {
             world.getLiquidTicks().scheduleTick(pos, state.getFluidState().getType(), this.getFluid().getTickDelay(world));
         }
     }
 	
-	private boolean receiveNeighborFluids(World world, BlockPos pos, BlockState state) {
+	private boolean receiveNeighborFluids(World world, BlockPos pos) {
         boolean flag = false;
 
         for (Direction direction : Direction.values()) {
@@ -59,7 +59,6 @@ public class PoisonWaterFluidBlock extends FlowingFluidBlock {
                 return false;
             }
         }
-
         return true;
     }
 

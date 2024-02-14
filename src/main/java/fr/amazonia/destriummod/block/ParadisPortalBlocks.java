@@ -19,7 +19,6 @@ public class ParadisPortalBlocks extends Block {
 		super(p_i48440_1_);
 	}
 
-	@SuppressWarnings("deprecation")
 	@Override
     public ActionResultType use(BlockState state, World worldIn, BlockPos pos, PlayerEntity player, Hand handIn, BlockRayTraceResult hit) {
         if (!worldIn.isClientSide()) {

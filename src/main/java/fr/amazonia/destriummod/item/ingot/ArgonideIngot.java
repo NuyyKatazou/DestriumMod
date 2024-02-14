@@ -21,9 +21,9 @@ public class ArgonideIngot extends Item {
 	}
 	
 	@OnlyIn(Dist.CLIENT)
-	   public void appendHoverText(ItemStack p_77624_1_, @Nullable World p_77624_2_, List<ITextComponent> p_77624_3_, ITooltipFlag p_77624_4_) {
-	      p_77624_3_.add(new TranslationTextComponent(this.getDescriptionId() + ".desc").withStyle(TextFormatting.DARK_BLUE));
-	      p_77624_3_.add(new TranslationTextComponent(this.getDescriptionId() + ".desc2").withStyle(TextFormatting.DARK_GREEN));
-	      p_77624_3_.add(new TranslationTextComponent(this.getDescriptionId() + ".desc3").withStyle(TextFormatting.GOLD).withStyle(TextFormatting.BOLD));
-	   }
+	public void appendHoverText(ItemStack p_77624_1_, @Nullable World p_77624_2_, List<ITextComponent> p_77624_3_, ITooltipFlag p_77624_4_) {
+		p_77624_3_.add(new TranslationTextComponent(this.getDescriptionId() + ".desc").withStyle(TextFormatting.DARK_BLUE));
+		p_77624_3_.add(new TranslationTextComponent(this.getDescriptionId() + ".desc2").withStyle(TextFormatting.DARK_GREEN));
+		p_77624_3_.add(new TranslationTextComponent(this.getDescriptionId() + ".desc3").withStyle(TextFormatting.GOLD).withStyle(TextFormatting.BOLD));
+	}
 }

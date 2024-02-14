@@ -1,28 +1,17 @@
 package fr.amazonia.destriummod.fluid;
 
-import java.util.Random;
-
 import fr.amazonia.destriummod.init.ModFluids;
 import fr.amazonia.destriummod.init.ModItems;
-import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.FlowingFluidBlock;
 import net.minecraft.fluid.Fluid;
 import net.minecraft.fluid.FluidState;
 import net.minecraft.item.Item;
-import net.minecraft.particles.IParticleData;
-import net.minecraft.particles.ParticleTypes;
 import net.minecraft.state.StateContainer;
 import net.minecraft.tags.FluidTags;
-import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.Direction;
-import net.minecraft.util.SoundCategory;
-import net.minecraft.util.SoundEvents;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockReader;
-import net.minecraft.world.IWorld;
-import net.minecraft.world.IWorldReader;
-import net.minecraft.world.World;
 import net.minecraftforge.fluids.ForgeFlowingFluid;
 
 public abstract class PoisonWaterFluid extends ForgeFlowingFluid {

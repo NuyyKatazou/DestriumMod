@@ -17,5 +17,4 @@ public class ModRarity {
     public static final Rarity SPECIAL = Rarity.create("special", TextFormatting.DARK_RED);
     public static final Rarity BASIC = Rarity.create("basic", TextFormatting.GRAY);
     public static final Rarity EXPERIENCE = Rarity.create("EXPERIENCE", TextFormatting.DARK_PURPLE);
-
 }
