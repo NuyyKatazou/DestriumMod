@@ -14,44 +14,44 @@
   "item.destriummod.emerald_nuggets": "Emerald Nugget",
   "item.destriummod.diamond_nuggets": "Diamond Nugget",
   "item.destriummod.netherite_nuggets": "Netherite Nugget",
-  
-  
+
+
   "item.destriummod.amazonite_stick": "Amazonite Stick",
   "item.destriummod.destrium_stick": "Destrium Stick",
   "item.destriummod.argonide_stick": "Argonide Stick",
-    
-  
+
+
   "item.destriummod.amazonite_sword": "Amazonite Sword",
   "item.destriummod.amazonite_pickaxe": "Amazonite Pickaxe",
   "item.destriummod.amazonite_axe": "Amazonite Axe",
   "item.destriummod.amazonite_shovel": "Amazonite Shovel",
   "item.destriummod.amazonite_hoes": "Amazonite Hoe",
-  
+
   "item.destriummod.destrium_sword": "Destrium Sword",
   "item.destriummod.destrium_pickaxe": "Destrium Pickaxe",
   "item.destriummod.destrium_axe": "Destrium Axe",
   "item.destriummod.destrium_shovel": "Destrium Shovel",
   "item.destriummod.destrium_hoes": "Destrium Hoe",
-  
+
   "item.destriummod.argonide_sword": "Argonide Sword",
   "item.destriummod.argonide_pickaxe": "Argonide Pickaxe",
   "item.destriummod.argonide_axe": "Argonide Axe",
   "item.destriummod.argonide_shovel": "Argonide Shovel",
   "item.destriummod.argonide_hoes": "Argonide Hoe",
-  
+
   "item.destriummod.spawners_pickaxe": "Spawners Pickaxe",
-  
-  
+
+
   "item.destriummod.amazonite_helmet": "Amazonite Helmet",
   "item.destriummod.amazonite_chestplate": "Amazonite Chestplate",
   "item.destriummod.amazonite_leggings": "Amazonite Leggings",
   "item.destriummod.amazonite_boots": "Amazonite Boots",
-  
+
   "item.destriummod.destrium_helmet": "Destrium Helmet",
   "item.destriummod.destrium_chestplate": "Destrium Chestplate",
   "item.destriummod.destrium_leggings": "Destrium Leggings",
   "item.destriummod.destrium_boots": "Destrium Boots",
-  
+
   "item.destriummod.argonide_helmet": "Argonide Helmet",
   "item.destriummod.argonide_chestplate": "Argonide Chestplate",
   "item.destriummod.argonide_leggings": "Argonide Leggings",
@@ -65,21 +65,21 @@
 
   "item.destriummod.necklace": "Necklace",
   "item.destriummod.lucky_necklace": "Lucky Necklace",
-  
-  
+
+
   "item.destriummod.amazonite_apple": "Amazonite Apple",
   "item.destriummod.destrium_apple": "Destrium Apple",
-  
-  
+
+
   "item.destriummod.amazonite_seeds": "Amazonite Seeds",
   "item.destriummod.destrium_seeds": "Destrium Seeds",
   "item.destriummod.xp_seeds": "Xp Seeds",
-  
-  
+
+
   "item.destriummod.golden_core": "Golden Core",
   "item.destriummod.compressed_golden": "Compressed Golden",
-  
-  
+
+
   "item.destriummod.iron_plate": "Iron Plate",
   "item.destriummod.gold_plate": "Gold Plate",
   "item.destriummod.diamond_plate": "Diamond Plate",
@@ -87,32 +87,32 @@
   "item.destriummod.argonide_plate": "Argonide Plate",
   "item.destriummod.destrium_plate": "Destrium Plate",
   "item.destriummod.amazonite_plate": "Amazonite Plate",
-  
-  
+
+
   "item.destriummod.infinity_water_bucket": "Infinity Water Bucket",
-  
+
   "item.destriummod.poison_water_bucket": "Poisoned Water Bucket",
   "item.destriummod.poison_star": "Poison Star",
-  
+
   "item.destriummod.resistance_lava_bucket": "Resistance Lava Bucket",
   "item.destriummod.resistance_star": "Resistance Star",
- 
-  
-  
-  
+
+
+
+
   "block.destriummod.amazonite_block": "Amazonite Block",
   "block.destriummod.fake_amazonite_block": "Amazonite Block",
   "block.destriummod.destrium_block": "Destrium Block",
   "block.destriummod.argonide_block": "Argonide Block",
-  
+
   "block.destriummod.random_ore": "Random Ore",
   "block.destriummod.amazonite_ore": "Amazonite Ore",
   "block.destriummod.destrium_ore": "Destrium Ore",
   "block.destriummod.argonide_ore": "Argonide Ore",
   "block.destriummod.cracked_argonide_ore": "Cracked Argonide Ore",
   "block.destriummod.repair_ore": "Repair Ore",
-  
-  
+
+
   "block.destriummod.cobblestone_compressed1": "Compressed Cobblestone",
   "block.destriummod.cobblestone_compressed2": "Compressed Cobblestone Two Times",
   "block.destriummod.cobblestone_compressed3": "Compressed Cobblestone Three Times",
@@ -121,17 +121,17 @@
   "block.destriummod.cobblestone_compressed6": "Compressed Cobblestone Six Times",
   "block.destriummod.cobblestone_compressed7": "Compressed Cobblestone Seven Times",
   "block.destriummod.cobblestone_compressed8": "Compressed Cobblestone Eight Times",
-  
+
   "block.destriummod.dirt_compressed1": "Compressed Dirt",
   "block.destriummod.dirt_compressed2": "Compressed Dirt Two Times",
   "block.destriummod.dirt_compressed3": "Compressed Dirt Three Times",
   "block.destriummod.dirt_compressed4": "Compressed Dirt Four Times",
   "block.destriummod.dirt_compressed5": "Compressed Dirt Five Times",
-  
+
   "block.destriummod.paradis_portal_block": "Paradis Portal Block",
   "block.destriummod.overworld_portal_block": "Overworld Portal Block",
-  
-  
+
+
   "block.destriummod.cloud": "Cloud",
   "block.destriummod.black_cloud": "Black Cloud",
   "block.destriummod.blue_cloud": "Blue Cloud",
@@ -157,16 +157,16 @@
   "block.destriummod.yellow_cloud": "Yellow Cloud",
   "block.destriummod.cloud2": "Cloud",
   "block.destriummod.cracked_cloud": "Cracked Cloud",
-  
-  
+
+
   "block.destriummod.amazonite_plants": "Amazonite Plants",
   "block.destriummod.destrium_plants": "Destrium Plants",
   "block.destriummod.xp_plants": "Xp Plants",
-  
-  
+
+
   "block.destriummod.amazonite_relique_block": "Amazonite Relique Block",
-  
-  
+
+
   "block.destriummod.below_block": "Below Block",
 
 
@@ -174,10 +174,10 @@
   "block.destriummod.clover_two": "Four Leaf Clover",
 
 
-  
-  
+
+
   "fluid.destriummod.poison_water": "Poisoned Water",
-  
+
 
 
 
@@ -186,7 +186,7 @@
   "itemGroup.destriummod.itemtab": "Items Tabs",
   "itemGroup.destriummod.tooltab": "Tools Ands Armors Tabs",
   "itemGroup.destriummod.foodtab": "Foods Tabs",
-  
+
   
   
   
