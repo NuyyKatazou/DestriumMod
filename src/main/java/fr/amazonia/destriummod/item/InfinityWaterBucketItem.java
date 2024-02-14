@@ -97,8 +97,7 @@ public class InfinityWaterBucketItem extends BucketItem {
 
 	public Fluid getFluid() { return fluidSupplier.get(); }
 
-	private boolean canBlockContainFluid(Level worldIn, BlockPos posIn, BlockState blockstate)
-	{
+	private boolean canBlockContainFluid(Level worldIn, BlockPos posIn, BlockState blockstate) {
 		return blockstate.getBlock() instanceof LiquidBlockContainer && ((LiquidBlockContainer)blockstate.getBlock()).canPlaceLiquid(worldIn, posIn, blockstate, this.content);
 	}
 }

@@ -11,6 +11,7 @@ import net.minecraftforge.event.world.BiomeLoadingEvent;
 import java.util.List;
 
 public class ModOreGeneration {
+
     public static void generateOres(final BiomeLoadingEvent event) {
 
         List<Holder<PlacedFeature>> base =
