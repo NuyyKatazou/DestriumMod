@@ -45,66 +45,10 @@ public abstract class PoisonWaterFluid extends ForgeFlowingFluid {
     public Item getBucket() {
         return ModItems.POISON_WATER_BUCKET.get();
     }
-    
-    @Override
-    public void animateTick(World worldIn, BlockPos pos, FluidState state, Random random) {
-        if (!state.isSource() && !state.getValue(FALLING)) {
-            if (random.nextInt(64) == 0) {
-                worldIn.playLocalSound(
-                        (double) pos.getX() + 0.5D,
-                        (double) pos.getY() + 0.5D,
-                        (double) pos.getZ() + 0.5D,
-                        SoundEvents.WATER_AMBIENT,
-                        SoundCategory.BLOCKS,
-                        random.nextFloat() * 0.25F + 0.75F,
-                        random.nextFloat() + 0.5F, false);
-            }
-        } else if (random.nextInt(10) == 0) {
-            worldIn.addParticle(ParticleTypes.UNDERWATER,
-                    (double) pos.getX() + (double) random.nextFloat(),
-                    (double) pos.getY() + (double) random.nextFloat(),
-                    (double) pos.getZ() + (double) random.nextFloat(),
-                    0.0D,
-                    0.0D,
-                    0.0D);
-        }
-    }
-    
-    @Override
-    public IParticleData getDripParticle() {
-        return ParticleTypes.DRIPPING_WATER;
-    }
-    
-    @Override
-    protected boolean isRandomlyTicking() {
-        return true;
-    }
-    
-    @Override
-    public int getTickDelay(IWorldReader world) {
-        return 5;
-    }
 
     @Override
     protected float getExplosionResistance() {
         return 100.0F;
-    }
-    
-    @SuppressWarnings("deprecation")
-	@Override
-    protected void beforeDestroyingBlock(IWorld world, BlockPos pos, BlockState state) {
-        TileEntity blockEntity = state.getBlock().isEntityBlock() ? world.getBlockEntity(pos) : null;
-        Block.dropResources(state, world, pos, blockEntity);
-    }
-    
-    @Override
-    public int getSlopeFindDistance(IWorldReader world) {
-        return 4;
-    }
-
-    @Override
-    public int getDropOff(IWorldReader world) {
-        return 1;
     }
 
     @Override
