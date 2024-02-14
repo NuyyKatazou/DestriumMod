@@ -106,14 +106,14 @@ public class DestriumMod {
 		}
 	};
 
-	public static final CreativeModeTab toolTab = new CreativeModeTab(MODID + ".tooltab") {
+	public static final CreativeModeTab ToolTab = new CreativeModeTab(MODID + ".tooltab") {
 		@Override
 		public ItemStack makeIcon() {
 			return new ItemStack(ModItems.AMAZONITE_PICKAXE.get());
 		}
 	};
 
-	public static final CreativeModeTab foodTab = new CreativeModeTab(MODID + ".foodtab") {
+	public static final CreativeModeTab FoodTab = new CreativeModeTab(MODID + ".foodtab") {
 		@Override
 		@OnlyIn(Dist.CLIENT)
 		public ItemStack makeIcon() {
