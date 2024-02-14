@@ -14,7 +14,7 @@ import net.minecraft.world.item.TooltipFlag;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 
-public class AmazoniteApple extends Item{
+public class AmazoniteApple extends Item {
 
 	public AmazoniteApple(Properties properties) {
 		super(properties);
@@ -28,5 +28,5 @@ public class AmazoniteApple extends Item{
 		p_42990_.add(new TranslatableComponent(this.getDescriptionId() + ".desc4").withStyle(ChatFormatting.LIGHT_PURPLE));
 		p_42990_.add(new TranslatableComponent(this.getDescriptionId() + ".desc5").withStyle(ChatFormatting.DARK_PURPLE));
 		p_42990_.add(new TranslatableComponent(this.getDescriptionId() + ".desc6").withStyle(ChatFormatting.YELLOW));
-	   }
 	}
+}

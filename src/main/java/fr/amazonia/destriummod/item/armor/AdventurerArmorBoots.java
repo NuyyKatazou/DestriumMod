@@ -15,6 +15,7 @@ public class AdventurerArmorBoots extends ArmorItem {
     public AdventurerArmorBoots(ArmorMaterial materialIn, EquipmentSlot slot, Properties properties) {
         super(materialIn, slot, properties);
     }
+
     @Override
     public void onArmorTick(ItemStack itemstack, Level world, Player player) {
         if(player.getItemBySlot(EquipmentSlot.FEET).getItem() == ModItems.ADVENTURER_BOOTS.get()) {

@@ -17,6 +17,7 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.material.FlowingFluid;
 
 public class PoisonWaterFluidBlock extends LiquidBlock {
+
 	public PoisonWaterFluidBlock(Supplier<? extends FlowingFluid> supplier, Properties p_i48368_1_) {
 		super(supplier, p_i48368_1_);
 	}
@@ -29,18 +30,16 @@ public class PoisonWaterFluidBlock extends LiquidBlock {
 
 	@Override
 	public void neighborChanged(BlockState p_54709_, Level p_54710_, BlockPos p_54711_, Block p_54712_, BlockPos p_54713_, boolean p_54714_) {
-	      if (this.shouldSpreadLiquid(p_54710_, p_54711_, p_54709_)) {
+	      if (this.shouldSpreadLiquid(p_54710_, p_54711_)) {
 	         p_54710_.scheduleTick(p_54711_, p_54709_.getFluidState().getType(), this.getFluid().getTickDelay(p_54710_));
 	      }
+	}
 
-	   }
-	
-	@SuppressWarnings("deprecation")
-	private boolean shouldSpreadLiquid(Level p_54697_, BlockPos p_54698_, BlockState p_54699_) {
-	      if (this.getFluid().is(FluidTags.LAVA)) {
-	         boolean flag = p_54697_.getBlockState(p_54698_.below()).is(Blocks.SOUL_SOIL);
+	private boolean shouldSpreadLiquid(Level p_54697_, BlockPos p_54698_) {
+		if (this.getFluid().is(FluidTags.LAVA)) {
+	    	boolean flag = p_54697_.getBlockState(p_54698_.below()).is(Blocks.SOUL_SOIL);
 
-	         for(Direction direction : POSSIBLE_FLOW_DIRECTIONS) {
+	    	for(Direction direction : POSSIBLE_FLOW_DIRECTIONS) {
 	            BlockPos blockpos = p_54698_.relative(direction.getOpposite());
 	            if (p_54697_.getFluidState(blockpos).is(FluidTags.WATER)) {
 	               Block block = p_54697_.getFluidState(p_54698_).isSource() ? Blocks.OBSIDIAN : Blocks.COBBLESTONE;
@@ -54,11 +53,10 @@ public class PoisonWaterFluidBlock extends LiquidBlock {
 	               this.fizz(p_54697_, p_54698_);
 	               return false;
 	            }
-	         }
-	      }
-
-	      return true;
-	   }
+	        }
+	    }
+	    return true;
+	}
 	
 	private void fizz(LevelAccessor p_54701_, BlockPos p_54702_) {
 	      p_54701_.levelEvent(1501, p_54702_, 0);

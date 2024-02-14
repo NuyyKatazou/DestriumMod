@@ -14,7 +14,7 @@ import net.minecraft.world.level.Level;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 
-public class ArgonideIngot extends Item{
+public class ArgonideIngot extends Item {
 
 	public ArgonideIngot(Properties properties) {
 		super(properties);
@@ -25,5 +25,5 @@ public class ArgonideIngot extends Item{
 		p_42990_.add(new TranslatableComponent(this.getDescriptionId() + ".desc").withStyle(ChatFormatting.DARK_BLUE));
 		p_42990_.add(new TranslatableComponent(this.getDescriptionId() + ".desc2").withStyle(ChatFormatting.DARK_GREEN));
 		p_42990_.add(new TranslatableComponent(this.getDescriptionId() + ".desc3").withStyle(ChatFormatting.GOLD).withStyle(ChatFormatting.BOLD));
-	   }
 	}
+}

@@ -25,25 +25,18 @@ import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.HitResult;
 
 public class InfinityWaterBucketItem extends BucketItem {
-	private final Fluid content;
 
-	@Deprecated
-	public InfinityWaterBucketItem(Fluid p_i49025_1_, Item.Properties p_i49025_2_) {
-	   super(p_i49025_1_, p_i49025_2_);
-	   this.content = p_i49025_1_;
-	   this.fluidSupplier = p_i49025_1_.delegate;
-	   }
+	private final Fluid content;
 
 	public InfinityWaterBucketItem(java.util.function.Supplier<? extends Fluid> supplier, Item.Properties builder) {
 	   super(supplier, builder);
 	   this.content = null;
 	   this.fluidSupplier = supplier;
-	   }
+	}
 	public static ItemStack getEmptySuccessItem(ItemStack p_40700_, Player p_40701_) {
 		return !p_40701_.getAbilities().instabuild ? new ItemStack(ModItems.INFINITY_WATER_BUCKET.get()) : p_40700_;
-		}
+	}
 
-	@SuppressWarnings("deprecation")
 	public InteractionResultHolder<ItemStack> use(Level p_40703_, Player p_40704_, InteractionHand p_40705_) {
 		      ItemStack itemstack = p_40704_.getItemInHand(p_40705_);
 		      BlockHitResult blockhitresult = getPlayerPOVHitResult(p_40703_, p_40704_, this.content == Fluids.EMPTY ? ClipContext.Fluid.SOURCE_ONLY : ClipContext.Fluid.NONE);
@@ -99,11 +92,13 @@ public class InfinityWaterBucketItem extends BucketItem {
 		         }
 		      }
 		   }
+
 	private final java.util.function.Supplier<? extends Fluid> fluidSupplier;
+
 	public Fluid getFluid() { return fluidSupplier.get(); }
 
 	private boolean canBlockContainFluid(Level worldIn, BlockPos posIn, BlockState blockstate)
-	   {
-	      return blockstate.getBlock() instanceof LiquidBlockContainer && ((LiquidBlockContainer)blockstate.getBlock()).canPlaceLiquid(worldIn, posIn, blockstate, this.content);
-	   }
+	{
+		return blockstate.getBlock() instanceof LiquidBlockContainer && ((LiquidBlockContainer)blockstate.getBlock()).canPlaceLiquid(worldIn, posIn, blockstate, this.content);
+	}
 }

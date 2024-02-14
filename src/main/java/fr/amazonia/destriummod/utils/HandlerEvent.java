@@ -1,6 +1,5 @@
 package fr.amazonia.destriummod.utils;
 
-import fr.amazonia.destriummod.block.OverworldPortalBlocks;
 import fr.amazonia.destriummod.init.ModItems;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.entity.EquipmentSlot;
@@ -13,8 +12,6 @@ import net.minecraftforge.event.entity.living.LivingHurtEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 
 public class HandlerEvent {
-
-    public static boolean isDamaged = false;
 
     @SubscribeEvent
     public void onLivingHurt(LivingHurtEvent event) {
@@ -47,6 +44,7 @@ public class HandlerEvent {
             }
         }
     }
+
     @SubscribeEvent
     public void AnvilUse(AnvilUpdateEvent event) {
         Item left = event.getLeft().getItem();

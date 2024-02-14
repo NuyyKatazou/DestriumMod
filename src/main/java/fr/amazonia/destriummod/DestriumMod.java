@@ -87,7 +87,6 @@ public class DestriumMod {
 	}
 
 	private void serverSetup(FMLDedicatedServerSetupEvent event) {
-		
 	}
 
 	//CreativeTabs

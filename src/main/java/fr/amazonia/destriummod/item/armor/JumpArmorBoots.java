@@ -15,6 +15,7 @@ public class JumpArmorBoots extends ArmorItem {
     public JumpArmorBoots(ArmorMaterial materialIn, EquipmentSlot slot, Properties properties) {
         super(materialIn, slot, properties);
     }
+
     @Override
     public void onArmorTick(ItemStack itemstack, Level world, Player player) {
         if(player.getItemBySlot(EquipmentSlot.FEET).getItem() == ModItems.JUMP_BOOTS.get()) {

@@ -14,7 +14,7 @@ import net.minecraft.world.level.Level;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 
-public class DestriumApple extends Item{
+public class DestriumApple extends Item {
 
 	public DestriumApple(Properties properties) {
 		super(properties);
@@ -28,5 +28,5 @@ public class DestriumApple extends Item{
 		p_42990_.add(new TranslatableComponent(this.getDescriptionId() + ".desc4").withStyle(ChatFormatting.LIGHT_PURPLE));
 		p_42990_.add(new TranslatableComponent(this.getDescriptionId() + ".desc5").withStyle(ChatFormatting.DARK_PURPLE));
 		p_42990_.add(new TranslatableComponent(this.getDescriptionId() + ".desc6").withStyle(ChatFormatting.YELLOW));
-	   }
 	}
+}

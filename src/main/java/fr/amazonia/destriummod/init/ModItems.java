@@ -45,9 +45,7 @@ public class ModItems {
 	public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, DestriumMod.MODID);
 
 	//Foods
-	@SuppressWarnings("deprecation")
 	public static final FoodProperties AMAZONITEAPPLE = (new FoodProperties.Builder()).nutrition(20).saturationMod(2.6F).effect(new MobEffectInstance(MobEffects.HEAL, 1, 10), 1.0F).effect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 800, 3), 1.0F).effect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 24000, 3), 1.0F).effect(new MobEffectInstance(MobEffects.HEALTH_BOOST, 12000, 4), 1.0F).effect(new MobEffectInstance(MobEffects.REGENERATION, 3000, 4), 1.0F).effect(new MobEffectInstance(MobEffects.ABSORPTION, 12000, 9), 1.0F).alwaysEat().build();
-	@SuppressWarnings("deprecation")
 	public static final FoodProperties DESTRIUMAPPLE = (new FoodProperties.Builder()).nutrition(10).saturationMod(1.3F).effect(new MobEffectInstance(MobEffects.HEAL, 1, 5), 1.0F).effect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 400, 2), 1.0F).effect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 12000, 1), 1.0F).effect(new MobEffectInstance(MobEffects.HEALTH_BOOST, 6000, 1), 1.0F).effect(new MobEffectInstance(MobEffects.REGENERATION, 900, 2), 1.0F).effect(new MobEffectInstance(MobEffects.ABSORPTION, 6000, 4), 1.0F).alwaysEat().build();
 	
 	public static final RegistryObject<Item> DESTRIUM_APPLE = ITEMS.register("destrium_apple", () -> new DestriumApple(new Item.Properties().tab(DestriumMod.foodTab).rarity(ModRarity.DESTRIUM).food(ModItems.DESTRIUMAPPLE).fireResistant()));
@@ -137,10 +135,10 @@ public class ModItems {
 	public static final RegistryObject<Item> AMAZONITE_PLATE = ITEMS.register("amazonite_plate", () -> new Item(new Item.Properties().tab(DestriumMod.ItemTab).rarity(ModRarity.AMAZONITE)));
 
 	//(Fluid)
-	public static final RegistryObject<Item> POISON_WATER_BUCKET = ITEMS.register("poison_water_bucket", () -> new BucketItem(() -> ModFluids.POISON_WATER_FLUID.get(), new Item.Properties().stacksTo(1).tab(DestriumMod.ItemTab).rarity(ModRarity.AMAZONITE)));
+	public static final RegistryObject<Item> POISON_WATER_BUCKET = ITEMS.register("poison_water_bucket", () -> new BucketItem(ModFluids.POISON_WATER_FLUID, new Item.Properties().stacksTo(1).tab(DestriumMod.ItemTab).rarity(ModRarity.AMAZONITE)));
 	public static final RegistryObject<Item> POISON_STAR = ITEMS.register("poison_star", () -> new Item(new Item.Properties().tab(DestriumMod.ItemTab).rarity(ModRarity.RED)));
 	
-	public static final RegistryObject<Item> RESISTANCE_LAVA_BUCKET = ITEMS.register("resistance_lava_bucket", () -> new BucketItem(() -> ModFluids.RESISTANCE_LAVA_FLUID.get(), new Item.Properties().stacksTo(1).tab(DestriumMod.ItemTab).rarity(ModRarity.ARGONIDE)));
+	public static final RegistryObject<Item> RESISTANCE_LAVA_BUCKET = ITEMS.register("resistance_lava_bucket", () -> new BucketItem(ModFluids.RESISTANCE_LAVA_FLUID, new Item.Properties().stacksTo(1).tab(DestriumMod.ItemTab).rarity(ModRarity.ARGONIDE)));
 	public static final RegistryObject<Item> RESISTANCE_STAR = ITEMS.register("resistance_star", () -> new Item(new Item.Properties().tab(DestriumMod.ItemTab).rarity(ModRarity.YELLOW)));
 	
 	public static final RegistryObject<Item> INFINITY_WATER_BUCKET = ITEMS.register("infinity_water_bucket", () -> new InfinityWaterBucketItem(() -> Fluids.WATER, (new Item.Properties()).stacksTo(1).tab(DestriumMod.ItemTab).rarity(ModRarity.SPECIAL)));

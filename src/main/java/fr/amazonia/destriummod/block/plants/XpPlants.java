@@ -34,4 +34,3 @@ public class XpPlants extends CropBlock {
         return false;
     }
 }
-

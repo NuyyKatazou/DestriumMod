@@ -14,7 +14,7 @@ import net.minecraft.world.level.Level;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 
-public class DestriumIngot extends Item{
+public class DestriumIngot extends Item {
 
 	public DestriumIngot(Properties properties) {
 		super(properties);
@@ -25,6 +25,5 @@ public class DestriumIngot extends Item{
 		p_42990_.add(new TranslatableComponent(this.getDescriptionId() + ".desc").withStyle(ChatFormatting.DARK_BLUE));
 		p_42990_.add(new TranslatableComponent(this.getDescriptionId() + ".desc2").withStyle(ChatFormatting.DARK_GREEN).withStyle(ChatFormatting.BOLD));
 		p_42990_.add(new TranslatableComponent(this.getDescriptionId() + ".desc3").withStyle(ChatFormatting.GOLD));
-	   }
 	}
-
+}

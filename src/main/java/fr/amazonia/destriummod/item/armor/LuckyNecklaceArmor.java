@@ -12,9 +12,11 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 
 public class LuckyNecklaceArmor extends ArmorItem {
+
     public LuckyNecklaceArmor(ArmorMaterial materialIn, EquipmentSlot slot, Item.Properties properties) {
         super(materialIn, slot, properties);
     }
+
     @Override
     public void onArmorTick(ItemStack itemstack, Level world, Player player) {
         if(player.getItemBySlot(EquipmentSlot.CHEST).getItem() == ModItems.LUCKY_NECKLACE.get()) {

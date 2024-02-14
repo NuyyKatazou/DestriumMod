@@ -15,7 +15,7 @@ import net.minecraft.world.level.Level;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 
-public class SpawnersPickaxe extends PickaxeItem{
+public class SpawnersPickaxe extends PickaxeItem {
 
 	public SpawnersPickaxe(Tier p_i48478_1_, int p_i48478_2_, float p_i48478_3_, Properties p_i48478_4_) {
 		super(p_i48478_1_, p_i48478_2_, p_i48478_3_, p_i48478_4_);
@@ -27,5 +27,5 @@ public class SpawnersPickaxe extends PickaxeItem{
 		p_42990_.add(new TranslatableComponent(this.getDescriptionId() + ".desc2").withStyle(ChatFormatting.DARK_AQUA));
 		p_42990_.add(new TranslatableComponent(this.getDescriptionId() + ".desc3").withStyle(ChatFormatting.DARK_AQUA));
 		p_42990_.add(new TranslatableComponent(this.getDescriptionId() + ".desc4").withStyle(ChatFormatting.DARK_AQUA));
-	   }
+	}
 }
