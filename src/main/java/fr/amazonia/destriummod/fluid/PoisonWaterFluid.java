@@ -85,7 +85,7 @@ public abstract class PoisonWaterFluid extends ForgeFlowingFluid {
 
         @Override
         protected boolean canConvertToSource() {
-            return true;
+            return false;
         }
     }
     public static class Source extends PoisonWaterFluid {
