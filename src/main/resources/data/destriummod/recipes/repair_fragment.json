@@ -2,7 +2,7 @@
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
         {
-            "item": "destriummod:repair_ingot"
+            "item": "destriummod:repair_gem"
         }
     ],
     "result": {
