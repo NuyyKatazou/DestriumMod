@@ -49,7 +49,11 @@ public class ParadisTeleporter implements ITeleporter {
 
         }
         if (!player.inventory.contains(new ItemStack(ModBlocks.OVERWORLD_PORTAL_BLOCK.get()))) {
-            player.addItem(new ItemStack(ModBlocks.OVERWORLD_PORTAL_BLOCK.get()));
+            if (player.inventory.getFreeSlot() != -1) {
+                player.addItem(new ItemStack(ModBlocks.OVERWORLD_PORTAL_BLOCK.get()));
+            } else {
+                player.drop(new ItemStack(ModBlocks.OVERWORLD_PORTAL_BLOCK.get()), true);
+            }
         }
         player.teleportTo(destinationPos.getX() + 0.5D, destinationPos.getY() + 1D, destinationPos.getZ() + 0.5D);
         if (thisIsToParadisDim) {
