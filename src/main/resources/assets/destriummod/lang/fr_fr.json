@@ -191,7 +191,7 @@
   
   
   
-  "item.destriummod.amazonite_leggings.desc": "Résistance Au Feu",
+  "item.destriummod.amazonite_leggings.desc": "Résistance au Feu",
   "item.destriummod.amazonite_boots.desc": "Vitesse Deux",
   "item.destriummod.amazonite_chestplate.desc": "Résistance",
   "item.destriummod.amazonite_helmet.desc": "Invisibilité",
@@ -215,9 +215,9 @@
   "item.destriummod.repair_gem.desc": "Utilisé pour réparer les items et autres",
   
   
-  "item.destriummod.amazonite_stick.desc": "Utilisé pour craft les Outils En Amazonite",
-  "item.destriummod.destrium_stick.desc": "Utilisé pour craft les Outils En Destrium",
-  "item.destriummod.argonide_stick.desc": "Utilisé pour craft les Outils En Argonide",
+  "item.destriummod.amazonite_stick.desc": "Utilisé pour craft les Outils en Amazonite",
+  "item.destriummod.destrium_stick.desc": "Utilisé pour craft les Outils en Destrium",
+  "item.destriummod.argonide_stick.desc": "Utilisé pour craft les Outils en Argonide",
 
 
   "item.destriummod.destrium_apple.desc": "Soigne Dix Coeurs",
