@@ -73,7 +73,7 @@
   
   "item.destriummod.amazonite_seeds": "Graine d'Amazonite",
   "item.destriummod.destrium_seeds": "Graine de Destrium",
-  "item.destriummod.xp_seeds": "Graine d'Xp",
+  "item.destriummod.xp_seeds": "Graine d'Experience",
   
   
   "item.destriummod.golden_core": "Noyau en Or",
@@ -161,7 +161,7 @@
   
   "block.destriummod.amazonite_plants": "Plantation d'Amazonite",
   "block.destriummod.destrium_plants": "Plantation de Destrium",
-  "block.destriummod.xp_plants": "Plantation d'Xp",
+  "block.destriummod.xp_plants": "Plantation d'Experience",
   
   
   "block.destriummod.amazonite_relique_block": "Bloc de Relique en Amazonite",
