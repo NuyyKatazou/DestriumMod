@@ -14,7 +14,7 @@
           "Name": "minecraft:air"
         },
         "decor_state": {
-          "Name": "destriummod:amazonite_ore"
+          "Name": "destriummod:paradis_amazonite_ore"
         },
         "stem_state": {
           "Name": "destriummod:cloud",
@@ -23,7 +23,7 @@
           }
         },
         "valid_base_block": {
-          "Name": "destriummod:destrium_ore"
+          "Name": "destriummod:paradis_destrium_ore"
         },
         "planted": false
       }

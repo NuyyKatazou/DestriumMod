@@ -14,7 +14,7 @@
           "Name": "minecraft:air"
         },
         "decor_state": {
-          "Name": "destriummod:destrium_ore"
+          "Name": "destriummod:paradis_destrium_ore"
         },
         "stem_state": {
           "Name": "destriummod:cloud",
