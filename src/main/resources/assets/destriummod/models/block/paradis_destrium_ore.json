@@ -1,6 +1,6 @@
 {
 	"parent": "minecraft:block/cube_all",
 	"textures": {
-		"all": "destriummod:block/argonide_ore"
+		"all": "destriummod:block/paradis_destrium_ore"
 	}
 }
