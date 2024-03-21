@@ -76,10 +76,10 @@ public class ModItems {
 
 
 	//Items (Mineral)
-	public static final RegistryObject<Item> AMAZONITE_CRUMB = ITEMS.register("amazonite_crumb", () -> new AmazoniteItems(new Item.Properties().rarity(ModRarity.AMAZONITE).fireResistant()));
-	public static final RegistryObject<Item> AMAZONITE_DUST = ITEMS.register("amazonite_dust", () -> new AmazoniteItems(new Item.Properties().rarity(ModRarity.AMAZONITE).fireResistant()));
-	public static final RegistryObject<Item> AMAZONITE_FRAGMENT = ITEMS.register("amazonite_fragment", () -> new AmazoniteItems(new Item.Properties().rarity(ModRarity.AMAZONITE).fireResistant()));
-	public static final RegistryObject<Item> AMAZONITE_NUGGETS = ITEMS.register("amazonite_nuggets", () -> new AmazoniteItems(new Item.Properties().rarity(ModRarity.AMAZONITE).fireResistant()));
+	public static final RegistryObject<Item> AMAZONITE_CRUMB = ITEMS.register("amazonite_crumb", () -> new Item(new Item.Properties().rarity(ModRarity.AMAZONITE).fireResistant()));
+	public static final RegistryObject<Item> AMAZONITE_DUST = ITEMS.register("amazonite_dust", () -> new Item(new Item.Properties().rarity(ModRarity.AMAZONITE).fireResistant()));
+	public static final RegistryObject<Item> AMAZONITE_FRAGMENT = ITEMS.register("amazonite_fragment", () -> new Item(new Item.Properties().rarity(ModRarity.AMAZONITE).fireResistant()));
+	public static final RegistryObject<Item> AMAZONITE_NUGGETS = ITEMS.register("amazonite_nuggets", () -> new Item(new Item.Properties().rarity(ModRarity.AMAZONITE).fireResistant()));
 	public static final RegistryObject<Item> AMAZONITE_INGOT = ITEMS.register("amazonite_ingot", () -> new AmazoniteIngot(new Item.Properties().rarity(ModRarity.AMAZONITE).fireResistant()));
 	public static final RegistryObject<Item> DESTRIUM_NUGGETS = ITEMS.register("destrium_nuggets", () -> new DestriumNuggets(new Item.Properties().rarity(ModRarity.DESTRIUM).fireResistant()));
 	public static final RegistryObject<Item> DESTRIUM_INGOT = ITEMS.register("destrium_ingot", () -> new DestriumIngot(new Item.Properties().rarity(ModRarity.DESTRIUM).fireResistant()));
