@@ -1,7 +1,6 @@
 {
     "type": "minecraft:crafting_shaped",
     "pattern": [
-        "   ",
         "a a",
         "a a"
     ],
@@ -11,7 +10,6 @@
         }
     },
     "result": {
-        "item": "destriummod:destrium_boots",
-        "count": 1
+        "item": "destriummod:destrium_boots"
     }
 }

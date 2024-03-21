@@ -3,10 +3,7 @@
     "ingredient": {
         "item": "destriummod:amazonite_ore"
     },
-    "result": {
-        "item": "destriummod:amazonite_crumb",
-        "count": 3
-    },
+    "result": "destriummod:amazonite_crumb",
     "experience": 100,
     "cookingtime": 5000
 }

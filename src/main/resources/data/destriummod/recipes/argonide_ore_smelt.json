@@ -3,10 +3,7 @@
     "ingredient": {
         "item": "destriummod:argonide_ore"
     },
-    "result": {
-        "item": "destriummod:argonide_nuggets",
-        "count": 2
-    },
+    "result": "destriummod:argonide_nuggets",
     "experience": 5,
     "cookingtime": 100
 }

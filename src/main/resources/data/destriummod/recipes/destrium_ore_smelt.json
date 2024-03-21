@@ -3,10 +3,7 @@
     "ingredient": {
         "item": "destriummod:destrium_ore"
     },
-    "result": {
-        "item": "destriummod:destrium_nuggets",
-        "count": 2
-    },
+    "result": "destriummod:destrium_nuggets",
     "experience": 25,
     "cookingtime": 1000
 }

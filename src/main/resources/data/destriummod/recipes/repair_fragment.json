@@ -1,15 +1,10 @@
 {
-    "type": "minecraft:crafting_shaped",
-    "pattern": [
-        "   ",
-        " # ",
-        "   "
-    ],
-    "key": {
-        "#": {
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
             "item": "destriummod:repair_ingot"
         }
-    },
+    ],
     "result": {
         "item": "destriummod:repair_fragment",
         "count": 9
