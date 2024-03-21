@@ -12,7 +12,7 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 import javax.annotation.Nullable;
 import java.util.List;
 
-public class DestriumIngot extends Item{
+public class DestriumIngot extends Item {
 
 	public DestriumIngot(Properties properties) {
 		super(properties);
@@ -24,5 +24,4 @@ public class DestriumIngot extends Item{
 		p_270630_.add(Component.translatable(this.getDescriptionId() + ".desc2").withStyle(ChatFormatting.DARK_GREEN).withStyle(ChatFormatting.BOLD));
 		p_270630_.add(Component.translatable(this.getDescriptionId() + ".desc3").withStyle(ChatFormatting.GOLD));
 	}
-	}
-
+}

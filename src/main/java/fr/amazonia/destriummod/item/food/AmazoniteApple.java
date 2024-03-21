@@ -12,7 +12,7 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 import javax.annotation.Nullable;
 import java.util.List;
 
-public class AmazoniteApple extends Item{
+public class AmazoniteApple extends Item {
 
 	public AmazoniteApple(Properties properties) {
 		super(properties);
@@ -27,4 +27,4 @@ public class AmazoniteApple extends Item{
 		p_270630_.add(Component.translatable(this.getDescriptionId() + ".desc5").withStyle(ChatFormatting.DARK_PURPLE));
 		p_270630_.add(Component.translatable(this.getDescriptionId() + ".desc6").withStyle(ChatFormatting.YELLOW));
 	}
-	}
+}

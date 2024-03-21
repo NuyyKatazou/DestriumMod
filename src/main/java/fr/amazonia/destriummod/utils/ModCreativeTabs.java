@@ -23,7 +23,6 @@ public class ModCreativeTabs extends CreativeModeTab {
         super(builder);
     }
 
-
     @SubscribeEvent
     public static void registerCreativeModeTabs(CreativeModeTabEvent.Register event) {
         ItemTab = event.registerCreativeModeTab(new ResourceLocation(DestriumMod.MODID, "itemtab"),
@@ -38,5 +37,4 @@ public class ModCreativeTabs extends CreativeModeTab {
         FoodTab = event.registerCreativeModeTab(new ResourceLocation(DestriumMod.MODID, "foodtab"),
                 builder -> builder.icon(() -> new ItemStack(ModItems.AMAZONITE_APPLE.get())).title(Component.literal("Foods Tabs")).build());
     }
-
 }

@@ -75,7 +75,6 @@ public class DestriumMod {
     }
 
     private void serverSetup(FMLDedicatedServerSetupEvent event) {
-
     }
 
     private void addCreative(CreativeModeTabEvent.BuildContents event) {

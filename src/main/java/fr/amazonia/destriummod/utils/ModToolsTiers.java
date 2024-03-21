@@ -12,11 +12,13 @@ import net.minecraftforge.common.TierSortingRegistry;
 import java.util.List;
 
 public class ModToolsTiers {
+
     public static Tier ARGONIDE;
     public static Tier DESTRIUM;
     public static Tier AMAZONITE;
 
     static {
+
         ARGONIDE = TierSortingRegistry.registerTier(
                 new ForgeTier(4, 4048, 13f, 5.5f, 18,
                         ModTags.Blocks.NEEDS_ARGONIDE_TOOL, () -> Ingredient.of(ModItems.ARGONIDE_INGOT.get())),
@@ -29,6 +31,5 @@ public class ModToolsTiers {
                 new ForgeTier(6, 45051, 20f, 10f, 25,
                         ModTags.Blocks.NEEDS_AMAZONITE_TOOL, () -> Ingredient.of(ModItems.AMAZONITE_FRAGMENT.get())),
                 new ResourceLocation(DestriumMod.MODID, "amazonite"), List.of(ModToolsTiers.DESTRIUM), List.of());
-
     }
 }

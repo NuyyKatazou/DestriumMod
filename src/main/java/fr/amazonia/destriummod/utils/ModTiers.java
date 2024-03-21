@@ -20,7 +20,7 @@ public enum ModTiers implements Tier {
    private final int enchantmentValue;
    private final LazyLoadedValue<Ingredient> repairIngredient;
 
-   private ModTiers(int p_43332_, int p_43333_, float p_43334_, float p_43335_, int p_43336_, Supplier<Ingredient> p_43337_) {
+   ModTiers(int p_43332_, int p_43333_, float p_43334_, float p_43335_, int p_43336_, Supplier<Ingredient> p_43337_) {
       this.level = p_43332_;
       this.uses = p_43333_;
       this.speed = p_43334_;
@@ -52,5 +52,4 @@ public enum ModTiers implements Tier {
    public Ingredient getRepairIngredient() {
       return this.repairIngredient.get();
    }
-
 }

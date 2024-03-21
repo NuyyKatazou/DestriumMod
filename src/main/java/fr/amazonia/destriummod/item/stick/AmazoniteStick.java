@@ -12,7 +12,7 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 import javax.annotation.Nullable;
 import java.util.List;
 
-public class AmazoniteStick extends Item{
+public class AmazoniteStick extends Item {
 
 	public AmazoniteStick(Properties p_i48487_1_) {
 		super(p_i48487_1_);

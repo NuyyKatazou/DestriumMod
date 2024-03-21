@@ -12,7 +12,7 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 import javax.annotation.Nullable;
 import java.util.List;
 
-public class DestriumApple extends Item{
+public class DestriumApple extends Item {
 
 	public DestriumApple(Properties properties) {
 		super(properties);

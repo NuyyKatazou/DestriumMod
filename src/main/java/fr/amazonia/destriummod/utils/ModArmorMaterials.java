@@ -25,7 +25,6 @@ public enum ModArmorMaterials implements StringRepresentable, ArmorMaterial {
     }), 0, SoundEvents.ARMOR_EQUIP_CHAIN, 0.0F, 0.0F, () -> {
         return Ingredient.of(ModItems.AMAZONITE_NUGGETS.get());
     }),
-
     ARGONIDE("argonide", 74,Util.make(new EnumMap<>(ArmorItem.Type.class), (p_266656_) -> {
         p_266656_.put(ArmorItem.Type.BOOTS, 4);
         p_266656_.put(ArmorItem.Type.LEGGINGS, 7);
@@ -34,7 +33,6 @@ public enum ModArmorMaterials implements StringRepresentable, ArmorMaterial {
     }), 18, SoundEvents.ARMOR_EQUIP_DIAMOND, 3.5F, 0.1F, () -> {
         return Ingredient.of(ModItems.ARGONIDE_INGOT.get());
     }),
-
     DESTRIUM("destrium", 478,Util.make(new EnumMap<>(ArmorItem.Type.class), (p_266656_) -> {
         p_266656_.put(ArmorItem.Type.BOOTS, 5);
         p_266656_.put(ArmorItem.Type.LEGGINGS, 8);
@@ -43,7 +41,6 @@ public enum ModArmorMaterials implements StringRepresentable, ArmorMaterial {
     }), 3, SoundEvents.ARMOR_EQUIP_DIAMOND, 4.0F, 0.1F, () -> {
         return Ingredient.of(ModItems.DESTRIUM_INGOT.get());
     }),
-
     AMAZONITE("amazonite", 1256,Util.make(new EnumMap<>(ArmorItem.Type.class), (p_266656_) -> {
         p_266656_.put(ArmorItem.Type.BOOTS, 9);
         p_266656_.put(ArmorItem.Type.LEGGINGS, 12);
@@ -54,12 +51,14 @@ public enum ModArmorMaterials implements StringRepresentable, ArmorMaterial {
     });
 
     public static final EnumCodec<ArmorMaterials> CODEC = StringRepresentable.fromEnum(ArmorMaterials::values);
+
     private static final EnumMap<ArmorItem.Type, Integer> HEALTH_FUNCTION_FOR_TYPE = Util.make(new EnumMap<>(ArmorItem.Type.class), (p_266653_) -> {
         p_266653_.put(ArmorItem.Type.BOOTS, 13);
         p_266653_.put(ArmorItem.Type.LEGGINGS, 15);
         p_266653_.put(ArmorItem.Type.CHESTPLATE, 16);
         p_266653_.put(ArmorItem.Type.HELMET, 11);
     });
+
     private final String name;
     private final int durabilityMultiplier;
     private final EnumMap<ArmorItem.Type, Integer> protectionFunctionForType;
@@ -69,7 +68,7 @@ public enum ModArmorMaterials implements StringRepresentable, ArmorMaterial {
     private final float knockbackResistance;
     private final LazyLoadedValue<Ingredient> repairIngredient;
 
-    private ModArmorMaterials(String p_268171_, int p_268303_, EnumMap<ArmorItem.Type, Integer> p_267941_, int p_268086_, SoundEvent p_268145_, float p_268058_, float p_268180_, Supplier<Ingredient> p_268256_) {
+    ModArmorMaterials(String p_268171_, int p_268303_, EnumMap<ArmorItem.Type, Integer> p_267941_, int p_268086_, SoundEvent p_268145_, float p_268058_, float p_268180_, Supplier<Ingredient> p_268256_) {
         this.name = p_268171_;
         this.durabilityMultiplier = p_268303_;
         this.protectionFunctionForType = p_267941_;

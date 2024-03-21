@@ -12,7 +12,7 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 import javax.annotation.Nullable;
 import java.util.List;
 
-public class ArgonideIngot extends Item{
+public class ArgonideIngot extends Item {
 
 	public ArgonideIngot(Properties properties) {
 		super(properties);
@@ -24,4 +24,4 @@ public class ArgonideIngot extends Item{
 		p_270630_.add(Component.translatable(this.getDescriptionId() + ".desc").withStyle(ChatFormatting.DARK_GREEN));
 		p_270630_.add(Component.translatable(this.getDescriptionId() + ".desc").withStyle(ChatFormatting.GOLD).withStyle(ChatFormatting.BOLD));
 	}
-	}
+}

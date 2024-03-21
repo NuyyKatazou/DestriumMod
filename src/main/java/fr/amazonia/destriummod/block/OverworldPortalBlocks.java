@@ -9,4 +9,3 @@ public class OverworldPortalBlocks extends Block{
 	}
 
 }
-
