@@ -209,26 +209,15 @@
   "item.destriummod.destrium_ingot.desc": "Amazonite",
   "item.destriummod.destrium_ingot.desc2": ">> Destrium",
   "item.destriummod.destrium_ingot.desc3": "Argonide",
-  "item.destriummod.destrium_nuggets.desc": "Pépites utilisées pour fabriquer un grand nombre d'objets",
   "item.destriummod.argonide_ingot.desc": "Amazonite",
   "item.destriummod.argonide_ingot.desc2": "Destrium",
   "item.destriummod.argonide_ingot.desc3": ">> Argonide",
-  "item.destriummod.argonide_nuggets.desc": "Pépites utilisées pour fabriquer un grand nombre d'objets",
   "item.destriummod.repair_gem.desc": "Utilisé pour réparer les items et autres",
-  "item.destriummod.repair_fragment.desc": "Utilisé pour craft la Gemme De Réparation",
-  
-  "item.destriummod.emerald_nuggets.desc": "Utilis� pour craft une Emeraude",
-  "item.destriummod.diamond_nuggets.desc": "Utilis� pour craft un Diamants",
-  "item.destriummod.netherite_nuggets.desc": "Utilis� pour craft le Fragment de Netherite",
   
   
   "item.destriummod.amazonite_stick.desc": "Utilisé pour craft les Outils En Amazonite",
   "item.destriummod.destrium_stick.desc": "Utilisé pour craft les Outils En Destrium",
   "item.destriummod.argonide_stick.desc": "Utilisé pour craft les Outils En Argonide",
-  
-  
-  "item.destriummod.golden_core.desc": "Utilisé pour craft la Pomme d'Or Enchanté",
-  "item.destriummod.compressed_golden.desc": "Utilisé pour craft le Noyau En Or",
 
 
   "item.destriummod.destrium_apple.desc": "Soigne Dix Coeurs",

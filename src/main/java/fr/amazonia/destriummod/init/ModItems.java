@@ -81,16 +81,16 @@ public class ModItems {
 	public static final RegistryObject<Item> AMAZONITE_FRAGMENT = ITEMS.register("amazonite_fragment", () -> new Item(new Item.Properties().rarity(ModRarity.AMAZONITE).fireResistant()));
 	public static final RegistryObject<Item> AMAZONITE_NUGGETS = ITEMS.register("amazonite_nuggets", () -> new Item(new Item.Properties().rarity(ModRarity.AMAZONITE).fireResistant()));
 	public static final RegistryObject<Item> AMAZONITE_INGOT = ITEMS.register("amazonite_ingot", () -> new AmazoniteIngot(new Item.Properties().rarity(ModRarity.AMAZONITE).fireResistant()));
-	public static final RegistryObject<Item> DESTRIUM_NUGGETS = ITEMS.register("destrium_nuggets", () -> new DestriumNuggets(new Item.Properties().rarity(ModRarity.DESTRIUM).fireResistant()));
+	public static final RegistryObject<Item> DESTRIUM_NUGGETS = ITEMS.register("destrium_nuggets", () -> new Item(new Item.Properties().rarity(ModRarity.DESTRIUM).fireResistant()));
 	public static final RegistryObject<Item> DESTRIUM_INGOT = ITEMS.register("destrium_ingot", () -> new DestriumIngot(new Item.Properties().rarity(ModRarity.DESTRIUM).fireResistant()));
-	public static final RegistryObject<Item> ARGONIDE_NUGGETS = ITEMS.register("argonide_nuggets", () -> new ArgonideNuggets(new Item.Properties().rarity(ModRarity.ARGONIDE).fireResistant()));
+	public static final RegistryObject<Item> ARGONIDE_NUGGETS = ITEMS.register("argonide_nuggets", () -> new Item(new Item.Properties().rarity(ModRarity.ARGONIDE).fireResistant()));
 	public static final RegistryObject<Item> ARGONIDE_INGOT = ITEMS.register("argonide_ingot", () -> new ArgonideIngot(new Item.Properties().rarity(ModRarity.ARGONIDE).fireResistant()));
-	public static final RegistryObject<Item> REPAIR_FRAGMENT = ITEMS.register("repair_fragment", () -> new RepairItems(new Item.Properties().rarity(ModRarity.REPAIR).fireResistant()));
+	public static final RegistryObject<Item> REPAIR_FRAGMENT = ITEMS.register("repair_fragment", () -> new Item(new Item.Properties().rarity(ModRarity.REPAIR).fireResistant()));
 	public static final RegistryObject<Item> REPAIR_GEM = ITEMS.register("repair_gem", () -> new RepairItems(new Item.Properties().rarity(ModRarity.REPAIR).fireResistant()));
 
-	public static final RegistryObject<Item> EMERALD_NUGGETS = ITEMS.register("emerald_nuggets", () -> new EmeraldNuggets(new Item.Properties().rarity(ModRarity.EMERALD)));
-	public static final RegistryObject<Item> DIAMOND_NUGGETS = ITEMS.register("diamond_nuggets", () -> new DiamondNuggets(new Item.Properties().rarity(ModRarity.DIAMOND)));
-	public static final RegistryObject<Item> NETHERITE_NUGGETS = ITEMS.register("netherite_nuggets", () -> new NetheriteNuggets(new Item.Properties().rarity(ModRarity.NETHERITE)));
+	public static final RegistryObject<Item> EMERALD_NUGGETS = ITEMS.register("emerald_nuggets", () -> new Item(new Item.Properties().rarity(ModRarity.EMERALD)));
+	public static final RegistryObject<Item> DIAMOND_NUGGETS = ITEMS.register("diamond_nuggets", () -> new Item(new Item.Properties().rarity(ModRarity.DIAMOND)));
+	public static final RegistryObject<Item> NETHERITE_NUGGETS = ITEMS.register("netherite_nuggets", () -> new Item(new Item.Properties().rarity(ModRarity.NETHERITE)));
 
 
 	public static final RegistryObject<Item> AMAZONITE_STICK = ITEMS.register("amazonite_stick", () -> new AmazoniteStick(new Item.Properties().rarity(ModRarity.AMAZONITE).fireResistant()));
@@ -98,8 +98,8 @@ public class ModItems {
 	public static final RegistryObject<Item> ARGONIDE_STICK = ITEMS.register("argonide_stick", () -> new ArgonideStick(new Item.Properties().rarity(ModRarity.ARGONIDE).fireResistant()));
 
 	
-	public static final RegistryObject<Item> GOLDEN_CORE = ITEMS.register("golden_core", () -> new GoldenItems(new Item.Properties().rarity(ModRarity.ARGONIDE)));
-	public static final RegistryObject<Item> COMPRESSED_GOLDEN = ITEMS.register("compressed_golden", () -> new GoldenItems(new Item.Properties().rarity(ModRarity.ARGONIDE)));
+	public static final RegistryObject<Item> GOLDEN_CORE = ITEMS.register("golden_core", () -> new Item(new Item.Properties().rarity(ModRarity.ARGONIDE)));
+	public static final RegistryObject<Item> COMPRESSED_GOLDEN = ITEMS.register("compressed_golden", () -> new Item(new Item.Properties().rarity(ModRarity.ARGONIDE)));
 	
 	
 	public static final RegistryObject<Item> IRON_PLATE = ITEMS.register("iron_plate", () -> new Item(new Item.Properties()));

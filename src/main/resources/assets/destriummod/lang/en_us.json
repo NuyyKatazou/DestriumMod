@@ -209,28 +209,17 @@
   "item.destriummod.destrium_ingot.desc": "Amazonite",
   "item.destriummod.destrium_ingot.desc2": ">> Destrium",
   "item.destriummod.destrium_ingot.desc3": "Argonide",
-  "item.destriummod.destrium_nuggets.desc": "Nuggets used to craft a large number of items",
   "item.destriummod.argonide_ingot.desc": "Amazonite",
   "item.destriummod.argonide_ingot.desc2": "Destrium",
   "item.destriummod.argonide_ingot.desc3": ">> Argonide",
-  "item.destriummod.argonide_nuggets.desc": "Nuggets used to craft a large number of items",
   "item.destriummod.repair_gem.desc": "Used to Repair Items and other things",
-  "item.destriummod.repair_fragment.desc": "Used to craft the Repair Gem",
-  
-  "item.destriummod.emerald_nuggets.desc": "Used to craft the Emerald",
-  "item.destriummod.diamond_nuggets.desc": "Used to craft the Diamond",
-  "item.destriummod.netherite_nuggets.desc": "Used to craft the Netherite Scrap",
   
   
   "item.destriummod.amazonite_stick.desc": "Used to craft the Amazonite Tools",
   "item.destriummod.destrium_stick.desc": "Used to craft the Destrium Tools",
   "item.destriummod.argonide_stick.desc": "Used to craft the Argonide Tools",
   
-  
-  "item.destriummod.golden_core.desc": "Used to craft the Enchanted Golden Apple",
-  "item.destriummod.compressed_golden.desc": "Used to craft the Golden Core",
-  
-  
+
   "item.destriummod.destrium_apple.desc": "Ten Heart Healing",
   "item.destriummod.destrium_apple.desc2": "Strength Three For Twenty Seconds",
   "item.destriummod.destrium_apple.desc3": "Résistance Two For Ten Minutes",
