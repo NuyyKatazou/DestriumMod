@@ -42,7 +42,7 @@ authors="NuyyKatazou" #optional
 
 # The description text for the mod (multi line!) (#mandatory)
 description='''
-DestriumMod est un Mods qui deviendras aussi gros qu'un ModPacks !!!
+DestriumMod est un Mods basé sur l'exploration, le craft et le farm !
 '''
 # A dependency - use the . to indicate dependency for a specific modid. Dependencies are optional.
 [[dependencies.examplemod]] #optional
