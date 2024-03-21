@@ -16,11 +16,6 @@ public class HandlerEvent {
     public void onLivingFall(LivingFallEvent event) {
         LivingEntity entity = event.getEntity();
         if (entity instanceof Player) {
-            //Cancel OverworldPortalBlocks FallDamage
-            if(OverworldPortalBlocks.f == 1) {
-                event.setDamageMultiplier(0);
-                OverworldPortalBlocks.f = 0;
-            }
             //Cancel FeatherBoots FallDamage
             if(entity.getItemBySlot(EquipmentSlot.FEET).getItem() == ModItems.FEATHER_BOOTS.get()) {
                 event.setDamageMultiplier(0);
