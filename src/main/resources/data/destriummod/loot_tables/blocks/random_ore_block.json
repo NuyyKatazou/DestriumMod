@@ -7,12 +7,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "destriummod:cobblestone_compressed1"
-        }
-      ],
-      "conditions": [
-        {
-          "condition": "minecraft:survives_explosion"
+          "name": "destriummod:random_ore"
         }
       ]
     }
