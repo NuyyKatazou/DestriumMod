@@ -89,7 +89,7 @@ public class DestriumMod {
             event.accept(ModItems.ARGONIDE_NUGGETS);
             event.accept(ModItems.ARGONIDE_INGOT);
             event.accept(ModItems.REPAIR_FRAGMENT);
-            event.accept(ModItems.REPAIR_INGOT);
+            event.accept(ModItems.REPAIR_GEM);
             event.accept(ModItems.EMERALD_NUGGETS);
             event.accept(ModItems.DIAMOND_NUGGETS);
             event.accept(ModItems.NETHERITE_NUGGETS);
