@@ -1,6 +1,5 @@
 package fr.amazonia.destriummod.utils;
 
-import fr.amazonia.destriummod.block.OverworldPortalBlocks;
 import fr.amazonia.destriummod.init.ModItems;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
