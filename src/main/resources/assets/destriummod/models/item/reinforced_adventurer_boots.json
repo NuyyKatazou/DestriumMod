@@ -1,6 +1,6 @@
 {
     "parent": "minecraft:item/generated",
     "textures": {
-        "layer0": "destriummod:item/renforced_adventurer_boots"
+        "layer0": "destriummod:item/reinforced_adventurer_boots"
     }
 }

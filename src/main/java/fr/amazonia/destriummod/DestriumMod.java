@@ -206,7 +206,7 @@ public class DestriumMod {
             event.accept(ModItems.FEATHER_BOOTS);
             event.accept(ModItems.JUMP_BOOTS);
             event.accept(ModItems.ADVENTURER_BOOTS);
-            event.accept(ModItems.RENFORCED_ADVENTURER_BOOTS);
+            event.accept(ModItems.REINFORCED_ADVENTURER_BOOTS);
             event.accept(ModItems.NECKLACE);
             event.accept(ModItems.LUCKY_NECKLACE);
 
