@@ -113,14 +113,14 @@
   "block.destriummod.repair_ore": "Minerai de Réparation",
 
 
-  "block.destriummod.cobblestone_compressed1": "Pierres Compressé",
-  "block.destriummod.cobblestone_compressed2": "Pierres Compressé Deux Fois",
-  "block.destriummod.cobblestone_compressed3": "Pierres Compressé Trois Fois",
-  "block.destriummod.cobblestone_compressed4": "Pierres Compressé Quatre Fois",
-  "block.destriummod.cobblestone_compressed5": "Pierres Compressé Cinq Fois",
-  "block.destriummod.cobblestone_compressed6": "Pierres Compressé Six Fois",
-  "block.destriummod.cobblestone_compressed7": "Pierres Compressé Sept Fois",
-  "block.destriummod.cobblestone_compressed8": "Pierres Compressé Huit Fois",
+  "block.destriummod.cobblestone_compressed1": "Pierres Compressé I",
+  "block.destriummod.cobblestone_compressed2": "Pierres Compressé II",
+  "block.destriummod.cobblestone_compressed3": "Pierres Compressé III",
+  "block.destriummod.cobblestone_compressed4": "Pierres Compressé IV",
+  "block.destriummod.cobblestone_compressed5": "Pierres Compressé V",
+  "block.destriummod.cobblestone_compressed6": "Pierres Compressé VI",
+  "block.destriummod.cobblestone_compressed7": "Pierres Compressé VII",
+  "block.destriummod.cobblestone_compressed8": "Pierres Compressé VIII",
 
   "block.destriummod.dirt_compressed1": "Terre Compressé",
   "block.destriummod.dirt_compressed2": "Terre Compressé Deux Fois",
