@@ -25,11 +25,11 @@ displayName="DestriumMod" #mandatory
 # A URL to query for updates for this mod. See the JSON update specification https://docs.minecraftforge.net/en/latest/misc/updatechecker/
 #updateJSONURL="https://change.me.example.invalid/updates.json" #optional
 # A URL for the "homepage" for this mod, displayed in the mod UI
-#displayURL="https://change.me.to.your.mods.homepage.example.invalid/" #optional
+displayURL="https://discord.com/invite/FMjuQYdBsJ" #optional
 # A file name (in the root of the mod JAR) containing a logo for display
 logoFile="destrium.png" #optional
 # A text field displayed in the mod UI
-credits="Mods De Nuyy" #optional
+credits="Mods by Nuyy" #optional
 # A text field displayed in the mod UI
 authors="NuyyKatazou" #optional
 # Display Test controls the display for your mod in the server connection screen
@@ -42,7 +42,7 @@ authors="NuyyKatazou" #optional
 
 # The description text for the mod (multi line!) (#mandatory)
 description='''
-DestriumMod est un Mods basé sur l'exploration, le craft et le farm !
+DestriumMod is a Mods based on Exploration, Building, Tools and Machines !
 '''
 # A dependency - use the . to indicate dependency for a specific modid. Dependencies are optional.
 [[dependencies.examplemod]] #optional
