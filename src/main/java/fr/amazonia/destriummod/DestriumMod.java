@@ -135,6 +135,7 @@ public class DestriumMod {
             event.accept(ModBlocks.FAKE_AMAZONITE_BLOCK);
             event.accept(ModBlocks.DESTRIUM_BLOCK);
             event.accept(ModBlocks.ARGONIDE_BLOCK);
+            event.accept(ModBlocks.REPAIR_BLOCK);
             event.accept(ModBlocks.COBBLESTONE_COMPRESSED1);
             event.accept(ModBlocks.COBBLESTONE_COMPRESSED2);
             event.accept(ModBlocks.COBBLESTONE_COMPRESSED3);
