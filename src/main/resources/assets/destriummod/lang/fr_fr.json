@@ -106,9 +106,9 @@
   "block.destriummod.argonide_block": "Bloc d'Argonide",
 
   "block.destriummod.random_ore": "Minerai Aléatoire",
-  "block.destriummod.amazonite_ore": "Minerai d'Amazonite",
-  "block.destriummod.destrium_ore": "Minerai de Destrium",
-  "block.destriummod.argonide_ore": "Minerai d'Argonide",
+  "block.destriummod.paradis_amazonite_ore": "Minerai d'Amazonite",
+  "block.destriummod.paradis_destrium_ore": "Minerai de Destrium",
+  "block.destriummod.paradis_argonide_ore": "Minerai d'Argonide",
   "block.destriummod.cracked_argonide_ore": "Minerai Craquelé d'Argonide",
   "block.destriummod.repair_ore": "Minerai de Réparation",
 

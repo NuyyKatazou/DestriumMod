@@ -53,9 +53,9 @@ public class ModBlocks {
 
 	//(Ore)
 	public static final RegistryObject<Block> RANDOM_ORE = registerBlock("random_ore", () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE).strength(5f, 100f).requiresCorrectToolForDrops(), UniformInt.of(1, 5)));
-	public static final RegistryObject<Block> AMAZONITE_ORE = registerBlock("amazonite_ore", () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(10f, 100f).requiresCorrectToolForDrops()));
-	public static final RegistryObject<Block> DESTRIUM_ORE = registerBlock("destrium_ore", () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(6f, 50f).requiresCorrectToolForDrops()));
-	public static final RegistryObject<Block> ARGONIDE_ORE = registerBlock("argonide_ore", () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(4f, 10f).requiresCorrectToolForDrops()));
+	public static final RegistryObject<Block> PARADIS_AMAZONITE_ORE = registerBlock("paradis_amazonite_ore", () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(10f, 100f).requiresCorrectToolForDrops()));
+	public static final RegistryObject<Block> PARADIS_DESTRIUM_ORE = registerBlock("paradis_destrium_ore", () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(6f, 50f).requiresCorrectToolForDrops()));
+	public static final RegistryObject<Block> PARADIS_ARGONIDE_ORE = registerBlock("paradis_argonide_ore", () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(4f, 10f).requiresCorrectToolForDrops()));
 	public static final RegistryObject<Block> CRACKED_ARGONIDE_ORE = registerBlock("cracked_argonide_ore", () -> new Block(BlockBehaviour.Properties.of(Material.CLAY).strength(4f, 25f).requiresCorrectToolForDrops()));
 	public static final RegistryObject<Block> REPAIR_ORE = registerBlock("repair_ore", () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE).strength(4f, 50f).requiresCorrectToolForDrops(), UniformInt.of(0, 2)));
 
