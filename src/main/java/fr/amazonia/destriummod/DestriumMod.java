@@ -139,9 +139,9 @@ public class DestriumMod {
             event.accept(ModBlocks.CRACKED_CLOUD);
             event.accept(ModBlocks.CLOUD2);
             event.accept(ModBlocks.RANDOM_ORE);
-            event.accept(ModBlocks.AMAZONITE_ORE);
-            event.accept(ModBlocks.DESTRIUM_ORE);
-            event.accept(ModBlocks.ARGONIDE_ORE);
+            event.accept(ModBlocks.PARADIS_AMAZONITE_ORE);
+            event.accept(ModBlocks.PARADIS_DESTRIUM_ORE);
+            event.accept(ModBlocks.PARADIS_ARGONIDE_ORE);
             event.accept(ModBlocks.CRACKED_ARGONIDE_ORE);
             event.accept(ModBlocks.REPAIR_ORE);
             event.accept(ModBlocks.AMAZONITE_BLOCK);
