@@ -5,6 +5,7 @@
 	"destriummod:cobblestone_compressed3",
 	"destriummod:dirt_compressed2",
 	"destriummod:dirt_compressed3",
-    "destriummod:repair_ore"
+    "destriummod:repair_ore",
+    "destriummod:repair_block"
   ]
 }

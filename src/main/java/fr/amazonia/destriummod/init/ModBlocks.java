@@ -64,6 +64,7 @@ public class ModBlocks {
 	public static final RegistryObject<Block> FAKE_AMAZONITE_BLOCK = registerBlock("fake_amazonite_block", () -> new Block(BlockBehaviour.Properties.of(Material.METAL).strength(25f, 1000f).requiresCorrectToolForDrops()));
 	public static final RegistryObject<Block> DESTRIUM_BLOCK = registerBlock("destrium_block", () -> new Block(BlockBehaviour.Properties.of(Material.METAL).strength(15f, 125f).requiresCorrectToolForDrops()));
 	public static final RegistryObject<Block> ARGONIDE_BLOCK = registerBlock("argonide_block", () -> new Block(BlockBehaviour.Properties.of(Material.METAL).strength(10f, 25f).requiresCorrectToolForDrops()));
+	public static final RegistryObject<Block> REPAIR_BLOCK = registerBlock("repair_block", () -> new Block(BlockBehaviour.Properties.of(Material.METAL).strength(8f, 32f).requiresCorrectToolForDrops()));
 
 	//(Compressed)
 	public static final RegistryObject<Block> COBBLESTONE_COMPRESSED1 = registerBlock("cobblestone_compressed1", () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(3.0F, 6.5F).requiresCorrectToolForDrops()));
