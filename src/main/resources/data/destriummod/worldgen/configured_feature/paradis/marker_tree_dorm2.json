@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:huge_fungus",
+  "config": {
+    "hat_state": {
+      "Name": "minecraft:air"
+    },
+    "decor_state": {
+      "Name": "destriummod:paradis_destrium_ore"
+    },
+    "stem_state": {
+      "Name": "destriummod:cloud",
+      "Properties": {
+        "axis": "y"
+      }
+    },
+    "valid_base_block": {
+      "Name": "destriummod:cloud2"
+    },
+    "replaceable_blocks": {
+      "type": "minecraft:true"
+    }
+  }
+}

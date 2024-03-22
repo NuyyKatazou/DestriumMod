@@ -1,0 +1,9 @@
+{
+  "feature": "destriummod:paradis/marker_tree_dorm3",
+  "placement": [
+    {
+      "type": "minecraft:count_on_every_layer",
+      "count": 1
+    }
+  ]
+}

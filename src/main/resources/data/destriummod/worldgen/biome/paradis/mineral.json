@@ -1,0 +1,54 @@
+{
+  "temperature": 0.95,
+  "downfall": 0.1,
+  "has_precipitation": false,
+  "effects": {
+    "sky_color": 16777215,
+    "fog_color": 16777215,
+    "water_color": 16777215,
+    "water_fog_color": 16777215,
+    "grass_color": 16777215,
+    "foliage_color": 16777215,
+    "ambient_sound": "minecraft:block.roots.step",
+    "mood_sound": {
+      "sound": "minecraft:ambient.cave",
+      "tick_delay": 800,
+      "block_search_extent": 8,
+      "offset": 2
+    },
+    "additions_sound": {
+      "sound": "minecraft:ambient.basalt_deltas.mood",
+      "tick_chance": 0.0001
+    },
+    "music": {
+      "sound": "minecraft:music.nether.basalt_deltas",
+      "min_delay": 12000,
+      "max_delay": 24000,
+      "replace_current_music": false
+    }
+  },
+  "spawners": {
+    "ambient": [],
+    "axolotls": [],
+    "creature": [],
+    "misc": [],
+    "monster": [],
+    "underground_water_creature": [],
+    "water_ambient": [],
+    "water_creature": []
+  },
+  "spawn_costs": {},
+  "carvers": {
+    "air": [
+      "minecraft:cave",
+      "minecraft:canyon"
+    ]
+  },
+  "features": [
+    [
+      "minecraft:trees_water",
+      "destriummod:paradis/marker_tree_dorm3",
+      "destriummod:paradis/marker_tree_dorm2"
+    ]
+  ]
+}

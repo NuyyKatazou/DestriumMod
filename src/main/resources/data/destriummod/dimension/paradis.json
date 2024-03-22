@@ -1,0 +1,48 @@
+{
+  "type": "destriummod:paradis",
+  "generator": {
+    "type": "minecraft:noise",
+    "settings": "destriummod:paradis",
+    "biome_source": {
+      "type": "minecraft:multi_noise",
+      "biomes": [
+        {
+          "biome": "destriummod:paradis/mineral",
+          "parameters": {
+            "temperature": 0.5,
+            "humidity": 1,
+            "continentalness": 0,
+            "erosion": 0,
+            "weirdness": 0,
+            "depth": 0,
+            "offset": 0.1
+          }
+        },
+        {
+          "biome": "destriummod:paradis/voidified",
+          "parameters": {
+            "temperature": 1,
+            "humidity": 1,
+            "continentalness": 0,
+            "erosion": 0,
+            "weirdness": 0,
+            "depth": 0,
+            "offset": 0.4
+          }
+        },
+        {
+          "biome": "destriummod:paradis/enrichment",
+          "parameters": {
+            "temperature": 0.2,
+            "humidity": 1,
+            "continentalness": 0,
+            "erosion": 0,
+            "weirdness": 0,
+            "depth": 0,
+            "offset": 0
+          }
+        }
+      ]
+    }
+  }
+}

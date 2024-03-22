@@ -5,7 +5,9 @@ import fr.amazonia.destriummod.init.ModItems;
 import fr.amazonia.destriummod.utils.HandlerEvent;
 import fr.amazonia.destriummod.utils.ModCreativeTabs;
 import net.minecraft.client.Minecraft;
+import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceKey;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.Level;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.CreativeModeTabEvent;
@@ -52,26 +54,11 @@ public class DestriumMod {
         MinecraftForge.EVENT_BUS.register(new HandlerEvent());
 
         //Dimensions
-        //PARADIS_DIMENSION = ResourceKey.create(Registry.DIMENSION_REGISTRY, new ResourceLocation(DestriumMod.MODID, "paradis"));
+        PARADIS_DIMENSION = ResourceKey.create(Registries.DIMENSION, new ResourceLocation(DestriumMod.MODID, "paradis"));
 
     }
 
     private void clientSetup(FMLClientSetupEvent event) {
-        /*
-        //Flowers
-        ItemBlockRenderTypes.setRenderLayer(ModBlocks.CLOVER.get(), RenderType.translucent());
-        ItemBlockRenderTypes.setRenderLayer(ModBlocks.CLOVER_TWO.get(), RenderType.translucent());
-
-        //Fluids
-        ItemBlockRenderTypes.setRenderLayer(ModFluids.POISON_WATER_FLUID.get(), RenderType.translucent());
-        ItemBlockRenderTypes.setRenderLayer(ModFluids.POISON_WATER_BLOCK.get(), RenderType.translucent());
-        ItemBlockRenderTypes.setRenderLayer(ModFluids.POISON_WATER_FLOWING.get(), RenderType.translucent());
-
-        ItemBlockRenderTypes.setRenderLayer(ModFluids.RESISTANCE_LAVA_FLUID.get(), RenderType.translucent());
-        ItemBlockRenderTypes.setRenderLayer(ModFluids.RESISTANCE_LAVA_BLOCK.get(), RenderType.translucent());
-        ItemBlockRenderTypes.setRenderLayer(ModFluids.RESISTANCE_LAVA_FLOWING.get(), RenderType.translucent());
-
-         */
     }
 
     private void serverSetup(FMLDedicatedServerSetupEvent event) {
