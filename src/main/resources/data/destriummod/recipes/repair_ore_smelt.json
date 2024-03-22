@@ -4,6 +4,6 @@
     "item": "destriummod:repair_ore"
   },
   "result": "destriummod:repair_fragment",
-  "experience": 10,
+  "experience": 4,
   "cookingtime": 50
 }
