@@ -12,7 +12,7 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.BlockHitResult;
 
-public class OverworldPortalBlocks extends Block{
+public class OverworldPortalBlocks extends Block {
 
 	public OverworldPortalBlocks(Properties p_i48440_1_) {
 		super(p_i48440_1_);
