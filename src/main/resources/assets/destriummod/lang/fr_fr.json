@@ -122,11 +122,11 @@
   "block.destriummod.cobblestone_compressed7": "Pierres Compressé VII",
   "block.destriummod.cobblestone_compressed8": "Pierres Compressé VIII",
 
-  "block.destriummod.dirt_compressed1": "Terre Compressé",
-  "block.destriummod.dirt_compressed2": "Terre Compressé Deux Fois",
-  "block.destriummod.dirt_compressed3": "Terre Compressé Trois Fois",
-  "block.destriummod.dirt_compressed4": "Terre Compressé Quatre Fois",
-  "block.destriummod.dirt_compressed5": "Terre Compressé Cinq Fois",
+  "block.destriummod.dirt_compressed1": "Terre Compressé I",
+  "block.destriummod.dirt_compressed2": "Terre Compressé II",
+  "block.destriummod.dirt_compressed3": "Terre Compressé III",
+  "block.destriummod.dirt_compressed4": "Terre Compressé IV",
+  "block.destriummod.dirt_compressed5": "Terre Compressé V",
 
   "block.destriummod.paradis_portal_block": "Portail pour le Paradis",
   "block.destriummod.overworld_portal_block": "Portail pour l'Overworld",
