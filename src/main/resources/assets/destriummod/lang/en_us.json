@@ -113,14 +113,14 @@
   "block.destriummod.repair_ore": "Repair Ore",
 
 
-  "block.destriummod.cobblestone_compressed1": "Compressed Cobblestone",
-  "block.destriummod.cobblestone_compressed2": "Compressed Cobblestone Two Times",
-  "block.destriummod.cobblestone_compressed3": "Compressed Cobblestone Three Times",
-  "block.destriummod.cobblestone_compressed4": "Compressed Cobblestone Four Times",
-  "block.destriummod.cobblestone_compressed5": "Compressed Cobblestone Five Times",
-  "block.destriummod.cobblestone_compressed6": "Compressed Cobblestone Six Times",
-  "block.destriummod.cobblestone_compressed7": "Compressed Cobblestone Seven Times",
-  "block.destriummod.cobblestone_compressed8": "Compressed Cobblestone Eight Times",
+  "block.destriummod.cobblestone_compressed1": "Compressed Cobblestone I",
+  "block.destriummod.cobblestone_compressed2": "Compressed Cobblestone II",
+  "block.destriummod.cobblestone_compressed3": "Compressed Cobblestone III",
+  "block.destriummod.cobblestone_compressed4": "Compressed Cobblestone IV",
+  "block.destriummod.cobblestone_compressed5": "Compressed Cobblestone V",
+  "block.destriummod.cobblestone_compressed6": "Compressed Cobblestone VI",
+  "block.destriummod.cobblestone_compressed7": "Compressed Cobblestone VII",
+  "block.destriummod.cobblestone_compressed8": "Compressed Cobblestone VIII",
 
   "block.destriummod.dirt_compressed1": "Compressed Dirt",
   "block.destriummod.dirt_compressed2": "Compressed Dirt Two Times",
