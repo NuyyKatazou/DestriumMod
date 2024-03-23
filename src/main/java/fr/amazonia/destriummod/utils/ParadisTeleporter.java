@@ -8,8 +8,6 @@ import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.level.Level;
-import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.material.Fluids;
 import net.minecraft.world.level.material.Material;
 import net.minecraftforge.common.util.ITeleporter;
@@ -47,8 +45,11 @@ public class ParadisTeleporter implements ITeleporter {
             return entity;
         }
         ServerPlayer player = (ServerPlayer) entity;
-        if (destWorld.dimension().equals(Level.OVERWORLD)) {
+        if (destWorld.dimension().equals(DestriumMod.PARADIS_DIMENSION)) {
 
+        }
+        if (!player.getInventory().contains(new ItemStack(ModBlocks.OVERWORLD_PORTAL_BLOCK.get()))) {
+            player.addItem(new ItemStack(ModBlocks.OVERWORLD_PORTAL_BLOCK.get()));
         }
         player.teleportTo(destinationPos.getX() + 0.5D, destinationPos.getY() + 1D, destinationPos.getZ() + 0.5D);
         if (thisIsToParadisDim) {
@@ -60,7 +61,7 @@ public class ParadisTeleporter implements ITeleporter {
                 }
             }
             if (doSetBlock) {
-                destWorld.setBlock(destinationPos, Blocks.DIRT.defaultBlockState(), 10);
+                destWorld.setBlock(destinationPos, ModBlocks.CLOUD.get().defaultBlockState(), 10);
                 f = 1;
             }
         }

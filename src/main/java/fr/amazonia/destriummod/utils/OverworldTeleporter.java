@@ -1,13 +1,12 @@
 package fr.amazonia.destriummod.utils;
 
-import fr.amazonia.destriummod.DestriumMod;
-import fr.amazonia.destriummod.block.ParadisPortalBlocks;
-import fr.amazonia.destriummod.init.ModBlocks;
+import fr.amazonia.destriummod.block.OverworldPortalBlocks;
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.entity.Entity;
-import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.level.Level;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.material.Fluids;
 import net.minecraft.world.level.material.Material;
 import net.minecraftforge.common.util.ITeleporter;
@@ -19,18 +18,18 @@ public class OverworldTeleporter implements ITeleporter {
     public static int f = 0;
 
     public static BlockPos thisPos = BlockPos.ZERO;
-    public static boolean thisIsToParadisDim = true;
+    public static boolean thisIsToOverworldDim = true;
 
-    public OverworldTeleporter(BlockPos pos, boolean isToParadisDim) {
+    public OverworldTeleporter(BlockPos pos, boolean isToOverworldDim) {
         thisPos = pos;
-        thisIsToParadisDim = isToParadisDim;
+        thisIsToOverworldDim = isToOverworldDim;
     }
 
     @Override
     public Entity placeEntity(Entity entity, ServerLevel currentWorld, ServerLevel destWorld, float yaw, Function<Boolean, Entity> repositionEntity) {
         entity = repositionEntity.apply(false);
         double y = 61;
-        if (!thisIsToParadisDim) {
+        if (!thisIsToOverworldDim) {
             y = thisPos.getY();
         }
         BlockPos destinationPos = new BlockPos(thisPos.getX(), (int) y, thisPos.getZ());
@@ -45,23 +44,20 @@ public class OverworldTeleporter implements ITeleporter {
             return entity;
         }
         ServerPlayer player = (ServerPlayer) entity;
-        if (destWorld.dimension().equals(DestriumMod.PARADIS_DIMENSION)) {
+        if (destWorld.dimension().equals(Level.OVERWORLD)) {
 
         }
-        if (!player.getInventory().contains(new ItemStack(ModBlocks.OVERWORLD_PORTAL_BLOCK.get()))) {
-            player.addItem(new ItemStack(ModBlocks.OVERWORLD_PORTAL_BLOCK.get()));
-        }
         player.teleportTo(destinationPos.getX() + 0.5D, destinationPos.getY() + 1D, destinationPos.getZ() + 0.5D);
-        if (thisIsToParadisDim) {
+        if (thisIsToOverworldDim) {
             boolean doSetBlock = true;
             for (BlockPos checkPos : BlockPos.betweenClosed(destinationPos.below(10).west(10), destinationPos.above(10).east(10))) {
-                if (destWorld.getBlockState(checkPos).getBlock() instanceof ParadisPortalBlocks) {
+                if (destWorld.getBlockState(checkPos).getBlock() instanceof OverworldPortalBlocks) {
                     doSetBlock = false;
                     break;
                 }
             }
             if (doSetBlock) {
-                destWorld.setBlock(destinationPos, ModBlocks.CLOUD.get().defaultBlockState(), 10);
+                destWorld.setBlock(destinationPos, Blocks.DIRT.defaultBlockState(), 10);
                 f = 1;
             }
         }
