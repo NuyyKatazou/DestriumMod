@@ -33,19 +33,19 @@ public enum ModArmorMaterials implements StringRepresentable, ArmorMaterial {
     }), 18, SoundEvents.ARMOR_EQUIP_DIAMOND, 3.5F, 0.1F, () -> {
         return Ingredient.of(ModItems.ARGONIDE_INGOT.get());
     }),
-    DESTRIUM("destrium", 478,Util.make(new EnumMap<>(ArmorItem.Type.class), (p_266656_) -> {
-        p_266656_.put(ArmorItem.Type.BOOTS, 5);
-        p_266656_.put(ArmorItem.Type.LEGGINGS, 8);
-        p_266656_.put(ArmorItem.Type.CHESTPLATE,10);
-        p_266656_.put(ArmorItem.Type.HELMET, 5);
+    DESTRIUM("destrium", 478,Util.make(new EnumMap<>(ArmorItem.Type.class), (p_266657_) -> {
+        p_266657_.put(ArmorItem.Type.BOOTS, 5);
+        p_266657_.put(ArmorItem.Type.LEGGINGS, 8);
+        p_266657_.put(ArmorItem.Type.CHESTPLATE,10);
+        p_266657_.put(ArmorItem.Type.HELMET, 5);
     }), 3, SoundEvents.ARMOR_EQUIP_DIAMOND, 4.0F, 0.1F, () -> {
         return Ingredient.of(ModItems.DESTRIUM_INGOT.get());
     }),
-    AMAZONITE("amazonite", 1256,Util.make(new EnumMap<>(ArmorItem.Type.class), (p_266656_) -> {
-        p_266656_.put(ArmorItem.Type.BOOTS, 9);
-        p_266656_.put(ArmorItem.Type.LEGGINGS, 12);
-        p_266656_.put(ArmorItem.Type.CHESTPLATE, 14);
-        p_266656_.put(ArmorItem.Type.HELMET, 9);
+    AMAZONITE("amazonite", 1256,Util.make(new EnumMap<>(ArmorItem.Type.class), (p_266658_) -> {
+        p_266658_.put(ArmorItem.Type.BOOTS, 9);
+        p_266658_.put(ArmorItem.Type.LEGGINGS, 12);
+        p_266658_.put(ArmorItem.Type.CHESTPLATE, 14);
+        p_266658_.put(ArmorItem.Type.HELMET, 9);
     }), 25, SoundEvents.ARMOR_EQUIP_NETHERITE, 5.0F, 0.1F, () -> {
         return Ingredient.of(ModItems.AMAZONITE_FRAGMENT.get());
     });
