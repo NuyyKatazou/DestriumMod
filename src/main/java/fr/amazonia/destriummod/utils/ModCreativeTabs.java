@@ -26,15 +26,15 @@ public class ModCreativeTabs extends CreativeModeTab {
     @SubscribeEvent
     public static void registerCreativeModeTabs(CreativeModeTabEvent.Register event) {
         ItemTab = event.registerCreativeModeTab(new ResourceLocation(DestriumMod.MODID, "itemtab"),
-                builder -> builder.icon(() -> new ItemStack(ModItems.AMAZONITE_FRAGMENT.get())).title(Component.literal("Items Tabs")).build());
+                builder -> builder.icon(() -> new ItemStack(ModItems.AMAZONITE_FRAGMENT.get())).title(Component.translatable(String.valueOf(new ResourceLocation(DestriumMod.MODID, "itemtab")))).build());
 
         BlockTab = event.registerCreativeModeTab(new ResourceLocation(DestriumMod.MODID, "blocktab"),
-                builder -> builder.icon(() -> new ItemStack(ModBlocks.AMAZONITE_BLOCK.get())).title(Component.literal("Blocks Tabs")).build());
+                builder -> builder.icon(() -> new ItemStack(ModBlocks.AMAZONITE_BLOCK.get())).title(Component.translatable(String.valueOf(new ResourceLocation(DestriumMod.MODID, "blocktab")))).build());
 
         ToolTab = event.registerCreativeModeTab(new ResourceLocation(DestriumMod.MODID, "tooltab"),
-                builder -> builder.icon(() -> new ItemStack(ModItems.AMAZONITE_PICKAXE.get())).title(Component.literal("Tools & Armors Tabs")).build());
+                builder -> builder.icon(() -> new ItemStack(ModItems.AMAZONITE_PICKAXE.get())).title(Component.translatable(String.valueOf(new ResourceLocation(DestriumMod.MODID, "tooltab")))).build());
 
         FoodTab = event.registerCreativeModeTab(new ResourceLocation(DestriumMod.MODID, "foodtab"),
-                builder -> builder.icon(() -> new ItemStack(ModItems.AMAZONITE_APPLE.get())).title(Component.literal("Foods Tabs")).build());
+                builder -> builder.icon(() -> new ItemStack(ModItems.AMAZONITE_APPLE.get())).title(Component.translatable(String.valueOf(new ResourceLocation(DestriumMod.MODID, "foodtab")))).build());
     }
 }

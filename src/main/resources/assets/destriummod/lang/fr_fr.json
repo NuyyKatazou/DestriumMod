@@ -183,10 +183,10 @@
 
 
 
-  "itemGroup.destriummod.blocktab": "Onglets Des Blocs",
-  "itemGroup.destriummod.itemtab": "Onglets Des Items",
-  "itemGroup.destriummod.tooltab": "Onglets Des Outils Et Armures",
-  "itemGroup.destriummod.foodtab": "Onglets Des Nourritures",
+  "destriummod:blocktab": "Onglets Des Blocs",
+  "destriummod:itemtab": "Onglets Des Items",
+  "destriummod:tooltab": "Onglets Des Outils Et Armures",
+  "destriummod:foodtab": "Onglets Des Nourritures",
 
 
 

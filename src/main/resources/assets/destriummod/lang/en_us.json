@@ -183,10 +183,10 @@
 
 
 
-  "itemGroup.destriummod.blocktab": "Blocks Tabs",
-  "itemGroup.destriummod.itemtab": "Items Tabs",
-  "itemGroup.destriummod.tooltab": "Tools & Armors Tabs",
-  "itemGroup.destriummod.foodtab": "Foods Tabs",
+  "destriummod:blocktab": "Blocks Tabs",
+  "destriummod:itemtab": "Items Tabs",
+  "destriummod:tooltab": "Tools & Armors Tabs",
+  "destriummod:foodtab": "Foods Tabs",
 
 
 
