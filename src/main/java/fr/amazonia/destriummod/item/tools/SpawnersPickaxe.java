@@ -22,8 +22,8 @@ public class SpawnersPickaxe extends PickaxeItem {
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack p_270235_, @Nullable Level p_270688_, List<Component> p_270630_, TooltipFlag p_270170_) {
 		p_270630_.add(Component.translatable(this.getDescriptionId() + ".desc").withStyle(ChatFormatting.DARK_AQUA));
-		p_270630_.add(Component.translatable(this.getDescriptionId() + ".desc").withStyle(ChatFormatting.DARK_AQUA));
-		p_270630_.add(Component.translatable(this.getDescriptionId() + ".desc").withStyle(ChatFormatting.DARK_AQUA));
-		p_270630_.add(Component.translatable(this.getDescriptionId() + ".desc").withStyle(ChatFormatting.DARK_AQUA));
+		p_270630_.add(Component.translatable(this.getDescriptionId() + ".desc2").withStyle(ChatFormatting.DARK_AQUA));
+		p_270630_.add(Component.translatable(this.getDescriptionId() + ".desc3").withStyle(ChatFormatting.DARK_AQUA));
+		p_270630_.add(Component.translatable(this.getDescriptionId() + ".desc4").withStyle(ChatFormatting.DARK_AQUA));
 	}
 }
