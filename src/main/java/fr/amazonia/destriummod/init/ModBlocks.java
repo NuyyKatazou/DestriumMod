@@ -88,8 +88,8 @@ public class ModBlocks {
 	
 	public static final RegistryObject<Block> BELOW_BLOCK = registerBlock("below_block", () -> new Block(BlockBehaviour.Properties.of(Material.GLASS).strength(4.0F, 10.0F).requiresCorrectToolForDrops()));
 	
-	public static final RegistryObject<Block> PARADIS_PORTAL_BLOCK = registerBlock("paradis_portal_block", () -> new ParadisPortalBlocks(BlockBehaviour.Properties.of(Material.METAL).strength(10.0F, 200.0F).requiresCorrectToolForDrops()));
-	public static final RegistryObject<Block> OVERWORLD_PORTAL_BLOCK = registerBlock("overworld_portal_block", () -> new OverworldPortalBlocks(BlockBehaviour.Properties.of(Material.METAL).strength(10.0F, 200.0F).requiresCorrectToolForDrops()));
+	public static final RegistryObject<Block> PARADIS_PORTAL_BLOCK = registerBlock("paradis_portal_block", () -> new ParadisPortalBlocks(BlockBehaviour.Properties.of(Material.METAL).sound(SoundType.AMETHYST).strength(10.0F, 200.0F).requiresCorrectToolForDrops()));
+	public static final RegistryObject<Block> OVERWORLD_PORTAL_BLOCK = registerBlock("overworld_portal_block", () -> new OverworldPortalBlocks(BlockBehaviour.Properties.of(Material.METAL).sound(SoundType.AMETHYST).strength(10.0F, 200.0F).requiresCorrectToolForDrops()));
 
 	//Plants
 	public static final RegistryObject<Block> AMAZONITE_PLANTS = BLOCKS.register("amazonite_plants", () -> new AmazonitePlants(BlockBehaviour.Properties.of(Material.PLANT).instabreak().randomTicks().noCollission().sound(SoundType.CROP)));
