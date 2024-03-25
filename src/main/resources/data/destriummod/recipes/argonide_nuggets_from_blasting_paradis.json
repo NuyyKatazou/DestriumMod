@@ -1,5 +1,5 @@
 {
-    "type": "minecraft:smelting",
+    "type": "minecraft:blasting",
     "group": "argonide_nuggets",
     "ingredient": {
         "item": "destriummod:paradis_argonide_ore"
@@ -9,5 +9,5 @@
         "count": 2
     },
     "experience": 5,
-    "cookingtime": 100
+    "cookingtime": 50
 }

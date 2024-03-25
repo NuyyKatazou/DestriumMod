@@ -1,5 +1,5 @@
 {
-    "type": "minecraft:smelting",
+    "type": "minecraft:blasting",
     "group": "destrium_nuggets",
     "ingredient": {
         "item": "destriummod:paradis_destrium_ore"
@@ -9,5 +9,5 @@
         "count": 2
     },
     "experience": 25,
-    "cookingtime": 1000
+    "cookingtime": 500
 }
