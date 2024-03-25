@@ -8,6 +8,7 @@ import net.minecraft.block.BlockState;
 import net.minecraft.block.CropsBlock;
 import net.minecraft.util.IItemProvider;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.world.IBlockReader;
 import net.minecraft.world.World;
 
 public class AmazonitePlants extends CropsBlock {
@@ -20,7 +21,7 @@ public class AmazonitePlants extends CropsBlock {
 	      return ModItems.AMAZONITE_SEEDS.get();
 	   }
 
-	public boolean isBonemealSuccess(World p_180670_1_, Random p_180670_2_, BlockPos p_180670_3_, BlockState p_180670_4_) {
+	public boolean isValidBonemealTarget(IBlockReader p_176473_1_, BlockPos p_176473_2_, BlockState p_176473_3_, boolean p_176473_4_) {
 		return false;
 	}
 }
