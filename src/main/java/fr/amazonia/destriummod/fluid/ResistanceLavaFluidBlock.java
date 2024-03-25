@@ -39,27 +39,27 @@ public class ResistanceLavaFluidBlock extends LiquidBlock {
 	}
 
 	private boolean shouldSpreadLiquid(Level p_54697_, BlockPos p_54698_) {
-	      if (this.getFluid().is(FluidTags.LAVA)) {
-	         boolean flag = p_54697_.getBlockState(p_54698_.below()).is(Blocks.SOUL_SOIL);
+		if (this.getFluid().is(FluidTags.LAVA)) {
+	    	boolean flag = p_54697_.getBlockState(p_54698_.below()).is(Blocks.SOUL_SOIL);
 
-	         for(Direction direction : POSSIBLE_FLOW_DIRECTIONS) {
-	            BlockPos blockpos = p_54698_.relative(direction.getOpposite());
-	            if (p_54697_.getFluidState(blockpos).is(FluidTags.WATER)) {
-	               Block block = p_54697_.getFluidState(p_54698_).isSource() ? Blocks.OBSIDIAN : Blocks.COBBLESTONE;
-	               p_54697_.setBlockAndUpdate(p_54698_, net.minecraftforge.event.ForgeEventFactory.fireFluidPlaceBlockEvent(p_54697_, p_54698_, p_54698_, block.defaultBlockState()));
-	               this.fizz(p_54697_, p_54698_);
-	               return false;
+	    	for(Direction direction : POSSIBLE_FLOW_DIRECTIONS) {
+	        	BlockPos blockpos = p_54698_.relative(direction.getOpposite());
+	        	if (p_54697_.getFluidState(blockpos).is(FluidTags.WATER)) {
+	            	Block block = p_54697_.getFluidState(p_54698_).isSource() ? Blocks.OBSIDIAN : Blocks.COBBLESTONE;
+	            	p_54697_.setBlockAndUpdate(p_54698_, net.minecraftforge.event.ForgeEventFactory.fireFluidPlaceBlockEvent(p_54697_, p_54698_, p_54698_, block.defaultBlockState()));
+	            	this.fizz(p_54697_, p_54698_);
+	            	return false;
 	            }
 
-	            if (flag && p_54697_.getBlockState(blockpos).is(Blocks.BLUE_ICE)) {
-	               p_54697_.setBlockAndUpdate(p_54698_, net.minecraftforge.event.ForgeEventFactory.fireFluidPlaceBlockEvent(p_54697_, p_54698_, p_54698_, Blocks.BASALT.defaultBlockState()));
-	               this.fizz(p_54697_, p_54698_);
-	               return false;
-	            }
-	         }
-	      }
-	      return true;
-	   }
+	        	if (flag && p_54697_.getBlockState(blockpos).is(Blocks.BLUE_ICE)) {
+	            	p_54697_.setBlockAndUpdate(p_54698_, net.minecraftforge.event.ForgeEventFactory.fireFluidPlaceBlockEvent(p_54697_, p_54698_, p_54698_, Blocks.BASALT.defaultBlockState()));
+	            	this.fizz(p_54697_, p_54698_);
+	            	return false;
+	        	}
+	    	}
+		}
+		return true;
+	}
 
 	private void fizz(LevelAccessor p_54701_, BlockPos p_54702_) {
 	      p_54701_.levelEvent(1501, p_54702_, 0);

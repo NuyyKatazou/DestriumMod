@@ -55,10 +55,6 @@ public abstract class ResistanceLavaFluid extends ForgeFlowingFluid {
     private void fizz(LevelAccessor p_76213_, BlockPos p_76214_) {
         p_76213_.levelEvent(1501, p_76214_, 0);
     }
-    
-    protected boolean canConvertToSource() {
-        return false;
-     }
 
 	protected void spreadTo(LevelAccessor p_76220_, BlockPos p_76221_, BlockState p_76222_, Direction p_76223_, FluidState p_76224_) {
         if (p_76223_ == Direction.DOWN) {
