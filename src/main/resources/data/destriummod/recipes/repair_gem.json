@@ -1,5 +1,6 @@
 {
     "type": "minecraft:crafting_shaped",
+    "group": "repair_gem",
     "pattern": [
         "aaa",
         "aaa",
