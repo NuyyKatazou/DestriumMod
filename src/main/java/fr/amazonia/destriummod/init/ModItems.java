@@ -92,7 +92,7 @@ public class ModItems {
 	public static final RegistryObject<Item> LUCKY_NECKLACE = ITEMS.register("lucky_necklace", () -> new LuckyNecklaceArmor(ModArmorMaterials.NECKLACE, EquipmentSlotType.CHEST, new Item.Properties().tab(DestriumMod.ToolTab).setNoRepair().durability(-1).rarity(ModRarity.DESTRIUM)));
 	
 	
-	//Mineral
+	//Minerals
 	public static final RegistryObject<Item> AMAZONITE_CRUMB = ITEMS.register("amazonite_crumb", () -> new Item(new Item.Properties().tab(DestriumMod.ItemTab).rarity(ModRarity.AMAZONITE).fireResistant()));
 	public static final RegistryObject<Item> AMAZONITE_DUST = ITEMS.register("amazonite_dust", () -> new Item(new Item.Properties().tab(DestriumMod.ItemTab).rarity(ModRarity.AMAZONITE).fireResistant()));
 	public static final RegistryObject<Item> AMAZONITE_FRAGMENT = ITEMS.register("amazonite_fragment", () -> new Item(new Item.Properties().tab(DestriumMod.ItemTab).rarity(ModRarity.AMAZONITE).fireResistant()));
@@ -128,7 +128,7 @@ public class ModItems {
 	public static final RegistryObject<Item> AMAZONITE_PLATE = ITEMS.register("amazonite_plate", () -> new Item(new Item.Properties().tab(DestriumMod.ItemTab).rarity(ModRarity.AMAZONITE)));
 
 
-	//Fluid
+	//Fluids
 	public static final RegistryObject<Item> POISON_WATER_BUCKET = ITEMS.register("poison_water_bucket", () -> new BucketItem(ModFluids.POISON_WATER_FLUID, new Item.Properties().stacksTo(1).tab(DestriumMod.ItemTab).rarity(ModRarity.AMAZONITE)));
 	public static final RegistryObject<Item> POISON_STAR = ITEMS.register("poison_star", () -> new Item(new Item.Properties().tab(DestriumMod.ItemTab).rarity(ModRarity.RED)));
 	

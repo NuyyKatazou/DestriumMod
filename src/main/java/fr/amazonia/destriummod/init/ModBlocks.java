@@ -51,7 +51,7 @@ public class ModBlocks {
 	public static final RegistryObject<Block> CLOUD2 = createBlock("cloud2", () -> new Block(AbstractBlock.Properties.of(Material.CLAY).harvestTool(ToolType.PICKAXE).harvestLevel(2).strength(2.5f, 25f).requiresCorrectToolForDrops()));
 
 
-	//Ore
+	//Ores
 	public static final RegistryObject<Block> RANDOM_ORE = createBlock("random_ore", () -> new ModOreBlock(AbstractBlock.Properties.of(Material.STONE).harvestTool(ToolType.PICKAXE).harvestLevel(5).strength(5f, 100f).requiresCorrectToolForDrops()));
 	public static final RegistryObject<Block> PARADIS_AMAZONITE_ORE = createBlock("paradis_amazonite_ore", () -> new Block(AbstractBlock.Properties.of(Material.STONE).harvestTool(ToolType.PICKAXE).harvestLevel(5).strength(10f, 100f).requiresCorrectToolForDrops()));
 	public static final RegistryObject<Block> PARADIS_DESTRIUM_ORE = createBlock("paradis_destrium_ore", () -> new Block(AbstractBlock.Properties.of(Material.STONE).harvestTool(ToolType.PICKAXE).harvestLevel(4).strength(6f, 50f).requiresCorrectToolForDrops()));
@@ -83,14 +83,14 @@ public class ModBlocks {
 	public static final RegistryObject<Block> DIRT_COMPRESSED5 = createBlock("dirt_compressed5", () -> new Block(AbstractBlock.Properties.of(Material.DIRT).harvestTool(ToolType.SHOVEL).harvestLevel(4).strength(20.0F, 14.0F).requiresCorrectToolForDrops()));
 
 
-	//Other
+	//Others
 	public static final RegistryObject<Block> AMAZONITE_RELIQUE_BLOCK = createBlock("amazonite_relique_block", () -> new ModOreBlock(AbstractBlock.Properties.of(Material.METAL).harvestTool(ToolType.PICKAXE).harvestLevel(5).strength(25.0F, 100.0F).requiresCorrectToolForDrops()));
 	
 	
 	public static final RegistryObject<Block> BELOW_BLOCK = createBlock("below_block", () -> new Block(AbstractBlock.Properties.of(Material.GLASS).harvestTool(ToolType.PICKAXE).harvestLevel(5).strength(4.0F, 10.0F).requiresCorrectToolForDrops()));
 	
 
-	//Portal BLocks
+	//Portal Blocks
 	public static final RegistryObject<Block> PARADIS_PORTAL_BLOCK = createBlock("paradis_portal_block", () -> new ParadisPortalBlocks(AbstractBlock.Properties.of(Material.METAL).harvestTool(ToolType.PICKAXE).harvestLevel(3).strength(10.0F, 200.0F).requiresCorrectToolForDrops()));
 	public static final RegistryObject<Block> OVERWORLD_PORTAL_BLOCK = createBlock("overworld_portal_block", () -> new OverworldPortalBlocks(AbstractBlock.Properties.of(Material.METAL).harvestTool(ToolType.PICKAXE).harvestLevel(3).strength(10.0F, 200.0F).requiresCorrectToolForDrops()));
 
