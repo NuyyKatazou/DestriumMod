@@ -60,7 +60,7 @@ public class ModItems {
 	public static final RegistryObject<Item> ARGONIDE_PICKAXE = ITEMS.register("argonide_pickaxe", () -> new PickaxeItem(ModItemTiers.ARGONIDE, 0, -2.8f, new Item.Properties().tab(DestriumMod.ToolTab).rarity(ModRarity.ARGONIDE).fireResistant()));
 	public static final RegistryObject<Item> ARGONIDE_AXE = ITEMS.register("argonide_axe", () -> new AxeItem(ModItemTiers.ARGONIDE, 4, -3f, new Item.Properties().tab(DestriumMod.ToolTab).rarity(ModRarity.ARGONIDE).fireResistant()));
 	public static final RegistryObject<Item> ARGONIDE_SHOVEL = ITEMS.register("argonide_shovel", () -> new ShovelItem(ModItemTiers.ARGONIDE, 1, -3f, new Item.Properties().tab(DestriumMod.ToolTab).rarity(ModRarity.ARGONIDE).fireResistant()));
-	public static final RegistryObject<Item> ARGONIDE_HOES = ITEMS.register("argonide_hoes", () -> new HoeItem(ModItemTiers.ARGONIDE, -5, 0f, new Item.Properties().tab(DestriumMod.ToolTab).rarity(ModRarity.ARGONIDE).fireResistant()));
+	public static final RegistryObject<Item> ARGONIDE_HOES = ITEMS.register("argonide_hoes", () -> new HoeItem(ModItemTiers.ARGONIDE, -5, -3f, new Item.Properties().tab(DestriumMod.ToolTab).rarity(ModRarity.ARGONIDE).fireResistant()));
 	
 	public static final RegistryObject<Item> SPAWNERS_PICKAXE = ITEMS.register("spawners_pickaxe", () -> new SpawnersPickaxe(ModItemTiers.SPAWNERS, -1, -2.8f, new Item.Properties().tab(DestriumMod.ToolTab).rarity(ModRarity.SPECIAL).fireResistant()));
 	
