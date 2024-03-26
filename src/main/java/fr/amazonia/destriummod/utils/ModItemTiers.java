@@ -51,6 +51,6 @@ public enum ModItemTiers implements IItemTier {
 	   }
 
 	public Ingredient getRepairIngredient() {
-	      return this.repairIngredient.get();
-	   }
+		return this.repairIngredient.get();
+	}
 }

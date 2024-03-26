@@ -20,7 +20,7 @@ public class ModFlowerGeneration {
         //In Plains
         if(types.contains(BiomeDictionary.Type.PLAINS)) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
-                    event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
+                event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
 
             base.add(() -> ModConfiguredFeatures.CLOVER_CONFIG);
             base.add(() -> ModConfiguredFeatures.CLOVER_TWO_CONFIG);
