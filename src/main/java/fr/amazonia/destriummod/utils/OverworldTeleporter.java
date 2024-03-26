@@ -57,7 +57,9 @@ public class OverworldTeleporter implements ITeleporter {
                 }
             }
             if (doSetBlock) {
-                destWorld.setBlock(destinationPos, Blocks.DIRT.defaultBlockState(), 10);
+                destWorld.setBlock(destinationPos, Blocks.GRASS.defaultBlockState(), 10);
+                destWorld.setBlock(destinationPos.above(1), Blocks.AIR.defaultBlockState(), 10);
+                destWorld.setBlock(destinationPos.above(2), Blocks.AIR.defaultBlockState(), 10);
                 f = 1;
             }
         }

@@ -20,12 +20,15 @@ public class OverworldPortalBlocks extends Block {
 
 	@Override
     public ActionResultType use(BlockState state, World worldIn, BlockPos pos, PlayerEntity player, Hand handIn, BlockRayTraceResult hit) {
+        if (player.getVehicle() != null || player.isVehicle()) {
+            return ActionResultType.FAIL;
+        }
         if (!worldIn.isClientSide()) {
-            if (!player.isCrouching()) {
+            if (!player.isCrouching() && player.canChangeDimensions()) {
                 MinecraftServer server = worldIn.getServer();
                 if (server != null) {
                     if (worldIn.dimension() == World.OVERWORLD) {
-                        
+                        return ActionResultType.FAIL;
                     } else {
                         ServerWorld overworldWorld = server.getLevel(World.OVERWORLD);
                         if (overworldWorld != null) {
