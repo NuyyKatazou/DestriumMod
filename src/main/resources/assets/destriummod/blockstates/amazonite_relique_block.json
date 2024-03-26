@@ -1,7 +1,7 @@
 {
 	"variants": {
-	"": {
-		"model": "destriummod:block/amazonite_relique_block"
-	}
+		"": {
+			"model": "destriummod:block/amazonite_relique_block"
+		}
 	}
 }

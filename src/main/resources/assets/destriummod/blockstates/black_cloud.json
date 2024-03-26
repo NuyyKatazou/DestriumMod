@@ -1,7 +1,7 @@
 {
 	"variants": {
-	"": {
-		"model": "destriummod:block/black_cloud"
-	}
+		"": {
+			"model": "destriummod:block/black_cloud"
+		}
 	}
 }
