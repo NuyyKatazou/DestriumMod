@@ -7,6 +7,7 @@ import net.minecraft.util.math.MathHelper;
 import java.util.Random;
 
 public class ModOreBlock extends OreBlock {
+
     public ModOreBlock(AbstractBlock.Properties p_i48357_1_) {
         super(p_i48357_1_);
     }
