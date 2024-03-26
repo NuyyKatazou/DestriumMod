@@ -1,7 +1,7 @@
 {
 	"variants": {
-	"": {
-		"model": "destriummod:block/cobblestone_compressed8"
-	}
+		"": {
+			"model": "destriummod:block/cobblestone_compressed8"
+		}
 	}
 }

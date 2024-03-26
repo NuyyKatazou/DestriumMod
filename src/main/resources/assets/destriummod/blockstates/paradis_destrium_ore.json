@@ -1,7 +1,7 @@
 {
 	"variants": {
-	"": {
-		"model": "destriummod:block/paradis_destrium_ore"
-	}
+		"": {
+			"model": "destriummod:block/paradis_destrium_ore"
+		}
 	}
 }
