@@ -24,6 +24,6 @@ public class LuckyNecklaceArmor extends ArmorItem {
 	}
 
 	public boolean isEnchantable(ItemStack p_77616_1_) {
-	      return false;
-	   }
+		return false;
+	}
 }
