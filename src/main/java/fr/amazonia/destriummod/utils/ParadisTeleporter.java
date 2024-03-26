@@ -5,6 +5,7 @@ import java.util.function.Function;
 import fr.amazonia.destriummod.DestriumMod;
 import fr.amazonia.destriummod.block.ParadisPortalBlocks;
 import fr.amazonia.destriummod.init.ModBlocks;
+import net.minecraft.block.Blocks;
 import net.minecraft.block.material.Material;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.ServerPlayerEntity;
@@ -66,6 +67,8 @@ public class ParadisTeleporter implements ITeleporter {
             }
             if (doSetBlock) {
                 destWorld.setBlock(destinationPos, ModBlocks.CLOUD.get().defaultBlockState(), 10);
+                destWorld.setBlock(destinationPos.above(1), Blocks.AIR.defaultBlockState(), 10);
+                destWorld.setBlock(destinationPos.above(2), Blocks.AIR.defaultBlockState(), 10);
                 f = 1;
             }
         }

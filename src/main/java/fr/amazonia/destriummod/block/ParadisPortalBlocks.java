@@ -21,12 +21,15 @@ public class ParadisPortalBlocks extends Block {
 
 	@Override
     public ActionResultType use(BlockState state, World worldIn, BlockPos pos, PlayerEntity player, Hand handIn, BlockRayTraceResult hit) {
+        if (player.getVehicle() != null || player.isVehicle()) {
+            return ActionResultType.FAIL;
+        }
         if (!worldIn.isClientSide()) {
-            if (!player.isCrouching()) {
+            if (!player.isCrouching() && player.canChangeDimensions()) {
                 MinecraftServer server = worldIn.getServer();
                 if (server != null) {
                     if (worldIn.dimension() == DestriumMod.PARADIS_DIMENSION) {
-                        
+                        return ActionResultType.FAIL;
                     } else {
                         ServerWorld paradisWorld = server.getLevel(DestriumMod.PARADIS_DIMENSION);
                         if (paradisWorld != null) {
