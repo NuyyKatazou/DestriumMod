@@ -11,19 +11,19 @@ import net.minecraft.potion.Effects;
 import net.minecraft.world.World;
 
 public class LuckyNecklaceArmor extends ArmorItem {
-	
-	public LuckyNecklaceArmor(IArmorMaterial p_i48534_1_, EquipmentSlotType p_i48534_2_, Properties p_i48534_3_) {
-		super(p_i48534_1_, p_i48534_2_, p_i48534_3_);
-	}
-	
-	@Override
-    public void onArmorTick(ItemStack itemstack, World world, PlayerEntity player) {
-		if(player.getItemBySlot(EquipmentSlotType.CHEST).getItem() == ModItems.LUCKY_NECKLACE.get()) {
-			player.addEffect(new EffectInstance(Effects.LUCK, 300, 4, false, false, true));
-		}
-	}
 
-	public boolean isEnchantable(ItemStack p_77616_1_) {
-		return false;
-	}
+    public LuckyNecklaceArmor(IArmorMaterial p_i48534_1_, EquipmentSlotType p_i48534_2_, Properties p_i48534_3_) {
+        super(p_i48534_1_, p_i48534_2_, p_i48534_3_);
+    }
+
+    @Override
+    public void onArmorTick(ItemStack itemstack, World world, PlayerEntity player) {
+        if (player.getItemBySlot(EquipmentSlotType.CHEST).getItem() == ModItems.LUCKY_NECKLACE.get()) {
+            player.addEffect(new EffectInstance(Effects.LUCK, 300, 4, false, false, true));
+        }
+    }
+
+    public boolean isEnchantable(ItemStack p_77616_1_) {
+        return false;
+    }
 }

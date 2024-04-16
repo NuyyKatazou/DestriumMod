@@ -1,7 +1,8 @@
 package fr.amazonia.destriummod.block;
 
 import fr.amazonia.destriummod.init.ModBlocks;
-import net.minecraft.block.*;
+import net.minecraft.block.AbstractBlock;
+import net.minecraft.block.OreBlock;
 import net.minecraft.util.math.MathHelper;
 
 import java.util.Random;

@@ -15,11 +15,11 @@ import net.minecraft.world.server.ServerWorld;
 
 public class ParadisPortalBlocks extends Block {
 
-	public ParadisPortalBlocks(Properties p_i48440_1_) {
-		super(p_i48440_1_);
-	}
+    public ParadisPortalBlocks(Properties p_i48440_1_) {
+        super(p_i48440_1_);
+    }
 
-	@Override
+    @Override
     public ActionResultType use(BlockState state, World worldIn, BlockPos pos, PlayerEntity player, Hand handIn, BlockRayTraceResult hit) {
         if (player.getVehicle() != null || player.isVehicle()) {
             return ActionResultType.FAIL;

@@ -1,7 +1,5 @@
 package fr.amazonia.destriummod.fluid;
 
-import java.util.function.Supplier;
-
 import fr.amazonia.destriummod.init.ModBlocks;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
@@ -16,26 +14,28 @@ import net.minecraft.util.Direction;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
+import java.util.function.Supplier;
+
 public class PoisonWaterFluidBlock extends FlowingFluidBlock {
 
-	public PoisonWaterFluidBlock(Supplier<? extends FlowingFluid> supplier, Properties p_i48368_1_) {
-		super(supplier, p_i48368_1_);
-	}
+    public PoisonWaterFluidBlock(Supplier<? extends FlowingFluid> supplier, Properties p_i48368_1_) {
+        super(supplier, p_i48368_1_);
+    }
 
-	public void entityInside(BlockState p_196262_1_, World p_196262_2_, BlockPos p_196262_3_, Entity p_196262_4_) {
-	    if (p_196262_4_ instanceof PlayerEntity) {
+    public void entityInside(BlockState p_196262_1_, World p_196262_2_, BlockPos p_196262_3_, Entity p_196262_4_) {
+        if (p_196262_4_ instanceof PlayerEntity) {
             p_196262_4_.hurt(DamageSource.WITHER, 1F);
         }
-	}
+    }
 
-	@Override
+    @Override
     public void neighborChanged(BlockState state, World world, BlockPos pos, Block block, BlockPos fromPos, boolean notify) {
         if (this.receiveNeighborFluids(world, pos)) {
             world.getLiquidTicks().scheduleTick(pos, state.getFluidState().getType(), this.getFluid().getTickDelay(world));
         }
     }
-	
-	private boolean receiveNeighborFluids(World world, BlockPos pos) {
+
+    private boolean receiveNeighborFluids(World world, BlockPos pos) {
         boolean flag = false;
 
         for (Direction direction : Direction.values()) {
@@ -62,7 +62,7 @@ public class PoisonWaterFluidBlock extends FlowingFluidBlock {
         return true;
     }
 
-	private void triggerMixEffects(World world, BlockPos pos) {
+    private void triggerMixEffects(World world, BlockPos pos) {
         world.levelEvent(1501, pos, 0);
     }
 }

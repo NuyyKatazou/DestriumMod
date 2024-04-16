@@ -10,15 +10,15 @@ import net.minecraft.world.IBlockReader;
 
 public class DestriumPlants extends CropsBlock {
 
-	public DestriumPlants(AbstractBlock.Properties properties) {
-	      super(properties);
-	   }
+    public DestriumPlants(AbstractBlock.Properties properties) {
+        super(properties);
+    }
 
-	protected IItemProvider getBaseSeedId() {
-	      return ModItems.DESTRIUM_SEEDS.get();
-	   }
+    protected IItemProvider getBaseSeedId() {
+        return ModItems.DESTRIUM_SEEDS.get();
+    }
 
-	public boolean isValidBonemealTarget(IBlockReader p_176473_1_, BlockPos p_176473_2_, BlockState p_176473_3_, boolean p_176473_4_) {
-		return false;
-	}
+    public boolean isValidBonemealTarget(IBlockReader p_176473_1_, BlockPos p_176473_2_, BlockState p_176473_3_, boolean p_176473_4_) {
+        return false;
+    }
 }

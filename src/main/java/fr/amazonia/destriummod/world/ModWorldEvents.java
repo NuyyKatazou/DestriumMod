@@ -10,13 +10,13 @@ import net.minecraftforge.fml.common.Mod;
 
 @Mod.EventBusSubscriber(modid = DestriumMod.MODID)
 public class ModWorldEvents {
-	
-	@SubscribeEvent
+
+    @SubscribeEvent
     public static void biomeLoadingEvent(final BiomeLoadingEvent event) {
         ModFlowerGeneration.generateFlowers(event);
-        
+
         ModOreGeneration.generateOre(event);
-        
+
         ModConfiguredFeatures.registerOres();
     }
 }

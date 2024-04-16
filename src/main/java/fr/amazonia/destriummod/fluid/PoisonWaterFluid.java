@@ -16,11 +16,11 @@ import net.minecraftforge.fluids.ForgeFlowingFluid;
 
 public abstract class PoisonWaterFluid extends ForgeFlowingFluid {
 
-	protected PoisonWaterFluid(Properties properties) {
-		super(properties);
-	}
+    protected PoisonWaterFluid(Properties properties) {
+        super(properties);
+    }
 
-	@Override
+    @Override
     public Fluid getFlowing() {
         return ModFluids.POISON_WATER_FLOWING.get();
     }
@@ -44,12 +44,12 @@ public abstract class PoisonWaterFluid extends ForgeFlowingFluid {
     public boolean canBeReplacedWith(FluidState state, IBlockReader world, BlockPos pos, Fluid fluid, Direction direction) {
         return direction == Direction.DOWN && !fluid.is(FluidTags.WATER);
     }
-    
+
     @Override
     public BlockState createLegacyBlock(FluidState state) {
         return ModFluids.POISON_WATER_BLOCK.get().defaultBlockState().setValue(FlowingFluidBlock.LEVEL, getLegacyLevel(state));
     }
-    
+
     public static class Flowing extends PoisonWaterFluid {
 
         public Flowing(Properties properties) {

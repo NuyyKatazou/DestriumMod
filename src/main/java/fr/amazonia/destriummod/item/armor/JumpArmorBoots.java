@@ -11,15 +11,15 @@ import net.minecraft.potion.Effects;
 import net.minecraft.world.World;
 
 public class JumpArmorBoots extends ArmorItem {
-	
-	public JumpArmorBoots(IArmorMaterial materialIn, EquipmentSlotType slot, Properties properties) {
-		super(materialIn, slot, properties);
-	}
-	
-	@Override
+
+    public JumpArmorBoots(IArmorMaterial materialIn, EquipmentSlotType slot, Properties properties) {
+        super(materialIn, slot, properties);
+    }
+
+    @Override
     public void onArmorTick(ItemStack itemstack, World world, PlayerEntity player) {
-		if(player.getItemBySlot(EquipmentSlotType.FEET).getItem() == ModItems.JUMP_BOOTS.get()) {
-			player.addEffect(new EffectInstance(Effects.JUMP, 300, 2, false, false, true));
-		}
-	}
+        if (player.getItemBySlot(EquipmentSlotType.FEET).getItem() == ModItems.JUMP_BOOTS.get()) {
+            player.addEffect(new EffectInstance(Effects.JUMP, 300, 2, false, false, true));
+        }
+    }
 }

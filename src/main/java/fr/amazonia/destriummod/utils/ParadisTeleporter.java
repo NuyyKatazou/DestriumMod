@@ -1,7 +1,5 @@
 package fr.amazonia.destriummod.utils;
 
-import java.util.function.Function;
-
 import fr.amazonia.destriummod.DestriumMod;
 import fr.amazonia.destriummod.block.ParadisPortalBlocks;
 import fr.amazonia.destriummod.init.ModBlocks;
@@ -14,6 +12,8 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.server.ServerWorld;
 import net.minecraftforge.common.util.ITeleporter;
+
+import java.util.function.Function;
 
 public class ParadisTeleporter implements ITeleporter {
 
@@ -39,7 +39,7 @@ public class ParadisTeleporter implements ITeleporter {
         while ((destWorld.getBlockState(destinationPos).getMaterial() != Material.AIR && !destWorld.getBlockState(destinationPos).canBeReplaced(Fluids.WATER)) &&
                 (destWorld.getBlockState(destinationPos.above()).getMaterial() != Material.AIR && !destWorld.getBlockState(destinationPos.above()).canBeReplaced(Fluids.WATER)) &&
                 tries < 25) {
-        	destinationPos = destinationPos.above(2);
+            destinationPos = destinationPos.above(2);
             tries++;
         }
         if (!(entity instanceof ServerPlayerEntity)) {
