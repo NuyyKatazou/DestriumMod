@@ -1,5 +1,6 @@
 {
     "type": "minecraft:smelting",
+    "group": "amazonite_crumb",
     "ingredient": {
         "item": "destriummod:paradis_amazonite_ore"
     },

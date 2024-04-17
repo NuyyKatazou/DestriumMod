@@ -1,5 +1,6 @@
 {
     "type": "minecraft:smelting",
+    "group": "destrium_nuggets",
     "ingredient": {
         "item": "destriummod:paradis_destrium_ore"
     },

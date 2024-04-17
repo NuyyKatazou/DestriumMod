@@ -1,5 +1,6 @@
 {
   "type": "minecraft:smelting",
+  "group": "repair_fragment",
   "ingredient": {
     "item": "destriummod:repair_ore"
   },
