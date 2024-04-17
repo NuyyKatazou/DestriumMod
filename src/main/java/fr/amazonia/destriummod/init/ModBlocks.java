@@ -53,7 +53,7 @@ public class ModBlocks {
 	public static final RegistryObject<Block> CLOUD2 = createBlock("cloud2", () -> new Block(BlockBehaviour.Properties.of(Material.CLAY).strength(2.5f, 25f).requiresCorrectToolForDrops()));
 
 
-	//Ore
+	//Ores
 	public static final RegistryObject<Block> RANDOM_ORE = createBlock("random_ore", () -> new ModOreBlock(BlockBehaviour.Properties.of(Material.STONE).strength(5f, 100f).requiresCorrectToolForDrops()));
 	public static final RegistryObject<Block> PARADIS_AMAZONITE_ORE = createBlock("paradis_amazonite_ore", () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(10f, 100f).requiresCorrectToolForDrops()));
 	public static final RegistryObject<Block> PARADIS_DESTRIUM_ORE = createBlock("paradis_destrium_ore", () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(6f, 50f).requiresCorrectToolForDrops()));
@@ -86,7 +86,7 @@ public class ModBlocks {
 	public static final RegistryObject<Block> DIRT_COMPRESSED5 = createBlock("dirt_compressed5", () -> new Block(BlockBehaviour.Properties.of(Material.DIRT).strength(20.0F, 14.0F).requiresCorrectToolForDrops()));
 
 
-	//Other
+	//Others
 	public static final RegistryObject<Block> AMAZONITE_RELIQUE_BLOCK = createBlock("amazonite_relique_block", () -> new ModOreBlock(BlockBehaviour.Properties.of(Material.METAL).strength(25.0F, 100.0F).requiresCorrectToolForDrops()));
 	
 	
