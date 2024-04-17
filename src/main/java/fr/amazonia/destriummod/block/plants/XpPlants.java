@@ -1,11 +1,9 @@
 package fr.amazonia.destriummod.block.plants;
 
-import java.util.Random;
-
 import fr.amazonia.destriummod.init.ModItems;
 import net.minecraft.core.BlockPos;
+import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.ItemLike;
-import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.CropBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
@@ -20,7 +18,7 @@ public class XpPlants extends CropBlock {
         return ModItems.XP_SEEDS.get();
      }
 
-    public boolean isBonemealSuccess(Level p_180670_1_, Random p_180670_2_, BlockPos p_180670_3_, BlockState p_180670_4_) {
+    public boolean isValidBonemealTarget(BlockGetter p_52258_, BlockPos p_52259_, BlockState p_52260_, boolean p_52261_) {
         return false;
     }
 }
