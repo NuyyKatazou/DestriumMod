@@ -10,6 +10,7 @@ import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.material.Fluids;
 import net.minecraft.world.level.material.Material;
 import net.minecraftforge.common.util.ITeleporter;
@@ -66,6 +67,8 @@ public class ParadisTeleporter implements ITeleporter {
             }
             if (doSetBlock) {
                 destWorld.setBlock(destinationPos, ModBlocks.CLOUD.get().defaultBlockState(), 10);
+                destWorld.setBlock(destinationPos.above(1), Blocks.AIR.defaultBlockState(), 10);
+                destWorld.setBlock(destinationPos.above(2), Blocks.AIR.defaultBlockState(), 10);
                 f = 1;
             }
         }
