@@ -21,7 +21,7 @@ public class ModFlowerGeneration {
         //In Plains
         if(types.contains(BiomeDictionary.Type.PLAINS)) {
             List<Holder<PlacedFeature>> base =
-                    event.getGeneration().getFeatures(GenerationStep.Decoration.VEGETAL_DECORATION);
+                event.getGeneration().getFeatures(GenerationStep.Decoration.VEGETAL_DECORATION);
 
             base.add(ModPlacedFeatures.CLOVER_PLACED);
             base.add(ModPlacedFeatures.CLOVER_TWO_PLACED);

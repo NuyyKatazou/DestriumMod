@@ -15,7 +15,7 @@ public class ModOreGeneration {
     public static void generateOres(final BiomeLoadingEvent event) {
 
         List<Holder<PlacedFeature>> base =
-                event.getGeneration().getFeatures(GenerationStep.Decoration.UNDERGROUND_ORES);
+            event.getGeneration().getFeatures(GenerationStep.Decoration.UNDERGROUND_ORES);
         //In Overworld
         /*
         base.add(ModPlacedFeatures.);
