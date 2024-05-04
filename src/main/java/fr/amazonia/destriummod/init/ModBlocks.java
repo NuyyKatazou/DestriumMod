@@ -52,6 +52,7 @@ public class ModBlocks {
 	public static final RegistryObject<Block> CRACKED_CLOUD = registerBlock("cracked_cloud", () -> new Block(BlockBehaviour.Properties.of(Material.CLAY).strength(2.5f, 25f).requiresCorrectToolForDrops()));
 	public static final RegistryObject<Block> CLOUD2 = registerBlock("cloud2", () -> new Block(BlockBehaviour.Properties.of(Material.CLAY).strength(2.5f, 25f).requiresCorrectToolForDrops()));
 
+
 	//Ore
 	public static final RegistryObject<Block> RANDOM_ORE = registerBlock("random_ore", () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE).strength(5f, 100f).requiresCorrectToolForDrops(), UniformInt.of(1, 5)));
 	public static final RegistryObject<Block> PARADIS_AMAZONITE_ORE = registerBlock("paradis_amazonite_ore", () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(10f, 100f).requiresCorrectToolForDrops()));
@@ -83,6 +84,7 @@ public class ModBlocks {
 	public static final RegistryObject<Block> DIRT_COMPRESSED4 = registerBlock("dirt_compressed4", () -> new Block(BlockBehaviour.Properties.of(Material.DIRT).strength(12.0F, 10.0F).requiresCorrectToolForDrops()));
 	public static final RegistryObject<Block> DIRT_COMPRESSED5 = registerBlock("dirt_compressed5", () -> new Block(BlockBehaviour.Properties.of(Material.DIRT).strength(20.0F, 14.0F).requiresCorrectToolForDrops()));
 
+
 	//Other
 	public static final RegistryObject<Block> AMAZONITE_RELIQUE_BLOCK = registerBlock("amazonite_relique_block", () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.METAL).strength(25.0F, 100.0F).requiresCorrectToolForDrops(), UniformInt.of(5, 15)));
 	
@@ -93,10 +95,12 @@ public class ModBlocks {
 	public static final RegistryObject<Block> PARADIS_PORTAL_BLOCK = registerBlock("paradis_portal_block", () -> new ParadisPortalBlocks(BlockBehaviour.Properties.of(Material.METAL).sound(SoundType.AMETHYST).strength(10.0F, 200.0F).requiresCorrectToolForDrops()));
 	public static final RegistryObject<Block> OVERWORLD_PORTAL_BLOCK = registerBlock("overworld_portal_block", () -> new OverworldPortalBlocks(BlockBehaviour.Properties.of(Material.METAL).sound(SoundType.AMETHYST).strength(10.0F, 200.0F).requiresCorrectToolForDrops()));
 
+
 	//Plants
 	public static final RegistryObject<Block> AMAZONITE_PLANTS = BLOCKS.register("amazonite_plants", () -> new AmazonitePlants(BlockBehaviour.Properties.of(Material.PLANT).instabreak().randomTicks().noCollission().sound(SoundType.CROP)));
 	public static final RegistryObject<Block> DESTRIUM_PLANTS = BLOCKS.register("destrium_plants", () -> new DestriumPlants(BlockBehaviour.Properties.of(Material.PLANT).instabreak().randomTicks().noCollission().sound(SoundType.CROP)));
 	public static final RegistryObject<Block> XP_PLANTS = BLOCKS.register("xp_plants", () -> new XpPlants(BlockBehaviour.Properties.of(Material.PLANT).instabreak().randomTicks().noCollission().sound(SoundType.CROP)));
+
 
 	//Flowers
 	//public static final RegistryObject<FlowerBlock> CLOVER = BLOCKS.register("clover", () -> new FlowerBlock(MobEffects.LUCK, 9, BlockBehaviour.Properties.of(Material.PLANT).noCollission().instabreak().sound(SoundType.GRASS)));
