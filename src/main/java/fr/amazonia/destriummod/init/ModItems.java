@@ -45,7 +45,7 @@ public class ModItems {
 	public static final RegistryObject<Item> ARGONIDE_PICKAXE = ITEMS.register("argonide_pickaxe", () -> new PickaxeItem(ModToolsTiers.ARGONIDE, 0, -2.8f, new Item.Properties().rarity(ModRarity.ARGONIDE).fireResistant()));
 	public static final RegistryObject<Item> ARGONIDE_AXE = ITEMS.register("argonide_axe", () -> new AxeItem(ModToolsTiers.ARGONIDE, 4, -3f, new Item.Properties().rarity(ModRarity.ARGONIDE).fireResistant()));
 	public static final RegistryObject<Item> ARGONIDE_SHOVEL = ITEMS.register("argonide_shovel", () -> new ShovelItem(ModToolsTiers.ARGONIDE, 1, -3f, new Item.Properties().rarity(ModRarity.ARGONIDE).fireResistant()));
-	public static final RegistryObject<Item> ARGONIDE_HOES = ITEMS.register("argonide_hoes", () -> new HoeItem(ModToolsTiers.ARGONIDE, -5, 0f, new Item.Properties().rarity(ModRarity.ARGONIDE).fireResistant()));
+	public static final RegistryObject<Item> ARGONIDE_HOES = ITEMS.register("argonide_hoes", () -> new HoeItem(ModToolsTiers.ARGONIDE, -5, -3f, new Item.Properties().rarity(ModRarity.ARGONIDE).fireResistant()));
 
 	public static final RegistryObject<Item> SPAWNERS_PICKAXE = ITEMS.register("spawners_pickaxe", () -> new SpawnersPickaxe(ModTiers.SPAWNERS, -1, -2.8f, new Item.Properties().rarity(ModRarity.SPECIAL).fireResistant()));
 
