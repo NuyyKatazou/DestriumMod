@@ -156,8 +156,8 @@ public class DestriumMod {
             event.accept(ModBlocks.AMAZONITE_PLANTS);
             event.accept(ModBlocks.DESTRIUM_PLANTS);
             event.accept(ModBlocks.XP_PLANTS);
-            //event.accept(ModBlocks.CLOVER);
-            //event.accept(ModBlocks.CLOVER_TWO);
+            event.accept(ModBlocks.CLOVER);
+            event.accept(ModBlocks.CLOVER_TWO);
 
         }
         if(event.getTab() == ModCreativeTabs.ToolTab) {
@@ -204,6 +204,4 @@ public class DestriumMod {
 
         }
     }
-
-
 }
