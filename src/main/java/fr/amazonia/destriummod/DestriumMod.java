@@ -96,7 +96,7 @@ public class DestriumMod {
             event.accept(ModItems.POISON_STAR);
             //event.accept(ModItems.RESISTANCE_LAVA_BUCKET);
             event.accept(ModItems.RESISTANCE_STAR);
-            //event.accept(ModItems.INFINITY_WATER_BUCKET);
+            event.accept(ModItems.INFINITY_WATER_BUCKET);
             event.accept(ModItems.AMAZONITE_SEEDS);
             event.accept(ModItems.DESTRIUM_SEEDS);
             event.accept(ModItems.XP_SEEDS);
