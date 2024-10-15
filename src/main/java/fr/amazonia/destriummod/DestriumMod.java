@@ -97,6 +97,9 @@ public class DestriumMod {
             //event.accept(ModItems.RESISTANCE_LAVA_BUCKET);
             event.accept(ModItems.RESISTANCE_STAR);
             //event.accept(ModItems.INFINITY_WATER_BUCKET);
+            event.accept(ModItems.AMAZONITE_SEEDS);
+            event.accept(ModItems.DESTRIUM_SEEDS);
+            event.accept(ModItems.XP_SEEDS);
 
         }
         if(event.getTab() == ModCreativeTabs.BlockTab) {
@@ -153,9 +156,6 @@ public class DestriumMod {
             event.accept(ModBlocks.BELOW_BLOCK);
             event.accept(ModBlocks.PARADIS_PORTAL_BLOCK);
             event.accept(ModBlocks.OVERWORLD_PORTAL_BLOCK);
-            event.accept(ModBlocks.AMAZONITE_PLANTS);
-            event.accept(ModBlocks.DESTRIUM_PLANTS);
-            event.accept(ModBlocks.XP_PLANTS);
             event.accept(ModBlocks.CLOVER);
             event.accept(ModBlocks.CLOVER_TWO);
 
