@@ -39,5 +39,4 @@ public class OverworldPortalBlocks extends Block {
 		}
 		return super.use(p_52923_, p_52924_, p_52925_, p_52926_, p_52927_, p_52928_);
 	}
-
 }
