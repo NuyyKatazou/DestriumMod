@@ -55,7 +55,7 @@ public class ModBlocks {
 	public static final RegistryObject<Block> CLOUD2 = registerBlock("cloud2", () -> new Block(BlockBehaviour.Properties.of(Material.CLAY).strength(2.5f, 25f).requiresCorrectToolForDrops()));
 
 
-	//Ore
+	//Ores
 	public static final RegistryObject<Block> RANDOM_ORE = registerBlock("random_ore", () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE).strength(5f, 100f).requiresCorrectToolForDrops(), UniformInt.of(1, 5)));
 	public static final RegistryObject<Block> PARADIS_AMAZONITE_ORE = registerBlock("paradis_amazonite_ore", () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(10f, 100f).requiresCorrectToolForDrops()));
 	public static final RegistryObject<Block> PARADIS_DESTRIUM_ORE = registerBlock("paradis_destrium_ore", () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(6f, 50f).requiresCorrectToolForDrops()));
@@ -69,6 +69,7 @@ public class ModBlocks {
 	public static final RegistryObject<Block> DESTRIUM_BLOCK = registerBlock("destrium_block", () -> new Block(BlockBehaviour.Properties.of(Material.METAL).strength(15f, 125f).requiresCorrectToolForDrops()));
 	public static final RegistryObject<Block> ARGONIDE_BLOCK = registerBlock("argonide_block", () -> new Block(BlockBehaviour.Properties.of(Material.METAL).strength(10f, 25f).requiresCorrectToolForDrops()));
 	public static final RegistryObject<Block> REPAIR_BLOCK = registerBlock("repair_block", () -> new Block(BlockBehaviour.Properties.of(Material.METAL).strength(8f, 32f).requiresCorrectToolForDrops()));
+
 
 	//Compressed
 	public static final RegistryObject<Block> COBBLESTONE_COMPRESSED1 = registerBlock("cobblestone_compressed1", () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(3.0F, 6.5F).requiresCorrectToolForDrops()));
@@ -87,11 +88,12 @@ public class ModBlocks {
 	public static final RegistryObject<Block> DIRT_COMPRESSED5 = registerBlock("dirt_compressed5", () -> new Block(BlockBehaviour.Properties.of(Material.DIRT).strength(20.0F, 14.0F).requiresCorrectToolForDrops()));
 
 
-	//Other
+	//Others
 	public static final RegistryObject<Block> AMAZONITE_RELIQUE_BLOCK = registerBlock("amazonite_relique_block", () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.METAL).strength(25.0F, 100.0F).requiresCorrectToolForDrops(), UniformInt.of(5, 15)));
 	
 	
 	public static final RegistryObject<Block> BELOW_BLOCK = registerBlock("below_block", () -> new Block(BlockBehaviour.Properties.of(Material.GLASS).strength(4.0F, 10.0F).requiresCorrectToolForDrops()));
+
 
 	//Portal Blocks
 	public static final RegistryObject<Block> PARADIS_PORTAL_BLOCK = registerBlock("paradis_portal_block", () -> new ParadisPortalBlocks(BlockBehaviour.Properties.of(Material.METAL).sound(SoundType.AMETHYST).strength(10.0F, 200.0F).requiresCorrectToolForDrops()));
