@@ -1,7 +1,7 @@
 {
 	"variants": {
-	"": {
-		"model": "destriummod:block/overworld_portal_block"
-	}
+		"": {
+			"model": "destriummod:block/overworld_portal_block"
+		}
 	}
 }

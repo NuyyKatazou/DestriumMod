@@ -1,7 +1,7 @@
 {
 	"variants": {
-	"": {
-		"model": "destriummod:block/repair_ore"
-	}
+		"": {
+			"model": "destriummod:block/repair_ore"
+		}
 	}
 }

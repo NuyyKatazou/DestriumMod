@@ -1,7 +1,7 @@
 {
 	"variants": {
-	"": {
-		"model": "destriummod:block/dirt_compressed3"
-	}
+		"": {
+			"model": "destriummod:block/dirt_compressed3"
+		}
 	}
 }

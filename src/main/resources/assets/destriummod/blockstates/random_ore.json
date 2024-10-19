@@ -1,7 +1,7 @@
 {
 	"variants": {
-	"": {
-		"model": "destriummod:block/random_ore"
-	}
+		"": {
+			"model": "destriummod:block/random_ore"
+		}
 	}
 }

@@ -1,7 +1,7 @@
 {
 	"variants": {
-	"": {
-		"model": "destriummod:block/argonide_ore"
-	}
+		"": {
+			"model": "destriummod:block/argonide_ore"
+		}
 	}
 }
