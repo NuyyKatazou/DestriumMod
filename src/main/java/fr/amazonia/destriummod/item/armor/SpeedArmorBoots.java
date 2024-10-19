@@ -1,6 +1,7 @@
 package fr.amazonia.destriummod.item.armor;
 
 import fr.amazonia.destriummod.init.ModItems;
+import net.minecraft.core.Holder;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.EquipmentSlot;
@@ -12,7 +13,7 @@ import net.minecraft.world.level.Level;
 
 public class SpeedArmorBoots extends ArmorItem {
 
-    public SpeedArmorBoots(ArmorMaterial p_40386_, Type p_266831_, Properties p_40388_) {
+    public SpeedArmorBoots(Holder<ArmorMaterial> p_40386_, Type p_266831_, Properties p_40388_) {
         super(p_40386_, p_266831_, p_40388_);
     }
 

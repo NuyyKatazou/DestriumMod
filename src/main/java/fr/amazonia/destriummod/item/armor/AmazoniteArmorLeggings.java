@@ -2,6 +2,7 @@ package fr.amazonia.destriummod.item.armor;
 
 import fr.amazonia.destriummod.init.ModItems;
 import net.minecraft.ChatFormatting;
+import net.minecraft.core.Holder;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
@@ -21,7 +22,7 @@ import java.util.List;
 
 public class AmazoniteArmorLeggings extends ArmorItem {
 
-    public AmazoniteArmorLeggings(ArmorMaterial p_40386_, Type p_266831_, Properties p_40388_) {
+    public AmazoniteArmorLeggings(Holder<ArmorMaterial> p_40386_, Type p_266831_, Properties p_40388_) {
         super(p_40386_, p_266831_, p_40388_);
     }
 
