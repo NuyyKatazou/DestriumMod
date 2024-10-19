@@ -10,6 +10,6 @@
     "item": "destriummod:speed_boots"
   },
   "result": {
-    "item": "destriummod:adventurer_boots"
+    "id": "destriummod:adventurer_boots"
   }
 }

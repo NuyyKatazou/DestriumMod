@@ -11,6 +11,6 @@
         }
     },
     "result": {
-        "item": "destriummod:repair_ingot"
+        "id": "destriummod:repair_ingot"
     }
 }

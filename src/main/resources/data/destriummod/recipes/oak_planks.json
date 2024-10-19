@@ -10,6 +10,6 @@
         }
     },
     "result": {
-        "item": "minecraft:oak_planks"
+        "id": "minecraft:oak_planks"
     }
 }
