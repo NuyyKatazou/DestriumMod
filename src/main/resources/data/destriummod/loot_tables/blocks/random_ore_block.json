@@ -6,13 +6,8 @@
             "bonus_rolls": 0,
             "entries": [
                 {
-                    "type": "minecraft:alternatives",
-                    "children": [
-                        {
-                            "type": "minecraft:item",
-                            "name": "destriummod:random_ore"
-                        }
-                    ]
+                    "type": "minecraft:item",
+                    "name": "destriummod:random_ore"
                 }
             ]
         }
