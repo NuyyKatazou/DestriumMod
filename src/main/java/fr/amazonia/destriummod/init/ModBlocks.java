@@ -21,101 +21,101 @@ import java.util.function.Supplier;
 
 public class ModBlocks {
 
-	public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, DestriumMod.MODID);
+    public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, DestriumMod.MODID);
 
-	//Blocks (Paradis)
-	public static final RegistryObject<Block> CLOUD = registerBlock("cloud", () -> new Block(BlockBehaviour.Properties.copy(Blocks.CLAY).sound(SoundType.STONE).strength(2.5f, 25f).requiresCorrectToolForDrops()));
-	public static final RegistryObject<Block> BLUE_CLOUD = registerBlock("blue_cloud", () -> new Block(BlockBehaviour.Properties.copy(Blocks.CLAY).sound(SoundType.STONE).strength(3f, 25f).requiresCorrectToolForDrops()));
-	public static final RegistryObject<Block> BLACK_CLOUD = registerBlock("black_cloud", () -> new Block(BlockBehaviour.Properties.copy(Blocks.CLAY).sound(SoundType.STONE).strength(3f, 25f).requiresCorrectToolForDrops()));
-	public static final RegistryObject<Block> BROWN_CLOUD = registerBlock("brown_cloud", () -> new Block(BlockBehaviour.Properties.copy(Blocks.CLAY).sound(SoundType.STONE).strength(3f, 25f).requiresCorrectToolForDrops()));
-	public static final RegistryObject<Block> CYAN_CLOUD = registerBlock("cyan_cloud", () -> new Block(BlockBehaviour.Properties.copy(Blocks.CLAY).sound(SoundType.STONE).strength(3f, 25f).requiresCorrectToolForDrops()));
-	public static final RegistryObject<Block> DARK_BLUE_CLOUD = registerBlock("dark_blue_cloud", () -> new Block(BlockBehaviour.Properties.copy(Blocks.CLAY).sound(SoundType.STONE).strength(3f, 25f).requiresCorrectToolForDrops()));
-	public static final RegistryObject<Block> DARK_GRAY_CLOUD = registerBlock("dark_gray_cloud", () -> new Block(BlockBehaviour.Properties.copy(Blocks.CLAY).sound(SoundType.STONE).strength(3f, 25f).requiresCorrectToolForDrops()));
-	public static final RegistryObject<Block> DARK_GREEN_CLOUD = registerBlock("dark_green_cloud", () -> new Block(BlockBehaviour.Properties.copy(Blocks.CLAY).sound(SoundType.STONE).strength(3f, 25f).requiresCorrectToolForDrops()));
-	public static final RegistryObject<Block> DARK_PURPLE_CLOUD = registerBlock("dark_purple_cloud", () -> new Block(BlockBehaviour.Properties.copy(Blocks.CLAY).sound(SoundType.STONE).strength(3f, 25f).requiresCorrectToolForDrops()));
-	public static final RegistryObject<Block> DARK_RED_CLOUD = registerBlock("dark_red_cloud", () -> new Block(BlockBehaviour.Properties.copy(Blocks.CLAY).sound(SoundType.STONE).strength(3f, 25f).requiresCorrectToolForDrops()));
-	public static final RegistryObject<Block> GRAY_CLOUD = registerBlock("gray_cloud", () -> new Block(BlockBehaviour.Properties.copy(Blocks.CLAY).sound(SoundType.STONE).strength(3f, 25f).requiresCorrectToolForDrops()));
-	public static final RegistryObject<Block> GREEN_CLOUD = registerBlock("green_cloud", () -> new Block(BlockBehaviour.Properties.copy(Blocks.CLAY).sound(SoundType.STONE).strength(3f, 25f).requiresCorrectToolForDrops()));
-	public static final RegistryObject<Block> LIGHT_BLUE_CLOUD = registerBlock("light_blue_cloud", () -> new Block(BlockBehaviour.Properties.copy(Blocks.CLAY).sound(SoundType.STONE).strength(3f, 25f).requiresCorrectToolForDrops()));
-	public static final RegistryObject<Block> LIGHT_GRAY_CLOUD = registerBlock("light_gray_cloud", () -> new Block(BlockBehaviour.Properties.copy(Blocks.CLAY).sound(SoundType.STONE).strength(3f, 25f).requiresCorrectToolForDrops()));
-	public static final RegistryObject<Block> LIGHT_RED_CLOUD = registerBlock("light_red_cloud", () -> new Block(BlockBehaviour.Properties.copy(Blocks.CLAY).sound(SoundType.STONE).strength(3f, 25f).requiresCorrectToolForDrops()));
-	public static final RegistryObject<Block> LIME_CLOUD = registerBlock("lime_cloud", () -> new Block(BlockBehaviour.Properties.copy(Blocks.CLAY).sound(SoundType.STONE).strength(3f, 25f).requiresCorrectToolForDrops()));
-	public static final RegistryObject<Block> MAGENTA_CLOUD = registerBlock("magenta_cloud", () -> new Block(BlockBehaviour.Properties.copy(Blocks.CLAY).sound(SoundType.STONE).strength(3f, 25f).requiresCorrectToolForDrops()));
-	public static final RegistryObject<Block> ORANGE_CLOUD = registerBlock("orange_cloud", () -> new Block(BlockBehaviour.Properties.copy(Blocks.CLAY).sound(SoundType.STONE).strength(3f, 25f).requiresCorrectToolForDrops()));
-	public static final RegistryObject<Block> PINK_CLOUD = registerBlock("pink_cloud", () -> new Block(BlockBehaviour.Properties.copy(Blocks.CLAY).sound(SoundType.STONE).strength(3f, 25f).requiresCorrectToolForDrops()));
-	public static final RegistryObject<Block> PURPLE_CLOUD = registerBlock("purple_cloud", () -> new Block(BlockBehaviour.Properties.copy(Blocks.CLAY).sound(SoundType.STONE).strength(3f, 25f).requiresCorrectToolForDrops()));
-	public static final RegistryObject<Block> RED_CLOUD = registerBlock("red_cloud", () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE).strength(3f, 25f).requiresCorrectToolForDrops()));
-	public static final RegistryObject<Block> ULTRA_DARK_BLUE_CLOUD = registerBlock("ultra_dark_blue_cloud", () -> new Block(BlockBehaviour.Properties.copy(Blocks.CLAY).sound(SoundType.STONE).strength(3f, 25f).requiresCorrectToolForDrops()));
-	public static final RegistryObject<Block> YELLOW_CLOUD = registerBlock("yellow_cloud", () -> new Block(BlockBehaviour.Properties.copy(Blocks.CLAY).sound(SoundType.STONE).strength(3f, 25f).requiresCorrectToolForDrops()));
-	public static final RegistryObject<Block> CRACKED_CLOUD = registerBlock("cracked_cloud", () -> new Block(BlockBehaviour.Properties.copy(Blocks.CLAY).sound(SoundType.STONE).strength(2.5f, 25f).requiresCorrectToolForDrops()));
-	public static final RegistryObject<Block> CLOUD2 = registerBlock("cloud2", () -> new Block(BlockBehaviour.Properties.copy(Blocks.CLAY).sound(SoundType.STONE).strength(2.5f, 25f).requiresCorrectToolForDrops()));
-
-
-	//(Ore)
-	public static final RegistryObject<Block> RANDOM_ORE = registerBlock("random_ore", () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE).strength(5f, 100f).requiresCorrectToolForDrops()));
-	public static final RegistryObject<Block> AMAZONITE_ORE = registerBlock("amazonite_ore", () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE).strength(10f, 100f).requiresCorrectToolForDrops()));
-	public static final RegistryObject<Block> DESTRIUM_ORE = registerBlock("destrium_ore", () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE).strength(6f, 50f).requiresCorrectToolForDrops()));
-	public static final RegistryObject<Block> ARGONIDE_ORE = registerBlock("argonide_ore", () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE).strength(4f, 10f).requiresCorrectToolForDrops()));
-	public static final RegistryObject<Block> CRACKED_ARGONIDE_ORE = registerBlock("cracked_argonide_ore", () -> new Block(BlockBehaviour.Properties.copy(Blocks.CLAY).sound(SoundType.STONE).strength(4f, 25f).requiresCorrectToolForDrops()));
-	public static final RegistryObject<Block> REPAIR_ORE = registerBlock("repair_ore", () -> new Block(BlockBehaviour.Properties.copy(Blocks.END_STONE).strength(4f, 50f).requiresCorrectToolForDrops()));
+    //Blocks (Paradis)
+    public static final RegistryObject<Block> CLOUD = registerBlock("cloud", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.CLAY).sound(SoundType.STONE).strength(2.5f, 25f).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> BLUE_CLOUD = registerBlock("blue_cloud", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.CLAY).sound(SoundType.STONE).strength(3f, 25f).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> BLACK_CLOUD = registerBlock("black_cloud", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.CLAY).sound(SoundType.STONE).strength(3f, 25f).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> BROWN_CLOUD = registerBlock("brown_cloud", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.CLAY).sound(SoundType.STONE).strength(3f, 25f).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> CYAN_CLOUD = registerBlock("cyan_cloud", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.CLAY).sound(SoundType.STONE).strength(3f, 25f).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> DARK_BLUE_CLOUD = registerBlock("dark_blue_cloud", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.CLAY).sound(SoundType.STONE).strength(3f, 25f).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> DARK_GRAY_CLOUD = registerBlock("dark_gray_cloud", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.CLAY).sound(SoundType.STONE).strength(3f, 25f).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> DARK_GREEN_CLOUD = registerBlock("dark_green_cloud", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.CLAY).sound(SoundType.STONE).strength(3f, 25f).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> DARK_PURPLE_CLOUD = registerBlock("dark_purple_cloud", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.CLAY).sound(SoundType.STONE).strength(3f, 25f).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> DARK_RED_CLOUD = registerBlock("dark_red_cloud", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.CLAY).sound(SoundType.STONE).strength(3f, 25f).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> GRAY_CLOUD = registerBlock("gray_cloud", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.CLAY).sound(SoundType.STONE).strength(3f, 25f).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> GREEN_CLOUD = registerBlock("green_cloud", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.CLAY).sound(SoundType.STONE).strength(3f, 25f).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> LIGHT_BLUE_CLOUD = registerBlock("light_blue_cloud", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.CLAY).sound(SoundType.STONE).strength(3f, 25f).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> LIGHT_GRAY_CLOUD = registerBlock("light_gray_cloud", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.CLAY).sound(SoundType.STONE).strength(3f, 25f).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> LIGHT_RED_CLOUD = registerBlock("light_red_cloud", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.CLAY).sound(SoundType.STONE).strength(3f, 25f).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> LIME_CLOUD = registerBlock("lime_cloud", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.CLAY).sound(SoundType.STONE).strength(3f, 25f).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> MAGENTA_CLOUD = registerBlock("magenta_cloud", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.CLAY).sound(SoundType.STONE).strength(3f, 25f).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> ORANGE_CLOUD = registerBlock("orange_cloud", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.CLAY).sound(SoundType.STONE).strength(3f, 25f).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> PINK_CLOUD = registerBlock("pink_cloud", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.CLAY).sound(SoundType.STONE).strength(3f, 25f).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> PURPLE_CLOUD = registerBlock("purple_cloud", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.CLAY).sound(SoundType.STONE).strength(3f, 25f).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> RED_CLOUD = registerBlock("red_cloud", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_ORE).strength(3f, 25f).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> ULTRA_DARK_BLUE_CLOUD = registerBlock("ultra_dark_blue_cloud", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.CLAY).sound(SoundType.STONE).strength(3f, 25f).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> YELLOW_CLOUD = registerBlock("yellow_cloud", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.CLAY).sound(SoundType.STONE).strength(3f, 25f).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> CRACKED_CLOUD = registerBlock("cracked_cloud", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.CLAY).sound(SoundType.STONE).strength(2.5f, 25f).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> CLOUD2 = registerBlock("cloud2", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.CLAY).sound(SoundType.STONE).strength(2.5f, 25f).requiresCorrectToolForDrops()));
 
 
-	public static final RegistryObject<Block> AMAZONITE_BLOCK = registerBlock("amazonite_block", () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIAMOND_BLOCK).strength(25f, 1000f).requiresCorrectToolForDrops()));
-	public static final RegistryObject<Block> FAKE_AMAZONITE_BLOCK = registerBlock("fake_amazonite_block", () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIAMOND_BLOCK).strength(25f, 1000f).requiresCorrectToolForDrops()));
-	public static final RegistryObject<Block> DESTRIUM_BLOCK = registerBlock("destrium_block", () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIAMOND_BLOCK).strength(15f, 125f).requiresCorrectToolForDrops()));
-	public static final RegistryObject<Block> ARGONIDE_BLOCK = registerBlock("argonide_block", () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIAMOND_BLOCK).strength(10f, 25f).requiresCorrectToolForDrops()));
+    //(Ore)
+    public static final RegistryObject<Block> RANDOM_ORE = registerBlock("random_ore", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_ORE).strength(5f, 100f).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> AMAZONITE_ORE = registerBlock("amazonite_ore", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_ORE).strength(10f, 100f).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> DESTRIUM_ORE = registerBlock("destrium_ore", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_ORE).strength(6f, 50f).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> ARGONIDE_ORE = registerBlock("argonide_ore", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_ORE).strength(4f, 10f).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> CRACKED_ARGONIDE_ORE = registerBlock("cracked_argonide_ore", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.CLAY).sound(SoundType.STONE).strength(4f, 25f).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> REPAIR_ORE = registerBlock("repair_ore", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.END_STONE).strength(4f, 50f).requiresCorrectToolForDrops()));
 
 
-	//(Compressed)
-	public static final RegistryObject<Block> COBBLESTONE_COMPRESSED1 = registerBlock("cobblestone_compressed1", () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).strength(3.0F, 6.5F).requiresCorrectToolForDrops()));
-	public static final RegistryObject<Block> COBBLESTONE_COMPRESSED2 = registerBlock("cobblestone_compressed2", () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).strength(5.0F, 7.0F).requiresCorrectToolForDrops()));
-	public static final RegistryObject<Block> COBBLESTONE_COMPRESSED3 = registerBlock("cobblestone_compressed3", () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).strength(8.0F, 9.0F).requiresCorrectToolForDrops()));
-	public static final RegistryObject<Block> COBBLESTONE_COMPRESSED4 = registerBlock("cobblestone_compressed4", () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).strength(12.0F, 10.0F).requiresCorrectToolForDrops()));
-	public static final RegistryObject<Block> COBBLESTONE_COMPRESSED5 = registerBlock("cobblestone_compressed5", () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).strength(20.0F, 14.0F).requiresCorrectToolForDrops()));
-	public static final RegistryObject<Block> COBBLESTONE_COMPRESSED6 = registerBlock("cobblestone_compressed6", () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).strength(30.0F, 18.0F).requiresCorrectToolForDrops()));
-	public static final RegistryObject<Block> COBBLESTONE_COMPRESSED7 = registerBlock("cobblestone_compressed7", () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).strength(50.0F, 25.0F).requiresCorrectToolForDrops()));
-	public static final RegistryObject<Block> COBBLESTONE_COMPRESSED8 = registerBlock("cobblestone_compressed8", () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).strength(250.0F, 500.0F).requiresCorrectToolForDrops()));
-	
-	public static final RegistryObject<Block> DIRT_COMPRESSED1 = registerBlock("dirt_compressed1", () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIRT).strength(3.0F, 6.5F).requiresCorrectToolForDrops()));
-	public static final RegistryObject<Block> DIRT_COMPRESSED2 = registerBlock("dirt_compressed2", () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIRT).strength(5.0F, 7.0F).requiresCorrectToolForDrops()));
-	public static final RegistryObject<Block> DIRT_COMPRESSED3 = registerBlock("dirt_compressed3", () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIRT).strength(8.0F, 9.0F).requiresCorrectToolForDrops()));
-	public static final RegistryObject<Block> DIRT_COMPRESSED4 = registerBlock("dirt_compressed4", () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIRT).strength(12.0F, 10.0F).requiresCorrectToolForDrops()));
-	public static final RegistryObject<Block> DIRT_COMPRESSED5 = registerBlock("dirt_compressed5", () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIRT).strength(20.0F, 14.0F).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> AMAZONITE_BLOCK = registerBlock("amazonite_block", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.DIAMOND_BLOCK).strength(25f, 1000f).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> FAKE_AMAZONITE_BLOCK = registerBlock("fake_amazonite_block", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.DIAMOND_BLOCK).strength(25f, 1000f).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> DESTRIUM_BLOCK = registerBlock("destrium_block", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.DIAMOND_BLOCK).strength(15f, 125f).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> ARGONIDE_BLOCK = registerBlock("argonide_block", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.DIAMOND_BLOCK).strength(10f, 25f).requiresCorrectToolForDrops()));
 
 
-	//(Other)
-	public static final RegistryObject<Block> AMAZONITE_RELIQUE_BLOCK = registerBlock("amazonite_relique_block", () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIAMOND_BLOCK).strength(25.0F, 100.0F).requiresCorrectToolForDrops()));
-	
-	
-	public static final RegistryObject<Block> BELOW_BLOCK = registerBlock("below_block", () -> new Block(BlockBehaviour.Properties.copy(Blocks.GLASS).strength(4.0F, 10.0F).requiresCorrectToolForDrops()));
+    //(Compressed)
+    public static final RegistryObject<Block> COBBLESTONE_COMPRESSED1 = registerBlock("cobblestone_compressed1", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE).strength(3.0F, 6.5F).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> COBBLESTONE_COMPRESSED2 = registerBlock("cobblestone_compressed2", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE).strength(5.0F, 7.0F).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> COBBLESTONE_COMPRESSED3 = registerBlock("cobblestone_compressed3", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE).strength(8.0F, 9.0F).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> COBBLESTONE_COMPRESSED4 = registerBlock("cobblestone_compressed4", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE).strength(12.0F, 10.0F).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> COBBLESTONE_COMPRESSED5 = registerBlock("cobblestone_compressed5", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE).strength(20.0F, 14.0F).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> COBBLESTONE_COMPRESSED6 = registerBlock("cobblestone_compressed6", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE).strength(30.0F, 18.0F).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> COBBLESTONE_COMPRESSED7 = registerBlock("cobblestone_compressed7", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE).strength(50.0F, 25.0F).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> COBBLESTONE_COMPRESSED8 = registerBlock("cobblestone_compressed8", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE).strength(250.0F, 500.0F).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> DIRT_COMPRESSED1 = registerBlock("dirt_compressed1", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.DIRT).strength(3.0F, 6.5F).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> DIRT_COMPRESSED2 = registerBlock("dirt_compressed2", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.DIRT).strength(5.0F, 7.0F).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> DIRT_COMPRESSED3 = registerBlock("dirt_compressed3", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.DIRT).strength(8.0F, 9.0F).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> DIRT_COMPRESSED4 = registerBlock("dirt_compressed4", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.DIRT).strength(12.0F, 10.0F).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> DIRT_COMPRESSED5 = registerBlock("dirt_compressed5", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.DIRT).strength(20.0F, 14.0F).requiresCorrectToolForDrops()));
 
 
-	public static final RegistryObject<Block> PARADIS_PORTAL_BLOCK = registerBlock("paradis_portal_block", () -> new ParadisPortalBlocks(BlockBehaviour.Properties.copy(Blocks.AMETHYST_BLOCK).strength(10.0F, 200.0F).requiresCorrectToolForDrops()));
-	public static final RegistryObject<Block> OVERWORLD_PORTAL_BLOCK = registerBlock("overworld_portal_block", () -> new OverworldPortalBlocks(BlockBehaviour.Properties.copy(Blocks.AMETHYST_BLOCK).strength(10.0F, 200.0F).requiresCorrectToolForDrops()));
+    //(Other)
+    public static final RegistryObject<Block> AMAZONITE_RELIQUE_BLOCK = registerBlock("amazonite_relique_block", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.DIAMOND_BLOCK).strength(25.0F, 100.0F).requiresCorrectToolForDrops()));
 
 
-	//Plants
-	public static final RegistryObject<Block> AMAZONITE_PLANTS = BLOCKS.register("amazonite_plants", () -> new AmazonitePlants(BlockBehaviour.Properties.copy(Blocks.CARROTS).instabreak().randomTicks().noCollission().sound(SoundType.CROP)));
-	public static final RegistryObject<Block> DESTRIUM_PLANTS = BLOCKS.register("destrium_plants", () -> new DestriumPlants(BlockBehaviour.Properties.copy(Blocks.CARROTS).instabreak().randomTicks().noCollission().sound(SoundType.CROP)));
-	public static final RegistryObject<Block> XP_PLANTS = BLOCKS.register("xp_plants", () -> new XpPlants(BlockBehaviour.Properties.copy(Blocks.CARROTS).instabreak().randomTicks().noCollission().sound(SoundType.CROP)));
+    public static final RegistryObject<Block> BELOW_BLOCK = registerBlock("below_block", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.GLASS).strength(4.0F, 10.0F).requiresCorrectToolForDrops()));
 
 
-	//Flowers
-	//public static final RegistryObject<FlowerBlock> CLOVER = BLOCKS.register("clover", () -> new FlowerBlock(MobEffects.LUCK, 9, BlockBehaviour.Properties.of(Material.PLANT).noCollission().instabreak().sound(SoundType.GRASS)));
-	//public static final RegistryObject<Block> CLOVER_TWO = BLOCKS.register("clover_two", () -> new FlowerBlock(MobEffects.LUCK, 9, BlockBehaviour.Properties.of(Material.PLANT).noCollission().instabreak().sound(SoundType.GRASS)));
+    public static final RegistryObject<Block> PARADIS_PORTAL_BLOCK = registerBlock("paradis_portal_block", () -> new ParadisPortalBlocks(BlockBehaviour.Properties.ofFullCopy(Blocks.AMETHYST_BLOCK).strength(10.0F, 200.0F).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> OVERWORLD_PORTAL_BLOCK = registerBlock("overworld_portal_block", () -> new OverworldPortalBlocks(BlockBehaviour.Properties.ofFullCopy(Blocks.AMETHYST_BLOCK).strength(10.0F, 200.0F).requiresCorrectToolForDrops()));
 
 
-	private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
-		RegistryObject<T> toReturn = BLOCKS.register(name, block);
-		registerBlockItem(name, toReturn);
-		return toReturn;
-	}
+    //Plants
+    public static final RegistryObject<Block> AMAZONITE_PLANTS = BLOCKS.register("amazonite_plants", () -> new AmazonitePlants(BlockBehaviour.Properties.ofFullCopy(Blocks.CARROTS).instabreak().randomTicks().noCollission().sound(SoundType.CROP)));
+    public static final RegistryObject<Block> DESTRIUM_PLANTS = BLOCKS.register("destrium_plants", () -> new DestriumPlants(BlockBehaviour.Properties.ofFullCopy(Blocks.CARROTS).instabreak().randomTicks().noCollission().sound(SoundType.CROP)));
+    public static final RegistryObject<Block> XP_PLANTS = BLOCKS.register("xp_plants", () -> new XpPlants(BlockBehaviour.Properties.ofFullCopy(Blocks.CARROTS).instabreak().randomTicks().noCollission().sound(SoundType.CROP)));
 
-	private static <T extends Block> RegistryObject<Item> registerBlockItem(String name, RegistryObject<T> block) {
-		return ModItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));
-	}
 
-	public static void register(IEventBus eventBus) {
-		BLOCKS.register(eventBus);
-	}
+    //Flowers
+    //public static final RegistryObject<FlowerBlock> CLOVER = BLOCKS.register("clover", () -> new FlowerBlock(MobEffects.LUCK, 9, BlockBehaviour.Properties.of(Material.PLANT).noCollission().instabreak().sound(SoundType.GRASS)));
+    //public static final RegistryObject<Block> CLOVER_TWO = BLOCKS.register("clover_two", () -> new FlowerBlock(MobEffects.LUCK, 9, BlockBehaviour.Properties.of(Material.PLANT).noCollission().instabreak().sound(SoundType.GRASS)));
+
+
+    private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
+        RegistryObject<T> toReturn = BLOCKS.register(name, block);
+        registerBlockItem(name, toReturn);
+        return toReturn;
+    }
+
+    private static <T extends Block> RegistryObject<Item> registerBlockItem(String name, RegistryObject<T> block) {
+        return ModItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));
+    }
+
+    public static void register(IEventBus eventBus) {
+        BLOCKS.register(eventBus);
+    }
 }
