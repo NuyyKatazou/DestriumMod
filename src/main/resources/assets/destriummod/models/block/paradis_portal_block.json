@@ -1,6 +1,6 @@
 {
 	"parent": "minecraft:block/cube_all",
 	"textures": {
-	   "all": "destriummod:block/paradis_portal_block"
+		"all": "destriummod:block/paradis_portal_block"
 	}
 }

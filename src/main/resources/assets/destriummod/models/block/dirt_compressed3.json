@@ -1,6 +1,6 @@
 {
 	"parent": "minecraft:block/cube_all",
 	"textures": {
-	   "all": "destriummod:block/dirt_compressed3"
+		"all": "destriummod:block/dirt_compressed3"
 	}
 }

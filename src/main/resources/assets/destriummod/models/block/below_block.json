@@ -2,6 +2,6 @@
 	"parent": "minecraft:block/cube_all",
 	"render_type": "cutout",
 	"textures": {
-	   "all": "destriummod:block/below_block"
+		"all": "destriummod:block/argonide_ore"
 	}
 }

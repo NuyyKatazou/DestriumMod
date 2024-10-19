@@ -1,6 +1,6 @@
 {
 	"parent": "minecraft:block/cube_all",
 	"textures": {
-	   "all": "destriummod:block/yellow_cloud"
+		"all": "destriummod:block/yellow_cloud"
 	}
 }
