@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "#destriummod:needs_amazonite_tool",
+    "#destriummod:needs_destrium_tool"
+  ]
+}

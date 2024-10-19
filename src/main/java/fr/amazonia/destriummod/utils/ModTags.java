@@ -12,10 +12,16 @@ public class ModTags {
     public static class Blocks {
 
         public static final TagKey<Block> NEEDS_ARGONIDE_TOOL = tag("needs_argonide_tool");
+        public static final TagKey<Block> INCORRECT_FOR_ARGONIDE_TOOL = tag("incorrect_for_argonide_tool");
 
         public static final TagKey<Block> NEEDS_DESTRIUM_TOOL = tag("needs_destrium_tool");
+        public static final TagKey<Block> INCORRECT_FOR_DESTRIUM_TOOL = tag("incorrect_for_destrium_tool");
 
         public static final TagKey<Block> NEEDS_AMAZONITE_TOOL = tag("needs_amazonite_tool");
+        public static final TagKey<Block> INCORRECT_FOR_AMAZONITE_TOOL = tag("incorrect_for_amazonite_tool");
+
+        public static final TagKey<Block> NEEDS_SPAWNERS_TOOL = tag("needs_argonide_tool");
+        public static final TagKey<Block> INCORRECT_FOR_SPAWNERS_TOOL = tag("incorrect_for_argonide_tool");
 
 
         private static TagKey<Block> tag(String name) {
