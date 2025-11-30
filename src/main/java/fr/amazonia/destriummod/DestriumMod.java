@@ -1,10 +1,14 @@
 package fr.amazonia.destriummod;
 
 import fr.amazonia.destriummod.init.ModBlocks;
+import fr.amazonia.destriummod.init.ModFluidTypes;
+import fr.amazonia.destriummod.init.ModFluids;
 import fr.amazonia.destriummod.init.ModItems;
 import fr.amazonia.destriummod.utils.HandlerEvent;
 import fr.amazonia.destriummod.utils.ModCreativeTabs;
 import net.minecraft.client.Minecraft;
+import net.minecraft.client.renderer.ItemBlockRenderTypes;
+import net.minecraft.client.renderer.RenderType;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
@@ -47,6 +51,8 @@ public class DestriumMod {
         IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
         ModItems.ITEMS.register(eventBus);
         ModBlocks.BLOCKS.register(eventBus);
+        ModFluids.FLUIDS.register(eventBus);
+        ModFluidTypes.FLUID_TYPES.register(eventBus);
     }
 
     private void setup(FMLCommonSetupEvent event) {
@@ -65,7 +71,7 @@ public class DestriumMod {
     }
 
     private void addCreative(CreativeModeTabEvent.BuildContents event) {
-        if(event.getTab() == ModCreativeTabs.ItemTab) {
+        if (event.getTab() == ModCreativeTabs.ItemTab) {
             event.accept(ModItems.AMAZONITE_CRUMB);
             event.accept(ModItems.AMAZONITE_DUST);
             event.accept(ModItems.AMAZONITE_FRAGMENT);
@@ -92,9 +98,9 @@ public class DestriumMod {
             event.accept(ModItems.ARGONIDE_PLATE);
             event.accept(ModItems.DESTRIUM_PLATE);
             event.accept(ModItems.AMAZONITE_PLATE);
-            //event.accept(ModItems.EMPOISONED_WATER_BUCKET);
+            event.accept(ModItems.POISON_WATER_BUCKET);
             event.accept(ModItems.POISON_STAR);
-            //event.accept(ModItems.RESISTANCE_LAVA_BUCKET);
+            event.accept(ModItems.RESISTANCE_LAVA_BUCKET);
             event.accept(ModItems.RESISTANCE_STAR);
             event.accept(ModItems.INFINITY_WATER_BUCKET);
             event.accept(ModItems.AMAZONITE_SEEDS);
@@ -102,7 +108,7 @@ public class DestriumMod {
             event.accept(ModItems.XP_SEEDS);
 
         }
-        if(event.getTab() == ModCreativeTabs.BlockTab) {
+        if (event.getTab() == ModCreativeTabs.BlockTab) {
             event.accept(ModBlocks.CLOUD);
             event.accept(ModBlocks.BLUE_CLOUD);
             event.accept(ModBlocks.BLACK_CLOUD);
@@ -160,7 +166,7 @@ public class DestriumMod {
             event.accept(ModBlocks.CLOVER_TWO);
 
         }
-        if(event.getTab() == ModCreativeTabs.ToolTab) {
+        if (event.getTab() == ModCreativeTabs.ToolTab) {
             event.accept(ModItems.AMAZONITE_SWORD);
             event.accept(ModItems.AMAZONITE_PICKAXE);
             event.accept(ModItems.AMAZONITE_AXE);
@@ -198,7 +204,7 @@ public class DestriumMod {
             event.accept(ModItems.LUCKY_NECKLACE);
 
         }
-        if(event.getTab() == ModCreativeTabs.FoodTab) {
+        if (event.getTab() == ModCreativeTabs.FoodTab) {
             event.accept(ModItems.DESTRIUM_APPLE);
             event.accept(ModItems.AMAZONITE_APPLE);
 
