@@ -6,7 +6,6 @@ import fr.amazonia.destriummod.fluid.PoisonWaterFluid;
 import fr.amazonia.destriummod.fluid.PoisonWaterFluidBlock;
 import fr.amazonia.destriummod.fluid.ResistanceLavaFluid;
 import fr.amazonia.destriummod.fluid.ResistanceLavaFluidBlock;
-import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.level.block.LiquidBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.FlowingFluid;

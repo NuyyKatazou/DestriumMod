@@ -1,13 +1,9 @@
 package fr.amazonia.destriummod.fluid;
 
 import fr.amazonia.destriummod.init.ModFluids;
-import fr.amazonia.destriummod.init.ModItems;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
-import net.minecraft.core.particles.ParticleOptions;
-import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.tags.FluidTags;
-import net.minecraft.world.item.Item;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.block.Blocks;
@@ -18,17 +14,10 @@ import net.minecraft.world.level.material.Fluid;
 import net.minecraft.world.level.material.FluidState;
 import net.minecraftforge.fluids.ForgeFlowingFluid;
 
-import javax.annotation.Nullable;
-
 public abstract class ResistanceLavaFluid extends ForgeFlowingFluid {
 
     protected ResistanceLavaFluid(Properties properties) {
         super(properties);
-    }
-
-    @Nullable
-    public ParticleOptions getDripParticle() {
-        return ParticleTypes.DRIPPING_LAVA;
     }
 
     @Override

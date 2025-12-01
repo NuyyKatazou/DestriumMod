@@ -55,7 +55,7 @@ public class InfinityWaterBucketItem extends BucketItem {
                 if (this.content == Fluids.EMPTY) {
                     BlockState blockstate1 = p_40703_.getBlockState(blockpos);
                     if (blockstate1.getBlock() instanceof BucketPickup) {
-                        BucketPickup bucketpickup = (BucketPickup)blockstate1.getBlock();
+                        BucketPickup bucketpickup = (BucketPickup) blockstate1.getBlock();
                         ItemStack itemstack1 = bucketpickup.pickupBlock(p_40703_, blockpos, blockstate1);
                         if (!itemstack1.isEmpty()) {
                             p_40704_.awardStat(Stats.ITEM_USED.get(this));
@@ -65,7 +65,7 @@ public class InfinityWaterBucketItem extends BucketItem {
                             p_40703_.gameEvent(p_40704_, GameEvent.FLUID_PICKUP, blockpos);
                             ItemStack itemstack2 = ItemUtils.createFilledResult(itemstack, p_40704_, itemstack1);
                             if (!p_40703_.isClientSide) {
-                                CriteriaTriggers.FILLED_BUCKET.trigger((ServerPlayer)p_40704_, itemstack1);
+                                CriteriaTriggers.FILLED_BUCKET.trigger((ServerPlayer) p_40704_, itemstack1);
                             }
 
                             return InteractionResultHolder.sidedSuccess(itemstack2, p_40703_.isClientSide());
@@ -79,7 +79,7 @@ public class InfinityWaterBucketItem extends BucketItem {
                     if (this.emptyContents(p_40704_, p_40703_, blockpos2, blockhitresult, itemstack)) {
                         this.checkExtraContent(p_40704_, p_40703_, itemstack, blockpos2);
                         if (p_40704_ instanceof ServerPlayer) {
-                            CriteriaTriggers.PLACED_BLOCK.trigger((ServerPlayer)p_40704_, blockpos2, itemstack);
+                            CriteriaTriggers.PLACED_BLOCK.trigger((ServerPlayer) p_40704_, blockpos2, itemstack);
                         }
 
                         p_40704_.awardStat(Stats.ITEM_USED.get(this));
@@ -96,9 +96,11 @@ public class InfinityWaterBucketItem extends BucketItem {
 
     private final java.util.function.Supplier<? extends Fluid> fluidSupplier;
 
-    public Fluid getFluid() { return fluidSupplier.get(); }
+    public Fluid getFluid() {
+        return fluidSupplier.get();
+    }
 
     protected boolean canBlockContainFluid(Level worldIn, BlockPos posIn, BlockState blockstate) {
-        return blockstate.getBlock() instanceof LiquidBlockContainer && ((LiquidBlockContainer)blockstate.getBlock()).canPlaceLiquid(worldIn, posIn, blockstate, this.content);
+        return blockstate.getBlock() instanceof LiquidBlockContainer && ((LiquidBlockContainer) blockstate.getBlock()).canPlaceLiquid(worldIn, posIn, blockstate, this.content);
     }
 }
