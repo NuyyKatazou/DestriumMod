@@ -71,8 +71,10 @@ public class ResistanceLavaFluidType extends FluidType {
             @Override
             public void modifyFogRender(Camera camera, FogRenderer.FogMode mode, float renderDistance, float partialTick,
                                         float nearDistance, float farDistance, FogShape shape) {
-                RenderSystem.setShaderFogStart(1f);
-                RenderSystem.setShaderFogEnd(6f);
+                RenderSystem.setShaderFogStart(0f);
+                RenderSystem.setShaderFogEnd(1f);
+                //RenderSystem.setShaderFogColor(1f, 1f, 0f, 0f);
+                RenderSystem.setShaderColor(1f, 1f, 1f, 1f);
             }
         });
     }

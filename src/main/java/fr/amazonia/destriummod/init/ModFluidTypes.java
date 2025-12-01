@@ -33,12 +33,12 @@ public class ModFluidTypes {
 
     private static RegistryObject<FluidType> registerWater(String name, FluidType.Properties properties) {
 
-        return FLUID_TYPES.register(name, () -> new PoisonWaterFluidType(WATER_STILL_RL, WATER_FLOWING_RL, WATER_OVERLAY_RL, 0xA1E038D0, new Vector3f(224f / 255f, 56f / 255f, 208f / 255f), properties));
+        return FLUID_TYPES.register(name, () -> new PoisonWaterFluidType(WATER_STILL_RL, WATER_FLOWING_RL, WATER_OVERLAY_RL, 0xA1E038D0, new Vector3f(7f / 255f, 64f / 255f, 179f / 255f), properties));
     }
 
     private static RegistryObject<FluidType> registerLava(String name, FluidType.Properties properties) {
 
-        return FLUID_TYPES.register(name, () -> new ResistanceLavaFluidType(LAVA_STILL_RL, LAVA_FLOWING_RL, WATER_OVERLAY_RL, new Vector3f(224f / 255f, 56f / 255f, 208f / 255f), properties));
+        return FLUID_TYPES.register(name, () -> new ResistanceLavaFluidType(LAVA_STILL_RL, LAVA_FLOWING_RL, WATER_OVERLAY_RL, new Vector3f(198f / 255f, 69f / 255f, 4f / 255f), properties));
     }
 
     public static void register(IEventBus eventBus) {
