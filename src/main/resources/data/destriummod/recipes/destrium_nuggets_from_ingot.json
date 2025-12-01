@@ -1,12 +1,13 @@
 {
-    "type": "minecraft:crafting_shapeless",
-    "ingredients": [
-        {
-            "item": "destriummod:destrium_ingot"
-        }
-    ],
-    "result": {
-        "item": "destriummod:destrium_nuggets",
-        "count": 9
+  "type": "minecraft:crafting_shapeless",
+  "group": "destrium_nuggets",
+  "ingredients": [
+    {
+      "item": "destriummod:destrium_ingot"
     }
+  ],
+  "result": {
+    "item": "destriummod:destrium_nuggets",
+    "count": 9
+  }
 }
