@@ -17,7 +17,7 @@ public class HandlerEvent {
     public void onLivingHurt(LivingHurtEvent event) {
         LivingEntity entity = event.getEntity();
         if (entity instanceof Player) {
-            //Cancel OverworldTeleporter & ParadisTeleporter FallDamage
+            //Cancel Overworld & Paradis Teleporter FallDamage
             if (event.getSource().is(DamageTypes.FALL) && OverworldTeleporter.f >= 1 || ParadisTeleporter.f >= 1) {
                 OverworldTeleporter.f = 0;
                 ParadisTeleporter.f = 0;
@@ -30,16 +30,17 @@ public class HandlerEvent {
     public void onLivingFall(LivingFallEvent event) {
         LivingEntity entity = event.getEntity();
         if (entity instanceof Player) {
+            Item feetEquip = entity.getItemBySlot(EquipmentSlot.FEET).getItem();
             //Cancel FeatherBoots FallDamage
-            if(entity.getItemBySlot(EquipmentSlot.FEET).getItem() == ModItems.FEATHER_BOOTS.get()) {
+            if (feetEquip == ModItems.FEATHER_BOOTS.get()) {
                 event.setDamageMultiplier(0);
             }
             //Cancel AdventurerBoots FallDamage
-            if(entity.getItemBySlot(EquipmentSlot.FEET).getItem() == ModItems.ADVENTURER_BOOTS.get()) {
+            if (feetEquip == ModItems.ADVENTURER_BOOTS.get()) {
                 event.setDamageMultiplier(0);
             }
-            //Cancel RenforcedAdventurerBoots FallDamage
-            if(entity.getItemBySlot(EquipmentSlot.FEET).getItem() == ModItems.REINFORCED_ADVENTURER_BOOTS.get()) {
+            //Cancel ReinforcedAdventurerBoots FallDamage
+            if (feetEquip == ModItems.REINFORCED_ADVENTURER_BOOTS.get()) {
                 event.setDamageMultiplier(0);
             }
         }
@@ -48,7 +49,7 @@ public class HandlerEvent {
     @SubscribeEvent
     public void AnvilUse(AnvilUpdateEvent event) {
         Item left = event.getLeft().getItem();
-        if(left == ModItems.NECKLACE.get() || left == ModItems.LUCKY_NECKLACE.get()) {
+        if (left == ModItems.NECKLACE.get() || left == ModItems.LUCKY_NECKLACE.get()) {
             event.setCanceled(true);
         }
     }
