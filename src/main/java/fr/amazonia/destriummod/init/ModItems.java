@@ -99,7 +99,7 @@ public class ModItems {
 
     public static final RegistryObject<Item> EMERALD_NUGGETS = ITEMS.register("emerald_nuggets", () -> new Item(new Item.Properties().tab(DestriumMod.ItemTab).rarity(ModRarity.EMERALD)));
     public static final RegistryObject<Item> DIAMOND_NUGGETS = ITEMS.register("diamond_nuggets", () -> new Item(new Item.Properties().tab(DestriumMod.ItemTab).rarity(ModRarity.DIAMOND)));
-    public static final RegistryObject<Item> NETHERITE_NUGGETS = ITEMS.register("netherite_nuggets", () -> new Item(new Item.Properties().tab(DestriumMod.ItemTab).rarity(ModRarity.NETHERITE)));
+    public static final RegistryObject<Item> NETHERITE_NUGGETS = ITEMS.register("netherite_nuggets", () -> new Item(new Item.Properties().tab(DestriumMod.ItemTab).rarity(ModRarity.NETHERITE).fireResistant()));
 
 
     public static final RegistryObject<Item> AMAZONITE_STICK = ITEMS.register("amazonite_stick", () -> new AmazoniteStick(new Item.Properties().tab(DestriumMod.ItemTab).rarity(ModRarity.AMAZONITE).fireResistant()));
@@ -114,10 +114,10 @@ public class ModItems {
     public static final RegistryObject<Item> IRON_PLATE = ITEMS.register("iron_plate", () -> new Item(new Item.Properties().tab(DestriumMod.ItemTab)));
     public static final RegistryObject<Item> GOLD_PLATE = ITEMS.register("gold_plate", () -> new Item(new Item.Properties().tab(DestriumMod.ItemTab).rarity(ModRarity.ARGONIDE)));
     public static final RegistryObject<Item> DIAMOND_PLATE = ITEMS.register("diamond_plate", () -> new Item(new Item.Properties().tab(DestriumMod.ItemTab).rarity(ModRarity.DIAMOND)));
-    public static final RegistryObject<Item> NETHERITE_PLATE = ITEMS.register("netherite_plate", () -> new Item(new Item.Properties().tab(DestriumMod.ItemTab).rarity(ModRarity.NETHERITE)));
-    public static final RegistryObject<Item> ARGONIDE_PLATE = ITEMS.register("argonide_plate", () -> new Item(new Item.Properties().tab(DestriumMod.ItemTab).rarity(ModRarity.ARGONIDE)));
-    public static final RegistryObject<Item> DESTRIUM_PLATE = ITEMS.register("destrium_plate", () -> new Item(new Item.Properties().tab(DestriumMod.ItemTab).rarity(ModRarity.DESTRIUM)));
-    public static final RegistryObject<Item> AMAZONITE_PLATE = ITEMS.register("amazonite_plate", () -> new Item(new Item.Properties().tab(DestriumMod.ItemTab).rarity(ModRarity.AMAZONITE)));
+    public static final RegistryObject<Item> NETHERITE_PLATE = ITEMS.register("netherite_plate", () -> new Item(new Item.Properties().tab(DestriumMod.ItemTab).rarity(ModRarity.NETHERITE).fireResistant()));
+    public static final RegistryObject<Item> ARGONIDE_PLATE = ITEMS.register("argonide_plate", () -> new Item(new Item.Properties().tab(DestriumMod.ItemTab).rarity(ModRarity.ARGONIDE).fireResistant()));
+    public static final RegistryObject<Item> DESTRIUM_PLATE = ITEMS.register("destrium_plate", () -> new Item(new Item.Properties().tab(DestriumMod.ItemTab).rarity(ModRarity.DESTRIUM).fireResistant()));
+    public static final RegistryObject<Item> AMAZONITE_PLATE = ITEMS.register("amazonite_plate", () -> new Item(new Item.Properties().tab(DestriumMod.ItemTab).rarity(ModRarity.AMAZONITE).fireResistant()));
 
 
     //Fluids
