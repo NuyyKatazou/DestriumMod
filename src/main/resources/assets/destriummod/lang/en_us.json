@@ -15,7 +15,6 @@
   "item.destriummod.diamond_nuggets": "Diamond Nugget",
   "item.destriummod.netherite_nuggets": "Netherite Nugget",
 
-
   "item.destriummod.amazonite_stick": "Amazonite Stick",
   "item.destriummod.destrium_stick": "Destrium Stick",
   "item.destriummod.argonide_stick": "Argonide Stick",
@@ -79,7 +78,6 @@
   "item.destriummod.golden_core": "Golden Core",
   "item.destriummod.compressed_golden": "Compressed Golden",
 
-
   "item.destriummod.iron_plate": "Iron Plate",
   "item.destriummod.gold_plate": "Gold Plate",
   "item.destriummod.diamond_plate": "Diamond Plate",
@@ -96,7 +94,6 @@
 
   "item.destriummod.resistance_lava_bucket": "Resistance Lava Bucket",
   "item.destriummod.resistance_star": "Resistance Star",
-
 
 
 
@@ -128,6 +125,7 @@
   "block.destriummod.dirt_compressed3": "Compressed Dirt III",
   "block.destriummod.dirt_compressed4": "Compressed Dirt IV",
   "block.destriummod.dirt_compressed5": "Compressed Dirt V",
+
 
   "block.destriummod.paradis_portal_block": "Paradis Portal Block",
   "block.destriummod.overworld_portal_block": "Overworld Portal Block",
@@ -176,10 +174,7 @@
 
 
 
-
   "fluid.destriummod.poison_water": "Poisoned Water",
-
-
 
 
 
@@ -191,11 +186,10 @@
 
 
 
-
+  "item.destriummod.amazonite_helmet.desc": "Invisibility",
+  "item.destriummod.amazonite_chestplate.desc": "Resistance",
   "item.destriummod.amazonite_leggings.desc": "Fire Résistance",
   "item.destriummod.amazonite_boots.desc": "Speed Two",
-  "item.destriummod.amazonite_chestplate.desc": "Resistance",
-  "item.destriummod.amazonite_helmet.desc": "Invisibility",
 
 
   "item.destriummod.spawners_pickaxe.desc": " ",
@@ -207,12 +201,15 @@
   "item.destriummod.amazonite_ingot.desc": ">> Amazonite",
   "item.destriummod.amazonite_ingot.desc2": "Destrium",
   "item.destriummod.amazonite_ingot.desc3": "Argonide",
+
   "item.destriummod.destrium_ingot.desc": "Amazonite",
   "item.destriummod.destrium_ingot.desc2": ">> Destrium",
   "item.destriummod.destrium_ingot.desc3": "Argonide",
+
   "item.destriummod.argonide_ingot.desc": "Amazonite",
   "item.destriummod.argonide_ingot.desc2": "Destrium",
   "item.destriummod.argonide_ingot.desc3": ">> Argonide",
+
   "item.destriummod.repair_gem.desc": "Used to repair items and other things",
 
 
