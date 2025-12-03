@@ -29,35 +29,7 @@ public class DestriumMod {
 
     public static final String MODID = "destriummod";
     public static final Logger LOGGER = LogManager.getLogger(MODID);
-    //CreativeTabs
-    public static final ItemGroup ItemTab = new ItemGroup(MODID + ".itemtab") {
-        @Override
-        @OnlyIn(Dist.CLIENT)
-        public ItemStack makeIcon() {
-            return new ItemStack(ModItems.AMAZONITE_FRAGMENT.get());
-        }
-    };
-    public static final ItemGroup BlockTab = new ItemGroup(MODID + ".blocktab") {
-        @Override
-        @OnlyIn(Dist.CLIENT)
-        public ItemStack makeIcon() {
-            return new ItemStack(ModBlocks.AMAZONITE_BLOCK.get());
-        }
-    };
-    public static final ItemGroup ToolTab = new ItemGroup(MODID + ".tooltab") {
-        @Override
-        @OnlyIn(Dist.CLIENT)
-        public ItemStack makeIcon() {
-            return new ItemStack(ModItems.AMAZONITE_PICKAXE.get());
-        }
-    };
-    public static final ItemGroup FoodTab = new ItemGroup(MODID + ".foodtab") {
-        @Override
-        @OnlyIn(Dist.CLIENT)
-        public ItemStack makeIcon() {
-            return new ItemStack(ModItems.AMAZONITE_APPLE.get());
-        }
-    };
+
     //Dimensions
     public static RegistryKey<World> PARADIS_DIMENSION;
 
@@ -73,7 +45,6 @@ public class DestriumMod {
         ModItems.ITEMS.register(eventBus);
         ModBlocks.BLOCKS.register(eventBus);
         ModFluids.FLUIDS.register(eventBus);
-
     }
 
     private void setup(FMLCommonSetupEvent event) {
@@ -109,4 +80,34 @@ public class DestriumMod {
 
     private void serverSetup(FMLDedicatedServerSetupEvent event) {
     }
+
+    //CreativeTabs
+    public static final ItemGroup ItemTab = new ItemGroup(MODID + ".itemtab") {
+        @Override
+        @OnlyIn(Dist.CLIENT)
+        public ItemStack makeIcon() {
+            return new ItemStack(ModItems.AMAZONITE_FRAGMENT.get());
+        }
+    };
+    public static final ItemGroup BlockTab = new ItemGroup(MODID + ".blocktab") {
+        @Override
+        @OnlyIn(Dist.CLIENT)
+        public ItemStack makeIcon() {
+            return new ItemStack(ModBlocks.AMAZONITE_BLOCK.get());
+        }
+    };
+    public static final ItemGroup ToolTab = new ItemGroup(MODID + ".tooltab") {
+        @Override
+        @OnlyIn(Dist.CLIENT)
+        public ItemStack makeIcon() {
+            return new ItemStack(ModItems.AMAZONITE_PICKAXE.get());
+        }
+    };
+    public static final ItemGroup FoodTab = new ItemGroup(MODID + ".foodtab") {
+        @Override
+        @OnlyIn(Dist.CLIENT)
+        public ItemStack makeIcon() {
+            return new ItemStack(ModItems.AMAZONITE_APPLE.get());
+        }
+    };
 }
