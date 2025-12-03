@@ -34,6 +34,22 @@ public class ModTags {
 
     public static class Items {
 
+        public static final Tags.IOptionalNamedTag<Item> PLATES = createTag("plates");
+
+
+        public static final Tags.IOptionalNamedTag<Item> AMAZONITE_ARMORS = createTag("amazonite_armors");
+        public static final Tags.IOptionalNamedTag<Item> DESTRIUM_ARMORS = createTag("destrium_armors");
+        public static final Tags.IOptionalNamedTag<Item> ARGONIDE_ARMORS = createTag("argonide_armors");
+
+        public static final Tags.IOptionalNamedTag<Item> BOOTS = createTag("boots");
+
+        public static final Tags.IOptionalNamedTag<Item> NECKLACE = createTag("necklace");
+
+
+        public static final Tags.IOptionalNamedTag<Item> AMAZONITE_TOOLS = createTag("amazonite_tools");
+        public static final Tags.IOptionalNamedTag<Item> DESTRIUM_TOOLS = createTag("destrium_tools");
+        public static final Tags.IOptionalNamedTag<Item> ARGONIDE_TOOLS = createTag("argonide_tools");
+
         private static Tags.IOptionalNamedTag<Item> createTag(String name) {
             return ItemTags.createOptional(new ResourceLocation(DestriumMod.MODID, name));
         }

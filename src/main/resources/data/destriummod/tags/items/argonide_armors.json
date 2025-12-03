@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "destriummod:argonide_helmet",
+    "destriummod:argonide_chestplate",
+    "destriummod:argonide_leggings",
+    "destriummod:argonide_boots"
+  ]
+}
