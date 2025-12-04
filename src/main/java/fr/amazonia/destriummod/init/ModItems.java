@@ -21,6 +21,7 @@ import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.*;
 import net.minecraft.potion.EffectInstance;
 import net.minecraft.potion.Effects;
+import net.minecraftforge.common.ToolType;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -30,8 +31,8 @@ public class ModItems {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, DestriumMod.MODID);
 
     //Foods
-    public static final Food AMAZONITEAPPLE = (new Food.Builder()).nutrition(20).saturationMod(2.6F).effect(new EffectInstance(Effects.HEAL, 1, 10), 1.0F).effect(new EffectInstance(Effects.DAMAGE_BOOST, 800, 3), 1.0F).effect(new EffectInstance(Effects.DAMAGE_RESISTANCE, 24000, 3), 1.0F).effect(new EffectInstance(Effects.HEALTH_BOOST, 12000, 4), 1.0F).effect(new EffectInstance(Effects.REGENERATION, 3000, 4), 1.0F).effect(new EffectInstance(Effects.ABSORPTION, 12000, 9), 1.0F).alwaysEat().build();
-    public static final Food DESTRIUMAPPLE = (new Food.Builder()).nutrition(10).saturationMod(1.3F).effect(new EffectInstance(Effects.HEAL, 1, 5), 1.0F).effect(new EffectInstance(Effects.DAMAGE_BOOST, 400, 2), 1.0F).effect(new EffectInstance(Effects.DAMAGE_RESISTANCE, 12000, 1), 1.0F).effect(new EffectInstance(Effects.HEALTH_BOOST, 6000, 1), 1.0F).effect(new EffectInstance(Effects.REGENERATION, 900, 2), 1.0F).effect(new EffectInstance(Effects.ABSORPTION, 6000, 4), 1.0F).alwaysEat().build();
+    public static final Food AMAZONITEAPPLE = (new Food.Builder()).nutrition(20).saturationMod(2.6F).effect(() -> new EffectInstance(Effects.HEAL, 1, 10), 1.0F).effect(() -> new EffectInstance(Effects.DAMAGE_BOOST, 800, 3), 1.0F).effect(() -> new EffectInstance(Effects.DAMAGE_RESISTANCE, 24000, 3), 1.0F).effect(() -> new EffectInstance(Effects.HEALTH_BOOST, 12000, 4), 1.0F).effect(() -> new EffectInstance(Effects.REGENERATION, 3000, 4), 1.0F).effect(() -> new EffectInstance(Effects.ABSORPTION, 12000, 9), 1.0F).alwaysEat().build();
+    public static final Food DESTRIUMAPPLE = (new Food.Builder()).nutrition(10).saturationMod(1.3F).effect(() -> new EffectInstance(Effects.HEAL, 1, 5), 1.0F).effect(() -> new EffectInstance(Effects.DAMAGE_BOOST, 400, 2), 1.0F).effect(() -> new EffectInstance(Effects.DAMAGE_RESISTANCE, 12000, 1), 1.0F).effect(() -> new EffectInstance(Effects.HEALTH_BOOST, 6000, 1), 1.0F).effect(() -> new EffectInstance(Effects.REGENERATION, 900, 2), 1.0F).effect(() -> new EffectInstance(Effects.ABSORPTION, 6000, 4), 1.0F).alwaysEat().build();
 
     public static final RegistryObject<Item> DESTRIUM_APPLE = ITEMS.register("destrium_apple", () -> new DestriumApple(new Item.Properties().tab(DestriumMod.FoodTab).rarity(ModRarity.DESTRIUM).food(ModItems.DESTRIUMAPPLE).fireResistant()));
     public static final RegistryObject<Item> AMAZONITE_APPLE = ITEMS.register("amazonite_apple", () -> new AmazoniteApple(new Item.Properties().tab(DestriumMod.FoodTab).rarity(ModRarity.AMAZONITE).food(ModItems.AMAZONITEAPPLE).fireResistant()));
