@@ -27,7 +27,7 @@ public class ParadisPortalBlocks extends Block {
             if (!player.isCrouching() && player.canChangeDimensions()) {
                 MinecraftServer server = worldIn.getServer();
                 if (server != null) {
-                    if (worldIn.dimension() == DestriumMod.PARADIS_DIMENSION) {
+                    if (worldIn.dimension() != World.OVERWORLD) {
                         return ActionResultType.FAIL;
                     } else {
                         ServerWorld paradisWorld = server.getLevel(DestriumMod.PARADIS_DIMENSION);
