@@ -6,24 +6,23 @@
   "structures": {
     "structures": {
       "minecraft:fortress": {
-            "spacing": 5,
-            "separation": 4,
-            "salt": 30084232
-          },
-
+        "spacing": 5,
+        "separation": 4,
+        "salt": 30084232
+      },
       "minecraft:bastion_remnant": {
-            "spacing": 15,
-            "separation": 6,
-            "salt": 30084232
-          }
-        }
+        "spacing": 15,
+        "separation": 6,
+        "salt": 30084232
+      }
+    }
   },
   "noise": {
     "random_density_offset": true,
     "density_factor": 0.001,
     "density_offset": -0.46875,
     "simplex_surface_noise": true,
-	"amplified": true,
+    "amplified": true,
     "bottom_slide": {
       "target": -30,
       "size": 0,

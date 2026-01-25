@@ -1,20 +1,20 @@
 {
-    "type": "minecraft:crafting_shaped",
-    "pattern": [
-        "bbb",
-        "bab",
-        "bbb"
-    ],
-    "key": {
-        "a": {
-            "item": "minecraft:blue_dye"
-        },
-        "b": {
-            "item": "destriummod:cloud"
-        }
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "bbb",
+    "bab",
+    "bbb"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:blue_dye"
     },
-    "result": {
-        "item": "destriummod:blue_cloud",
-        "count": 8
+    "b": {
+      "item": "destriummod:cloud"
     }
+  },
+  "result": {
+    "item": "destriummod:blue_cloud",
+    "count": 8
+  }
 }

@@ -1,20 +1,20 @@
 {
-    "type": "minecraft:crafting_shaped",
-    "pattern": [
-        "a",
-        "b",
-        "a"
-    ],
-    "key": {
-        "a": {
-            "item": "destriummod:destrium_nuggets"
-        },
-		"b": {
-            "item": "destriummod:argonide_stick"
-        }
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "a",
+    "b",
+    "a"
+  ],
+  "key": {
+    "a": {
+      "item": "destriummod:destrium_nuggets"
     },
-    "result": {
-        "item": "destriummod:destrium_stick",
-        "count": 4
+    "b": {
+      "item": "destriummod:argonide_stick"
     }
+  },
+  "result": {
+    "item": "destriummod:destrium_stick",
+    "count": 4
+  }
 }

@@ -1,13 +1,13 @@
 {
-    "type": "minecraft:blasting",
-    "group": "destrium_nuggets",
-    "ingredient": {
-        "item": "destriummod:paradis_destrium_ore"
-    },
-    "result": {
-        "item": "destriummod:destrium_nuggets",
-        "count": 2
-    },
-    "experience": 25,
-    "cookingtime": 500
+  "type": "minecraft:blasting",
+  "group": "destrium_nuggets",
+  "ingredient": {
+    "item": "destriummod:paradis_destrium_ore"
+  },
+  "result": {
+    "item": "destriummod:destrium_nuggets",
+    "count": 2
+  },
+  "experience": 25,
+  "cookingtime": 500
 }
