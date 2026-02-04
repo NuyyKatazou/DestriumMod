@@ -19,9 +19,9 @@ public class ModFlowerGeneration {
         ResourceKey<Biome> key = ResourceKey.create(Registry.BIOME_REGISTRY, event.getName());
         Set<BiomeDictionary.Type> types = BiomeDictionary.getTypes(key);
         //In Plains
-        if(types.contains(BiomeDictionary.Type.PLAINS)) {
+        if (types.contains(BiomeDictionary.Type.PLAINS)) {
             List<Holder<PlacedFeature>> base =
-                event.getGeneration().getFeatures(GenerationStep.Decoration.VEGETAL_DECORATION);
+                    event.getGeneration().getFeatures(GenerationStep.Decoration.VEGETAL_DECORATION);
 
             base.add(ModPlacedFeatures.CLOVER_PLACED);
             base.add(ModPlacedFeatures.CLOVER_TWO_PLACED);

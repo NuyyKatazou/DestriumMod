@@ -1,7 +1,5 @@
 package fr.amazonia.destriummod.utils;
 
-import java.util.function.Function;
-
 import fr.amazonia.destriummod.block.OverworldPortalBlocks;
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerLevel;
@@ -12,6 +10,8 @@ import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.material.Fluids;
 import net.minecraft.world.level.material.Material;
 import net.minecraftforge.common.util.ITeleporter;
+
+import java.util.function.Function;
 
 public class OverworldTeleporter implements ITeleporter {
 
@@ -37,15 +37,14 @@ public class OverworldTeleporter implements ITeleporter {
         while ((destWorld.getBlockState(destinationPos).getMaterial() != Material.AIR && !destWorld.getBlockState(destinationPos).canBeReplaced(Fluids.WATER)) &&
                 (destWorld.getBlockState(destinationPos.above()).getMaterial() != Material.AIR && !destWorld.getBlockState(destinationPos.above()).canBeReplaced(Fluids.WATER)) &&
                 tries < 25) {
-        	destinationPos = destinationPos.above(2);
+            destinationPos = destinationPos.above(2);
             tries++;
         }
-        if (!(entity instanceof ServerPlayer)) {
+        if (!(entity instanceof ServerPlayer player)) {
             return entity;
         }
-        ServerPlayer player = (ServerPlayer) entity;
         if (destWorld.dimension().equals(Level.OVERWORLD)) {
-  
+
         }
         player.teleportTo(destinationPos.getX() + 0.5D, destinationPos.getY() + 1D, destinationPos.getZ() + 0.5D);
         if (thisIsToOverworldDim) {

@@ -19,7 +19,7 @@ public class SpeedArmorBoots extends ArmorItem {
 
     @Override
     public void onArmorTick(ItemStack itemstack, Level world, Player player) {
-        if(player.getItemBySlot(EquipmentSlot.FEET).getItem() == ModItems.SPEED_BOOTS.get()) {
+        if (player.getItemBySlot(EquipmentSlot.FEET).getItem() == ModItems.SPEED_BOOTS.get()) {
             player.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 300, 2, false, false, true));
         }
     }

@@ -1,9 +1,5 @@
 package fr.amazonia.destriummod.item.stick;
 
-import java.util.List;
-
-import javax.annotation.Nullable;
-
 import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.TranslatableComponent;
@@ -14,14 +10,17 @@ import net.minecraft.world.level.Level;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 
+import javax.annotation.Nullable;
+import java.util.List;
+
 public class AmazoniteStick extends Item {
 
-	public AmazoniteStick(Properties p_i48487_1_) {
-		super(p_i48487_1_);
-	}
+    public AmazoniteStick(Properties p_i48487_1_) {
+        super(p_i48487_1_);
+    }
 
-	@OnlyIn(Dist.CLIENT)
-	public void appendHoverText(ItemStack p_42988_, @Nullable Level p_42989_, List<Component> p_42990_, TooltipFlag p_42991_) {
-		p_42990_.add(new TranslatableComponent(this.getDescriptionId() + ".desc").withStyle(ChatFormatting.BLUE));
-	}
+    @OnlyIn(Dist.CLIENT)
+    public void appendHoverText(ItemStack p_42988_, @Nullable Level p_42989_, List<Component> p_42990_, TooltipFlag p_42991_) {
+        p_42990_.add(new TranslatableComponent(this.getDescriptionId() + ".desc").withStyle(ChatFormatting.BLUE));
+    }
 }

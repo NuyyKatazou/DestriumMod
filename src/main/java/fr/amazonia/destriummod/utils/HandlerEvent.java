@@ -26,21 +26,21 @@ public class HandlerEvent {
         }
     }
 
-	@SubscribeEvent
+    @SubscribeEvent
     public void onLivingFall(LivingFallEvent event) {
         LivingEntity entity = event.getEntityLiving();
         if (entity instanceof Player) {
             Item feetEquip = entity.getItemBySlot(EquipmentSlot.FEET).getItem();
             //Cancel FeatherBoots FallDamage
-            if(feetEquip == ModItems.FEATHER_BOOTS.get()) {
+            if (feetEquip == ModItems.FEATHER_BOOTS.get()) {
                 event.setDamageMultiplier(0);
             }
             //Cancel AdventurerBoots FallDamage
-            if(feetEquip == ModItems.ADVENTURER_BOOTS.get()) {
+            if (feetEquip == ModItems.ADVENTURER_BOOTS.get()) {
                 event.setDamageMultiplier(0);
             }
             //Cancel ReinforcedAdventurerBoots FallDamage
-            if(feetEquip == ModItems.REINFORCED_ADVENTURER_BOOTS.get()) {
+            if (feetEquip == ModItems.REINFORCED_ADVENTURER_BOOTS.get()) {
                 event.setDamageMultiplier(0);
             }
         }
@@ -49,7 +49,7 @@ public class HandlerEvent {
     @SubscribeEvent
     public void AnvilUse(AnvilUpdateEvent event) {
         Item left = event.getLeft().getItem();
-        if(left == ModItems.NECKLACE.get() || left == ModItems.LUCKY_NECKLACE.get()) {
+        if (left == ModItems.NECKLACE.get() || left == ModItems.LUCKY_NECKLACE.get()) {
             event.setCanceled(true);
         }
     }

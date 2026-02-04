@@ -19,7 +19,7 @@ public class LuckyNecklaceArmor extends ArmorItem {
 
     @Override
     public void onArmorTick(ItemStack itemstack, Level world, Player player) {
-        if(player.getItemBySlot(EquipmentSlot.CHEST).getItem() == ModItems.LUCKY_NECKLACE.get()) {
+        if (player.getItemBySlot(EquipmentSlot.CHEST).getItem() == ModItems.LUCKY_NECKLACE.get()) {
             player.addEffect(new MobEffectInstance(MobEffects.LUCK, 300, 4, false, false, true));
         }
     }

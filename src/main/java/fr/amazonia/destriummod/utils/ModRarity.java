@@ -1,7 +1,7 @@
 package fr.amazonia.destriummod.utils;
 
-import net.minecraft.world.item.Rarity;
 import net.minecraft.ChatFormatting;
+import net.minecraft.world.item.Rarity;
 
 public class ModRarity {
 

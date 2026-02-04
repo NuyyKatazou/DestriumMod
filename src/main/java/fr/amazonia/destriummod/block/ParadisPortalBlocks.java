@@ -15,11 +15,11 @@ import net.minecraft.world.phys.BlockHitResult;
 
 public class ParadisPortalBlocks extends Block {
 
-	public ParadisPortalBlocks(Properties p_i48440_1_) {
-		super(p_i48440_1_);
-	}
+    public ParadisPortalBlocks(Properties p_i48440_1_) {
+        super(p_i48440_1_);
+    }
 
-	@Override
+    @Override
     public InteractionResult use(BlockState state, Level worldIn, BlockPos pos, Player player, InteractionHand handIn, BlockHitResult hit) {
         if (player.getVehicle() != null || player.isVehicle()) {
             return InteractionResult.FAIL;

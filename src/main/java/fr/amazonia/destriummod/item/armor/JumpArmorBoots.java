@@ -18,7 +18,7 @@ public class JumpArmorBoots extends ArmorItem {
 
     @Override
     public void onArmorTick(ItemStack itemstack, Level world, Player player) {
-        if(player.getItemBySlot(EquipmentSlot.FEET).getItem() == ModItems.JUMP_BOOTS.get()) {
+        if (player.getItemBySlot(EquipmentSlot.FEET).getItem() == ModItems.JUMP_BOOTS.get()) {
             player.addEffect(new MobEffectInstance(MobEffects.JUMP, 300, 2, false, false, true));
         }
     }
