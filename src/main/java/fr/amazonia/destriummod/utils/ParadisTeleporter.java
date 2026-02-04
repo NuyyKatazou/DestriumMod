@@ -27,7 +27,6 @@ public class ParadisTeleporter implements ITeleporter {
         thisIsToParadisDim = isToParadisDim;
     }
 
-    @Override
     public Entity placeEntity(Entity entity, ServerLevel currentWorld, ServerLevel destWorld, float yaw, Function<Boolean, Entity> repositionEntity) {
         entity = repositionEntity.apply(false);
         double y = 61;

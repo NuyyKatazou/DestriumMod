@@ -91,31 +91,25 @@ public class DestriumMod {
     }
 
     //CreativeTabs
-    public static final CreativeModeTab ItemTab = new CreativeModeTab(MODID + ".itemtab") {
-        @Override
-        @OnlyIn(Dist.CLIENT)
-        public ItemStack makeIcon() {
-            return new ItemStack(ModItems.AMAZONITE_FRAGMENT.get());
-        }
-    };
-
     public static final CreativeModeTab BlockTab = new CreativeModeTab(MODID + ".blocktab") {
-        @Override
         @OnlyIn(Dist.CLIENT)
         public ItemStack makeIcon() {
             return new ItemStack(ModBlocks.AMAZONITE_BLOCK.get());
         }
     };
-
+    public static final CreativeModeTab ItemTab = new CreativeModeTab(MODID + ".itemtab") {
+        @OnlyIn(Dist.CLIENT)
+        public ItemStack makeIcon() {
+            return new ItemStack(ModItems.AMAZONITE_FRAGMENT.get());
+        }
+    };
     public static final CreativeModeTab ToolTab = new CreativeModeTab(MODID + ".tooltab") {
-        @Override
+        @OnlyIn(Dist.CLIENT)
         public ItemStack makeIcon() {
             return new ItemStack(ModItems.AMAZONITE_PICKAXE.get());
         }
     };
-
     public static final CreativeModeTab FoodTab = new CreativeModeTab(MODID + ".foodtab") {
-        @Override
         @OnlyIn(Dist.CLIENT)
         public ItemStack makeIcon() {
             return new ItemStack(ModItems.AMAZONITE_APPLE.get());

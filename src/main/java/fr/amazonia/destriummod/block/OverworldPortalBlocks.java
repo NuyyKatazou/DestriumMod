@@ -18,7 +18,6 @@ public class OverworldPortalBlocks extends Block {
         super(p_i48440_1_);
     }
 
-    @Override
     public InteractionResult use(BlockState state, Level worldIn, BlockPos pos, Player player, InteractionHand handIn, BlockHitResult hit) {
         if (player.getVehicle() != null || player.isVehicle()) {
             return InteractionResult.FAIL;
