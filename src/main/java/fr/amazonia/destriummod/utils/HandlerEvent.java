@@ -31,16 +31,8 @@ public class HandlerEvent {
         LivingEntity entity = event.getEntityLiving();
         if (entity instanceof Player) {
             Item feetEquip = entity.getItemBySlot(EquipmentSlot.FEET).getItem();
-            //Cancel FeatherBoots FallDamage
-            if (feetEquip == ModItems.FEATHER_BOOTS.get()) {
-                event.setDamageMultiplier(0);
-            }
-            //Cancel AdventurerBoots FallDamage
-            if (feetEquip == ModItems.ADVENTURER_BOOTS.get()) {
-                event.setDamageMultiplier(0);
-            }
-            //Cancel ReinforcedAdventurerBoots FallDamage
-            if (feetEquip == ModItems.REINFORCED_ADVENTURER_BOOTS.get()) {
+            //Cancel Feather, Adventurer & ReinforcedAdventurer Boots FallDamage
+            if (feetEquip == ModItems.FEATHER_BOOTS.get() || feetEquip == ModItems.ADVENTURER_BOOTS.get() || feetEquip == ModItems.REINFORCED_ADVENTURER_BOOTS.get()) {
                 event.setDamageMultiplier(0);
             }
         }
