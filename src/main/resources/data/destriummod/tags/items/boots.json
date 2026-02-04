@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "destriummod:speed_boots",
+    "destriummod:feather_boots",
+    "destriummod:jump_boots",
+    "destriummod:adventurer_boots",
+    "destriummod:reinforced_adventurer_boots"
+  ]
+}
