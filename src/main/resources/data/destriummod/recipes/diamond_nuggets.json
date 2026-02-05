@@ -1,12 +1,12 @@
 {
-    "type": "minecraft:crafting_shapeless",
-    "ingredients": [
-        {
-            "item": "minecraft:diamond"
-        }
-    ],
-    "result": {
-        "item": "destriummod:diamond_nuggets",
-        "count": 9
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:diamond"
     }
+  ],
+  "result": {
+    "item": "destriummod:diamond_nuggets",
+    "count": 9
+  }
 }
