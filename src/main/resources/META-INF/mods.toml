@@ -34,7 +34,7 @@ credits="Mods By Nuyy" #optional
 authors="NuyyKatazou" #optional
 # The description text for the mod (multi line!) (#mandatory)
 description='''
-DestriumMod is a Mods based on Exploration, Building, Tools and Machines !
+DestriumMod is a Mod based on Exploration, Building, Tools and Machines !
 '''
 # A dependency - use the . to indicate dependency for a specific modid. Dependencies are optional.
 [[dependencies.examplemod]] #optional
