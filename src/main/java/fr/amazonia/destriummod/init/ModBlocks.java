@@ -94,8 +94,8 @@ public class ModBlocks {
 
 
     //Portal Blocks
-    public static final RegistryObject<Block> PARADIS_PORTAL_BLOCK = createBlock("paradis_portal_block", () -> new ParadisPortalBlocks(BlockBehaviour.Properties.of(Material.METAL).strength(5f, 999f).requiresCorrectToolForDrops()));
-    public static final RegistryObject<Block> OVERWORLD_PORTAL_BLOCK = createBlock("overworld_portal_block", () -> new OverworldPortalBlocks(BlockBehaviour.Properties.of(Material.METAL).strength(5f, 999f).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> PARADIS_PORTAL_BLOCK = createBlock("paradis_portal_block", () -> new ParadisPortalBlocks(BlockBehaviour.Properties.of(Material.METAL).strength(5f, 999f).requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
+    public static final RegistryObject<Block> OVERWORLD_PORTAL_BLOCK = createBlock("overworld_portal_block", () -> new OverworldPortalBlocks(BlockBehaviour.Properties.of(Material.METAL).strength(5f, 999f).requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
 
 
     //Plants
