@@ -1,6 +1,9 @@
 {
   "replace": false,
   "values": [
-	"destriummod:cobblestone_compressed1"
+	"destriummod:cobblestone_compressed1",
+    "destriummod:cobblestone_compressed2",
+    "destriummod:dirt_compressed1",
+    "destriummod:dirt_compressed2"
   ]
 }

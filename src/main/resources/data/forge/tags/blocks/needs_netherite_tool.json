@@ -3,19 +3,17 @@
   "values": [
     "destriummod:destrium_block",
 	"destriummod:argonide_block",
+	"destriummod:amazonite_block",
+	"destriummod:fake_amazonite_block",
+	"destriummod:random_ore",
 	"destriummod:paradis_destrium_ore",
 	"destriummod:paradis_argonide_ore",
-	"destriummod:cobblestone_compressed4",
+	"destriummod:paradis_amazonite_ore",
 	"destriummod:cobblestone_compressed5",
 	"destriummod:cobblestone_compressed6",
 	"destriummod:cobblestone_compressed7",
 	"destriummod:cobblestone_compressed8",
-	"destriummod:dirt_compressed4",
 	"destriummod:dirt_compressed5",
-	"destriummod:random_ore",
-	"destriummod:paradis_amazonite_ore",
-	"destriummod:amazonite_block",
-	"destriummod:fake_amazonite_block",
 	"destriummod:amazonite_relique_block",
 	"destriummod:below_block"
   ]
