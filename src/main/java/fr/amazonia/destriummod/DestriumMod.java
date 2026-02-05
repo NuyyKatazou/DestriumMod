@@ -51,6 +51,7 @@ public class DestriumMod {
         ModBlocks.BLOCKS.register(eventBus);
         ModFluids.FLUIDS.register(eventBus);
         ModFluidTypes.FLUID_TYPES.register(eventBus);
+        
     }
 
     private void setup(FMLCommonSetupEvent event) {

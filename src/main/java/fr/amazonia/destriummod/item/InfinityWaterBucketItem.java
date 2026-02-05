@@ -27,6 +27,7 @@ import net.minecraft.world.phys.HitResult;
 public class InfinityWaterBucketItem extends BucketItem {
 
     private final Fluid content;
+    private final java.util.function.Supplier<? extends Fluid> fluidSupplier;
 
     public InfinityWaterBucketItem(java.util.function.Supplier<? extends Fluid> supplier, Item.Properties builder) {
         super(supplier, builder);
@@ -54,8 +55,7 @@ public class InfinityWaterBucketItem extends BucketItem {
             if (p_40703_.mayInteract(p_40704_, blockpos) && p_40704_.mayUseItemAt(blockpos1, direction, itemstack)) {
                 if (this.content == Fluids.EMPTY) {
                     BlockState blockstate1 = p_40703_.getBlockState(blockpos);
-                    if (blockstate1.getBlock() instanceof BucketPickup) {
-                        BucketPickup bucketpickup = (BucketPickup) blockstate1.getBlock();
+                    if (blockstate1.getBlock() instanceof BucketPickup bucketpickup) {
                         ItemStack itemstack1 = bucketpickup.pickupBlock(p_40703_, blockpos, blockstate1);
                         if (!itemstack1.isEmpty()) {
                             p_40704_.awardStat(Stats.ITEM_USED.get(this));
@@ -93,8 +93,6 @@ public class InfinityWaterBucketItem extends BucketItem {
             }
         }
     }
-
-    private final java.util.function.Supplier<? extends Fluid> fluidSupplier;
 
     public Fluid getFluid() {
         return fluidSupplier.get();

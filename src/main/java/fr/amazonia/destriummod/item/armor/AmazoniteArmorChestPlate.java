@@ -21,24 +21,24 @@ import java.util.List;
 
 public class AmazoniteArmorChestPlate extends ArmorItem {
 
-	public AmazoniteArmorChestPlate(ArmorMaterial p_40386_, Type p_266831_, Properties p_40388_) {
-		super(p_40386_, p_266831_, p_40388_);
-	}
+    public AmazoniteArmorChestPlate(ArmorMaterial p_40386_, Type p_266831_, Properties p_40388_) {
+        super(p_40386_, p_266831_, p_40388_);
+    }
 
-	@Override
+    @Override
     public void onArmorTick(ItemStack itemstack, Level world, Player player) {
-		if(player.getItemBySlot(EquipmentSlot.CHEST).getItem() == ModItems.AMAZONITE_CHESTPLATE.get()) {
-			player.addEffect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 300, 0, false, false, true));
-		}
-	}
+        if (player.getItemBySlot(EquipmentSlot.CHEST).getItem() == ModItems.AMAZONITE_CHESTPLATE.get()) {
+            player.addEffect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 300, 0, false, false, true));
+        }
+    }
 
-	@OnlyIn(Dist.CLIENT)
-	public void appendHoverText(ItemStack p_270235_, @Nullable Level p_270688_, List<Component> p_270630_, TooltipFlag p_270170_) {
-		p_270630_.add(Component.translatable(this.getDescriptionId() + ".desc").withStyle(ChatFormatting.DARK_GRAY));
-	}
+    @OnlyIn(Dist.CLIENT)
+    public void appendHoverText(ItemStack p_270235_, @Nullable Level p_270688_, List<Component> p_270630_, TooltipFlag p_270170_) {
+        p_270630_.add(Component.translatable(this.getDescriptionId() + ".desc").withStyle(ChatFormatting.DARK_GRAY));
+    }
 
-	@Override
-	public boolean makesPiglinsNeutral(ItemStack stack, LivingEntity wearer) {
-		return true;
-	}
+    @Override
+    public boolean makesPiglinsNeutral(ItemStack stack, LivingEntity wearer) {
+        return true;
+    }
 }

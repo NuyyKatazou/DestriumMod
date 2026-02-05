@@ -42,10 +42,9 @@ public class ParadisTeleporter implements ITeleporter {
             destinationPos = destinationPos.above(2);
             tries++;
         }
-        if (!(entity instanceof ServerPlayer)) {
+        if (!(entity instanceof ServerPlayer player)) {
             return entity;
         }
-        ServerPlayer player = (ServerPlayer) entity;
         if (destWorld.dimension().equals(DestriumMod.PARADIS_DIMENSION)) {
 
         }
