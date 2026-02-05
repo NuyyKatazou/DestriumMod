@@ -44,6 +44,20 @@ public class ModTags {
 
     public static class Items {
 
+        public static final TagKey<Item> PLATES = tag("plates");
+
+        public static final TagKey<Item> AMAZONITE_ARMORS = tag("amazonite_armors");
+        public static final TagKey<Item> DESTRIUM_ARMORS = tag("destrium_armors");
+        public static final TagKey<Item> ARGONIDE_ARMORS = tag("argonide_armors");
+
+        public static final TagKey<Item> BOOTS = tag("boots");
+
+        public static final TagKey<Item> NECKLACE = tag("necklace");
+
+        public static final TagKey<Item> AMAZONITE_TOOLS = tag("amazonite_tools");
+        public static final TagKey<Item> DESTRIUM_TOOLS = tag("destrium_tools");
+        public static final TagKey<Item> ARGONIDE_TOOLS = tag("argonide_tools");
+
         private static TagKey<Item> tag(String name) {
             return ItemTags.create(new ResourceLocation(DestriumMod.MODID, name));
         }
