@@ -1,5 +1,6 @@
 package fr.amazonia.destriummod.block;
 
+import fr.amazonia.destriummod.DestriumMod;
 import fr.amazonia.destriummod.utils.OverworldTeleporter;
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.MinecraftServer;
@@ -26,7 +27,7 @@ public class OverworldPortalBlocks extends Block {
             if (!player.isCrouching() && player.canChangeDimensions()) {
                 MinecraftServer server = worldIn.getServer();
                 if (server != null) {
-                    if (worldIn.dimension() == Level.OVERWORLD) {
+                    if (worldIn.dimension() != DestriumMod.PARADIS_DIMENSION) {
                         return InteractionResult.FAIL;
                     } else {
                         ServerLevel overworldWorld = server.getLevel(Level.OVERWORLD);
