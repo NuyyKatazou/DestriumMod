@@ -51,7 +51,7 @@ public class DestriumMod {
         ModBlocks.BLOCKS.register(eventBus);
         ModFluids.FLUIDS.register(eventBus);
         ModFluidTypes.FLUID_TYPES.register(eventBus);
-        
+
     }
 
     private void setup(FMLCommonSetupEvent event) {
@@ -70,43 +70,6 @@ public class DestriumMod {
     }
 
     private void addCreative(CreativeModeTabEvent.BuildContents event) {
-        if (event.getTab() == ModCreativeTabs.ItemTab) {
-            event.accept(ModItems.AMAZONITE_CRUMB);
-            event.accept(ModItems.AMAZONITE_DUST);
-            event.accept(ModItems.AMAZONITE_FRAGMENT);
-            event.accept(ModItems.AMAZONITE_NUGGETS);
-            event.accept(ModItems.AMAZONITE_INGOT);
-            event.accept(ModItems.DESTRIUM_NUGGETS);
-            event.accept(ModItems.DESTRIUM_INGOT);
-            event.accept(ModItems.ARGONIDE_NUGGETS);
-            event.accept(ModItems.ARGONIDE_INGOT);
-            event.accept(ModItems.REPAIR_FRAGMENT);
-            event.accept(ModItems.REPAIR_GEM);
-            event.accept(ModItems.EMERALD_NUGGETS);
-            event.accept(ModItems.DIAMOND_NUGGETS);
-            event.accept(ModItems.NETHERITE_NUGGETS);
-            event.accept(ModItems.AMAZONITE_STICK);
-            event.accept(ModItems.DESTRIUM_STICK);
-            event.accept(ModItems.ARGONIDE_STICK);
-            event.accept(ModItems.GOLDEN_CORE);
-            event.accept(ModItems.COMPRESSED_GOLDEN);
-            event.accept(ModItems.IRON_PLATE);
-            event.accept(ModItems.GOLD_PLATE);
-            event.accept(ModItems.DIAMOND_PLATE);
-            event.accept(ModItems.NETHERITE_PLATE);
-            event.accept(ModItems.ARGONIDE_PLATE);
-            event.accept(ModItems.DESTRIUM_PLATE);
-            event.accept(ModItems.AMAZONITE_PLATE);
-            event.accept(ModItems.POISON_WATER_BUCKET);
-            event.accept(ModItems.POISON_STAR);
-            event.accept(ModItems.RESISTANCE_LAVA_BUCKET);
-            event.accept(ModItems.RESISTANCE_STAR);
-            event.accept(ModItems.INFINITY_WATER_BUCKET);
-            event.accept(ModItems.AMAZONITE_SEEDS);
-            event.accept(ModItems.DESTRIUM_SEEDS);
-            event.accept(ModItems.XP_SEEDS);
-
-        }
         if (event.getTab() == ModCreativeTabs.BlockTab) {
             event.accept(ModBlocks.CLOUD);
             event.accept(ModBlocks.BLUE_CLOUD);
@@ -163,6 +126,43 @@ public class DestriumMod {
             event.accept(ModBlocks.OVERWORLD_PORTAL_BLOCK);
             event.accept(ModBlocks.CLOVER);
             event.accept(ModBlocks.CLOVER_TWO);
+
+        }
+        if (event.getTab() == ModCreativeTabs.ItemTab) {
+            event.accept(ModItems.AMAZONITE_CRUMB);
+            event.accept(ModItems.AMAZONITE_DUST);
+            event.accept(ModItems.AMAZONITE_FRAGMENT);
+            event.accept(ModItems.AMAZONITE_NUGGETS);
+            event.accept(ModItems.AMAZONITE_INGOT);
+            event.accept(ModItems.DESTRIUM_NUGGETS);
+            event.accept(ModItems.DESTRIUM_INGOT);
+            event.accept(ModItems.ARGONIDE_NUGGETS);
+            event.accept(ModItems.ARGONIDE_INGOT);
+            event.accept(ModItems.REPAIR_FRAGMENT);
+            event.accept(ModItems.REPAIR_GEM);
+            event.accept(ModItems.EMERALD_NUGGETS);
+            event.accept(ModItems.DIAMOND_NUGGETS);
+            event.accept(ModItems.NETHERITE_NUGGETS);
+            event.accept(ModItems.AMAZONITE_STICK);
+            event.accept(ModItems.DESTRIUM_STICK);
+            event.accept(ModItems.ARGONIDE_STICK);
+            event.accept(ModItems.GOLDEN_CORE);
+            event.accept(ModItems.COMPRESSED_GOLDEN);
+            event.accept(ModItems.IRON_PLATE);
+            event.accept(ModItems.GOLD_PLATE);
+            event.accept(ModItems.DIAMOND_PLATE);
+            event.accept(ModItems.NETHERITE_PLATE);
+            event.accept(ModItems.ARGONIDE_PLATE);
+            event.accept(ModItems.DESTRIUM_PLATE);
+            event.accept(ModItems.AMAZONITE_PLATE);
+            event.accept(ModItems.POISON_WATER_BUCKET);
+            event.accept(ModItems.POISON_STAR);
+            event.accept(ModItems.RESISTANCE_LAVA_BUCKET);
+            event.accept(ModItems.RESISTANCE_STAR);
+            event.accept(ModItems.INFINITY_WATER_BUCKET);
+            event.accept(ModItems.AMAZONITE_SEEDS);
+            event.accept(ModItems.DESTRIUM_SEEDS);
+            event.accept(ModItems.XP_SEEDS);
 
         }
         if (event.getTab() == ModCreativeTabs.ToolTab) {

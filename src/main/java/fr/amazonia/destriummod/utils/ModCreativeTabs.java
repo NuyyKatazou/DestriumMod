@@ -13,9 +13,9 @@ import net.minecraftforge.fml.common.Mod;
 
 @Mod.EventBusSubscriber(modid = DestriumMod.MODID, bus = Mod.EventBusSubscriber.Bus.MOD)
 public class ModCreativeTabs extends CreativeModeTab {
-
-    public static CreativeModeTab ItemTab;
+    
     public static CreativeModeTab BlockTab;
+    public static CreativeModeTab ItemTab;
     public static CreativeModeTab ToolTab;
     public static CreativeModeTab FoodTab;
 
@@ -25,11 +25,11 @@ public class ModCreativeTabs extends CreativeModeTab {
 
     @SubscribeEvent
     public static void registerCreativeModeTabs(CreativeModeTabEvent.Register event) {
-        ItemTab = event.registerCreativeModeTab(new ResourceLocation(DestriumMod.MODID, "itemtab"),
-                builder -> builder.icon(() -> new ItemStack(ModItems.AMAZONITE_FRAGMENT.get())).title(Component.translatable(String.valueOf(new ResourceLocation(DestriumMod.MODID, "itemtab")))).build());
-
         BlockTab = event.registerCreativeModeTab(new ResourceLocation(DestriumMod.MODID, "blocktab"),
                 builder -> builder.icon(() -> new ItemStack(ModBlocks.AMAZONITE_BLOCK.get())).title(Component.translatable(String.valueOf(new ResourceLocation(DestriumMod.MODID, "blocktab")))).build());
+
+        ItemTab = event.registerCreativeModeTab(new ResourceLocation(DestriumMod.MODID, "itemtab"),
+                builder -> builder.icon(() -> new ItemStack(ModItems.AMAZONITE_FRAGMENT.get())).title(Component.translatable(String.valueOf(new ResourceLocation(DestriumMod.MODID, "itemtab")))).build());
 
         ToolTab = event.registerCreativeModeTab(new ResourceLocation(DestriumMod.MODID, "tooltab"),
                 builder -> builder.icon(() -> new ItemStack(ModItems.AMAZONITE_PICKAXE.get())).title(Component.translatable(String.valueOf(new ResourceLocation(DestriumMod.MODID, "tooltab")))).build());
