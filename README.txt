@@ -2,7 +2,7 @@
 <p>&nbsp;</p>
 
 <h1></h1>
-<p>DestriumMod is a Minecraft Mods based on Exploration, Building, Tools and Machines!</p>
+<p>DestriumMod is a Minecraft Mod based on Exploration, Building, Tools and Machines!</p>
 <p>You have the possibility to explore a multitude of dimensions, to collect the blocks to make magnificent build, to look for materials for your weapons, armor and machines!</p>
 <p>&nbsp;</p>
 
