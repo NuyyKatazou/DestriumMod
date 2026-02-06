@@ -18,7 +18,7 @@ public class JumpArmorBoots extends ArmorItem {
     }
 
     public void onInventoryTick(ItemStack stack, Level level, Player player, int slotIndex, int selectedIndex) {
-        if(player.getItemBySlot(EquipmentSlot.FEET).getItem() == ModItems.JUMP_BOOTS.get()) {
+        if (player.getItemBySlot(EquipmentSlot.FEET).getItem() == ModItems.JUMP_BOOTS.get()) {
             player.addEffect(new MobEffectInstance(MobEffects.JUMP, 300, 2, false, false, true));
         }
     }

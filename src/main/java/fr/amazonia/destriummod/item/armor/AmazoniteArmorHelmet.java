@@ -27,7 +27,7 @@ public class AmazoniteArmorHelmet extends ArmorItem {
     }
 
     public void onInventoryTick(ItemStack stack, Level level, Player player, int slotIndex, int selectedIndex) {
-        if(player.getItemBySlot(EquipmentSlot.HEAD).getItem() == ModItems.AMAZONITE_HELMET.get()) {
+        if (player.getItemBySlot(EquipmentSlot.HEAD).getItem() == ModItems.AMAZONITE_HELMET.get()) {
             player.addEffect(new MobEffectInstance(MobEffects.INVISIBILITY, 300, 0, false, false, true));
         }
     }

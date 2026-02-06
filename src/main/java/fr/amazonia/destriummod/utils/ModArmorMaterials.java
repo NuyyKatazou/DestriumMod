@@ -1,5 +1,6 @@
 package fr.amazonia.destriummod.utils;
 
+import fr.amazonia.destriummod.DestriumMod;
 import fr.amazonia.destriummod.init.ModItems;
 import net.minecraft.Util;
 import net.minecraft.core.Holder;
@@ -56,7 +57,7 @@ public class ModArmorMaterials {
             float pKnockbackResistance,
             Supplier<Ingredient> pRepairIngredient
     ) {
-        List<ArmorMaterial.Layer> list = List.of(new ArmorMaterial.Layer(new ResourceLocation(pName)));
+        List<ArmorMaterial.Layer> list = List.of(new ArmorMaterial.Layer(ResourceLocation.fromNamespaceAndPath(pName, DestriumMod.MODID)));
         return register(pName, pDefense, pEnchantmentValue, pEquipSound, pToughness, pKnockbackResistance, pRepairIngredient, list);
     }
 
@@ -67,7 +68,7 @@ public class ModArmorMaterials {
             Holder<SoundEvent> pEquipSound,
             float pToughness,
             float pKnockbackResistance,
-            Supplier<Ingredient> pRepairIngridient,
+            Supplier<Ingredient> pRepairIngredient,
             List<ArmorMaterial.Layer> pLayers
     ) {
         EnumMap<ArmorItem.Type, Integer> enummap = new EnumMap<>(ArmorItem.Type.class);
@@ -78,8 +79,8 @@ public class ModArmorMaterials {
 
         return Registry.registerForHolder(
                 BuiltInRegistries.ARMOR_MATERIAL,
-                new ResourceLocation(pName),
-                new ArmorMaterial(enummap, pEnchantmentValue, pEquipSound, pRepairIngridient, pLayers, pToughness, pKnockbackResistance)
+                ResourceLocation.fromNamespaceAndPath(pName, DestriumMod.MODID),
+                new ArmorMaterial(enummap, pEnchantmentValue, pEquipSound, pRepairIngredient, pLayers, pToughness, pKnockbackResistance)
         );
     }
 }

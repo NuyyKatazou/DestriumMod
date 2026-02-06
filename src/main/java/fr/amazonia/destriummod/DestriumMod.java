@@ -29,21 +29,22 @@ public class DestriumMod {
     //Dimensions
     public static ResourceKey<Level> PARADIS_DIMENSION;
 
-    public DestriumMod() {
+    public DestriumMod(FMLJavaModLoadingContext context) {
 
         minecraftSupplier = Minecraft::getInstance;
 
         //Setup Event
-        FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
-        FMLJavaModLoadingContext.get().getModEventBus().addListener(this::clientSetup);
-        FMLJavaModLoadingContext.get().getModEventBus().addListener(this::serverSetup);
-        FMLJavaModLoadingContext.get().getModEventBus().register(this);
+        context.getModEventBus().addListener(this::setup);
+        context.getModEventBus().addListener(this::clientSetup);
+        context.getModEventBus().addListener(this::serverSetup);
+        context.getModEventBus().register(this);
 
         //Init Class
-        IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
+        IEventBus eventBus = context.getModEventBus();
         ModItems.register(eventBus);
         ModBlocks.register(eventBus);
         ModCreativeTabs.register(eventBus);
+
     }
 
     private void setup(FMLCommonSetupEvent event) {
@@ -56,23 +57,8 @@ public class DestriumMod {
     }
 
     private void clientSetup(FMLClientSetupEvent event) {
-        /*
-        //Flowers
-        ItemBlockRenderTypes.setRenderLayer(ModBlocks.CLOVER.get(), RenderType.translucent());
-        ItemBlockRenderTypes.setRenderLayer(ModBlocks.CLOVER_TWO.get(), RenderType.translucent());
-
-        //Fluids
-        ItemBlockRenderTypes.setRenderLayer(ModFluids.POISON_WATER_FLUID.get(), RenderType.translucent());
-        ItemBlockRenderTypes.setRenderLayer(ModFluids.POISON_WATER_BLOCK.get(), RenderType.translucent());
-        ItemBlockRenderTypes.setRenderLayer(ModFluids.POISON_WATER_FLOWING.get(), RenderType.translucent());
-
-        ItemBlockRenderTypes.setRenderLayer(ModFluids.RESISTANCE_LAVA_FLUID.get(), RenderType.translucent());
-        ItemBlockRenderTypes.setRenderLayer(ModFluids.RESISTANCE_LAVA_BLOCK.get(), RenderType.translucent());
-        ItemBlockRenderTypes.setRenderLayer(ModFluids.RESISTANCE_LAVA_FLOWING.get(), RenderType.translucent());
-         */
     }
 
     private void serverSetup(FMLDedicatedServerSetupEvent event) {
-
     }
 }

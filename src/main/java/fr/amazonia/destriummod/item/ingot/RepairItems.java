@@ -12,14 +12,14 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 import javax.annotation.Nullable;
 import java.util.List;
 
-public class EmeraldNuggets extends Item {
+public class RepairItems extends Item {
 
-    public EmeraldNuggets(Properties properties) {
+    public RepairItems(Properties properties) {
         super(properties);
     }
 
     @OnlyIn(Dist.CLIENT)
-    public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltip, TooltipFlag pFlag) {
-        pTooltip.add(Component.translatable(this.getDescriptionId() + ".desc").withStyle(ChatFormatting.GREEN));
+    public void appendHoverText(ItemStack p_270235_, @Nullable Level p_270688_, List<Component> p_270630_, TooltipFlag p_270170_) {
+        p_270630_.add(Component.translatable(this.getDescriptionId() + ".desc").withStyle(ChatFormatting.LIGHT_PURPLE));
     }
 }

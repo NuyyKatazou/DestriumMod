@@ -25,4 +25,3 @@ public class AmazoniteIngot extends Item {
         pTooltip.add(Component.translatable(this.getDescriptionId() + ".desc3").withStyle(ChatFormatting.GOLD));
     }
 }
-
