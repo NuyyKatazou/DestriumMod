@@ -1,19 +1,19 @@
 {
-    "type": "minecraft:crafting_shaped",
-    "pattern": [
-        "aa",
-        "ab",
-        " b"
-    ],
-    "key": {
-        "a": {
-            "item": "destriummod:destrium_ingot"
-        },
-        "b": {
-            "item": "destriummod:destrium_stick"
-        }
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "aa",
+    "ab",
+    " b"
+  ],
+  "key": {
+    "a": {
+      "item": "destriummod:destrium_ingot"
     },
-    "result": {
-        "id": "destriummod:destrium_axe"
+    "b": {
+      "item": "destriummod:destrium_stick"
     }
+  },
+  "result": {
+    "id": "destriummod:destrium_axe"
+  }
 }

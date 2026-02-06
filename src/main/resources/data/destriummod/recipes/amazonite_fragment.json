@@ -1,17 +1,17 @@
 {
-    "type": "minecraft:crafting_shaped",
-    "pattern": [
-        "aaa",
-        "aaa",
-        "aaa"
-    ],
-    "key": {
-        "a": {
-            "item": "destriummod:amazonite_dust"
-        }
-    },
-    "result": {
-        "id": "destriummod:amazonite_fragment",
-        "count": 2
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "aaa",
+    "aaa",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "destriummod:amazonite_dust"
     }
+  },
+  "result": {
+    "id": "destriummod:amazonite_fragment",
+    "count": 2
+  }
 }

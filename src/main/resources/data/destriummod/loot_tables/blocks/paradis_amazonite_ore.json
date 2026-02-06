@@ -3,11 +3,10 @@
   "pools": [
     {
       "rolls": 1,
-      "bonus_rolls": 0,
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "destriummod:amazonite_ore"
+          "name": "destriummod:paradis_amazonite_ore"
         }
       ],
       "conditions": [
@@ -17,5 +16,5 @@
       ]
     }
   ],
-  "random_sequence": "destriummod:blocks/amazonite_ore"
+  "random_sequence": "destriummod:blocks/argonide_ore"
 }

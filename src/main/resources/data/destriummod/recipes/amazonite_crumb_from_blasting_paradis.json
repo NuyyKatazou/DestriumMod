@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:blasting",
+  "group": "amazonite_crumb",
+  "ingredient": {
+    "item": "destriummod:paradis_amazonite_ore"
+  },
+  "result": "destriummod:amazonite_crumb",
+  "experience": 100,
+  "cookingtime": 2500
+}

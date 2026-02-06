@@ -1,19 +1,19 @@
 {
-    "type": "minecraft:crafting_shaped",
-    "pattern": [
-        "bbb",
-        "bab",
-        "bbb"
-    ],
-    "key": {
-        "a": {
-            "item": "destriummod:argonide_ingot"
-        },
-        "b": {
-            "item": "destriummod:argonide_block"
-        }
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "bbb",
+    "bab",
+    "bbb"
+  ],
+  "key": {
+    "a": {
+      "item": "destriummod:argonide_ingot"
     },
-    "result": {
-        "id": "destriummod:argonide_plate"
+    "b": {
+      "item": "destriummod:argonide_block"
     }
+  },
+  "result": {
+    "id": "destriummod:argonide_plate"
+  }
 }

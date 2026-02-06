@@ -1,25 +1,25 @@
 {
-    "type": "minecraft:crafting_shaped",
-    "pattern": [
-        "dcd",
-        " b ",
-        " a "
-    ],
-    "key": {
-        "a": {
-            "item": "destriummod:destrium_stick"
-        },
-        "b": {
-            "item": "destriummod:destrium_block"
-        },
-		"c": {
-            "item": "destriummod:amazonite_fragment"
-        },
-		"d": {
-            "item": "destriummod:argonide_block"
-        }
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "dcd",
+    " b ",
+    " a "
+  ],
+  "key": {
+    "a": {
+      "item": "destriummod:destrium_stick"
     },
-    "result": {
-        "id": "destriummod:spawners_pickaxe"
+    "b": {
+      "item": "destriummod:destrium_block"
+    },
+    "c": {
+      "item": "destriummod:amazonite_fragment"
+    },
+    "d": {
+      "item": "destriummod:argonide_block"
     }
+  },
+  "result": {
+    "id": "destriummod:spawners_pickaxe"
+  }
 }

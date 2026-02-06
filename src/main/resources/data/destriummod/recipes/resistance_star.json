@@ -1,22 +1,22 @@
 {
-    "type": "minecraft:crafting_shaped",
-    "pattern": [
-        "cbc",
-        "bab",
-        "cbc"
-    ],
-    "key": {
-        "a": {
-            "item": "destriummod:argonide_plate"
-        },
-		"c": {
-            "item": "destriummod:argonide_ingot"
-        },
-        "b": {
-            "item": "destriummod:argonide_stick"
-        }
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "cbc",
+    "bab",
+    "cbc"
+  ],
+  "key": {
+    "a": {
+      "item": "destriummod:argonide_plate"
     },
-    "result": {
-        "id": "destriummod:resistance_star"
+    "c": {
+      "item": "destriummod:argonide_ingot"
+    },
+    "b": {
+      "item": "destriummod:argonide_stick"
     }
+  },
+  "result": {
+    "id": "destriummod:resistance_star"
+  }
 }

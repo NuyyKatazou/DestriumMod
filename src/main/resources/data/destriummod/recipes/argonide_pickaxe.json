@@ -1,19 +1,19 @@
 {
-    "type": "minecraft:crafting_shaped",
-    "pattern": [
-        "aaa",
-        " b ",
-        " b "
-    ],
-    "key": {
-        "a": {
-            "item": "destriummod:argonide_ingot"
-        },
-        "b": {
-            "item": "destriummod:argonide_stick"
-        }
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "aaa",
+    " b ",
+    " b "
+  ],
+  "key": {
+    "a": {
+      "item": "destriummod:argonide_ingot"
     },
-    "result": {
-        "id": "destriummod:argonide_pickaxe"
+    "b": {
+      "item": "destriummod:argonide_stick"
     }
+  },
+  "result": {
+    "id": "destriummod:argonide_pickaxe"
+  }
 }

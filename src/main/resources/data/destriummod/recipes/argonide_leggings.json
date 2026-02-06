@@ -1,16 +1,16 @@
 {
-    "type": "minecraft:crafting_shaped",
-    "pattern": [
-        "aaa",
-        "a a",
-        "a a"
-    ],
-    "key": {
-        "a": {
-            "item": "destriummod:argonide_ingot"
-        }
-    },
-    "id": {
-        "item": "destriummod:argonide_leggings"
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "aaa",
+    "a a",
+    "a a"
+  ],
+  "key": {
+    "a": {
+      "item": "destriummod:argonide_ingot"
     }
+  },
+  "result": {
+    "id": "destriummod:argonide_leggings"
+  }
 }

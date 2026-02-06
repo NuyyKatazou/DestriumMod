@@ -1,22 +1,22 @@
 {
-    "type": "minecraft:crafting_shaped",
-    "pattern": [
-        "aba",
-        "bcb",
-        "aba"
-    ],
-    "key": {
-        "a": {
-            "item": "destriummod:cloud"
-        },
-        "b": {
-            "item": "destriummod:destrium_ore"
-        },
-		"c": {
-            "item": "destriummod:amazonite_ore"
-        }
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "aba",
+    "bcb",
+    "aba"
+  ],
+  "key": {
+    "a": {
+      "item": "destriummod:cloud"
     },
-    "result": {
-        "id": "destriummod:overworld_portal_block"
+    "b": {
+      "item": "destriummod:paradis_destrium_ore"
+    },
+    "c": {
+      "item": "destriummod:paradis_amazonite_ore"
     }
+  },
+  "result": {
+    "id": "destriummod:overworld_portal_block"
+  }
 }

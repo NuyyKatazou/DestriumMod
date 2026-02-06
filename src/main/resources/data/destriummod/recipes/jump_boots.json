@@ -1,22 +1,22 @@
 {
-    "type": "minecraft:crafting_shaped",
-    "pattern": [
-        "aca",
-        "cbc",
-        "aca"
-    ],
-    "key": {
-        "a": {
-            "item": "minecraft:rabbit_foot"
-        },
-        "c": {
-            "item": "minecraft:ghast_tear"
-        },
-        "b": {
-            "item": "destriummod:destrium_boots"
-        }
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "aca",
+    "cbc",
+    "aca"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:rabbit_foot"
     },
-    "result": {
-        "id": "destriummod:speed_boots"
+    "c": {
+      "item": "minecraft:ghast_tear"
+    },
+    "b": {
+      "item": "destriummod:destrium_boots"
     }
+  },
+  "result": {
+    "id": "destriummod:jump_boots"
+  }
 }

@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:blasting",
+  "group": "argonide_nuggets",
+  "ingredient": {
+    "item": "destriummod:paradis_argonide_ore"
+  },
+  "result": "destriummod:argonide_nuggets",
+  "experience": 5,
+  "cookingtime": 50
+}
