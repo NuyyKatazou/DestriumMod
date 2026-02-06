@@ -19,7 +19,7 @@ public class AmazoniteApple extends Item {
     }
 
     @OnlyIn(Dist.CLIENT)
-    public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltip, TooltipFlag pFlag) {
+    public void appendHoverText(ItemStack pStack, Item.TooltipContext pContext, List<Component> pTooltip, TooltipFlag pFlag) {
         pTooltip.add(Component.translatable(this.getDescriptionId() + ".desc").withStyle(ChatFormatting.RED));
         pTooltip.add(Component.translatable(this.getDescriptionId() + ".desc2").withStyle(ChatFormatting.DARK_RED));
         pTooltip.add(Component.translatable(this.getDescriptionId() + ".desc3").withStyle(ChatFormatting.GRAY));
