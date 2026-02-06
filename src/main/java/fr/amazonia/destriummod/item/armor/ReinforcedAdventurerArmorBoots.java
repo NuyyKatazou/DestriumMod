@@ -4,6 +4,7 @@ import fr.amazonia.destriummod.init.ModItems;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.EquipmentSlot;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.ArmorMaterial;
@@ -21,5 +22,10 @@ public class ReinforcedAdventurerArmorBoots extends ArmorItem {
         if (player.getItemBySlot(EquipmentSlot.FEET).getItem() == ModItems.REINFORCED_ADVENTURER_BOOTS.get()) {
             player.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 300, 2, false, false, true));
         }
+    }
+
+    @Override
+    public boolean makesPiglinsNeutral(ItemStack stack, LivingEntity wearer) {
+        return true;
     }
 }
