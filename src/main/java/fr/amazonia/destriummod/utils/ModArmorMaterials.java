@@ -57,7 +57,7 @@ public class ModArmorMaterials {
             float pKnockbackResistance,
             Supplier<Ingredient> pRepairIngredient
     ) {
-        List<ArmorMaterial.Layer> list = List.of(new ArmorMaterial.Layer(ResourceLocation.fromNamespaceAndPath(pName, DestriumMod.MODID)));
+        List<ArmorMaterial.Layer> list = List.of(new ArmorMaterial.Layer(ResourceLocation.fromNamespaceAndPath(DestriumMod.MODID, pName)));
         return register(pName, pDefense, pEnchantmentValue, pEquipSound, pToughness, pKnockbackResistance, pRepairIngredient, list);
     }
 
@@ -79,7 +79,7 @@ public class ModArmorMaterials {
 
         return Registry.registerForHolder(
                 BuiltInRegistries.ARMOR_MATERIAL,
-                ResourceLocation.fromNamespaceAndPath(pName, DestriumMod.MODID),
+                ResourceLocation.fromNamespaceAndPath(DestriumMod.MODID, pName),
                 new ArmorMaterial(enummap, pEnchantmentValue, pEquipSound, pRepairIngredient, pLayers, pToughness, pKnockbackResistance)
         );
     }

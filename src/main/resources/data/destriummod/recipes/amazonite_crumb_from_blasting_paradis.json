@@ -4,7 +4,9 @@
   "ingredient": {
     "item": "destriummod:paradis_amazonite_ore"
   },
-  "result": "destriummod:amazonite_crumb",
+  "result": {
+    "id" : "destriummod:amazonite_crumb"
+  },
   "experience": 100,
   "cookingtime": 2500
 }
