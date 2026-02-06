@@ -19,7 +19,7 @@ public class ReinforcedAdventurerArmorBoots extends ArmorItem {
     }
 
     public void onInventoryTick(ItemStack stack, Level level, Player player, int slotIndex, int selectedIndex) {
-        if (player.getItemBySlot(EquipmentSlot.FEET).getItem() == ModItems.RENFORCED_ADVENTURER_BOOTS.get()) {
+        if (player.getItemBySlot(EquipmentSlot.FEET).getItem() == ModItems.REINFORCED_ADVENTURER_BOOTS.get()) {
             player.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 300, 2, false, false, true));
         }
     }
