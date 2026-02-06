@@ -79,7 +79,6 @@
   "item.destriummod.golden_core": "Golden Core",
   "item.destriummod.compressed_golden": "Compressed Golden",
 
-
   "item.destriummod.iron_plate": "Iron Plate",
   "item.destriummod.gold_plate": "Gold Plate",
   "item.destriummod.diamond_plate": "Diamond Plate",
@@ -96,7 +95,6 @@
 
   "item.destriummod.resistance_lava_bucket": "Resistance Lava Bucket",
   "item.destriummod.resistance_star": "Resistance Star",
-
 
 
 
@@ -177,9 +175,7 @@
 
 
 
-
   "fluid.destriummod.poison_water": "Poisoned Water",
-
 
 
 
@@ -192,11 +188,10 @@
 
 
 
-
-  "item.destriummod.amazonite_leggings.desc": "Fire Résistance",
-  "item.destriummod.amazonite_boots.desc": "Speed Two",
-  "item.destriummod.amazonite_chestplate.desc": "Resistance",
   "item.destriummod.amazonite_helmet.desc": "Invisibility",
+  "item.destriummod.amazonite_chestplate.desc": "Resistance",
+  "item.destriummod.amazonite_leggings.desc": "Fire Resistance",
+  "item.destriummod.amazonite_boots.desc": "Speed Two",
 
 
   "item.destriummod.spawners_pickaxe.desc": " ",
@@ -208,12 +203,15 @@
   "item.destriummod.amazonite_ingot.desc": ">> Amazonite",
   "item.destriummod.amazonite_ingot.desc2": "Destrium",
   "item.destriummod.amazonite_ingot.desc3": "Argonide",
+
   "item.destriummod.destrium_ingot.desc": "Amazonite",
   "item.destriummod.destrium_ingot.desc2": ">> Destrium",
   "item.destriummod.destrium_ingot.desc3": "Argonide",
+
   "item.destriummod.argonide_ingot.desc": "Amazonite",
   "item.destriummod.argonide_ingot.desc2": "Destrium",
   "item.destriummod.argonide_ingot.desc3": ">> Argonide",
+
   "item.destriummod.repair_gem.desc": "Used to repair items and other things",
 
 
@@ -222,17 +220,17 @@
   "item.destriummod.argonide_stick.desc": "Used to craft the Argonide Tools",
 
 
-  "item.destriummod.destrium_apple.desc": "Ten Heart Healing",
-  "item.destriummod.destrium_apple.desc2": "Strength Three For Twenty Seconds",
-  "item.destriummod.destrium_apple.desc3": "Résistance Two For Ten Minutes",
-  "item.destriummod.destrium_apple.desc4": "Four Heal Boost Heart For Five Minutes",
-  "item.destriummod.destrium_apple.desc5": "Regeneration Three For Forty Five Seconds",
-  "item.destriummod.destrium_apple.desc6": "Ten Absorption Hearts For Five Minutes",
+  "item.destriummod.destrium_apple.desc": "Ten heart healing",
+  "item.destriummod.destrium_apple.desc2": "Strength three for twenty seconds",
+  "item.destriummod.destrium_apple.desc3": "Resistance two for ten minutes",
+  "item.destriummod.destrium_apple.desc4": "Four heal boost heart for five minutes",
+  "item.destriummod.destrium_apple.desc5": "Regeneration three for forty five seconds",
+  "item.destriummod.destrium_apple.desc6": "Ten absorption hearts for five minutes",
 
-  "item.destriummod.amazonite_apple.desc": "Full Heart Healing",
-  "item.destriummod.amazonite_apple.desc2": "Strength Four For Forty Seconds",
-  "item.destriummod.amazonite_apple.desc3": "Résistance Four For Twenty Minutes",
-  "item.destriummod.amazonite_apple.desc4": "Ten Heal Boost Heart For Ten Minutes",
-  "item.destriummod.amazonite_apple.desc5": "Regeneration Five For Two Minutes And Thirty Seconds",
-  "item.destriummod.amazonite_apple.desc6": "Twenty Absorption Hearts For Ten Minutes"
+  "item.destriummod.amazonite_apple.desc": "Full heart healing",
+  "item.destriummod.amazonite_apple.desc2": "Strength four for forty seconds",
+  "item.destriummod.amazonite_apple.desc3": "Resistance four for twenty minutes",
+  "item.destriummod.amazonite_apple.desc4": "Ten heal boost heart for ten minutes",
+  "item.destriummod.amazonite_apple.desc5": "Regeneration five for two minutes and thirty seconds",
+  "item.destriummod.amazonite_apple.desc6": "Twenty absorption hearts for ten minutes"
 }

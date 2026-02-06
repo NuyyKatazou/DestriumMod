@@ -79,7 +79,6 @@
   "item.destriummod.golden_core": "Noyau en Or",
   "item.destriummod.compressed_golden": "Or Compressé",
 
-
   "item.destriummod.iron_plate": "Plaque de Fer",
   "item.destriummod.gold_plate": "Plaque d'Or",
   "item.destriummod.diamond_plate": "Plaque de Diamant",
@@ -96,7 +95,6 @@
 
   "item.destriummod.resistance_lava_bucket": "Seaux de Lave Résistante",
   "item.destriummod.resistance_star": "Étoile de Résistance",
-
 
 
 
@@ -177,9 +175,7 @@
 
 
 
-
   "fluid.destriummod.poison_water": "Eau Empoisonn�",
-
 
 
 
@@ -188,7 +184,6 @@
   "itemGroup.destriummod.itemtab": "Onglets Des Items",
   "itemGroup.destriummod.tooltab": "Onglets Des Outils Et Armures",
   "itemGroup.destriummod.foodtab": "Onglets Des Nourritures",
-
 
 
 
@@ -208,12 +203,15 @@
   "item.destriummod.amazonite_ingot.desc": ">> Amazonite",
   "item.destriummod.amazonite_ingot.desc2": "Destrium",
   "item.destriummod.amazonite_ingot.desc3": "Argonide",
+
   "item.destriummod.destrium_ingot.desc": "Amazonite",
   "item.destriummod.destrium_ingot.desc2": ">> Destrium",
   "item.destriummod.destrium_ingot.desc3": "Argonide",
+
   "item.destriummod.argonide_ingot.desc": "Amazonite",
   "item.destriummod.argonide_ingot.desc2": "Destrium",
   "item.destriummod.argonide_ingot.desc3": ">> Argonide",
+
   "item.destriummod.repair_gem.desc": "Utilisé pour réparer les items et autres",
 
 
@@ -222,33 +220,17 @@
   "item.destriummod.argonide_stick.desc": "Utilisé pour craft les Outils en Argonide",
 
 
-  "item.destriummod.destrium_apple.desc": "Soigne Dix Coeurs",
-  "item.destriummod.destrium_apple.desc2": "Force Trois Pendant Vingts Secondes",
-  "item.destriummod.destrium_apple.desc3": "Résistance Deux Pendant Dix Minutes",
-  "item.destriummod.destrium_apple.desc4": "Boost De Quatre Coeurs Pendant Cinq Minutes",
-  "item.destriummod.destrium_apple.desc5": "Regeneration Trois Pendant Quarante Cinq Secondes",
-  "item.destriummod.destrium_apple.desc6": "Dix Coeurs d'Absorption Pendant Cinq Minutes",
+  "item.destriummod.destrium_apple.desc": "Soigne dix coeurs",
+  "item.destriummod.destrium_apple.desc2": "Force trois pendant vingts secondes",
+  "item.destriummod.destrium_apple.desc3": "Résistance deux pendant dix minutes",
+  "item.destriummod.destrium_apple.desc4": "Boost de quatre coeurs pendant cinq minutes",
+  "item.destriummod.destrium_apple.desc5": "Regeneration trois pendant quarante cinq secondes",
+  "item.destriummod.destrium_apple.desc6": "Dix coeurs d'absorption pendant cinq minutes",
 
-  "item.destriummod.amazonite_apple.desc": "Soigne Tout Les Coeurs",
-  "item.destriummod.amazonite_apple.desc2": "Force Quatre Pendant Quarante Secondes",
-  "item.destriummod.amazonite_apple.desc3": "Résistance Quatre Pendant Vingts Minutes",
-  "item.destriummod.amazonite_apple.desc4": "Boost De Dix Coeurs Pendant Dix Minutes",
-  "item.destriummod.amazonite_apple.desc5": "Regeneration Cinq Pendant Deux Minutes Et Trente Secondes",
-  "item.destriummod.amazonite_apple.desc6": "Vingts Coeurs d'Absorption Pendant Dix Minutes",
-  "item.destriummod.repair_ingot": "Repair Ingot",
-  "item.destriummod.renforced_adventurer_boots": "Renforced Adventurer Boots",
-  "block.destriummod.amazonite_ore": "Amazonite Ore",
-  "block.destriummod.destrium_ore": "Destrium Ore",
-  "block.destriummod.argonide_ore": "Argonide Ore",
-  "item.destriummod.destrium_nuggets.desc": "Used to craft the Destrium Ingot",
-  "item.destriummod.amazonite_crumb.desc": "Used to craft the Amazonite Dust",
-  "item.destriummod.amazonite_dust.desc": "Used to craft the Amazonite Fragment",
-  "item.destriummod.amazonite_fragment.desc": "Used to craft the Amazonite Nuggets",
-  "item.destriummod.amazonite_nuggets.desc": "Used to craft the Amazonite Ingot",
-  "item.destriummod.argonide_nuggets.desc": "Used to craft the Argonide Ingot",
-  "item.destriummod.emerald_nuggets.desc": "Used to craft the Emerald",
-  "item.destriummod.diamond_nuggets.desc": "Used to craft the Diamond",
-  "item.destriummod.netherite_nuggets.desc": "Used to craft the Netherite Scrap",
-  "item.destriummod.golden_core.desc": "Used to craft the Enchanted Golden Apple",
-  "item.destriummod.compressed_golden.desc": "Used to craft the Golden Core"
+  "item.destriummod.amazonite_apple.desc": "Soigne tout les coeurs",
+  "item.destriummod.amazonite_apple.desc2": "Force quatre pendant quarante secondes",
+  "item.destriummod.amazonite_apple.desc3": "Résistance quatre pendant vingts minutes",
+  "item.destriummod.amazonite_apple.desc4": "Boost de dix coeurs pendant dix minutes",
+  "item.destriummod.amazonite_apple.desc5": "Regeneration cinq pendant deux minutes et trente secondes",
+  "item.destriummod.amazonite_apple.desc6": "Vingts coeurs d'absorption pendant dix minutes"
 }
