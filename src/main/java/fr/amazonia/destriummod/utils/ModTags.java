@@ -36,7 +36,7 @@ public class ModTags {
 
 
         private static TagKey<Block> tag(String name) {
-            return BlockTags.create(ResourceLocation.fromNamespaceAndPath(name, DestriumMod.MODID));
+            return BlockTags.create(ResourceLocation.fromNamespaceAndPath(DestriumMod.MODID, name));
         }
     }
 
@@ -57,7 +57,7 @@ public class ModTags {
         public static final TagKey<Item> ARGONIDE_TOOLS = tag("argonide_tools");
 
         private static TagKey<Item> tag(String name) {
-            return ItemTags.create(ResourceLocation.fromNamespaceAndPath(name, DestriumMod.MODID));
+            return ItemTags.create(ResourceLocation.fromNamespaceAndPath(DestriumMod.MODID, name));
         }
     }
 }
