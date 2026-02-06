@@ -22,6 +22,7 @@
     "destriummod:overworld_portal_block",
     "destriummod:cloud2",
     "destriummod:below_block",
-    "destriummod:repair_ore"
+    "destriummod:repair_ore",
+    "destriummod:repair_block"
   ]
 }
