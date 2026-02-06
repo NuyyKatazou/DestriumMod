@@ -1,12 +1,12 @@
 {
-    "type": "minecraft:crafting_shapeless",
-    "ingredients": [
-        {
-            "item": "minecraft:netherite_scrap"
-        }
-    ],
-    "result": {
-        "item": "destriummod:netherite_nuggets",
-        "count": 9
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:netherite_scrap"
     }
+  ],
+  "result": {
+    "item": "destriummod:netherite_nuggets",
+    "count": 9
+  }
 }
