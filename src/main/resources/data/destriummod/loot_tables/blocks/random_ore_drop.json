@@ -3,7 +3,6 @@
   "pools": [
     {
       "rolls": 1,
-      "bonus_rolls": 0,
       "entries": [
         {
           "type": "minecraft:item",
@@ -22,7 +21,6 @@
     },
     {
       "rolls": 1,
-      "bonus_rolls": 0,
       "entries": [
         {
           "type": "minecraft:item",
@@ -41,7 +39,6 @@
     },
     {
       "rolls": 1,
-      "bonus_rolls": 0,
       "entries": [
         {
           "type": "minecraft:item",
@@ -60,7 +57,6 @@
     },
     {
       "rolls": 1,
-      "bonus_rolls": 0,
       "entries": [
         {
           "type": "minecraft:item",
@@ -79,7 +75,6 @@
     },
     {
       "rolls": 1,
-      "bonus_rolls": 0,
       "entries": [
         {
           "type": "minecraft:item",
@@ -88,8 +83,8 @@
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": -100,
-                "max": 32
+                "min": -20,
+                "max": 4
               }
             }
           ]
@@ -98,7 +93,6 @@
     },
     {
       "rolls": 1,
-      "bonus_rolls": 0,
       "entries": [
         {
           "type": "minecraft:item",
@@ -117,7 +111,6 @@
     },
     {
       "rolls": 1,
-      "bonus_rolls": 0,
       "entries": [
         {
           "type": "minecraft:item",
@@ -136,7 +129,6 @@
     },
     {
       "rolls": 1,
-      "bonus_rolls": 0,
       "entries": [
         {
           "type": "minecraft:item",
@@ -155,7 +147,6 @@
     },
     {
       "rolls": 1,
-      "bonus_rolls": 0,
       "entries": [
         {
           "type": "minecraft:item",
@@ -174,7 +165,6 @@
     },
     {
       "rolls": 1,
-      "bonus_rolls": 0,
       "entries": [
         {
           "type": "minecraft:item",
@@ -193,7 +183,6 @@
     },
     {
       "rolls": 1,
-      "bonus_rolls": 0,
       "entries": [
         {
           "type": "minecraft:item",
@@ -212,7 +201,6 @@
     },
     {
       "rolls": 1,
-      "bonus_rolls": 0,
       "entries": [
         {
           "type": "minecraft:item",
@@ -231,7 +219,6 @@
     },
     {
       "rolls": 1,
-      "bonus_rolls": 0,
       "entries": [
         {
           "type": "minecraft:item",
@@ -250,7 +237,6 @@
     },
     {
       "rolls": 1,
-      "bonus_rolls": 0,
       "entries": [
         {
           "type": "minecraft:item",
@@ -269,7 +255,6 @@
     },
     {
       "rolls": 1,
-      "bonus_rolls": 0,
       "entries": [
         {
           "type": "minecraft:item",
@@ -288,7 +273,6 @@
     },
     {
       "rolls": 1,
-      "bonus_rolls": 0,
       "entries": [
         {
           "type": "minecraft:item",
@@ -307,7 +291,6 @@
     },
     {
       "rolls": 1,
-      "bonus_rolls": 0,
       "entries": [
         {
           "type": "minecraft:item",
@@ -326,7 +309,6 @@
     },
     {
       "rolls": 1,
-      "bonus_rolls": 0,
       "entries": [
         {
           "type": "minecraft:item",
@@ -345,7 +327,6 @@
     },
     {
       "rolls": 1,
-      "bonus_rolls": 0,
       "entries": [
         {
           "type": "minecraft:item",
@@ -364,7 +345,6 @@
     },
     {
       "rolls": 1,
-      "bonus_rolls": 0,
       "entries": [
         {
           "type": "minecraft:item",
@@ -378,7 +358,23 @@
               }
             }
           ]
-        }
+        },
+        {
+          "rolls": 1,
+          "entries": [
+            {
+              "type": "minecraft:item",
+              "name": "destriummod:amazonite_ingot",
+              "functions": [
+                {
+                  "function": "minecraft:set_count",
+                  "count": {
+                    "min": -4000,
+                    "max": 1
+                  }
+                }
+              ]
+            }
       ]
     }
   ]

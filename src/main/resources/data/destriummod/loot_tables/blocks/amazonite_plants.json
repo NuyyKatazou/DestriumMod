@@ -3,7 +3,6 @@
   "pools": [
     {
       "rolls": 1,
-      "bonus_rolls": 0,
       "entries": [
         {
           "type": "minecraft:item",
@@ -13,7 +12,6 @@
     },
     {
       "rolls": 1,
-      "bonus_rolls": 0,
       "entries": [
         {
           "type": "minecraft:item",
@@ -41,7 +39,6 @@
     },
     {
       "rolls": 1,
-      "bonus_rolls": 0,
       "entries": [
         {
           "type": "minecraft:item",
@@ -50,7 +47,7 @@
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": -375,
+                "min": -3500,
                 "max": 1
               }
             }
@@ -69,7 +66,6 @@
     },
     {
       "rolls": 1,
-      "bonus_rolls": 0,
       "entries": [
         {
           "type": "minecraft:item",
@@ -78,7 +74,7 @@
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": -375,
+                "min": -75000,
                 "max": 1
               }
             }
