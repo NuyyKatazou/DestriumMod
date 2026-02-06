@@ -15,6 +15,7 @@
   "item.destriummod.diamond_nuggets": "P�pite de Diamant",
   "item.destriummod.netherite_nuggets": "P�pite de Netherite",
 
+
   "item.destriummod.amazonite_stick": "Bâton en Amazonite",
   "item.destriummod.destrium_stick": "Bâton en Destrium",
   "item.destriummod.argonide_stick": "Bâton en Argonide",
@@ -178,6 +179,7 @@
 
 
 
+
   "destriummod:blocktab": "Onglets Des Blocs",
   "destriummod:itemtab": "Onglets Des Items",
   "destriummod:tooltab": "Onglets Des Outils Et Armures",
@@ -218,17 +220,17 @@
   "item.destriummod.argonide_stick.desc": "Utilisé pour craft les Outils en Argonide",
 
 
-  "item.destriummod.destrium_apple.desc": "Soigne Dix Coeurs",
-  "item.destriummod.destrium_apple.desc2": "Force Trois Pendant Vingts Secondes",
-  "item.destriummod.destrium_apple.desc3": "Résistance Deux Pendant Dix Minutes",
-  "item.destriummod.destrium_apple.desc4": "Boost De Quatre Coeurs Pendant Cinq Minutes",
-  "item.destriummod.destrium_apple.desc5": "Regeneration Trois Pendant Quarante Cinq Secondes",
-  "item.destriummod.destrium_apple.desc6": "Dix Coeurs d'Absorption Pendant Cinq Minutes",
+  "item.destriummod.destrium_apple.desc": "Soigne dix coeurs",
+  "item.destriummod.destrium_apple.desc2": "Force trois pendant vingts secondes",
+  "item.destriummod.destrium_apple.desc3": "Résistance deux pendant dix minutes",
+  "item.destriummod.destrium_apple.desc4": "Boost de quatre coeurs pendant cinq minutes",
+  "item.destriummod.destrium_apple.desc5": "Regeneration trois pendant quarante cinq secondes",
+  "item.destriummod.destrium_apple.desc6": "Dix coeurs d'absorption pendant cinq minutes",
 
-  "item.destriummod.amazonite_apple.desc": "Soigne Tout Les Coeurs",
-  "item.destriummod.amazonite_apple.desc2": "Force Quatre Pendant Quarante Secondes",
-  "item.destriummod.amazonite_apple.desc3": "Résistance Quatre Pendant Vingts Minutes",
-  "item.destriummod.amazonite_apple.desc4": "Boost De Dix Coeurs Pendant Dix Minutes",
-  "item.destriummod.amazonite_apple.desc5": "Regeneration Cinq Pendant Deux Minutes Et Trente Secondes",
-  "item.destriummod.amazonite_apple.desc6": "Vingts Coeurs d'Absorption Pendant Dix Minutes"
+  "item.destriummod.amazonite_apple.desc": "Soigne tout les coeurs",
+  "item.destriummod.amazonite_apple.desc2": "Force quatre pendant quarante secondes",
+  "item.destriummod.amazonite_apple.desc3": "Résistance quatre pendant vingts minutes",
+  "item.destriummod.amazonite_apple.desc4": "Boost de dix coeurs pendant dix minutes",
+  "item.destriummod.amazonite_apple.desc5": "Regeneration cinq pendant deux minutes et trente secondes",
+  "item.destriummod.amazonite_apple.desc6": "Vingts coeurs d'absorption pendant dix minutes"
 }
