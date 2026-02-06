@@ -358,24 +358,26 @@
               }
             }
           ]
-        },
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
         {
-          "rolls": 1,
-          "entries": [
+          "type": "minecraft:item",
+          "name": "destriummod:amazonite_ingot",
+          "functions": [
             {
-              "type": "minecraft:item",
-              "name": "destriummod:amazonite_ingot",
-              "functions": [
-                {
-                  "function": "minecraft:set_count",
-                  "count": {
-                    "min": -4000,
-                    "max": 1
-                  }
-                }
-              ]
+              "function": "minecraft:set_count",
+              "count": {
+                "min": -4000,
+                "max": 1
+              }
             }
           ]
         }
       ]
     }
+  ]
+}
