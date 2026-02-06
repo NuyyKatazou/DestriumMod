@@ -50,7 +50,7 @@ public class ModBlocks {
     public static final RegistryObject<Block> ULTRA_DARK_BLUE_CLOUD = createBlock("ultra_dark_blue_cloud", () -> new Block(BlockBehaviour.Properties.of(Material.CLAY).strength(1.5f, 1f).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> YELLOW_CLOUD = createBlock("yellow_cloud", () -> new Block(BlockBehaviour.Properties.of(Material.CLAY).strength(1.5f, 1f).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> CRACKED_CLOUD = createBlock("cracked_cloud", () -> new Block(BlockBehaviour.Properties.of(Material.CLAY).strength(2.5f, 1f).requiresCorrectToolForDrops()));
-    public static final RegistryObject<Block> CLOUD2 = createBlock("cloud2", () -> new Block(BlockBehaviour.Properties.of(Material.CLAY).strength(2.5f, 1.5f).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> CLOUD2 = createBlock("cloud2", () -> new Block(BlockBehaviour.Properties.of(Material.CLAY).strength(1.5f, 1f).requiresCorrectToolForDrops()));
 
 
     //Ores
