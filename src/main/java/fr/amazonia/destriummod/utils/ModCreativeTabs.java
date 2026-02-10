@@ -70,8 +70,8 @@ public class ModCreativeTabs {
         pOutput.accept(ModBlocks.BELOW_BLOCK.get());
         pOutput.accept(ModBlocks.PARADIS_PORTAL_BLOCK.get());
         pOutput.accept(ModBlocks.OVERWORLD_PORTAL_BLOCK.get());
-        //pOutput.accept(ModBlocks.CLOVER.get());
-        //pOutput.accept(ModBlocks.CLOVER_TWO.get());
+        pOutput.accept(ModBlocks.CLOVER.get());
+        pOutput.accept(ModBlocks.CLOVER_TWO.get());
         pOutput.accept(ModBlocks.AMAZONITE_PLANTS.get());
         pOutput.accept(ModBlocks.DESTRIUM_PLANTS.get());
         pOutput.accept(ModBlocks.XP_PLANTS.get());
