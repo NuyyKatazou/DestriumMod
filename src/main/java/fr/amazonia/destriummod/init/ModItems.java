@@ -1,6 +1,7 @@
 package fr.amazonia.destriummod.init;
 
 import fr.amazonia.destriummod.DestriumMod;
+import fr.amazonia.destriummod.item.InfinityWaterBucketItem;
 import fr.amazonia.destriummod.item.armor.*;
 import fr.amazonia.destriummod.item.food.AmazoniteApple;
 import fr.amazonia.destriummod.item.food.DestriumApple;
@@ -12,6 +13,7 @@ import fr.amazonia.destriummod.item.tools.SpawnersPickaxe;
 import fr.amazonia.destriummod.utils.ModArmorMaterials;
 import fr.amazonia.destriummod.utils.ModToolsTiers;
 import net.minecraft.world.item.*;
+import net.minecraft.world.level.material.Fluids;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -113,6 +115,8 @@ public class ModItems {
     public static final RegistryObject<Item> POISON_STAR = ITEMS.register("poison_star", () -> new Item(new Item.Properties()));
 
     public static final RegistryObject<Item> RESISTANCE_STAR = ITEMS.register("resistance_star", () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> INFINITY_WATER_BUCKET = ITEMS.register("infinity_water_bucket", () -> new InfinityWaterBucketItem(() -> Fluids.WATER, (new Item.Properties()).stacksTo(1)));
 
 
     //Seeds

@@ -109,7 +109,7 @@ public class ModCreativeTabs {
         pOutput.accept(ModItems.POISON_STAR.get());
         //pOutput.accept(ModItems.RESISTANCE_LAVA_BUCKET.get());
         pOutput.accept(ModItems.RESISTANCE_STAR.get());
-        //pOutput.accept(ModItems.INFINITY_WATER_BUCKET.get());
+        pOutput.accept(ModItems.INFINITY_WATER_BUCKET.get());
         pOutput.accept(ModItems.AMAZONITE_SEEDS.get());
         pOutput.accept(ModItems.DESTRIUM_SEEDS.get());
         pOutput.accept(ModItems.XP_SEEDS.get());
