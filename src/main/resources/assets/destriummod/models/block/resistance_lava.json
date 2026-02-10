@@ -1,6 +1,5 @@
 {
   "textures": {
-    "particle": "minecraft:block/lava_still",
-    "render_type": "cutout"
+    "particle": "minecraft:block/lava_still"
   }
 }
