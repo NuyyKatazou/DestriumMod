@@ -1,8 +1,108 @@
 1.20.x Changelog
+50.2
+====
+ - 50.2.0 1.20.6 RB 2
+          https://forums.minecraftforge.net/topic/154389-forge-502-minecraft-1206/
+
 50.1
 ====
- - 50.1.0 1.20.6 RB 1
-          https://forums.minecraftforge.net/topic/149458-forge-501-minecraft-1206/
+ - 50.1.51 Speed up mod annotation scanning by ~30% (#10468)
+           Co-authored-by: LexManos <LexManos@gmail.com>
+ - 50.1.50 Add missed license headers (#10477)
+ - 50.1.49 Add '#forge:chorus_additionally_grows_on' tag for similar mechanics to '#minecraft:azalea_grows_on' but for chorus (#10455)
+ - 50.1.48 Fix damageItem's game test not using onBreak callback correctly (#10451)
+ - 50.1.47 Bump dependencies, most notably EventBus (#10387)
+           - SecureModules 2.2.19 -> 2.2.21
+             - Dev time performance improvements
+           - CoreMods 5.2.4 -> 5.2.6
+           - EventBus 6.2.15 -> 6.2.27
+               - Reduced memory usage
+               - Further performance improvements
+               - Fixed EventBus#39, unregistered listeners are now immediately reclaimable by the GC
+           - Apache MavenArtifact 3.8.5 -> 3.8.8
+           - Bootstrap 2.1.3 -> 2.1.8
+             - Dev time performance improvements
+ - 50.1.46 Re-introduce ItemStack Capabilities (#10364)
+           Co-authored-by: RealMangoRage <64402114+RealMangorage@users.noreply.github.com>
+           Co-authored-by: LexManos <LexManos@gmail.com>
+ - 50.1.45 Fix compile error in test helper.
+ - 50.1.44 Re-introduce IForgeItem.damageItem when an item takes damage, Fixes #10344 (#10374)
+ - 50.1.43 Add updated tag context to AddReloadListenerEvent (#10440)
+           Fixes using custom tags in GlobalLootModifiers.
+           Fix Global Loot Modifier deserialization not having registry access
+           ---------
+           Co-authored-by: LexManos <LexManos@gmail.com>
+ - 50.1.42 Add fast graphics render type to block model jsons (#10397)
+           Make modded leaves behave like vanilla leaves by default (Fixes #10389)
+ - 50.1.41 Fix corrupted and invalidly symlinked worlds crashing on level select (#10437)
+ - 50.1.40 Backport even more future ResourceLocation methods (#10405)
+ - 50.1.39 Fix issue with shields not disabling correctly (#10319)
+ - 50.1.38 Fix issues in VillagerTrades.EmeraldsForVillagerTypeItem related to custom Villager Types (#10310)
+           Add VillagerType#registerBiomeType
+ - 50.1.37 GameTestHelper additions (#10341)
+           Co-authored-by: LexManos <LexManos@gmail.com>
+ - 50.1.36 Update Gradle to 8.12.1 (#10355)
+           Set IntelliJ to download sources automatically in MDK
+ - 50.1.35 Fix JOpt Simple by bumping ModLauncher (#10350)
+ - 50.1.34 Fix JOpt Simple needing a strict version requirement declaration (#10314)
+ - 50.1.33 Fix incorrect method reference in TntBlock.explode() (#10329)
+ - 50.1.32 Add a way to render tooltips from Formatted text and TooltipComponents elements (#10056) (#10291)
+           Co-authored-by: James Mitchell <tehgeek@gmail.com>
+ - 50.1.31 Bump CoreMods to 5.2.4 (#10265)
+ - 50.1.30 Deprecate `@ObjectHolder`, add a couple of fast-paths (#10230)
+           Cherry-pick a few optimizations from HEAD
+           Co-authored-by: Paint_Ninja <PaintNinja@users.noreply.github.com>
+ - 50.1.29 Add optional fix of use item duration, disabled by default (#10248)
+ - 50.1.28 Simplify memory usage display on loading screen (#10235)
+           Co-authored-by: Paint_Ninja <PaintNinja@users.noreply.github.com>
+ - 50.1.27 Allow mipmap lowering to be disabled (#10254)
+ - 50.1.26 Skip Vanilla classes for the `CapabilityTokenSubclass` transformer (#10223)
+           Skip Vanilla classes for the CapabilityTokenSubclass transformer
+           Cherry-pick a few optimizations from HEAD
+           Co-authored-by: Paint_Ninja <PaintNinja@users.noreply.github.com>
+ - 50.1.25 Skip Forge classes in the RuntimeEnumExtender transformer (#10218)
+           Mod classes are still transformed as usual
+           Cherry-pick a few optimizations from HEAD
+           Co-authored-by: Paint_Ninja <PaintNinja@users.noreply.github.com>
+ - 50.1.24 [1.20.6] Skip processing Forge classes in `RuntimeDistCleaner` (#10210)
+           Co-authored-by: Paint_Ninja <PaintNinja@users.noreply.github.com>
+ - 50.1.23 Pass player argument when firing `OnDatapackSyncEvent` (#10172)
+ - 50.1.22 Bump CoreMods to 5.2 (#10161)
+           Full Changelog:
+           https://gist.github.com/Jonathing/c3ad28b2a048ac839a7baba5417ee870
+           The key features are:
+           - ES6 language support
+           - Thoroughly updated ASMAPI, with full documentation
+           - Bug fixes (some optional for backwards-compatibility)
+           - Partial internal code cleanup
+           - Request CoreMods to not apply fix for ASMAPI.findFirstInstructionBefore by default
+ - 50.1.21 Bump CoreMods 5.1.13 and ASM 9.7.1 (#10128)
+ - 50.1.20 Remove unneeded boat patch (backport of #10061 to 1.20.6) (#10086)
+           Co-authored-by: andan42 <49289986+andan42@users.noreply.github.com>
+ - 50.1.19 Use the new methods in EventBus (backport of #10028 to 1.20.6) (#10091)
+           Adds `fire()` and Result#isAllowed/isDenied/isDefault from EventBus
+ - 50.1.18 Backport some Vanilla 1.21 `ResourceLocation` methods (#10084)
+ - 50.1.17 Optionally supply `FMLJavaModLoadingContext` as a param to mod constructors (backport of #10074 to 1.20.6) (#10083)
+ - 50.1.16 Fix highlighted item tooltip rendering twice. Closes #10112
+ - 50.1.15 Add missed @user_jvm_args.txt to run.bat (backport of 40a0a16 to 1.20.6) (#10092)
+ - 50.1.14 Fire `OnDatapackSyncEvent` when a player joins a server (#10077)
+ - 50.1.13 Fix network channels not initializing during server transfers. Closes #10067
+ - 50.1.12 Fix `onPlaceItemIntoWorld` always resetting item stack when in creative mode (#10048)
+ - 50.1.11 Fix matrix stack translations for `RenderHighlightEvent` (#10051)
+ - 50.1.10 Make HangingSignBlockEntity useable with custom BlockEntityTypes. #10038
+ - 50.1.9  Choose default JarJar mod file type based on parent JAR Closes #9939 (#10021)
+           Co-authored-by: thedarkcolour <30441001+thedarkcolour@users.noreply.github.com>
+ - 50.1.8  Fixed falling block entities not rendering as moving blocks (#10006)
+           Co-authored-by: Ven <tudurap.com@gmail.com>
+ - 50.1.7  Fix conditional checking swallowing decoding errors when loading registry entries from datapacks. Fixes #9995
+ - 50.1.6  Fix ClientTickEvent not firing properly.
+ - 50.1.5  Change tick event to have pre/post classes (#9890)
+ - 50.1.4  Fix Bogged and Wolf armor not being shearable by custom shears. Closes #10005
+ - 50.1.3  Cleanup FML Bindings (#10004)
+ - 50.1.2  Fix NPE when calling ForgeHooks.getDefaultCreatorModId(ItemStack) on Spawn Eggs. Closes #10002
+ - 50.1.1  Fix boat travel distance being incorrect. Closes #9997
+ - 50.1.0  1.20.6 RB 1
+           https://forums.minecraftforge.net/topic/149458-forge-501-minecraft-1206/
 
 50.0
 ====
