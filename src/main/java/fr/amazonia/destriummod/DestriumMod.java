@@ -7,6 +7,8 @@ import fr.amazonia.destriummod.init.ModItems;
 import fr.amazonia.destriummod.utils.HandlerEvent;
 import fr.amazonia.destriummod.utils.ModCreativeTabs;
 import net.minecraft.client.Minecraft;
+import net.minecraft.client.renderer.ItemBlockRenderTypes;
+import net.minecraft.client.renderer.RenderType;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
@@ -47,10 +49,10 @@ public class DestriumMod {
 
         //Init Class
         IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
-        ModItems.ITEMS.register(eventBus);
-        ModBlocks.BLOCKS.register(eventBus);
-        ModFluids.FLUIDS.register(eventBus);
-        ModFluidTypes.FLUID_TYPES.register(eventBus);
+        ModItems.register(eventBus);
+        ModBlocks.register(eventBus);
+        ModFluids.register(eventBus);
+        ModFluidTypes.register(eventBus);
 
     }
 
@@ -64,6 +66,8 @@ public class DestriumMod {
     }
 
     private void clientSetup(FMLClientSetupEvent event) {
+        ItemBlockRenderTypes.setRenderLayer(ModFluids.POISON_WATER_FLUID.get(), RenderType.translucent());
+        ItemBlockRenderTypes.setRenderLayer(ModFluids.POISON_WATER_FLOWING.get(), RenderType.translucent());
     }
 
     private void serverSetup(FMLDedicatedServerSetupEvent event) {

@@ -6,14 +6,13 @@ import fr.amazonia.destriummod.block.ParadisPortalBlocks;
 import fr.amazonia.destriummod.block.plants.AmazonitePlants;
 import fr.amazonia.destriummod.block.plants.DestriumPlants;
 import fr.amazonia.destriummod.block.plants.XpPlants;
+import fr.amazonia.destriummod.fluid.PoisonWaterFluidBlock;
+import fr.amazonia.destriummod.fluid.ResistanceLavaFluidBlock;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.DropExperienceBlock;
-import net.minecraft.world.level.block.FlowerBlock;
-import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.Material;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -110,6 +109,12 @@ public class ModBlocks {
     public static final RegistryObject<Block> CLOVER = registerBlock("clover", () -> new FlowerBlock(MobEffects.LUCK, 9, BlockBehaviour.Properties.of(Material.PLANT).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ)));
     public static final RegistryObject<Block> CLOVER_TWO = registerBlock("clover_two", () -> new FlowerBlock(MobEffects.LUCK, 9, BlockBehaviour.Properties.of(Material.PLANT).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ)));
 
+
+    //Fluids
+    public static final RegistryObject<LiquidBlock> POISON_WATER_BLOCK = BLOCKS.register("poison_water_block", () -> new PoisonWaterFluidBlock(ModFluids.POISON_WATER_FLUID, BlockBehaviour.Properties.copy(Blocks.WATER).noCollission().strength(100f).speedFactor(0.95F).noLootTable()));
+
+    public static final RegistryObject<LiquidBlock> RESISTANCE_LAVA_BLOCK = BLOCKS.register("resistance_lava_block", () -> new ResistanceLavaFluidBlock(ModFluids.RESISTANCE_LAVA_FLUID, BlockBehaviour.Properties.copy(Blocks.LAVA).noCollission().strength(100f).speedFactor(0.95F).noLootTable().noOcclusion().lightLevel((p_235470_0_) -> 14)));
+    
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);

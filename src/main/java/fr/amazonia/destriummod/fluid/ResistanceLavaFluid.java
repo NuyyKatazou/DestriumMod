@@ -1,6 +1,6 @@
 package fr.amazonia.destriummod.fluid;
 
-import fr.amazonia.destriummod.init.ModFluids;
+import fr.amazonia.destriummod.init.ModBlocks;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.tags.FluidTags;
@@ -27,7 +27,7 @@ public abstract class ResistanceLavaFluid extends ForgeFlowingFluid {
 
     @Override
     public BlockState createLegacyBlock(FluidState state) {
-        return ModFluids.RESISTANCE_LAVA_BLOCK.get().defaultBlockState().setValue(LiquidBlock.LEVEL, getLegacyLevel(state));
+        return ModBlocks.RESISTANCE_LAVA_BLOCK.get().defaultBlockState().setValue(LiquidBlock.LEVEL, getLegacyLevel(state));
     }
 
     private void fizz(LevelAccessor p_76213_, BlockPos p_76214_) {

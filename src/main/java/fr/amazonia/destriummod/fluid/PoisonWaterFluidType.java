@@ -76,11 +76,8 @@ public class PoisonWaterFluidType extends FluidType {
             }
 
             @Override
-            public int getTintColor(FluidState state, BlockAndTintGetter level, BlockPos pos) {
-                if (level != null && pos != null) {
-                    return BiomeColors.getAverageWaterColor(level, pos);
-                }
-                return 0x0000AA;
+            public int getTintColor() {
+                return tintColor;
             }
 
             @Override

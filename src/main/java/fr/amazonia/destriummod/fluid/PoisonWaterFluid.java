@@ -1,6 +1,6 @@
 package fr.amazonia.destriummod.fluid;
 
-import fr.amazonia.destriummod.init.ModFluids;
+import fr.amazonia.destriummod.init.ModBlocks;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.tags.FluidTags;
@@ -25,7 +25,7 @@ public abstract class PoisonWaterFluid extends ForgeFlowingFluid {
 
     @Override
     public BlockState createLegacyBlock(FluidState state) {
-        return ModFluids.POISON_WATER_BLOCK.get().defaultBlockState().setValue(LiquidBlock.LEVEL, getLegacyLevel(state));
+        return ModBlocks.POISON_WATER_BLOCK.get().defaultBlockState().setValue(LiquidBlock.LEVEL, getLegacyLevel(state));
     }
 
     public static class Flowing extends PoisonWaterFluid {
