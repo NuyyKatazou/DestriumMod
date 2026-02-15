@@ -1,6 +1,5 @@
 package fr.amazonia.destriummod.utils;
 
-import fr.amazonia.destriummod.DestriumMod;
 import fr.amazonia.destriummod.block.ParadisPortalBlocks;
 import fr.amazonia.destriummod.init.ModBlocks;
 import net.minecraft.block.Blocks;
@@ -45,9 +44,6 @@ public class ParadisTeleporter implements ITeleporter {
             return entity;
         }
         ServerPlayerEntity player = (ServerPlayerEntity) entity;
-        if (destWorld.dimension().equals(DestriumMod.PARADIS_DIMENSION)) {
-
-        }
         if (!player.inventory.contains(new ItemStack(ModBlocks.OVERWORLD_PORTAL_BLOCK.get()))) {
             if (player.inventory.getFreeSlot() != -1) {
                 player.addItem(new ItemStack(ModBlocks.OVERWORLD_PORTAL_BLOCK.get()));
