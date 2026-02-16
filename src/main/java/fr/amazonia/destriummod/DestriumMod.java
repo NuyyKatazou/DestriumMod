@@ -4,7 +4,6 @@ import fr.amazonia.destriummod.init.ModBlocks;
 import fr.amazonia.destriummod.init.ModFluids;
 import fr.amazonia.destriummod.init.ModItems;
 import fr.amazonia.destriummod.utils.HandlerEvent;
-import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.core.Registry;
@@ -24,8 +23,6 @@ import net.minecraftforge.fml.event.lifecycle.FMLDedicatedServerSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-
-import java.util.function.Supplier;
 
 @Mod(DestriumMod.MODID)
 public class DestriumMod {
