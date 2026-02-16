@@ -6,7 +6,6 @@ import fr.amazonia.destriummod.init.ModFluids;
 import fr.amazonia.destriummod.init.ModItems;
 import fr.amazonia.destriummod.utils.HandlerEvent;
 import fr.amazonia.destriummod.utils.ModCreativeTabs;
-import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.core.registries.Registries;
@@ -24,21 +23,16 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import java.util.function.Supplier;
-
 @Mod(DestriumMod.MODID)
 public class DestriumMod {
 
     public static final String MODID = "destriummod";
     public static final Logger LOGGER = LogManager.getLogger(MODID);
-    final Supplier<Minecraft> minecraftSupplier;
 
     //Dimensions
     public static ResourceKey<Level> PARADIS_DIMENSION;
 
     public DestriumMod(FMLJavaModLoadingContext context) {
-
-        minecraftSupplier = Minecraft::getInstance;
 
         //Setup Event
         context.getModEventBus().addListener(this::setup);
