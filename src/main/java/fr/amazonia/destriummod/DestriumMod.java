@@ -32,14 +32,12 @@ public class DestriumMod {
 
     public static final String MODID = "destriummod";
     public static final Logger LOGGER = LogManager.getLogger(MODID);
-    final Supplier<Minecraft> minecraftSupplier;
 
     //Dimensions
     public static ResourceKey<Level> PARADIS_DIMENSION;
 
     public DestriumMod() {
 
-    	minecraftSupplier = Minecraft::getInstance;
 
         //Setup Event
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
