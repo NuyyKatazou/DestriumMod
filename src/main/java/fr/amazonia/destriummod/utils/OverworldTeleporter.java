@@ -5,7 +5,6 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.entity.Entity;
-import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.material.Fluids;
 import net.minecraft.world.level.material.Material;
@@ -41,9 +40,6 @@ public class OverworldTeleporter implements ITeleporter {
         }
         if (!(entity instanceof ServerPlayer player)) {
             return entity;
-        }
-        if (destWorld.dimension().equals(Level.OVERWORLD)) {
-
         }
         player.teleportTo(destinationPos.getX() + 0.5D, destinationPos.getY() + 1D, destinationPos.getZ() + 0.5D);
         if (thisIsToOverworldDim) {

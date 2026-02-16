@@ -9,9 +9,7 @@ import java.util.function.Supplier;
 
 public enum ModTiers implements Tier {
 
-    SPAWNERS(4, 3, 8.0F, 4.0F, 55, () -> {
-        return Ingredient.of(ModItems.AMAZONITE_NUGGETS.get());
-    });
+    SPAWNERS(4, 3, 8.0F, 4.0F, 55, () -> Ingredient.of(ModItems.AMAZONITE_NUGGETS.get()));
 
     private final int level;
     private final int uses;

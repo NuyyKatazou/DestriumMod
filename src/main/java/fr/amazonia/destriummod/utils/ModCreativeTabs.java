@@ -13,7 +13,7 @@ import net.minecraftforge.fml.common.Mod;
 
 @Mod.EventBusSubscriber(modid = DestriumMod.MODID, bus = Mod.EventBusSubscriber.Bus.MOD)
 public class ModCreativeTabs extends CreativeModeTab {
-    
+
     public static CreativeModeTab BlockTab;
     public static CreativeModeTab ItemTab;
     public static CreativeModeTab ToolTab;
@@ -25,16 +25,16 @@ public class ModCreativeTabs extends CreativeModeTab {
 
     @SubscribeEvent
     public static void registerCreativeModeTabs(CreativeModeTabEvent.Register event) {
-        BlockTab = event.registerCreativeModeTab(new ResourceLocation(DestriumMod.MODID, "blocktab"),
-                builder -> builder.icon(() -> new ItemStack(ModBlocks.AMAZONITE_BLOCK.get())).title(Component.translatable(String.valueOf(new ResourceLocation(DestriumMod.MODID, "blocktab")))).build());
+        BlockTab = event.registerCreativeModeTab(ResourceLocation.fromNamespaceAndPath(DestriumMod.MODID, "blocktab"),
+                builder -> builder.icon(() -> new ItemStack(ModBlocks.AMAZONITE_BLOCK.get())).title(Component.translatable(String.valueOf(ResourceLocation.fromNamespaceAndPath(DestriumMod.MODID, "blocktab")))).build());
 
-        ItemTab = event.registerCreativeModeTab(new ResourceLocation(DestriumMod.MODID, "itemtab"),
-                builder -> builder.icon(() -> new ItemStack(ModItems.AMAZONITE_FRAGMENT.get())).title(Component.translatable(String.valueOf(new ResourceLocation(DestriumMod.MODID, "itemtab")))).build());
+        ItemTab = event.registerCreativeModeTab(ResourceLocation.fromNamespaceAndPath(DestriumMod.MODID, "itemtab"),
+                builder -> builder.icon(() -> new ItemStack(ModItems.AMAZONITE_FRAGMENT.get())).title(Component.translatable(String.valueOf(ResourceLocation.fromNamespaceAndPath(DestriumMod.MODID, "itemtab")))).build());
 
-        ToolTab = event.registerCreativeModeTab(new ResourceLocation(DestriumMod.MODID, "tooltab"),
-                builder -> builder.icon(() -> new ItemStack(ModItems.AMAZONITE_PICKAXE.get())).title(Component.translatable(String.valueOf(new ResourceLocation(DestriumMod.MODID, "tooltab")))).build());
+        ToolTab = event.registerCreativeModeTab(ResourceLocation.fromNamespaceAndPath(DestriumMod.MODID, "tooltab"),
+                builder -> builder.icon(() -> new ItemStack(ModItems.AMAZONITE_PICKAXE.get())).title(Component.translatable(String.valueOf(ResourceLocation.fromNamespaceAndPath(DestriumMod.MODID, "tooltab")))).build());
 
-        FoodTab = event.registerCreativeModeTab(new ResourceLocation(DestriumMod.MODID, "foodtab"),
-                builder -> builder.icon(() -> new ItemStack(ModItems.AMAZONITE_APPLE.get())).title(Component.translatable(String.valueOf(new ResourceLocation(DestriumMod.MODID, "foodtab")))).build());
+        FoodTab = event.registerCreativeModeTab(ResourceLocation.fromNamespaceAndPath(DestriumMod.MODID, "foodtab"),
+                builder -> builder.icon(() -> new ItemStack(ModItems.AMAZONITE_APPLE.get())).title(Component.translatable(String.valueOf(ResourceLocation.fromNamespaceAndPath(DestriumMod.MODID, "foodtab")))).build());
     }
 }

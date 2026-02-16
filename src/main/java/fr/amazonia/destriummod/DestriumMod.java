@@ -36,19 +36,19 @@ public class DestriumMod {
     //Dimensions
     public static ResourceKey<Level> PARADIS_DIMENSION;
 
-    public DestriumMod() {
+    public DestriumMod(FMLJavaModLoadingContext context) {
 
         minecraftSupplier = Minecraft::getInstance;
 
         //Setup Event
-        FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
-        FMLJavaModLoadingContext.get().getModEventBus().addListener(this::clientSetup);
-        FMLJavaModLoadingContext.get().getModEventBus().addListener(this::serverSetup);
-        FMLJavaModLoadingContext.get().getModEventBus().addListener(this::addCreative);
-        FMLJavaModLoadingContext.get().getModEventBus().register(this);
+        context.getModEventBus().addListener(this::setup);
+        context.getModEventBus().addListener(this::clientSetup);
+        context.getModEventBus().addListener(this::serverSetup);
+        context.getModEventBus().addListener(this::addCreative);
+        context.getModEventBus().register(this);
 
         //Init Class
-        IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
+        IEventBus eventBus = context.getModEventBus();
         ModItems.register(eventBus);
         ModBlocks.register(eventBus);
         ModFluids.register(eventBus);
@@ -61,7 +61,7 @@ public class DestriumMod {
         MinecraftForge.EVENT_BUS.register(new HandlerEvent());
 
         //Dimensions
-        PARADIS_DIMENSION = ResourceKey.create(Registries.DIMENSION, new ResourceLocation(DestriumMod.MODID, "paradis"));
+        PARADIS_DIMENSION = ResourceKey.create(Registries.DIMENSION, ResourceLocation.fromNamespaceAndPath(DestriumMod.MODID, "paradis"));
 
     }
 

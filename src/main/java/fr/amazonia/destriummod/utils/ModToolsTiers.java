@@ -22,14 +22,14 @@ public class ModToolsTiers {
         ARGONIDE = TierSortingRegistry.registerTier(
                 new ForgeTier(4, 4048, 13f, 5.5f, 18,
                         ModTags.Blocks.NEEDS_ARGONIDE_TOOL, () -> Ingredient.of(ModItems.ARGONIDE_INGOT.get())),
-                new ResourceLocation(DestriumMod.MODID, "argonide"), List.of(Tiers.NETHERITE), List.of());
+                ResourceLocation.fromNamespaceAndPath(DestriumMod.MODID, "argonide"), List.of(Tiers.NETHERITE), List.of());
         DESTRIUM = TierSortingRegistry.registerTier(
                 new ForgeTier(5, 8074, 18f, 7f, 20,
                         ModTags.Blocks.NEEDS_DESTRIUM_TOOL, () -> Ingredient.of(ModItems.DESTRIUM_INGOT.get())),
-                new ResourceLocation(DestriumMod.MODID, "destrium"), List.of(ModToolsTiers.ARGONIDE), List.of());
+                ResourceLocation.fromNamespaceAndPath(DestriumMod.MODID, "destrium"), List.of(ModToolsTiers.ARGONIDE), List.of());
         AMAZONITE = TierSortingRegistry.registerTier(
                 new ForgeTier(6, 45051, 20f, 10f, 25,
                         ModTags.Blocks.NEEDS_AMAZONITE_TOOL, () -> Ingredient.of(ModItems.AMAZONITE_FRAGMENT.get())),
-                new ResourceLocation(DestriumMod.MODID, "amazonite"), List.of(ModToolsTiers.DESTRIUM), List.of());
+                ResourceLocation.fromNamespaceAndPath(DestriumMod.MODID, "amazonite"), List.of(ModToolsTiers.DESTRIUM), List.of());
     }
 }

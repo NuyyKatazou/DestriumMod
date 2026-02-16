@@ -16,12 +16,12 @@ import org.joml.Vector3f;
 public class ModFluidTypes {
 
 
-    public static final ResourceLocation WATER_STILL_RL = new ResourceLocation("block/water_still");
-    public static final ResourceLocation WATER_FLOWING_RL = new ResourceLocation("block/water_flow");
-    public static final ResourceLocation WATER_OVERLAY_RL = new ResourceLocation("block/water_overlay");
+    public static final ResourceLocation WATER_STILL_RL = ResourceLocation.fromNamespaceAndPath("minecraft", "block/water_still");
+    public static final ResourceLocation WATER_FLOWING_RL = ResourceLocation.fromNamespaceAndPath("minecraft", "block/water_flow");
+    public static final ResourceLocation WATER_OVERLAY_RL = ResourceLocation.fromNamespaceAndPath("minecraft", "block/water_overlay");
 
-    public static final ResourceLocation LAVA_STILL_RL = new ResourceLocation("block/lava_still");
-    public static final ResourceLocation LAVA_FLOWING_RL = new ResourceLocation("block/lava_flow");
+    public static final ResourceLocation LAVA_STILL_RL = ResourceLocation.fromNamespaceAndPath("minecraft", "block/lava_still");
+    public static final ResourceLocation LAVA_FLOWING_RL = ResourceLocation.fromNamespaceAndPath("minecraft", "block/lava_flow");
 
     public static final DeferredRegister<FluidType> FLUID_TYPES = DeferredRegister.create(ForgeRegistries.Keys.FLUID_TYPES, DestriumMod.MODID);
 

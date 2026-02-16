@@ -34,11 +34,11 @@ public class ModTags {
 
 
         private static TagKey<Block> tag(String name) {
-            return BlockTags.create(new ResourceLocation(DestriumMod.MODID, name));
+            return BlockTags.create(ResourceLocation.fromNamespaceAndPath(DestriumMod.MODID, name));
         }
 
         private static TagKey<Block> forgeTag(String name) {
-            return BlockTags.create(new ResourceLocation("forge", name));
+            return BlockTags.create(ResourceLocation.fromNamespaceAndPath("forge", name));
         }
     }
 
@@ -59,11 +59,11 @@ public class ModTags {
         public static final TagKey<Item> ARGONIDE_TOOLS = tag("argonide_tools");
 
         private static TagKey<Item> tag(String name) {
-            return ItemTags.create(new ResourceLocation(DestriumMod.MODID, name));
+            return ItemTags.create(ResourceLocation.fromNamespaceAndPath(DestriumMod.MODID, name));
         }
 
         private static TagKey<Item> forgeTag(String name) {
-            return ItemTags.create(new ResourceLocation("forge", name));
+            return ItemTags.create(ResourceLocation.fromNamespaceAndPath("forge", name));
         }
     }
 }
