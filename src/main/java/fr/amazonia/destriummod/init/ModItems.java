@@ -80,8 +80,8 @@ public class ModItems {
     public static final RegistryObject<Item> ADVENTURER_BOOTS = ITEMS.register("adventurer_boots", () -> new AdventurerArmorBoots(ModArmorMaterials.DESTRIUM, EquipmentSlotType.FEET, new Item.Properties().tab(DestriumMod.ToolTab).rarity(ModRarity.DESTRIUM).fireResistant()));
     public static final RegistryObject<Item> REINFORCED_ADVENTURER_BOOTS = ITEMS.register("reinforced_adventurer_boots", () -> new ReinforcedAdventurerArmorBoots(ModArmorMaterials.AMAZONITE, EquipmentSlotType.FEET, new Item.Properties().tab(DestriumMod.ToolTab).rarity(ModRarity.AMAZONITE).fireResistant()));
 
-    public static final RegistryObject<Item> NECKLACE = ITEMS.register("necklace", () -> new NecklaceArmor(ModArmorMaterials.NECKLACE, EquipmentSlotType.CHEST, new Item.Properties().tab(DestriumMod.ToolTab).setNoRepair().durability(-1).rarity(ModRarity.BASIC)));
-    public static final RegistryObject<Item> LUCKY_NECKLACE = ITEMS.register("lucky_necklace", () -> new LuckyNecklaceArmor(ModArmorMaterials.NECKLACE, EquipmentSlotType.CHEST, new Item.Properties().tab(DestriumMod.ToolTab).setNoRepair().durability(-1).rarity(ModRarity.DESTRIUM)));
+    public static final RegistryObject<Item> NECKLACE = ITEMS.register("necklace", () -> new NecklaceArmor(ModArmorMaterials.NECKLACE, EquipmentSlotType.CHEST, new Item.Properties().tab(DestriumMod.ToolTab).setNoRepair().durability(-1).rarity(ModRarity.BASIC).fireResistant()));
+    public static final RegistryObject<Item> LUCKY_NECKLACE = ITEMS.register("lucky_necklace", () -> new LuckyNecklaceArmor(ModArmorMaterials.NECKLACE, EquipmentSlotType.CHEST, new Item.Properties().tab(DestriumMod.ToolTab).setNoRepair().durability(-1).rarity(ModRarity.DESTRIUM).fireResistant()));
 
 
     //Minerals
