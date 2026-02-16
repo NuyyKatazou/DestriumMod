@@ -98,14 +98,14 @@ public class ModBlocks {
 
 
     //Plants
-    public static final RegistryObject<Block> AMAZONITE_PLANTS = createBlock("amazonite_plants", () -> new AmazonitePlants(AbstractBlock.Properties.of(Material.PLANT).instabreak().randomTicks().noCollission().sound(SoundType.CROP).sound(SoundType.FUNGUS)));
-    public static final RegistryObject<Block> DESTRIUM_PLANTS = createBlock("destrium_plants", () -> new DestriumPlants(AbstractBlock.Properties.of(Material.PLANT).instabreak().randomTicks().noCollission().sound(SoundType.CROP).sound(SoundType.FUNGUS)));
-    public static final RegistryObject<Block> XP_PLANTS = createBlock("xp_plants", () -> new XpPlants(AbstractBlock.Properties.of(Material.PLANT).instabreak().randomTicks().noCollission().sound(SoundType.CROP).sound(SoundType.FUNGUS)));
+    public static final RegistryObject<Block> AMAZONITE_PLANTS = createBlock("amazonite_plants", () -> new AmazonitePlants(AbstractBlock.Properties.of(Material.PLANT).instabreak().randomTicks().noCollission().sound(SoundType.CROP)));
+    public static final RegistryObject<Block> DESTRIUM_PLANTS = createBlock("destrium_plants", () -> new DestriumPlants(AbstractBlock.Properties.of(Material.PLANT).instabreak().randomTicks().noCollission().sound(SoundType.CROP)));
+    public static final RegistryObject<Block> XP_PLANTS = createBlock("xp_plants", () -> new XpPlants(AbstractBlock.Properties.of(Material.PLANT).instabreak().randomTicks().noCollission().sound(SoundType.CROP)));
 
 
     //Flowers
-    public static final RegistryObject<Block> CLOVER = createBlock("clover", () -> new FlowerBlock(Effects.LUCK, 9, AbstractBlock.Properties.of(Material.PLANT).noCollission().instabreak().sound(SoundType.GRASS).sound(SoundType.FUNGUS)));
-    public static final RegistryObject<Block> CLOVER_TWO = createBlock("clover_two", () -> new FlowerBlock(Effects.LUCK, 9, AbstractBlock.Properties.of(Material.PLANT).noCollission().instabreak().sound(SoundType.GRASS).sound(SoundType.FUNGUS)));
+    public static final RegistryObject<Block> CLOVER = createBlock("clover", () -> new FlowerBlock(Effects.LUCK, 9, AbstractBlock.Properties.of(Material.PLANT).noCollission().instabreak().sound(SoundType.FUNGUS)));
+    public static final RegistryObject<Block> CLOVER_TWO = createBlock("clover_two", () -> new FlowerBlock(Effects.LUCK, 9, AbstractBlock.Properties.of(Material.PLANT).noCollission().instabreak().sound(SoundType.FUNGUS)));
 
 
     //Fluids Blocks

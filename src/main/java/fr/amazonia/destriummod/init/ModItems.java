@@ -134,4 +134,8 @@ public class ModItems {
     public static final RegistryObject<Item> AMAZONITE_SEEDS = ITEMS.register("amazonite_seeds", () -> new BlockNamedItem(ModBlocks.AMAZONITE_PLANTS.get(), (new Item.Properties().rarity(ModRarity.AMAZONITE).fireResistant())));
     public static final RegistryObject<Item> DESTRIUM_SEEDS = ITEMS.register("destrium_seeds", () -> new BlockNamedItem(ModBlocks.DESTRIUM_PLANTS.get(), (new Item.Properties().rarity(ModRarity.DESTRIUM).fireResistant())));
     public static final RegistryObject<Item> XP_SEEDS = ITEMS.register("xp_seeds", () -> new BlockNamedItem(ModBlocks.XP_PLANTS.get(), (new Item.Properties().rarity(ModRarity.EXPERIENCE).fireResistant())));
+
+
+    public static final RegistryObject<Item> AMAZONITE_BLOCK = ITEMS.register("amazonite_block", () -> new BlockNamedItem(ModBlocks.AMAZONITE_BLOCK.get(), (new Item.Properties().rarity(ModRarity.AMAZONITE).fireResistant())));
+
 }
