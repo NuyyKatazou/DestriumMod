@@ -24,7 +24,7 @@ public class PoisonWaterFluidBlock extends FlowingFluidBlock {
 
     public void entityInside(BlockState p_196262_1_, World p_196262_2_, BlockPos p_196262_3_, Entity p_196262_4_) {
         if (p_196262_4_ instanceof PlayerEntity) {
-            p_196262_4_.hurt(DamageSource.WITHER, 1F);
+            p_196262_4_.hurt(DamageSource.WITHER, 1.5F);
         }
     }
 
