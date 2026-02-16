@@ -7,10 +7,9 @@ import fr.amazonia.destriummod.block.ParadisPortalBlocks;
 import fr.amazonia.destriummod.block.plants.AmazonitePlants;
 import fr.amazonia.destriummod.block.plants.DestriumPlants;
 import fr.amazonia.destriummod.block.plants.XpPlants;
-import net.minecraft.block.AbstractBlock;
-import net.minecraft.block.Block;
-import net.minecraft.block.FlowerBlock;
-import net.minecraft.block.SoundType;
+import fr.amazonia.destriummod.fluid.PoisonWaterFluidBlock;
+import fr.amazonia.destriummod.fluid.ResistanceLavaFluidBlock;
+import net.minecraft.block.*;
 import net.minecraft.block.material.Material;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -107,6 +106,12 @@ public class ModBlocks {
     //Flowers
     public static final RegistryObject<Block> CLOVER = createBlock("clover", () -> new FlowerBlock(Effects.LUCK, 9, AbstractBlock.Properties.of(Material.PLANT).noCollission().instabreak().sound(SoundType.GRASS)));
     public static final RegistryObject<Block> CLOVER_TWO = createBlock("clover_two", () -> new FlowerBlock(Effects.LUCK, 9, AbstractBlock.Properties.of(Material.PLANT).noCollission().instabreak().sound(SoundType.GRASS)));
+
+
+    //Fluids Blocks
+    public static final RegistryObject<FlowingFluidBlock> POISON_WATER_BLOCK = BLOCKS.register("poison_water_block", () -> new PoisonWaterFluidBlock(ModFluids.POISON_WATER_FLUID, AbstractBlock.Properties.of(Material.WATER).noCollission().strength(100f, 100f).noDrops().speedFactor(0.95F)));
+
+    public static final RegistryObject<FlowingFluidBlock> RESISTANCE_LAVA_BLOCK = BLOCKS.register("resistance_lava_block", () -> new ResistanceLavaFluidBlock(ModFluids.RESISTANCE_LAVA_FLUID, AbstractBlock.Properties.of(Material.LAVA).noCollission().strength(100f, 100f).noDrops().speedFactor(0.95F).lightLevel((p_235470_0_) -> 14)));
 
     public static RegistryObject<Block> createBlock(String name, Supplier<? extends Block> supplier) {
 

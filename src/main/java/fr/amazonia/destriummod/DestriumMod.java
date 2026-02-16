@@ -70,12 +70,12 @@ public class DestriumMod {
 
         //Fluids
         RenderTypeLookup.setRenderLayer(ModFluids.POISON_WATER_FLUID.get(), RenderType.translucent());
-        RenderTypeLookup.setRenderLayer(ModFluids.POISON_WATER_BLOCK.get(), RenderType.translucent());
         RenderTypeLookup.setRenderLayer(ModFluids.POISON_WATER_FLOWING.get(), RenderType.translucent());
+        RenderTypeLookup.setRenderLayer(ModBlocks.POISON_WATER_BLOCK.get(), RenderType.translucent());
 
         RenderTypeLookup.setRenderLayer(ModFluids.RESISTANCE_LAVA_FLUID.get(), RenderType.translucent());
-        RenderTypeLookup.setRenderLayer(ModFluids.RESISTANCE_LAVA_BLOCK.get(), RenderType.translucent());
         RenderTypeLookup.setRenderLayer(ModFluids.RESISTANCE_LAVA_FLOWING.get(), RenderType.translucent());
+        RenderTypeLookup.setRenderLayer(ModBlocks.RESISTANCE_LAVA_BLOCK.get(), RenderType.translucent());
     }
 
     private void serverSetup(FMLDedicatedServerSetupEvent event) {
