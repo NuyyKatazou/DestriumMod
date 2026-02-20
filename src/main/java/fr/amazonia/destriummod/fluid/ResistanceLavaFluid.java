@@ -49,18 +49,18 @@ public abstract class ResistanceLavaFluid extends ForgeFlowingFluid {
     }
 
     @OnlyIn(Dist.CLIENT)
-    public void animateTick(World p_204522_1_, BlockPos p_204522_2_, FluidState p_204522_3_, Random p_204522_4_) {
-        BlockPos blockpos = p_204522_2_.above();
-        if (p_204522_1_.getBlockState(blockpos).isAir() && !p_204522_1_.getBlockState(blockpos).isSolidRender(p_204522_1_, blockpos)) {
-            if (p_204522_4_.nextInt(100) == 0) {
-                double d0 = (double) p_204522_2_.getX() + p_204522_4_.nextDouble();
-                double d1 = (double) p_204522_2_.getY() + 1.0D;
-                double d2 = (double) p_204522_2_.getZ() + p_204522_4_.nextDouble();
-                p_204522_1_.addParticle(ParticleTypes.LAVA, d0, d1, d2, 0.0D, 0.0D, 0.0D);
-                p_204522_1_.playLocalSound(d0, d1, d2, SoundEvents.LAVA_POP, SoundCategory.BLOCKS, 0.2F + p_204522_4_.nextFloat() * 0.2F, 0.9F + p_204522_4_.nextFloat() * 0.15F, false);
+    public void animateTick(World pWorld, BlockPos pPos, FluidState pState, Random pRandom) {
+        BlockPos blockpos = pPos.above();
+        if (pWorld.getBlockState(blockpos).isAir() && !pWorld.getBlockState(blockpos).isSolidRender(pWorld, blockpos)) {
+            if (pRandom.nextInt(100) == 0) {
+                double d0 = (double) pPos.getX() + pRandom.nextDouble();
+                double d1 = (double) pPos.getY() + 1.0D;
+                double d2 = (double) pPos.getZ() + pRandom.nextDouble();
+                pWorld.addParticle(ParticleTypes.LAVA, d0, d1, d2, 0.0D, 0.0D, 0.0D);
+                pWorld.playLocalSound(d0, d1, d2, SoundEvents.LAVA_POP, SoundCategory.BLOCKS, 0.2F + pRandom.nextFloat() * 0.2F, 0.9F + pRandom.nextFloat() * 0.15F, false);
             }
-            if (p_204522_4_.nextInt(200) == 0) {
-                p_204522_1_.playLocalSound(p_204522_2_.getX(), p_204522_2_.getY(), p_204522_2_.getZ(), SoundEvents.LAVA_AMBIENT, SoundCategory.BLOCKS, 0.2F + p_204522_4_.nextFloat() * 0.2F, 0.9F + p_204522_4_.nextFloat() * 0.15F, false);
+            if (pRandom.nextInt(200) == 0) {
+                pWorld.playLocalSound(pPos.getX(), pPos.getY(), pPos.getZ(), SoundEvents.LAVA_AMBIENT, SoundCategory.BLOCKS, 0.2F + pRandom.nextFloat() * 0.2F, 0.9F + pRandom.nextFloat() * 0.15F, false);
             }
         }
     }
@@ -71,8 +71,8 @@ public abstract class ResistanceLavaFluid extends ForgeFlowingFluid {
     }
 
     @Override
-    public boolean canBeReplacedWith(FluidState p_215665_1_, IBlockReader p_215665_2_, BlockPos p_215665_3_, Fluid p_215665_4_, Direction p_215665_5_) {
-        return p_215665_1_.getHeight(p_215665_2_, p_215665_3_) >= 0.44444445F && p_215665_4_.is(FluidTags.WATER);
+    public boolean canBeReplacedWith(FluidState pFluidState, IBlockReader pBlockReader, BlockPos pPos, Fluid pFluid, Direction pDirection) {
+        return pFluidState.getHeight(pBlockReader, pPos) >= 0.44444445F && pFluid.is(FluidTags.WATER);
     }
 
     @Nullable
@@ -81,22 +81,22 @@ public abstract class ResistanceLavaFluid extends ForgeFlowingFluid {
         return ParticleTypes.DRIPPING_LAVA;
     }
 
-    private void fizz(IWorld p_205581_1_, BlockPos p_205581_2_) {
-        p_205581_1_.levelEvent(1501, p_205581_2_, 0);
+    private void fizz(IWorld pWorld, BlockPos pPos) {
+        pWorld.levelEvent(1501, pPos, 0);
     }
 
-    protected void spreadTo(IWorld p_205574_1_, BlockPos p_205574_2_, BlockState p_205574_3_, Direction p_205574_4_, FluidState p_205574_5_) {
-        if (p_205574_4_ == Direction.DOWN) {
-            FluidState fluidstate = p_205574_1_.getFluidState(p_205574_2_);
+    protected void spreadTo(IWorld pWorld, BlockPos pPos, BlockState pBlockState, Direction pDirection, FluidState pFluidState) {
+        if (pDirection == Direction.DOWN) {
+            FluidState fluidstate = pWorld.getFluidState(pPos);
             if (this.is(FluidTags.LAVA) && fluidstate.is(FluidTags.WATER)) {
-                if (p_205574_3_.getBlock() instanceof FlowingFluidBlock) {
-                    p_205574_1_.setBlock(p_205574_2_, net.minecraftforge.event.ForgeEventFactory.fireFluidPlaceBlockEvent(p_205574_1_, p_205574_2_, p_205574_2_, Blocks.STONE.defaultBlockState()), 3);
+                if (pBlockState.getBlock() instanceof FlowingFluidBlock) {
+                    pWorld.setBlock(pPos, net.minecraftforge.event.ForgeEventFactory.fireFluidPlaceBlockEvent(pWorld, pPos, pPos, Blocks.STONE.defaultBlockState()), 3);
                 }
-                this.fizz(p_205574_1_, p_205574_2_);
+                this.fizz(pWorld, pPos);
                 return;
             }
         }
-        super.spreadTo(p_205574_1_, p_205574_2_, p_205574_3_, p_205574_4_, p_205574_5_);
+        super.spreadTo(pWorld, pPos, pBlockState, pDirection, pFluidState);
     }
 
     protected boolean canConvertToSource() {

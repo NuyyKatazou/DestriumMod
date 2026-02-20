@@ -47,13 +47,13 @@ public abstract class PoisonWaterFluid extends ForgeFlowingFluid {
     }
 
     @OnlyIn(Dist.CLIENT)
-    public void animateTick(World p_204522_1_, BlockPos p_204522_2_, FluidState p_204522_3_, Random p_204522_4_) {
-        if (!p_204522_3_.isSource() && !p_204522_3_.getValue(FALLING)) {
-            if (p_204522_4_.nextInt(64) == 0) {
-                p_204522_1_.playLocalSound((double) p_204522_2_.getX() + 0.5D, (double) p_204522_2_.getY() + 0.5D, (double) p_204522_2_.getZ() + 0.5D, SoundEvents.WATER_AMBIENT, SoundCategory.BLOCKS, p_204522_4_.nextFloat() * 0.25F + 0.75F, p_204522_4_.nextFloat() + 0.5F, false);
+    public void animateTick(World pWorld, BlockPos pPos, FluidState pState, Random pRandom) {
+        if (!pState.isSource() && !pState.getValue(FALLING)) {
+            if (pRandom.nextInt(64) == 0) {
+                pWorld.playLocalSound((double) pPos.getX() + 0.5D, (double) pPos.getY() + 0.5D, (double) pPos.getZ() + 0.5D, SoundEvents.WATER_AMBIENT, SoundCategory.BLOCKS, pRandom.nextFloat() * 0.25F + 0.75F, pRandom.nextFloat() + 0.5F, false);
             }
-        } else if (p_204522_4_.nextInt(10) == 0) {
-            p_204522_1_.addParticle(ParticleTypes.UNDERWATER, (double) p_204522_2_.getX() + p_204522_4_.nextDouble(), (double) p_204522_2_.getY() + p_204522_4_.nextDouble(), (double) p_204522_2_.getZ() + p_204522_4_.nextDouble(), 0.0D, 0.0D, 0.0D);
+        } else if (pRandom.nextInt(10) == 0) {
+            pWorld.addParticle(ParticleTypes.UNDERWATER, (double) pPos.getX() + pRandom.nextDouble(), (double) pPos.getY() + pRandom.nextDouble(), (double) pPos.getZ() + pRandom.nextDouble(), 0.0D, 0.0D, 0.0D);
         }
     }
 
@@ -73,8 +73,8 @@ public abstract class PoisonWaterFluid extends ForgeFlowingFluid {
         return ModBlocks.POISON_WATER_BLOCK.get().defaultBlockState().setValue(FlowingFluidBlock.LEVEL, getLegacyLevel(state));
     }
 
-    public boolean canBeReplacedWith(FluidState p_215665_1_, IBlockReader p_215665_2_, BlockPos p_215665_3_, Fluid p_215665_4_, Direction p_215665_5_) {
-        return p_215665_5_ == Direction.DOWN && !p_215665_4_.is(FluidTags.WATER);
+    public boolean canBeReplacedWith(FluidState pFluidState, IBlockReader pBlockReader, BlockPos pPos, Fluid pFluid, Direction pDirection) {
+        return pDirection == Direction.DOWN && !pFluid.is(FluidTags.WATER);
     }
 
     public static class Flowing extends PoisonWaterFluid {

@@ -9,17 +9,17 @@ import java.util.Random;
 
 public class ModOreBlock extends OreBlock {
 
-    public ModOreBlock(AbstractBlock.Properties p_i48357_1_) {
-        super(p_i48357_1_);
+    public ModOreBlock(AbstractBlock.Properties properties) {
+        super(properties);
     }
 
-    protected int xpOnDrop(Random p_220281_1_) {
+    protected int xpOnDrop(Random pRandom) {
         if (this == ModBlocks.RANDOM_ORE.get()) {
-            return MathHelper.nextInt(p_220281_1_, 1, 5);
+            return MathHelper.nextInt(pRandom, 1, 5);
         } else if (this == ModBlocks.REPAIR_ORE.get()) {
-            return MathHelper.nextInt(p_220281_1_, 0, 2);
+            return MathHelper.nextInt(pRandom, 0, 2);
         } else {
-            return this == ModBlocks.AMAZONITE_RELIQUE_BLOCK.get() ? MathHelper.nextInt(p_220281_1_, 5, 15) : 0;
+            return this == ModBlocks.AMAZONITE_RELIQUE_BLOCK.get() ? MathHelper.nextInt(pRandom, 5, 15) : 0;
         }
     }
 }

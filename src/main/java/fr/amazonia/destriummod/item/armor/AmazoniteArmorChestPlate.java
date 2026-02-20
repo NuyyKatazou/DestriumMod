@@ -34,8 +34,8 @@ public class AmazoniteArmorChestPlate extends ArmorItem {
     }
 
     @OnlyIn(Dist.CLIENT)
-    public void appendHoverText(ItemStack p_77624_1_, @Nullable World p_77624_2_, List<ITextComponent> p_77624_3_, ITooltipFlag p_77624_4_) {
-        p_77624_3_.add(new TranslationTextComponent(this.getDescriptionId() + ".desc").withStyle(TextFormatting.DARK_GRAY));
+    public void appendHoverText(ItemStack pStack, @Nullable World pWorld, List<ITextComponent> pTooltip, ITooltipFlag pFlag) {
+        pTooltip.add(new TranslationTextComponent(this.getDescriptionId() + ".desc").withStyle(TextFormatting.DARK_GRAY));
     }
 
     @Override

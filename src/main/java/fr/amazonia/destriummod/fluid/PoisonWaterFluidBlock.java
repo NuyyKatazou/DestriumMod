@@ -35,23 +35,23 @@ public class PoisonWaterFluidBlock extends FlowingFluidBlock {
         }
     }
 
-    private boolean shouldSpreadLiquid(World p_204515_1_, BlockPos p_204515_2_, BlockState p_204515_3_) {
+    private boolean shouldSpreadLiquid(World pWorld, BlockPos pPos, BlockState pBlockState) {
         if (this.getFluid().is(FluidTags.LAVA)) {
-            boolean flag = p_204515_1_.getBlockState(p_204515_2_.below()).is(Blocks.SOUL_SOIL);
+            boolean flag = pWorld.getBlockState(pPos.below()).is(Blocks.SOUL_SOIL);
 
             for (Direction direction : Direction.values()) {
                 if (direction != Direction.DOWN) {
-                    BlockPos blockpos = p_204515_2_.relative(direction);
-                    if (p_204515_1_.getFluidState(blockpos).is(FluidTags.WATER)) {
-                        Block block = p_204515_1_.getFluidState(p_204515_2_).isSource() ? Blocks.OBSIDIAN : ModBlocks.COBBLESTONE_COMPRESSED1.get();
-                        p_204515_1_.setBlockAndUpdate(p_204515_2_, net.minecraftforge.event.ForgeEventFactory.fireFluidPlaceBlockEvent(p_204515_1_, p_204515_2_, p_204515_2_, block.defaultBlockState()));
-                        this.fizz(p_204515_1_, p_204515_2_);
+                    BlockPos blockpos = pPos.relative(direction);
+                    if (pWorld.getFluidState(blockpos).is(FluidTags.WATER)) {
+                        Block block = pWorld.getFluidState(pPos).isSource() ? Blocks.OBSIDIAN : ModBlocks.COBBLESTONE_COMPRESSED1.get();
+                        pWorld.setBlockAndUpdate(pPos, net.minecraftforge.event.ForgeEventFactory.fireFluidPlaceBlockEvent(pWorld, pPos, pPos, block.defaultBlockState()));
+                        this.fizz(pWorld, pPos);
                         return false;
                     }
 
-                    if (flag && p_204515_1_.getBlockState(blockpos).is(Blocks.BLUE_ICE)) {
-                        p_204515_1_.setBlockAndUpdate(p_204515_2_, net.minecraftforge.event.ForgeEventFactory.fireFluidPlaceBlockEvent(p_204515_1_, p_204515_2_, p_204515_2_, Blocks.BASALT.defaultBlockState()));
-                        this.fizz(p_204515_1_, p_204515_2_);
+                    if (flag && pWorld.getBlockState(blockpos).is(Blocks.BLUE_ICE)) {
+                        pWorld.setBlockAndUpdate(pPos, net.minecraftforge.event.ForgeEventFactory.fireFluidPlaceBlockEvent(pWorld, pPos, pPos, Blocks.BASALT.defaultBlockState()));
+                        this.fizz(pWorld, pPos);
                         return false;
                     }
                 }

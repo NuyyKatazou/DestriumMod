@@ -15,8 +15,8 @@ import net.minecraft.world.server.ServerWorld;
 
 public class OverworldPortalBlocks extends Block {
 
-    public OverworldPortalBlocks(Properties p_i48440_1_) {
-        super(p_i48440_1_);
+    public OverworldPortalBlocks(Properties properties) {
+        super(properties);
     }
 
     public ActionResultType use(BlockState state, World worldIn, BlockPos pos, PlayerEntity player, Hand handIn, BlockRayTraceResult hit) {

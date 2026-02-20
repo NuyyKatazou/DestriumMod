@@ -12,8 +12,8 @@ import net.minecraft.world.World;
 
 public class LuckyNecklaceArmor extends ArmorItem {
 
-    public LuckyNecklaceArmor(IArmorMaterial p_i48534_1_, EquipmentSlotType p_i48534_2_, Properties p_i48534_3_) {
-        super(p_i48534_1_, p_i48534_2_, p_i48534_3_);
+    public LuckyNecklaceArmor(IArmorMaterial materialIn, EquipmentSlotType slot, Properties properties) {
+        super(materialIn, slot, properties);
     }
 
     @Override
@@ -23,7 +23,7 @@ public class LuckyNecklaceArmor extends ArmorItem {
         }
     }
 
-    public boolean isEnchantable(ItemStack p_77616_1_) {
+    public boolean isEnchantable(ItemStack pStack) {
         return false;
     }
 }

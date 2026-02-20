@@ -16,8 +16,8 @@ public class InfinityWaterBucketItem extends BucketItem {
         this.fluidSupplier = supplier;
     }
 
-    protected ItemStack getEmptySuccessItem(ItemStack p_203790_1_, PlayerEntity p_203790_2_) {
-        return !p_203790_2_.abilities.instabuild ? new ItemStack(ModItems.INFINITY_WATER_BUCKET.get()) : p_203790_1_;
+    protected ItemStack getEmptySuccessItem(ItemStack pBucketStack, PlayerEntity pPlayer) {
+        return !pPlayer.abilities.instabuild ? new ItemStack(ModItems.INFINITY_WATER_BUCKET.get()) : pBucketStack;
     }
 
     public Fluid getFluid() {

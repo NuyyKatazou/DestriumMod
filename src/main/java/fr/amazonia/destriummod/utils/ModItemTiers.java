@@ -21,13 +21,13 @@ public enum ModItemTiers implements IItemTier {
     private final int enchantmentValue;
     private final LazyValue<Ingredient> repairIngredient;
 
-    ModItemTiers(int p_i48458_3_, int p_i48458_4_, float p_i48458_5_, float p_i48458_6_, int p_i48458_7_, Supplier<Ingredient> p_i48458_8_) {
-        this.level = p_i48458_3_;
-        this.uses = p_i48458_4_;
-        this.speed = p_i48458_5_;
-        this.damage = p_i48458_6_;
-        this.enchantmentValue = p_i48458_7_;
-        this.repairIngredient = new LazyValue<>(p_i48458_8_);
+    ModItemTiers(int pLevel, int pUses, float pUseSpeed, float pDamage, int pEnchantmentValue, Supplier<Ingredient> pRepairIngredient) {
+        this.level = pLevel;
+        this.uses = pUses;
+        this.speed = pUseSpeed;
+        this.damage = pDamage;
+        this.enchantmentValue = pEnchantmentValue;
+        this.repairIngredient = new LazyValue<>(pRepairIngredient);
     }
 
     public int getUses() {
