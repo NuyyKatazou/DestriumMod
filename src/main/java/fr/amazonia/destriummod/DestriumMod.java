@@ -16,6 +16,8 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
+import net.minecraftforge.fml.ModContainer;
+import net.minecraftforge.fml.ModList;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
@@ -23,6 +25,8 @@ import net.minecraftforge.fml.event.lifecycle.FMLDedicatedServerSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+
+import java.util.Optional;
 
 @Mod(DestriumMod.MODID)
 public class DestriumMod {
@@ -34,6 +38,12 @@ public class DestriumMod {
     public static RegistryKey<World> PARADIS_DIMENSION;
 
     public DestriumMod() {
+        Optional<? extends ModContainer> container = ModList.get().getModContainerById(DestriumMod.MODID);
+        container.ifPresent(c -> {
+            String version = c.getModInfo().getVersion().toString();
+            LOGGER.atInfo().log("DestriumMod version :{} !", version);
+        });
+
         //Setup Event
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::clientSetup);
