@@ -6,6 +6,8 @@ import fr.amazonia.destriummod.block.ParadisPortalBlocks;
 import fr.amazonia.destriummod.block.plants.AmazonitePlants;
 import fr.amazonia.destriummod.block.plants.DestriumPlants;
 import fr.amazonia.destriummod.block.plants.XpPlants;
+import fr.amazonia.destriummod.fluid.PoisonWaterFluidBlock;
+import fr.amazonia.destriummod.fluid.ResistanceLavaFluidBlock;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.BlockItem;
@@ -106,6 +108,11 @@ public class ModBlocks {
     public static final RegistryObject<Block> CLOVER = registerBlock("clover", () -> new FlowerBlock(MobEffects.LUCK, 9, BlockBehaviour.Properties.ofFullCopy(Blocks.DANDELION).noCollission().instabreak().sound(SoundType.GRASS)));
     public static final RegistryObject<Block> CLOVER_TWO = registerBlock("clover_two", () -> new FlowerBlock(MobEffects.LUCK, 9, BlockBehaviour.Properties.ofFullCopy(Blocks.DANDELION).noCollission().instabreak().sound(SoundType.GRASS)));
 
+
+    //Fluids
+    public static final RegistryObject<LiquidBlock> POISON_WATER_BLOCK = BLOCKS.register("poison_water_block", () -> new PoisonWaterFluidBlock(ModFluids.POISON_WATER_FLUID, BlockBehaviour.Properties.ofFullCopy(Blocks.WATER).noCollission().strength(100f).speedFactor(0.95F).noLootTable()));
+
+    public static final RegistryObject<LiquidBlock> RESISTANCE_LAVA_BLOCK = BLOCKS.register("resistance_lava_block", () -> new ResistanceLavaFluidBlock(ModFluids.RESISTANCE_LAVA_FLUID, BlockBehaviour.Properties.ofFullCopy(Blocks.LAVA).noCollission().strength(100f).speedFactor(0.95F).noLootTable().noOcclusion().lightLevel((p_235470_0_) -> 14)));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

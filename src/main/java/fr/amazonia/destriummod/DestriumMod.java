@@ -2,6 +2,7 @@ package fr.amazonia.destriummod;
 
 import com.mojang.logging.LogUtils;
 import fr.amazonia.destriummod.init.ModBlocks;
+import fr.amazonia.destriummod.init.ModFluids;
 import fr.amazonia.destriummod.init.ModItems;
 import fr.amazonia.destriummod.utils.HandlerEvent;
 import fr.amazonia.destriummod.utils.ModCreativeTabs;
@@ -38,6 +39,7 @@ public class DestriumMod {
         ModItems.register(eventBus);
         ModBlocks.register(eventBus);
         ModCreativeTabs.register(eventBus);
+        ModFluids.register(eventBus);
 
     }
 
