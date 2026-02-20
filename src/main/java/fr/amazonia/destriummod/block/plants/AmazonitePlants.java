@@ -18,7 +18,7 @@ public class AmazonitePlants extends CropsBlock {
         return ModItems.AMAZONITE_SEEDS.get();
     }
 
-    public boolean isValidBonemealTarget(IBlockReader p_176473_1_, BlockPos p_176473_2_, BlockState p_176473_3_, boolean p_176473_4_) {
+    public boolean isValidBonemealTarget(IBlockReader pLevel, BlockPos pPos, BlockState pState, boolean pIsClient) {
         return false;
     }
 }

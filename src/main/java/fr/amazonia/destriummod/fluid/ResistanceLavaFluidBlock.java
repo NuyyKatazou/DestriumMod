@@ -21,16 +21,16 @@ import java.util.function.Supplier;
 
 public class ResistanceLavaFluidBlock extends FlowingFluidBlock {
 
-    public ResistanceLavaFluidBlock(Supplier<? extends FlowingFluid> supplier, Properties p_i48368_1_) {
-        super(supplier, p_i48368_1_);
+    public ResistanceLavaFluidBlock(Supplier<? extends FlowingFluid> supplier, Properties properties) {
+        super(supplier, properties);
     }
 
-    public void entityInside(BlockState p_196262_1_, World p_196262_2_, BlockPos p_196262_3_, Entity p_196262_4_) {
-        if (p_196262_4_ instanceof PlayerEntity) {
-            p_196262_4_.fireImmune();
-            ((LivingEntity) p_196262_4_).addEffect(new EffectInstance(Effects.FIRE_RESISTANCE, 20, 0, false, false, false));
-            p_196262_4_.setRemainingFireTicks(0);
-            p_196262_4_.clearFire();
+    public void entityInside(BlockState pState, World pLevel, BlockPos pPos, Entity pEntity) {
+        if (pEntity instanceof PlayerEntity) {
+            pEntity.fireImmune();
+            ((LivingEntity) pEntity).addEffect(new EffectInstance(Effects.FIRE_RESISTANCE, 20, 0, false, false, false));
+            pEntity.setRemainingFireTicks(0);
+            pEntity.clearFire();
         }
     }
 

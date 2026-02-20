@@ -41,12 +41,12 @@ public enum ModArmorMaterials implements IArmorMaterial {
         this.repairIngredient = new LazyValue<>(pRepairIngredient);
     }
 
-    public int getDurabilityForSlot(EquipmentSlotType p_200896_1_) {
-        return HEALTH_PER_SLOT[p_200896_1_.getIndex()] * this.durabilityMultiplier;
+    public int getDurabilityForSlot(EquipmentSlotType slot) {
+        return HEALTH_PER_SLOT[slot.getIndex()] * this.durabilityMultiplier;
     }
 
-    public int getDefenseForSlot(EquipmentSlotType p_200902_1_) {
-        return this.slotProtections[p_200902_1_.getIndex()];
+    public int getDefenseForSlot(EquipmentSlotType slot) {
+        return this.slotProtections[slot.getIndex()];
     }
 
     public int getEnchantmentValue() {

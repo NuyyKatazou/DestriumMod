@@ -16,8 +16,8 @@ import java.util.List;
 
 public class SpawnersPickaxe extends PickaxeItem {
 
-    public SpawnersPickaxe(IItemTier p_i48478_1_, int p_i48478_2_, float p_i48478_3_, Properties properties) {
-        super(p_i48478_1_, p_i48478_2_, p_i48478_3_, properties);
+    public SpawnersPickaxe(IItemTier pTier, int pAttackDamageModifier, float pAttackSpeedModifier, Properties properties) {
+        super(pTier, pAttackDamageModifier, pAttackSpeedModifier, properties);
     }
 
     @OnlyIn(Dist.CLIENT)
