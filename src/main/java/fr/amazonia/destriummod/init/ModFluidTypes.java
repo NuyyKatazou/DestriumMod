@@ -15,7 +15,6 @@ import org.joml.Vector3f;
 
 public class ModFluidTypes {
 
-
     public static final ResourceLocation WATER_STILL_RL = ResourceLocation.fromNamespaceAndPath("minecraft", "block/water_still");
     public static final ResourceLocation WATER_FLOWING_RL = ResourceLocation.fromNamespaceAndPath("minecraft", "block/water_flow");
     public static final ResourceLocation WATER_OVERLAY_RL = ResourceLocation.fromNamespaceAndPath("minecraft", "block/water_overlay");
@@ -31,7 +30,6 @@ public class ModFluidTypes {
     public static final RegistryObject<FluidType> RESISTANCE_LAVA_FLUID_TYPE = FLUID_TYPES.register("resistance_lava_fluid_type", () -> new ResistanceLavaFluidType(LAVA_STILL_RL, LAVA_FLOWING_RL, WATER_OVERLAY_RL, new Vector3f(198f / 255f, 69f / 255f, 4f / 255f), FluidType.Properties.create().lightLevel(2).density(500).temperature(300).viscosity(100).sound(SoundAction.get("drink"), SoundEvents.HONEY_DRINK).canConvertToSource(false)));
 
     public static void register(IEventBus eventBus) {
-
         FLUID_TYPES.register(eventBus);
     }
 }
