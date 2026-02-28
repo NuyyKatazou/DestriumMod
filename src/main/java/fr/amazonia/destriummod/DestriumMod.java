@@ -7,6 +7,8 @@ import fr.amazonia.destriummod.init.ModFluids;
 import fr.amazonia.destriummod.init.ModItems;
 import fr.amazonia.destriummod.utils.HandlerEvent;
 import fr.amazonia.destriummod.utils.ModCreativeTabs;
+import net.minecraft.client.renderer.ItemBlockRenderTypes;
+import net.minecraft.client.renderer.RenderType;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.level.Level;
 import net.minecraftforge.common.MinecraftForge;
@@ -55,6 +57,8 @@ public class DestriumMod {
     }
 
     private void clientSetup(FMLClientSetupEvent event) {
+        ItemBlockRenderTypes.setRenderLayer(ModFluids.POISON_WATER_FLUID.get(), RenderType.translucent());
+        ItemBlockRenderTypes.setRenderLayer(ModFluids.POISON_WATER_FLOWING.get(), RenderType.translucent());
     }
 
     private void serverSetup(FMLDedicatedServerSetupEvent event) {
