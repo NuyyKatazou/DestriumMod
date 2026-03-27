@@ -1,6 +1,5 @@
 package fr.amazonia.destriummod.worldgen.portal;
 
-import fr.amazonia.destriummod.block.OverworldPortalBlocks;
 import fr.amazonia.destriummod.block.ParadisPortalBlocks;
 import fr.amazonia.destriummod.init.ModBlocks;
 import net.minecraft.core.BlockPos;

@@ -1,6 +1,5 @@
 package fr.amazonia.destriummod.worldgen.portal;
 
-import fr.amazonia.destriummod.block.OverworldPortalBlocks;
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.entity.Entity;
