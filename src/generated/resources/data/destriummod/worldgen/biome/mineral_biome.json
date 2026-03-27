@@ -33,8 +33,7 @@
     [],
     [
       "minecraft:trees_water",
-      "destriummod:paradis_destrium_ore_placed",
-      "destriummod:paradis_amazonite_ore_placed"
+      "destriummod:paradis_destrium_ore_placed"
     ]
   ],
   "has_precipitation": false,

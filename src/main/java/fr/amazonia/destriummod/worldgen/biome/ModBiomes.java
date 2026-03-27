@@ -69,7 +69,6 @@ public class ModBiomes {
         biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, VegetationPlacements.TREES_WATER);
 
         biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.PARADIS_DESTRIUM_ORE_PLACED);
-        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.PARADIS_AMAZONITE_ORE_PLACED);
 
         return new Biome.BiomeBuilder()
                 .hasPrecipitation(false)
