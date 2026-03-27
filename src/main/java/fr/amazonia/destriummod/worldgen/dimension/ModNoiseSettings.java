@@ -16,9 +16,8 @@ public class ModNoiseSettings {
             ResourceLocation.fromNamespaceAndPath(DestriumMod.MODID, "paradis_noise_settings"));
 
     public static void bootstrapNoiseSettings(BootstrapContext<NoiseGeneratorSettings> context) {
-        NoiseGeneratorSettings netherSettings = NoiseGeneratorSettings.floatingIslands(context);
-        SurfaceRules.RuleSource paradisSurface = SurfaceRules.state(ModBlocks.CLOUD.get().defaultBlockState());
-        SurfaceRules.RuleSource paradis2Surface = SurfaceRules.sequence(
+        NoiseGeneratorSettings paradisSettings = NoiseGeneratorSettings.floatingIslands(context);
+        SurfaceRules.RuleSource paradisSurface = SurfaceRules.sequence(
 
                 SurfaceRules.ifTrue(SurfaceRules.ON_FLOOR,
                         SurfaceRules.state(ModBlocks.CLOUD.get().defaultBlockState())),
@@ -34,16 +33,16 @@ public class ModNoiseSettings {
         );
 
         context.register(PARADIS_NOISE_SETTINGS, new NoiseGeneratorSettings(
-                netherSettings.noiseSettings(),
+                paradisSettings.noiseSettings(),
                 ModBlocks.CLOUD.get().defaultBlockState(),
-                netherSettings.defaultFluid(),
-                netherSettings.noiseRouter(),
-                paradis2Surface,
-                netherSettings.spawnTarget(),
-                netherSettings.seaLevel(),
-                netherSettings.disableMobGeneration(),
-                netherSettings.aquifersEnabled(),
-                netherSettings.oreVeinsEnabled(),
-                netherSettings.useLegacyRandomSource()));
+                paradisSettings.defaultFluid(),
+                paradisSettings.noiseRouter(),
+                paradisSurface,
+                paradisSettings.spawnTarget(),
+                paradisSettings.seaLevel(),
+                paradisSettings.disableMobGeneration(),
+                paradisSettings.aquifersEnabled(),
+                paradisSettings.oreVeinsEnabled(),
+                paradisSettings.useLegacyRandomSource()));
     }
 }
