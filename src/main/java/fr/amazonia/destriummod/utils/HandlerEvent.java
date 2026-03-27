@@ -1,6 +1,9 @@
 package fr.amazonia.destriummod.utils;
 
 import fr.amazonia.destriummod.init.ModItems;
+import fr.amazonia.destriummod.worldgen.portal.OverworldTeleporter;
+import fr.amazonia.destriummod.worldgen.portal.ParadisTeleporter;
+import net.minecraft.world.damagesource.DamageTypes;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
@@ -17,11 +20,11 @@ public class HandlerEvent {
         LivingEntity entity = event.getEntity();
         if (entity instanceof Player) {
             //Cancel Overworld & Paradis Teleporter FallDamage
-            //if (event.getSource().is(DamageTypes.FALL) && OverworldTeleporter.f >= 1 || ParadisTeleporter.f >= 1) {
-            //    OverworldTeleporter.f = 0;
-            //    ParadisTeleporter.f = 0;
-            //    event.setAmount(0);
-            //}
+            if (event.getSource().is(DamageTypes.FALL) && OverworldTeleporter.f >= 1 || ParadisTeleporter.f >= 1) {
+                OverworldTeleporter.f = 0;
+                ParadisTeleporter.f = 0;
+                event.setAmount(0);
+            }
         }
     }
 

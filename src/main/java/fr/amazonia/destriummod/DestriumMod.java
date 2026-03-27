@@ -9,8 +9,6 @@ import fr.amazonia.destriummod.utils.HandlerEvent;
 import fr.amazonia.destriummod.utils.ModCreativeTabs;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
-import net.minecraft.resources.ResourceKey;
-import net.minecraft.world.level.Level;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
@@ -25,9 +23,6 @@ public class DestriumMod {
 
     public static final String MODID = "destriummod";
     public static final Logger LOGGER = LogUtils.getLogger();
-
-    //Dimensions
-    public static ResourceKey<Level> PARADIS_DIMENSION;
 
     public DestriumMod(FMLJavaModLoadingContext context) {
 
@@ -50,9 +45,6 @@ public class DestriumMod {
     private void setup(FMLCommonSetupEvent event) {
         //Events Class
         MinecraftForge.EVENT_BUS.register(new HandlerEvent());
-
-        //Dimensions
-        //PARADIS_DIMENSION = ResourceKey.create(Registry.DIMENSION_REGISTRY, new ResourceLocation(DestriumMod.MODID, "paradis"));
 
     }
 
