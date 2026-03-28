@@ -21,7 +21,7 @@ public class AmazoniteIngot extends Item {
 
     @OnlyIn(Dist.CLIENT)
     public void appendHoverText(ItemStack pStack, @Nullable World pWorld, List<ITextComponent> pTooltip, ITooltipFlag pFlag) {
-        pTooltip.add(new TranslationTextComponent(this.getDescriptionId() + ".desc").withStyle(TextFormatting.DARK_BLUE).withStyle(TextFormatting.BOLD));
+        pTooltip.add(new TranslationTextComponent(this.getDescriptionId() + ".desc").withStyle(TextFormatting.DARK_AQUA).withStyle(TextFormatting.BOLD));
         pTooltip.add(new TranslationTextComponent(this.getDescriptionId() + ".desc2").withStyle(TextFormatting.DARK_GREEN));
         pTooltip.add(new TranslationTextComponent(this.getDescriptionId() + ".desc3").withStyle(TextFormatting.GOLD));
     }
