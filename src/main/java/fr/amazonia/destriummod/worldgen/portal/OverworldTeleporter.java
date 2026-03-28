@@ -1,5 +1,6 @@
 package fr.amazonia.destriummod.worldgen.portal;
 
+import fr.amazonia.destriummod.block.ParadisPortalBlocks;
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.entity.Entity;
@@ -44,10 +45,19 @@ public class OverworldTeleporter implements ITeleporter {
         entity.setPos(destinationPos.getX() + 0.5D, destinationPos.getY() + 1D, destinationPos.getZ() + 0.5D);
 
         if (thisIsToOverworldDim) {
+            boolean doSetBlock = true;
+            for (BlockPos checkPos : BlockPos.betweenClosed(destinationPos.below(10).west(10), destinationPos.above(10).east(10))) {
+                if (destinationWorld.getBlockState(checkPos).getBlock() instanceof ParadisPortalBlocks) {
+                    doSetBlock = false;
+                    break;
+                }
+            }
+            if (doSetBlock) {
                 destinationWorld.setBlock(destinationPos, Blocks.DIRT.defaultBlockState(), 10);
                 destinationWorld.setBlock(destinationPos.above(1), Blocks.AIR.defaultBlockState(), 10);
                 destinationWorld.setBlock(destinationPos.above(2), Blocks.AIR.defaultBlockState(), 10);
                 f = 1;
+            }
         }
 
         return entity;
