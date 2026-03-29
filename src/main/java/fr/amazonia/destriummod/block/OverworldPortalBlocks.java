@@ -15,30 +15,30 @@ import net.minecraft.world.phys.BlockHitResult;
 
 public class OverworldPortalBlocks extends Block {
 
-    public OverworldPortalBlocks(Properties p_i48440_1_) {
-        super(p_i48440_1_);
+    public OverworldPortalBlocks(Properties pProperties) {
+        super(pProperties);
     }
 
-    public InteractionResult use(BlockState state, Level worldIn, BlockPos pos, Player player, InteractionHand handIn, BlockHitResult hit) {
-        if (player.getVehicle() != null || player.isVehicle()) {
+    public InteractionResult use(BlockState pState, Level pLevel, BlockPos pPos, Player pPlayer, InteractionHand pHand, BlockHitResult pHit) {
+        if (pPlayer.getVehicle() != null || pPlayer.isVehicle()) {
             return InteractionResult.FAIL;
         }
-        if (!worldIn.isClientSide()) {
-            if (!player.isCrouching() && player.canChangeDimensions()) {
-                MinecraftServer server = worldIn.getServer();
+        if (!pLevel.isClientSide()) {
+            if (!pPlayer.isCrouching() && pPlayer.canChangeDimensions()) {
+                MinecraftServer server = pLevel.getServer();
                 if (server != null) {
-                    if (worldIn.dimension() != DestriumMod.PARADIS_DIMENSION) {
+                    if (pLevel.dimension() != DestriumMod.PARADIS_DIMENSION) {
                         return InteractionResult.FAIL;
                     } else {
                         ServerLevel overworldWorld = server.getLevel(Level.OVERWORLD);
                         if (overworldWorld != null) {
-                            player.changeDimension(overworldWorld, new OverworldTeleporter(pos, true));
+                            pPlayer.changeDimension(overworldWorld, new OverworldTeleporter(pPos, true));
                         }
                     }
                     return InteractionResult.SUCCESS;
                 }
             }
         }
-        return super.use(state, worldIn, pos, player, handIn, hit);
+        return super.use(pState, pLevel, pPos, pPlayer, pHand, pHit);
     }
 }

@@ -20,8 +20,8 @@ import java.util.function.Supplier;
 
 public class ResistanceLavaFluidBlock extends LiquidBlock {
 
-    public ResistanceLavaFluidBlock(Supplier<? extends FlowingFluid> supplier, Properties p_i48368_1_) {
-        super(supplier, p_i48368_1_);
+    public ResistanceLavaFluidBlock(Supplier<? extends FlowingFluid> pFluid, Properties pProperties) {
+        super(pFluid, pProperties);
     }
 
     public void entityInside(BlockState pState, Level pLevel, BlockPos pPos, Entity pEntity) {
@@ -33,7 +33,7 @@ public class ResistanceLavaFluidBlock extends LiquidBlock {
     }
 
     @Override
-    public void neighborChanged(BlockState pState, Level pLevel, BlockPos pPos, Block pBlock, BlockPos fromPos, boolean notify) {
+    public void neighborChanged(BlockState pState, Level pLevel, BlockPos pPos, Block pBlock, BlockPos pFromPos, boolean pIsMoving) {
         if (this.shouldSpreadLiquid(pLevel, pPos)) {
             pLevel.scheduleTick(pPos, pState.getFluidState().getType(), this.getFluid().getTickDelay(pLevel));
         }

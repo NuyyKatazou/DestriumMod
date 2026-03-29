@@ -18,8 +18,8 @@ import java.util.function.Supplier;
 
 public class PoisonWaterFluidBlock extends LiquidBlock {
 
-    public PoisonWaterFluidBlock(Supplier<? extends FlowingFluid> supplier, Properties properties) {
-        super(supplier, properties);
+    public PoisonWaterFluidBlock(Supplier<? extends FlowingFluid> pFluid, Properties pProperties) {
+        super(pFluid, pProperties);
     }
 
     public void entityInside(BlockState pState, Level pLevel, BlockPos pPos, Entity pEntity) {
@@ -29,7 +29,7 @@ public class PoisonWaterFluidBlock extends LiquidBlock {
     }
 
     @Override
-    public void neighborChanged(BlockState pState, Level pLevel, BlockPos pPos, Block pBlock, BlockPos fromPos, boolean notify) {
+    public void neighborChanged(BlockState pState, Level pLevel, BlockPos pPos, Block pBlock, BlockPos pFromPos, boolean pIsMoving) {
         if (this.shouldSpreadLiquid(pLevel, pPos)) {
             pLevel.scheduleTick(pPos, pState.getFluidState().getType(), this.getFluid().getTickDelay(pLevel));
         }

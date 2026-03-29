@@ -19,10 +19,6 @@ public class ModOreGeneration {
         /*
         base.add(ModPlacedFeatures.);
         */
-        //In End
-        if (event.getCategory() == Biome.BiomeCategory.THEEND) {
-            base.add(ModPlacedFeatures.REPAIR_ORE_PLACED);
-        }
 
         //In Nether
         /*
@@ -30,5 +26,10 @@ public class ModOreGeneration {
             base.add(ModPlacedFeatures.);
         }
         */
+
+        //In End
+        if (event.getCategory() == Biome.BiomeCategory.THEEND) {
+            base.add(ModPlacedFeatures.REPAIR_ORE_PLACED);
+        }
     }
 }

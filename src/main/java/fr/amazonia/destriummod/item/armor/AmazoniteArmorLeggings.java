@@ -19,20 +19,20 @@ import java.util.List;
 
 public class AmazoniteArmorLeggings extends ArmorItem {
 
-    public AmazoniteArmorLeggings(ArmorMaterial materialIn, EquipmentSlot slot, Item.Properties properties) {
-        super(materialIn, slot, properties);
+    public AmazoniteArmorLeggings(ArmorMaterial pMaterial, EquipmentSlot pSlot, Properties pProperties) {
+        super(pMaterial, pSlot, pProperties);
     }
 
     @Override
-    public void onArmorTick(ItemStack itemstack, Level world, Player player) {
+    public void onArmorTick(ItemStack stack, Level level, Player player) {
         if (player.getItemBySlot(EquipmentSlot.LEGS).getItem() == ModItems.AMAZONITE_LEGGINGS.get()) {
             player.addEffect(new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 300, 1, false, false, true));
         }
     }
 
     @OnlyIn(Dist.CLIENT)
-    public void appendHoverText(ItemStack p_42988_, @Nullable Level p_42989_, List<Component> p_42990_, TooltipFlag p_42991_) {
-        p_42990_.add(new TranslatableComponent(this.getDescriptionId() + ".desc").withStyle(ChatFormatting.GOLD));
+    public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltip, TooltipFlag pFlag) {
+        pTooltip.add(new TranslatableComponent(this.getDescriptionId() + ".desc").withStyle(ChatFormatting.GOLD));
     }
 
     @Override

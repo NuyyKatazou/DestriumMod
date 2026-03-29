@@ -12,12 +12,12 @@ import net.minecraft.world.level.Level;
 
 public class JumpArmorBoots extends ArmorItem {
 
-    public JumpArmorBoots(ArmorMaterial materialIn, EquipmentSlot slot, Properties properties) {
-        super(materialIn, slot, properties);
+    public JumpArmorBoots(ArmorMaterial pMaterial, EquipmentSlot pSlot, Properties pProperties) {
+        super(pMaterial, pSlot, pProperties);
     }
 
     @Override
-    public void onArmorTick(ItemStack itemstack, Level world, Player player) {
+    public void onArmorTick(ItemStack stack, Level level, Player player) {
         if (player.getItemBySlot(EquipmentSlot.FEET).getItem() == ModItems.JUMP_BOOTS.get()) {
             player.addEffect(new MobEffectInstance(MobEffects.JUMP, 300, 2, false, false, true));
         }

@@ -15,17 +15,17 @@ import java.util.List;
 
 public class AmazoniteApple extends Item {
 
-    public AmazoniteApple(Properties properties) {
-        super(properties);
+    public AmazoniteApple(Properties pProperties) {
+        super(pProperties);
     }
 
     @OnlyIn(Dist.CLIENT)
-    public void appendHoverText(ItemStack p_42988_, @Nullable Level p_42989_, List<Component> p_42990_, TooltipFlag p_42991_) {
-        p_42990_.add(new TranslatableComponent(this.getDescriptionId() + ".desc").withStyle(ChatFormatting.RED));
-        p_42990_.add(new TranslatableComponent(this.getDescriptionId() + ".desc2").withStyle(ChatFormatting.DARK_RED));
-        p_42990_.add(new TranslatableComponent(this.getDescriptionId() + ".desc3").withStyle(ChatFormatting.GRAY));
-        p_42990_.add(new TranslatableComponent(this.getDescriptionId() + ".desc4").withStyle(ChatFormatting.LIGHT_PURPLE));
-        p_42990_.add(new TranslatableComponent(this.getDescriptionId() + ".desc5").withStyle(ChatFormatting.DARK_PURPLE));
-        p_42990_.add(new TranslatableComponent(this.getDescriptionId() + ".desc6").withStyle(ChatFormatting.YELLOW));
+    public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltip, TooltipFlag pFlag) {
+        pTooltip.add(new TranslatableComponent(this.getDescriptionId() + ".desc").withStyle(ChatFormatting.RED));
+        pTooltip.add(new TranslatableComponent(this.getDescriptionId() + ".desc2").withStyle(ChatFormatting.DARK_RED));
+        pTooltip.add(new TranslatableComponent(this.getDescriptionId() + ".desc3").withStyle(ChatFormatting.GRAY));
+        pTooltip.add(new TranslatableComponent(this.getDescriptionId() + ".desc4").withStyle(ChatFormatting.LIGHT_PURPLE));
+        pTooltip.add(new TranslatableComponent(this.getDescriptionId() + ".desc5").withStyle(ChatFormatting.DARK_PURPLE));
+        pTooltip.add(new TranslatableComponent(this.getDescriptionId() + ".desc6").withStyle(ChatFormatting.YELLOW));
     }
 }

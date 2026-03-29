@@ -5,20 +5,19 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.block.CropBlock;
-import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
 
 public class DestriumPlants extends CropBlock {
 
-    public DestriumPlants(BlockBehaviour.Properties properties) {
-        super(properties);
+    public DestriumPlants(Properties pProperties) {
+        super(pProperties);
     }
 
     protected ItemLike getBaseSeedId() {
         return ModItems.DESTRIUM_SEEDS.get();
     }
 
-    public boolean isValidBonemealTarget(BlockGetter p_52258_, BlockPos p_52259_, BlockState p_52260_, boolean p_52261_) {
+    public boolean isValidBonemealTarget(BlockGetter pLevel, BlockPos pPos, BlockState pState, boolean pIsClient) {
         return false;
     }
 }

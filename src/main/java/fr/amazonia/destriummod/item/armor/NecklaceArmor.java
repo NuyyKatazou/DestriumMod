@@ -3,16 +3,15 @@ package fr.amazonia.destriummod.item.armor;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.ArmorMaterial;
-import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 
 public class NecklaceArmor extends ArmorItem {
 
-    public NecklaceArmor(ArmorMaterial materialIn, EquipmentSlot slot, Item.Properties properties) {
-        super(materialIn, slot, properties);
+    public NecklaceArmor(ArmorMaterial pMaterial, EquipmentSlot pSlot, Properties pProperties) {
+        super(pMaterial, pSlot, pProperties);
     }
 
-    public boolean isEnchantable(ItemStack p_77616_1_) {
+    public boolean isEnchantable(ItemStack pStack) {
         return false;
     }
 }

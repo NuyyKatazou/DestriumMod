@@ -8,13 +8,13 @@ import net.minecraft.world.level.block.state.BlockState;
 
 public class ModOreBlock extends OreBlock {
 
-    public ModOreBlock(Properties p_55140_) {
-        super(p_55140_);
+    public ModOreBlock(Properties pProperties) {
+        super(pProperties);
     }
 
     @Override
-    public int getExpDrop(BlockState state, LevelReader reader, BlockPos pos, int fortune, int silktouch) {
-        if (silktouch == 0) {
+    public int getExpDrop(BlockState state, LevelReader level, BlockPos pos, int fortuneLevel, int silkTouchLevel) {
+        if (silkTouchLevel == 0) {
             if (this == ModBlocks.RANDOM_ORE.get()) {
                 return RANDOM.nextInt(1, 5);
             } else if (this == ModBlocks.REPAIR_ORE.get()) {

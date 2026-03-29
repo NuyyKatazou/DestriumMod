@@ -16,15 +16,15 @@ import java.util.List;
 
 public class SpawnersPickaxe extends PickaxeItem {
 
-    public SpawnersPickaxe(Tier p_i48478_1_, int p_i48478_2_, float p_i48478_3_, Properties p_i48478_4_) {
-        super(p_i48478_1_, p_i48478_2_, p_i48478_3_, p_i48478_4_);
+    public SpawnersPickaxe(Tier pTier, int pAttackDamageModifier, float pAttackSpeedModifier, Properties pProperties) {
+        super(pTier, pAttackDamageModifier, pAttackSpeedModifier, pProperties);
     }
 
     @OnlyIn(Dist.CLIENT)
-    public void appendHoverText(ItemStack p_42988_, @Nullable Level p_42989_, List<Component> p_42990_, TooltipFlag p_42991_) {
-        p_42990_.add(new TranslatableComponent(this.getDescriptionId() + ".desc").withStyle(ChatFormatting.DARK_AQUA));
-        p_42990_.add(new TranslatableComponent(this.getDescriptionId() + ".desc2").withStyle(ChatFormatting.DARK_AQUA));
-        p_42990_.add(new TranslatableComponent(this.getDescriptionId() + ".desc3").withStyle(ChatFormatting.DARK_AQUA));
-        p_42990_.add(new TranslatableComponent(this.getDescriptionId() + ".desc4").withStyle(ChatFormatting.DARK_AQUA));
+    public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltip, TooltipFlag pFlag) {
+        pTooltip.add(new TranslatableComponent(this.getDescriptionId() + ".desc").withStyle(ChatFormatting.DARK_AQUA));
+        pTooltip.add(new TranslatableComponent(this.getDescriptionId() + ".desc2").withStyle(ChatFormatting.DARK_AQUA));
+        pTooltip.add(new TranslatableComponent(this.getDescriptionId() + ".desc3").withStyle(ChatFormatting.DARK_AQUA));
+        pTooltip.add(new TranslatableComponent(this.getDescriptionId() + ".desc4").withStyle(ChatFormatting.DARK_AQUA));
     }
 }

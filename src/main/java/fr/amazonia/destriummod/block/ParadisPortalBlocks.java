@@ -15,30 +15,30 @@ import net.minecraft.world.phys.BlockHitResult;
 
 public class ParadisPortalBlocks extends Block {
 
-    public ParadisPortalBlocks(Properties p_i48440_1_) {
-        super(p_i48440_1_);
+    public ParadisPortalBlocks(Properties pProperties) {
+        super(pProperties);
     }
 
-    public InteractionResult use(BlockState state, Level worldIn, BlockPos pos, Player player, InteractionHand handIn, BlockHitResult hit) {
-        if (player.getVehicle() != null || player.isVehicle()) {
+    public InteractionResult use(BlockState pState, Level pLevel, BlockPos pPos, Player pPlayer, InteractionHand pHand, BlockHitResult pHit) {
+        if (pPlayer.getVehicle() != null || pPlayer.isVehicle()) {
             return InteractionResult.FAIL;
         }
-        if (!worldIn.isClientSide()) {
-            if (!player.isCrouching() && player.canChangeDimensions()) {
-                MinecraftServer server = worldIn.getServer();
+        if (!pLevel.isClientSide()) {
+            if (!pPlayer.isCrouching() && pPlayer.canChangeDimensions()) {
+                MinecraftServer server = pLevel.getServer();
                 if (server != null) {
-                    if (worldIn.dimension() != Level.OVERWORLD) {
+                    if (pLevel.dimension() != Level.OVERWORLD) {
                         return InteractionResult.FAIL;
                     } else {
                         ServerLevel paradisWorld = server.getLevel(DestriumMod.PARADIS_DIMENSION);
                         if (paradisWorld != null) {
-                            player.changeDimension(paradisWorld, new ParadisTeleporter(pos, true));
+                            pPlayer.changeDimension(paradisWorld, new ParadisTeleporter(pPos, true));
                         }
                     }
                     return InteractionResult.SUCCESS;
                 }
             }
         }
-        return super.use(state, worldIn, pos, player, handIn, hit);
+        return super.use(pState, pLevel, pPos, pPlayer, pHand, pHit);
     }
 }

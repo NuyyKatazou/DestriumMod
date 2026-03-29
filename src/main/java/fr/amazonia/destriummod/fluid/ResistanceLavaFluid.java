@@ -70,8 +70,8 @@ public abstract class ResistanceLavaFluid extends ForgeFlowingFluid {
     }
 
     @Override
-    public BlockState createLegacyBlock(FluidState state) {
-        return ModBlocks.RESISTANCE_LAVA_BLOCK.get().defaultBlockState().setValue(LiquidBlock.LEVEL, getLegacyLevel(state));
+    public BlockState createLegacyBlock(FluidState pState) {
+        return ModBlocks.RESISTANCE_LAVA_BLOCK.get().defaultBlockState().setValue(LiquidBlock.LEVEL, getLegacyLevel(pState));
     }
 
     private void fizz(LevelAccessor pLevel, BlockPos pPos) {
@@ -92,7 +92,7 @@ public abstract class ResistanceLavaFluid extends ForgeFlowingFluid {
         super.spreadTo(pLevel, pPos, pBlockState, pDirection, pFluidState);
     }
 
-    public boolean canBeReplacedWith(FluidState pFluidState, BlockGetter pBlockGetter, BlockPos pPos, Fluid pFluid, Direction pDirection) {
+    public boolean canBeReplacedWith(FluidState pState, BlockGetter pLevel, BlockPos pPos, Fluid pFluid, Direction pDirection) {
         return pDirection == Direction.DOWN && !pFluid.is(FluidTags.WATER);
     }
 
@@ -114,12 +114,12 @@ public abstract class ResistanceLavaFluid extends ForgeFlowingFluid {
         }
 
         @Override
-        public int getAmount(FluidState state) {
-            return state.getValue(LEVEL);
+        public int getAmount(FluidState pState) {
+            return pState.getValue(LEVEL);
         }
 
         @Override
-        public boolean isSource(FluidState state) {
+        public boolean isSource(FluidState pState) {
             return false;
         }
     }
@@ -138,12 +138,12 @@ public abstract class ResistanceLavaFluid extends ForgeFlowingFluid {
         }
 
         @Override
-        public int getAmount(FluidState state) {
+        public int getAmount(FluidState pState) {
             return 8;
         }
 
         @Override
-        public boolean isSource(FluidState state) {
+        public boolean isSource(FluidState pState) {
             return true;
         }
     }
