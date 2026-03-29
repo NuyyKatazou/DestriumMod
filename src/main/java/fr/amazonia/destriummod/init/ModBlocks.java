@@ -7,11 +7,14 @@ import fr.amazonia.destriummod.block.ParadisPortalBlocks;
 import fr.amazonia.destriummod.block.plants.AmazonitePlants;
 import fr.amazonia.destriummod.block.plants.DestriumPlants;
 import fr.amazonia.destriummod.block.plants.XpPlants;
+import fr.amazonia.destriummod.fluid.PoisonWaterFluidBlock;
+import fr.amazonia.destriummod.fluid.ResistanceLavaFluidBlock;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.FlowerBlock;
+import net.minecraft.world.level.block.LiquidBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.Material;
@@ -107,6 +110,12 @@ public class ModBlocks {
     //Flowers
     public static final RegistryObject<Block> CLOVER = createBlock("clover", () -> new FlowerBlock(() -> MobEffects.LUCK, 9, BlockBehaviour.Properties.of(Material.PLANT).noCollission().instabreak().sound(SoundType.GRASS)));
     public static final RegistryObject<Block> CLOVER_TWO = createBlock("clover_two", () -> new FlowerBlock(() -> MobEffects.LUCK, 9, BlockBehaviour.Properties.of(Material.PLANT).noCollission().instabreak().sound(SoundType.GRASS)));
+
+    //Fluids Blocks
+    public static final RegistryObject<LiquidBlock> POISON_WATER_BLOCK = ModBlocks.BLOCKS.register("poison_water_block", () -> new PoisonWaterFluidBlock(ModFluids.POISON_WATER_FLUID, BlockBehaviour.Properties.of(Material.WATER).noCollission().strength(100f).noDrops().speedFactor(0.95F)));
+
+    public static final RegistryObject<LiquidBlock> RESISTANCE_LAVA_BLOCK = ModBlocks.BLOCKS.register("resistance_lava_block", () -> new ResistanceLavaFluidBlock(ModFluids.RESISTANCE_LAVA_FLUID, BlockBehaviour.Properties.of(Material.LAVA).noCollission().strength(100f).noDrops().speedFactor(0.95F).lightLevel((p_235470_0_) -> 14)));
+
 
     public static RegistryObject<Block> createBlock(String name, Supplier<? extends Block> supplier) {
 

@@ -4,15 +4,23 @@ import fr.amazonia.destriummod.init.ModFluids;
 import fr.amazonia.destriummod.init.ModItems;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
+import net.minecraft.core.particles.ParticleOptions;
+import net.minecraft.core.particles.ParticleTypes;
+import net.minecraft.sounds.SoundEvents;
+import net.minecraft.sounds.SoundSource;
 import net.minecraft.tags.FluidTags;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.BlockGetter;
+import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.LiquidBlock;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.material.Fluid;
 import net.minecraft.world.level.material.FluidState;
 import net.minecraftforge.fluids.ForgeFlowingFluid;
+
+import javax.annotation.Nullable;
+import java.util.Random;
 
 public abstract class PoisonWaterFluid extends ForgeFlowingFluid {
 
@@ -35,19 +43,34 @@ public abstract class PoisonWaterFluid extends ForgeFlowingFluid {
         return ModItems.POISON_WATER_BUCKET.get();
     }
 
-    @Override
-    protected float getExplosionResistance() {
-        return 100.0F;
+    public void animateTick(Level pLevel, BlockPos pPos, FluidState pState, Random pRandom) {
+        if (!pState.isSource() && !pState.getValue(FALLING)) {
+            if (pRandom.nextInt(64) == 0) {
+                pLevel.playLocalSound((double) pPos.getX() + 0.5D, (double) pPos.getY() + 0.5D, (double) pPos.getZ() + 0.5D, SoundEvents.WATER_AMBIENT, SoundSource.BLOCKS, pRandom.nextFloat() * 0.25F + 0.75F, pRandom.nextFloat() + 0.5F, false);
+            }
+        } else if (pRandom.nextInt(10) == 0) {
+            pLevel.addParticle(ParticleTypes.UNDERWATER, (double) pPos.getX() + pRandom.nextDouble(), (double) pPos.getY() + pRandom.nextDouble(), (double) pPos.getZ() + pRandom.nextDouble(), 0.0D, 0.0D, 0.0D);
+        }
+
     }
 
     @Override
-    public boolean canBeReplacedWith(FluidState p_76458_, BlockGetter p_76459_, BlockPos p_76460_, Fluid p_76461_, Direction p_76462_) {
-        return p_76462_ == Direction.DOWN && !p_76461_.is(FluidTags.WATER);
+    protected boolean canConvertToSource() {
+        return false;
+    }
+
+    @Nullable
+    public ParticleOptions getDripParticle() {
+        return ParticleTypes.DRIPPING_WATER;
     }
 
     @Override
     public BlockState createLegacyBlock(FluidState state) {
         return ModFluids.POISON_WATER_BLOCK.get().defaultBlockState().setValue(LiquidBlock.LEVEL, getLegacyLevel(state));
+    }
+
+    public boolean canBeReplacedWith(FluidState pFluidState, BlockGetter pBlockGetter, BlockPos pPos, Fluid pFluid, Direction pDirection) {
+        return pDirection == Direction.DOWN && !pFluid.is(FluidTags.WATER);
     }
 
     public static class Flowing extends PoisonWaterFluid {
@@ -57,9 +80,9 @@ public abstract class PoisonWaterFluid extends ForgeFlowingFluid {
             registerDefaultState(getStateDefinition().any().setValue(LEVEL, 7));
         }
 
-        protected void createFluidStateDefinition(StateDefinition.Builder<Fluid, FluidState> p_76476_) {
-            super.createFluidStateDefinition(p_76476_);
-            p_76476_.add(LEVEL);
+        protected void createFluidStateDefinition(StateDefinition.Builder<Fluid, FluidState> builder) {
+            super.createFluidStateDefinition(builder);
+            builder.add(LEVEL);
         }
 
         @Override
@@ -71,11 +94,6 @@ public abstract class PoisonWaterFluid extends ForgeFlowingFluid {
         public boolean isSource(FluidState state) {
             return false;
         }
-
-        @Override
-        protected boolean canConvertToSource() {
-            return false;
-        }
     }
 
     public static class Source extends PoisonWaterFluid {
@@ -85,9 +103,9 @@ public abstract class PoisonWaterFluid extends ForgeFlowingFluid {
             registerDefaultState(getStateDefinition().any().setValue(LEVEL, 7));
         }
 
-        protected void createFluidStateDefinition(StateDefinition.Builder<Fluid, FluidState> p_76476_) {
-            super.createFluidStateDefinition(p_76476_);
-            p_76476_.add(LEVEL);
+        protected void createFluidStateDefinition(StateDefinition.Builder<Fluid, FluidState> builder) {
+            super.createFluidStateDefinition(builder);
+            builder.add(LEVEL);
         }
 
         @Override
@@ -98,11 +116,6 @@ public abstract class PoisonWaterFluid extends ForgeFlowingFluid {
         @Override
         public boolean isSource(FluidState state) {
             return true;
-        }
-
-        @Override
-        protected boolean canConvertToSource() {
-            return false;
         }
     }
 }

@@ -18,39 +18,39 @@ import java.util.function.Supplier;
 
 public class PoisonWaterFluidBlock extends LiquidBlock {
 
-    public PoisonWaterFluidBlock(Supplier<? extends FlowingFluid> supplier, Properties p_i48368_1_) {
-        super(supplier, p_i48368_1_);
+    public PoisonWaterFluidBlock(Supplier<? extends FlowingFluid> supplier, Properties properties) {
+        super(supplier, properties);
     }
 
-    public void entityInside(BlockState p_196262_1_, Level p_196262_2_, BlockPos p_196262_3_, Entity p_196262_4_) {
-        if (p_196262_4_ instanceof Player) {
-            p_196262_4_.hurt(DamageSource.WITHER, 1F);
+    public void entityInside(BlockState pState, Level pLevel, BlockPos pPos, Entity pEntity) {
+        if (pEntity instanceof Player) {
+            pEntity.hurt(DamageSource.WITHER, 1.5F);
         }
     }
 
     @Override
-    public void neighborChanged(BlockState p_54709_, Level p_54710_, BlockPos p_54711_, Block p_54712_, BlockPos p_54713_, boolean p_54714_) {
-        if (this.shouldSpreadLiquid(p_54710_, p_54711_)) {
-            p_54710_.scheduleTick(p_54711_, p_54709_.getFluidState().getType(), this.getFluid().getTickDelay(p_54710_));
+    public void neighborChanged(BlockState pState, Level pLevel, BlockPos pPos, Block pBlock, BlockPos fromPos, boolean notify) {
+        if (this.shouldSpreadLiquid(pLevel, pPos)) {
+            pLevel.scheduleTick(pPos, pState.getFluidState().getType(), this.getFluid().getTickDelay(pLevel));
         }
     }
 
-    private boolean shouldSpreadLiquid(Level p_54697_, BlockPos p_54698_) {
+    private boolean shouldSpreadLiquid(Level pLevel, BlockPos pPos) {
         if (this.getFluid().is(FluidTags.LAVA)) {
-            boolean flag = p_54697_.getBlockState(p_54698_.below()).is(Blocks.SOUL_SOIL);
+            boolean flag = pLevel.getBlockState(pPos.below()).is(Blocks.SOUL_SOIL);
 
             for (Direction direction : POSSIBLE_FLOW_DIRECTIONS) {
-                BlockPos blockpos = p_54698_.relative(direction.getOpposite());
-                if (p_54697_.getFluidState(blockpos).is(FluidTags.WATER)) {
-                    Block block = p_54697_.getFluidState(p_54698_).isSource() ? Blocks.OBSIDIAN : Blocks.COBBLESTONE;
-                    p_54697_.setBlockAndUpdate(p_54698_, net.minecraftforge.event.ForgeEventFactory.fireFluidPlaceBlockEvent(p_54697_, p_54698_, p_54698_, block.defaultBlockState()));
-                    this.fizz(p_54697_, p_54698_);
+                BlockPos blockpos = pPos.relative(direction.getOpposite());
+                if (pLevel.getFluidState(blockpos).is(FluidTags.WATER)) {
+                    Block block = pLevel.getFluidState(pPos).isSource() ? Blocks.OBSIDIAN : Blocks.COBBLESTONE;
+                    pLevel.setBlockAndUpdate(pPos, net.minecraftforge.event.ForgeEventFactory.fireFluidPlaceBlockEvent(pLevel, pPos, pPos, block.defaultBlockState()));
+                    this.fizz(pLevel, pPos);
                     return false;
                 }
 
-                if (flag && p_54697_.getBlockState(blockpos).is(Blocks.BLUE_ICE)) {
-                    p_54697_.setBlockAndUpdate(p_54698_, net.minecraftforge.event.ForgeEventFactory.fireFluidPlaceBlockEvent(p_54697_, p_54698_, p_54698_, Blocks.BASALT.defaultBlockState()));
-                    this.fizz(p_54697_, p_54698_);
+                if (flag && pLevel.getBlockState(blockpos).is(Blocks.BLUE_ICE)) {
+                    pLevel.setBlockAndUpdate(pPos, net.minecraftforge.event.ForgeEventFactory.fireFluidPlaceBlockEvent(pLevel, pPos, pPos, Blocks.BASALT.defaultBlockState()));
+                    this.fizz(pLevel, pPos);
                     return false;
                 }
             }
@@ -58,7 +58,7 @@ public class PoisonWaterFluidBlock extends LiquidBlock {
         return true;
     }
 
-    private void fizz(LevelAccessor p_54701_, BlockPos p_54702_) {
-        p_54701_.levelEvent(1501, p_54702_, 0);
+    private void fizz(LevelAccessor pLevel, BlockPos pPos) {
+        pLevel.levelEvent(1501, pPos, 0);
     }
 }
