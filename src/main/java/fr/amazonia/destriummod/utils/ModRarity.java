@@ -5,8 +5,8 @@ import net.minecraft.util.text.TextFormatting;
 
 public class ModRarity {
 
-    public static final Rarity DESTRIUM = Rarity.create("destrium", TextFormatting.DARK_GREEN);
     public static final Rarity AMAZONITE = Rarity.create("amazonite", TextFormatting.DARK_AQUA);
+    public static final Rarity DESTRIUM = Rarity.create("destrium", TextFormatting.DARK_GREEN);
     public static final Rarity ARGONIDE = Rarity.create("argonide", TextFormatting.GOLD);
     public static final Rarity REPAIR = Rarity.create("repair", TextFormatting.LIGHT_PURPLE);
     public static final Rarity EMERALD = Rarity.create("emerald", TextFormatting.GREEN);
