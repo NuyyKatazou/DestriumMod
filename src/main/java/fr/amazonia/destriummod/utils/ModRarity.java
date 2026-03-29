@@ -5,8 +5,8 @@ import net.minecraft.world.item.Rarity;
 
 public class ModRarity {
 
+    public static final Rarity AMAZONITE = Rarity.create("amazonite", ChatFormatting.DARK_AQUA);
     public static final Rarity DESTRIUM = Rarity.create("destrium", ChatFormatting.DARK_GREEN);
-    public static final Rarity AMAZONITE = Rarity.create("amazonite", ChatFormatting.DARK_BLUE);
     public static final Rarity ARGONIDE = Rarity.create("argonide", ChatFormatting.GOLD);
     public static final Rarity REPAIR = Rarity.create("repair", ChatFormatting.LIGHT_PURPLE);
     public static final Rarity EMERALD = Rarity.create("emerald", ChatFormatting.GREEN);
