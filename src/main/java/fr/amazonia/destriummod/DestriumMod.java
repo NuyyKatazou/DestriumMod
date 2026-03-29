@@ -41,7 +41,7 @@ public class DestriumMod {
         Optional<? extends ModContainer> container = ModList.get().getModContainerById(DestriumMod.MODID);
         container.ifPresent(c -> {
             String version = c.getModInfo().getVersion().toString();
-            LOGGER.atInfo().log("DestriumMod version :{} !", version);
+            LOGGER.atInfo().log("DestriumMod version : {} !", version);
         });
 
         //Setup Event
