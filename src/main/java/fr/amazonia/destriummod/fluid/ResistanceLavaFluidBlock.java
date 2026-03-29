@@ -25,7 +25,7 @@ public class ResistanceLavaFluidBlock extends FlowingFluidBlock {
         super(supplier, properties);
     }
 
-    public void entityInside(BlockState pState, World pLevel, BlockPos pPos, Entity pEntity) {
+    public void entityInside(BlockState pState, World pWorld, BlockPos pPos, Entity pEntity) {
         if (pEntity instanceof PlayerEntity) {
             pEntity.fireImmune();
             ((LivingEntity) pEntity).addEffect(new EffectInstance(Effects.FIRE_RESISTANCE, 20, 0, false, false, false));
@@ -35,13 +35,13 @@ public class ResistanceLavaFluidBlock extends FlowingFluidBlock {
     }
 
     @Override
-    public void neighborChanged(BlockState state, World world, BlockPos pos, Block block, BlockPos fromPos, boolean notify) {
-        if (this.shouldSpreadLiquid(world, pos, state)) {
-            world.getLiquidTicks().scheduleTick(pos, state.getFluidState().getType(), this.getFluid().getTickDelay(world));
+    public void neighborChanged(BlockState pState, World pWorld, BlockPos pPos, Block pBlock, BlockPos fromPos, boolean notify) {
+        if (this.shouldSpreadLiquid(pWorld, pPos)) {
+            pWorld.getLiquidTicks().scheduleTick(pPos, pState.getFluidState().getType(), this.getFluid().getTickDelay(pWorld));
         }
     }
 
-    private boolean shouldSpreadLiquid(World pWorld, BlockPos pPos, BlockState pBlockState) {
+    private boolean shouldSpreadLiquid(World pWorld, BlockPos pPos) {
         if (this.getFluid().is(FluidTags.LAVA)) {
             boolean flag = pWorld.getBlockState(pPos.below()).is(Blocks.SOUL_SOIL);
 

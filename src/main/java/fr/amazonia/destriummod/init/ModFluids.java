@@ -36,7 +36,7 @@ public class ModFluids {
 
 
     //Properties
-    public static final ForgeFlowingFluid.Properties POISON_WATER_PROPERTIES = new ForgeFlowingFluid.Properties(POISON_WATER_FLUID, POISON_WATER_FLOWING, FluidAttributes.Water.builder(WATER_STILL_RL, WATER_FLOWING_RL).color(0xFFFFFFFF).density(500).luminosity(2).viscosity(100).gaseous().sound(SoundEvents.AMBIENT_UNDERWATER_LOOP).overlay(WATER_OVERLAY_RL)).slopeFindDistance(4).levelDecreasePerBlock(1).block(ModBlocks.POISON_WATER_BLOCK);
+    public static final ForgeFlowingFluid.Properties POISON_WATER_PROPERTIES = new ForgeFlowingFluid.Properties(POISON_WATER_FLUID, POISON_WATER_FLOWING, FluidAttributes.Water.builder(WATER_STILL_RL, WATER_FLOWING_RL).color(0xFFFFFFFF).density(500).luminosity(2).viscosity(100).gaseous().sound(SoundEvents.AMBIENT_UNDERWATER_LOOP).overlay(WATER_OVERLAY_RL)).slopeFindDistance(4).levelDecreasePerBlock(1).block(ModBlocks.POISON_WATER_BLOCK).bucket(ModItems.POISON_WATER_BUCKET);
 
-    public static final ForgeFlowingFluid.Properties RESISTANCE_LAVA_PROPERTIES = new ForgeFlowingFluid.Properties(RESISTANCE_LAVA_FLUID, RESISTANCE_LAVA_FLOWING, FluidAttributes.builder(LAVA_STILL_RL, LAVA_FLOWING_RL).density(500).luminosity(2).viscosity(100).gaseous().sound(SoundEvents.AMBIENT_UNDERWATER_LOOP).overlay(WATER_OVERLAY_RL)).slopeFindDistance(4).levelDecreasePerBlock(1).block(ModBlocks.RESISTANCE_LAVA_BLOCK);
+    public static final ForgeFlowingFluid.Properties RESISTANCE_LAVA_PROPERTIES = new ForgeFlowingFluid.Properties(RESISTANCE_LAVA_FLUID, RESISTANCE_LAVA_FLOWING, FluidAttributes.builder(LAVA_STILL_RL, LAVA_FLOWING_RL).density(500).luminosity(2).viscosity(100).gaseous().sound(SoundEvents.AMBIENT_UNDERWATER_LOOP).overlay(WATER_OVERLAY_RL)).slopeFindDistance(4).levelDecreasePerBlock(1).block(ModBlocks.RESISTANCE_LAVA_BLOCK).bucket(ModItems.RESISTANCE_LAVA_BUCKET);
 }

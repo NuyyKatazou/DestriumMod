@@ -22,20 +22,20 @@ public class PoisonWaterFluidBlock extends FlowingFluidBlock {
         super(supplier, properties);
     }
 
-    public void entityInside(BlockState pState, World pLevel, BlockPos pPos, Entity pEntity) {
+    public void entityInside(BlockState pState, World pWorld, BlockPos pPos, Entity pEntity) {
         if (pEntity instanceof PlayerEntity) {
             pEntity.hurt(DamageSource.WITHER, 1.5F);
         }
     }
 
     @Override
-    public void neighborChanged(BlockState state, World world, BlockPos pos, Block block, BlockPos fromPos, boolean notify) {
-        if (this.shouldSpreadLiquid(world, pos, state)) {
-            world.getLiquidTicks().scheduleTick(pos, state.getFluidState().getType(), this.getFluid().getTickDelay(world));
+    public void neighborChanged(BlockState pState, World pWorld, BlockPos pPos, Block pBlock, BlockPos fromPos, boolean notify) {
+        if (this.shouldSpreadLiquid(pWorld, pPos)) {
+            pWorld.getLiquidTicks().scheduleTick(pPos, pState.getFluidState().getType(), this.getFluid().getTickDelay(pWorld));
         }
     }
 
-    private boolean shouldSpreadLiquid(World pWorld, BlockPos pPos, BlockState pBlockState) {
+    private boolean shouldSpreadLiquid(World pWorld, BlockPos pPos) {
         if (this.getFluid().is(FluidTags.LAVA)) {
             boolean flag = pWorld.getBlockState(pPos.below()).is(Blocks.SOUL_SOIL);
 
@@ -60,7 +60,7 @@ public class PoisonWaterFluidBlock extends FlowingFluidBlock {
         return true;
     }
 
-    private void fizz(World world, BlockPos pos) {
-        world.levelEvent(1501, pos, 0);
+    private void fizz(World pWorld, BlockPos pPos) {
+        pWorld.levelEvent(1501, pPos, 0);
     }
 }
