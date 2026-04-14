@@ -69,8 +69,8 @@ public abstract class PoisonWaterFluid extends ForgeFlowingFluid {
     }
 
     @Override
-    public BlockState createLegacyBlock(FluidState state) {
-        return ModBlocks.POISON_WATER_BLOCK.get().defaultBlockState().setValue(FlowingFluidBlock.LEVEL, getLegacyLevel(state));
+    public BlockState createLegacyBlock(FluidState pState) {
+        return ModBlocks.POISON_WATER_BLOCK.get().defaultBlockState().setValue(FlowingFluidBlock.LEVEL, getLegacyLevel(pState));
     }
 
     public boolean canBeReplacedWith(FluidState pFluidState, IBlockReader pBlockReader, BlockPos pPos, Fluid pFluid, Direction pDirection) {
@@ -84,18 +84,18 @@ public abstract class PoisonWaterFluid extends ForgeFlowingFluid {
             registerDefaultState(getStateDefinition().any().setValue(LEVEL, 7));
         }
 
-        protected void createFluidStateDefinition(StateContainer.Builder<Fluid, FluidState> builder) {
-            super.createFluidStateDefinition(builder);
-            builder.add(LEVEL);
+        protected void createFluidStateDefinition(StateContainer.Builder<Fluid, FluidState> pBuilder) {
+            super.createFluidStateDefinition(pBuilder);
+            pBuilder.add(LEVEL);
         }
 
         @Override
-        public int getAmount(FluidState state) {
-            return state.getValue(LEVEL);
+        public int getAmount(FluidState pState) {
+            return pState.getValue(LEVEL);
         }
 
         @Override
-        public boolean isSource(FluidState state) {
+        public boolean isSource(FluidState pState) {
             return false;
         }
     }
@@ -107,18 +107,18 @@ public abstract class PoisonWaterFluid extends ForgeFlowingFluid {
             registerDefaultState(getStateDefinition().any().setValue(LEVEL, 7));
         }
 
-        protected void createFluidStateDefinition(StateContainer.Builder<Fluid, FluidState> builder) {
-            super.createFluidStateDefinition(builder);
-            builder.add(LEVEL);
+        protected void createFluidStateDefinition(StateContainer.Builder<Fluid, FluidState> pBuilder) {
+            super.createFluidStateDefinition(pBuilder);
+            pBuilder.add(LEVEL);
         }
 
         @Override
-        public int getAmount(FluidState state) {
+        public int getAmount(FluidState pState) {
             return 8;
         }
 
         @Override
-        public boolean isSource(FluidState state) {
+        public boolean isSource(FluidState pState) {
             return true;
         }
     }

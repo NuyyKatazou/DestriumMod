@@ -66,8 +66,8 @@ public abstract class ResistanceLavaFluid extends ForgeFlowingFluid {
     }
 
     @Override
-    public BlockState createLegacyBlock(FluidState state) {
-        return ModBlocks.RESISTANCE_LAVA_BLOCK.get().defaultBlockState().setValue(FlowingFluidBlock.LEVEL, getLegacyLevel(state));
+    public BlockState createLegacyBlock(FluidState pState) {
+        return ModBlocks.RESISTANCE_LAVA_BLOCK.get().defaultBlockState().setValue(FlowingFluidBlock.LEVEL, getLegacyLevel(pState));
     }
 
     @Override
@@ -117,12 +117,12 @@ public abstract class ResistanceLavaFluid extends ForgeFlowingFluid {
         }
 
         @Override
-        public int getAmount(FluidState state) {
-            return state.getValue(LEVEL);
+        public int getAmount(FluidState pState) {
+            return pState.getValue(LEVEL);
         }
 
         @Override
-        public boolean isSource(FluidState state) {
+        public boolean isSource(FluidState pState) {
             return false;
         }
     }
@@ -141,12 +141,12 @@ public abstract class ResistanceLavaFluid extends ForgeFlowingFluid {
         }
 
         @Override
-        public int getAmount(FluidState state) {
+        public int getAmount(FluidState pState) {
             return 8;
         }
 
         @Override
-        public boolean isSource(FluidState state) {
+        public boolean isSource(FluidState pState) {
             return true;
         }
     }
