@@ -15,8 +15,8 @@ public enum ModArmorMaterials implements ArmorMaterial {
 
     NECKLACE("necklace", 74, new int[]{3, 6, 5, 1}, 0, SoundEvents.ARMOR_EQUIP_CHAIN, 0F, 0F, () -> Ingredient.of(ModItems.AMAZONITE_NUGGETS.get())),
     ARGONIDE("argonide", 74, new int[]{4, 7, 9, 4}, 18, SoundEvents.ARMOR_EQUIP_DIAMOND, 3.5F, 0.1F, () -> Ingredient.of(ModItems.ARGONIDE_INGOT.get())),
-    DESTRIUM("destrium", 478, new int[]{5, 8, 10, 5}, 3, SoundEvents.ARMOR_EQUIP_DIAMOND, 4.0F, 0.1F, () -> Ingredient.of(ModItems.DESTRIUM_INGOT.get())),
-    AMAZONITE("amazonite", 1256, new int[]{9, 12, 14, 9}, 25, SoundEvents.ARMOR_EQUIP_NETHERITE, 5.0F, 0.1F, () -> Ingredient.of(ModItems.AMAZONITE_FRAGMENT.get()));
+    DESTRIUM("destrium", 478, new int[]{5, 8, 10, 5}, 3, SoundEvents.ARMOR_EQUIP_DIAMOND, 4F, 0.1F, () -> Ingredient.of(ModItems.DESTRIUM_INGOT.get())),
+    AMAZONITE("amazonite", 1256, new int[]{9, 12, 14, 9}, 25, SoundEvents.ARMOR_EQUIP_NETHERITE, 5F, 0.1F, () -> Ingredient.of(ModItems.AMAZONITE_FRAGMENT.get()));
 
     private static final int[] HEALTH_PER_SLOT = new int[]{13, 15, 16, 11};
     private final String name;
