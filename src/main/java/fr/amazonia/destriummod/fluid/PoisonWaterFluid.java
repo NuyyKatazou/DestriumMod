@@ -19,13 +19,13 @@ public abstract class PoisonWaterFluid extends ForgeFlowingFluid {
     }
 
     @Override
-    public boolean canBeReplacedWith(FluidState p_76458_, BlockGetter p_76459_, BlockPos p_76460_, Fluid p_76461_, Direction p_76462_) {
-        return p_76462_ == Direction.DOWN && !p_76461_.is(FluidTags.WATER);
+    public boolean canBeReplacedWith(FluidState pState, BlockGetter pLevel, BlockPos pPos, Fluid pFluid, Direction pDirection) {
+        return pDirection == Direction.DOWN && !pFluid.is(FluidTags.WATER);
     }
 
     @Override
-    public BlockState createLegacyBlock(FluidState state) {
-        return ModBlocks.POISON_WATER_BLOCK.get().defaultBlockState().setValue(LiquidBlock.LEVEL, getLegacyLevel(state));
+    public BlockState createLegacyBlock(FluidState pState) {
+        return ModBlocks.POISON_WATER_BLOCK.get().defaultBlockState().setValue(LiquidBlock.LEVEL, getLegacyLevel(pState));
     }
 
     public static class Flowing extends PoisonWaterFluid {
@@ -35,18 +35,18 @@ public abstract class PoisonWaterFluid extends ForgeFlowingFluid {
             registerDefaultState(getStateDefinition().any().setValue(LEVEL, 7));
         }
 
-        protected void createFluidStateDefinition(StateDefinition.Builder<Fluid, FluidState> p_76476_) {
-            super.createFluidStateDefinition(p_76476_);
-            p_76476_.add(LEVEL);
+        protected void createFluidStateDefinition(StateDefinition.Builder<Fluid, FluidState> pBuilder) {
+            super.createFluidStateDefinition(pBuilder);
+            pBuilder.add(LEVEL);
         }
 
         @Override
-        public int getAmount(FluidState state) {
-            return state.getValue(LEVEL);
+        public int getAmount(FluidState pState) {
+            return pState.getValue(LEVEL);
         }
 
         @Override
-        public boolean isSource(FluidState state) {
+        public boolean isSource(FluidState pState) {
             return false;
         }
     }
@@ -58,18 +58,18 @@ public abstract class PoisonWaterFluid extends ForgeFlowingFluid {
             registerDefaultState(getStateDefinition().any().setValue(LEVEL, 7));
         }
 
-        protected void createFluidStateDefinition(StateDefinition.Builder<Fluid, FluidState> p_76476_) {
-            super.createFluidStateDefinition(p_76476_);
-            p_76476_.add(LEVEL);
+        protected void createFluidStateDefinition(StateDefinition.Builder<Fluid, FluidState> pBuilder) {
+            super.createFluidStateDefinition(pBuilder);
+            pBuilder.add(LEVEL);
         }
 
         @Override
-        public int getAmount(FluidState state) {
+        public int getAmount(FluidState pState) {
             return 8;
         }
 
         @Override
-        public boolean isSource(FluidState state) {
+        public boolean isSource(FluidState pState) {
             return true;
         }
     }

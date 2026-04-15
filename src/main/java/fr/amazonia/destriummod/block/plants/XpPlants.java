@@ -9,15 +9,15 @@ import net.minecraft.world.level.block.state.BlockState;
 
 public class XpPlants extends CropBlock {
 
-    public XpPlants(Properties properties) {
-        super(properties);
+    public XpPlants(Properties pProperties) {
+        super(pProperties);
     }
 
     protected ItemLike getBaseSeedId() {
         return ModItems.XP_SEEDS.get();
     }
 
-    public boolean isValidBonemealTarget(LevelReader p_255715_, BlockPos p_52259_, BlockState p_52260_, boolean p_52261_) {
+    public boolean isValidBonemealTarget(LevelReader pLevel, BlockPos pPos, BlockState pState, boolean pIsClient) {
         return false;
     }
 }

@@ -15,30 +15,30 @@ import net.minecraft.world.phys.BlockHitResult;
 
 public class OverworldPortalBlocks extends Block {
 
-    public OverworldPortalBlocks(Properties p_i48440_1_) {
-        super(p_i48440_1_);
+    public OverworldPortalBlocks(Properties pProperties) {
+        super(pProperties);
     }
 
-    public InteractionResult use(BlockState p_52923_, Level p_52924_, BlockPos p_52925_, Player p_52926_, InteractionHand p_52927_, BlockHitResult p_52928_) {
-        if (p_52926_.getVehicle() != null || p_52926_.isVehicle()) {
+    public InteractionResult use(BlockState pState, Level pLevel, BlockPos pPos, Player pPlayer, InteractionHand pHand, BlockHitResult pHit) {
+        if (pPlayer.getVehicle() != null || pPlayer.isVehicle()) {
             return InteractionResult.FAIL;
         }
-        if (!p_52924_.isClientSide()) {
-            if (!p_52926_.isCrouching() && p_52926_.canChangeDimensions()) {
-                MinecraftServer server = p_52924_.getServer();
+        if (!pLevel.isClientSide()) {
+            if (!pPlayer.isCrouching() && pPlayer.canChangeDimensions()) {
+                MinecraftServer server = pLevel.getServer();
                 if (server != null) {
-                    if (p_52924_.dimension() != DestriumMod.PARADIS_DIMENSION) {
+                    if (pLevel.dimension() != DestriumMod.PARADIS_DIMENSION) {
                         return InteractionResult.FAIL;
                     } else {
                         ServerLevel paradisWorld = server.getLevel(Level.OVERWORLD);
                         if (paradisWorld != null) {
-                            p_52926_.changeDimension(paradisWorld, new OverworldTeleporter(p_52925_, true));
+                            pPlayer.changeDimension(paradisWorld, new OverworldTeleporter(pPos, true));
                         }
                     }
                     return InteractionResult.SUCCESS;
                 }
             }
         }
-        return super.use(p_52923_, p_52924_, p_52925_, p_52926_, p_52927_, p_52928_);
+        return super.use(pState, pLevel, pPos, pPlayer, pHand, pHit);
     }
 }

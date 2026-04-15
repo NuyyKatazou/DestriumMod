@@ -14,12 +14,12 @@ import java.util.List;
 
 public class AmazoniteStick extends Item {
 
-    public AmazoniteStick(Properties p_i48487_1_) {
-        super(p_i48487_1_);
+    public AmazoniteStick(Properties pProperties) {
+        super(pProperties);
     }
 
     @OnlyIn(Dist.CLIENT)
-    public void appendHoverText(ItemStack p_270235_, @Nullable Level p_270688_, List<Component> p_270630_, TooltipFlag p_270170_) {
-        p_270630_.add(Component.translatable(this.getDescriptionId() + ".desc").withStyle(ChatFormatting.BLUE));
+    public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltip, TooltipFlag pFlag) {
+        pTooltip.add(Component.translatable(this.getDescriptionId() + ".desc").withStyle(ChatFormatting.BLUE));
     }
 }

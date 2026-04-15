@@ -12,18 +12,18 @@ import net.minecraft.world.level.Level;
 
 public class LuckyNecklaceArmor extends ArmorItem {
 
-    public LuckyNecklaceArmor(ArmorMaterial p_40386_, Type p_266831_, Properties p_40388_) {
-        super(p_40386_, p_266831_, p_40388_);
+    public LuckyNecklaceArmor(ArmorMaterial pMaterial, Type pType, Properties pProperties) {
+        super(pMaterial, pType, pProperties);
     }
 
     @Override
-    public void onArmorTick(ItemStack itemstack, Level world, Player player) {
+    public void onArmorTick(ItemStack stack, Level level, Player player) {
         if (player.getItemBySlot(EquipmentSlot.CHEST).getItem() == ModItems.LUCKY_NECKLACE.get()) {
             player.addEffect(new MobEffectInstance(MobEffects.LUCK, 300, 4, false, false, true));
         }
     }
 
-    public boolean isEnchantable(ItemStack p_77616_1_) {
+    public boolean isEnchantable(ItemStack pStack) {
         return false;
     }
 }

@@ -12,13 +12,13 @@ import java.util.function.Supplier;
 
 public class PoisonWaterFluidBlock extends LiquidBlock {
 
-    public PoisonWaterFluidBlock(Supplier<? extends FlowingFluid> supplier, Properties p_i48368_1_) {
-        super(supplier, p_i48368_1_);
+    public PoisonWaterFluidBlock(Supplier<? extends FlowingFluid> pFluid, Properties pProperties) {
+        super(pFluid, pProperties);
     }
 
-    public void entityInside(BlockState p_196262_1_, Level p_196262_2_, BlockPos p_196262_3_, Entity p_196262_4_) {
-        if (p_196262_4_ instanceof Player) {
-            p_196262_4_.hurt(p_196262_2_.damageSources().wither(), 1F);
+    public void entityInside(BlockState pState, Level pLevel, BlockPos pPos, Entity pEntity) {
+        if (pEntity instanceof Player) {
+            pEntity.hurt(pLevel.damageSources().wither(), 1F);
         }
     }
 }

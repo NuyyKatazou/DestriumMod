@@ -4,12 +4,8 @@ import com.mojang.blaze3d.shaders.FogShape;
 import com.mojang.blaze3d.systems.RenderSystem;
 import net.minecraft.client.Camera;
 import net.minecraft.client.multiplayer.ClientLevel;
-import net.minecraft.client.renderer.BiomeColors;
 import net.minecraft.client.renderer.FogRenderer;
-import net.minecraft.core.BlockPos;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.level.BlockAndTintGetter;
-import net.minecraft.world.level.material.FluidState;
 import net.minecraftforge.client.extensions.common.IClientFluidTypeExtensions;
 import net.minecraftforge.fluids.FluidType;
 import org.jetbrains.annotations.NotNull;
@@ -32,29 +28,6 @@ public class PoisonWaterFluidType extends FluidType {
         this.overlayTexture = overlayTexture;
         this.tintColor = tintColor;
         this.fogColor = fogColor;
-    }
-
-    public ResourceLocation getStillTexture() {
-        return stillTexture;
-    }
-
-    public ResourceLocation getFlowingTexture() {
-        return flowingTexture;
-    }
-
-    public int getTintColor(FluidState state, BlockAndTintGetter level, BlockPos pos) {
-        if (level != null && pos != null) {
-            return BiomeColors.getAverageWaterColor(level, pos);
-        }
-        return 0x0000AA;
-    }
-
-    public ResourceLocation getOverlayTexture() {
-        return overlayTexture;
-    }
-
-    public Vector3f getFogColor() {
-        return fogColor;
     }
 
     @Override

@@ -28,22 +28,6 @@ public class ResistanceLavaFluidType extends FluidType {
         this.fogColor = fogColor;
     }
 
-    public ResourceLocation getStillTexture() {
-        return stillTexture;
-    }
-
-    public ResourceLocation getFlowingTexture() {
-        return flowingTexture;
-    }
-
-    public ResourceLocation getOverlayTexture() {
-        return overlayTexture;
-    }
-
-    public Vector3f getFogColor() {
-        return fogColor;
-    }
-
     @Override
     public void initializeClient(Consumer<IClientFluidTypeExtensions> consumer) {
         consumer.accept(new IClientFluidTypeExtensions() {
@@ -63,17 +47,14 @@ public class ResistanceLavaFluidType extends FluidType {
             }
 
             @Override
-            public @NotNull Vector3f modifyFogColor(Camera camera, float partialTick, ClientLevel level,
-                                                    int renderDistance, float darkenWorldAmount, Vector3f fluidFogColor) {
+            public @NotNull Vector3f modifyFogColor(Camera camera, float partialTick, ClientLevel level, int renderDistance, float darkenWorldAmount, Vector3f fluidFogColor) {
                 return fogColor;
             }
 
             @Override
-            public void modifyFogRender(Camera camera, FogRenderer.FogMode mode, float renderDistance, float partialTick,
-                                        float nearDistance, float farDistance, FogShape shape) {
+            public void modifyFogRender(Camera camera, FogRenderer.FogMode mode, float renderDistance, float partialTick, float nearDistance, float farDistance, FogShape shape) {
                 RenderSystem.setShaderFogStart(0f);
                 RenderSystem.setShaderFogEnd(1f);
-                //RenderSystem.setShaderFogColor(1f, 1f, 0f, 0f);
                 RenderSystem.setShaderColor(1f, 1f, 1f, 1f);
             }
         });

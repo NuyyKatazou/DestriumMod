@@ -14,14 +14,14 @@ import java.util.List;
 
 public class AmazoniteIngot extends Item {
 
-    public AmazoniteIngot(Properties properties) {
-        super(properties);
+    public AmazoniteIngot(Properties pProperties) {
+        super(pProperties);
     }
 
     @OnlyIn(Dist.CLIENT)
-    public void appendHoverText(ItemStack p_270235_, @Nullable Level p_270688_, List<Component> p_270630_, TooltipFlag p_270170_) {
-        p_270630_.add(Component.translatable(this.getDescriptionId() + ".desc").withStyle(ChatFormatting.DARK_BLUE).withStyle(ChatFormatting.BOLD));
-        p_270630_.add(Component.translatable(this.getDescriptionId() + ".desc2").withStyle(ChatFormatting.DARK_GREEN));
-        p_270630_.add(Component.translatable(this.getDescriptionId() + ".desc3").withStyle(ChatFormatting.GOLD));
+    public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltip, TooltipFlag pFlag) {
+        pTooltip.add(Component.translatable(this.getDescriptionId() + ".desc").withStyle(ChatFormatting.DARK_BLUE).withStyle(ChatFormatting.BOLD));
+        pTooltip.add(Component.translatable(this.getDescriptionId() + ".desc2").withStyle(ChatFormatting.DARK_GREEN));
+        pTooltip.add(Component.translatable(this.getDescriptionId() + ".desc3").withStyle(ChatFormatting.GOLD));
     }
 }

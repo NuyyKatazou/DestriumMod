@@ -21,31 +21,31 @@ public abstract class ResistanceLavaFluid extends ForgeFlowingFluid {
     }
 
     @Override
-    public boolean canBeReplacedWith(FluidState p_76458_, BlockGetter p_76459_, BlockPos p_76460_, Fluid p_76461_, Direction p_76462_) {
-        return p_76462_ == Direction.DOWN && !p_76461_.is(FluidTags.WATER);
+    public boolean canBeReplacedWith(FluidState pState, BlockGetter pLevel, BlockPos pPos, Fluid pFluid, Direction pDirection) {
+        return pDirection == Direction.DOWN && !pFluid.is(FluidTags.WATER);
     }
 
     @Override
-    public BlockState createLegacyBlock(FluidState state) {
-        return ModBlocks.RESISTANCE_LAVA_BLOCK.get().defaultBlockState().setValue(LiquidBlock.LEVEL, getLegacyLevel(state));
+    public BlockState createLegacyBlock(FluidState pState) {
+        return ModBlocks.RESISTANCE_LAVA_BLOCK.get().defaultBlockState().setValue(LiquidBlock.LEVEL, getLegacyLevel(pState));
     }
 
-    private void fizz(LevelAccessor p_76213_, BlockPos p_76214_) {
-        p_76213_.levelEvent(1501, p_76214_, 0);
+    private void fizz(LevelAccessor pLevel, BlockPos pPos) {
+        pLevel.levelEvent(1501, pPos, 0);
     }
 
-    protected void spreadTo(LevelAccessor p_76220_, BlockPos p_76221_, BlockState p_76222_, Direction p_76223_, FluidState p_76224_) {
-        if (p_76223_ == Direction.DOWN) {
-            FluidState fluidstate = p_76220_.getFluidState(p_76221_);
+    protected void spreadTo(LevelAccessor pLevel, BlockPos pPos, BlockState pBlockState, Direction pDirection, FluidState pFluidState) {
+        if (pDirection == Direction.DOWN) {
+            FluidState fluidstate = pLevel.getFluidState(pPos);
             if (this.is(FluidTags.LAVA) && fluidstate.is(FluidTags.WATER)) {
-                if (p_76222_.getBlock() instanceof LiquidBlock) {
-                    p_76220_.setBlock(p_76221_, net.minecraftforge.event.ForgeEventFactory.fireFluidPlaceBlockEvent(p_76220_, p_76221_, p_76221_, Blocks.STONE.defaultBlockState()), 3);
+                if (pBlockState.getBlock() instanceof LiquidBlock) {
+                    pLevel.setBlock(pPos, net.minecraftforge.event.ForgeEventFactory.fireFluidPlaceBlockEvent(pLevel, pPos, pPos, Blocks.STONE.defaultBlockState()), 3);
                 }
-                this.fizz(p_76220_, p_76221_);
+                this.fizz(pLevel, pPos);
                 return;
             }
         }
-        super.spreadTo(p_76220_, p_76221_, p_76222_, p_76223_, p_76224_);
+        super.spreadTo(pLevel, pPos, pBlockState, pDirection, pFluidState);
     }
 
     public static class Flowing extends ResistanceLavaFluid {
@@ -56,18 +56,18 @@ public abstract class ResistanceLavaFluid extends ForgeFlowingFluid {
         }
 
         @Override
-        protected void createFluidStateDefinition(StateDefinition.Builder<Fluid, FluidState> p_76476_) {
-            super.createFluidStateDefinition(p_76476_);
-            p_76476_.add(LEVEL);
+        protected void createFluidStateDefinition(StateDefinition.Builder<Fluid, FluidState> pBuilder) {
+            super.createFluidStateDefinition(pBuilder);
+            pBuilder.add(LEVEL);
         }
 
         @Override
-        public int getAmount(FluidState state) {
-            return state.getValue(LEVEL);
+        public int getAmount(FluidState pState) {
+            return pState.getValue(LEVEL);
         }
 
         @Override
-        public boolean isSource(FluidState state) {
+        public boolean isSource(FluidState pState) {
             return false;
         }
     }
@@ -80,18 +80,18 @@ public abstract class ResistanceLavaFluid extends ForgeFlowingFluid {
         }
 
         @Override
-        protected void createFluidStateDefinition(StateDefinition.Builder<Fluid, FluidState> p_76476_) {
-            super.createFluidStateDefinition(p_76476_);
-            p_76476_.add(LEVEL);
+        protected void createFluidStateDefinition(StateDefinition.Builder<Fluid, FluidState> pBuilder) {
+            super.createFluidStateDefinition(pBuilder);
+            pBuilder.add(LEVEL);
         }
 
         @Override
-        public int getAmount(FluidState state) {
+        public int getAmount(FluidState pState) {
             return 8;
         }
 
         @Override
-        public boolean isSource(FluidState state) {
+        public boolean isSource(FluidState pState) {
             return true;
         }
     }

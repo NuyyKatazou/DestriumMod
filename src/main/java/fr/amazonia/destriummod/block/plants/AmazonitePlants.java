@@ -9,15 +9,15 @@ import net.minecraft.world.level.block.state.BlockState;
 
 public class AmazonitePlants extends CropBlock {
 
-    public AmazonitePlants(Properties properties) {
-        super(properties);
+    public AmazonitePlants(Properties pProperties) {
+        super(pProperties);
     }
 
     protected ItemLike getBaseSeedId() {
         return ModItems.AMAZONITE_SEEDS.get();
     }
 
-    public boolean isValidBonemealTarget(LevelReader p_255715_, BlockPos p_52259_, BlockState p_52260_, boolean p_52261_) {
+    public boolean isValidBonemealTarget(LevelReader pLevel, BlockPos pPos, BlockState pState, boolean pIsClient) {
         return false;
     }
 }

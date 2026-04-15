@@ -12,12 +12,12 @@ import net.minecraft.world.level.Level;
 
 public class SpeedArmorBoots extends ArmorItem {
 
-    public SpeedArmorBoots(ArmorMaterial p_40386_, Type p_266831_, Properties p_40388_) {
-        super(p_40386_, p_266831_, p_40388_);
+    public SpeedArmorBoots(ArmorMaterial pMaterial, Type pType, Properties pProperties) {
+        super(pMaterial, pType, pProperties);
     }
 
     @Override
-    public void onArmorTick(ItemStack itemstack, Level world, Player player) {
+    public void onArmorTick(ItemStack stack, Level level, Player player) {
         if (player.getItemBySlot(EquipmentSlot.FEET).getItem() == ModItems.SPEED_BOOTS.get()) {
             player.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 300, 2, false, false, true));
         }
