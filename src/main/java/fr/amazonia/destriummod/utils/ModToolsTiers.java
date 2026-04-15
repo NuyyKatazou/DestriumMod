@@ -5,7 +5,7 @@ import net.minecraft.tags.BlockTags;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraftforge.common.ForgeTier;
 
-public class ModItemTiers {
+public class ModToolsTiers {
 
     public static final ForgeTier ARGONIDE = new ForgeTier(4, 4048, 13f,
             5.5f, 18, BlockTags.NEEDS_DIAMOND_TOOL,
