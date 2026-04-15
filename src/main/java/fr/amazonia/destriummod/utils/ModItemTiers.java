@@ -7,10 +7,6 @@ import net.minecraftforge.common.ForgeTier;
 
 public class ModItemTiers {
 
-    public static final ForgeTier SPAWNERS = new ForgeTier(4, 3, 8f,
-            4f, 55, BlockTags.NEEDS_DIAMOND_TOOL,
-            () -> Ingredient.of(ModItems.AMAZONITE_NUGGETS.get()));
-
     public static final ForgeTier ARGONIDE = new ForgeTier(4, 4048, 13f,
             5.5f, 18, BlockTags.NEEDS_DIAMOND_TOOL,
             () -> Ingredient.of(ModItems.ARGONIDE_INGOT.get()));
@@ -22,4 +18,9 @@ public class ModItemTiers {
     public static final ForgeTier AMAZONITE = new ForgeTier(6, 45051, 20f,
             10f, 25, BlockTags.NEEDS_DIAMOND_TOOL,
             () -> Ingredient.of(ModItems.AMAZONITE_FRAGMENT.get()));
+
+
+    public static final ForgeTier SPAWNERS = new ForgeTier(4, 3, 8f,
+            4f, 55, BlockTags.NEEDS_DIAMOND_TOOL,
+            () -> Ingredient.of(ModItems.AMAZONITE_NUGGETS.get()));
 }
