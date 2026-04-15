@@ -9,10 +9,11 @@ import java.util.function.Supplier;
 
 public enum ModItemTiers implements IItemTier {
 
-    SPAWNERS(4, 3, 8F, 4F, 55, () -> Ingredient.of(ModItems.AMAZONITE_FRAGMENT.get())),
     ARGONIDE(4, 4048, 13F, 5.5F, 18, () -> Ingredient.of(ModItems.ARGONIDE_INGOT.get())),
     DESTRIUM(5, 8074, 18F, 7F, 20, () -> Ingredient.of(ModItems.DESTRIUM_INGOT.get())),
-    AMAZONITE(6, 45051, 20F, 10F, 25, () -> Ingredient.of(ModItems.AMAZONITE_FRAGMENT.get()));
+    AMAZONITE(6, 45051, 20F, 10F, 25, () -> Ingredient.of(ModItems.AMAZONITE_FRAGMENT.get())),
+
+    SPAWNERS(4, 3, 8F, 4F, 55, () -> Ingredient.of(ModItems.AMAZONITE_FRAGMENT.get()));
 
     private final int level;
     private final int uses;
