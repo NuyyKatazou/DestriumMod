@@ -1,8 +1,8 @@
 {
   "replace": false,
   "values": [
-    "destriummod:amazonite_seeds",
-    "destriummod:destrium_seeds",
-    "destriummod:xp_seeds"
+    "destriummod:amazonite_plants",
+    "destriummod:destrium_plants",
+    "destriummod:xp_plants"
   ]
 }
