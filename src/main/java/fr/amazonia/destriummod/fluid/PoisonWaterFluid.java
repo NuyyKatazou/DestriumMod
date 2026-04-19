@@ -7,6 +7,7 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.core.particles.ParticleOptions;
 import net.minecraft.core.particles.ParticleTypes;
+import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.tags.FluidTags;
@@ -21,6 +22,7 @@ import net.minecraft.world.level.material.FluidState;
 import net.minecraftforge.fluids.ForgeFlowingFluid;
 
 import javax.annotation.Nullable;
+import java.util.Optional;
 import java.util.Random;
 
 public abstract class PoisonWaterFluid extends ForgeFlowingFluid {
@@ -72,6 +74,10 @@ public abstract class PoisonWaterFluid extends ForgeFlowingFluid {
 
     public boolean canBeReplacedWith(FluidState pState, BlockGetter pLevel, BlockPos pPos, Fluid pFluid, Direction pDirection) {
         return pDirection == Direction.DOWN && !pFluid.is(FluidTags.WATER);
+    }
+
+    public Optional<SoundEvent> getPickupSound() {
+        return Optional.of(SoundEvents.BUCKET_FILL);
     }
 
     public static class Flowing extends PoisonWaterFluid {
