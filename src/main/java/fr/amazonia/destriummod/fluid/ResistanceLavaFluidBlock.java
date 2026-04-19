@@ -1,5 +1,6 @@
 package fr.amazonia.destriummod.fluid;
 
+import fr.amazonia.destriummod.init.ModBlocks;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.tags.FluidTags;
@@ -46,7 +47,7 @@ public class ResistanceLavaFluidBlock extends LiquidBlock {
             for (Direction direction : POSSIBLE_FLOW_DIRECTIONS) {
                 BlockPos blockpos = pPos.relative(direction.getOpposite());
                 if (pLevel.getFluidState(blockpos).is(FluidTags.WATER)) {
-                    Block block = pLevel.getFluidState(pPos).isSource() ? Blocks.OBSIDIAN : Blocks.COBBLESTONE;
+                    Block block = pLevel.getFluidState(pPos).isSource() ? Blocks.OBSIDIAN : ModBlocks.COBBLESTONE_COMPRESSED1.get();
                     pLevel.setBlockAndUpdate(pPos, net.minecraftforge.event.ForgeEventFactory.fireFluidPlaceBlockEvent(pLevel, pPos, pPos, block.defaultBlockState()));
                     this.fizz(pLevel, pPos);
                     return false;
