@@ -20,6 +20,6 @@ public class AmazoniteStick extends Item {
 
     @OnlyIn(Dist.CLIENT)
     public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltip, TooltipFlag pFlag) {
-        pTooltip.add(Component.translatable(this.getDescriptionId() + ".desc").withStyle(ChatFormatting.BLUE));
+        pTooltip.add(Component.translatable(this.getDescriptionId() + ".desc").withStyle(ChatFormatting.AQUA));
     }
 }

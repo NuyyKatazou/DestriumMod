@@ -8,7 +8,6 @@ import fr.amazonia.destriummod.item.food.DestriumApple;
 import fr.amazonia.destriummod.item.ingot.AmazoniteIngot;
 import fr.amazonia.destriummod.item.ingot.ArgonideIngot;
 import fr.amazonia.destriummod.item.ingot.DestriumIngot;
-import fr.amazonia.destriummod.item.ingot.RepairItems;
 import fr.amazonia.destriummod.item.stick.AmazoniteStick;
 import fr.amazonia.destriummod.item.stick.ArgonideStick;
 import fr.amazonia.destriummod.item.stick.DestriumStick;
@@ -91,7 +90,7 @@ public class ModItems {
     public static final RegistryObject<Item> ARGONIDE_NUGGETS = ITEMS.register("argonide_nuggets", () -> new Item(new Item.Properties().rarity(ModRarity.ARGONIDE).fireResistant()));
     public static final RegistryObject<Item> ARGONIDE_INGOT = ITEMS.register("argonide_ingot", () -> new ArgonideIngot(new Item.Properties().rarity(ModRarity.ARGONIDE).fireResistant()));
     public static final RegistryObject<Item> REPAIR_FRAGMENT = ITEMS.register("repair_fragment", () -> new Item(new Item.Properties().rarity(ModRarity.REPAIR).fireResistant()));
-    public static final RegistryObject<Item> REPAIR_GEM = ITEMS.register("repair_gem", () -> new RepairItems(new Item.Properties().rarity(ModRarity.REPAIR).fireResistant()));
+    public static final RegistryObject<Item> REPAIR_GEM = ITEMS.register("repair_gem", () -> new Item(new Item.Properties().rarity(ModRarity.REPAIR).fireResistant()));
 
     public static final RegistryObject<Item> EMERALD_NUGGETS = ITEMS.register("emerald_nuggets", () -> new Item(new Item.Properties().rarity(ModRarity.EMERALD)));
     public static final RegistryObject<Item> DIAMOND_NUGGETS = ITEMS.register("diamond_nuggets", () -> new Item(new Item.Properties().rarity(ModRarity.DIAMOND)));
