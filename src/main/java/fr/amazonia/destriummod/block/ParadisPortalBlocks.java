@@ -19,6 +19,7 @@ public class ParadisPortalBlocks extends Block {
         super(pProperties);
     }
 
+    @Override
     public InteractionResult use(BlockState pState, Level pLevel, BlockPos pPos, Player pPlayer, InteractionHand pHand, BlockHitResult pHit) {
         if (pPlayer.getVehicle() != null || pPlayer.isVehicle()) {
             return InteractionResult.FAIL;
