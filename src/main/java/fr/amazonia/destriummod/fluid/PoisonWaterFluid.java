@@ -5,7 +5,6 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.tags.FluidTags;
 import net.minecraft.world.level.BlockGetter;
-import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.LiquidBlock;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
@@ -20,7 +19,7 @@ public abstract class PoisonWaterFluid extends ForgeFlowingFluid {
     }
 
     @Override
-    public boolean canBeReplacedWith(FluidState pFluidState, BlockGetter pBlockReader, BlockPos pPos, Fluid pFluid, Direction pDirection) {
+    public boolean canBeReplacedWith(FluidState pFluidState, BlockGetter pLevel, BlockPos pPos, Fluid pFluid, Direction pDirection) {
         return pDirection == Direction.DOWN && !pFluid.is(FluidTags.WATER);
     }
 

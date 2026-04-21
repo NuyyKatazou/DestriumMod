@@ -21,8 +21,8 @@ public abstract class ResistanceLavaFluid extends ForgeFlowingFluid {
     }
 
     @Override
-    public boolean canBeReplacedWith(FluidState pFluidState, BlockGetter pBlockReader, BlockPos pPos, Fluid pFluid, Direction pDirection) {
-        return pFluidState.getHeight(pBlockReader, pPos) >= 0.44444445F && pFluid.is(FluidTags.WATER);
+    public boolean canBeReplacedWith(FluidState pFluidState, BlockGetter pLevel, BlockPos pPos, Fluid pFluid, Direction pDirection) {
+        return pFluidState.getHeight(pLevel, pPos) >= 0.44444445F && pFluid.is(FluidTags.WATER);
     }
 
     @Override
