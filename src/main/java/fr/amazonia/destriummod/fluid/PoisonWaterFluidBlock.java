@@ -30,12 +30,12 @@ public class PoisonWaterFluidBlock extends LiquidBlock {
 
     @Override
     public void neighborChanged(BlockState pState, Level pLevel, BlockPos pPos, Block pBlock, BlockPos pFromPos, boolean pIsMoving) {
-        if (this.shouldSpreadLiquid(pLevel, pPos)) {
+        if (this.shouldSpreadLiquid(pLevel, pPos, pState)) {
             pLevel.scheduleTick(pPos, pState.getFluidState().getType(), this.getFluid().getTickDelay(pLevel));
         }
     }
 
-    private boolean shouldSpreadLiquid(Level pLevel, BlockPos pPos) {
+    private boolean shouldSpreadLiquid(Level pLevel, BlockPos pPos, BlockState pState) {
         if (this.getFluid().is(FluidTags.LAVA)) {
             boolean flag = pLevel.getBlockState(pPos.below()).is(Blocks.SOUL_SOIL);
 
@@ -43,13 +43,13 @@ public class PoisonWaterFluidBlock extends LiquidBlock {
                 BlockPos blockpos = pPos.relative(direction.getOpposite());
                 if (pLevel.getFluidState(blockpos).is(FluidTags.WATER)) {
                     Block block = pLevel.getFluidState(pPos).isSource() ? Blocks.OBSIDIAN : ModBlocks.COBBLESTONE_COMPRESSED1.get();
-                    pLevel.setBlockAndUpdate(pPos, net.minecraftforge.event.ForgeEventFactory.fireFluidPlaceBlockEvent(pLevel, pPos, pPos, block.defaultBlockState()));
+                    pLevel.setBlockAndUpdate(pPos, block.defaultBlockState());
                     this.fizz(pLevel, pPos);
                     return false;
                 }
 
                 if (flag && pLevel.getBlockState(blockpos).is(Blocks.BLUE_ICE)) {
-                    pLevel.setBlockAndUpdate(pPos, net.minecraftforge.event.ForgeEventFactory.fireFluidPlaceBlockEvent(pLevel, pPos, pPos, Blocks.BASALT.defaultBlockState()));
+                    pLevel.setBlockAndUpdate(pPos, Blocks.BASALT.defaultBlockState());
                     this.fizz(pLevel, pPos);
                     return false;
                 }
