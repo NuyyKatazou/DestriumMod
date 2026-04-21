@@ -1,10 +1,20 @@
 package fr.amazonia.destriummod.fluid;
 
 import fr.amazonia.destriummod.init.ModBlocks;
+import fr.amazonia.destriummod.init.ModFluids;
+import fr.amazonia.destriummod.init.ModItems;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
+import net.minecraft.core.particles.ParticleOptions;
+import net.minecraft.core.particles.ParticleTypes;
+import net.minecraft.sounds.SoundEvent;
+import net.minecraft.sounds.SoundEvents;
+import net.minecraft.sounds.SoundSource;
 import net.minecraft.tags.FluidTags;
+import net.minecraft.util.RandomSource;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.level.BlockGetter;
+import net.minecraft.world.level.Level;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.LiquidBlock;
@@ -14,6 +24,9 @@ import net.minecraft.world.level.material.Fluid;
 import net.minecraft.world.level.material.FluidState;
 import net.minecraftforge.fluids.ForgeFlowingFluid;
 
+import javax.annotation.Nullable;
+import java.util.Optional;
+
 public abstract class ResistanceLavaFluid extends ForgeFlowingFluid {
 
     protected ResistanceLavaFluid(Properties properties) {
@@ -21,8 +34,57 @@ public abstract class ResistanceLavaFluid extends ForgeFlowingFluid {
     }
 
     @Override
-    public boolean canBeReplacedWith(FluidState pFluidState, BlockGetter pLevel, BlockPos pPos, Fluid pFluid, Direction pDirection) {
-        return pFluidState.getHeight(pLevel, pPos) >= 0.44444445F && pFluid.is(FluidTags.WATER);
+    public Fluid getFlowing() {
+        return ModFluids.RESISTANCE_LAVA_FLOWING.get();
+    }
+
+    @Override
+    public Fluid getSource() {
+        return ModFluids.RESISTANCE_LAVA_FLUID.get();
+    }
+
+    @Override
+    public Item getBucket() {
+        return ModItems.RESISTANCE_LAVA_BUCKET.get();
+    }
+
+    @Override
+    public void animateTick(Level pLevel, BlockPos pPos, FluidState pState, RandomSource pRandom) {
+        BlockPos blockpos = pPos.above();
+        if (pLevel.getBlockState(blockpos).isAir() && !pLevel.getBlockState(blockpos).isSolidRender(pLevel, blockpos)) {
+            if (pRandom.nextInt(100) == 0) {
+                double d0 = (double) pPos.getX() + pRandom.nextDouble();
+                double d1 = (double) pPos.getY() + 1.0;
+                double d2 = (double) pPos.getZ() + pRandom.nextDouble();
+                pLevel.addParticle(ParticleTypes.LAVA, d0, d1, d2, 0.0, 0.0, 0.0);
+                pLevel.playLocalSound(
+                        d0, d1, d2, SoundEvents.LAVA_POP, SoundSource.BLOCKS, 0.2F + pRandom.nextFloat() * 0.2F, 0.9F + pRandom.nextFloat() * 0.15F, false
+                );
+            }
+            if (pRandom.nextInt(200) == 0) {
+                pLevel.playLocalSound(
+                        pPos.getX(),
+                        pPos.getY(),
+                        pPos.getZ(),
+                        SoundEvents.LAVA_AMBIENT,
+                        SoundSource.BLOCKS,
+                        0.2F + pRandom.nextFloat() * 0.2F,
+                        0.9F + pRandom.nextFloat() * 0.15F,
+                        false
+                );
+            }
+        }
+    }
+
+    @Nullable
+    @Override
+    public ParticleOptions getDripParticle() {
+        return ParticleTypes.DRIPPING_LAVA;
+    }
+
+    @Override
+    public boolean canBeReplacedWith(FluidState pFluidState, BlockGetter pBlockReader, BlockPos pPos, Fluid pFluid, Direction pDirection) {
+        return pFluidState.getHeight(pBlockReader, pPos) >= 0.44444445F && pFluid.is(FluidTags.WATER);
     }
 
     @Override
@@ -34,6 +96,7 @@ public abstract class ResistanceLavaFluid extends ForgeFlowingFluid {
         pLevel.levelEvent(1501, pPos, 0);
     }
 
+    @Override
     protected void spreadTo(LevelAccessor pLevel, BlockPos pPos, BlockState pBlockState, Direction pDirection, FluidState pFluidState) {
         if (pDirection == Direction.DOWN) {
             FluidState fluidstate = pLevel.getFluidState(pPos);
@@ -46,6 +109,11 @@ public abstract class ResistanceLavaFluid extends ForgeFlowingFluid {
             }
         }
         super.spreadTo(pLevel, pPos, pBlockState, pDirection, pFluidState);
+    }
+
+    @Override
+    public Optional<SoundEvent> getPickupSound() {
+        return Optional.of(SoundEvents.BUCKET_FILL_LAVA);
     }
 
     public static class Flowing extends ResistanceLavaFluid {
