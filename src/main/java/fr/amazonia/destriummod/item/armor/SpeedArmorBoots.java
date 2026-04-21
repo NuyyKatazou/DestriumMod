@@ -13,8 +13,8 @@ import net.minecraft.world.level.Level;
 
 public class SpeedArmorBoots extends ArmorItem {
 
-    public SpeedArmorBoots(Holder<ArmorMaterial> material, Type type, Properties properties) {
-        super(material, type, properties);
+    public SpeedArmorBoots(Holder<ArmorMaterial> pMaterial, Type pType, Properties pProperties) {
+        super(pMaterial, pType, pProperties);
     }
 
     public void onInventoryTick(ItemStack stack, Level level, Player player, int slotIndex, int selectedIndex) {

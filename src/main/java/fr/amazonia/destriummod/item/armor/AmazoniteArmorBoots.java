@@ -18,8 +18,8 @@ import java.util.List;
 
 public class AmazoniteArmorBoots extends ArmorItem {
 
-    public AmazoniteArmorBoots(Holder<ArmorMaterial> material, Type type, Properties properties) {
-        super(material, type, properties);
+    public AmazoniteArmorBoots(Holder<ArmorMaterial> pMaterial, Type pType, Properties pProperties) {
+        super(pMaterial, pType, pProperties);
     }
 
     public void onInventoryTick(ItemStack stack, Level level, Player player, int slotIndex, int selectedIndex) {

@@ -12,8 +12,8 @@ import java.util.List;
 
 public class AmazoniteStick extends Item {
 
-    public AmazoniteStick(Properties p_i48487_1_) {
-        super(p_i48487_1_);
+    public AmazoniteStick(Properties pProperties) {
+        super(pProperties);
     }
 
     @OnlyIn(Dist.CLIENT)

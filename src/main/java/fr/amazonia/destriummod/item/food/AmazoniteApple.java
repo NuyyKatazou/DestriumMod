@@ -12,8 +12,8 @@ import java.util.List;
 
 public class AmazoniteApple extends Item {
 
-    public AmazoniteApple(Properties properties) {
-        super(properties);
+    public AmazoniteApple(Properties pProperties) {
+        super(pProperties);
     }
 
     @OnlyIn(Dist.CLIENT)

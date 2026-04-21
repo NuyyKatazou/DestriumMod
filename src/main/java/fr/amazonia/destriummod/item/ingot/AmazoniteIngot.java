@@ -12,8 +12,8 @@ import java.util.List;
 
 public class AmazoniteIngot extends Item {
 
-    public AmazoniteIngot(Properties properties) {
-        super(properties);
+    public AmazoniteIngot(Properties pProperties) {
+        super(pProperties);
     }
 
     @OnlyIn(Dist.CLIENT)

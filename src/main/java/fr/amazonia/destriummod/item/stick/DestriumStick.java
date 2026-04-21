@@ -12,8 +12,8 @@ import java.util.List;
 
 public class DestriumStick extends Item {
 
-    public DestriumStick(Properties p_i48487_1_) {
-        super(p_i48487_1_);
+    public DestriumStick(Properties pProperties) {
+        super(pProperties);
     }
 
     @OnlyIn(Dist.CLIENT)

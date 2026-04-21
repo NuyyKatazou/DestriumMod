@@ -6,7 +6,7 @@ import net.minecraft.world.item.ArmorMaterial;
 
 public class ArgonideArmor extends ArmorItem {
 
-    public ArgonideArmor(Holder<ArmorMaterial> material, Type type, Properties properties) {
-        super(material, type, properties);
+    public ArgonideArmor(Holder<ArmorMaterial> pMaterial, Type pType, Properties pProperties) {
+        super(pMaterial, pType, pProperties);
     }
 }

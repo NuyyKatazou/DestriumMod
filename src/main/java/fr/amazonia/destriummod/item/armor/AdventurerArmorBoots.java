@@ -13,8 +13,8 @@ import net.minecraft.world.level.Level;
 
 public class AdventurerArmorBoots extends ArmorItem {
 
-    public AdventurerArmorBoots(Holder<ArmorMaterial> material, Type type, Properties properties) {
-        super(material, type, properties);
+    public AdventurerArmorBoots(Holder<ArmorMaterial> pMaterial, Type pType, Properties pProperties) {
+        super(pMaterial, pType, pProperties);
     }
 
     public void onInventoryTick(ItemStack stack, Level level, Player player, int slotIndex, int selectedIndex) {

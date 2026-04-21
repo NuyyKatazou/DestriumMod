@@ -23,12 +23,14 @@ import net.minecraft.world.level.material.Fluids;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.HitResult;
 
+import java.util.function.Supplier;
+
 public class InfinityWaterBucketItem extends BucketItem {
 
     private final Fluid content;
     private final java.util.function.Supplier<? extends Fluid> fluidSupplier;
 
-    public InfinityWaterBucketItem(java.util.function.Supplier<? extends Fluid> supplier, Properties builder) {
+    public InfinityWaterBucketItem(Supplier<? extends Fluid> supplier, Properties builder) {
         super(supplier, builder);
         this.content = null;
         this.fluidSupplier = supplier;
@@ -93,7 +95,7 @@ public class InfinityWaterBucketItem extends BucketItem {
         return fluidSupplier.get();
     }
 
-    protected boolean canBlockContainFluid(Level worldIn, BlockPos posIn, BlockState blockstate) {
-        return blockstate.getBlock() instanceof LiquidBlockContainer liquid && liquid.canPlaceLiquid(null, worldIn, posIn, blockstate, this.content);
+    protected boolean canBlockContainFluid(Level pLevel, BlockPos pPos, BlockState pState) {
+        return pState.getBlock() instanceof LiquidBlockContainer liquid && liquid.canPlaceLiquid(null, pLevel, pPos, pState, this.content);
     }
 }

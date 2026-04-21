@@ -6,7 +6,7 @@ import net.minecraft.world.item.ArmorMaterial;
 
 public class DestriumArmor extends ArmorItem {
 
-    public DestriumArmor(Holder<ArmorMaterial> material, Type type, Properties properties) {
-        super(material, type, properties);
+    public DestriumArmor(Holder<ArmorMaterial> pMaterial, Type pType, Properties pProperties) {
+        super(pMaterial, pType, pProperties);
     }
 }

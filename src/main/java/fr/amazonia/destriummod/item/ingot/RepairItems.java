@@ -12,8 +12,8 @@ import java.util.List;
 
 public class RepairItems extends Item {
 
-    public RepairItems(Properties properties) {
-        super(properties);
+    public RepairItems(Properties pProperties) {
+        super(pProperties);
     }
 
     @OnlyIn(Dist.CLIENT)

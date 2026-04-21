@@ -13,8 +13,8 @@ import net.minecraft.world.level.Level;
 
 public class LuckyNecklaceArmor extends ArmorItem {
 
-    public LuckyNecklaceArmor(Holder<ArmorMaterial> material, Type type, Properties properties) {
-        super(material, type, properties);
+    public LuckyNecklaceArmor(Holder<ArmorMaterial> pMaterial, Type pType, Properties pProperties) {
+        super(pMaterial, pType, pProperties);
     }
 
     public void onInventoryTick(ItemStack stack, Level level, Player player, int slotIndex, int selectedIndex) {
@@ -23,7 +23,7 @@ public class LuckyNecklaceArmor extends ArmorItem {
         }
     }
 
-    public boolean isEnchantable(ItemStack p_77616_1_) {
+    public boolean isEnchantable(ItemStack pStack) {
         return false;
     }
 }

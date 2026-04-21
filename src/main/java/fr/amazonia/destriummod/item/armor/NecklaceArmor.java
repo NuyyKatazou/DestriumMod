@@ -7,11 +7,11 @@ import net.minecraft.world.item.ItemStack;
 
 public class NecklaceArmor extends ArmorItem {
 
-    public NecklaceArmor(Holder<ArmorMaterial> material, Type type, Properties properties) {
-        super(material, type, properties);
+    public NecklaceArmor(Holder<ArmorMaterial> pMaterial, Type pType, Properties pProperties) {
+        super(pMaterial, pType, pProperties);
     }
 
-    public boolean isEnchantable(ItemStack p_77616_1_) {
+    public boolean isEnchantable(ItemStack pStack) {
         return false;
     }
 }

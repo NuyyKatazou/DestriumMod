@@ -12,8 +12,8 @@ import java.util.List;
 
 public class ArgonideIngot extends Item {
 
-    public ArgonideIngot(Properties properties) {
-        super(properties);
+    public ArgonideIngot(Properties pProperties) {
+        super(pProperties);
     }
 
     @OnlyIn(Dist.CLIENT)

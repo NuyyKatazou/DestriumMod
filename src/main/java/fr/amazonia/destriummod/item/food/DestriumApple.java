@@ -12,8 +12,8 @@ import java.util.List;
 
 public class DestriumApple extends Item {
 
-    public DestriumApple(Properties properties) {
-        super(properties);
+    public DestriumApple(Properties pProperties) {
+        super(pProperties);
     }
 
     @OnlyIn(Dist.CLIENT)

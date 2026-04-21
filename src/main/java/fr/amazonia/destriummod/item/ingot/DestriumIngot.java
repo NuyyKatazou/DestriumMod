@@ -12,8 +12,8 @@ import java.util.List;
 
 public class DestriumIngot extends Item {
 
-    public DestriumIngot(Properties properties) {
-        super(properties);
+    public DestriumIngot(Properties pProperties) {
+        super(pProperties);
     }
 
     @OnlyIn(Dist.CLIENT)

@@ -12,8 +12,8 @@ import java.util.List;
 
 public class ArgonideStick extends Item {
 
-    public ArgonideStick(Properties p_i48487_1_) {
-        super(p_i48487_1_);
+    public ArgonideStick(Properties pProperties) {
+        super(pProperties);
     }
 
     @OnlyIn(Dist.CLIENT)
