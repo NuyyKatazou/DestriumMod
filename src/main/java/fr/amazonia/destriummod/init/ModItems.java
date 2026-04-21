@@ -78,8 +78,8 @@ public class ModItems {
     public static final RegistryObject<Item> ADVENTURER_BOOTS = ITEMS.register("adventurer_boots", () -> new AdventurerArmorBoots(ModArmorMaterials.DESTRIUM, ArmorItem.Type.BOOTS, component(new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(478)).fireResistant(), "adventurer_boots", ChatFormatting.DARK_GREEN)));
     public static final RegistryObject<Item> REINFORCED_ADVENTURER_BOOTS = ITEMS.register("reinforced_adventurer_boots", () -> new ReinforcedAdventurerArmorBoots(ModArmorMaterials.AMAZONITE, ArmorItem.Type.BOOTS, component(new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(1256)).fireResistant(), "reinforced_adventurer_boots", ChatFormatting.DARK_BLUE)));
 
-    public static final RegistryObject<Item> NECKLACE = ITEMS.register("necklace", () -> new NecklaceArmor(ModArmorMaterials.NECKLACE, ArmorItem.Type.CHESTPLATE, component(new Item.Properties().durability(-1), "necklace", ChatFormatting.GRAY)));
-    public static final RegistryObject<Item> LUCKY_NECKLACE = ITEMS.register("lucky_necklace", () -> new LuckyNecklaceArmor(ModArmorMaterials.NECKLACE, ArmorItem.Type.CHESTPLATE, component(new Item.Properties().durability(-1), "lucky_necklace", ChatFormatting.DARK_GREEN)));
+    public static final RegistryObject<Item> NECKLACE = ITEMS.register("necklace", () -> new NecklaceArmor(ModArmorMaterials.NECKLACE, ArmorItem.Type.CHESTPLATE, component(new Item.Properties().durability(-1).fireResistant(), "necklace", ChatFormatting.GRAY)));
+    public static final RegistryObject<Item> LUCKY_NECKLACE = ITEMS.register("lucky_necklace", () -> new LuckyNecklaceArmor(ModArmorMaterials.NECKLACE, ArmorItem.Type.CHESTPLATE, component(new Item.Properties().durability(-1).fireResistant(), "lucky_necklace", ChatFormatting.DARK_GREEN)));
 
 
     //Minerals
