@@ -8,7 +8,6 @@ import fr.amazonia.destriummod.item.food.DestriumApple;
 import fr.amazonia.destriummod.item.ingot.AmazoniteIngot;
 import fr.amazonia.destriummod.item.ingot.ArgonideIngot;
 import fr.amazonia.destriummod.item.ingot.DestriumIngot;
-import fr.amazonia.destriummod.item.ingot.RepairItems;
 import fr.amazonia.destriummod.item.stick.AmazoniteStick;
 import fr.amazonia.destriummod.item.stick.ArgonideStick;
 import fr.amazonia.destriummod.item.stick.DestriumStick;
@@ -93,7 +92,7 @@ public class ModItems {
     public static final RegistryObject<Item> ARGONIDE_NUGGETS = ITEMS.register("argonide_nuggets", () -> new Item(component(new Item.Properties().fireResistant(), "argonide_nuggets", ChatFormatting.GOLD)));
     public static final RegistryObject<Item> ARGONIDE_INGOT = ITEMS.register("argonide_ingot", () -> new ArgonideIngot(component(new Item.Properties().fireResistant(), "argonide_ingot", ChatFormatting.GOLD)));
     public static final RegistryObject<Item> REPAIR_FRAGMENT = ITEMS.register("repair_fragment", () -> new Item(component(new Item.Properties().fireResistant(), "repair_fragment", ChatFormatting.LIGHT_PURPLE)));
-    public static final RegistryObject<Item> REPAIR_GEM = ITEMS.register("repair_gem", () -> new RepairItems(component(new Item.Properties().fireResistant(), "repair_gem", ChatFormatting.LIGHT_PURPLE)));
+    public static final RegistryObject<Item> REPAIR_GEM = ITEMS.register("repair_gem", () -> new Item(component(new Item.Properties().fireResistant(), "repair_gem", ChatFormatting.LIGHT_PURPLE)));
 
     public static final RegistryObject<Item> EMERALD_NUGGETS = ITEMS.register("emerald_nuggets", () -> new Item(component(new Item.Properties(), "emerald_nuggets", ChatFormatting.GREEN)));
     public static final RegistryObject<Item> DIAMOND_NUGGETS = ITEMS.register("diamond_nuggets", () -> new Item(component(new Item.Properties(), "diamond_nuggets", ChatFormatting.AQUA)));
