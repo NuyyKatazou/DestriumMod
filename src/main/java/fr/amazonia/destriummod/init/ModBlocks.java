@@ -111,7 +111,7 @@ public class ModBlocks {
     //Fluids Blocks
     public static final RegistryObject<FlowingFluidBlock> POISON_WATER_BLOCK = BLOCKS.register("poison_water_block", () -> new PoisonWaterFluidBlock(ModFluids.POISON_WATER_FLUID, AbstractBlock.Properties.of(Material.WATER).noCollission().strength(100f, 100f).noDrops().speedFactor(0.95F)));
 
-    public static final RegistryObject<FlowingFluidBlock> RESISTANCE_LAVA_BLOCK = BLOCKS.register("resistance_lava_block", () -> new ResistanceLavaFluidBlock(ModFluids.RESISTANCE_LAVA_FLUID, AbstractBlock.Properties.of(Material.LAVA).noCollission().strength(100f, 100f).noDrops().speedFactor(0.95F).lightLevel((p_235470_0_) -> 14)));
+    public static final RegistryObject<FlowingFluidBlock> RESISTANCE_LAVA_BLOCK = BLOCKS.register("resistance_lava_block", () -> new ResistanceLavaFluidBlock(ModFluids.RESISTANCE_LAVA_FLUID, AbstractBlock.Properties.of(Material.LAVA).noCollission().strength(100f, 100f).noDrops().speedFactor(0.95F).lightLevel((pLightEmission) -> 14)));
 
     public static RegistryObject<Block> createBlock(String name, Supplier<? extends Block> supplier) {
 
