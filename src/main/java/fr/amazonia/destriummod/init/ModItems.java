@@ -30,16 +30,16 @@ public class ModItems {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, DestriumMod.MODID);
 
     //Foods
-    public static final RegistryObject<Item> AMAZONITE_APPLE = ITEMS.register("amazonite_apple", () -> new AmazoniteApple(component(new Item.Properties().fireResistant().food(ModFoods.AMAZONITE_APPLE),"amazonite_apple", ChatFormatting.DARK_BLUE)));
+    public static final RegistryObject<Item> AMAZONITE_APPLE = ITEMS.register("amazonite_apple", () -> new AmazoniteApple(component(new Item.Properties().fireResistant().food(ModFoods.AMAZONITE_APPLE),"amazonite_apple", ChatFormatting.DARK_AQUA)));
     public static final RegistryObject<Item> DESTRIUM_APPLE = ITEMS.register("destrium_apple", () -> new DestriumApple(component(new Item.Properties().fireResistant().food(ModFoods.DESTRIUM_APPLE), "destrium_apple", ChatFormatting.DARK_GREEN)));
 
 
     //Armors and Tools
-    public static final RegistryObject<Item> AMAZONITE_SWORD = ITEMS.register("amazonite_sword", () -> new SwordItem(ModToolsTiers.AMAZONITE, component(new Item.Properties().attributes(SwordItem.createAttributes(ModToolsTiers.AMAZONITE, 2, -0.8f)).fireResistant(), "amazonite_sword", ChatFormatting.DARK_BLUE)));
-    public static final RegistryObject<Item> AMAZONITE_PICKAXE = ITEMS.register("amazonite_pickaxe", () -> new PickaxeItem(ModToolsTiers.AMAZONITE, component(new Item.Properties().attributes(SwordItem.createAttributes(ModToolsTiers.AMAZONITE, -1, -2.8f)).fireResistant(), "amazonite_pickaxe", ChatFormatting.DARK_BLUE)));
-    public static final RegistryObject<Item> AMAZONITE_AXE = ITEMS.register("amazonite_axe", () -> new AxeItem(ModToolsTiers.AMAZONITE, component(new Item.Properties().attributes(SwordItem.createAttributes(ModToolsTiers.AMAZONITE, 2, -3f)).fireResistant(), "amazonite_axe", ChatFormatting.DARK_BLUE)));
-    public static final RegistryObject<Item> AMAZONITE_SHOVEL = ITEMS.register("amazonite_shovel", () -> new ShovelItem(ModToolsTiers.AMAZONITE, component(new Item.Properties().attributes(SwordItem.createAttributes(ModToolsTiers.AMAZONITE, -2, -3f)).fireResistant(), "amazonite_shovel", ChatFormatting.DARK_BLUE)));
-    public static final RegistryObject<Item> AMAZONITE_HOES = ITEMS.register("amazonite_hoes", () -> new HoeItem(ModToolsTiers.AMAZONITE, component(new Item.Properties().attributes(SwordItem.createAttributes(ModToolsTiers.AMAZONITE, -7, -3f)).fireResistant(), "amazonite_hoes", ChatFormatting.DARK_BLUE)));
+    public static final RegistryObject<Item> AMAZONITE_SWORD = ITEMS.register("amazonite_sword", () -> new SwordItem(ModToolsTiers.AMAZONITE, component(new Item.Properties().attributes(SwordItem.createAttributes(ModToolsTiers.AMAZONITE, 2, -0.8f)).fireResistant(), "amazonite_sword", ChatFormatting.DARK_AQUA)));
+    public static final RegistryObject<Item> AMAZONITE_PICKAXE = ITEMS.register("amazonite_pickaxe", () -> new PickaxeItem(ModToolsTiers.AMAZONITE, component(new Item.Properties().attributes(SwordItem.createAttributes(ModToolsTiers.AMAZONITE, -1, -2.8f)).fireResistant(), "amazonite_pickaxe", ChatFormatting.DARK_AQUA)));
+    public static final RegistryObject<Item> AMAZONITE_AXE = ITEMS.register("amazonite_axe", () -> new AxeItem(ModToolsTiers.AMAZONITE, component(new Item.Properties().attributes(SwordItem.createAttributes(ModToolsTiers.AMAZONITE, 2, -3f)).fireResistant(), "amazonite_axe", ChatFormatting.DARK_AQUA)));
+    public static final RegistryObject<Item> AMAZONITE_SHOVEL = ITEMS.register("amazonite_shovel", () -> new ShovelItem(ModToolsTiers.AMAZONITE, component(new Item.Properties().attributes(SwordItem.createAttributes(ModToolsTiers.AMAZONITE, -2, -3f)).fireResistant(), "amazonite_shovel", ChatFormatting.DARK_AQUA)));
+    public static final RegistryObject<Item> AMAZONITE_HOES = ITEMS.register("amazonite_hoes", () -> new HoeItem(ModToolsTiers.AMAZONITE, component(new Item.Properties().attributes(SwordItem.createAttributes(ModToolsTiers.AMAZONITE, -7, -3f)).fireResistant(), "amazonite_hoes", ChatFormatting.DARK_AQUA)));
 
     public static final RegistryObject<Item> DESTRIUM_SWORD = ITEMS.register("destrium_sword", () -> new SwordItem(ModToolsTiers.DESTRIUM, component(new Item.Properties().attributes(SwordItem.createAttributes(ModToolsTiers.DESTRIUM, 1, -1.4f)).fireResistant(), "destrium_sword", ChatFormatting.DARK_GREEN)));
     public static final RegistryObject<Item> DESTRIUM_PICKAXE = ITEMS.register("destrium_pickaxe", () -> new PickaxeItem(ModToolsTiers.DESTRIUM, component(new Item.Properties().attributes(SwordItem.createAttributes(ModToolsTiers.DESTRIUM, 0, -2.8f)).fireResistant(), "destrium_pickaxe", ChatFormatting.DARK_GREEN)));
@@ -56,10 +56,10 @@ public class ModItems {
     public static final RegistryObject<Item> SPAWNERS_PICKAXE = ITEMS.register("spawners_pickaxe", () -> new SpawnersPickaxe(ModToolsTiers.SPAWNERS, component(new Item.Properties().attributes(SwordItem.createAttributes(ModToolsTiers.ARGONIDE, -1, -2.8f)).fireResistant(), "spawners_pickaxe", ChatFormatting.DARK_RED)));
 
 
-    public static final RegistryObject<Item> AMAZONITE_HELMET = ITEMS.register("amazonite_helmet", () -> new AmazoniteArmorHelmet(ModArmorMaterials.AMAZONITE, ArmorItem.Type.HELMET, component(new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(1256)).fireResistant(), "amazonite_helmet", ChatFormatting.DARK_BLUE)));
-    public static final RegistryObject<Item> AMAZONITE_CHESTPLATE = ITEMS.register("amazonite_chestplate", () -> new AmazoniteArmorChestPlate(ModArmorMaterials.AMAZONITE, ArmorItem.Type.CHESTPLATE, component(new Item.Properties().durability(ArmorItem.Type.CHESTPLATE.getDurability(1256)).fireResistant(), "amazonite_chestplate", ChatFormatting.DARK_BLUE)));
-    public static final RegistryObject<Item> AMAZONITE_LEGGINGS = ITEMS.register("amazonite_leggings", () -> new AmazoniteArmorLeggings(ModArmorMaterials.AMAZONITE, ArmorItem.Type.LEGGINGS, component(new Item.Properties().durability(ArmorItem.Type.LEGGINGS.getDurability(1256)).fireResistant(), "amazonite_leggings", ChatFormatting.DARK_BLUE)));
-    public static final RegistryObject<Item> AMAZONITE_BOOTS = ITEMS.register("amazonite_boots", () -> new AmazoniteArmorBoots(ModArmorMaterials.AMAZONITE, ArmorItem.Type.BOOTS, component(new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(1256)).fireResistant(), "amazonite_boots", ChatFormatting.DARK_BLUE)));
+    public static final RegistryObject<Item> AMAZONITE_HELMET = ITEMS.register("amazonite_helmet", () -> new AmazoniteArmorHelmet(ModArmorMaterials.AMAZONITE, ArmorItem.Type.HELMET, component(new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(1256)).fireResistant(), "amazonite_helmet", ChatFormatting.DARK_AQUA)));
+    public static final RegistryObject<Item> AMAZONITE_CHESTPLATE = ITEMS.register("amazonite_chestplate", () -> new AmazoniteArmorChestPlate(ModArmorMaterials.AMAZONITE, ArmorItem.Type.CHESTPLATE, component(new Item.Properties().durability(ArmorItem.Type.CHESTPLATE.getDurability(1256)).fireResistant(), "amazonite_chestplate", ChatFormatting.DARK_AQUA)));
+    public static final RegistryObject<Item> AMAZONITE_LEGGINGS = ITEMS.register("amazonite_leggings", () -> new AmazoniteArmorLeggings(ModArmorMaterials.AMAZONITE, ArmorItem.Type.LEGGINGS, component(new Item.Properties().durability(ArmorItem.Type.LEGGINGS.getDurability(1256)).fireResistant(), "amazonite_leggings", ChatFormatting.DARK_AQUA)));
+    public static final RegistryObject<Item> AMAZONITE_BOOTS = ITEMS.register("amazonite_boots", () -> new AmazoniteArmorBoots(ModArmorMaterials.AMAZONITE, ArmorItem.Type.BOOTS, component(new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(1256)).fireResistant(), "amazonite_boots", ChatFormatting.DARK_AQUA)));
 
     public static final RegistryObject<Item> DESTRIUM_HELMET = ITEMS.register("destrium_helmet", () -> new DestriumArmor(ModArmorMaterials.DESTRIUM, ArmorItem.Type.HELMET, component(new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(478)).fireResistant(), "destrium_helmet", ChatFormatting.DARK_GREEN)));
     public static final RegistryObject<Item> DESTRIUM_CHESTPLATE = ITEMS.register("destrium_chestplate", () -> new DestriumArmor(ModArmorMaterials.DESTRIUM, ArmorItem.Type.CHESTPLATE, component(new Item.Properties().durability(ArmorItem.Type.CHESTPLATE.getDurability(478)).fireResistant(), "destrium_chestplate", ChatFormatting.DARK_GREEN)));
@@ -75,18 +75,18 @@ public class ModItems {
     public static final RegistryObject<Item> FEATHER_BOOTS = ITEMS.register("feather_boots", () -> new ArmorItem(ModArmorMaterials.DESTRIUM, ArmorItem.Type.BOOTS, component(new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(478)).fireResistant(), "feather_boots", ChatFormatting.DARK_GREEN)));
     public static final RegistryObject<Item> JUMP_BOOTS = ITEMS.register("jump_boots", () -> new JumpArmorBoots(ModArmorMaterials.DESTRIUM, ArmorItem.Type.BOOTS, component(new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(478)).fireResistant(), "jump_boots", ChatFormatting.DARK_GREEN)));
     public static final RegistryObject<Item> ADVENTURER_BOOTS = ITEMS.register("adventurer_boots", () -> new AdventurerArmorBoots(ModArmorMaterials.DESTRIUM, ArmorItem.Type.BOOTS, component(new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(478)).fireResistant(), "adventurer_boots", ChatFormatting.DARK_GREEN)));
-    public static final RegistryObject<Item> REINFORCED_ADVENTURER_BOOTS = ITEMS.register("reinforced_adventurer_boots", () -> new ReinforcedAdventurerArmorBoots(ModArmorMaterials.AMAZONITE, ArmorItem.Type.BOOTS, component(new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(1256)).fireResistant(), "reinforced_adventurer_boots", ChatFormatting.DARK_BLUE)));
+    public static final RegistryObject<Item> REINFORCED_ADVENTURER_BOOTS = ITEMS.register("reinforced_adventurer_boots", () -> new ReinforcedAdventurerArmorBoots(ModArmorMaterials.AMAZONITE, ArmorItem.Type.BOOTS, component(new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(1256)).fireResistant(), "reinforced_adventurer_boots", ChatFormatting.DARK_AQUA)));
 
     public static final RegistryObject<Item> NECKLACE = ITEMS.register("necklace", () -> new NecklaceArmor(ModArmorMaterials.NECKLACE, ArmorItem.Type.CHESTPLATE, component(new Item.Properties().durability(-1).fireResistant(), "necklace", ChatFormatting.GRAY)));
     public static final RegistryObject<Item> LUCKY_NECKLACE = ITEMS.register("lucky_necklace", () -> new LuckyNecklaceArmor(ModArmorMaterials.NECKLACE, ArmorItem.Type.CHESTPLATE, component(new Item.Properties().durability(-1).fireResistant(), "lucky_necklace", ChatFormatting.DARK_GREEN)));
 
 
     //Minerals
-    public static final RegistryObject<Item> AMAZONITE_CRUMB = ITEMS.register("amazonite_crumb", () -> new Item(component(new Item.Properties().fireResistant(), "amazonite_crumb", ChatFormatting.DARK_BLUE)));
-    public static final RegistryObject<Item> AMAZONITE_DUST = ITEMS.register("amazonite_dust", () -> new Item(component(new Item.Properties().fireResistant(), "amazonite_dust", ChatFormatting.DARK_BLUE)));
-    public static final RegistryObject<Item> AMAZONITE_FRAGMENT = ITEMS.register("amazonite_fragment", () -> new Item(component(new Item.Properties().fireResistant(), "amazonite_fragment", ChatFormatting.DARK_BLUE)));
-    public static final RegistryObject<Item> AMAZONITE_NUGGETS = ITEMS.register("amazonite_nuggets", () -> new Item(component(new Item.Properties().fireResistant(), "amazonite_nuggets", ChatFormatting.DARK_BLUE)));
-    public static final RegistryObject<Item> AMAZONITE_INGOT = ITEMS.register("amazonite_ingot", () -> new AmazoniteIngot(component(new Item.Properties().fireResistant(), "amazonite_ingot", ChatFormatting.DARK_BLUE)));
+    public static final RegistryObject<Item> AMAZONITE_CRUMB = ITEMS.register("amazonite_crumb", () -> new Item(component(new Item.Properties().fireResistant(), "amazonite_crumb", ChatFormatting.DARK_AQUA)));
+    public static final RegistryObject<Item> AMAZONITE_DUST = ITEMS.register("amazonite_dust", () -> new Item(component(new Item.Properties().fireResistant(), "amazonite_dust", ChatFormatting.DARK_AQUA)));
+    public static final RegistryObject<Item> AMAZONITE_FRAGMENT = ITEMS.register("amazonite_fragment", () -> new Item(component(new Item.Properties().fireResistant(), "amazonite_fragment", ChatFormatting.DARK_AQUA)));
+    public static final RegistryObject<Item> AMAZONITE_NUGGETS = ITEMS.register("amazonite_nuggets", () -> new Item(component(new Item.Properties().fireResistant(), "amazonite_nuggets", ChatFormatting.DARK_AQUA)));
+    public static final RegistryObject<Item> AMAZONITE_INGOT = ITEMS.register("amazonite_ingot", () -> new AmazoniteIngot(component(new Item.Properties().fireResistant(), "amazonite_ingot", ChatFormatting.DARK_AQUA)));
     public static final RegistryObject<Item> DESTRIUM_NUGGETS = ITEMS.register("destrium_nuggets", () -> new Item(component(new Item.Properties().fireResistant(), "destrium_nuggets", ChatFormatting.DARK_GREEN)));
     public static final RegistryObject<Item> DESTRIUM_INGOT = ITEMS.register("destrium_ingot", () -> new DestriumIngot(component(new Item.Properties().fireResistant(), "destrium_ingot", ChatFormatting.DARK_GREEN)));
     public static final RegistryObject<Item> ARGONIDE_NUGGETS = ITEMS.register("argonide_nuggets", () -> new Item(component(new Item.Properties().fireResistant(), "argonide_nuggets", ChatFormatting.GOLD)));
@@ -99,7 +99,7 @@ public class ModItems {
     public static final RegistryObject<Item> NETHERITE_NUGGETS = ITEMS.register("netherite_nuggets", () -> new Item(component(new Item.Properties().fireResistant(),  "netherite_nuggets", ChatFormatting.DARK_GRAY)));
 
 
-    public static final RegistryObject<Item> AMAZONITE_STICK = ITEMS.register("amazonite_stick", () -> new AmazoniteStick(component(new Item.Properties().fireResistant(), "amazonite_stick", ChatFormatting.DARK_BLUE)));
+    public static final RegistryObject<Item> AMAZONITE_STICK = ITEMS.register("amazonite_stick", () -> new AmazoniteStick(component(new Item.Properties().fireResistant(), "amazonite_stick", ChatFormatting.DARK_AQUA)));
     public static final RegistryObject<Item> DESTRIUM_STICK = ITEMS.register("destrium_stick", () -> new DestriumStick(component(new Item.Properties().fireResistant(), "destrium_stick", ChatFormatting.DARK_GREEN)));
     public static final RegistryObject<Item> ARGONIDE_STICK = ITEMS.register("argonide_stick", () -> new ArgonideStick(component(new Item.Properties().fireResistant(), "argonide_stick", ChatFormatting.GOLD)));
 
@@ -114,11 +114,11 @@ public class ModItems {
     public static final RegistryObject<Item> NETHERITE_PLATE = ITEMS.register("netherite_plate", () -> new Item(component(new Item.Properties().fireResistant(), "netherite_plate", ChatFormatting.DARK_GRAY)));
     public static final RegistryObject<Item> ARGONIDE_PLATE = ITEMS.register("argonide_plate", () -> new Item(component(new Item.Properties().fireResistant(), "argonide_plate", ChatFormatting.GOLD)));
     public static final RegistryObject<Item> DESTRIUM_PLATE = ITEMS.register("destrium_plate", () -> new Item(component(new Item.Properties().fireResistant(), "destrium_plate", ChatFormatting.DARK_GREEN)));
-    public static final RegistryObject<Item> AMAZONITE_PLATE = ITEMS.register("amazonite_plate", () -> new Item(component(new Item.Properties().fireResistant(), "amazonite_plate", ChatFormatting.DARK_BLUE)));
+    public static final RegistryObject<Item> AMAZONITE_PLATE = ITEMS.register("amazonite_plate", () -> new Item(component(new Item.Properties().fireResistant(), "amazonite_plate", ChatFormatting.DARK_AQUA)));
 
 
     //Fluids
-    public static final RegistryObject<Item> POISON_WATER_BUCKET = ITEMS.register("poison_water_bucket", () -> new BucketItem(ModFluids.POISON_WATER_FLUID, component(new Item.Properties().stacksTo(1), "poison_water_bucket", ChatFormatting.DARK_BLUE)));
+    public static final RegistryObject<Item> POISON_WATER_BUCKET = ITEMS.register("poison_water_bucket", () -> new BucketItem(ModFluids.POISON_WATER_FLUID, component(new Item.Properties().stacksTo(1), "poison_water_bucket", ChatFormatting.DARK_AQUA)));
     public static final RegistryObject<Item> POISON_STAR = ITEMS.register("poison_star", () -> new Item(component(new Item.Properties(), "poison_star", ChatFormatting.RED)));
 
     public static final RegistryObject<Item> RESISTANCE_LAVA_BUCKET = ITEMS.register("resistance_lava_bucket", () -> new BucketItem(ModFluids.RESISTANCE_LAVA_FLUID, component(new Item.Properties().stacksTo(1), "resistance_lava_bucket", ChatFormatting.GOLD)));
@@ -128,7 +128,7 @@ public class ModItems {
 
 
     //Seeds
-    public static final RegistryObject<Item> DESTRIUM_SEEDS = ITEMS.register("destrium_seeds", () -> new ItemNameBlockItem(ModBlocks.DESTRIUM_PLANTS.get(), component(new Item.Properties().fireResistant(), "destrium_seeds", ChatFormatting.DARK_BLUE)));
+    public static final RegistryObject<Item> DESTRIUM_SEEDS = ITEMS.register("destrium_seeds", () -> new ItemNameBlockItem(ModBlocks.DESTRIUM_PLANTS.get(), component(new Item.Properties().fireResistant(), "destrium_seeds", ChatFormatting.DARK_AQUA)));
     public static final RegistryObject<Item> AMAZONITE_SEEDS = ITEMS.register("amazonite_seeds", () -> new ItemNameBlockItem(ModBlocks.AMAZONITE_PLANTS.get(), component(new Item.Properties().fireResistant(), "amazonite_seeds", ChatFormatting.DARK_GREEN)));
     public static final RegistryObject<Item> XP_SEEDS = ITEMS.register("xp_seeds", () -> new ItemNameBlockItem(ModBlocks.XP_PLANTS.get(), component(new Item.Properties().fireResistant(), "xp_seeds", ChatFormatting.DARK_PURPLE)));
 
