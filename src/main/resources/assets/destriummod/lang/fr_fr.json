@@ -109,23 +109,23 @@
   "block.destriummod.paradis_destrium_ore": "Minerai de Destrium",
   "block.destriummod.paradis_argonide_ore": "Minerai d'Argonide",
   "block.destriummod.cracked_argonide_ore": "Minerai Craquelé d'Argonide",
-  "block.destriummod.repair_ore": "Minerai de Réparation",
+  "block.destriummod.repair_ore": "Minerai de Gemme de Réparation",
 
 
-  "block.destriummod.cobblestone_compressed1": "Pierre Compressé I",
-  "block.destriummod.cobblestone_compressed2": "Pierre Compressé II",
-  "block.destriummod.cobblestone_compressed3": "Pierre Compressé III",
-  "block.destriummod.cobblestone_compressed4": "Pierre Compressé IV",
-  "block.destriummod.cobblestone_compressed5": "Pierre Compressé V",
-  "block.destriummod.cobblestone_compressed6": "Pierre Compressé VI",
-  "block.destriummod.cobblestone_compressed7": "Pierre Compressé VII",
-  "block.destriummod.cobblestone_compressed8": "Pierre Compressé VIII",
+  "block.destriummod.cobblestone_compressed1": "Pierres Compressées I",
+  "block.destriummod.cobblestone_compressed2": "Pierres Compressées II",
+  "block.destriummod.cobblestone_compressed3": "Pierres Compressées III",
+  "block.destriummod.cobblestone_compressed4": "Pierres Compressées IV",
+  "block.destriummod.cobblestone_compressed5": "Pierres Compressées V",
+  "block.destriummod.cobblestone_compressed6": "Pierres Compressées VI",
+  "block.destriummod.cobblestone_compressed7": "Pierres Compressées VII",
+  "block.destriummod.cobblestone_compressed8": "Pierres Compressées VIII",
 
-  "block.destriummod.dirt_compressed1": "Terre Compressé I",
-  "block.destriummod.dirt_compressed2": "Terre Compressé II",
-  "block.destriummod.dirt_compressed3": "Terre Compressé III",
-  "block.destriummod.dirt_compressed4": "Terre Compressé IV",
-  "block.destriummod.dirt_compressed5": "Terre Compressé V",
+  "block.destriummod.dirt_compressed1": "Terres Compressées I",
+  "block.destriummod.dirt_compressed2": "Terres Compressées II",
+  "block.destriummod.dirt_compressed3": "Terres Compressées III",
+  "block.destriummod.dirt_compressed4": "Terres Compressées IV",
+  "block.destriummod.dirt_compressed5": "Terres Compressées V",
 
 
   "block.destriummod.paradis_portal_block": "Portail pour le Paradis",
@@ -133,7 +133,7 @@
 
 
   "block.destriummod.cloud": "Nuage",
-  "block.destriummod.black_cloud": "Nuage Noire",
+  "block.destriummod.black_cloud": "Nuage Noir",
   "block.destriummod.blue_cloud": "Nuage Bleu",
   "block.destriummod.brown_cloud": "Nuage Marron",
   "block.destriummod.cyan_cloud": "Nuage Cyan",
@@ -144,9 +144,9 @@
   "block.destriummod.dark_red_cloud": "Nuage Rouge Foncé",
   "block.destriummod.gray_cloud": "Nuage Gris",
   "block.destriummod.green_cloud": "Nuage Vert",
-  "block.destriummod.light_red_cloud": "Nuage Rouge Claire",
-  "block.destriummod.light_blue_cloud": "Nuage Bleu Claire",
-  "block.destriummod.light_gray_cloud": "Nuage Gris Claire",
+  "block.destriummod.light_red_cloud": "Nuage Rouge Clair",
+  "block.destriummod.light_blue_cloud": "Nuage Bleu Clair",
+  "block.destriummod.light_gray_cloud": "Nuage Gris Clair",
   "block.destriummod.lime_cloud": "Nuage Lime",
   "block.destriummod.magenta_cloud": "Nuage Magenta",
   "block.destriummod.orange_cloud": "Nuage Orange",
@@ -170,33 +170,29 @@
   "block.destriummod.below_block": "Bloc de l'En Dessous",
 
 
-  "block.destriummod.clover": "Trèfle à Trois Feuille",
-  "block.destriummod.clover_two": "Trèfle à Quatre Feuille",
-
-
-
-  "fluid.destriummod.poison_water": "Eau Empoisonn�",
+  "block.destriummod.clover": "Trèfle à Trois Feuilles",
+  "block.destriummod.clover_two": "Trèfle à Quatre Feuilles",
 
 
 
 
-  "creativetab.destriummod.block_tab": "Onglets Des Blocs",
-  "creativetab.destriummod.item_tab": "Onglets Des Items",
-  "creativetab.destriummod.tool_tab": "Onglets Des Outils Et Armures",
-  "creativetab.destriummod.food_tab": "Onglets Des Nourritures",
+  "creativetab.destriummod.block_tab": "Onglet des Blocs",
+  "creativetab.destriummod.item_tab": "Onglet des Items",
+  "creativetab.destriummod.tool_tab": "Onglet des Outils et Armures",
+  "creativetab.destriummod.food_tab": "Onglet des Nourritures",
 
 
 
 
+  "item.destriummod.amazonite_helmet.desc": "Invisibilité",
+  "item.destriummod.amazonite_chestplate.desc": "Résistance",
   "item.destriummod.amazonite_leggings.desc": "Résistance au Feu",
   "item.destriummod.amazonite_boots.desc": "Vitesse Deux",
-  "item.destriummod.amazonite_chestplate.desc": "Résistance",
-  "item.destriummod.amazonite_helmet.desc": "Invisibilité",
 
 
   "item.destriummod.spawners_pickaxe.desc": " ",
-  "item.destriummod.spawners_pickaxe.desc2": "Ne pas crafter",
-  "item.destriummod.spawners_pickaxe.desc3": "Ne marche pas",
+  "item.destriummod.spawners_pickaxe.desc2": "Ne pas craft",
+  "item.destriummod.spawners_pickaxe.desc3": "Ne fonctionne pas",
   "item.destriummod.spawners_pickaxe.desc4": " ",
 
 
@@ -211,8 +207,6 @@
   "item.destriummod.argonide_ingot.desc": "Amazonite",
   "item.destriummod.argonide_ingot.desc2": "Destrium",
   "item.destriummod.argonide_ingot.desc3": ">> Argonide",
-
-  "item.destriummod.repair_gem.desc": "Utilisé pour réparer les items et autres",
 
 
   "item.destriummod.amazonite_stick.desc": "Utilisé pour craft les Outils en Amazonite",

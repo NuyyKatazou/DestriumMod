@@ -109,7 +109,7 @@
   "block.destriummod.paradis_destrium_ore": "Destrium Ore",
   "block.destriummod.paradis_argonide_ore": "Argonide Ore",
   "block.destriummod.cracked_argonide_ore": "Cracked Argonide Ore",
-  "block.destriummod.repair_ore": "Repair Ore",
+  "block.destriummod.repair_ore": "Repair Gem Ore",
 
 
   "block.destriummod.cobblestone_compressed1": "Compressed Cobblestone I",
@@ -175,14 +175,10 @@
 
 
 
-  "fluid.destriummod.poison_water": "Poisoned Water",
-
-
-
 
   "creativetab.destriummod.block_tab": "Blocks Tabs",
   "creativetab.destriummod.item_tab": "Items Tabs",
-  "creativetab.destriummod.tool_tab": "Tools Ands Armors Tabs",
+  "creativetab.destriummod.tool_tab": "Tools and Armors Tabs",
   "creativetab.destriummod.food_tab": "Foods Tabs",
 
 
@@ -211,8 +207,6 @@
   "item.destriummod.argonide_ingot.desc": "Amazonite",
   "item.destriummod.argonide_ingot.desc2": "Destrium",
   "item.destriummod.argonide_ingot.desc3": ">> Argonide",
-
-  "item.destriummod.repair_gem.desc": "Used to repair items and other things",
 
 
   "item.destriummod.amazonite_stick.desc": "Used to craft the Amazonite Tools",
