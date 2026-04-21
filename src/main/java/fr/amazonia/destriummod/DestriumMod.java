@@ -11,12 +11,16 @@ import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
+import net.minecraftforge.fml.ModContainer;
+import net.minecraftforge.fml.ModList;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLDedicatedServerSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
+
+import java.util.Optional;
 
 @Mod(DestriumMod.MODID)
 public class DestriumMod {
@@ -25,6 +29,11 @@ public class DestriumMod {
     public static final Logger LOGGER = LogUtils.getLogger();
 
     public DestriumMod(FMLJavaModLoadingContext context) {
+        Optional<? extends ModContainer> container = ModList.get().getModContainerById(DestriumMod.MODID);
+        container.ifPresent(c -> {
+            String version = c.getModInfo().getVersion().toString();
+            LOGGER.atInfo().log("DestriumMod version : {} !", version);
+        });
 
         //Setup Event
         context.getModEventBus().addListener(this::setup);
