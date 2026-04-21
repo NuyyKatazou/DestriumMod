@@ -35,12 +35,12 @@ public class ResistanceLavaFluidBlock extends LiquidBlock {
 
     @Override
     public void neighborChanged(BlockState pState, Level pLevel, BlockPos pPos, Block pBlock, BlockPos pFromPos, boolean pIsMoving) {
-        if (this.shouldSpreadLiquid(pLevel, pPos)) {
+        if (this.shouldSpreadLiquid(pLevel, pPos, pState)) {
             pLevel.scheduleTick(pPos, pState.getFluidState().getType(), this.getFluid().getTickDelay(pLevel));
         }
     }
 
-    private boolean shouldSpreadLiquid(Level pLevel, BlockPos pPos) {
+    private boolean shouldSpreadLiquid(Level pLevel, BlockPos pPos, BlockState pState) {
         if (this.getFluid().is(FluidTags.LAVA)) {
             boolean flag = pLevel.getBlockState(pPos.below()).is(Blocks.SOUL_SOIL);
 
