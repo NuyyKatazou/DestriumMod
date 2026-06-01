@@ -58,14 +58,11 @@ public class InfinityWaterBucketItem extends BucketItem {
                 if (this.content == Fluids.EMPTY) {
                     BlockState blockstate1 = pLevel.getBlockState(blockpos);
                     Block $$10 = blockstate1.getBlock();
-                    if ($$10 instanceof BucketPickup) {
-                        BucketPickup bucketpickup = (BucketPickup)$$10;
+                    if ($$10 instanceof BucketPickup bucketpickup) {
                         ItemStack itemstack2 = bucketpickup.pickupBlock(pPlayer, pLevel, blockpos, blockstate1);
                         if (!itemstack2.isEmpty()) {
                             pPlayer.awardStat(Stats.ITEM_USED.get(this));
-                            bucketpickup.getPickupSound(blockstate1).ifPresent((p_150709_) -> {
-                                pPlayer.playSound(p_150709_, 1.0F, 1.0F);
-                            });
+                            bucketpickup.getPickupSound(blockstate1).ifPresent((p_150709_) -> pPlayer.playSound(p_150709_, 1.0F, 1.0F));
                             pLevel.gameEvent(pPlayer, GameEvent.FLUID_PICKUP, blockpos);
                             ItemStack itemstack1 = ItemUtils.createFilledResult(itemstack, pPlayer, itemstack2);
                             if (!pLevel.isClientSide) {

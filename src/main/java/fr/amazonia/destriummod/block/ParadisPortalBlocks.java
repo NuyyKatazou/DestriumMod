@@ -1,8 +1,6 @@
 package fr.amazonia.destriummod.block;
 
-import fr.amazonia.destriummod.DestriumMod;
 import fr.amazonia.destriummod.worldgen.dimension.ModDimensions;
-import fr.amazonia.destriummod.worldgen.portal.OverworldTeleporter;
 import fr.amazonia.destriummod.worldgen.portal.ParadisTeleporter;
 import net.minecraft.core.BlockPos;
 import net.minecraft.resources.ResourceKey;

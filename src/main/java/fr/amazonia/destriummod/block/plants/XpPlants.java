@@ -17,7 +17,7 @@ public class XpPlants extends CropBlock {
         return ModItems.XP_SEEDS.get();
     }
 
-    public boolean isValidBonemealTarget(LevelReader pLevel, BlockPos pPos, BlockState pState, boolean pIsClient) {
+    public boolean isValidBonemealTarget(LevelReader pLevel, BlockPos pPos, BlockState pState) {
         return false;
     }
 }

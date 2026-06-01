@@ -17,7 +17,7 @@ public class DestriumPlants extends CropBlock {
         return ModItems.DESTRIUM_SEEDS.get();
     }
 
-    public boolean isValidBonemealTarget(LevelReader pLevel, BlockPos pPos, BlockState pState, boolean pIsClient) {
+    public boolean isValidBonemealTarget(LevelReader pLevel, BlockPos pPos, BlockState pState) {
         return false;
     }
 }
