@@ -29,6 +29,7 @@ public class DestriumMod {
     public static final Logger LOGGER = LogUtils.getLogger();
 
     public DestriumMod(FMLJavaModLoadingContext context) {
+
         Optional<? extends ModContainer> container = ModList.get().getModContainerById(DestriumMod.MODID);
         container.ifPresent(c -> {
             String version = c.getModInfo().getVersion().toString();
@@ -45,9 +46,9 @@ public class DestriumMod {
         IEventBus eventBus = context.getModEventBus();
         ModItems.register(eventBus);
         ModBlocks.register(eventBus);
-        ModCreativeTabs.register(eventBus);
         ModFluids.register(eventBus);
         ModFluidTypes.register(eventBus);
+        ModCreativeTabs.register(eventBus);
 
     }
 
