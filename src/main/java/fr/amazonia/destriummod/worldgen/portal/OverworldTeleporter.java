@@ -3,6 +3,7 @@ package fr.amazonia.destriummod.worldgen.portal;
 import fr.amazonia.destriummod.block.OverworldPortalBlocks;
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerLevel;
+import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.material.Fluids;
@@ -42,7 +43,11 @@ public class OverworldTeleporter implements ITeleporter {
             tries++;
         }
 
-        entity.setPos(destinationPos.getX() + 0.5D, destinationPos.getY() + 1D, destinationPos.getZ() + 0.5D);
+        if (!(entity instanceof ServerPlayer player)) {
+            return entity;
+        }
+
+        player.teleportTo(destinationPos.getX() + 0.5D, destinationPos.getY() + 1D, destinationPos.getZ() + 0.5D);
 
         if (thisIsToOverworldDim) {
             boolean doSetBlock = true;

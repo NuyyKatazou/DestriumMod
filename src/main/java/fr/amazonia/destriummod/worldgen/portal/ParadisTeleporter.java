@@ -56,7 +56,7 @@ public class ParadisTeleporter implements ITeleporter {
             }
         }
 
-        entity.setPos(destinationPos.getX() + 0.5D, destinationPos.getY() + 1D, destinationPos.getZ() + 0.5D);
+        player.teleportTo(destinationPos.getX() + 0.5D, destinationPos.getY() + 1D, destinationPos.getZ() + 0.5D);
 
         if (thisIsToParadisDim) {
             boolean doSetBlock = true;

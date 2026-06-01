@@ -4,9 +4,7 @@
   "ingredient": {
     "item": "destriummod:paradis_destrium_ore"
   },
-  "result": {
-    "id" : "destriummod:destrium_nuggets"
-  },
+  "result": "destriummod:destrium_nuggets",
   "experience": 25,
   "cookingtime": 500
 }

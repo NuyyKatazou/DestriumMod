@@ -6,8 +6,13 @@ import fr.amazonia.destriummod.init.ModFluidTypes;
 import fr.amazonia.destriummod.init.ModFluids;
 import fr.amazonia.destriummod.init.ModItems;
 import fr.amazonia.destriummod.utils.HandlerEvent;
+import fr.amazonia.destriummod.utils.ModCreativeTabs;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
+import net.minecraft.core.registries.Registries;
+import net.minecraft.resources.ResourceKey;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.level.Level;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.ModContainer;
@@ -48,6 +53,7 @@ public class DestriumMod {
         ModBlocks.register(eventBus);
         ModFluids.register(eventBus);
         ModFluidTypes.register(eventBus);
+        ModCreativeTabs.register(eventBus);
     }
 
     private void setup(FMLCommonSetupEvent event) {

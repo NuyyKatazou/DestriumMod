@@ -4,9 +4,7 @@
   "ingredient": {
     "item": "destriummod:paradis_argonide_ore"
   },
-  "result": {
-    "id" : "destriummod:argonide_nuggets"
-  },
+  "result": "destriummod:argonide_nuggets",
   "experience": 5,
   "cookingtime": 100
 }

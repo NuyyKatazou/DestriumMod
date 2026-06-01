@@ -2,33 +2,33 @@
   "type": "minecraft:block",
   "pools": [
     {
+      "rolls": 1,
       "entries": [
         {
           "type": "minecraft:alternatives",
           "children": [
             {
               "type": "minecraft:item",
+              "name": "destriummod:repair_ore",
               "conditions": [
                 {
                   "condition": "minecraft:match_tool",
                   "predicate": {
-                    "predicates": {
-                      "minecraft:enchantments": [
-                        {
-                          "enchantment": "minecraft:silk_touch",
-                          "levels": {
-                            "min": 1
-                          }
+                    "enchantments": [
+                      {
+                        "enchantment": "minecraft:silk_touch",
+                        "levels": {
+                          "min": 1
                         }
-                      ]
-                    }
+                      }
+                    ]
                   }
                 }
-              ],
-              "name": "destriummod:repair_ore"
+              ]
             },
             {
               "type": "minecraft:item",
+              "name": "destriummod:repair_fragment",
               "functions": [
                 {
                   "function": "minecraft:set_count",
@@ -50,14 +50,11 @@
                 {
                   "function": "minecraft:explosion_decay"
                 }
-              ],
-              "name": "destriummod:repair_fragment"
+              ]
             }
           ]
         }
-      ],
-      "rolls": 1
+      ]
     }
-  ],
-  "random_sequence": "destriummod:blocks/repair_ore"
+  ]
 }
