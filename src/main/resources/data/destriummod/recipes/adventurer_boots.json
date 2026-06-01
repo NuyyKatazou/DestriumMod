@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "destriummod:destrium_ingot"
+  },
+  "base": {
+    "item": "destriummod:feather_boots"
+  },
+  "addition": {
+    "item": "destriummod:speed_boots"
+  },
+  "result": {
+    "id": "destriummod:adventurer_boots"
+  }
+}

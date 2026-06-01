@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "destriummod:paradis_destrium_ore",
+    "destriummod:destrium_block",
+    "destriummod:cobblestone_compressed6",
+    "destriummod:paradis_portal_block",
+    "destriummod:overworld_portal_block"
+  ]
+}

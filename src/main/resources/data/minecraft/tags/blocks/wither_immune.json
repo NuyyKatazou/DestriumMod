@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "destriummod:amazonite_block",
+    "destriummod:fake_amazonite_block",
+    "destriummod:paradis_portal_block",
+    "destriummod:overworld_portal_block",
+    "destriummod:cobblestone_compressed8"
+  ]
+}

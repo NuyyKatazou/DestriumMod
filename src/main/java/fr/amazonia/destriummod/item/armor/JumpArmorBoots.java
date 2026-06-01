@@ -1,0 +1,24 @@
+package fr.amazonia.destriummod.item.armor;
+
+import fr.amazonia.destriummod.init.ModItems;
+import fr.amazonia.destriummod.utils.ModArmorMaterials;
+import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.world.effect.MobEffects;
+import net.minecraft.world.entity.EquipmentSlot;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.ArmorItem;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.level.Level;
+
+public class JumpArmorBoots extends ArmorItem {
+
+    public JumpArmorBoots(ModArmorMaterials pMaterial, Type pType, Properties pProperties) {
+        super(pMaterial, pType, pProperties);
+    }
+
+    public void onInventoryTick(ItemStack stack, Level level, Player player, int slotIndex, int selectedIndex) {
+        if (player.getItemBySlot(EquipmentSlot.FEET).getItem() == ModItems.JUMP_BOOTS.get()) {
+            player.addEffect(new MobEffectInstance(MobEffects.JUMP, 300, 2, false, false, true));
+        }
+    }
+}

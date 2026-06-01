@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "repair_gem",
+  "pattern": [
+    "aaa",
+    "aaa",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "destriummod:repair_fragment"
+    }
+  },
+  "result": {
+    "id": "destriummod:repair_gem"
+  }
+}

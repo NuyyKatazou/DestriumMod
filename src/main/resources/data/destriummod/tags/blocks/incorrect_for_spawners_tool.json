@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "#destriummod:needs_amazonite_tool",
+    "#destriummod:needs_destrium_tool",
+    "#destriummod:needs_argonide_tool",
+    "#minecraft:needs_diamond_tool",
+    "#minecraft:needs_iron_tool",
+    "#minecraft:needs_stone_tool"
+  ]
+}

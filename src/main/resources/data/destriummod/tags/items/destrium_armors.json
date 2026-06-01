@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "destriummod:destrium_helmet",
+    "destriummod:destrium_chestplate",
+    "destriummod:destrium_leggings",
+    "destriummod:destrium_boots"
+  ]
+}
