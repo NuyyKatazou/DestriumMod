@@ -4,134 +4,67 @@ import fr.amazonia.destriummod.block.OverworldPortalBlocks;
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
-import net.minecraft.world.entity.Entity;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.material.Fluids;
+import net.minecraft.world.level.portal.DimensionTransition;
+import net.minecraft.world.phys.Vec3;
 
-import java.util.Set;
-import java.util.function.Function;
-
-public class OverworldTeleporter {
+public final class OverworldTeleporter {
 
     public static int f = 0;
 
-    public static BlockPos thisPos = BlockPos.ZERO;
-    public static boolean thisIsToOverworldDim = true;
+    public static DimensionTransition create(ServerPlayer player, ServerLevel destinationWorld, BlockPos portalPos, boolean toOverworld) {
+        BlockPos destinationPos = findDestinationPos(destinationWorld, portalPos, toOverworld);
+        Vec3 targetPos = new Vec3(destinationPos.getX() + 0.5D, destinationPos.getY() + 1D, destinationPos.getZ() + 0.5D);
 
-    public OverworldTeleporter(BlockPos pos, boolean insideDim) {
-        thisPos = pos;
-        thisIsToOverworldDim = insideDim;
+        return new DimensionTransition(
+                destinationWorld,
+                targetPos,
+                player.getDeltaMovement(),
+                player.getYRot(),
+                player.getXRot(),
+                entity -> {
+                    if (toOverworld) {
+                        setupOverworldPlatform(destinationWorld, destinationPos);
+                        f = 1;
+                    }
+                    DimensionTransition.PLAY_PORTAL_SOUND.onTransition(entity);
+                }
+        );
     }
 
-    @Override
-    public Entity placeEntity(Entity entity, ServerLevel currentWorld, ServerLevel destinationWorld, float yaw, Function<Boolean, Entity> repositionEntity) {
-        entity = repositionEntity.apply(false);
-        int y = 61;
-
-        if (!thisIsToOverworldDim) {
-            y = thisPos.getY();
-        }
-
-        BlockPos destinationPos = new BlockPos(thisPos.getX(), y, thisPos.getZ());
+    private static BlockPos findDestinationPos(ServerLevel destinationWorld, BlockPos portalPos, boolean toOverworld) {
+        int y = toOverworld ? 61 : portalPos.getY();
+        BlockPos destinationPos = new BlockPos(portalPos.getX(), y, portalPos.getZ());
 
         int tries = 0;
-        while ((destinationWorld.getBlockState(destinationPos).getBlock() != Blocks.AIR) &&
-                !destinationWorld.getBlockState(destinationPos).canBeReplaced(Fluids.WATER) &&
-                (destinationWorld.getBlockState(destinationPos.above()).getBlock() != Blocks.AIR) &&
-                !destinationWorld.getBlockState(destinationPos.above()).canBeReplaced(Fluids.WATER) && (tries < 25)) {
+        while (!isSafeStandingSpot(destinationWorld, destinationPos) && tries < 25) {
             destinationPos = destinationPos.above(2);
             tries++;
         }
-        if (!(entity instanceof ServerPlayer player)) {
-            return entity;
-        }
-
-        player.teleportTo(destinationPos.getX() + 0.5D, destinationPos.getY() + 1D, destinationPos.getZ() + 0.5D);
-
-        if (thisIsToOverworldDim) {
-            boolean doSetBlock = true;
-            for (BlockPos checkPos : BlockPos.betweenClosed(destinationPos.below(10).west(10), destinationPos.above(10).east(10))) {
-                if (destinationWorld.getBlockState(checkPos).getBlock() instanceof OverworldPortalBlocks) {
-                    doSetBlock = false;
-                    break;
-                }
-            }
-            if (doSetBlock) {
-                destinationWorld.setBlock(destinationPos, Blocks.DIRT.defaultBlockState(), 10);
-                destinationWorld.setBlock(destinationPos.above(1), Blocks.AIR.defaultBlockState(), 10);
-                destinationWorld.setBlock(destinationPos.above(2), Blocks.AIR.defaultBlockState(), 10);
-                f = 1;
-            }
-        }
-
-        return entity;
+        return destinationPos;
     }
 
-    public static void teleportPlayer(
-            ServerPlayer player,
-            ServerLevel destinationWorld,
-            BlockPos thisPos,
-            boolean thisIsToOverworldDim
-    ) {
-        int y = thisIsToOverworldDim ? 61 : thisPos.getY();
+    private static boolean isSafeStandingSpot(ServerLevel destinationWorld, BlockPos destinationPos) {
+        return (destinationWorld.getBlockState(destinationPos).getBlock() == Blocks.AIR
+                || destinationWorld.getBlockState(destinationPos).canBeReplaced(Fluids.WATER))
+                && (destinationWorld.getBlockState(destinationPos.above()).getBlock() == Blocks.AIR
+                || destinationWorld.getBlockState(destinationPos.above()).canBeReplaced(Fluids.WATER));
+    }
 
-        BlockPos destinationPos = new BlockPos(
-                thisPos.getX(),
-                y,
-                thisPos.getZ()
-        );
-
-        int tries = 0;
-
-        while (
-                destinationWorld.getBlockState(destinationPos).isSolid()
-                        && destinationWorld.getBlockState(destinationPos.above()).isSolid()
-                        && tries < 25
-        ) {
-            destinationPos = destinationPos.above(2);
-            tries++;
+    private static void setupOverworldPlatform(ServerLevel destinationWorld, BlockPos destinationPos) {
+        boolean doSetBlock = true;
+        for (BlockPos checkPos : BlockPos.betweenClosed(destinationPos.below(10).west(10), destinationPos.above(10).east(10))) {
+            if (destinationWorld.getBlockState(checkPos).getBlock() instanceof OverworldPortalBlocks) {
+                doSetBlock = false;
+                break;
+            }
         }
 
-        player.teleportTo(
-                destinationPos.getX() + 0.5D,
-                destinationPos.getY() + 1D,
-                destinationPos.getZ() + 0.5D
-        );
-
-        if (thisIsToOverworldDim) {
-            boolean doSetBlock = true;
-
-            for (BlockPos checkPos :
-                    BlockPos.betweenClosed(
-                            destinationPos.below(10).west(10),
-                            destinationPos.above(10).east(10))) {
-
-                if (destinationWorld.getBlockState(checkPos).getBlock()
-                        instanceof OverworldPortalBlocks) {
-                    doSetBlock = false;
-                    break;
-                }
-            }
-
-            if (doSetBlock) {
-                destinationWorld.setBlock(
-                        destinationPos,
-                        Blocks.DIRT.defaultBlockState(),
-                        10
-                );
-
-                destinationWorld.setBlock(
-                        destinationPos.above(),
-                        Blocks.AIR.defaultBlockState(),
-                        10
-                );
-
-                destinationWorld.setBlock(
-                        destinationPos.above(2),
-                        Blocks.AIR.defaultBlockState(),
-                        10
-                );
-            }
+        if (doSetBlock) {
+            destinationWorld.setBlock(destinationPos, Blocks.DIRT.defaultBlockState(), 10);
+            destinationWorld.setBlock(destinationPos.above(1), Blocks.AIR.defaultBlockState(), 10);
+            destinationWorld.setBlock(destinationPos.above(2), Blocks.AIR.defaultBlockState(), 10);
         }
     }
 }

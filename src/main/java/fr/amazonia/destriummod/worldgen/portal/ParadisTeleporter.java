@@ -5,49 +5,62 @@ import fr.amazonia.destriummod.init.ModBlocks;
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
-import net.minecraft.world.entity.Entity;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.material.Fluids;
-import net.minecraftforge.common.util.ITeleporter;
+import net.minecraft.world.level.portal.DimensionTransition;
+import net.minecraft.world.phys.Vec3;
 
-import java.util.function.Function;
-
-public class ParadisTeleporter implements ITeleporter {
+public final class ParadisTeleporter {
 
     public static int f = 0;
 
-    public static BlockPos thisPos = BlockPos.ZERO;
-    public static boolean thisIsToParadisDim = true;
-
-    public ParadisTeleporter(BlockPos pos, boolean insideDim) {
-        thisPos = pos;
-        thisIsToParadisDim = insideDim;
+    private ParadisTeleporter() {
     }
 
-    @Override
-    public Entity placeEntity(Entity entity, ServerLevel currentWorld, ServerLevel destinationWorld, float yaw, Function<Boolean, Entity> repositionEntity) {
-        entity = repositionEntity.apply(false);
-        int y = 61;
+    public static DimensionTransition create(ServerPlayer player, ServerLevel destinationWorld, BlockPos portalPos, boolean toParadis) {
+        BlockPos destinationPos = findDestinationPos(destinationWorld, portalPos, toParadis);
+        Vec3 targetPos = new Vec3(destinationPos.getX() + 0.5D, destinationPos.getY() + 1D, destinationPos.getZ() + 0.5D);
 
-        if (!thisIsToParadisDim) {
-            y = thisPos.getY();
-        }
+        return new DimensionTransition(
+                destinationWorld,
+                targetPos,
+                player.getDeltaMovement(),
+                player.getYRot(),
+                player.getXRot(),
+                entity -> {
+                    if (entity instanceof ServerPlayer serverPlayer) {
+                        giveReturnPortalBlock(serverPlayer);
+                        if (toParadis) {
+                            setupParadisPlatform(destinationWorld, destinationPos);
+                            f = 1;
+                        }
+                    }
+                    DimensionTransition.PLAY_PORTAL_SOUND.onTransition(entity);
+                }
+        );
+    }
 
-        BlockPos destinationPos = new BlockPos(thisPos.getX(), y, thisPos.getZ());
+    private static BlockPos findDestinationPos(ServerLevel destinationWorld, BlockPos portalPos, boolean toParadis) {
+        int y = toParadis ? 61 : portalPos.getY();
+        BlockPos destinationPos = new BlockPos(portalPos.getX(), y, portalPos.getZ());
 
         int tries = 0;
-        while ((destinationWorld.getBlockState(destinationPos).getBlock() != Blocks.AIR) &&
-                !destinationWorld.getBlockState(destinationPos).canBeReplaced(Fluids.WATER) &&
-                (destinationWorld.getBlockState(destinationPos.above()).getBlock() != Blocks.AIR) &&
-                !destinationWorld.getBlockState(destinationPos.above()).canBeReplaced(Fluids.WATER) && (tries < 25)) {
+        while (!isSafeStandingSpot(destinationWorld, destinationPos) && tries < 25) {
             destinationPos = destinationPos.above(2);
             tries++;
         }
+        return destinationPos;
+    }
 
-        if (!(entity instanceof ServerPlayer player)) {
-            return entity;
-        }
+    private static boolean isSafeStandingSpot(ServerLevel destinationWorld, BlockPos destinationPos) {
+        return (destinationWorld.getBlockState(destinationPos).getBlock() == Blocks.AIR
+                || destinationWorld.getBlockState(destinationPos).canBeReplaced(Fluids.WATER))
+                && (destinationWorld.getBlockState(destinationPos.above()).getBlock() == Blocks.AIR
+                || destinationWorld.getBlockState(destinationPos.above()).canBeReplaced(Fluids.WATER));
+    }
+
+    private static void giveReturnPortalBlock(ServerPlayer player) {
         if (!player.getInventory().contains(new ItemStack(ModBlocks.OVERWORLD_PORTAL_BLOCK.get()))) {
             if (player.getInventory().getFreeSlot() != -1) {
                 player.addItem(new ItemStack(ModBlocks.OVERWORLD_PORTAL_BLOCK.get()));
@@ -55,25 +68,21 @@ public class ParadisTeleporter implements ITeleporter {
                 player.drop(new ItemStack(ModBlocks.OVERWORLD_PORTAL_BLOCK.get()), true);
             }
         }
+    }
 
-        player.teleportTo(destinationPos.getX() + 0.5D, destinationPos.getY() + 1D, destinationPos.getZ() + 0.5D);
-
-        if (thisIsToParadisDim) {
-            boolean doSetBlock = true;
-            for (BlockPos checkPos : BlockPos.betweenClosed(destinationPos.below(10).west(10), destinationPos.above(10).east(10))) {
-                if (destinationWorld.getBlockState(checkPos).getBlock() instanceof ParadisPortalBlocks) {
-                    doSetBlock = false;
-                    break;
-                }
-            }
-            if (doSetBlock) {
-                destinationWorld.setBlock(destinationPos, ModBlocks.CLOUD.get().defaultBlockState(), 10);
-                destinationWorld.setBlock(destinationPos.above(1), Blocks.AIR.defaultBlockState(), 10);
-                destinationWorld.setBlock(destinationPos.above(2), Blocks.AIR.defaultBlockState(), 10);
-                f = 1;
+    private static void setupParadisPlatform(ServerLevel destinationWorld, BlockPos destinationPos) {
+        boolean doSetBlock = true;
+        for (BlockPos checkPos : BlockPos.betweenClosed(destinationPos.below(10).west(10), destinationPos.above(10).east(10))) {
+            if (destinationWorld.getBlockState(checkPos).getBlock() instanceof ParadisPortalBlocks) {
+                doSetBlock = false;
+                break;
             }
         }
 
-        return entity;
+        if (doSetBlock) {
+            destinationWorld.setBlock(destinationPos, ModBlocks.CLOUD.get().defaultBlockState(), 10);
+            destinationWorld.setBlock(destinationPos.above(1), Blocks.AIR.defaultBlockState(), 10);
+            destinationWorld.setBlock(destinationPos.above(2), Blocks.AIR.defaultBlockState(), 10);
+        }
     }
 }
