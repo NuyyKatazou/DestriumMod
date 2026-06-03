@@ -96,6 +96,5 @@
     {
       "function": "minecraft:explosion_decay"
     }
-  ],
-  "random_sequence": "destriummod:amazonite_seeds"
+  ]
 }
