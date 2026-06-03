@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "destriummod:destrium_ingot"
+  },
+  "base": {
+    "item": "destriummod:necklace"
+  },
+  "addition": {
+    "item": "destriummod:clover_two"
+  },
+  "result": {
+    "id": "destriummod:lucky_necklace"
+  }
+}

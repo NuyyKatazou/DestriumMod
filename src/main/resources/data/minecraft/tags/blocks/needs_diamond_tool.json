@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "destriummod:cracked_argonide_ore",
+    "destriummod:repair_ore",
+    "destriummod:repair_block",
+    "destriummod:paradis_portal_block",
+    "destriummod:overworld_portal_block",
+    "destriummod:cobblestone_compressed4",
+    "destriummod:dirt_compressed4"
+  ]
+}
