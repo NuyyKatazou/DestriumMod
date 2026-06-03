@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "destriummod:iron_plate",
+    "destriummod:gold_plate",
+    "destriummod:diamond_plate",
+    "destriummod:netherite_plate",
+    "destriummod:argonide_plate",
+    "destriummod:destrium_plate",
+    "destriummod:amazonite_plate"
+  ]
+}

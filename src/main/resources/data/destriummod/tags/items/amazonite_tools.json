@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "destriummod:amazonite_sword",
+    "destriummod:amazonite_pickaxe",
+    "destriummod:amazonite_axe",
+    "destriummod:amazonite_shovel",
+    "destriummod:amazonite_hoes"
+  ]
+}
