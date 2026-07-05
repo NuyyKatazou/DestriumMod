@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "destriummod:amazonite_helmet",
+    "destriummod:amazonite_chestplate",
+    "destriummod:amazonite_leggings",
+    "destriummod:amazonite_boots"
+  ]
+}

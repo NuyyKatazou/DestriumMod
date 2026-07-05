@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smelting",
+  "group": "repair_fragment",
+  "ingredient": {
+    "item": "destriummod:repair_ore"
+  },
+  "result": {
+    "id" : "destriummod:repair_fragment"
+  },
+  "experience": 4,
+  "cookingtime": 50
+}

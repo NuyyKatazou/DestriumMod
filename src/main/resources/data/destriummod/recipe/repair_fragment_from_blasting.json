@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:blasting",
+  "group": "repair_fragment",
+  "ingredient": {
+    "item": "destriummod:repair_ore"
+  },
+  "result": {
+    "id" : "destriummod:repair_fragment"
+  },
+  "experience": 4,
+  "cookingtime": 25
+}
