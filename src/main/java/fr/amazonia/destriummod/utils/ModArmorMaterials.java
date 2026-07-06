@@ -32,7 +32,7 @@ public class ModArmorMaterials {
         attribute.put(ArmorItem.Type.CHESTPLATE, 9);
         attribute.put(ArmorItem.Type.HELMET, 4);
         attribute.put(ArmorItem.Type.BODY, 12);
-    }), 18, SoundEvents.ARMOR_EQUIP_DIAMOND, 3.5F, 0.4F, () -> Ingredient.of(ModItems.ARGONIDE_INGOT.get()));
+    }), 18, SoundEvents.ARMOR_EQUIP_DIAMOND, 3.5F, 0.1F, () -> Ingredient.of(ModItems.ARGONIDE_INGOT.get()));
     public static final Holder<ArmorMaterial> DESTRIUM = register("destrium", Util.make(new EnumMap<>(ArmorItem.Type.class), attribute -> {
         attribute.put(ArmorItem.Type.BOOTS, 5);
         attribute.put(ArmorItem.Type.LEGGINGS, 8);
