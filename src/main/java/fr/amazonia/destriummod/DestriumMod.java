@@ -61,6 +61,7 @@ public class DestriumMod {
     private void clientSetup(FMLClientSetupEvent event) {
         ItemBlockRenderTypes.setRenderLayer(ModFluids.POISON_WATER_FLUID.get(), RenderType.translucent());
         ItemBlockRenderTypes.setRenderLayer(ModFluids.POISON_WATER_FLOWING.get(), RenderType.translucent());
+
     }
 
     private void serverSetup(FMLDedicatedServerSetupEvent event) {
