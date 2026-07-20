@@ -22,6 +22,7 @@ import net.minecraft.network.chat.Style;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.*;
+import net.minecraft.world.item.component.Unbreakable;
 import net.minecraft.world.item.equipment.ArmorType;
 import net.minecraft.world.level.material.Fluids;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -83,8 +84,8 @@ public class ModItems {
     public static final RegistryObject<Item> ADVENTURER_BOOTS = registerItem("adventurer_boots", (properties) -> new AdventurerArmorBoots(ModArmorMaterials.DESTRIUM, ArmorType.BOOTS, component(properties.fireResistant(), "adventurer_boots", ChatFormatting.DARK_GREEN)));
     public static final RegistryObject<Item> REINFORCED_ADVENTURER_BOOTS = registerItem("reinforced_adventurer_boots", (properties) -> new ReinforcedAdventurerArmorBoots(ModArmorMaterials.AMAZONITE, ArmorType.BOOTS, component(properties.fireResistant(), "reinforced_adventurer_boots", ChatFormatting.DARK_AQUA)));
 
-    public static final RegistryObject<Item> NECKLACE = registerItem("necklace", (properties) -> new NecklaceArmor(ModArmorMaterials.NECKLACE, ArmorType.CHESTPLATE, component(properties.durability(-1).fireResistant(), "necklace", ChatFormatting.GRAY)));
-    public static final RegistryObject<Item> LUCKY_NECKLACE = registerItem("lucky_necklace", (properties) -> new LuckyNecklaceArmor(ModArmorMaterials.NECKLACE, ArmorType.CHESTPLATE, component(properties.durability(-1).fireResistant(), "lucky_necklace", ChatFormatting.DARK_GREEN)));
+    public static final RegistryObject<Item> NECKLACE = registerItem("necklace", (properties) -> new NecklaceArmor(ModArmorMaterials.NECKLACE, ArmorType.CHESTPLATE, component(properties.fireResistant().component(DataComponents.UNBREAKABLE, new Unbreakable(true)), "necklace", ChatFormatting.GRAY)));
+    public static final RegistryObject<Item> LUCKY_NECKLACE = registerItem("lucky_necklace", (properties) -> new LuckyNecklaceArmor(ModArmorMaterials.NECKLACE, ArmorType.CHESTPLATE, component(properties.fireResistant().component(DataComponents.UNBREAKABLE, new Unbreakable(true)), "lucky_necklace", ChatFormatting.DARK_GREEN)));
 
 
     //Minerals
