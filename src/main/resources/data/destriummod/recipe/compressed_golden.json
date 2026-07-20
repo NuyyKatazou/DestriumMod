@@ -6,12 +6,8 @@
     "aba"
   ],
   "key": {
-    "a": {
-      "item": "minecraft:gold_ingot"
-    },
-    "b": {
-      "item": "minecraft:gold_block"
-    }
+    "a": "minecraft:gold_ingot",
+    "b": "minecraft:gold_block"
   },
   "result": {
     "id": "destriummod:compressed_golden"

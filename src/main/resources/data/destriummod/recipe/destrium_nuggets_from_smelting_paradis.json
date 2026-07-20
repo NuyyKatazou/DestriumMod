@@ -1,9 +1,7 @@
 {
   "type": "minecraft:smelting",
   "group": "destrium_nuggets",
-  "ingredient": {
-    "item": "destriummod:paradis_destrium_ore"
-  },
+  "ingredient": "destriummod:paradis_destrium_ore",
   "result": {
     "id" : "destriummod:destrium_nuggets"
   },

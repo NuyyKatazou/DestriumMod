@@ -6,9 +6,7 @@
     "aaa"
   ],
   "key": {
-    "a": {
-      "item": "destriummod:amazonite_crumb"
-    }
+    "a": "destriummod:amazonite_crumb"
   },
   "result": {
     "id": "destriummod:amazonite_dust",

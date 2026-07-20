@@ -6,12 +6,8 @@
     "a"
   ],
   "key": {
-    "a": {
-      "item": "destriummod:argonide_nuggets"
-    },
-    "b": {
-      "item": "minecraft:stick"
-    }
+    "a": "destriummod:argonide_nuggets",
+    "b": "minecraft:stick"
   },
   "result": {
     "id": "destriummod:argonide_stick",

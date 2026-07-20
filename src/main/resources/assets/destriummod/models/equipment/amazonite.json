@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "destriummod:amazonite_layer_1"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "destriummod:amazonite_layer_2"
+      }
+    ]
+  }
+}

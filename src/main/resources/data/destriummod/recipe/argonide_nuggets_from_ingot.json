@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shapeless",
   "group": "argonide_nuggets",
   "ingredients": [
-    {
-      "item": "destriummod:argonide_ingot"
-    }
+    "destriummod:argonide_ingot"
   ],
   "result": {
     "id": "destriummod:argonide_nuggets",

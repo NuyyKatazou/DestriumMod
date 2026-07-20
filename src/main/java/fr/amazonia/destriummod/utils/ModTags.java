@@ -60,6 +60,7 @@ public class ModTags {
         public static final TagKey<Item> DESTRIUM_REPAIRABLE = tag("destrium_repairable");
         public static final TagKey<Item> AMAZONITE_REPAIRABLE = tag("amazonite_repairable");
         public static final TagKey<Item> SPAWNERS_REPAIRABLE = tag("spawners_repairable");
+        public static final TagKey<Item> NONE_REPAIRABLE = tag("none_repairable");
 
         private static TagKey<Item> tag(String name) {
             return ItemTags.create(ResourceLocation.fromNamespaceAndPath(DestriumMod.MODID, name));

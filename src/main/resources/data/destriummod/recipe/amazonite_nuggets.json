@@ -6,9 +6,7 @@
     "aaa"
   ],
   "key": {
-    "a": {
-      "item": "destriummod:amazonite_fragment"
-    }
+    "a": "destriummod:amazonite_fragment"
   },
   "result": {
     "id": "destriummod:amazonite_nuggets",

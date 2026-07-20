@@ -6,9 +6,7 @@
     "aaa"
   ],
   "key": {
-    "a": {
-      "item": "destriummod:dirt_compressed1"
-    }
+    "a": "destriummod:dirt_compressed1"
   },
   "result": {
     "id": "destriummod:dirt_compressed2"

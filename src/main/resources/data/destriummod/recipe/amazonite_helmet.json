@@ -5,9 +5,7 @@
     "a a"
   ],
   "key": {
-    "a": {
-      "item": "destriummod:amazonite_ingot"
-    }
+    "a": "destriummod:amazonite_ingot"
   },
   "result": {
     "id": "destriummod:amazonite_helmet"

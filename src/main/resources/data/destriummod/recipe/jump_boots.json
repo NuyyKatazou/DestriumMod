@@ -6,15 +6,9 @@
     "aca"
   ],
   "key": {
-    "a": {
-      "item": "minecraft:rabbit_foot"
-    },
-    "c": {
-      "item": "minecraft:ghast_tear"
-    },
-    "b": {
-      "item": "destriummod:destrium_boots"
-    }
+    "a": "minecraft:rabbit_foot",
+    "c": "minecraft:ghast_tear",
+    "b": "destriummod:destrium_boots"
   },
   "result": {
     "id": "destriummod:jump_boots"

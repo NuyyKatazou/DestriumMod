@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "destriummod:argonide_layer_1"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "destriummod:argonide_layer_2"
+      }
+    ]
+  }
+}

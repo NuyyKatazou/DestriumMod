@@ -6,12 +6,8 @@
     "a"
   ],
   "key": {
-    "a": {
-      "item": "destriummod:amazonite_nuggets"
-    },
-    "b": {
-      "item": "destriummod:destrium_stick"
-    }
+    "a": "destriummod:amazonite_nuggets",
+    "b": "destriummod:destrium_stick"
   },
   "result": {
     "id": "destriummod:amazonite_stick",

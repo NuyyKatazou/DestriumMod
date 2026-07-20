@@ -6,12 +6,8 @@
     "bbb"
   ],
   "key": {
-    "a": {
-      "item": "destriummod:amazonite_ingot"
-    },
-    "b": {
-      "item": "destriummod:amazonite_block"
-    }
+    "a": "destriummod:amazonite_ingot",
+    "b": "destriummod:amazonite_block"
   },
   "result": {
     "id": "destriummod:amazonite_plate"

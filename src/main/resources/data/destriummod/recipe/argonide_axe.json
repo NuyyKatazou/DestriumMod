@@ -6,12 +6,8 @@
     " b"
   ],
   "key": {
-    "a": {
-      "item": "destriummod:argonide_ingot"
-    },
-    "b": {
-      "item": "destriummod:argonide_stick"
-    }
+    "a": "destriummod:argonide_ingot",
+    "b": "destriummod:argonide_stick"
   },
   "result": {
     "id": "destriummod:argonide_axe"

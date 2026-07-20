@@ -5,9 +5,7 @@
     "bb"
   ],
   "key": {
-    "b": {
-      "item": "destriummod:cracked_argonide_ore"
-    }
+    "b": "destriummod:cracked_argonide_ore"
   },
   "result": {
     "id": "destriummod:paradis_argonide_ore"

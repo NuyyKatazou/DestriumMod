@@ -8,7 +8,6 @@ import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.material.Fluids;
-import net.minecraft.world.level.portal.DimensionTransition;
 import net.minecraft.world.level.portal.TeleportTransition;
 import net.minecraft.world.phys.Vec3;
 
@@ -23,7 +22,7 @@ public final class ParadisTeleporter {
         BlockPos destinationPos = findDestinationPos(destinationWorld, portalPos, toParadis);
         Vec3 targetPos = new Vec3(destinationPos.getX() + 0.5D, destinationPos.getY() + 1D, destinationPos.getZ() + 0.5D);
 
-        return new DimensionTransition(
+        return new TeleportTransition(
                 destinationWorld,
                 targetPos,
                 player.getDeltaMovement(),
@@ -37,7 +36,7 @@ public final class ParadisTeleporter {
                             f = 1;
                         }
                     }
-                    DimensionTransition.PLAY_PORTAL_SOUND.onTransition(entity);
+                    TeleportTransition.PLAY_PORTAL_SOUND.onTransition(entity);
                 }
         );
     }

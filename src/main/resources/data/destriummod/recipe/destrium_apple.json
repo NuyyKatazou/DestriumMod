@@ -6,12 +6,8 @@
     "aaa"
   ],
   "key": {
-    "a": {
-      "item": "destriummod:destrium_ingot"
-    },
-    "b": {
-      "item": "minecraft:enchanted_golden_apple"
-    }
+    "a": "destriummod:destrium_ingot",
+    "b": "minecraft:enchanted_golden_apple"
   },
   "result": {
     "id": "destriummod:destrium_apple"

@@ -7,7 +7,7 @@ import net.minecraft.core.Direction;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.stats.Stats;
 import net.minecraft.world.InteractionHand;
-import net.minecraft.world.InteractionResultHolder;
+import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.BucketItem;
 import net.minecraft.world.item.ItemStack;
@@ -40,39 +40,39 @@ public class InfinityWaterBucketItem extends BucketItem {
         return !pPlayer.hasInfiniteMaterials() ? new ItemStack(ModItems.INFINITY_WATER_BUCKET.get()) : pBucketStack;
     }
 
-    public InteractionResultHolder<ItemStack> use(Level pLevel, Player pPlayer, InteractionHand pHand) {
+    public InteractionResult use(Level pLevel, Player pPlayer, InteractionHand pHand) {
         ItemStack itemstack = pPlayer.getItemInHand(pHand);
         BlockHitResult blockhitresult = getPlayerPOVHitResult(pLevel, pPlayer, this.content == Fluids.EMPTY ? ClipContext.Fluid.SOURCE_ONLY : ClipContext.Fluid.NONE);
-        InteractionResultHolder<ItemStack> ret = net.minecraftforge.event.ForgeEventFactory.onBucketUse(pPlayer, pLevel, itemstack, blockhitresult);
+        var ret = net.minecraftforge.event.ForgeEventFactory.onBucketUse(pPlayer, pLevel, itemstack, blockhitresult);
         if (ret != null) return ret;
         if (blockhitresult.getType() == HitResult.Type.MISS) {
-            return InteractionResultHolder.pass(itemstack);
+            return InteractionResult.PASS;
         } else if (blockhitresult.getType() != HitResult.Type.BLOCK) {
-            return InteractionResultHolder.pass(itemstack);
+            return InteractionResult.PASS;
         } else {
             BlockPos blockpos = blockhitresult.getBlockPos();
             Direction direction = blockhitresult.getDirection();
             BlockPos blockpos1 = blockpos.relative(direction);
             if (!pLevel.mayInteract(pPlayer, blockpos) || !pPlayer.mayUseItemAt(blockpos1, direction, itemstack)) {
-                return InteractionResultHolder.fail(itemstack);
+                return InteractionResult.FAIL;
             } else if (this.content == Fluids.EMPTY) {
                 BlockState blockstate1 = pLevel.getBlockState(blockpos);
                 if (blockstate1.getBlock() instanceof BucketPickup bucketpickup) {
-                    ItemStack itemstack2 = bucketpickup.pickupBlock(pPlayer, pLevel, blockpos, blockstate1);
-                    if (!itemstack2.isEmpty()) {
+                    ItemStack itemstack3 = bucketpickup.pickupBlock(pPlayer, pLevel, blockpos, blockstate1);
+                    if (!itemstack3.isEmpty()) {
                         pPlayer.awardStat(Stats.ITEM_USED.get(this));
                         bucketpickup.getPickupSound(blockstate1).ifPresent(p_150709_ -> pPlayer.playSound(p_150709_, 1.0F, 1.0F));
                         pLevel.gameEvent(pPlayer, GameEvent.FLUID_PICKUP, blockpos);
-                        ItemStack itemstack1 = ItemUtils.createFilledResult(itemstack, pPlayer, itemstack2);
+                        ItemStack itemstack2 = ItemUtils.createFilledResult(itemstack, pPlayer, itemstack3);
                         if (!pLevel.isClientSide) {
-                            CriteriaTriggers.FILLED_BUCKET.trigger((ServerPlayer) pPlayer, itemstack2);
+                            CriteriaTriggers.FILLED_BUCKET.trigger((ServerPlayer) pPlayer, itemstack3);
                         }
 
-                        return InteractionResultHolder.sidedSuccess(itemstack1, pLevel.isClientSide());
+                        return InteractionResult.SUCCESS.heldItemTransformedTo(itemstack2);
                     }
                 }
 
-                return InteractionResultHolder.fail(itemstack);
+                return InteractionResult.FAIL;
             } else {
                 BlockState blockstate = pLevel.getBlockState(blockpos);
                 BlockPos blockpos2 = canBlockContainFluid(pLevel, blockpos, blockstate) ? blockpos : blockpos1;
@@ -83,9 +83,10 @@ public class InfinityWaterBucketItem extends BucketItem {
                     }
 
                     pPlayer.awardStat(Stats.ITEM_USED.get(this));
-                    return InteractionResultHolder.sidedSuccess(getEmptySuccessItem(itemstack, pPlayer), pLevel.isClientSide());
+                    ItemStack itemstack1 = ItemUtils.createFilledResult(itemstack, pPlayer, getEmptySuccessItem(itemstack, pPlayer));
+                    return InteractionResult.SUCCESS.heldItemTransformedTo(itemstack1);
                 } else {
-                    return InteractionResultHolder.fail(itemstack);
+                    return InteractionResult.FAIL;
                 }
             }
         }

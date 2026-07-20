@@ -1,14 +1,8 @@
 {
   "type": "minecraft:smithing_transform",
-  "template": {
-    "item": "destriummod:amazonite_plate"
-  },
-  "base": {
-    "item": "destriummod:adventurer_boots"
-  },
-  "addition": {
-    "item": "destriummod:amazonite_ingot"
-  },
+  "template": "destriummod:amazonite_plate",
+  "base": "destriummod:adventurer_boots",
+  "addition": "destriummod:amazonite_ingot",
   "result": {
     "id": "destriummod:reinforced_adventurer_boots"
   }

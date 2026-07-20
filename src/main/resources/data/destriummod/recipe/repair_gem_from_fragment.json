@@ -7,9 +7,7 @@
     "aaa"
   ],
   "key": {
-    "a": {
-      "item": "destriummod:repair_fragment"
-    }
+    "a": "destriummod:repair_fragment"
   },
   "result": {
     "id": "destriummod:repair_gem"

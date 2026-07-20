@@ -6,18 +6,10 @@
     " c "
   ],
   "key": {
-    "a": {
-      "item": "minecraft:water_bucket"
-    },
-    "c": {
-      "item": "minecraft:poisonous_potato"
-    },
-    "d": {
-      "item": "destriummod:poison_star"
-    },
-    "b": {
-      "item": "destriummod:destrium_ingot"
-    }
+    "a": "minecraft:water_bucket",
+    "c": "minecraft:poisonous_potato",
+    "d": "destriummod:poison_star",
+    "b": "destriummod:destrium_ingot"
   },
   "result": {
     "id": "destriummod:poison_water_bucket"

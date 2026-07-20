@@ -6,15 +6,9 @@
     "aba"
   ],
   "key": {
-    "a": {
-      "item": "destriummod:cloud"
-    },
-    "b": {
-      "item": "destriummod:paradis_destrium_ore"
-    },
-    "c": {
-      "item": "destriummod:paradis_amazonite_ore"
-    }
+    "a": "destriummod:cloud",
+    "b": "destriummod:paradis_destrium_ore",
+    "c": "destriummod:paradis_amazonite_ore"
   },
   "result": {
     "id": "destriummod:overworld_portal_block"

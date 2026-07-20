@@ -6,15 +6,9 @@
     "cbc"
   ],
   "key": {
-    "a": {
-      "item": "destriummod:argonide_plate"
-    },
-    "c": {
-      "item": "destriummod:argonide_ingot"
-    },
-    "b": {
-      "item": "destriummod:argonide_stick"
-    }
+    "a": "destriummod:argonide_plate",
+    "c": "destriummod:argonide_ingot",
+    "b": "destriummod:argonide_stick"
   },
   "result": {
     "id": "destriummod:resistance_star"

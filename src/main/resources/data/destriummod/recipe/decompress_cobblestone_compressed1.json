@@ -1,9 +1,7 @@
 {
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
-    {
-      "item": "destriummod:cobblestone_compressed1"
-    }
+    "destriummod:cobblestone_compressed1"
   ],
   "result": {
     "id": "minecraft:cobblestone",

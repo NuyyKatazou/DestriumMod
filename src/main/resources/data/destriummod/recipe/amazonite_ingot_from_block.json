@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shapeless",
   "group": "amazonite_ingot",
   "ingredients": [
-    {
-      "item": "destriummod:amazonite_block"
-    }
+    "destriummod:amazonite_block"
   ],
   "result": {
     "id": "destriummod:amazonite_ingot",

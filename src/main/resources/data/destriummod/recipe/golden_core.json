@@ -6,15 +6,9 @@
     "bcb"
   ],
   "key": {
-    "a": {
-      "item": "minecraft:gold_ingot"
-    },
-    "b": {
-      "item": "minecraft:gold_block"
-    },
-    "c": {
-      "item": "destriummod:compressed_golden"
-    }
+    "a": "minecraft:gold_ingot",
+    "b": "minecraft:gold_block",
+    "c": "destriummod:compressed_golden"
   },
   "result": {
     "id": "destriummod:golden_core"

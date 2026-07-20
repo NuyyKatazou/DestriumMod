@@ -6,12 +6,8 @@
     " b"
   ],
   "key": {
-    "a": {
-      "item": "destriummod:amazonite_ingot"
-    },
-    "b": {
-      "item": "destriummod:amazonite_stick"
-    }
+    "a": "destriummod:amazonite_ingot",
+    "b": "destriummod:amazonite_stick"
   },
   "result": {
     "id": "destriummod:amazonite_axe"

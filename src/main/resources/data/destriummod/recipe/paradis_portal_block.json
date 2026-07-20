@@ -6,15 +6,9 @@
     "aba"
   ],
   "key": {
-    "a": {
-      "item": "destriummod:netherite_nuggets"
-    },
-    "b": {
-      "item": "destriummod:diamond_nuggets"
-    },
-    "c": {
-      "item": "destriummod:destrium_ingot"
-    }
+    "a": "destriummod:netherite_nuggets",
+    "b": "destriummod:diamond_nuggets",
+    "c": "destriummod:destrium_ingot"
   },
   "result": {
     "id": "destriummod:paradis_portal_block"

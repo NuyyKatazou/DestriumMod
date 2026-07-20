@@ -6,12 +6,8 @@
     "bbb"
   ],
   "key": {
-    "a": {
-      "item": "destriummod:argonide_ingot"
-    },
-    "b": {
-      "item": "destriummod:argonide_block"
-    }
+    "a": "destriummod:argonide_ingot",
+    "b": "destriummod:argonide_block"
   },
   "result": {
     "id": "destriummod:argonide_plate"

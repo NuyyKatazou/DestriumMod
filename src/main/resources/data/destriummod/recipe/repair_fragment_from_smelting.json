@@ -1,9 +1,7 @@
 {
   "type": "minecraft:smelting",
   "group": "repair_fragment",
-  "ingredient": {
-    "item": "destriummod:repair_ore"
-  },
+  "ingredient": "destriummod:repair_ore",
   "result": {
     "id" : "destriummod:repair_fragment"
   },

@@ -6,12 +6,8 @@
     "bbb"
   ],
   "key": {
-    "a": {
-      "item": "minecraft:blue_dye"
-    },
-    "b": {
-      "item": "destriummod:cloud"
-    }
+    "a": "minecraft:blue_dye",
+    "b": "destriummod:cloud"
   },
   "result": {
     "id": "destriummod:blue_cloud",

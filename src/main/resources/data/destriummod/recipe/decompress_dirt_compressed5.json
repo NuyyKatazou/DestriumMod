@@ -1,9 +1,7 @@
 {
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
-    {
-      "item": "destriummod:dirt_compressed5"
-    }
+    "destriummod:dirt_compressed5"
   ],
   "result": {
     "id": "destriummod:dirt_compressed4",

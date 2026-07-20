@@ -6,12 +6,8 @@
     " b"
   ],
   "key": {
-    "a": {
-      "item": "destriummod:destrium_ingot"
-    },
-    "b": {
-      "item": "destriummod:destrium_stick"
-    }
+    "a": "destriummod:destrium_ingot",
+    "b": "destriummod:destrium_stick"
   },
   "result": {
     "id": "destriummod:destrium_axe"

@@ -7,9 +7,7 @@
     "aaa"
   ],
   "key": {
-    "a": {
-      "item": "destriummod:diamond_nuggets"
-    }
+    "a": "destriummod:diamond_nuggets"
   },
   "result": {
     "id": "minecraft:diamond"

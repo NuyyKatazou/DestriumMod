@@ -6,7 +6,6 @@ import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.material.Fluids;
-import net.minecraft.world.level.portal.DimensionTransition;
 import net.minecraft.world.level.portal.TeleportTransition;
 import net.minecraft.world.phys.Vec3;
 
@@ -18,7 +17,7 @@ public final class OverworldTeleporter {
         BlockPos destinationPos = findDestinationPos(destinationWorld, portalPos, toOverworld);
         Vec3 targetPos = new Vec3(destinationPos.getX() + 0.5D, destinationPos.getY() + 1D, destinationPos.getZ() + 0.5D);
 
-        return new DimensionTransition(
+        return new TeleportTransition(
                 destinationWorld,
                 targetPos,
                 player.getDeltaMovement(),
@@ -29,7 +28,7 @@ public final class OverworldTeleporter {
                         setupOverworldPlatform(destinationWorld, destinationPos);
                         f = 1;
                     }
-                    DimensionTransition.PLAY_PORTAL_SOUND.onTransition(entity);
+                    TeleportTransition.PLAY_PORTAL_SOUND.onTransition(entity);
                 }
         );
     }

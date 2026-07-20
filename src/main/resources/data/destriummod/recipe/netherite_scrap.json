@@ -6,9 +6,7 @@
     "aaa"
   ],
   "key": {
-    "a": {
-      "item": "destriummod:netherite_nuggets"
-    }
+    "a": "destriummod:netherite_nuggets"
   },
   "result": {
     "id": "minecraft:netherite_scrap"

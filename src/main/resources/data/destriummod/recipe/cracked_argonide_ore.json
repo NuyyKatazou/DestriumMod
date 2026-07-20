@@ -6,12 +6,8 @@
     "bbb"
   ],
   "key": {
-    "a": {
-      "item": "destriummod:orange_cloud"
-    },
-    "b": {
-      "item": "destriummod:cracked_cloud"
-    }
+    "a": "destriummod:orange_cloud",
+    "b": "destriummod:cracked_cloud"
   },
   "result": {
     "id": "destriummod:cracked_argonide_ore",

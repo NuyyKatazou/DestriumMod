@@ -6,12 +6,8 @@
     "bbb"
   ],
   "key": {
-    "a": {
-      "item": "minecraft:netherite_ingot"
-    },
-    "b": {
-      "item": "minecraft:netherite_block"
-    }
+    "a": "minecraft:netherite_ingot",
+    "b": "minecraft:netherite_block"
   },
   "result": {
     "id": "destriummod:netherite_plate"

@@ -41,25 +41,25 @@ public class ModItems {
 
 
     //Armors and Tools
-    public static final RegistryObject<Item> AMAZONITE_SWORD = registerItem("amazonite_sword", (properties) -> new SwordItem(ModToolsTiers.AMAZONITE, 2, -0.8f, properties, component(properties.fireResistant(), "amazonite_sword", ChatFormatting.DARK_AQUA)));
-    public static final RegistryObject<Item> AMAZONITE_PICKAXE = registerItem("amazonite_pickaxe", (properties) -> new PickaxeItem(ModToolsTiers.AMAZONITE, 1, -2.8f, properties, component(properties.fireResistant(), "amazonite_pickaxe", ChatFormatting.DARK_AQUA)));
-    public static final RegistryObject<Item> AMAZONITE_AXE = registerItem("amazonite_axe", (properties) -> new AxeItem(ModToolsTiers.AMAZONITE, 2, -3f, properties, component(properties.fireResistant(), "amazonite_axe", ChatFormatting.DARK_AQUA)));
-    public static final RegistryObject<Item> AMAZONITE_SHOVEL = registerItem("amazonite_shovel", (properties) -> new ShovelItem(ModToolsTiers.AMAZONITE, -2, -3f, properties, component(properties.fireResistant(), "amazonite_shovel", ChatFormatting.DARK_AQUA)));
-    public static final RegistryObject<Item> AMAZONITE_HOES = registerItem("amazonite_hoes", (properties) -> new HoeItem(ModToolsTiers.AMAZONITE, -7, -3f, properties, component(properties.fireResistant(), "amazonite_hoes", ChatFormatting.DARK_AQUA)));
+    public static final RegistryObject<Item> AMAZONITE_SWORD = registerItem("amazonite_sword", (properties) -> new SwordItem(ModToolsTiers.AMAZONITE, 2, -0.8f, component(properties.fireResistant(), "amazonite_sword", ChatFormatting.DARK_AQUA)));
+    public static final RegistryObject<Item> AMAZONITE_PICKAXE = registerItem("amazonite_pickaxe", (properties) -> new PickaxeItem(ModToolsTiers.AMAZONITE, 1, -2.8f, component(properties.fireResistant(), "amazonite_pickaxe", ChatFormatting.DARK_AQUA)));
+    public static final RegistryObject<Item> AMAZONITE_AXE = registerItem("amazonite_axe", (properties) -> new AxeItem(ModToolsTiers.AMAZONITE, 2, -3f, component(properties.fireResistant(), "amazonite_axe", ChatFormatting.DARK_AQUA)));
+    public static final RegistryObject<Item> AMAZONITE_SHOVEL = registerItem("amazonite_shovel", (properties) -> new ShovelItem(ModToolsTiers.AMAZONITE, -2, -3f, component(properties.fireResistant(), "amazonite_shovel", ChatFormatting.DARK_AQUA)));
+    public static final RegistryObject<Item> AMAZONITE_HOES = registerItem("amazonite_hoes", (properties) -> new HoeItem(ModToolsTiers.AMAZONITE, -7, -3f, component(properties.fireResistant(), "amazonite_hoes", ChatFormatting.DARK_AQUA)));
 
-    public static final RegistryObject<Item> DESTRIUM_SWORD = registerItem("destrium_sword", (properties) -> new SwordItem(ModToolsTiers.DESTRIUM, 1, -1.4f, properties, component(properties.fireResistant(), "destrium_sword", ChatFormatting.DARK_GREEN)));
-    public static final RegistryObject<Item> DESTRIUM_PICKAXE = registerItem("destrium_pickaxe", (properties) -> new PickaxeItem(ModToolsTiers.DESTRIUM, 0, -2.8f, properties, component(properties.fireResistant(), "destrium_pickaxe", ChatFormatting.DARK_GREEN)));
-    public static final RegistryObject<Item> DESTRIUM_AXE = registerItem("destrium_axe", (properties) -> new AxeItem(ModToolsTiers.DESTRIUM, 3, -3f, properties, component(properties.fireResistant(), "destrium_axe", ChatFormatting.DARK_GREEN)));
-    public static final RegistryObject<Item> DESTRIUM_SHOVEL = registerItem("destrium_shovel", (properties) -> new ShovelItem(ModToolsTiers.DESTRIUM, 0, -3f, properties, component(properties.fireResistant(), "destrium_shovel", ChatFormatting.DARK_GREEN)));
-    public static final RegistryObject<Item> DESTRIUM_HOES = registerItem("destrium_hoes", (properties) -> new HoeItem(ModToolsTiers.DESTRIUM, -6, -3f, properties, component(properties.fireResistant(), "destrium_hoes", ChatFormatting.DARK_GREEN)));
+    public static final RegistryObject<Item> DESTRIUM_SWORD = registerItem("destrium_sword", (properties) -> new SwordItem(ModToolsTiers.DESTRIUM, 1, -1.4f, component(properties.fireResistant(), "destrium_sword", ChatFormatting.DARK_GREEN)));
+    public static final RegistryObject<Item> DESTRIUM_PICKAXE = registerItem("destrium_pickaxe", (properties) -> new PickaxeItem(ModToolsTiers.DESTRIUM, 0, -2.8f, component(properties.fireResistant(), "destrium_pickaxe", ChatFormatting.DARK_GREEN)));
+    public static final RegistryObject<Item> DESTRIUM_AXE = registerItem("destrium_axe", (properties) -> new AxeItem(ModToolsTiers.DESTRIUM, 3, -3f, component(properties.fireResistant(), "destrium_axe", ChatFormatting.DARK_GREEN)));
+    public static final RegistryObject<Item> DESTRIUM_SHOVEL = registerItem("destrium_shovel", (properties) -> new ShovelItem(ModToolsTiers.DESTRIUM, 0, -3f, component(properties.fireResistant(), "destrium_shovel", ChatFormatting.DARK_GREEN)));
+    public static final RegistryObject<Item> DESTRIUM_HOES = registerItem("destrium_hoes", (properties) -> new HoeItem(ModToolsTiers.DESTRIUM, -6, -3f, component(properties.fireResistant(), "destrium_hoes", ChatFormatting.DARK_GREEN)));
 
-    public static final RegistryObject<Item> ARGONIDE_SWORD = registerItem("argonide_sword", (properties) -> new SwordItem(ModToolsTiers.ARGONIDE, 2, -1.9f, properties, component(properties.fireResistant(), "argonide_sword", ChatFormatting.GOLD)));
-    public static final RegistryObject<Item> ARGONIDE_PICKAXE = registerItem("argonide_pickaxe", (properties) -> new PickaxeItem(ModToolsTiers.ARGONIDE, 0, -2.8f, properties, component(properties.fireResistant(), "argonide_pickaxe", ChatFormatting.GOLD)));
-    public static final RegistryObject<Item> ARGONIDE_AXE = registerItem("argonide_axe", (properties) -> new AxeItem(ModToolsTiers.ARGONIDE, 4, -3f, properties, component(properties.fireResistant(), "argonide_axe", ChatFormatting.GOLD)));
-    public static final RegistryObject<Item> ARGONIDE_SHOVEL = registerItem("argonide_shovel", (properties) -> new ShovelItem(ModToolsTiers.ARGONIDE, 1, -3f, properties, component(properties.fireResistant(), "argonide_shovel", ChatFormatting.GOLD)));
-    public static final RegistryObject<Item> ARGONIDE_HOES = registerItem("argonide_hoes", (properties) -> new HoeItem(ModToolsTiers.ARGONIDE, -5, -3f, properties, component(properties.fireResistant(), "argonide_hoes", ChatFormatting.GOLD)));
+    public static final RegistryObject<Item> ARGONIDE_SWORD = registerItem("argonide_sword", (properties) -> new SwordItem(ModToolsTiers.ARGONIDE, 2, -1.9f, component(properties.fireResistant(), "argonide_sword", ChatFormatting.GOLD)));
+    public static final RegistryObject<Item> ARGONIDE_PICKAXE = registerItem("argonide_pickaxe", (properties) -> new PickaxeItem(ModToolsTiers.ARGONIDE, 0, -2.8f, component(properties.fireResistant(), "argonide_pickaxe", ChatFormatting.GOLD)));
+    public static final RegistryObject<Item> ARGONIDE_AXE = registerItem("argonide_axe", (properties) -> new AxeItem(ModToolsTiers.ARGONIDE, 4, -3f, component(properties.fireResistant(), "argonide_axe", ChatFormatting.GOLD)));
+    public static final RegistryObject<Item> ARGONIDE_SHOVEL = registerItem("argonide_shovel", (properties) -> new ShovelItem(ModToolsTiers.ARGONIDE, 1, -3f, component(properties.fireResistant(), "argonide_shovel", ChatFormatting.GOLD)));
+    public static final RegistryObject<Item> ARGONIDE_HOES = registerItem("argonide_hoes", (properties) -> new HoeItem(ModToolsTiers.ARGONIDE, -5, -3f, component(properties.fireResistant(), "argonide_hoes", ChatFormatting.GOLD)));
 
-    public static final RegistryObject<Item> SPAWNERS_PICKAXE = registerItem("spawners_pickaxe", (properties) -> new SpawnersPickaxe(ModToolsTiers.SPAWNERS, 0, -2.8f, properties, component(properties.fireResistant(), "spawners_pickaxe", ChatFormatting.DARK_RED)));
+    public static final RegistryObject<Item> SPAWNERS_PICKAXE = registerItem("spawners_pickaxe", (properties) -> new SpawnersPickaxe(ModToolsTiers.SPAWNERS, 0, -2.8f, component(properties.fireResistant(), "spawners_pickaxe", ChatFormatting.DARK_RED)));
 
 
     public static final RegistryObject<Item> AMAZONITE_HELMET = registerItem("amazonite_helmet", (properties) -> new AmazoniteArmorHelmet(ModArmorMaterials.AMAZONITE, ArmorType.HELMET, component(properties.durability(ArmorType.HELMET.getDurability(1256)).fireResistant(), "amazonite_helmet", ChatFormatting.DARK_AQUA)));

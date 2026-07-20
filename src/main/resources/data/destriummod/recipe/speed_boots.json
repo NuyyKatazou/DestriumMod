@@ -6,15 +6,9 @@
     "aca"
   ],
   "key": {
-    "a": {
-      "item": "minecraft:feather"
-    },
-    "c": {
-      "item": "minecraft:sugar"
-    },
-    "b": {
-      "item": "destriummod:destrium_boots"
-    }
+    "a": "minecraft:feather",
+    "c": "minecraft:sugar",
+    "b": "destriummod:destrium_boots"
   },
   "result": {
     "id": "destriummod:speed_boots"

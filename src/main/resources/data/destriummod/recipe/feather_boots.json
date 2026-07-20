@@ -6,15 +6,9 @@
     "aca"
   ],
   "key": {
-    "a": {
-      "item": "minecraft:feather"
-    },
-    "c": {
-      "item": "minecraft:anvil"
-    },
-    "b": {
-      "item": "destriummod:jump_boots"
-    }
+    "a": "minecraft:feather",
+    "c": "minecraft:anvil",
+    "b": "destriummod:jump_boots"
   },
   "result": {
     "id": "destriummod:feather_boots"

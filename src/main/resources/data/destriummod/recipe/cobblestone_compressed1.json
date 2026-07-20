@@ -6,9 +6,7 @@
     "aaa"
   ],
   "key": {
-    "a": {
-      "item": "minecraft:cobblestone"
-    }
+    "a": "minecraft:cobblestone"
   },
   "result": {
     "id": "destriummod:cobblestone_compressed1"

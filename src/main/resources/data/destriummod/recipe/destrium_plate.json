@@ -6,12 +6,8 @@
     "bbb"
   ],
   "key": {
-    "a": {
-      "item": "destriummod:destrium_ingot"
-    },
-    "b": {
-      "item": "destriummod:destrium_block"
-    }
+    "a": "destriummod:destrium_ingot",
+    "b": "destriummod:destrium_block"
   },
   "result": {
     "id": "destriummod:destrium_plate"

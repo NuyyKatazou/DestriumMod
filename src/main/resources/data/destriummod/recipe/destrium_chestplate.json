@@ -6,9 +6,7 @@
     "aaa"
   ],
   "key": {
-    "a": {
-      "item": "destriummod:destrium_ingot"
-    }
+    "a": "destriummod:destrium_ingot"
   },
   "result": {
     "id": "destriummod:destrium_chestplate"

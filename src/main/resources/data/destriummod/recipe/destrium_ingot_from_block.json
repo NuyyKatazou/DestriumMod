@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shapeless",
   "group": "destrium_ingot",
   "ingredients": [
-    {
-      "item": "destriummod:destrium_block"
-    }
+    "destriummod:destrium_block"
   ],
   "result": {
     "id": "destriummod:destrium_ingot",

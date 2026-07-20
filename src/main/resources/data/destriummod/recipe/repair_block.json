@@ -6,9 +6,7 @@
     "aaa"
   ],
   "key": {
-    "a": {
-      "item": "destriummod:repair_gem"
-    }
+    "a": "destriummod:repair_gem"
   },
   "result": {
     "id": "destriummod:repair_block"

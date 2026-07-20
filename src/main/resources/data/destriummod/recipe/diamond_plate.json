@@ -6,12 +6,8 @@
     "bbb"
   ],
   "key": {
-    "a": {
-      "item": "minecraft:diamond"
-    },
-    "b": {
-      "item": "minecraft:diamond_block"
-    }
+    "a": "minecraft:diamond",
+    "b": "minecraft:diamond_block"
   },
   "result": {
     "id": "destriummod:diamond_plate"

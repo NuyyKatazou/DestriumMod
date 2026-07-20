@@ -6,24 +6,12 @@
     "efe"
   ],
   "key": {
-    "a": {
-      "item": "destriummod:argonide_plate"
-    },
-    "b": {
-      "item": "destriummod:resistance_star"
-    },
-    "c": {
-      "item": "destriummod:destrium_plate"
-    },
-    "d": {
-      "item": "minecraft:water_bucket"
-    },
-    "e": {
-      "item": "destriummod:golden_core"
-    },
-    "f": {
-      "item": "destriummod:poison_star"
-    }
+    "a": "destriummod:argonide_plate",
+    "b": "destriummod:resistance_star",
+    "c": "destriummod:destrium_plate",
+    "d": "minecraft:water_bucket",
+    "e": "destriummod:golden_core",
+    "f": "destriummod:poison_star"
   },
   "result": {
     "id": "destriummod:infinity_water_bucket"
