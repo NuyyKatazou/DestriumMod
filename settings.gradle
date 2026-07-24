@@ -13,4 +13,4 @@ plugins {
     id 'org.gradle.toolchains.foojay-resolver-convention' version '0.7.0'
 }
 
-rootProject.name = 'destriummod-forge-1.21.4'
+rootProject.name = 'DestriumMod-Forge-1.21.4'
