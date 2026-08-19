@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/crop",
-  "render_type": "cutout",
-  "textures": {
-    "crop": "destriummod:block/destrium_plants_stage3"
-  }
-}

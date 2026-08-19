@@ -46,19 +46,19 @@ public class ModItems {
     public static final RegistryObject<Item> AMAZONITE_PICKAXE = registerItem("amazonite_pickaxe", (properties) -> new PickaxeItem(ModToolsTiers.AMAZONITE, 1, -2.8f, component(properties.fireResistant(), "amazonite_pickaxe", ChatFormatting.DARK_AQUA)));
     public static final RegistryObject<Item> AMAZONITE_AXE = registerItem("amazonite_axe", (properties) -> new AxeItem(ModToolsTiers.AMAZONITE, 2, -3f, component(properties.fireResistant(), "amazonite_axe", ChatFormatting.DARK_AQUA)));
     public static final RegistryObject<Item> AMAZONITE_SHOVEL = registerItem("amazonite_shovel", (properties) -> new ShovelItem(ModToolsTiers.AMAZONITE, -2, -3f, component(properties.fireResistant(), "amazonite_shovel", ChatFormatting.DARK_AQUA)));
-    public static final RegistryObject<Item> AMAZONITE_HOES = registerItem("amazonite_hoes", (properties) -> new HoeItem(ModToolsTiers.AMAZONITE, -7, -3f, component(properties.fireResistant(), "amazonite_hoes", ChatFormatting.DARK_AQUA)));
+    public static final RegistryObject<Item> AMAZONITE_HOE = registerItem("amazonite_hoe", (properties) -> new HoeItem(ModToolsTiers.AMAZONITE, -7, -3f, component(properties.fireResistant(), "amazonite_hoe", ChatFormatting.DARK_AQUA)));
 
     public static final RegistryObject<Item> DESTRIUM_SWORD = registerItem("destrium_sword", (properties) -> new SwordItem(ModToolsTiers.DESTRIUM, 1, -1.4f, component(properties.fireResistant(), "destrium_sword", ChatFormatting.DARK_GREEN)));
     public static final RegistryObject<Item> DESTRIUM_PICKAXE = registerItem("destrium_pickaxe", (properties) -> new PickaxeItem(ModToolsTiers.DESTRIUM, 0, -2.8f, component(properties.fireResistant(), "destrium_pickaxe", ChatFormatting.DARK_GREEN)));
     public static final RegistryObject<Item> DESTRIUM_AXE = registerItem("destrium_axe", (properties) -> new AxeItem(ModToolsTiers.DESTRIUM, 3, -3f, component(properties.fireResistant(), "destrium_axe", ChatFormatting.DARK_GREEN)));
     public static final RegistryObject<Item> DESTRIUM_SHOVEL = registerItem("destrium_shovel", (properties) -> new ShovelItem(ModToolsTiers.DESTRIUM, 0, -3f, component(properties.fireResistant(), "destrium_shovel", ChatFormatting.DARK_GREEN)));
-    public static final RegistryObject<Item> DESTRIUM_HOES = registerItem("destrium_hoes", (properties) -> new HoeItem(ModToolsTiers.DESTRIUM, -6, -3f, component(properties.fireResistant(), "destrium_hoes", ChatFormatting.DARK_GREEN)));
+    public static final RegistryObject<Item> DESTRIUM_HOE = registerItem("destrium_hoe", (properties) -> new HoeItem(ModToolsTiers.DESTRIUM, -6, -3f, component(properties.fireResistant(), "destrium_hoe", ChatFormatting.DARK_GREEN)));
 
     public static final RegistryObject<Item> ARGONIDE_SWORD = registerItem("argonide_sword", (properties) -> new SwordItem(ModToolsTiers.ARGONIDE, 2, -1.9f, component(properties.fireResistant(), "argonide_sword", ChatFormatting.GOLD)));
     public static final RegistryObject<Item> ARGONIDE_PICKAXE = registerItem("argonide_pickaxe", (properties) -> new PickaxeItem(ModToolsTiers.ARGONIDE, 0, -2.8f, component(properties.fireResistant(), "argonide_pickaxe", ChatFormatting.GOLD)));
     public static final RegistryObject<Item> ARGONIDE_AXE = registerItem("argonide_axe", (properties) -> new AxeItem(ModToolsTiers.ARGONIDE, 4, -3f, component(properties.fireResistant(), "argonide_axe", ChatFormatting.GOLD)));
     public static final RegistryObject<Item> ARGONIDE_SHOVEL = registerItem("argonide_shovel", (properties) -> new ShovelItem(ModToolsTiers.ARGONIDE, 1, -3f, component(properties.fireResistant(), "argonide_shovel", ChatFormatting.GOLD)));
-    public static final RegistryObject<Item> ARGONIDE_HOES = registerItem("argonide_hoes", (properties) -> new HoeItem(ModToolsTiers.ARGONIDE, -5, -3f, component(properties.fireResistant(), "argonide_hoes", ChatFormatting.GOLD)));
+    public static final RegistryObject<Item> ARGONIDE_HOE = registerItem("argonide_hoe", (properties) -> new HoeItem(ModToolsTiers.ARGONIDE, -5, -3f, component(properties.fireResistant(), "argonide_hoe", ChatFormatting.GOLD)));
 
     public static final RegistryObject<Item> SPAWNERS_PICKAXE = registerItem("spawners_pickaxe", (properties) -> new SpawnersPickaxe(ModToolsTiers.SPAWNERS, 0, -2.8f, component(properties.fireResistant(), "spawners_pickaxe", ChatFormatting.DARK_RED)));
 
@@ -92,18 +92,18 @@ public class ModItems {
     public static final RegistryObject<Item> AMAZONITE_CRUMB = registerItem("amazonite_crumb", (properties) -> new Item(component(properties.fireResistant(), "amazonite_crumb", ChatFormatting.DARK_AQUA)));
     public static final RegistryObject<Item> AMAZONITE_DUST = registerItem("amazonite_dust", (properties) -> new Item(component(properties.fireResistant(), "amazonite_dust", ChatFormatting.DARK_AQUA)));
     public static final RegistryObject<Item> AMAZONITE_FRAGMENT = registerItem("amazonite_fragment", (properties) -> new Item(component(properties.fireResistant(), "amazonite_fragment", ChatFormatting.DARK_AQUA)));
-    public static final RegistryObject<Item> AMAZONITE_NUGGETS = registerItem("amazonite_nuggets", (properties) -> new Item(component(properties.fireResistant(), "amazonite_nuggets", ChatFormatting.DARK_AQUA)));
+    public static final RegistryObject<Item> AMAZONITE_NUGGET = registerItem("amazonite_nugget", (properties) -> new Item(component(properties.fireResistant(), "amazonite_nugget", ChatFormatting.DARK_AQUA)));
     public static final RegistryObject<Item> AMAZONITE_INGOT = registerItem("amazonite_ingot", (properties) -> new AmazoniteIngot(component(properties.fireResistant(), "amazonite_ingot", ChatFormatting.DARK_AQUA)));
-    public static final RegistryObject<Item> DESTRIUM_NUGGETS = registerItem("destrium_nuggets", (properties) -> new Item(component(properties.fireResistant(), "destrium_nuggets", ChatFormatting.DARK_GREEN)));
+    public static final RegistryObject<Item> DESTRIUM_NUGGET = registerItem("destrium_nugget", (properties) -> new Item(component(properties.fireResistant(), "destrium_nugget", ChatFormatting.DARK_GREEN)));
     public static final RegistryObject<Item> DESTRIUM_INGOT = registerItem("destrium_ingot", (properties) -> new DestriumIngot(component(properties.fireResistant(), "destrium_ingot", ChatFormatting.DARK_GREEN)));
-    public static final RegistryObject<Item> ARGONIDE_NUGGETS = registerItem("argonide_nuggets", (properties) -> new Item(component(properties.fireResistant(), "argonide_nuggets", ChatFormatting.GOLD)));
+    public static final RegistryObject<Item> ARGONIDE_NUGGET = registerItem("argonide_nugget", (properties) -> new Item(component(properties.fireResistant(), "argonide_nugget", ChatFormatting.GOLD)));
     public static final RegistryObject<Item> ARGONIDE_INGOT = registerItem("argonide_ingot", (properties) -> new ArgonideIngot(component(properties.fireResistant(), "argonide_ingot", ChatFormatting.GOLD)));
     public static final RegistryObject<Item> REPAIR_FRAGMENT = registerItem("repair_fragment", (properties) -> new Item(component(properties.fireResistant(), "repair_fragment", ChatFormatting.LIGHT_PURPLE)));
     public static final RegistryObject<Item> REPAIR_GEM = registerItem("repair_gem", (properties) -> new Item(component(properties.fireResistant(), "repair_gem", ChatFormatting.LIGHT_PURPLE)));
 
-    public static final RegistryObject<Item> EMERALD_NUGGETS = registerItem("emerald_nuggets", (properties) -> new Item(component(properties, "emerald_nuggets", ChatFormatting.GREEN)));
-    public static final RegistryObject<Item> DIAMOND_NUGGETS = registerItem("diamond_nuggets", (properties) -> new Item(component(properties, "diamond_nuggets", ChatFormatting.AQUA)));
-    public static final RegistryObject<Item> NETHERITE_NUGGETS = registerItem("netherite_nuggets", (properties) -> new Item(component(properties.fireResistant(),  "netherite_nuggets", ChatFormatting.DARK_GRAY)));
+    public static final RegistryObject<Item> EMERALD_NUGGET = registerItem("emerald_nugget", (properties) -> new Item(component(properties, "emerald_nugget", ChatFormatting.GREEN)));
+    public static final RegistryObject<Item> DIAMOND_NUGGET = registerItem("diamond_nugget", (properties) -> new Item(component(properties, "diamond_nugget", ChatFormatting.AQUA)));
+    public static final RegistryObject<Item> NETHERITE_NUGGET = registerItem("netherite_nugget", (properties) -> new Item(component(properties.fireResistant(),  "netherite_nugget", ChatFormatting.DARK_GRAY)));
 
 
     public static final RegistryObject<Item> AMAZONITE_STICK = registerItem("amazonite_stick", (properties) -> new AmazoniteStick(component(properties.fireResistant(), "amazonite_stick", ChatFormatting.DARK_AQUA)));
@@ -135,9 +135,9 @@ public class ModItems {
 
 
     //Seeds
-    public static final RegistryObject<Item> DESTRIUM_SEEDS = registerItem("destrium_seeds", (properties) -> new BlockItem(ModBlocks.DESTRIUM_PLANTS.get(), component(properties.fireResistant(), "destrium_seeds", ChatFormatting.DARK_AQUA)));
-    public static final RegistryObject<Item> AMAZONITE_SEEDS = registerItem("amazonite_seeds", (properties) -> new BlockItem(ModBlocks.AMAZONITE_PLANTS.get(), component(properties.fireResistant(), "amazonite_seeds", ChatFormatting.DARK_GREEN)));
-    public static final RegistryObject<Item> XP_SEEDS = registerItem("xp_seeds", (properties) -> new BlockItem(ModBlocks.XP_PLANTS.get(), component(properties.fireResistant(), "xp_seeds", ChatFormatting.DARK_PURPLE)));
+    public static final RegistryObject<Item> DESTRIUM_SEEDS = registerItem("destrium_seeds", (properties) -> new BlockItem(ModBlocks.DESTRIUM_PLANT.get(), component(properties.fireResistant(), "destrium_seeds", ChatFormatting.DARK_AQUA)));
+    public static final RegistryObject<Item> AMAZONITE_SEEDS = registerItem("amazonite_seeds", (properties) -> new BlockItem(ModBlocks.AMAZONITE_PLANT.get(), component(properties.fireResistant(), "amazonite_seeds", ChatFormatting.DARK_GREEN)));
+    public static final RegistryObject<Item> EXPERIENCE_SEEDS = registerItem("experience_seeds", (properties) -> new BlockItem(ModBlocks.EXPERIENCE_PLANT.get(), component(properties.fireResistant(), "experience_seeds", ChatFormatting.DARK_PURPLE)));
 
 
     public static RegistryObject<Item> registerItem(String name, Function<Item.Properties, Item> function) {

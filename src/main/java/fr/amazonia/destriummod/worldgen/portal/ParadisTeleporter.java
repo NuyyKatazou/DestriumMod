@@ -1,6 +1,6 @@
 package fr.amazonia.destriummod.worldgen.portal;
 
-import fr.amazonia.destriummod.block.ParadisPortalBlocks;
+import fr.amazonia.destriummod.block.ParadisPortalBlock;
 import fr.amazonia.destriummod.init.ModBlocks;
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerLevel;
@@ -73,7 +73,7 @@ public final class ParadisTeleporter {
     private static void setupParadisPlatform(ServerLevel destinationWorld, BlockPos destinationPos) {
         boolean doSetBlock = true;
         for (BlockPos checkPos : BlockPos.betweenClosed(destinationPos.below(10).west(10), destinationPos.above(10).east(10))) {
-            if (destinationWorld.getBlockState(checkPos).getBlock() instanceof ParadisPortalBlocks) {
+            if (destinationWorld.getBlockState(checkPos).getBlock() instanceof ParadisPortalBlock) {
                 doSetBlock = false;
                 break;
             }

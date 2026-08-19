@@ -46,7 +46,7 @@
             },
             {
               "type": "minecraft:item",
-              "name": "destriummod:xp_seeds",
+              "name": "destriummod:experience_seeds",
               "functions": [
                 {
                   "function": "minecraft:explosion_decay"

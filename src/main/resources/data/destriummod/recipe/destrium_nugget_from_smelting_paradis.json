@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "group": "destrium_nuggets",
+  "ingredient": "destriummod:paradis_destrium_ore",
+  "result": {
+    "id" : "destriummod:destrium_nugget"
+  },
+  "experience": 25,
+  "cookingtime": 1000
+}

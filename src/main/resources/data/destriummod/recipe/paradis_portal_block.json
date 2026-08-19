@@ -6,8 +6,8 @@
     "aba"
   ],
   "key": {
-    "a": "destriummod:netherite_nuggets",
-    "b": "destriummod:diamond_nuggets",
+    "a": "destriummod:netherite_nugget",
+    "b": "destriummod:diamond_nugget",
     "c": "destriummod:destrium_ingot"
   },
   "result": {

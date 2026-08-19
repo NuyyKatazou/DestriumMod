@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/crop",
-  "render_type": "cutout",
-  "textures": {
-    "crop": "destriummod:block/amazonite_plants_stage1"
-  }
-}

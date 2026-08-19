@@ -1,11 +1,11 @@
 package fr.amazonia.destriummod.init;
 
 import fr.amazonia.destriummod.DestriumMod;
-import fr.amazonia.destriummod.block.OverworldPortalBlocks;
-import fr.amazonia.destriummod.block.ParadisPortalBlocks;
-import fr.amazonia.destriummod.block.plants.AmazonitePlants;
-import fr.amazonia.destriummod.block.plants.DestriumPlants;
-import fr.amazonia.destriummod.block.plants.XpPlants;
+import fr.amazonia.destriummod.block.OverworldPortalBlock;
+import fr.amazonia.destriummod.block.ParadisPortalBlock;
+import fr.amazonia.destriummod.block.plant.AmazonitePlant;
+import fr.amazonia.destriummod.block.plant.DestriumPlant;
+import fr.amazonia.destriummod.block.plant.ExperiencePlant;
 import fr.amazonia.destriummod.fluid.PoisonWaterFluidBlock;
 import fr.amazonia.destriummod.fluid.ResistanceLavaFluidBlock;
 import net.minecraft.core.registries.Registries;
@@ -90,21 +90,21 @@ public class ModBlocks {
 
 
     //Others
-    public static final RegistryObject<Block> AMAZONITE_RELIQUE_BLOCK = registerBlock("amazonite_relique_block", (properties) -> new DropExperienceBlock(UniformInt.of(5, 15), properties.sound(SoundType.NETHERITE_BLOCK).strength(25f, 100f).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> AMAZONITE_RELIC = registerBlock("amazonite_relic", (properties) -> new DropExperienceBlock(UniformInt.of(5, 15), properties.sound(SoundType.NETHERITE_BLOCK).strength(25f, 100f).requiresCorrectToolForDrops()));
 
 
     public static final RegistryObject<Block> BELOW_BLOCK = registerBlock("below_block", (properties) -> new Block(properties.sound(SoundType.GLASS).strength(2f, 1f).requiresCorrectToolForDrops()));
 
 
     //Portal Blocks
-    public static final RegistryObject<Block> PARADIS_PORTAL_BLOCK = registerBlock("paradis_portal_block", (properties) -> new ParadisPortalBlocks(properties.strength(5f, 999f).requiresCorrectToolForDrops()));
-    public static final RegistryObject<Block> OVERWORLD_PORTAL_BLOCK = registerBlock("overworld_portal_block", (properties) -> new OverworldPortalBlocks(properties.strength(5f, 999f).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> PARADIS_PORTAL_BLOCK = registerBlock("paradis_portal_block", (properties) -> new ParadisPortalBlock(properties.strength(5f, 999f).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> OVERWORLD_PORTAL_BLOCK = registerBlock("overworld_portal_block", (properties) -> new OverworldPortalBlock(properties.strength(5f, 999f).requiresCorrectToolForDrops()));
 
 
     //Plants
-    public static final RegistryObject<Block> AMAZONITE_PLANTS = BLOCKS.register("amazonite_plants", () -> new AmazonitePlants(BlockBehaviour.Properties.of().instabreak().randomTicks().noCollission().sound(SoundType.CROP).setId(ResourceKey.create(Registries.BLOCK, ResourceLocation.fromNamespaceAndPath(DestriumMod.MODID, "amazonite_plants")))));
-    public static final RegistryObject<Block> DESTRIUM_PLANTS = BLOCKS.register("destrium_plants", () -> new DestriumPlants(BlockBehaviour.Properties.of().instabreak().randomTicks().noCollission().sound(SoundType.CROP).setId(ResourceKey.create(Registries.BLOCK, ResourceLocation.fromNamespaceAndPath(DestriumMod.MODID, "destrium_plants")))));
-    public static final RegistryObject<Block> XP_PLANTS = BLOCKS.register("xp_plants", () -> new XpPlants(BlockBehaviour.Properties.of().instabreak().randomTicks().noCollission().sound(SoundType.CROP).setId(ResourceKey.create(Registries.BLOCK, ResourceLocation.fromNamespaceAndPath(DestriumMod.MODID, "xp_plants")))));
+    public static final RegistryObject<Block> AMAZONITE_PLANT = BLOCKS.register("amazonite_plant", () -> new AmazonitePlant(BlockBehaviour.Properties.of().instabreak().randomTicks().noCollission().sound(SoundType.CROP).setId(ResourceKey.create(Registries.BLOCK, ResourceLocation.fromNamespaceAndPath(DestriumMod.MODID, "amazonite_plant")))));
+    public static final RegistryObject<Block> DESTRIUM_PLANT = BLOCKS.register("destrium_plant", () -> new DestriumPlant(BlockBehaviour.Properties.of().instabreak().randomTicks().noCollission().sound(SoundType.CROP).setId(ResourceKey.create(Registries.BLOCK, ResourceLocation.fromNamespaceAndPath(DestriumMod.MODID, "destrium_plant")))));
+    public static final RegistryObject<Block> EXPERIENCE_PLANT = BLOCKS.register("experience_plant", () -> new ExperiencePlant(BlockBehaviour.Properties.of().instabreak().randomTicks().noCollission().sound(SoundType.CROP).setId(ResourceKey.create(Registries.BLOCK, ResourceLocation.fromNamespaceAndPath(DestriumMod.MODID, "experience_plant")))));
 
 
     //Flowers

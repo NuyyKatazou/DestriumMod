@@ -1,19 +1,19 @@
 {
   "item.destriummod.amazonite_ingot": "Lingot d'Amazonite",
-  "item.destriummod.amazonite_nuggets": "Pépite d'Amazonite",
+  "item.destriummod.amazonite_nugget": "Pépite d'Amazonite",
   "item.destriummod.amazonite_fragment": "Fragment d'Amazonite",
   "item.destriummod.amazonite_dust": "Poudre d'Amazonite",
   "item.destriummod.amazonite_crumb": "Miette d'Amazonite",
   "item.destriummod.destrium_ingot": "Lingot de Destrium",
-  "item.destriummod.destrium_nuggets": "Pépite de Destrium",
+  "item.destriummod.destrium_nugget": "Pépite de Destrium",
   "item.destriummod.argonide_ingot": "Lingot d'Argonide",
-  "item.destriummod.argonide_nuggets": "Pépite d'Argonide",
+  "item.destriummod.argonide_nugget": "Pépite d'Argonide",
   "item.destriummod.repair_fragment": "Fragment de Réparation",
   "item.destriummod.repair_gem": "Gemme de Réparation",
 
-  "item.destriummod.emerald_nuggets": "Pépite d'Émeraude",
-  "item.destriummod.diamond_nuggets": "Pépite de Diamant",
-  "item.destriummod.netherite_nuggets": "Pépite de Netherite",
+  "item.destriummod.emerald_nugget": "Pépite d'Émeraude",
+  "item.destriummod.diamond_nugget": "Pépite de Diamant",
+  "item.destriummod.netherite_nugget": "Pépite de Netherite",
 
 
   "item.destriummod.amazonite_stick": "Bâton en Amazonite",
@@ -25,19 +25,19 @@
   "item.destriummod.amazonite_pickaxe": "Pioche en Amazonite",
   "item.destriummod.amazonite_axe": "Hache en Amazonite",
   "item.destriummod.amazonite_shovel": "Pelle en Amazonite",
-  "item.destriummod.amazonite_hoes": "Houe en Amazonite",
+  "item.destriummod.amazonite_hoe": "Houe en Amazonite",
 
   "item.destriummod.destrium_sword": "Épée en Destrium",
   "item.destriummod.destrium_pickaxe": "Pioche en Destrium",
   "item.destriummod.destrium_axe": "Hache en Destrium",
   "item.destriummod.destrium_shovel": "Pelle en Destrium",
-  "item.destriummod.destrium_hoes": "Houe en Destrium",
+  "item.destriummod.destrium_hoe": "Houe en Destrium",
 
   "item.destriummod.argonide_sword": "Épée en Argonide",
   "item.destriummod.argonide_pickaxe": "Pioche en Argonide",
   "item.destriummod.argonide_axe": "Hache en Argonide",
   "item.destriummod.argonide_shovel": "Pelle en Argonide",
-  "item.destriummod.argonide_hoes": "Houe en Argonide",
+  "item.destriummod.argonide_hoe": "Houe en Argonide",
 
   "item.destriummod.spawners_pickaxe": "Pioche pour Spawners",
 
@@ -73,7 +73,7 @@
 
   "item.destriummod.amazonite_seeds": "Graine d'Amazonite",
   "item.destriummod.destrium_seeds": "Graine de Destrium",
-  "item.destriummod.xp_seeds": "Graine d'Experience",
+  "item.destriummod.experience_seeds": "Graine d'Experience",
 
 
   "item.destriummod.golden_core": "Noyau En Or",
@@ -159,12 +159,12 @@
   "block.destriummod.cracked_cloud": "Nuage Craquelé",
 
 
-  "block.destriummod.amazonite_plants": "Plantation d'Amazonite",
-  "block.destriummod.destrium_plants": "Plantation de Destrium",
-  "block.destriummod.xp_plants": "Plantation d'Experience",
+  "block.destriummod.amazonite_plant": "Plantation d'Amazonite",
+  "block.destriummod.destrium_plant": "Plantation de Destrium",
+  "block.destriummod.experience_plant": "Plantation d'Experience",
 
 
-  "block.destriummod.amazonite_relique_block": "Bloc De Relique en Amazonite",
+  "block.destriummod.amazonite_relic": "Relique en Amazonite",
 
 
   "block.destriummod.below_block": "Bloc de l'En Dessous",

@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "aaa",
+    "aaa",
+    "aaa"
+  ],
+  "key": {
+    "a": "destriummod:amazonite_fragment"
+  },
+  "result": {
+    "id": "destriummod:amazonite_nugget",
+    "count": 2
+  }
+}

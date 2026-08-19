@@ -78,7 +78,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "destriummod:diamond_nuggets",
+          "name": "destriummod:diamond_nugget",
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -114,7 +114,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "destriummod:emerald_nuggets",
+          "name": "destriummod:emerald_nugget",
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -150,7 +150,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "destriummod:netherite_nuggets",
+          "name": "destriummod:netherite_nugget",
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -204,7 +204,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "destriummod:argonide_nuggets",
+          "name": "destriummod:argonide_nugget",
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -240,7 +240,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "destriummod:destrium_nuggets",
+          "name": "destriummod:destrium_nugget",
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -330,7 +330,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "destriummod:amazonite_nuggets",
+          "name": "destriummod:amazonite_nugget",
           "functions": [
             {
               "function": "minecraft:set_count",

@@ -1,6 +1,6 @@
 package fr.amazonia.destriummod.worldgen.portal;
 
-import fr.amazonia.destriummod.block.OverworldPortalBlocks;
+import fr.amazonia.destriummod.block.OverworldPortalBlock;
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
@@ -55,7 +55,7 @@ public final class OverworldTeleporter {
     private static void setupOverworldPlatform(ServerLevel destinationWorld, BlockPos destinationPos) {
         boolean doSetBlock = true;
         for (BlockPos checkPos : BlockPos.betweenClosed(destinationPos.below(10).west(10), destinationPos.above(10).east(10))) {
-            if (destinationWorld.getBlockState(checkPos).getBlock() instanceof OverworldPortalBlocks) {
+            if (destinationWorld.getBlockState(checkPos).getBlock() instanceof OverworldPortalBlock) {
                 doSetBlock = false;
                 break;
             }

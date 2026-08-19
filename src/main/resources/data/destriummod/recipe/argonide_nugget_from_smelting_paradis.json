@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "group": "argonide_nuggets",
+  "ingredient": "destriummod:paradis_argonide_ore",
+
+  "result": {
+    "id" : "destriummod:argonide_nugget"
+  },
+  "experience": 5,
+  "cookingtime": 100
+}

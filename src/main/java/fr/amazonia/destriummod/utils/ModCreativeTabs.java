@@ -66,15 +66,15 @@ public class ModCreativeTabs {
         pOutput.accept(ModBlocks.DIRT_COMPRESSED3.get());
         pOutput.accept(ModBlocks.DIRT_COMPRESSED4.get());
         pOutput.accept(ModBlocks.DIRT_COMPRESSED5.get());
-        pOutput.accept(ModBlocks.AMAZONITE_RELIQUE_BLOCK.get());
+        pOutput.accept(ModBlocks.AMAZONITE_RELIC.get());
         pOutput.accept(ModBlocks.BELOW_BLOCK.get());
         pOutput.accept(ModBlocks.PARADIS_PORTAL_BLOCK.get());
         pOutput.accept(ModBlocks.OVERWORLD_PORTAL_BLOCK.get());
         pOutput.accept(ModBlocks.CLOVER.get());
         pOutput.accept(ModBlocks.CLOVER_TWO.get());
-        pOutput.accept(ModBlocks.AMAZONITE_PLANTS.get());
-        pOutput.accept(ModBlocks.DESTRIUM_PLANTS.get());
-        pOutput.accept(ModBlocks.XP_PLANTS.get());
+        pOutput.accept(ModBlocks.AMAZONITE_PLANT.get());
+        pOutput.accept(ModBlocks.DESTRIUM_PLANT.get());
+        pOutput.accept(ModBlocks.EXPERIENCE_PLANT.get());
 
     }).build());
 
@@ -82,17 +82,17 @@ public class ModCreativeTabs {
         pOutput.accept(ModItems.AMAZONITE_CRUMB.get());
         pOutput.accept(ModItems.AMAZONITE_DUST.get());
         pOutput.accept(ModItems.AMAZONITE_FRAGMENT.get());
-        pOutput.accept(ModItems.AMAZONITE_NUGGETS.get());
+        pOutput.accept(ModItems.AMAZONITE_NUGGET.get());
         pOutput.accept(ModItems.AMAZONITE_INGOT.get());
-        pOutput.accept(ModItems.DESTRIUM_NUGGETS.get());
+        pOutput.accept(ModItems.DESTRIUM_NUGGET.get());
         pOutput.accept(ModItems.DESTRIUM_INGOT.get());
-        pOutput.accept(ModItems.ARGONIDE_NUGGETS.get());
+        pOutput.accept(ModItems.ARGONIDE_NUGGET.get());
         pOutput.accept(ModItems.ARGONIDE_INGOT.get());
         pOutput.accept(ModItems.REPAIR_FRAGMENT.get());
         pOutput.accept(ModItems.REPAIR_GEM.get());
-        pOutput.accept(ModItems.EMERALD_NUGGETS.get());
-        pOutput.accept(ModItems.DIAMOND_NUGGETS.get());
-        pOutput.accept(ModItems.NETHERITE_NUGGETS.get());
+        pOutput.accept(ModItems.EMERALD_NUGGET.get());
+        pOutput.accept(ModItems.DIAMOND_NUGGET.get());
+        pOutput.accept(ModItems.NETHERITE_NUGGET.get());
         pOutput.accept(ModItems.AMAZONITE_STICK.get());
         pOutput.accept(ModItems.DESTRIUM_STICK.get());
         pOutput.accept(ModItems.ARGONIDE_STICK.get());
@@ -112,7 +112,7 @@ public class ModCreativeTabs {
         pOutput.accept(ModItems.INFINITY_WATER_BUCKET.get());
         pOutput.accept(ModItems.AMAZONITE_SEEDS.get());
         pOutput.accept(ModItems.DESTRIUM_SEEDS.get());
-        pOutput.accept(ModItems.XP_SEEDS.get());
+        pOutput.accept(ModItems.EXPERIENCE_SEEDS.get());
 
     }).build());
 
@@ -121,17 +121,17 @@ public class ModCreativeTabs {
         pOutput.accept(ModItems.AMAZONITE_PICKAXE.get());
         pOutput.accept(ModItems.AMAZONITE_AXE.get());
         pOutput.accept(ModItems.AMAZONITE_SHOVEL.get());
-        pOutput.accept(ModItems.AMAZONITE_HOES.get());
+        pOutput.accept(ModItems.AMAZONITE_HOE.get());
         pOutput.accept(ModItems.DESTRIUM_SWORD.get());
         pOutput.accept(ModItems.DESTRIUM_PICKAXE.get());
         pOutput.accept(ModItems.DESTRIUM_AXE.get());
         pOutput.accept(ModItems.DESTRIUM_SHOVEL.get());
-        pOutput.accept(ModItems.DESTRIUM_HOES.get());
+        pOutput.accept(ModItems.DESTRIUM_HOE.get());
         pOutput.accept(ModItems.ARGONIDE_SWORD.get());
         pOutput.accept(ModItems.ARGONIDE_PICKAXE.get());
         pOutput.accept(ModItems.ARGONIDE_AXE.get());
         pOutput.accept(ModItems.ARGONIDE_SHOVEL.get());
-        pOutput.accept(ModItems.ARGONIDE_HOES.get());
+        pOutput.accept(ModItems.ARGONIDE_HOE.get());
         pOutput.accept(ModItems.SPAWNERS_PICKAXE.get());
         pOutput.accept(ModItems.AMAZONITE_HELMET.get());
         pOutput.accept(ModItems.AMAZONITE_CHESTPLATE.get());
