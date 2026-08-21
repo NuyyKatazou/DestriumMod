@@ -13,15 +13,6 @@ import java.util.EnumMap;
 
 public class ModArmorMaterials {
 
-    public static final ArmorMaterial NECKLACE = new ArmorMaterial(-1,
-            Util.make(new EnumMap<>(ArmorType.class), attribute -> {
-                attribute.put(ArmorType.BOOTS, 3);
-                attribute.put(ArmorType.LEGGINGS, 6);
-                attribute.put(ArmorType.CHESTPLATE, 5);
-                attribute.put(ArmorType.HELMET, 1);
-                attribute.put(ArmorType.BODY, 5);
-            }), 1, SoundEvents.ARMOR_EQUIP_CHAIN, 0f, 0f, ModTags.Items.NONE_REPAIRABLE, ResourceKey.create(EquipmentAssets.ROOT_ID, ResourceLocation.fromNamespaceAndPath(DestriumMod.MODID, "necklace")));
-
     public static final ArmorMaterial ARGONIDE = new ArmorMaterial(74,
             Util.make(new EnumMap<>(ArmorType.class), attribute -> {
                 attribute.put(ArmorType.BOOTS, 4);
@@ -48,4 +39,14 @@ public class ModArmorMaterials {
                 attribute.put(ArmorType.HELMET, 9);
                 attribute.put(ArmorType.BODY, 22);
             }), 25, SoundEvents.ARMOR_EQUIP_DIAMOND, 5f, 0.1f, ModTags.Items.AMAZONITE_REPAIRABLE, ResourceKey.create(EquipmentAssets.ROOT_ID, ResourceLocation.fromNamespaceAndPath(DestriumMod.MODID, "amazonite")));
+
+
+    public static final ArmorMaterial NECKLACE = new ArmorMaterial(-1,
+            Util.make(new EnumMap<>(ArmorType.class), attribute -> {
+                attribute.put(ArmorType.BOOTS, 3);
+                attribute.put(ArmorType.LEGGINGS, 6);
+                attribute.put(ArmorType.CHESTPLATE, 5);
+                attribute.put(ArmorType.HELMET, 1);
+                attribute.put(ArmorType.BODY, 5);
+            }), 1, SoundEvents.ARMOR_EQUIP_CHAIN, 0f, 0f, ModTags.Items.NONE_REPAIRABLE, ResourceKey.create(EquipmentAssets.ROOT_ID, ResourceLocation.fromNamespaceAndPath(DestriumMod.MODID, "necklace")));
 }

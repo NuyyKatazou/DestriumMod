@@ -1,14 +1,16 @@
 {
   "replace": false,
   "values": [
-    "destriummod:amazonite_block",
-    "destriummod:fake_amazonite_block",
-    "destriummod:destrium_block",
     "destriummod:argonide_block",
+    "destriummod:destrium_block",
+    "destriummod:fake_amazonite_block",
+    "destriummod:amazonite_block",
+    "destriummod:repair_block",
     "destriummod:random_ore",
-    "destriummod:paradis_amazonite_ore",
-    "destriummod:paradis_destrium_ore",
+    "destriummod:repair_ore",
     "destriummod:paradis_argonide_ore",
+    "destriummod:paradis_destrium_ore",
+    "destriummod:paradis_amazonite_ore",
     "destriummod:cobblestone_compressed1",
     "destriummod:cobblestone_compressed2",
     "destriummod:cobblestone_compressed3",
@@ -17,12 +19,10 @@
     "destriummod:cobblestone_compressed6",
     "destriummod:cobblestone_compressed7",
     "destriummod:cobblestone_compressed8",
-    "destriummod:amazonite_relic",
+    "destriummod:amazonite_relique_block",
     "destriummod:paradis_portal_block",
     "destriummod:overworld_portal_block",
     "destriummod:cloud2",
-    "destriummod:below_block",
-    "destriummod:repair_ore",
-    "destriummod:repair_block"
+    "destriummod:below_block"
   ]
 }

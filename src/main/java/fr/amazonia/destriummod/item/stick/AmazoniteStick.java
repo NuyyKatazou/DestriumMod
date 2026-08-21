@@ -1,7 +1,7 @@
 package fr.amazonia.destriummod.item.stick;
 
-import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;
+import net.minecraft.network.chat.TextColor;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
@@ -18,6 +18,6 @@ public class AmazoniteStick extends Item {
 
     @OnlyIn(Dist.CLIENT)
     public void appendHoverText(ItemStack pStack, TooltipContext pContext, List<Component> pTooltip, TooltipFlag pFlag) {
-        pTooltip.add(Component.translatable(this.getDescriptionId() + ".desc").withStyle(ChatFormatting.AQUA));
+        pTooltip.add(Component.translatable(this.getDescriptionId() + ".desc").withStyle(style -> style.withColor(TextColor.fromRgb(0x0099FF))));
     }
 }

@@ -1,9 +1,9 @@
 {
   "replace": false,
   "values": [
-    "destriummod:amazonite_nugget",
-    "destriummod:destrium_ingot",
     "destriummod:argonide_ingot",
+    "destriummod:destrium_ingot",
+    "destriummod:amazonite_nugget",
     "destriummod:repair_gem"
   ]
 }

@@ -6,6 +6,7 @@ import fr.amazonia.destriummod.init.ModFluidTypes;
 import fr.amazonia.destriummod.init.ModFluids;
 import fr.amazonia.destriummod.init.ModItems;
 import fr.amazonia.destriummod.utils.HandlerEvent;
+import fr.amazonia.destriummod.utils.ModColor;
 import fr.amazonia.destriummod.utils.ModCreativeTabs;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
@@ -53,6 +54,12 @@ public class DestriumMod {
     private void setup(FMLCommonSetupEvent event) {
         //Events Class
         MinecraftForge.EVENT_BUS.register(new HandlerEvent());
+
+        event.enqueueWork(() -> {
+
+            // erreur lambda parce qu'il n'y en a qu'un dans la liste
+            ModColor.initColors();
+        });
 
     }
 

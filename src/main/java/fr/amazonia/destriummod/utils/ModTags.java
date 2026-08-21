@@ -11,9 +11,9 @@ import net.minecraft.world.level.block.Block;
 public class ModTags {
     public static class Blocks {
 
-        public static final TagKey<Block> AMAZONITE_ORE = tag("amazonite_ore");
-        public static final TagKey<Block> DESTRIUM_ORE = tag("destrium_ore");
         public static final TagKey<Block> ARGONIDE_ORE = tag("argonide_ore");
+        public static final TagKey<Block> DESTRIUM_ORE = tag("destrium_ore");
+        public static final TagKey<Block> AMAZONITE_ORE = tag("amazonite_ore");
 
         public static final TagKey<Block> CLOUDS = tag("clouds");
 
@@ -44,17 +44,17 @@ public class ModTags {
 
         public static final TagKey<Item> PLATES = tag("plates");
 
-        public static final TagKey<Item> AMAZONITE_ARMORS = tag("amazonite_armors");
-        public static final TagKey<Item> DESTRIUM_ARMORS = tag("destrium_armors");
         public static final TagKey<Item> ARGONIDE_ARMORS = tag("argonide_armors");
+        public static final TagKey<Item> DESTRIUM_ARMORS = tag("destrium_armors");
+        public static final TagKey<Item> AMAZONITE_ARMORS = tag("amazonite_armors");
 
         public static final TagKey<Item> BOOTS = tag("boots");
 
         public static final TagKey<Item> NECKLACE = tag("necklace");
 
-        public static final TagKey<Item> AMAZONITE_TOOLS = tag("amazonite_tools");
-        public static final TagKey<Item> DESTRIUM_TOOLS = tag("destrium_tools");
         public static final TagKey<Item> ARGONIDE_TOOLS = tag("argonide_tools");
+        public static final TagKey<Item> DESTRIUM_TOOLS = tag("destrium_tools");
+        public static final TagKey<Item> AMAZONITE_TOOLS = tag("amazonite_tools");
 
         public static final TagKey<Item> ARGONIDE_REPAIRABLE = tag("argonide_repairable");
         public static final TagKey<Item> DESTRIUM_REPAIRABLE = tag("destrium_repairable");

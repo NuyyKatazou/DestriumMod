@@ -58,17 +58,17 @@ public class ModBlocks {
 
     //Ores
     public static final RegistryObject<Block> RANDOM_ORE = registerBlock("random_ore", (properties) -> new DropExperienceBlock(UniformInt.of(1, 5), properties.sound(SoundType.NETHER_ORE).strength(4f, 25f).requiresCorrectToolForDrops()));
-    public static final RegistryObject<Block> PARADIS_AMAZONITE_ORE = registerBlock("paradis_amazonite_ore", (properties) -> new Block(properties.sound(SoundType.NETHER_ORE).strength(10f, 25f).requiresCorrectToolForDrops()));
-    public static final RegistryObject<Block> PARADIS_DESTRIUM_ORE = registerBlock("paradis_destrium_ore", (properties) -> new Block(properties.sound(SoundType.NETHER_ORE).strength(6f, 5f).requiresCorrectToolForDrops()));
-    public static final RegistryObject<Block> PARADIS_ARGONIDE_ORE = registerBlock("paradis_argonide_ore", (properties) -> new Block(properties.sound(SoundType.NETHER_ORE).strength(4f, 2f).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> CRACKED_ARGONIDE_ORE = registerBlock("cracked_argonide_ore", (properties) -> new Block(properties.sound(SoundType.STEM).strength(4f, 1f).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> PARADIS_ARGONIDE_ORE = registerBlock("paradis_argonide_ore", (properties) -> new Block(properties.sound(SoundType.NETHER_ORE).strength(4f, 2f).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> PARADIS_DESTRIUM_ORE = registerBlock("paradis_destrium_ore", (properties) -> new Block(properties.sound(SoundType.NETHER_ORE).strength(6f, 5f).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> PARADIS_AMAZONITE_ORE = registerBlock("paradis_amazonite_ore", (properties) -> new Block(properties.sound(SoundType.NETHER_ORE).strength(10f, 25f).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> REPAIR_ORE = registerBlock("repair_ore", (properties) -> new DropExperienceBlock(UniformInt.of(0, 2), properties.sound(SoundType.NETHER_ORE).strength(4f, 9f).requiresCorrectToolForDrops()));
 
 
-    public static final RegistryObject<Block> AMAZONITE_BLOCK = registerBlock("amazonite_block", (properties) -> new Block(properties.sound(SoundType.NETHERITE_BLOCK).strength(20f, 999f).requiresCorrectToolForDrops()));
-    public static final RegistryObject<Block> FAKE_AMAZONITE_BLOCK = registerBlock("fake_amazonite_block", (properties) -> new Block(properties.sound(SoundType.NETHERITE_BLOCK).strength(20f, 999f).requiresCorrectToolForDrops()));
-    public static final RegistryObject<Block> DESTRIUM_BLOCK = registerBlock("destrium_block", (properties) -> new Block(properties.sound(SoundType.NETHERITE_BLOCK).strength(15f, 125f).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> ARGONIDE_BLOCK = registerBlock("argonide_block", (properties) -> new Block(properties.sound(SoundType.NETHERITE_BLOCK).strength(10f, 25f).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> DESTRIUM_BLOCK = registerBlock("destrium_block", (properties) -> new Block(properties.sound(SoundType.NETHERITE_BLOCK).strength(15f, 125f).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> FAKE_AMAZONITE_BLOCK = registerBlock("fake_amazonite_block", (properties) -> new Block(properties.sound(SoundType.NETHERITE_BLOCK).strength(20f, 999f).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> AMAZONITE_BLOCK = registerBlock("amazonite_block", (properties) -> new Block(properties.sound(SoundType.NETHERITE_BLOCK).strength(20f, 999f).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> REPAIR_BLOCK = registerBlock("repair_block", (properties) -> new Block(properties.sound(SoundType.NETHERITE_BLOCK).strength(8f, 32f).requiresCorrectToolForDrops()));
 
 
@@ -102,9 +102,9 @@ public class ModBlocks {
 
 
     //Plants
-    public static final RegistryObject<Block> AMAZONITE_PLANT = BLOCKS.register("amazonite_plant", () -> new AmazonitePlant(BlockBehaviour.Properties.of().instabreak().randomTicks().noCollission().sound(SoundType.CROP).setId(ResourceKey.create(Registries.BLOCK, ResourceLocation.fromNamespaceAndPath(DestriumMod.MODID, "amazonite_plant")))));
-    public static final RegistryObject<Block> DESTRIUM_PLANT = BLOCKS.register("destrium_plant", () -> new DestriumPlant(BlockBehaviour.Properties.of().instabreak().randomTicks().noCollission().sound(SoundType.CROP).setId(ResourceKey.create(Registries.BLOCK, ResourceLocation.fromNamespaceAndPath(DestriumMod.MODID, "destrium_plant")))));
     public static final RegistryObject<Block> EXPERIENCE_PLANT = BLOCKS.register("experience_plant", () -> new ExperiencePlant(BlockBehaviour.Properties.of().instabreak().randomTicks().noCollission().sound(SoundType.CROP).setId(ResourceKey.create(Registries.BLOCK, ResourceLocation.fromNamespaceAndPath(DestriumMod.MODID, "experience_plant")))));
+    public static final RegistryObject<Block> DESTRIUM_PLANT = BLOCKS.register("destrium_plant", () -> new DestriumPlant(BlockBehaviour.Properties.of().instabreak().randomTicks().noCollission().sound(SoundType.CROP).setId(ResourceKey.create(Registries.BLOCK, ResourceLocation.fromNamespaceAndPath(DestriumMod.MODID, "destrium_plant")))));
+    public static final RegistryObject<Block> AMAZONITE_PLANT = BLOCKS.register("amazonite_plant", () -> new AmazonitePlant(BlockBehaviour.Properties.of().instabreak().randomTicks().noCollission().sound(SoundType.CROP).setId(ResourceKey.create(Registries.BLOCK, ResourceLocation.fromNamespaceAndPath(DestriumMod.MODID, "amazonite_plant")))));
 
 
     //Flowers
